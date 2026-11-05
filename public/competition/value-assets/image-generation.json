@@ -1,0 +1,20 @@
+{
+  "model": "gpt-image-2.5",
+  "backend": "imagegen bundled CLI via configured API",
+  "size": "1536x1024",
+  "quality": "high",
+  "calls": 1,
+  "prompt": "study-prompt.txt",
+  "language": "English",
+  "review": "Labels, sequence assignments, arrow directions, and method scope checked visually.",
+  "files": {
+    "study-flow.png": {
+      "bytes": 1519243,
+      "sha256": "578057e56e1f4e65421cb68086cea2a031ffcd998fd497adbed7a9704ed993f9"
+    },
+    "study-flow.webp": {
+      "bytes": 130170,
+      "sha256": "1c51eda3b2360220f4645e1ccba051f2792d1b513744ad10b67ad1bc830ca1de"
+    }
+  }
+}

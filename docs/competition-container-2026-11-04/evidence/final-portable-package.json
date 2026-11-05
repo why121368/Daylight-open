@@ -1,0 +1,14 @@
+{
+  "archive": "E:\\AAAproject\\UCloud2609\\Daylight\\output\\delivery\\daylight-demo-20261104T003718.tar.gz",
+  "sha256": "8495c32bb81f65696f30a77dacee2b59bb21027a0adac32134786d981f9c0d0e",
+  "sourceCommit": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a",
+  "sourceDigest": "d7ff283e9d9050fc63f49c556c711f9461f55be36d8490791135f2b14155b4d2",
+  "buildDigest": "8226713c441ee46cd61f4946e5371169bdc52e21d0ea316abf182b80d204f8f6",
+  "files": 2558,
+  "bytes": 116057471,
+  "integrity": {
+    "manifestSha256": "36bcc340e8b200398d1bc8f727bcce2edb90fd127dd6606411ab44db2f0e89c9",
+    "files": 2558,
+    "bytes": 153772817
+  }
+}

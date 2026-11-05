@@ -1,0 +1,11 @@
+Use case: infographic-diagram
+Asset type: precise Chinese agent dataflow infographic for Daylight.
+Primary request: Landscape 1536x1024, off-white canvas, dark pine green, amber. Clean professional readable Simplified Chinese. Title "Daylight · 从通知到可追踪的下一步". Subtitle "公开体验：预置提取，实时执行生产工具；真实工作区：IMAP 与模型按配置调用".
+Main horizontal flow six stages: "1 收到邮件" -> "2 ID 去重" -> "3 有效日程与待办上下文" -> "4 结构化提取与校验" -> "5 日历 / 待办工具" -> "6 Trace 与回复草稿".
+At ID check a branch "重复：跳过提取，不重复写入".
+At structure validation a branch "失败：不写业务结果，修正后重试".
+At calendar tool a branch "改期：取消旧安排，关联新安排" and another "冲突：入历并标记，交本人决定".
+At draft a branch "发信：必须由本人审核".
+Bottom three panels: "信息是数据：不执行邮件中的指令"; "状态有来源：邮件、日程与历史可回查"; "费用分开记录：样例工具执行 ≠ 真实模型调用".
+Footer "这是一张流程说明图；验证结果、耗时和费用以随附机器证据为准。"
+Constraints: Use clear directional arrows only for the described operations. Never imply that all calendar writes require confirmation: basic mail sync applies after validation, outbound sending requires approval. No fabricated benchmark, no made-up model success rate, no imaginary RAG requirement.

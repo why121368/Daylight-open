@@ -1,0 +1,275 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>邮件问答精简与真实延迟优化 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="邮件问答精简与真实延迟优化">邮件问答精简与真实延迟优化</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#邮件问答精简与真实延迟优化">邮件问答精简与真实延迟优化</a><ul>
+<li><a href="#1-从逐例结果定位等待时间">1. 从逐例结果定位等待时间</a></li>
+<li><a href="#2-提示词如何调整为什么这样选">2. 提示词如何调整，为什么这样选</a></li>
+<li><a href="#3-如何完成同口径测量">3. 如何完成同口径测量</a></li>
+<li><a href="#4-总体结果">4. 总体结果</a></li>
+<li><a href="#5-逐案例对照收益集中在哪里">5. 逐案例对照，收益集中在哪里</a></li>
+<li><a href="#6-一次真实模型回答的前后效果">6. 一次真实模型回答的前后效果</a><ul>
+<li><a href="#优化前3-段结论分别说明地点时间和材料">优化前：3 段结论，分别说明地点、时间和材料</a></li>
+<li><a href="#优化后地点与时间合并2-份来源可回查">优化后：地点与时间合并，2 份来源可回查</a></li>
+</ul>
+</li>
+<li><a href="#7-原始记录与预算">7. 原始记录与预算</a></li>
+<li><a href="#8-复现步骤与工程验证">8. 复现步骤与工程验证</a></li>
+<li><a href="#9-手机阅读与章节直达">9. 手机阅读与章节直达</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026-11-04，北京时间。对应考核：Agent 链路质量、工程可复现性、成本与性能。<a href="/experience">在线体验</a> · <a href="/evidence#rag-latency">技术与实测</a> · <a href="/competition/technical-report.html">统一技术报告</a>。</p>
+<h2 id="1-从逐例结果定位等待时间">1. 从逐例结果定位等待时间</h2>
+<p>上一轮 RAG 改造将长正文与附件末尾的要求纳入问答上下文，答案内容检查由 6/8 提升至 8/8。随后查看逐例响应发现：模型倾向于把同一邮件的地点与时间拆成不同结论，重复写出邮件主题，并多次返回相似摘句。多来源问题的 JSON 输出随之增大。</p>
+<p>本轮将相关事实合并表达。用户仍可从引用卡片查看邮件主题与原文，回答正文直接呈现时间、地点和材料要求。</p>
+<p><img alt="gpt-image-2.5 英文图：合并地点和时间，保留逐字来源校验；模型问答p95、输出Token及费用的三轮对照" src="/competition/rag-latency-assets/assets/concise-answers.webp"></p>
+<p>上图由 <strong>gpt-image-2.5</strong> 生成，1536×1024、high、英文标签。货币行经过精确排字；<a href="/competition/rag-latency-assets/assets/concise-answers-generated.png">原始 PNG</a>、<a href="/competition/rag-latency-assets/image-generation.json">图像登记</a>和<a href="/competition/rag-latency-assets/latency-prompt.txt">完整提示词</a>随报告保存。数值均来自下方原始调用记录。</p>
+<h2 id="2-提示词如何调整为什么这样选">2. 提示词如何调整，为什么这样选</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>优化前</th>
+<th>优化后</th>
+<th>设计依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结论组织</td>
+<td>每条结论点出主题或附件名</td>
+<td>同一来源的时间、地点、材料合并；跨来源结论附各自依据</td>
+<td>引用卡片已展示来源名称，正文聚焦用户所问</td>
+</tr>
+<tr>
+<td>原文摘句</td>
+<td>每条结论分别取依据</td>
+<td>选择能覆盖事实的连续短句，减少重复摘句</td>
+<td>JSON 输出中的每段原文都占输出 Token，连续摘句便于服务端核对</td>
+</tr>
+<tr>
+<td>输入信息</td>
+<td>每来源最多 1,200 字、总计 6,400 字</td>
+<td>沿用相同范围与来源编号</td>
+<td>保留上一轮对长正文和附件末尾事实的覆盖</td>
+</tr>
+<tr>
+<td>结果校验</td>
+<td>来源 ID、连续原文匹配、邮箱归属检查</td>
+<td>沿用相同服务端校验与引用生成</td>
+<td>精简后的每条结论仍携带可回查依据</td>
+</tr>
+<tr>
+<td>调用次数</td>
+<td>每次问答最多一次模型请求</td>
+<td>每次问答最多一次模型请求</td>
+<td>通过输出组织减少生成量，保持链路长度可控</td>
+</tr>
+</tbody>
+</table>
+<p>本轮运行代码变更位于 <code>server/rag/ask.js</code> 的 system prompt。JSON 结构、检索逻辑、来源边界和引用验证使用同一套实现。新增验证覆盖一句话包含两份来源的情形，核对引用编号、邮件 ID 与原文校验标记。</p>
+<h2 id="3-如何完成同口径测量">3. 如何完成同口径测量</h2>
+<ul>
+<li>材料：8 个既有原创合成案例，包含长正文截止、附件材料、后续改期、两来源整合、信息不足、提示注入、邮箱范围和空库。</li>
+<li>模型：当前配置的 <code>deepseek-v4.1-flash</code>，接口 origin 为 <code>https://api.modelverse.cn</code>。仅使用所需模型连接字段。</li>
+<li>检索：独立本地关键词索引，Embeddings 关闭；两组使用同一套片段与原文校验。</li>
+<li>基线：<code>ec793b8</code> 中的问答提示词。评测加载器只适配模块路径及已有 usage 上下文。</li>
+<li>顺序：每个案例重复 3 轮，旧版与新版先后顺序逐例、逐轮交替。每版 24 个样本，其中 21 次真实模型调用、3 次空库查询。</li>
+<li>时间：北京时间 <strong>04:44:23—04:46:14</strong>。每次计时包括检索、模型请求、JSON 处理与引用验证；索引建立在计时开始前完成。21 次模型问答单独统计 p50/p95，空库另列。</li>
+<li>分位数：nearest-rank。三轮用于观察同一案例的波动；逐条响应和实际 Token 与时延共同保存。</li>
+</ul>
+<p>检查包括：答案包含预设关键事实、所需来源已返回、引用归属当前邮箱、摘句逐字存在于对应片段、响应属于预期模式。信息不足与空库各自检查其模式。查看逐例回答与对应原文，可复核每一项结论。</p>
+<h2 id="4-总体结果">4. 总体结果</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">优化前</th>
+<th style="text-align: right;">优化后</th>
+<th style="text-align: right;">变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>答案要点检查</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">全部通过</td>
+</tr>
+<tr>
+<td>邮箱范围检查</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">全部通过</td>
+</tr>
+<tr>
+<td>原文摘句检查</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">全部通过</td>
+</tr>
+<tr>
+<td>预期响应模式</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">24/24</td>
+<td style="text-align: right;">全部通过</td>
+</tr>
+<tr>
+<td>模型问答 p50，21 次/版</td>
+<td style="text-align: right;">2.589 秒</td>
+<td style="text-align: right;">2.325 秒</td>
+<td style="text-align: right;">降低 10.21%</td>
+</tr>
+<tr>
+<td>模型问答 p95，21 次/版</td>
+<td style="text-align: right;">5.812 秒</td>
+<td style="text-align: right;">3.134 秒</td>
+<td style="text-align: right;">降低 46.07%</td>
+</tr>
+<tr>
+<td>输入 Token</td>
+<td style="text-align: right;">8,607</td>
+<td style="text-align: right;">8,502</td>
+<td style="text-align: right;">减少 1.22%</td>
+</tr>
+<tr>
+<td>输出 Token</td>
+<td style="text-align: right;">5,570</td>
+<td style="text-align: right;">3,812</td>
+<td style="text-align: right;">减少 31.56%</td>
+</tr>
+<tr>
+<td>21 次模型费公开价估算</td>
+<td style="text-align: right;">¥0.061774</td>
+<td style="text-align: right;">¥0.047500</td>
+<td style="text-align: right;">减少 23.11%</td>
+</tr>
+<tr>
+<td>最终回答总字符数，含空库与信息不足</td>
+<td style="text-align: right;">1,305</td>
+<td style="text-align: right;">855</td>
+<td style="text-align: right;">减少 450 字符</td>
+</tr>
+<tr>
+<td>模型错误 / 引用校验回退</td>
+<td style="text-align: right;">0 / 0</td>
+<td style="text-align: right;">0 / 0</td>
+<td style="text-align: right;">逐例记录完整</td>
+</tr>
+</tbody>
+</table>
+<p>每次模型费用按 <code>(输入Token × 2 + 输出Token × 8) ÷ 1,000,000</code> 元复算，缓存输入按普通输入价格。价格来源为 <a href="https://www.compshare.cn/model-api">ModelVerse 公开模型目录</a>，本轮 42 次合计估算 <strong>¥0.109274</strong>。供应商账单决定实际支出。</p>
+<p>这组延迟来自上述接口、索引和案例组合。模型输出量、供应商响应与问题复杂度共同影响等待时间，后续比较沿用相同口径。</p>
+<h2 id="5-逐案例对照收益集中在哪里">5. 逐案例对照，收益集中在哪里</h2>
+<p>每格为同一案例 3 次的中位数。完整样本见 <a href="/competition/rag-latency-assets/evidence/calls.csv">calls.csv</a>。</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th style="text-align: right;">优化前 p50</th>
+<th style="text-align: right;">优化后 p50</th>
+<th style="text-align: right;">前→后输出 Token，3 次合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长正文末尾截止</td>
+<td style="text-align: right;">2.787 秒</td>
+<td style="text-align: right;">2.254 秒</td>
+<td style="text-align: right;">722 → 453</td>
+</tr>
+<tr>
+<td>附件材料要求</td>
+<td style="text-align: right;">2.979 秒</td>
+<td style="text-align: right;">2.520 秒</td>
+<td style="text-align: right;">697 → 571</td>
+</tr>
+<tr>
+<td>后续改期</td>
+<td style="text-align: right;">2.608 秒</td>
+<td style="text-align: right;">2.622 秒</td>
+<td style="text-align: right;">668 → 690</td>
+</tr>
+<tr>
+<td>两来源报到要求</td>
+<td style="text-align: right;">5.812 秒</td>
+<td style="text-align: right;">3.134 秒</td>
+<td style="text-align: right;">2,127 → 897</td>
+</tr>
+<tr>
+<td>片段信息不足</td>
+<td style="text-align: right;">1.690 秒</td>
+<td style="text-align: right;">1.710 秒</td>
+<td style="text-align: right;">135 → 189</td>
+</tr>
+<tr>
+<td>提示注入样例</td>
+<td style="text-align: right;">2.451 秒</td>
+<td style="text-align: right;">2.123 秒</td>
+<td style="text-align: right;">510 → 345</td>
+</tr>
+<tr>
+<td>当前邮箱范围</td>
+<td style="text-align: right;">2.476 秒</td>
+<td style="text-align: right;">2.440 秒</td>
+<td style="text-align: right;">711 → 667</td>
+</tr>
+<tr>
+<td>空库，模型调用 0</td>
+<td style="text-align: right;">0.115 毫秒</td>
+<td style="text-align: right;">0.126 毫秒</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+</tbody>
+</table>
+<p>多来源问题的生成量下降最明显。改期与信息不足案例的时延基本持平，输出 Token 略增；因此将分组结果和总体结果同时展示。</p>
+<h2 id="6-一次真实模型回答的前后效果">6. 一次真实模型回答的前后效果</h2>
+<p>以下选取第 1 轮同一原创合成案例的完整回答。问题同时询问星河项目的报到地点、时间和携带材料，答案来自两封合成通知。</p>
+<h3 id="优化前3-段结论分别说明地点时间和材料">优化前：3 段结论，分别说明地点、时间和材料</h3>
+<blockquote>
+<p>邮件《星河项目报到地点和时间》说明，星河项目报到地点为学术中心203室。 [1]</p>
+<p>同一邮件还说明，星河项目报到时间为11月9日09:00。 [2]</p>
+<p>邮件《星河项目报到材料补充》说明，星河项目报到时需携带校园卡与纸质录取通知书。 [3]</p>
+</blockquote>
+<p>引用 [1] 与 [2] 来自同一邮件，分别摘取地点与时间。</p>
+<h3 id="优化后地点与时间合并2-份来源可回查">优化后：地点与时间合并，2 份来源可回查</h3>
+<blockquote>
+<p>星河项目报到地点为学术中心203室，时间为11月9日09:00。 [1]</p>
+<p>星河项目报到需携带校园卡与纸质录取通知书。 [2]</p>
+</blockquote>
+<p>原文依据分别为：</p>
+<ol>
+<li>“星河项目报到地点为学术中心203室，时间为11月9日09:00。”</li>
+<li>“星河项目报到时需携带校园卡与纸质录取通知书。”</li>
+</ol>
+<p>第 2、3 轮的新提示词将三个要点合为一句，并附两份来源。三轮输出和引用见<a href="/competition/rag-latency-assets/evidence/results.jsonl">原始结果</a>。这些回答由真实模型产生，合成通知内容与评测步骤可复现。</p>
+<h2 id="7-原始记录与预算">7. 原始记录与预算</h2>
+<ul>
+<li><a href="/competition/rag-latency-assets/evidence/manifest.json">运行 manifest 与源码/材料 SHA-256</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/results.jsonl">48 份前后响应、引用、Token 与时延</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/summary.json">三轮汇总及逐案例数据</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/calls.csv">逐次调用 CSV</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/corpus.json">原创合成材料</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/budget-total.json">累计调用与价格复算</a></li>
+<li><a href="/competition/rag-latency-assets/evidence/full-tests.txt">全量测试日志</a></li>
+</ul>
+<p>累计文本调用 <strong>84 次</strong>，输入 <strong>104,267</strong>、输出 <strong>38,445</strong> Token，公开价估算 <strong>¥0.516094</strong>。本轮图片调用 <strong>1 次</strong>，图片累计 <strong>11 次</strong>；图片费用按供应商账单登记。新增云采购 <strong>0</strong>，使用现有服务器。新增模型与云资源总预算 <strong>¥500</strong>。</p>
+<h2 id="8-复现步骤与工程验证">8. 复现步骤与工程验证</h2>
+<p>在独立材料目录运行评测，<code>--settings</code> 指向自己的模型配置。前后对照会发起 42 次实际模型请求。</p>
+<pre><code class="language-sh">node --test server/rag-answer.test.js server/rag.test.js
+npm test
+node scripts/evaluate-rag.mjs --live --settings &lt;private-settings.json&gt; --limit 8 --baseline-ref ec793b8 --rounds 3
+node scripts/competition-rag-latency-evidence.mjs work/&lt;new-run-directory&gt;
+python scripts/competition-public-report.py --only rag-latency-report.html
+npm run build
+</code></pre>
+<p>本轮定向 <strong>34/34</strong>；全量 <strong>1,018 项，989 通过、29 条件跳过、0 失败</strong>。条件集成项使用其独立服务验证入口。全量日志、真实模型证据与发布记录分别归档。</p>
+<p>统一 21 页报告保存 v14 运行快照；本页记录后续问答优化与最新累计费用，技术页直接展示本轮数据。</p>
+<h2 id="9-手机阅读与章节直达">9. 手机阅读与章节直达</h2>
+<p>页面检查发现，直接打开 <code>/evidence#rag-latency</code> 时，公开布局的路由滚动复位会把页面带回顶部。已将复位改为：DOM 提交后先查找 URL 的章节 ID，存在时定位该节；进入普通页面时回到顶部。使用现有 React <code>useLayoutEffect</code> 与浏览器滚动能力，章节链接可直接分享与刷新。</p>
+<p>技术页的前后数值由同一份评测汇总生成；最新累计费用读取单独的预算清单，历史报告保留其发布快照。手机将三项指标依次排列，完整报告中的宽表在表格范围内横向滚动。</p>
+<p>下图为同一链接在 390×844 浏览器中的前后位置：左侧定位修正前、右侧定位修正后。</p>
+<p><img src="/competition/rag-latency-assets/assets/local-evidence-mobile-before.png" width="260" alt="修正前：章节链接打开后停在技术页顶部"><img src="/competition/rag-latency-assets/assets/local-evidence-mobile.png" width="260" alt="修正后：直接显示问答优化结果卡片"></p>
+
+<p>1440、390、320px 下，技术页与完整报告共 6 组布局检查通过，整页横向溢出为 0，报告图片全部加载。章节首开与刷新定位距视口顶部约 24px；目录点击与浏览器返回定位正确，进入体验页时滚动复位为 0。<a href="/competition/rag-latency-assets/evidence/ui-layout.json">浏览器逐项记录</a> · <a href="/competition/rag-latency-assets/assets/local-evidence-desktop.png">桌面结果卡</a> · <a href="/competition/rag-latency-assets/assets/local-report-mobile.png">手机报告</a>。本节记录浏览器尺寸测试，微信真机检查单独登记。</p></main></html>

@@ -1,0 +1,54 @@
+2176-  ---
+2177-  duration_ms: 591.3367
+2178-  type: 'test'
+2179-  ...
+2180-# Subtest: an indirect dynamic import from excluded docs fails the actual Vite graph
+2181:not ok 364 - an indirect dynamic import from excluded docs fails the actual Vite graph
+2182-  ---
+2183-  duration_ms: 104.9316
+2184-  type: 'test'
+2185-  location: 'E:\\AAAproject\\UCloud2609\\Daylight\\server\\container-source.test.js:86:1'
+2186:  failureType: 'testCodeFailure'
+2187-  error: |-
+2188-    The input did not match the regular expression /Frontend input is outside the Docker build sources:.*docs/. Input:
+2189-    
+2190-    'TypeError: [commonjs--resolver] safeRealpathSync is not a function'
+2191-    
+2192-  code: 'ERR_ASSERTION'
+2193-  name: 'AssertionError'
+2194-  expected:
+2195-  actual:
+2196-  error: '[commonjs--resolver] safeRealpathSync is not a function'
+2197-  name: 'TypeError'
+2198-  stack: |-
+2199-    getRealPath (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:33184:36)
+2200-    tryResolveRealFileOrType (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:33178:9)
+2201-    tryCleanFsResolve (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:32902:21)
+2202-    tryFsResolve (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:32895:14)
+2203-    Object.handler (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:32769:16)
+2204-    Object.handler (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/vite/dist/node/chunks/config.js:33957:13)
+2205-    file:///E:/AAAproject/UCloud2609/Daylight/node_modules/rollup/dist/es/shared/node-entry.js:23563:40
+2206-    process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2207-    async PluginDriver.hookFirstAndGetPlugin (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/rollup/dist/es/shared/node-entry.js:23445:28)
+2208-    async resolveId (file:///E:/AAAproject/UCloud2609/Daylight/node_modules/rollup/dist/es/shared/node-entry.js:21898:26)
+2209-  operator: 'rejects'
+2210-  stack: |-
+2211-    process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2212-    async TestContext.<anonymous> (file:///E:/AAAproject/UCloud2609/Daylight/server/container-source.test.js:90:3)
+2213-    async Test.run (node:internal/test_runner/test:1125:7)
+2214-    async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+2215-  ...
+2216-# Subtest: a symlink from src to an excluded source cannot bypass the Vite boundary
+2217-ok 365 - a symlink from src to an excluded source cannot bypass the Vite boundary # SKIP OS does not grant file symlink creation.
+2218-  ---
+--
+6342-  ...
+6343-1..1042
+6344-# tests 1050
+6345-# suites 1
+6346-# pass 1019
+6347:# fail 1
+6348-# cancelled 0
+6349-# skipped 30
+6350-# todo 0
+6351-# duration_ms 89046.9234

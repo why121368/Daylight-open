@@ -1,0 +1,13 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (zh_CN.UTF-8)
+ Container daylight-fresh-migrate-1  Exited
+ Container daylight-fresh-rabbitmq-1  Healthy
+ Container daylight-fresh-rabbitmq-1  Healthy
+ Container daylight-fresh-rabbitmq-1  Healthy
+ Container daylight-fresh-minio-1  Healthy
+ Container daylight-fresh-postgres-1  Healthy
+ Container daylight-fresh-redis-1  Healthy
+ Container daylight-fresh-rabbitmq-1  Healthy
+ Container daylight-fresh-migrate-1  Exited
+ Container daylight-fresh-worker-1  Healthy
+ Container daylight-fresh-api-1  Healthy
+ Container daylight-fresh-scheduler-1  Healthy

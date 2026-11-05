@@ -1,0 +1,69 @@
+{
+  "scope": "Official HTTPS desktop and mobile-size browser; 6 layouts plus refresh and supplement navigation",
+  "checks": [
+    {
+      "cardTop": 23.77083396911621,
+      "pageWidth": 375,
+      "text": "问答更精简，等待更短\n\n将同一来源的相关事实合并，减少重复结论与摘句。8 个原创合成案例各测 3 轮，新旧版本各 21 次真实模型调用；答案要点、邮箱归属、原文引用及响应模式检查均为 24/24。\n\n模型问答 p95\n\n5.812 → 3.134 秒\n\n21 次调用 / 版本，包含检索与引用校验\n\n输出 Token\n\n5,570 → 3,812\n\n减少 31.56%\n\n每组模型费估算\n\n¥0.061774 → ¥0.0475\n\n输入 ¥2、输出 ¥8 / 百万 Token\n\n2026-11-04，deepseek-v4.1-flash，固定关键词索引，先后顺序逐例逐轮交替。多来源问题 p50 为 5.812 → 3.134 秒，改期问题为 2.608 → 2.622 秒；逐例数据与回答一起公开。\n\n精简提示词、英文对照图与三轮原始记录",
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "width": 390
+    },
+    {
+      "action": "refresh",
+      "cardTop": 23.77083396911621,
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "width": 390
+    },
+    {
+      "images": [
+        {
+          "loaded": true,
+          "src": "/competition/rag-latency-assets/assets/concise-answers.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/competition/rag-latency-assets/assets/local-evidence-mobile-before.png"
+        },
+        {
+          "loaded": true,
+          "src": "/competition/rag-latency-assets/assets/local-evidence-mobile.png"
+        }
+      ],
+      "pageWidth": 375,
+      "url": "https://daylight.yunforis.com/competition/rag-latency-report.html",
+      "width": 390
+    },
+    {
+      "cardTop": 23.77083396911621,
+      "pageWidth": 305,
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "width": 320
+    },
+    {
+      "loaded": true,
+      "pageWidth": 305,
+      "url": "https://daylight.yunforis.com/competition/rag-latency-report.html",
+      "width": 320
+    },
+    {
+      "cardTop": 24.20833396911621,
+      "pageWidth": 1425,
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "width": 1440
+    },
+    {
+      "loaded": true,
+      "pageWidth": 1425,
+      "url": "https://daylight.yunforis.com/competition/rag-latency-report.html",
+      "width": 1440
+    },
+    {
+      "action": "report-supplement-link",
+      "headings": 21,
+      "latestLink": [
+        "最新补充：问答延迟、输出 Token 与费用三轮对照"
+      ],
+      "url": "https://daylight.yunforis.com/competition/technical-report.html"
+    }
+  ]
+}

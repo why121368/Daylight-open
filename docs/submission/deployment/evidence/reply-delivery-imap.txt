@@ -1,0 +1,9 @@
+# Reply delivery check (IMAP, read-only), captured 2026-10-17 from the test workstation.
+# Local parts of addresses are redacted; authorization codes never appear in any artifact.
+
+
+=== <sender-account>@qq.com :: INBOX (3030 messages) ===
+  DELIVERED "材料收悉确认与一面安排" uid=3121 from=<recruit-mailbox>@163.com date=2026-10-17T04:48:26.000Z
+
+=== <sender-account>@qq.com :: Sent Messages (69 messages) ===
+  missing   "材料收悉确认与一面安排" 

@@ -1,0 +1,226 @@
+{
+  "finishedAt": "2026-11-03T20:46:14.715Z",
+  "scope": "Original synthetic mail and attachment text; isolated local index and real compatible model API",
+  "rounds": 3,
+  "uniqueCases": 8,
+  "samplesPerMethod": 24,
+  "order": "Alternate method order per case and round; same isolated corpus across rounds",
+  "model": "deepseek-v4.1-flash",
+  "endpointOrigin": "https://api.modelverse.cn",
+  "embeddings": false,
+  "baselineRef": "ec793b8",
+  "baselineSha256": "878148994ffa5d2960a1584bef7621a04d69a752fcb345510409e6bfd4254871",
+  "before": {
+    "cases": 24,
+    "correct": 24,
+    "scopeCorrect": 24,
+    "exactQuoteCases": 24,
+    "expectedModes": 24,
+    "modelErrors": 0,
+    "citationValidationFallbacks": 0,
+    "modelCallsWithUsage": 21,
+    "inputTokens": 8607,
+    "outputTokens": 5570,
+    "p50Ms": 2476.303,
+    "p95Ms": 5811.899,
+    "modelCalls": 21,
+    "cachedInputTokens": 4608,
+    "estimatedCny": 0.061774,
+    "modelOnlyLatency": {
+      "samples": 21,
+      "p50Ms": 2589.056,
+      "p95Ms": 5811.899
+    },
+    "answerCharacters": 1305,
+    "perCase": {
+      "late-deadline": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2786.751,
+        "p95Ms": 2869.099,
+        "inputTokens": 1749,
+        "outputTokens": 722,
+        "answerCharacters": 137
+      },
+      "attachment-detail": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2978.657,
+        "p95Ms": 3107.447,
+        "inputTokens": 1845,
+        "outputTokens": 697,
+        "answerCharacters": 174
+      },
+      "reschedule": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2608.005,
+        "p95Ms": 2789.191,
+        "inputTokens": 1110,
+        "outputTokens": 668,
+        "answerCharacters": 100
+      },
+      "multi-source": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 5811.899,
+        "p95Ms": 6247.223,
+        "inputTokens": 1056,
+        "outputTokens": 2127,
+        "answerCharacters": 376
+      },
+      "insufficient": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 1689.717,
+        "p95Ms": 1788.557,
+        "inputTokens": 939,
+        "outputTokens": 135,
+        "answerCharacters": 126
+      },
+      "injection": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2451,
+        "p95Ms": 2555.994,
+        "inputTokens": 996,
+        "outputTokens": 510,
+        "answerCharacters": 123
+      },
+      "scope": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2476.303,
+        "p95Ms": 3229.621,
+        "inputTokens": 912,
+        "outputTokens": 711,
+        "answerCharacters": 116
+      },
+      "empty": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 0.115,
+        "p95Ms": 0.222,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "answerCharacters": 153
+      }
+    }
+  },
+  "after": {
+    "cases": 24,
+    "correct": 24,
+    "scopeCorrect": 24,
+    "exactQuoteCases": 24,
+    "expectedModes": 24,
+    "modelErrors": 0,
+    "citationValidationFallbacks": 0,
+    "modelCallsWithUsage": 21,
+    "inputTokens": 8502,
+    "outputTokens": 3812,
+    "p50Ms": 2254.255,
+    "p95Ms": 3134.212,
+    "modelCalls": 21,
+    "cachedInputTokens": 4608,
+    "estimatedCny": 0.0475,
+    "modelOnlyLatency": {
+      "samples": 21,
+      "p50Ms": 2324.758,
+      "p95Ms": 3134.212
+    },
+    "answerCharacters": 855,
+    "perCase": {
+      "late-deadline": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2254.255,
+        "p95Ms": 2305.783,
+        "inputTokens": 1734,
+        "outputTokens": 453,
+        "answerCharacters": 100
+      },
+      "attachment-detail": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2519.902,
+        "p95Ms": 2670.965,
+        "inputTokens": 1830,
+        "outputTokens": 571,
+        "answerCharacters": 69
+      },
+      "reschedule": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2622.11,
+        "p95Ms": 2840.76,
+        "inputTokens": 1095,
+        "outputTokens": 690,
+        "answerCharacters": 78
+      },
+      "multi-source": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 3134.212,
+        "p95Ms": 3791.339,
+        "inputTokens": 1041,
+        "outputTokens": 897,
+        "answerCharacters": 173
+      },
+      "insufficient": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 1710.469,
+        "p95Ms": 1834.147,
+        "inputTokens": 924,
+        "outputTokens": 189,
+        "answerCharacters": 126
+      },
+      "injection": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2123.475,
+        "p95Ms": 2172.558,
+        "inputTokens": 981,
+        "outputTokens": 345,
+        "answerCharacters": 78
+      },
+      "scope": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 2440.244,
+        "p95Ms": 2919.866,
+        "inputTokens": 897,
+        "outputTokens": 667,
+        "answerCharacters": 78
+      },
+      "empty": {
+        "samples": 3,
+        "correct": 3,
+        "p50Ms": 0.126,
+        "p95Ms": 0.273,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "answerCharacters": 153
+      }
+    }
+  },
+  "relativeChangePercent": {
+    "inputTokens": -1.22,
+    "outputTokens": -31.56,
+    "modelOnlyP50": -10.21,
+    "modelOnlyP95": -46.07,
+    "estimatedCny": -23.11
+  },
+  "price": {
+    "inputCnyPerMillion": 2,
+    "outputCnyPerMillion": 8,
+    "cachedInputCnyPerMillion": 2,
+    "source": "https://www.compshare.cn/model-api",
+    "kind": "published-list-price-estimate",
+    "sourceSha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b"
+  },
+  "hashes": {
+    "manifest": "27ecaeb9700158529064937a1beebd265168905e7359379418be91c1f5228cf7",
+    "results": "35f14da841f7cdec0cdd713d3228d35b1d2a8b865e12fd2752d3259bf68d8a0a"
+  }
+}

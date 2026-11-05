@@ -1,0 +1,54 @@
+{
+  "createdAt": "2026-11-03T22:50:27.239776+00:00",
+  "method": "Final dist files; gzipSync default compression per file; excludes HTML, APIs, images and dynamic imports beyond the selected route.",
+  "entry": "assets/index-Ci2qu_-C.js",
+  "initialExperienceJavaScript": {
+    "files": [
+      "assets/arrow-right-CaEfruf1.js",
+      "assets/arrow-up-right-D0k26IQz.js",
+      "assets/calendar-days-CZuc8BgH.js",
+      "assets/card-CZBKFD--.js",
+      "assets/check-check-CkgO_zkx.js",
+      "assets/check-ya4cTiJx.js",
+      "assets/circle-alert-DPKKBNqz.js",
+      "assets/experience-page-BrOUCXmK.js",
+      "assets/experience-shell-HpSLo5Hb.js",
+      "assets/index-Ci2qu_-C.js",
+      "assets/mail-WDcMAFi3.js",
+      "assets/rotate-ccw-CWwTn6Xz.js",
+      "assets/shield-check-76x-Xw48.js"
+    ],
+    "bytes": 505245,
+    "gzipBytes": 167519
+  },
+  "initialExperienceCss": {
+    "files": [
+      "assets/index-DCf0QkC-.css"
+    ],
+    "bytes": 177057,
+    "gzipBytes": 28119
+  },
+  "deferredShare": {
+    "files": [
+      "assets/copy-Dm0jfLlb.js",
+      "assets/dialog-1YAYP9Z-.js",
+      "assets/download-BOH2VwKF.js",
+      "assets/input-H6Rm4x1M.js",
+      "assets/share-2-BYsXkaLd.js",
+      "assets/share-dialog-x1_bFhKR.js",
+      "assets/x-DhODS7ne.js"
+    ],
+    "bytes": 40722,
+    "gzipBytes": 17067
+  },
+  "qrcodeChunks": [
+    "assets/share-dialog-x1_bFhKR.js"
+  ],
+  "qrcodeExcludedFromInitialExperience": true,
+  "previousPublishedEntryBaseline": {
+    "release": "v17",
+    "initialExperienceJavaScriptGzipBytes": 165987
+  },
+  "initialJavaScriptAddedGzipBytes": 1532,
+  "inventorySha256": "f783dee1758dfed0ea420d7b26d9f14cd1d45a684102557b5994f4da4ff1e0e7"
+}

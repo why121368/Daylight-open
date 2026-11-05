@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-11-03T23:16:24.055Z",
+  "release": "v20",
+  "device": "Windows IAB browser",
+  "checks": [
+    {
+      "documentWidth": 305,
+      "focusedResult": true,
+      "resultTop": 20,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "name": "direct-step-url",
+      "ok": true
+    },
+    {
+      "documentWidth": 305,
+      "focusedResult": true,
+      "resultTop": 20,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "name": "return-from-evidence",
+      "ok": true
+    },
+    {
+      "documentWidth": 305,
+      "focusedResult": true,
+      "resultTop": 20,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "name": "reload-step-three",
+      "ok": true
+    },
+    {
+      "focusedResult": true,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "name": "decoded-qr-url-in-new-tab",
+      "ok": true
+    },
+    {
+      "documentWidth": 305,
+      "focusedResult": true,
+      "resultTop": 20,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "name": "navigation-without-step-restores-progress",
+      "ok": true
+    },
+    {
+      "documentWidth": 1425,
+      "focusedResult": true,
+      "resultTop": 20,
+      "step": "3",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "name": "desktop-restored-result",
+      "ok": true
+    },
+    {
+      "name": "copy-current-step-link-after-success",
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "waitedFor": "链接已复制",
+      "ok": true
+    }
+  ],
+  "samples": "public-behavior-v20.json",
+  "note": "Clipboard final check waits for the page success acknowledgement. Initial immediate read and desktop content-ready sample are retained in the samples.",
+  "ok": true
+}

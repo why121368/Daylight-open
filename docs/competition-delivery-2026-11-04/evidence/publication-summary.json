@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "image": "daylight:public-competition-20261104-v21",
+  "imageId": "sha256:55f7a1780e8e8766e2b9a449b8804b333d93c578621cc0a573c9736044bc9dc2",
+  "sourceCommit": "054f9cf8a50f10e600732efe559c763ea4a72dd7",
+  "backendSourceCommit": "a8daafc1bf88c747fb1e6104a89c56a6f90ff06b",
+  "candidateProductionChecks": 38,
+  "candidateDeliveryChecks": 6,
+  "httpsChecks": 115,
+  "publicResources": 302,
+  "layoutChecks": 9,
+  "behaviorChecks": 2,
+  "consoleErrors": 0,
+  "verifiedFilesPerRole": 707,
+  "completeDistFiles": 663,
+  "servicesHealthy": 8,
+  "records": {
+    "candidate-production-tests.txt": {
+      "sha256": "0ed7e3ce9bf29883964e78703ef4e2f2fd0ac320b71929f99bf33b564f40ea06",
+      "bytes": 8188
+    },
+    "candidate-delivery-tests.txt": {
+      "sha256": "e7c33c26988d69e2ff085bc10cddfe1c147a8bdb19ade9b6ef1d3d73097f8043",
+      "bytes": 1489
+    },
+    "candidate-delivery-checks.json": {
+      "sha256": "e92b28ee7f6dc9c95ef42977f87d8fdd21f4207f1fe2d2692163c64b2cf57984",
+      "bytes": 424
+    },
+    "deploy-output.txt": {
+      "sha256": "5d9beb555cedfc3b46f082d3c4581499aa7a7d1b69f1c8131f7bee8be34171da",
+      "bytes": 4188
+    },
+    "public-checks.json": {
+      "sha256": "21a40e01ce8dee4ddd03005e0726b8eef4fc7fc4f060f2d624c8d385d5fba8ca",
+      "bytes": 30865
+    },
+    "public-resources.json": {
+      "sha256": "6e152a7f3ac4653fef59faf043e44e30bfb491e9b3afc766ea57a40ee8a81dff",
+      "bytes": 80779
+    },
+    "runtime-verification.json": {
+      "sha256": "ed0d3d5ffa33dea552ea2e78da4d26093e37f1b1aba78cb6e903c3b4178f759d",
+      "bytes": 3050
+    },
+    "public-layouts.json": {
+      "sha256": "ea8ff91b711be8867d9880a275439b241c41824a45f49325ac91857c809501a2",
+      "bytes": 2007
+    },
+    "public-behavior.json": {
+      "sha256": "3e834427035610e4444adfbdae5c945a7b21d52907e861631e2ea5af222b52ab",
+      "bytes": 159
+    },
+    "public-console.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    }
+  }
+}

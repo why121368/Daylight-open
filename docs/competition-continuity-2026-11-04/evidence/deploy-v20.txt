@@ -1,0 +1,97 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-experience-download-20261104070836
+RELEASE_HASHES_OK 638
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  77.06MB
+
+
+Step 1/9 : FROM sha256:2689195d2f2d4c7e346c590a9834784c6e332a9568e18658b573f7cba6ecd982
+ ---> 2689195d2f2d
+Step 2/9 : USER root
+ ---> Running in d0fbb84a6b98
+ ---> Removed intermediate container d0fbb84a6b98
+ ---> 4447693a4abe
+Step 3/9 : RUN rm -rf /app/dist
+ ---> Running in f23990f05c54
+ ---> Removed intermediate container f23990f05c54
+ ---> e28cbe449bf0
+Step 4/9 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> bcabe6b5a88e
+Step 5/9 : COPY --chown=node:node shared/ /app/shared/
+ ---> fffe5cc799a0
+Step 6/9 : COPY --chown=node:node server/ /app/server/
+ ---> 24d3c615e65c
+Step 7/9 : COPY --chown=node:node dist/ /app/dist/
+ ---> ecaef693a52b
+Step 8/9 : LABEL org.opencontainers.image.revision="87c1b1bf9417a3a545ccfa417d0ce3d0cd733ec4"
+ ---> Running in 08f6e568b289
+ ---> Removed intermediate container 08f6e568b289
+ ---> 4b9a38d2bc48
+Step 9/9 : USER node
+ ---> Running in da1f52a474e2
+ ---> Removed intermediate container da1f52a474e2
+ ---> 512a096ec1d0
+Successfully built 512a096ec1d0
+Successfully tagged daylight:public-competition-20261104-v20
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11852.683879
+{
+  "ok": true,
+  "behaviorChecks": 15,
+  "layouts": 3,
+  "qrDecoded": true,
+  "staticQrFiles": 8,
+  "downloadLayouts": 3,
+  "downloadIsAnchor": true,
+  "finalResultFocused": true,
+  "assetFilesVerified": 133,
+  "entry": "assets/index-CGFrY5P9.js",
+  "initialJavaScriptGzipBytes": 167601,
+  "deferredShareJavaScriptGzipBytes": 17091,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 14,
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}
+ Container daylight-worker-1  Recreate
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-scheduler-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-scheduler-1  Started
+ Container daylight-worker-1  Started
+ Container daylight-api-1  Started
+ Container daylight-worker-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-scheduler-1  Waiting
+ Container daylight-scheduler-1  Healthy
+ Container daylight-worker-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"47f21a57-8ff7-48d9-a25c-766a7297d081","written":14,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"47f21a57-8ff7-48d9-a25c-766a7297d081","written":84,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"742f1867-ec12-4fbf-b961-48bb37fde119","written":230,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"6df72f7a-71df-40f4-8333-e47e867b680d","written":66,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v20 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v20 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v20 healthy restart=0 oom=false
+sha256:512a096ec1d021b77a27143b0deb67d7e8d354063cd26922ab23572a41dc6add
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+PUBLIC_CONTINUITY_DOWNLOAD_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-experience-download-20261104070836
+
+REMOTE_EXIT 0

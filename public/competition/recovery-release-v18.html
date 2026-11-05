@@ -1,0 +1,149 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v18 公网发布与恢复资料验收 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="v18-公网发布与恢复资料验收">v18 公网发布与恢复资料验收</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#v18-公网发布与恢复资料验收">v18 公网发布与恢复资料验收</a><ul>
+<li><a href="#1-版本内容与备份">1. 版本、内容与备份</a></li>
+<li><a href="#2-发布与候选检查">2. 发布与候选检查</a></li>
+<li><a href="#3-实际运行文件与观测">3. 实际运行文件与观测</a></li>
+<li><a href="#4-正式https与页面">4. 正式HTTPS与页面</a><ul>
+<li><a href="#正式截图">正式截图</a></li>
+</ul>
+</li>
+<li><a href="#5-恢复和费用">5. 恢复和费用</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-04，北京时间。状态：<strong>正式部署及电脑、手机尺寸浏览器验证通过</strong>。</p>
+<p><a href="https://daylight.yunforis.com/evidence#recovery">正式恢复结果</a> · <a href="https://daylight.yunforis.com/competition/recovery-report.html">公开图文</a> · <a href="https://daylight.yunforis.com/experience">三分钟体验</a></p>
+<h2 id="1-版本内容与备份">1. 版本、内容与备份</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实际值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>镜像</td>
+<td><code>daylight:public-competition-20261104-v18</code></td>
+</tr>
+<tr>
+<td>镜像 ID</td>
+<td><code>sha256:fd6d5eb07f80e325426e804a78693f31ec244d19e366ffef86a910405f17bab5</code></td>
+</tr>
+<tr>
+<td>本轮前端、恢复脚本、资料与检查</td>
+<td><code>363477c43e5848b23b07d9ff117246f5f1da2460</code></td>
+</tr>
+<tr>
+<td>业务后端继承</td>
+<td>v16 <code>a8daafc1bf88c747fb1e6104a89c56a6f90ff06b</code>，此前 v13 <code>9354287</code>及基线 <code>db3ee89</code></td>
+</tr>
+<tr>
+<td>基础镜像</td>
+<td>v17 固定 ID <code>sha256:9df78bb6e5c3906422be3475ba4f3c061760348f8ed393fcb1c3c6af33f678a5</code></td>
+</tr>
+<tr>
+<td>发布包</td>
+<td>31,875,809 bytes，589 文件；完整前端 581 文件</td>
+</tr>
+<tr>
+<td>发布包 SHA-256</td>
+<td><code>56c1691b84242ac54bea9532be538d2d762954b7b384bc6bd4160634bbc56360</code></td>
+</tr>
+<tr>
+<td>发布前备份</td>
+<td><code>/opt/daylight-backups/before-data-recovery-20261104062547</code></td>
+</tr>
+<tr>
+<td>发布构建目录</td>
+<td><code>/opt/daylight-recovery-release-v18</code></td>
+</tr>
+</tbody>
+</table>
+<p>更新完整前端，并加入逐行/逐对象清单、v2备份与分阶段恢复、异机加密工具及相应检查文件。宿主与应用镜像保存相同恢复脚本。技术页连接恢复图文，统一报告增加补充入口，预算展示累计13次图片调用。v17首屏发布过程与正式截图也进入公开归档。</p>
+<p><a href="/competition/recovery-assets/evidence/release-v18-manifest.json">文件清单</a> · <a href="/competition/recovery-assets/evidence/release-v18-archive.json">发布包摘要</a>。</p>
+<h2 id="2-发布与候选检查">2. 发布与候选检查</h2>
+<ol>
+<li>固定发布锁，核对三个角色均为v17目标镜像，备份数据库、配置、完整前端及原脚本。</li>
+<li>核对发布包和589份文件SHA-256；以固定v17镜像构建v18。</li>
+<li>候选容器运行公开体验、指标采集与生命周期检查，<strong>29/29通过</strong>。</li>
+<li>候选恢复与备份检查，<strong>14/14通过</strong>；临时目录允许执行检查替身，镜像保持只读、外部网络关闭。</li>
+<li>核对实际恢复摘要、9表/9,269行/187对象、加密回执、英文图片、预算与原21页PDF的完整摘要；三个shell脚本均为LF。</li>
+<li>更新三个应用角色，等待健康，检查七步业务、匿名权限、视频范围读取及三个角色的指标写入。</li>
+<li>正式HTTPS与浏览器完成后归档运行结果。发布输出为 <code>PUBLIC_RECOVERY_PUBLISHED_OK</code>、<code>REMOTE_EXIT 0</code>。</li>
+</ol>
+<p><a href="/competition/recovery-assets/evidence/deploy-v18.txt">完整发布输出</a> · <a href="/competition/recovery-assets/evidence/deploy-v18.sh">发布脚本</a> · <a href="/competition/recovery-assets/evidence/candidate-production-tests-v18.txt">候选29项</a> · <a href="/competition/recovery-assets/evidence/candidate-recovery-tests-v18.txt">候选14项</a> · <a href="/competition/recovery-assets/evidence/candidate-recovery-evidence-v18.json">恢复证据候选核对</a>。</p>
+<h2 id="3-实际运行文件与观测">3. 实际运行文件与观测</h2>
+<p><strong>2026-11-04 06:28:02 +08:00</strong>核对：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th style="text-align: right;">文件摘要</th>
+<th style="text-align: right;">完整前端</th>
+<th style="text-align: right;">指标已写入</th>
+<th>丢样 / 写入错误</th>
+<th>restart / OOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td style="text-align: right;">613</td>
+<td style="text-align: right;">581</td>
+<td style="text-align: right;">667</td>
+<td>0 / null</td>
+<td>0 / false</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td style="text-align: right;">613</td>
+<td style="text-align: right;">581</td>
+<td style="text-align: right;">548</td>
+<td>0 / null</td>
+<td>0 / false</td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td style="text-align: right;">613</td>
+<td style="text-align: right;">581</td>
+<td style="text-align: right;">133</td>
+<td>0 / null</td>
+<td>0 / false</td>
+</tr>
+</tbody>
+</table>
+<p>三个角色镜像ID、版本标签和环境中的源码摘要相同。累积后端覆盖合并后逐文件检查，并核对前端完整文件集合。API、Worker、Scheduler、PostgreSQL、Redis、RabbitMQ、MinIO、Caddy共8服务均为running / healthy。</p>
+<p><a href="/competition/recovery-assets/evidence/runtime-v18.json">运行原始结果</a> · <a href="/competition/recovery-assets/evidence/verify-runtime-v18.py">复核脚本</a>。</p>
+<h2 id="4-正式https与页面">4. 正式HTTPS与页面</h2>
+<ul>
+<li><strong>88项正式HTTPS检查</strong>：七步状态、匿名权限、图文及原始记录、恢复摘要、累计费用、MP4和PDF范围读取。</li>
+<li><strong>222份关联资源</strong>：完整字节、SHA-256与MIME全部匹配。PDF <code>bytes=0-31</code>返回206和准确32字节。</li>
+<li><strong>6组正式布局</strong>：恢复技术卡和图文各测1440/390/320px，整页保持在视口内；恢复记录入口44px。</li>
+<li>正式320px图文点击流程图，打开1536×1024完整图片，再返回原章节；浏览器错误记录为空。</li>
+<li>本节设备为Windows IAB浏览器的三种视口，截图关联正式HTTPS地址。</li>
+</ul>
+<p><a href="/competition/recovery-assets/evidence/public-verification-v18.json">88项HTTPS结果</a> · <a href="/competition/recovery-assets/evidence/resources-public-v18.json">222份资源</a> · <a href="/competition/recovery-assets/evidence/public-layouts.json">正式页面布局</a>。</p>
+<h3 id="正式截图">正式截图</h3>
+<p><img alt="v18正式电脑恢复技术卡" src="/competition/recovery-assets/assets/public-evidence-desktop.png" loading="lazy" decoding="async"></p>
+<table>
+<thead>
+<tr>
+<th>正式390px技术卡</th>
+<th>正式320px图文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="正式手机尺寸恢复结果" src="/competition/recovery-assets/assets/public-evidence-mobile.png" loading="lazy" decoding="async"></td>
+<td><img alt="正式手机尺寸恢复图文" src="/competition/recovery-assets/assets/public-report-mobile.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/recovery-assets/evidence/screenshot-review.json">截图地址、视口、实际尺寸与SHA-256</a>。</p>
+<h2 id="5-恢复和费用">5. 恢复和费用</h2>
+<p>发布脚本在切换失败时恢复原镜像配置与原文件，并等待三个角色健康。v17原镜像、发布前数据库备份及本轮实际数据一致快照保留于服务器私有目录；Windows异机副本和DPAPI密钥保存在本机私有目录。<a href="/competition/recovery-report.html">备份恢复过程与故障注入</a>。</p>
+<p>本轮文本模型0、实际SMTP0、新增云采购0，gpt-image-2.5英文图1次。累计文本84次、公开价估算¥0.516094，图片累计13次。<a href="/competition/recovery-assets/evidence/budget-total.json">预算记录</a>。</p></main></html>

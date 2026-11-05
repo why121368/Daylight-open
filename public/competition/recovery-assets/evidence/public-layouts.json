@@ -1,0 +1,140 @@
+[
+  {
+    "budgetLinks": [
+      "/competition/recovery-assets/evidence/budget-total.json"
+    ],
+    "imageLinks": [
+      {
+        "href": "/competition/architecture.webp",
+        "imageWidth": 1215,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/dataflow.webp",
+        "imageWidth": 1215,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/performance.webp",
+        "imageWidth": 1215,
+        "naturalWidth": 0
+      }
+    ],
+    "pageWidth": 1425,
+    "recordLinks": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "recoveryTop": 23.77083396911621,
+    "url": "https://daylight.yunforis.com/evidence#recovery",
+    "width": 1440
+  },
+  {
+    "budgetLinks": [],
+    "imageLinks": [
+      {
+        "href": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "imageWidth": 1100,
+        "naturalWidth": 1536
+      }
+    ],
+    "pageWidth": 1425,
+    "recordLinks": [],
+    "url": "https://daylight.yunforis.com/competition/recovery-report.html",
+    "width": 1440
+  },
+  {
+    "budgetLinks": [
+      "/competition/recovery-assets/evidence/budget-total.json"
+    ],
+    "imageLinks": [
+      {
+        "href": "/competition/architecture.webp",
+        "imageWidth": 341,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/dataflow.webp",
+        "imageWidth": 341,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/performance.webp",
+        "imageWidth": 341,
+        "naturalWidth": 0
+      }
+    ],
+    "pageWidth": 375,
+    "recordLinks": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "recoveryTop": 24.21875,
+    "url": "https://daylight.yunforis.com/evidence#recovery",
+    "width": 390
+  },
+  {
+    "budgetLinks": [],
+    "imageLinks": [
+      {
+        "href": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "imageWidth": 0,
+        "naturalWidth": 0
+      }
+    ],
+    "pageWidth": 375,
+    "recordLinks": [],
+    "url": "https://daylight.yunforis.com/competition/recovery-report.html",
+    "width": 390
+  },
+  {
+    "budgetLinks": [
+      "/competition/recovery-assets/evidence/budget-total.json"
+    ],
+    "imageLinks": [
+      {
+        "href": "/competition/architecture.webp",
+        "imageWidth": 271,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/dataflow.webp",
+        "imageWidth": 271,
+        "naturalWidth": 1536
+      },
+      {
+        "href": "/competition/performance.webp",
+        "imageWidth": 271,
+        "naturalWidth": 0
+      }
+    ],
+    "pageWidth": 305,
+    "recordLinks": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "recoveryTop": 24.21875,
+    "url": "https://daylight.yunforis.com/evidence#recovery",
+    "width": 320
+  },
+  {
+    "budgetLinks": [],
+    "imageLinks": [
+      {
+        "href": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "imageWidth": 273,
+        "naturalWidth": 1536
+      }
+    ],
+    "pageWidth": 305,
+    "recordLinks": [],
+    "url": "https://daylight.yunforis.com/competition/recovery-report.html",
+    "width": 320
+  }
+]

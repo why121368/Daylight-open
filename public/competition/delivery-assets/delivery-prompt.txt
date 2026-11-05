@@ -1,0 +1,21 @@
+Use case: infographic-diagram
+Asset type: Daylight competition engineering report, one landscape figure
+Primary request: Explain the actual portable delivery workflow in six steps, with precise English text and a clear reading order.
+Style: Refined flat engineering infographic, warm ivory background, dark forest green typography, sage cards, amber accents. Clear sans-serif lettering, generous spacing, thin arrows, small technical icons. Match an understated productivity application.
+Composition: Three columns and two rows. Read left to right across the top row, then follow a single downward arrow at the right edge, then right to left across the bottom row. The step numbers must be 1, 2, 3 across the top and 6, 5, 4 across the bottom. Arrows must follow 1 to 2 to 3 to 4 to 5 to 6. Title at top, one short subtitle beneath it. All text stays inside the canvas.
+Text (verbatim):
+Title: "DAYLIGHT / PORTABLE DELIVERY"
+Subtitle: "From verified source to a repeatable seven-step demo"
+Card 1 title: "1  VERIFY THE SOURCE"
+Card 1 body: "Tests / Build / Corpus / Demo / Deploy files"
+Card 2 title: "2  CREATE THE PACKAGE"
+Card 2 body: "Source / Build / Evidence / Start guide"
+Card 3 title: "3  CHECK EVERY FILE"
+Card 3 body: "SHA-256 / Missing / Changed / Extra"
+Card 4 title: "4  CLEAN INSTALL"
+Card 4 body: "Empty node_modules / npm ci"
+Card 5 title: "5  RUN THE JOURNEY"
+Card 5 body: "Seven steps / Workspace / Video"
+Card 6 title: "6  RECORD THE RESULT"
+Card 6 body: "Version / Hashes / Timings"
+Constraints: English only. Render every word accurately. No invented metrics, checkmarks implying unmeasured outcomes, Chinese characters, additional text, screenshots, branding logos, watermark, decorative handwriting or 3D perspective. Each card has at most one minimal icon. Sharp, readable small text.

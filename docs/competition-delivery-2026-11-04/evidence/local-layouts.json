@@ -1,0 +1,56 @@
+[
+  {
+    "height": 900,
+    "images": [],
+    "scrollWidth": 1425,
+    "url": "http://127.0.0.1:3205/competition/reproduce.html",
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "height": 844,
+    "images": [],
+    "scrollWidth": 375,
+    "url": "http://127.0.0.1:3205/competition/reproduce.html",
+    "width": 390,
+    "ok": true
+  },
+  {
+    "height": 700,
+    "images": [],
+    "scrollWidth": 305,
+    "url": "http://127.0.0.1:3205/competition/reproduce.html",
+    "width": 320,
+    "ok": true
+  },
+  {
+    "height": 900,
+    "images": [
+      {
+        "complete": true,
+        "src": "/competition/delivery-assets/assets/delivery.webp",
+        "width": 1536
+      }
+    ],
+    "scrollWidth": 1425,
+    "url": "http://127.0.0.1:3205/competition/delivery-report.html",
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "height": 844,
+    "images": [],
+    "scrollWidth": 375,
+    "url": "http://127.0.0.1:3205/competition/delivery-report.html",
+    "width": 390,
+    "ok": true
+  },
+  {
+    "height": 700,
+    "images": [],
+    "scrollWidth": 305,
+    "url": "http://127.0.0.1:3205/competition/delivery-report.html",
+    "width": 320,
+    "ok": true
+  }
+]

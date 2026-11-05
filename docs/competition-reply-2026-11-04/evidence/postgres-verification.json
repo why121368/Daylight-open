@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-03T19:32:40.551Z",
+  "ok": true,
+  "scope": "Real PostgreSQL production storage in a new schema; original synthetic inputs and injected SMTP transport",
+  "node": "v22.23.3",
+  "schema": "reply_verify_23da57c4c5b844cca091074e516c251a",
+  "schemaRemoved": true,
+  "realModelCalls": 0,
+  "realSmtpCalls": 0,
+  "injectedTransportCalls": 2,
+  "checks": [
+    {
+      "name": "Eight concurrent prepares commit one durable reply draft",
+      "passed": true,
+      "elapsedMs": 231.47679
+    },
+    {
+      "name": "Another owner and another mailbox cannot resolve or edit the source draft",
+      "passed": true,
+      "elapsedMs": 45.454324999999926
+    },
+    {
+      "name": "Editing increments revision and stale confirmation stops before transport",
+      "passed": true,
+      "elapsedMs": 41.858018000000015
+    },
+    {
+      "name": "Pool reconnect recovers the reviewed body, thread and source identity",
+      "passed": true,
+      "elapsedMs": 65.36957599999994
+    },
+    {
+      "name": "Sending marker commits before transport and repeated confirmation calls it once",
+      "passed": true,
+      "elapsedMs": 46.23139100000003
+    },
+    {
+      "name": "Saved receipt survives a second reconnect and reopening the trace",
+      "passed": true,
+      "elapsedMs": 47.31265600000006
+    },
+    {
+      "name": "Unknown delivery remains durable and prevents another transport call",
+      "passed": true,
+      "elapsedMs": 90.33850100000006
+    },
+    {
+      "name": "Original calendar and trace rows remain byte-equivalent JSON values",
+      "passed": true,
+      "elapsedMs": 2.9290659999999207
+    }
+  ]
+}

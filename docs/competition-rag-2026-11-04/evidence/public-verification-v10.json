@@ -1,0 +1,287 @@
+{
+  "checkedAt": "2026-11-03T17:50:02.863Z",
+  "origin": "https://daylight.yunforis.com",
+  "assertions": {
+    "statuses": [
+      "completed",
+      "conflict",
+      "completed",
+      "duplicate",
+      "failed",
+      "completed",
+      "completed"
+    ],
+    "cancelledEvents": 2,
+    "tasks": 1,
+    "modelCalls": 0,
+    "persisted": false
+  },
+  "checks": [
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "bytes": 158,
+      "sha256": "5628d523479c9b8b5d888ce407f2bdb795a9692c3a95e881e0f17f56f4549b6a",
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/state",
+      "status": 401,
+      "bytes": 24,
+      "sha256": "9ae5df81a66150b59c285b977d88c172ec17a2d4e79f7b0c6c7d234513589abf",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/experience?step=8",
+      "status": 400,
+      "bytes": 78,
+      "sha256": "92184e721040abb951c7e1251f0d4288cb4f4fa1e3a7fb22db9184bdb2614d22",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/experience",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "84c563a65b18e1cea8238dbff7cd83f71f1a55f9e1259782ac803bc67d07b12d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/evidence",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "84c563a65b18e1cea8238dbff7cd83f71f1a55f9e1259782ac803bc67d07b12d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/architecture.webp",
+      "status": 200,
+      "bytes": 145242,
+      "sha256": "c8327608e14741e4e3d8a54cee5021277c37ce6cc86340b4872afc5ad7d0b9e4",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/dataflow.webp",
+      "status": 200,
+      "bytes": 117296,
+      "sha256": "74ba0623847e51a4a23b7927408e5b376c383f3972d8fb8ec530cd5ef004e248",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/performance.webp",
+      "status": 200,
+      "bytes": 60870,
+      "sha256": "d0db189f1bd3053dfd9384724793ceb0badeb7e2996e59f56606773885b9feab",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/experience-qr.png",
+      "status": 200,
+      "bytes": 4485,
+      "sha256": "6ab3f31787c5667870ca2203dc8f320b2689c887ebb6753ff9c5ec261eb6bf34",
+      "contentType": "image/png"
+    },
+    {
+      "path": "/competition/report.html",
+      "status": 200,
+      "bytes": 28937,
+      "sha256": "99c9c1395c0dd89dd8356ef9f6c48c30017102a171a525d8c25b4236bb12869b",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/performance-report.html",
+      "status": 200,
+      "bytes": 38267,
+      "sha256": "ffcad85abaa315257f6287bc3e1c0cda576ec6eff945299b355e986033b33096",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/capacity-design.html",
+      "status": 200,
+      "bytes": 41929,
+      "sha256": "61b3644933f99756385111df34bdab27d80ebcb172005d9bb78c2e0e676f76ec",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/k8s-measurements.html",
+      "status": 200,
+      "bytes": 87673,
+      "sha256": "087ab107ee44e59ac3365008884228eaee41b7180a703e43dd5147028d4f8aa4",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/reproduce.html",
+      "status": 200,
+      "bytes": 3881,
+      "sha256": "7b7df44e7eed494a3d8d078b86883d1e586f563bf9bb5250e3eabddd3a79af8d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/deployment-snapshot.html",
+      "status": 200,
+      "bytes": 13015,
+      "sha256": "8e4f0d2ae49fa9604eed584b44bbaf0bf44edbc8fcbb12536254c19bc2aea7b9",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/report-assets/evidence/model-full/summary.json",
+      "status": 200,
+      "bytes": 879,
+      "sha256": "e02ab7a5692f7694fc5442dfb76271b3f702aad125d19b909d7bdd36c3087568",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/report-assets/evidence/model-full/results.jsonl",
+      "status": 200,
+      "bytes": 29736,
+      "sha256": "6e55c71b88d5dd3317de63753ada9f7a89766f65d298064b574f46fbfea4640f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/competition/operations-report.html",
+      "status": 200,
+      "bytes": 23260,
+      "sha256": "a2cbd07783a1bd3baa7384785cd67f17c62f68c9f7e77c9498ef1452442a6b68",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/observability.webp",
+      "status": 200,
+      "bytes": 97338,
+      "sha256": "f2f588b8f94787b4414432f4b36ebde99316807c648968ba7b7edbabc71086ac",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/cost-estimate.json",
+      "status": 200,
+      "bytes": 6984,
+      "sha256": "6a30e117d47f98c2ec14c014b5ac2f90f3e803d35a02e16c8b1a07e4d74a46e1",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/cost-estimate.csv",
+      "status": 200,
+      "bytes": 1397,
+      "sha256": "d226798c31d4c71cefab358a012a9d06635ed0685badc6be50fede4b23165d5d",
+      "contentType": "text/csv; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/official-model-price.json",
+      "status": 200,
+      "bytes": 566,
+      "sha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/images/official-model-price.jpg",
+      "status": 200,
+      "bytes": 67064,
+      "sha256": "358fbf77d0c98600689471078f1a0fc48727250e142a3ad70fc3afd29452b75f",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/metrics-cloud-overhead.json",
+      "status": 200,
+      "bytes": 6468,
+      "sha256": "ca352a625d6d20b96fcdaa5bbf0762be56af8b0824b6553a104be7badf9f096d",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/metrics-live-v7.json",
+      "status": 200,
+      "bytes": 10497,
+      "sha256": "d2bfdebc8737976d95944fc968f915da3094ee997b93e7263a9615c447cac25f",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/candidate-tests-v7.txt",
+      "status": 200,
+      "bytes": 6422,
+      "sha256": "eb3c1bd942e27037f47df0ec1d0cbf1c42848e7a78b729ffec4abd7119e70adc",
+      "contentType": "text/plain; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/deploy-v7.txt",
+      "status": 200,
+      "bytes": 2879,
+      "sha256": "386bb1d3c86ec0520a5b32c77a3cb11f5b9f0c6bc5bc0bfd92ec9c404db50805",
+      "contentType": "text/plain; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/release-v7-manifest.json",
+      "status": 200,
+      "bytes": 36890,
+      "sha256": "0c041138d3dd180f9cda1054f5ea4d29ac50b46357d0ff3e65305b8f88a03003",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/public-verification-v7.json",
+      "status": 200,
+      "bytes": 6389,
+      "sha256": "0fd286acb7254ecefa87e0eaa2633fb99ce3d90e3e22d3237236c1afb555640b",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/public-metrics-off.json",
+      "status": 200,
+      "bytes": 7891,
+      "sha256": "9204930cee8107c459bc21f61e4eaf47f2a10cb3644cb92f378020abf9bb2b5f",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/public-metrics-on.json",
+      "status": 200,
+      "bytes": 7868,
+      "sha256": "a21465a53d84740dbc142f55552b6dd0ce97231df90afa19e50f30aa388a754c",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/operations-assets/images/cost-mobile.jpg",
+      "status": 200,
+      "bytes": 44189,
+      "sha256": "98734456f05a91491d349668132dd6d7fbfb95f5dc001dd030ba7c7acdbc3815",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "/competition/rag-report.html",
+      "status": 200,
+      "bytes": 25837,
+      "sha256": "4b3ee6c4cf0865b8ae54007ac4ce191774de9baa4162d3902f583059c88153b9",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/rag-evidence.webp",
+      "status": 200,
+      "bytes": 117338,
+      "sha256": "31d595e603ca16ff09f128fc955549b8e6a0fcd3829bceb42ea99d63703a1bfb",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/summary.json",
+      "status": 200,
+      "bytes": 882,
+      "sha256": "52a9f508236a6e78d3f307ce31e77179acf46a168e8b56eb13f7ae6a968a165e",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/results.jsonl",
+      "status": 200,
+      "bytes": 19360,
+      "sha256": "17ac8bea6444ca5b3c0ec899d0f4ca21d48e22271dfb87b773a872fe4bc3f2c3",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/cost-estimate.json",
+      "status": 200,
+      "bytes": 697,
+      "sha256": "d937558eda5d10f309904bf9e1b5ab6358a8c88cf3739a99c88bdaf73274d5c9",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/demo.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-31/1431534"
+    }
+  ],
+  "scope": "Anonymous public synthetic workflow, HTTPS resources, private-state denial, video range, exact local image bytes."
+}

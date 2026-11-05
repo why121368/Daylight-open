@@ -1,0 +1,5 @@
+Demo ready: http://127.0.0.1:63963/login
+User: demo / DaylightDemo2026!
+Admin: demo_admin / DaylightDemo2026!
+Evidence: E:\AAAproject\UCloud2609\Daylight\work\container-source-20261104\extracted-v22\work\demo-pgV9Zt\verification.json
+Preset data; no real mailbox, model or SMTP. Campus map is illustrative.

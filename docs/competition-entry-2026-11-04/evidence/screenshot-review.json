@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-03T21:52:06.222795+00:00",
+  "shots": [
+    {
+      "file": "assets/public-experience-desktop.png",
+      "url": "https://daylight.yunforis.com/experience",
+      "viewport": [
+        1440,
+        900
+      ],
+      "imageDimensions": [
+        1425,
+        891
+      ],
+      "sha256": "71941804892f8669aa7c11f34cca35b820b5f8e1e0882343c405287a1a44bba7",
+      "review": "CUA screenshot visually checked"
+    },
+    {
+      "file": "assets/public-experience-mobile.png",
+      "url": "https://daylight.yunforis.com/experience",
+      "viewport": [
+        390,
+        844
+      ],
+      "imageDimensions": [
+        375,
+        812
+      ],
+      "sha256": "dfbb2eb2b41c5dc5558130de6c8022ebedb5217d96cf7bc95044e40c2b689ed5",
+      "review": "CUA screenshot visually checked"
+    },
+    {
+      "file": "assets/public-report-mobile.png",
+      "url": "https://daylight.yunforis.com/competition/entry-report.html",
+      "viewport": [
+        320,
+        844
+      ],
+      "imageDimensions": [
+        305,
+        804
+      ],
+      "sha256": "f7e3506b0c06b5877f64bd05a9a106aff5f52cebc292ec9dfcada28543cb5b6e",
+      "review": "CUA screenshot visually checked"
+    }
+  ]
+}

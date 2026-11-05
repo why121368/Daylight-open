@@ -1,0 +1,9 @@
+{
+  "note": "Post-run source hashes; shared working tree was dirty and concurrent changes may exist.",
+  "hashes": {
+    "scripts/benchmark-jobs.mjs": "27ddf87314495a77c1d2115a945a630f580eaca89ed52cb9ee2510fd0fe6863c",
+    "server/jobs/repository.js": "fbb7abbaa6c0848b22c811f0b83d0610b5a384bad00ac3e66c409c9593de4df3",
+    "server/jobs/runtime.js": "e81a6d0217f54f34ed89407a8e4b26d091081a67d4d7e135d6ebc70b4c217302",
+    "server/jobs/schema.js": "142c5880ef7f0bb610dad57dc8fa961c07d13edd176b28ad756cb1bf73cdcae0"
+  }
+}

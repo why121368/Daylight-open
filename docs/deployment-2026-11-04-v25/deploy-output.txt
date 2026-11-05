@@ -1,0 +1,234 @@
+CREDENTIAL_REQUIRED
+SSH_CONNECTED
+TRANSFER_OK
+TRANSFER_OK
+TRANSFER_OK
+BACKUP=/opt/daylight-backups/before-login-trial-20261104123710
+RELEASE_HASHES_OK 724
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  86.78MB
+
+
+Step 1/9 : FROM sha256:3cdfb971a97dd1880ec51f9ad4d2d56fa83a7b0d2da4bc9aa9e4d5f6f4c6dc80
+ ---> 3cdfb971a97d
+Step 2/9 : USER root
+ ---> Running in ea52a12a7af2
+ ---> Removed intermediate container ea52a12a7af2
+ ---> 10e6c9ac0313
+Step 3/9 : RUN rm -rf /app/dist
+ ---> Running in 89956c9526a5
+ ---> Removed intermediate container 89956c9526a5
+ ---> 700d88dcaa8b
+Step 4/9 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> a36376a14d9a
+Step 5/9 : COPY --chown=node:node package.json /app/package.json
+ ---> dd1587f7714f
+Step 6/9 : COPY --chown=node:node server/ /app/server/
+ ---> cf8e54b1ab08
+Step 7/9 : COPY --chown=node:node dist/ /app/dist/
+ ---> a42ee987daab
+Step 8/9 : LABEL org.opencontainers.image.revision="de06969ae772b3d8f1cdd7239bb5ad18b8e8369d"
+ ---> Running in 6bc660fd5848
+ ---> Removed intermediate container 6bc660fd5848
+ ---> f7189260c2de
+Step 9/9 : USER node
+ ---> Running in 9953deb0e370
+ ---> Removed intermediate container 9953deb0e370
+ ---> b27ef2e521f6
+Successfully built b27ef2e521f6
+Successfully tagged daylight:public-competition-20261104-v25
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12285.815574
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 446.281591
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1400.582418
+{
+  "ok": true,
+  "fullSourceBuildSeconds": 159.0265949,
+  "linuxSourceTests": 8,
+  "realJobs": 8,
+  "realOss": 14,
+  "imageCalls": 16,
+  "textCalls": 84
+}
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-api-1  Recreate
+ Container daylight-worker-1  Recreated
+ Container daylight-scheduler-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-scheduler-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-scheduler-1  Started
+ Container daylight-worker-1  Started
+ Container daylight-api-1  Started
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-scheduler-1  Waiting
+ Container daylight-scheduler-1  Healthy
+ Container daylight-api-1  Healthy
+ Container daylight-worker-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"017b9d25-b73e-42ee-8a68-36828203d637","written":6,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"017b9d25-b73e-42ee-8a68-36828203d637","written":91,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"1e719d3a-5ee0-428f-bcc8-9597012d247b","written":159,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"3704b835-a11e-4c79-a9fc-33d80fe0fbfb","written":81,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v25 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v25 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v25 healthy restart=0 oom=false
+sha256:b27ef2e521f619283ed1364c1c66d36885baa7b4b2e4ee25430b906519586ccd
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+PUBLIC_SOURCE_CONTAINER_DELIVERY_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-login-trial-20261104123710
+
+REMOTE_EXIT 0
+{
+  "checkedAt": "2026-11-04T04:39:16.135135+00:00",
+  "sourceCommit": "de06969ae772b3d8f1cdd7239bb5ad18b8e8369d",
+  "backendSourceCommit": "a8daafc1bf88c747fb1e6104a89c56a6f90ff06b",
+  "scope": "v25 running images, complete frontend file inventory, cumulative changed backend/script bytes and live role readiness",
+  "roles": [
+    {
+      "role": "api",
+      "image": "daylight:public-competition-20261104-v25",
+      "imageId": "sha256:b27ef2e521f619283ed1364c1c66d36885baa7b4b2e4ee25430b906519586ccd",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 765,
+        "completeDistFiles": 714
+      },
+      "readiness": {
+        "ok": true,
+        "role": "api",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "017b9d25-b73e-42ee-8a68-36828203d637",
+          "written": 108,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    },
+    {
+      "role": "worker",
+      "image": "daylight:public-competition-20261104-v25",
+      "imageId": "sha256:b27ef2e521f619283ed1364c1c66d36885baa7b4b2e4ee25430b906519586ccd",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 765,
+        "completeDistFiles": 714
+      },
+      "readiness": {
+        "ok": true,
+        "role": "worker",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "1e719d3a-5ee0-428f-bcc8-9597012d247b",
+          "written": 291,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    },
+    {
+      "role": "scheduler",
+      "image": "daylight:public-competition-20261104-v25",
+      "imageId": "sha256:b27ef2e521f619283ed1364c1c66d36885baa7b4b2e4ee25430b906519586ccd",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 765,
+        "completeDistFiles": 714
+      },
+      "readiness": {
+        "ok": true,
+        "role": "scheduler",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "3704b835-a11e-4c79-a9fc-33d80fe0fbfb",
+          "written": 109,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    }
+  ],
+  "services": [
+    {
+      "Service": "api",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "caddy",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "minio",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "postgres",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "rabbitmq",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "redis",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "scheduler",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "worker",
+      "State": "running",
+      "Health": "healthy"
+    }
+  ]
+}
+
+REMOTE_EXIT 0
+TRANSFER_OK

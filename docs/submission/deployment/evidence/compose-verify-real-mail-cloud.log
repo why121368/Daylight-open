@@ -1,0 +1,20 @@
+=== Daylight real mailbox + model verification ===
+mailbox=default address=3***@qq.com imap=imap.qq.com:993 owner=c213f1bb...
+runtime=production oss=s3 fetchLimit=2 modelEmails=1 promptVersion=mail-calendar-tasks-invoices-v7
+
+existing calendar: events=16 emails=21 tasks=4
+model config: model=deepseek-v4.1-flash host=api.modelverse.cn apiKey=set
+extraction prompt: custom (2527 chars)
+
+PASS  real IMAP returns messages — 2 messages in 1616ms
+PASS  message ids are unique — unique=2/2
+PASS  message ids embed mailbox identity — sample=qq:private-c2a36c@example.invalid:1632359…
+PASS  fetch is bounded by fetchLimit — 2 of limit 2; raw reader order = 2026-10-16T01:45:26.000Z , 2026-10-16T01:45:24.000Z
+PASS  reader selection is deterministic for the same processed set — pass1=2 pass2=2
+PASS  already-processed mail is skipped without re-reading the body — known=0 stubbed=0 fresh=2
+PASS  unprocessed mail is parsed into subject and body — parsed=2/2
+PASS  newest messages read with full body — bodies=2/2 in 1254ms
+PASS  real model extraction (1/1) — latency=2199ms actions=[none] tasks=0 invoices=0
+
+=== summary: 9/9 passed ===
+usage: imapConnects=3 messagesRead=6 attachmentObjects=2 modelCalls=1 modelFailures=0

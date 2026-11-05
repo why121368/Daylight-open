@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-11-03T22:54:52.448828+00:00",
+  "sourceCommit": "332b714b630935f7a396d5580c196b1f9652b5b9",
+  "backendSourceCommit": "a8daafc1bf88c747fb1e6104a89c56a6f90ff06b",
+  "scope": "v19 running images, complete frontend file inventory, cumulative changed backend/script bytes and live role readiness",
+  "roles": [
+    {
+      "role": "api",
+      "image": "daylight:public-competition-20261104-v19",
+      "imageId": "sha256:2689195d2f2d4c7e346c590a9834784c6e332a9568e18658b573f7cba6ecd982",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 657,
+        "completeDistFiles": 622
+      },
+      "readiness": {
+        "ok": true,
+        "role": "api",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "9ae91805-2fa6-4d17-9ffb-24e5c636a702",
+          "written": 747,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    },
+    {
+      "role": "worker",
+      "image": "daylight:public-competition-20261104-v19",
+      "imageId": "sha256:2689195d2f2d4c7e346c590a9834784c6e332a9568e18658b573f7cba6ecd982",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 657,
+        "completeDistFiles": 622
+      },
+      "readiness": {
+        "ok": true,
+        "role": "worker",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "29c3179c-c267-428e-b582-a42e557d251c",
+          "written": 1242,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    },
+    {
+      "role": "scheduler",
+      "image": "daylight:public-competition-20261104-v19",
+      "imageId": "sha256:2689195d2f2d4c7e346c590a9834784c6e332a9568e18658b573f7cba6ecd982",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false,
+      "byteVerification": {
+        "verifiedFiles": 657,
+        "completeDistFiles": 622
+      },
+      "readiness": {
+        "ok": true,
+        "role": "scheduler",
+        "draining": false,
+        "metrics": {
+          "enabled": true,
+          "runId": "7aaec4fb-c470-477d-8889-7e20cfaf6a52",
+          "written": 215,
+          "dropped": 0,
+          "sinkError": null
+        }
+      }
+    }
+  ],
+  "services": [
+    {
+      "Service": "api",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "caddy",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "minio",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "postgres",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "rabbitmq",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "redis",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "scheduler",
+      "State": "running",
+      "Health": "healthy"
+    },
+    {
+      "Service": "worker",
+      "State": "running",
+      "Health": "healthy"
+    }
+  ]
+}

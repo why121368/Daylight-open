@@ -1,0 +1,82 @@
+{
+  "at": "2026-11-03T23:38:06.409969+00:00",
+  "scope": "Actual compressed delivery, new extraction and empty node_modules installation on Windows",
+  "archive": "daylight-demo-20261103T233654.tar.gz",
+  "archiveSha256": "46a5570589a94a35fa3542173bedb66d401180b91fec60e267f8b7c3a27dad24",
+  "archiveBytes": 112500706,
+  "sourceCommit": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+  "sourceDigest": "99e52b04c54b8cb6c8b0ce4bca90bddbdb6e79224215d99c38d7bc7644a5cd62",
+  "buildDigest": "f156f96fd51b2f4d1d3b109cfc073242016f208ae0ac23fbbbe7ffc4c07c69ec",
+  "archiveFilesIncludingManifest": 2346,
+  "extractionMs": 9107,
+  "emptyNodeModulesBeforeInstall": true,
+  "node": "v24.14.0",
+  "npm": "11.9.0",
+  "npmCache": "Existing machine cache may be reused; no node_modules was copied.",
+  "stages": [
+    {
+      "name": "integrity-before-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedMs": 21912,
+      "log": "integrity-before-install.txt"
+    },
+    {
+      "name": "clean-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedMs": 61135,
+      "log": "clean-install.txt"
+    },
+    {
+      "name": "integrity-after-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedMs": 1685,
+      "log": "integrity-after-install.txt"
+    },
+    {
+      "name": "extracted-demo-check",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedMs": 7020,
+      "log": "extracted-demo-check.txt"
+    },
+    {
+      "name": "integrity-after-fault-restore",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedMs": 1376,
+      "log": "integrity-after-fault-restore.txt"
+    }
+  ],
+  "faults": [
+    {
+      "name": "same-length-source-change",
+      "file": "server/experience.js",
+      "detected": true,
+      "message": "Delivery file mismatch: server/experience.js"
+    },
+    {
+      "name": "missing-build-image",
+      "file": "dist/logo-small.webp",
+      "detected": true,
+      "message": "Missing delivery file: dist/logo-small.webp"
+    },
+    {
+      "name": "changed-start-guide",
+      "file": "START-HERE.md",
+      "detected": true,
+      "message": "Delivery file mismatch: START-HERE.md"
+    },
+    {
+      "name": "unexpected-executable",
+      "file": "server/unexpected-delivery-check.js",
+      "detected": true,
+      "message": "Unexpected delivery file: server/unexpected-delivery-check.js"
+    }
+  ],
+  "demoHttpRequests": 24,
+  "ok": true,
+  "totalElapsedMs": 106744
+}

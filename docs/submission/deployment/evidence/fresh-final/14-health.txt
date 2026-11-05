@@ -1,0 +1,11 @@
+GET http://127.0.0.1:3100/health/live -> 200 {"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"fresh-final","written":4,"dropped":0,"sinkError":null}}
+GET http://127.0.0.1:3100/health/ready -> 200 {"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"fresh-final","written":4,"dropped":0,"sinkError":null}}
+GET http://192.0.2.10:3100/health/ready -> 200 {"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"fresh-final","written":4,"dropped":0,"sinkError":null}}
+GET http://192.0.2.10:3100/ -> 200 <!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121412" />
+worker ready: 200 {"ok":true,"role":"worker","draining":false,"metrics":{"enabled":true,"runId":"fresh-final","written":86,"dropped":0,"sinkError":null}}
+scheduler ready: 200 {"ok":true,"role":"scheduler","draining":false,"metrics":{"enabled":true,"runId":"fresh-final","written":33,"dropped":0,"sinkError":null}}

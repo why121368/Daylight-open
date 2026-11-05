@@ -1,0 +1,9 @@
+PASS concurrent idempotent enqueue, owner/tenant isolation, mailbox ordering
+PASS expired leases fence stale writes and checkpoint effects survive redelivery exactly once
+PASS lease expiry inside a transaction rolls back both effects and checkpoint
+PASS execution failures exhaust a bounded budget; manual retry retains fencing
+PASS mailbox sync history drives consecutive-failure backoff (real SQL ordering)
+PASS outbox claims reject stale confirms after lease takeover
+PASS real RabbitMQ confirms, duplicate delivery after lost outbox commit, consumer reconnect
+PASS worker heartbeat spans multiple leases and checkpoint resumes without duplicate effects
+Real isolated PostgreSQL/RabbitMQ verification passed. No mailbox/model calls.

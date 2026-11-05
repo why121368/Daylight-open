@@ -1,0 +1,748 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daylight 分布式容量与容错设计（v1，目标 3k 成功 QPS） · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="daylight-分布式容量与容错设计v1目标-3k-成功-qps">Daylight 分布式容量与容错设计（v1，目标 3k 成功 QPS）</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#daylight-分布式容量与容错设计v1目标-3k-成功-qps">Daylight 分布式容量与容错设计（v1，目标 3k 成功 QPS）</a><ul>
+<li><a href="#0-已确认的三个约束本轮设计的边界">0. 已确认的三个约束（本轮设计的边界）</a></li>
+<li><a href="#1-决定设计的三条实测事实">1. 决定设计的三条实测事实</a><ul>
+<li><a href="#从这三条事实推出的设计结论先给结论">从这三条事实推出的设计结论（先给结论）</a></li>
+</ul>
+</li>
+<li><a href="#2-容量模型可复算改完要用同一把尺子复测">2. 容量模型（可复算，改完要用同一把尺子复测）</a><ul>
+<li><a href="#21-公式">2.1 公式</a></li>
+<li><a href="#22-实测输入缓存命中路径">2.2 实测输入（缓存命中路径）</a></li>
+<li><a href="#23-反推到-3k">2.3 反推到 3k</a></li>
+</ul>
+</li>
+<li><a href="#3-目标拓扑7-台怎么分工不加机器">3. 目标拓扑：7 台怎么分工（不加机器）</a></li>
+<li><a href="#4-入口层设计p0本轮最痛的一处">4. 入口层设计（P0，本轮最痛的一处）</a><ul>
+<li><a href="#41-现状问题都有实测">4.1 现状问题（都有实测）</a></li>
+<li><a href="#42-实际落地的形态workcloud-perfk3smanifests15-ingressyaml">4.2 实际落地的形态（work/cloud-perf/k3s/manifests/15-ingress.yaml）</a></li>
+<li><a href="#43-验收必须能复现">4.3 验收（必须能复现）</a></li>
+</ul>
+</li>
+<li><a href="#5-应用层设计p0p1">5. 应用层设计（P0–P1）</a><ul>
+<li><a href="#51-三处必改不改进加副本也到不了-3k">5.1 三处必改（不改进，加副本也到不了 3k）</a></li>
+<li><a href="#52-首次中断时间要压下来">5.2 首次中断时间要压下来</a></li>
+</ul>
+</li>
+<li><a href="#6-数据层设计p2p3">6. 数据层设计（P2–P3）</a></li>
+<li><a href="#7-任务层设计p3p4">7. 任务层设计（P3–P4）</a></li>
+<li><a href="#8-扩缩容策略信号选错比不扩更糟">8. 扩缩容策略（信号选错比不扩更糟）</a></li>
+<li><a href="#9-测量装置也要一并设计否则-3k-无法被证明">9. 测量装置也要一并设计（否则 3k 无法被证明）</a></li>
+<li><a href="#10-分阶段实施与逐阶段验收">10. 分阶段实施与逐阶段验收</a></li>
+<li><a href="#11-成本与取舍明确写出来">11. 成本与取舍（明确写出来）</a></li>
+<li><a href="#12-明确不宣称写下来是为了不改口径">12. 明确不宣称（写下来是为了不改口径）</a></li>
+<li><a href="#13-与现有文档的关系">13. 与现有文档的关系</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>更新日期：2026-10-18（北京时间）。本文件是<strong>设计</strong>，不是验收记录：文中每一项都标注
+「已实现 / 本轮已修 / 规划中 / 待验证」，未验证的一律不许当成已达标。
+所有数字都能回溯到 <a href="/competition/k8s-measurements.html"><code>work/cloud-perf/results-k8s/REPORT.md</code></a> 那一轮实测。</p>
+<h2 id="0-已确认的三个约束本轮设计的边界">0. 已确认的三个约束（本轮设计的边界）</h2>
+<table>
+<thead>
+<tr>
+<th>约束</th>
+<th>取值</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目标规模</td>
+<td><strong>3k 成功 QPS</strong>，并留可复算的扩容路径</td>
+<td>决定副本数与入口层规模，见 §3</td>
+</tr>
+<tr>
+<td>资源边界</td>
+<td><strong>只在现有 7 台内做，不加机器</strong></td>
+<td>集群总共 <strong>28 核 / 51 GB</strong>（7 × 4 核 / 7.3 GB），见 §4</td>
+</tr>
+<tr>
+<td>首要目标</td>
+<td>比赛可验证优先（自建组件、可复现、证据可复核）</td>
+<td>不依赖云托管；测量装置本身也要给出证据，见 §10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-决定设计的三条实测事实">1. 决定设计的三条实测事实</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>事实</th>
+<th>实测数字</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>应用不是瓶颈</strong>（缓存命中路径）</td>
+<td>3 副本合计 CPU 均值 <strong>0.24–0.38 核</strong>（峰值 1.04/3 核）；应用内在途请求均值 <strong>3.56</strong> / 峰值 <strong>24</strong>（客户端压 50–200 线程）；服务端 p50 <strong>8.4 ms 三档不涨</strong></td>
+<td>REPORT §7.4</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>瓶颈是「响应体字节 × 搬运次数」，落脚在入口与压测源</strong></td>
+<td><code>health</code>（366 B）@同机 <strong>2051 QPS</strong>；<code>state</code>（175 KB）<strong>594</strong>；绕开 nginx LB 直打 NodePort <strong>920（+55%）</strong>；此时 node-03（4 核，同时跑 JMeter + nginx LB + Prometheus）整机 CPU <strong>99%</strong>、nginx 峰值 <strong>2.3 核</strong></td>
+<td>REPORT §7.4 天花板定位</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>读缓存已经把「每次整份装配」消掉了，但只在单进程内</strong></td>
+<td>40 527 个请求<strong>全部 <code>result=hit</code></strong>（miss/stale/unavailable 各 0）；整轮仅 166 次快照</td>
+<td>REPORT §7.4 缓存证据</td>
+</tr>
+</tbody>
+</table>
+<p>补充两条与「容错」直接相关的实测（基线故障矩阵）：
+跨区（az-b）整区下线只丢 3/40 个探针请求；控制面 3→2 丢 4/32；<strong>删 1 个 api Pod 首次中断 12.9 s</strong>（偏长，见 §5.2）；
+PG 主库被删后 CNPG 自动提升、首次中断 4.9 s（REPORT §5、§6）。</p>
+<h3 id="从这三条事实推出的设计结论先给结论">从这三条事实推出的设计结论（先给结论）</h3>
+<ol>
+<li><strong>3k 在 7 台内可行，但有一个硬前提：响应体从 175 KB 降到 ≤20 KB。</strong>
+   否则 3k × 175 KB = <strong>525 MB/s</strong>，按改造前实测的入口成本（594 QPS 吃 2.3 核，且入口与压测机同机抢 CPU）
+   线性外推需要 ~11.6 核<strong>只用来搬字节</strong> —— 相当于 3 台节点的全部 CPU 什么都不干只做搬运，不可行。
+   降到 20 KB 后总量 60 MB/s，入口只要 ~1.2 核。
+   <strong>本轮落地入口层后这条结论没有变</strong>：同口径主读路径（175 KB）已到 <strong>1018 成功 QPS</strong>（REPORT §7.5），
+   但 <code>state-all</code>（3.34 MB）在<strong>两种入口下都卡在 ~60 QPS</strong> —— 字节量才是那条路的约束。</li>
+<li><strong>入口层必须从「压测机上的单容器」变成「跨区多副本」，且压测源与入口彻底分开。</strong>
+   改造前：入口 nginx 与 JMeter、Prometheus 挤在 node-03 上，整机 99% 时<strong>既是 SPOF 又是吞吐上限</strong>（实测）。
+   <strong>本轮已落地</strong>（3 副本跨 3 区，形态见 §4.2、验收见 §4.3）：同口径 <strong>589 → 1018 成功 QPS（1.73×）</strong>，
+   p50 65 → 27 ms；负载下删 1 个入口副本探针 0/222 失败。详见 REPORT §7.5。</li>
+<li><strong>API 副本不需要多</strong>：按 §3 公式，3k 只需 <strong>3–6 个副本</strong>；加副本解决不了字节问题，只会加连接。</li>
+<li><strong>容错缺口只有三块</strong>（其余已有）：调度器单副本、MinIO 单实例的附件语义、PG 卷是 <code>local-path</code>（节点本地盘）的备份恢复。</li>
+</ol>
+<h2 id="2-容量模型可复算改完要用同一把尺子复测">2. 容量模型（可复算，改完要用同一把尺子复测）</h2>
+<h3 id="21-公式">2.1 公式</h3>
+<pre><code>所需 API 副本数   = ceil( 峰值QPS × 单请求CPU秒 / (单副本CPU上限 × 目标利用率) )
+所需入口副本数    = ceil( 峰值QPS × 单请求入口CPU秒 / (单节点可用核 × 目标利用率) )
+PG 连接上限约束   = maxReplicas × (业务池 + 校验池 + 探针) + 后台任务预留 ≤ PG max_connections
+</code></pre>
+<h3 id="22-实测输入缓存命中路径">2.2 实测输入（缓存命中路径）</h3>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>实测值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单请求应用 CPU</td>
+<td><strong>≈ 0.65 ms</strong>（0.38 核 ÷ 589 QPS）</td>
+<td>175 KB 响应体，绝大部分是序列化与 socket 写；不能当常数用，改响应体后必须重测</td>
+</tr>
+<tr>
+<td>单请求入口（nginx）CPU</td>
+<td><strong>≈ 3.9 ms</strong>（2.3 核 ÷ 594 QPS）</td>
+<td>同上，与响应体字节强相关</td>
+</tr>
+<tr>
+<td>单请求固定传输成本</td>
+<td>≈ 0.49 ms</td>
+<td>health 档 2051 QPS 反推</td>
+</tr>
+<tr>
+<td>每 MB 响应体搬运成本</td>
+<td><strong>≈ 6.9 ms（≈145 MB/s）</strong></td>
+<td>五个点拟合；这是<strong>测量链路</strong>的成本，入口层同量级</td>
+</tr>
+<tr>
+<td>PG 每请求 SQL 条数（命中）</td>
+<td>1 条校验 <code>select</code> + 0 条业务 SQL</td>
+<td>校验池埋点<strong>已落地</strong>（<code>pg.validation.*</code> 前缀，<code>infra-pool-metrics.test.js</code> 钉住）；条数待云端复测确认</td>
+</tr>
+<tr>
+<td>快照装载成本（未命中才付）</td>
+<td>p50 <strong>80.7 ms</strong> / p95 <strong>425.5 ms</strong> / max <strong>652.7 ms</strong>（166 次）</td>
+<td><code>storage.snapshot.ms</code>；这期间占一条业务连接</td>
+</tr>
+<tr>
+<td>单副本资源</td>
+<td>requests 400m / limits 1500m（1.5 核），512Mi / 2Gi</td>
+<td><code>manifests/10-app.yaml</code>，已实现</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-反推到-3k">2.3 反推到 3k</h3>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>应用 CPU 总需求</th>
+<th>入口 CPU 总需求</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>响应体 <strong>175 KB</strong>（现状默认）</td>
+<td>3k × 0.65 ms ≈ <strong>2.0 核</strong></td>
+<td>3k × 3.9 ms ≈ <strong>11.7 核</strong></td>
+<td>入口吃掉 3 台节点全部 CPU → <strong>不可行</strong></td>
+</tr>
+<tr>
+<td>响应体 <strong>145 KB</strong>（只做正文截断）</td>
+<td>≈ 1.7 核</td>
+<td>≈ 9.7 核</td>
+<td><strong>仍然不可行</strong>：正文截断只省 17%（实测）</td>
+</tr>
+<tr>
+<td>响应体 <strong>≤20 KB</strong>（列表字段投影）</td>
+<td>≈ 0.3–0.6 核（估算）</td>
+<td>≈ 1.2–2.0 核</td>
+<td><strong>可行</strong>：入口 2–3 副本，API 3–6 副本</td>
+</tr>
+</tbody>
+</table>
+<p><strong>必须把这条说清楚</strong>（前一版这里写错了）：能到 20 KB 的不是"截断邮件正文"，而是<strong>列表字段投影</strong> ——
+列表只需要 <code>id / subject / sender / receivedAt / category / status / extraction.summary</code> 这类标识与摘要字段，
+而 <code>body + html + extraction 明细 + attachments</code> 合计占 <code>emails</code> 的 58%。正文截断（<code>body=summary</code>）
+已经落地在线上（前端默认走它，详见 §5.1），实测把混合视图从 3.34 MB 压到 554 KB，
+但单邮箱视图只从 175 KB 压到 145 KB —— <strong>距离 20 KB 还差列表字段投影 + 分页</strong>。</p>
+<p><strong>目标配置（3k，均含 N+1 与「丢一个可用区」的余量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>副本</th>
+<th>放置</th>
+<th>资源</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td><strong>4</strong>（HPA 3–6）</td>
+<td>强制跨 3 个 zone，同 zone 内尽量散开</td>
+<td>requests 400m / limits 1500m</td>
+<td>3k×0.3ms≈0.9 核；4 副本留 AZ 级 N+1；上限 6 由 PG 连接公式约束</td>
+</tr>
+<tr>
+<td>入口（nginx）</td>
+<td><strong>3</strong></td>
+<td>固定在 3 个不同 zone 的 3 台节点（见 §4）</td>
+<td>requests 300m / limits 1000m</td>
+<td>60 MB/s 总量，实测每 100 QPS@175KB≈0.4 核 → 20 KB 下 ≈0.04 核</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td>2（KEDA 1–6，按队列深度）</td>
+<td>任意</td>
+<td>见清单</td>
+<td>队列积压是唯一有意义的伸缩信号</td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td><strong>2</strong>（1 主 1 备，Lease 选主）</td>
+<td>不同 zone</td>
+<td>200m/800m</td>
+<td>现在是单副本 <code>Recreate</code>=冷启动即断（§7）</td>
+</tr>
+</tbody>
+</table>
+<p>PG 连接校验：<code>6 × (8 业务 + 4 校验 + 1 探针) = 78 ≤ 200 − 预留</code> ✓ 有余量（当前生产实际只用了个位数连接）。
+<strong>这条公式必须写进巡检</strong>：以后谁把 HPA 上限调到 15，连接池就会成为新的断崖。</p>
+<h2 id="3-目标拓扑7-台怎么分工不加机器">3. 目标拓扑：7 台怎么分工（不加机器）</h2>
+<p>现状（实测，<code>kubectl get pods -o wide</code>）：4 核节点上同时跑着 1 个 api + 依赖 + （node-03）JMeter/入口/Prometheus，
+<strong>没有任何一台是「专职入口」</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>可用区</th>
+<th>现状角色</th>
+<th><strong>目标角色</strong></th>
+<th>变更</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>node-01</td>
+<td>az-i</td>
+<td>k3s server、api、worker、minio-init</td>
+<td>k3s server、<strong>入口副本 A</strong>、api、worker</td>
+<td>加入口</td>
+</tr>
+<tr>
+<td>node-02</td>
+<td>az-i</td>
+<td>k3s server、<strong>PG 主库</strong>、Redis-0、api</td>
+<td>不动（主库所在节点不再兼职）</td>
+<td>迁走 api</td>
+</tr>
+<tr>
+<td>node-03</td>
+<td>az-i</td>
+<td>k3s server、RabbitMQ-1、Sentinel-0、api</td>
+<td><strong>专职压测/观测节点</strong>：JMeter + Prometheus，<strong>不跑入口、尽量不跑 api</strong></td>
+<td><strong>把入口搬走</strong>（本轮最大变更）</td>
+</tr>
+<tr>
+<td>node-04</td>
+<td>az-b</td>
+<td>k3s server、Redis-1、RabbitMQ-2、api、worker</td>
+<td>api、worker、<strong>入口副本 B</strong></td>
+<td>加入口</td>
+</tr>
+<tr>
+<td>node-05</td>
+<td>az-b</td>
+<td>k3s agent、<strong>PG 备库</strong>、Sentinel-2、api</td>
+<td>不动</td>
+<td>—</td>
+</tr>
+<tr>
+<td>node-06</td>
+<td>az-j</td>
+<td>k3s server、<strong>PG 备库</strong>、MinIO-0、api、scheduler</td>
+<td>api、scheduler、<strong>入口副本 C</strong></td>
+<td>加入口</td>
+</tr>
+<tr>
+<td>node-07</td>
+<td>az-j</td>
+<td>k3s agent、Redis-2、RabbitMQ-0、Sentinel-1、api、worker</td>
+<td>不动</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>要点：
+- <strong>入口 3 副本固定落在 3 个不同可用区</strong>（node-01 / node-04 / node-06），任一台整机挂掉只损失 1/3 入口；
+- <strong>node-03 只做压测与观测</strong>（它就是本轮实测的瓶颈源），压测时不再自压自；
+- <strong>主库节点（node-02）不再兼职 api</strong>：删主库+提升期间它的 CPU 波动不该影响业务副本的调度决策。</p>
+<h2 id="4-入口层设计p0本轮最痛的一处">4. 入口层设计（P0，本轮最痛的一处）</h2>
+<h3 id="41-现状问题都有实测">4.1 现状问题（都有实测）</h3>
+<ol>
+<li>单实例：入口 nginx 是 node-03 上的一个容器 → <strong>SPOF</strong>；</li>
+<li>与 JMeter、Prometheus 同机 4 核 → 实测峰值 <strong>2.3 核</strong>，整机 <strong>99%</strong>，<code>state</code> 档 QPS 卡在 594；</li>
+<li>绕开它直打 NodePort，<strong>+55%（594 → 920）</strong> —— 说明它自己就是瓶颈；</li>
+<li>两处入口的重试策略是<strong>两种相反的毛病</strong>（这里先前写反了，已按实测更正）：</li>
+<li>容器 LB（压测装置）：<code>proxy_next_upstream error timeout</code>，端点被摘空时直接 502，没有跨副本兜底；</li>
+<li><strong>公网边缘 nginx（node-07，真正的用户入口）</strong>：<code>proxy_next_upstream error timeout http_502 http_503 http_504</code><ul>
+<li><code>max_fails=2 fail_timeout=5s</code> + <code>worker_connections 768</code>。<strong>这一条才是历史上刷出 78221 个 502 的成因</strong>：
+ 应用的 503 语义是「过载背压，可重试，带 Retry-After」，一旦被当成上游故障，nginx 就把每个请求
+ 放大成 3 次上游尝试，并按 <code>max_fails</code> 把 3 个上游逐个摘除，最后在 <code>no live upstreams</code> 状态
+ 对<strong>所有</strong>请求秒回 502 —— 故障被从「一个后端过载」放大成「入口全体不可用」。
+ 所以「让入口能兜底」的正确做法<strong>不是</strong>放开 502/503 重试，而是①上游健康判定交给 k8s readiness，
+ ②入口自身多副本跨区，③入口不设 <code>max_fails</code> 被动摘除（见 §4.2）。</li>
+</ul>
+</li>
+</ol>
+<h3 id="42-实际落地的形态workcloud-perfk3smanifests15-ingressyaml">4.2 实际落地的形态（<code>work/cloud-perf/k3s/manifests/15-ingress.yaml</code>）</h3>
+<p><strong>入口从「node-03 上的单容器」变成「集群内 3 副本 Deployment + NodePort 30081」</strong>，
+不新增机器、不动安全组（公网仍只从 node-07 进）。逐条对应上面的四个问题：</p>
+<table>
+<thead>
+<tr>
+<th>设计点</th>
+<th>落地做法</th>
+<th>为什么这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 副本跨 3 区（不是单实例）</td>
+<td>Deployment <code>replicas: 3</code> + <code>topologySpreadConstraints{topologyKey: daylight.dev/zone, whenUnsatisfiable: DoNotSchedule, maxSkew: 1}</code>，加 <code>PodDisruptionBudget{minAvailable: 2}</code></td>
+<td>让「打掉一个区最多损失 1/3 入口」是<strong>结构性保证</strong>，不是调度器碰巧这么放；<code>DoNotSchedule</code> 保证宁可 Pending 也不挤在同一个区</td>
+</tr>
+<tr>
+<td>上游不再写死节点 IP</td>
+<td><code>upstream daylight_api { server daylight-api:3000 }</code>（ClusterIP，kube-proxy 维护 endpoint 集合）</td>
+<td>节点 IP 不进配置；Pod 不健康由 k8s 自动摘除，不再依赖 nginx 的被动健康检查</td>
+</tr>
+<tr>
+<td>健康判定归 readiness，不归 nginx</td>
+<td><code>max_fails=0</code>（<strong>关闭被动健康检查</strong>）+ 上游只留 <code>error timeout</code> 重试</td>
+<td>根因见 §4.1 第 4 条：<code>max_fails</code> + 重试 503 会把上游逐个摘空。503 是背压语义，必须原样透传给客户端（带 <code>Retry-After</code>），不能当成上游故障</td>
+</tr>
+<tr>
+<td>大响应体不落磁盘</td>
+<td><code>listen 8080</code>；<code>proxy_buffer_size 16k / proxy_buffers 16 32k / proxy_busy_buffers_size 64k</code>；<code>worker_connections 16384</code>；<code>upstream keepalive 64</code></td>
+<td>175 KB（列表）/ 3.3 MB（混合视图）的响应若被默认 8×4k 缓冲推到临时文件，入口就变成磁盘队列（与实测「每 MB 6.9 ms」同形）。<code>keepalive</code> 复用后端连接，省掉每请求三次握手</td>
+</tr>
+<tr>
+<td>入口可自证（可观测）</td>
+<td><code>location = /lb-health { return 200 'ok'; }</code>（不经过后端）+ <code>add_header X-Daylight-Ingress $hostname always</code> + <code>access_log off</code>（压测期不写盘）/ <code>error_log /dev/stderr warn</code></td>
+<td><code>/lb-health</code> 供 k8s 探针与巡检；响应头用来证明「请求真的散布在多个入口副本上」（本轮验收就靠它）</td>
+</tr>
+<tr>
+<td>满足 <code>restricted</code> 安全策略</td>
+<td><code>runAsNonRoot</code> + <code>runAsUser/Group/fsGroup: 101</code> + <code>seccompProfile: RuntimeDefault</code> + <code>capabilities.drop: [ALL]</code> + <code>allowPrivilegeEscalation: false</code> + 配置/pid/cache 全部走 <code>emptyDir</code></td>
+<td>命名空间是 <code>enforce=baseline</code>、<code>warn/audit=restricted</code>。dropping ALL caps 后绑不上特权端口 80，所以<strong>副本内部听 8080</strong>，对外由 Service 把 80→8080（标准无特权写法）</td>
+</tr>
+<tr>
+<td>故障切换要能在分钟级观察到</td>
+<td><code>terminationGracePeriodSeconds: 30</code> + <code>preStop: sleep 5</code>（先摘端点再退出）+ 驱逐容忍 <code>tolerationSeconds: 60</code></td>
+<td>默认 300s 的驱逐时限太长，演练里看不到切换；<code>preStop</code> 消掉「端点已摘、连接还在打」的窗口</td>
+</tr>
+<tr>
+<td>压测源与入口彻底分开</td>
+<td>入口副本与压测机<strong>不同机</strong>；容量档期间 <code>cordon node-03</code> 并把落在它上面的 api 副本重排走</td>
+<td>node-03 让给 JMeter + Prometheus，它不再在测量链路上</td>
+</tr>
+</tbody>
+</table>
+<p>资源按「实测成本」给：<code>requests 500m / limits 2 核</code>。2 核上限是因为实测 594 QPS@175 KB 时入口吃 2.3 核
+（每请求 ≈3.9 ms），给足了才不会在大响应档被 CFS 配额掐死；投影到 20 KB 量级后应再回调（§3 容量公式）。</p>
+<h3 id="43-验收必须能复现">4.3 验收（必须能复现）</h3>
+<table>
+<thead>
+<tr>
+<th>验收项</th>
+<th>方法</th>
+<th>通过标准</th>
+<th><strong>本轮实测（2026-10-18，<code>4ca9658</code>）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入口不再单点</td>
+<td>杀掉 1 个入口副本，同时 250 ms 业务探针</td>
+<td>错误率 &lt; 0.5%，<strong>无「无可用上游」窗口</strong></td>
+<td>✅ <strong>0/222 探针失败（0%）</strong>、错误跨度 0 s、首次中断 0 s；并发负载 144 789 样本 <strong>0 失败</strong>；<code>/lb-health</code> 故障期间全程 200；新副本 2.1 s 就绪。证据 <code>faults/ingress-pod-kill/</code></td>
+</tr>
+<tr>
+<td>入口不拖吞吐</td>
+<td>同并发下对比「经入口」与「直打 NodePort」</td>
+<td>两者差距 ≤ 10%（改造前 55%）</td>
+<td>✅ 同口径 <code>state@50/100/200</code> 从 <strong>588.9 / 589.0 / 551.7</strong> 提到 <strong>1018.1 / 948.5 / 912.4 成功 QPS</strong>（1.73× / 1.61× / 1.65×），并已<strong>超过</strong>改造前「绕开 LB 直打 NodePort」的 920.5（即入口不再是那个 55% 差距的来源）；客户端 p50 65→27 ms、p95 156→96 ms</td>
+</tr>
+<tr>
+<td>入口不共享瓶颈</td>
+<td>压测时采 node-03 整机 CPU</td>
+<td>入口压测时 node-03 不再是唯一 99% 的节点</td>
+<td>✅ 容量档期间 <code>cordon node-03</code> 且 api 副本全部重排走，入口副本落在 node-04/02/06（跨 3 区）；应用侧全程只吃 0.6–0.9 个核</td>
+</tr>
+<tr>
+<td>公网入口也走入口层</td>
+<td>改 node-07 边缘 nginx 上游并复验</td>
+<td>公网探活正常且落在多副本上</td>
+<td>✅ <code>/health/live</code> 8/8 200；公网根路径 12 次命中 3 个不同入口副本。见 <code>EDGE-CUTOVER.md</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>数字口径提醒</strong>：本表容量数字全部来自 JMeter 侧（完整）；服务端埋点在 B2/A 两档用的旧收集器会对大窗口静默截断约 20%（缺陷 22），故不作为容量证据。</p>
+<h2 id="5-应用层设计p0p1">5. 应用层设计（P0–P1）</h2>
+<h3 id="51-三处必改不改进加副本也到不了-3k">5.1 三处必改（不改进，加副本也到不了 3k）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>改动</th>
+<th>现状证据</th>
+<th>收益</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td><strong>列表字段投影/分页</strong>：列表只返回标识与摘要字段，详情按需拉</td>
+<td>实测（<code>curl</code> 线上 4ca9658 镜像，字节数为响应体）：<code>/api/state</code> <strong>174 777 B</strong> → <code>?body=summary</code> <strong>145 031 B（仅 −17%）</strong>；<code>?scope=all</code> <strong>3 339 505 B</strong> → 加 <code>body=summary</code> <strong>554 510 B（−83%）</strong>。字段拆解（30 封邮件 / 46 条日程）：<code>emails</code> 占 <strong>81.1%</strong>，其中 <code>body</code> 22.4% + <code>html</code> 21.7% + <code>extraction</code> 7.7% + <code>attachments</code> 6.5% + <code>id</code> 3.2%；<code>events</code> 8.2%、<code>settings</code> 6.5%、<code>tasks</code> 4.1%</td>
+<td>3k 的<strong>使能项</strong>（§2.3）</td>
+<td>前端要改取数方式；需要灰度与兼容期</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>~~不要在持连接期间做装配~~ <strong>（核对后：已修，不是待修项）</strong></td>
+<td><code>createStorageSnapshot</code> 在 <code>finally</code> 里就 <code>client.release()</code>，路由装配发生在<strong>释放之后</strong>（<code>server/storage/index.js</code>）。真正测到的是<strong>快照装载成本</strong>：<code>storage.snapshot.ms</code> p50 <strong>80.7 ms</strong> / p95 <strong>425.5 ms</strong> / max <strong>652.7 ms</strong>（整轮仅 166 次，即只有缓存未命中才付）</td>
+<td>待改的是「装载时长」与「每个副本各自冷启动」，不是装配</td>
+<td>见下方 A2′</td>
+</tr>
+<tr>
+<td>A3</td>
+<td><strong>共享读缓存（Redis）+ 校验池埋点</strong>（埋点已落地：<code>pg.validation.*</code>）</td>
+<td>缓存 100% 命中但<strong>只在单进程内</strong>；新 Pod 冷启动要重装；校验池原先没埋点（缺陷 20）</td>
+<td>冷启动不打库；跨副本共享热数据；校验成本可测</td>
+<td>Redis 往返（~0.2 ms）+ 失效协议</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>A2′ 才是真正剩下的那一项</strong>（原文把问题定位错了，这里更正）：冷路径的成本不在"装配时占着连接"，
+而在<strong>每次未命中都要重新装载一份完整快照</strong>——p50 80.7 ms、p95 425.5 ms，且这期间占一条业务连接。
+3 副本 × 8 连接的池，在 p95 装载时长下每秒只能支撑约 19 次冷装载。
+所以正确改法是：<strong>① A3 共享缓存</strong>（让"冷"只发生一次，而不是每个副本各一次）；
+<strong>② 减小被装载的数据量</strong>（列表投影同样作用于装载层，而不是只作用于响应体）。
+「持连接做装配」这条已在 <code>215ce86</code> 修掉，<strong>不再列为待办</strong>。</p>
+</blockquote>
+<h3 id="52-首次中断时间要压下来">5.2 首次中断时间要压下来</h3>
+<p>实测「删 1 个 api Pod，首次中断 12.9 s」偏长。清单里已有 <code>preStop: sleep 8</code>（先摘端点再退出），
+但仍出现秒级中断，说明<strong>端点摘除与连接排空的时序还没对齐</strong>。设计：</p>
+<ul>
+<li><code>preStop</code> 改为「先让 <code>/health/ready</code> 返回 503（draining）→ 等 2 个探针周期 → sleep」，
+  而不是固定 sleep 8：让「摘除」这件事由探针驱动，不靠猜时间；</li>
+<li>应用在收到 SIGTERM 后<strong>拒绝新请求但仍服务在途请求</strong>（现在有没有做要验），
+  <code>terminationGracePeriodSeconds: 90</code> 保持；</li>
+<li>验收：重复 5 次删 Pod，<strong>首次中断时间 &lt; 1 s，错误率 &lt; 1%</strong>（现在是 12.9 s）。</li>
+</ul>
+<h2 id="6-数据层设计p2p3">6. 数据层设计（P2–P3）</h2>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>现状</th>
+<th>风险</th>
+<th>目标</th>
+<th>验收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PostgreSQL</td>
+<td>CNPG 1 主 2 备跨 3 区；<code>max_connections=200</code>；卷是 <strong><code>local-path</code>（节点本地盘）</strong></td>
+<td>节点彻底死掉时<strong>旧卷不漂移</strong>；异步复制 → <strong>RPO &gt; 0</strong></td>
+<td>①保持跨区副本；②<strong>开启 WAL 归档 + 定时基备</strong>到现有 MinIO/OSS；③做一次<strong>恢复演练</strong>并记下实测 RTO/RPO</td>
+<td>演练记录（删主库→提升→从备份恢复到新集群）</td>
+</tr>
+<tr>
+<td>Redis</td>
+<td>3 数据 + 3 Sentinel + 2 HAProxy，各组分属不同区</td>
+<td>已实测：提升期间探针 <strong>0 失败</strong></td>
+<td>保持；新增「共享读缓存」用途时<strong>与业务键分库或加前缀</strong>，避免缓存打满驱逐会话类键</td>
+<td>杀掉主节点，缓存与业务均无错误</td>
+</tr>
+<tr>
+<td>RabbitMQ</td>
+<td>3 节点 quorum 队列</td>
+<td>已实测 0 失败；缺 <strong>DLQ 与重放工具</strong></td>
+<td>每个队列配 DLQ + 重放命令；消费端幂等键落 PG</td>
+<td>注入毒消息 → 进 DLQ → 重放成功</td>
+</tr>
+<tr>
+<td>MinIO</td>
+<td><strong>单实例</strong>（明确非 HA）</td>
+<td>附件路径无冗余</td>
+<td>二选一：①4 节点纠删码（要占 4 台节点磁盘与 CPU）；②保持单实例但<strong>附件降级语义显式化</strong>（进队列、可重试、可告警，绝不静默丢）</td>
+<td>杀掉 MinIO → 附件请求返回明确的可恢复错误且进重试队列；业务主链路不 5xx</td>
+</tr>
+<tr>
+<td>卷/存储类</td>
+<td><code>local-path</code></td>
+<td>无跨节点冗余</td>
+<td>3k 阶段先不动（换 Longhorn 要吃掉 4 核节点的 I/O 预算），<strong>但把「备份恢复」补上</strong></td>
+<td>同 PG 演练</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-任务层设计p3p4">7. 任务层设计（P3–P4）</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>现状</th>
+<th>设计</th>
+<th>验收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Worker 幂等</td>
+<td>队列消费 + 处理</td>
+<td>每条消息带 <code>jobId</code>；处理前抢 PG 唯一约束；成功后置终态；重复投递必须无副作用</td>
+<td>同一封邮件/同一 job 重复投递 3 次，业务副作用只发生 1 次</td>
+</tr>
+<tr>
+<td>调度器</td>
+<td><strong>单副本 <code>Recreate</code></strong></td>
+<td>2 副本 + <strong>k8s Lease 选主</strong>（15 s 续约）；换主时在途任务靠 <strong>job fencing token</strong> 作废</td>
+<td>杀主调度器，15 s 内备接管且无重复写入</td>
+</tr>
+<tr>
+<td>邮箱顺序</td>
+<td>按邮件时间顺序处理</td>
+<td><strong>按 <code>mailbox_id</code> 哈希分片</strong>（同一邮箱固定落到同一分片），分片内串行、分片间并行</td>
+<td>同一邮箱乱序注入 → 处理顺序仍按时间</td>
+</tr>
+<tr>
+<td>外部副作用</td>
+<td>SMTP/日历</td>
+<td><strong>outbox + 意图记录</strong>：先落库「要发」再发，回执后置终态；超时未知状态<strong>不盲目重试</strong></td>
+<td>模拟 SMTP 超时 → 不出现重复发信，且可人工补偿</td>
+</tr>
+<tr>
+<td>死信与重放</td>
+<td>缺</td>
+<td>DLQ + <code>replay</code> 工具 + 人工确认入口</td>
+<td>见上表 RabbitMQ 行</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-扩缩容策略信号选错比不扩更糟">8. 扩缩容策略（信号选错比不扩更糟）</h2>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>现在的信号</th>
+<th>问题</th>
+<th>目标信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>CPU 60%（HPA 3–9）</td>
+<td>缓存命中时 CPU 只有 0.38 核，<strong>CPU 高不一定是业务忙</strong>；而 CPU 低也可能在途已满</td>
+<td>CPU <strong>+ 在途请求数/副本</strong>（自定义指标，已在埋点里：<code>http.inflight</code>）；上限用 §2.1 的连接公式绑定</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td>CPU 70%（2–6）</td>
+<td>队列积压时 CPU 可能不高（等 IO/模型）</td>
+<td><strong>KEDA 按队列深度</strong>（仓库已有 <code>deploy/kubernetes/keda.example.yaml</code>）</td>
+</tr>
+<tr>
+<td>入口</td>
+<td>无</td>
+<td>单副本没法扩</td>
+<td>固定 3 副本（入口是无状态短任务，扩缩容收益小于稳定性收益）</td>
+</tr>
+</tbody>
+</table>
+<p>防抖（本轮实测踩过的坑）：容量档必须等 <code>ready == 期望</code> 且无 <code>Terminating</code> 再开压（缺陷 17），
+否则量到的是缩容瞬态（错误率 55%–87%）。</p>
+<h2 id="9-测量装置也要一并设计否则-3k-无法被证明">9. 测量装置也要一并设计（否则 3k 无法被证明）</h2>
+<p>实测：node-03（4 核）在 366 B 响应下最多 <strong>2051 QPS</strong>，175 KB 下 <strong>920 QPS</strong>。
+<strong>要证明 3k，压测源本身必须能产生 3k</strong>，而它现在只有一个 4 核 JVM。</p>
+<ul>
+<li><strong>不加机器</strong>的做法：把 JMeter 跑成<strong>分布式</strong>（现有节点做 remote server，例如 node-03 + node-01，
+  仅测量期间占用），汇总到同一份 JTL；</li>
+<li>口径不变（同并发、同时长、同入口），<strong>入口必须与基线同口径</strong>（否则 594 与 920 不可横比——已写进 REPORT §7.4）；</li>
+<li>顺手修三个测量缺口（都写进 REPORT §11）：校验池埋点（缺陷 20）、
+  <code>run-meta.json</code> 的 provenance 要读 ConfigMap 而不是本机 git（缺陷 16 同类）、
+  <code>summary.md</code> 的档位模板（缺陷 16）。</li>
+</ul>
+<h2 id="10-分阶段实施与逐阶段验收">10. 分阶段实施与逐阶段验收</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>内容</th>
+<th>验收条件（可复现）</th>
+<th>依赖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P0</strong></td>
+<td>入口层独立：3 副本跨 3 区、node-03 不再兼入口；PDB/topologySpread 覆盖入口；<strong>公网入口（node-07）切到入口层</strong></td>
+<td><strong>本轮已落地</strong>：逐区 <code>/lb-health</code> 全 200；根路径连打 12 次命中 <strong>3 个不同入口副本</strong>；杀 1 个入口副本的错误率 / 错误跨度 / 首次中断，以及「经入口 vs 直连」的差距，见 REPORT §7.5</td>
+<td>无需新机器</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td>响应体投影 ≤20 KB + 分布式压测源</td>
+<td><strong>部分落地</strong>：列表默认走 <code>body=summary</code> 已接前端（详见 <code>docs/storage-read-path-optimization.md</code> §6），但单邮箱只 −17%（要 20 KB 必须做<strong>列表字段投影 + 分页</strong>，未做）；分布式压测源未做 → <strong>3k 仍未实测</strong></td>
+<td>P0（否则入口仍是瓶颈）</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>A3 Redis 共享缓存 + 冷装载减量 + 校验池埋点（已落地：<code>pg.validation.*</code> 前缀）</td>
+<td>冷装载从「每副本各一次」变成「一次」；<code>storage.snapshot.ms</code> 与 <code>pg.pool.*</code> / <code>pg.validation.*</code> 可分别观测</td>
+<td>P1 口径</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td>PG 备份恢复演练 + MinIO 降级语义 + RabbitMQ DLQ</td>
+<td>恢复演练记录（实测 RTO/RPO）；杀 MinIO 不影响主链路且附件可重试</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>P4</strong></td>
+<td>调度器选主 + job fencing + outbox + 邮箱分片</td>
+<td>杀主调度器 15 s 内接管且无重复写入；重复投递无副作用</td>
+<td>P2</td>
+</tr>
+<tr>
+<td><strong>P5</strong></td>
+<td>入口/API 自定义指标扩缩容 + SLO 告警</td>
+<td>指标驱动扩缩容的时间序列；告警能触发</td>
+<td>P2</td>
+</tr>
+<tr>
+<td><strong>P6</strong></td>
+<td>比赛材料：架构图、数据流、证据索引、成本</td>
+<td>材料与<strong>实际版本</strong>一致，已完成/待完成分离</td>
+<td>全部</td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-成本与取舍明确写出来">11. 成本与取舍（明确写出来）</h2>
+<table>
+<thead>
+<tr>
+<th>决策</th>
+<th>收益</th>
+<th>代价 / 风险</th>
+<th>不做的后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入口 3 副本进 k8s（不加机器）</td>
+<td><strong>已落地</strong>：消除 SPOF、node-03 让给压测源、公网入口可观测（<code>X-Daylight-Ingress</code> 能证明请求落在哪个副本）；同口径容量提升见 REPORT §7.5</td>
+<td>每个入口副本 requests 500m / limits 2 核（按实测 594 QPS@175 KB 吃 2.3 核给足）</td>
+<td>改造前：入口与 JMeter 抢同一台 4 核机，<strong>既是 SPOF 又是吞吐上限</strong></td>
+</tr>
+<tr>
+<td>响应体投影 ≤20 KB</td>
+<td>3k 的使能项；端到端延迟随之下降</td>
+<td>前端改造 + 兼容期</td>
+<td>3k 无法达成（525 MB/s 搬运）</td>
+</tr>
+<tr>
+<td>Redis 共享缓存（A3）</td>
+<td>冷装载从「每副本各一次」变成「一次」；跨副本共享热数据</td>
+<td>多一个有状态依赖（已有 Redis，风险低）</td>
+<td>每次扩容/重启新 Pod 都要各自重装 p50 <strong>80.7 ms</strong>、p95 <strong>425.5 ms</strong> 的快照</td>
+</tr>
+<tr>
+<td>Longhorn/复制型存储</td>
+<td>卷跨节点冗余</td>
+<td>4 核节点上 I/O 争抢，性能不保证</td>
+<td>保持 <code>local-path</code>：节点死 = 该副本数据靠同步重建，<strong>RPO&gt;0</strong></td>
+</tr>
+<tr>
+<td>MinIO 4 节点纠删码</td>
+<td>附件真正 HA</td>
+<td>占 4 台节点磁盘与 CPU</td>
+<td>保持单实例 + 显式降级（附件可重试、绝不静默丢）</td>
+</tr>
+<tr>
+<td>分布式 JMeter</td>
+<td>3k 可被证明</td>
+<td>测量期间占用 2 台节点</td>
+<td>天花板永远停在 2k 量级，无法验收 3k</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-明确不宣称写下来是为了不改口径">12. 明确不宣称（写下来是为了不改口径）</h2>
+<ul>
+<li><strong>不宣称生产就绪</strong>：本设计是在 7 台、3 个可用区、自建 k3s 范围内的目标形态；
+  跨 region、跨 VPC、公网 HTTPS/域名/证书、公网入口收口（安全组无权限改）仍是<strong>未验证项</strong>。</li>
+<li><strong>不宣称 3k 已达成</strong>：3k 是<strong>目标</strong>，P1 之后才有实测数字；本轮已把同口径主读路径从 589 提到
+  <strong>1018 成功 QPS（1.73×，投影档 1042）</strong>，且瓶颈已不在应用与入口 —— 但<strong>这仍是下界</strong>：
+  压测源（node-03，4 核）仍与 Prometheus 同机、单 JVM，<code>state</code> 档下它自己接近打满
+  （<code>health</code>/小响应体档实测 1955–2051 QPS 才是它的上限）。所以只能写
+  「<strong>≥1018（新入口 3 副本跨 3 区）/ ≥594（旧入口同口径）</strong>」，不得写「系统天花板 1018」。</li>
+<li><strong>不宣称入口层是生产入口</strong>：本轮落地的是「3 副本跨 3 区 + PDB + ClusterIP 上游」的<strong>最小可用形态</strong>，
+  没有 HTTPS 终结、没有 WAF/限流、没有入口自身的 SLO 与容量水位告警；公网仍只有 HTTP。</li>
+<li><strong>不宣称延迟 SLO 达标</strong>：SLO 数值（目标 p95、错误率、RTO/RPO）需要在 P1 之后按实测固定，
+  现在写下来就是凭空给数（符合 roadmap §4「不得凭空给出已达标的数字」）。</li>
+<li><strong>不宣称依赖层高可用已完整</strong>：MinIO 单实例与 <code>local-path</code> 卷是<strong>明确的非 HA</strong>，如实保留。</li>
+</ul>
+<h2 id="13-与现有文档的关系">13. 与现有文档的关系</h2>
+<ul>
+<li>建设方向与验收标准：<code>docs/cloud-native-roadmap.md</code>（本文件是它在「3k + 7 台」约束下的具体化）；</li>
+<li>实测与证据：<code>work/cloud-perf/results-k8s/REPORT.md</code>（§7.4 天花板定位与 §7.5 入口层对照是本文件第 2、3 条依据）；</li>
+<li>读路径优化细节：<code>docs/storage-read-path-optimization.md</code>（A3 的实现与边界）；</li>
+<li>企业级交付（P2 ingress / P5–P7 验收脚本）：<code>work/enterprise-acceptance/{REPORT.md,RUNBOOK.md}</code>。</li>
+</ul></main></html>

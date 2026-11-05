@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-03T22:59:51.201476+00:00",
+  "decoder": "zxing-cpp 3.1.1",
+  "origin": "https://daylight.yunforis.com",
+  "checks": [
+    {
+      "step": 0,
+      "url": "https://daylight.yunforis.com/experience?step=0",
+      "file": "experience-step-0-qr.png",
+      "bytes": 5741,
+      "sha256": "efd949e62166d8d100b73328134e49923726510fd86bd66b3d10375331c717a9",
+      "ok": true
+    },
+    {
+      "step": 1,
+      "url": "https://daylight.yunforis.com/experience?step=1",
+      "file": "experience-step-1-qr.png",
+      "bytes": 5682,
+      "sha256": "10fb2a8ea50ea5e549e44a92fd01c672522de259abd739c916e9c004ccd62ae8",
+      "ok": true
+    },
+    {
+      "step": 2,
+      "url": "https://daylight.yunforis.com/experience?step=2",
+      "file": "experience-step-2-qr.png",
+      "bytes": 5617,
+      "sha256": "2423b5d2915b6bc17069aff79372c9b0c4a75567ccdb3658653f3577fb24e90e",
+      "ok": true
+    },
+    {
+      "step": 3,
+      "url": "https://daylight.yunforis.com/experience?step=3",
+      "file": "experience-step-3-qr.png",
+      "bytes": 5613,
+      "sha256": "2e500c29fc131e7dd6464356a556bb37445ffa0a8a21620c525741f65557e8fc",
+      "ok": true
+    },
+    {
+      "step": 4,
+      "url": "https://daylight.yunforis.com/experience?step=4",
+      "file": "experience-step-4-qr.png",
+      "bytes": 5728,
+      "sha256": "edf6c555c1bbae69c022e7a97891c77755d2fe36a1812eebc781bfe2559550d2",
+      "ok": true
+    },
+    {
+      "step": 5,
+      "url": "https://daylight.yunforis.com/experience?step=5",
+      "file": "experience-step-5-qr.png",
+      "bytes": 5719,
+      "sha256": "b0d09e09258adff528d5a0cc81db7f6712aafc6970920946e89f5c7bf2c570d7",
+      "ok": true
+    },
+    {
+      "step": 6,
+      "url": "https://daylight.yunforis.com/experience?step=6",
+      "file": "experience-step-6-qr.png",
+      "bytes": 5686,
+      "sha256": "35d03b1d654754b90faab8ec3e609556298ee5b56056de7b0ff694a8a99ca287",
+      "ok": true
+    },
+    {
+      "step": 7,
+      "url": "https://daylight.yunforis.com/experience?step=7",
+      "file": "experience-step-7-qr.png",
+      "bytes": 5684,
+      "sha256": "9810964f41fe240ee2bdb4087330927281d0eb145a73888552c997f08622cf3f",
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "scope": "Full PNG bytes and decoded public step URLs; local algorithm verification."
+}

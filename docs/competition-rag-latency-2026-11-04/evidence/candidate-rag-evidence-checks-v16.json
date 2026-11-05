@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "samples": 48,
+  "rounds": 3,
+  "modelCalls": 42,
+  "sourceSha256": "f8776aea617be29f61f5ec1040e0aded5ca0324d7f07fe6f690a24aef650ce3c",
+  "afterP95Ms": 3134.212,
+  "outputTokens": 3812,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageSha256": "5459811b6d752c9453b29babc280e1a6905265b03278a435d2d87319d247c3e9",
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}

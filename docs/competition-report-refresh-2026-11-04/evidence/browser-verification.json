@@ -1,0 +1,283 @@
+{
+  "checkedAt": "2026-11-03T20:29:05.031Z",
+  "scope": "Local isolated build; responsive report and technical page, actual heading navigation",
+  "layouts": [
+    {
+      "page": "technical-report",
+      "width": 1440,
+      "clientWidth": 1425,
+      "download": [
+        {
+          "height": 56,
+          "label": "下载 PDF · 21 页 · 3.1 MB"
+        }
+      ],
+      "images": [
+        {
+          "alt": "扫码打开正式 HTTPS 三分钟体验",
+          "loaded": true
+        },
+        {
+          "alt": "人工与 Daylight 对照方法，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "公网实际拓扑与扩展路径，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "邮件、上下文、结构化计划、工具与结果数据流，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "来源邮箱、审核版本、发送状态与回执，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：完整回复审核卡",
+          "loaded": true
+        },
+        {
+          "alt": "390px：编辑、保存与来源邮箱",
+          "loaded": true
+        },
+        {
+          "alt": "回答上下文与原文引用的前后设计，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "手机检索入口前置且默认折叠",
+          "loaded": true
+        },
+        {
+          "alt": "手机回答、44px 引用与输入区",
+          "loaded": true
+        },
+        {
+          "alt": "桌面回答、来源编号和输入区的实际页面",
+          "loaded": true
+        },
+        {
+          "alt": "同口径公网性能前后对照，精确柱长由脚本按原始数据绘制",
+          "loaded": true
+        },
+        {
+          "alt": "三角色指标、缓冲限制与轮转机制，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：视频与同步讲稿",
+          "loaded": true
+        },
+        {
+          "alt": "320px：章节、证据与下载",
+          "loaded": true
+        }
+      ],
+      "innerWidth": 1440,
+      "scrollWidth": 1425
+    },
+    {
+      "page": "technical-report",
+      "width": 390,
+      "clientWidth": 375,
+      "download": [
+        {
+          "height": 56,
+          "label": "下载 PDF · 21 页 · 3.1 MB"
+        }
+      ],
+      "images": [
+        {
+          "alt": "扫码打开正式 HTTPS 三分钟体验",
+          "loaded": true
+        },
+        {
+          "alt": "人工与 Daylight 对照方法，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "公网实际拓扑与扩展路径，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "邮件、上下文、结构化计划、工具与结果数据流，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "来源邮箱、审核版本、发送状态与回执，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：完整回复审核卡",
+          "loaded": true
+        },
+        {
+          "alt": "390px：编辑、保存与来源邮箱",
+          "loaded": true
+        },
+        {
+          "alt": "回答上下文与原文引用的前后设计，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "手机检索入口前置且默认折叠",
+          "loaded": true
+        },
+        {
+          "alt": "手机回答、44px 引用与输入区",
+          "loaded": true
+        },
+        {
+          "alt": "桌面回答、来源编号和输入区的实际页面",
+          "loaded": true
+        },
+        {
+          "alt": "同口径公网性能前后对照，精确柱长由脚本按原始数据绘制",
+          "loaded": true
+        },
+        {
+          "alt": "三角色指标、缓冲限制与轮转机制，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：视频与同步讲稿",
+          "loaded": true
+        },
+        {
+          "alt": "320px：章节、证据与下载",
+          "loaded": true
+        }
+      ],
+      "innerWidth": 390,
+      "scrollWidth": 375
+    },
+    {
+      "page": "technical-report",
+      "width": 320,
+      "clientWidth": 305,
+      "download": [
+        {
+          "height": 56,
+          "label": "下载 PDF · 21 页 · 3.1 MB"
+        }
+      ],
+      "images": [
+        {
+          "alt": "扫码打开正式 HTTPS 三分钟体验",
+          "loaded": true
+        },
+        {
+          "alt": "人工与 Daylight 对照方法，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "公网实际拓扑与扩展路径，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "邮件、上下文、结构化计划、工具与结果数据流，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "来源邮箱、审核版本、发送状态与回执，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：完整回复审核卡",
+          "loaded": true
+        },
+        {
+          "alt": "390px：编辑、保存与来源邮箱",
+          "loaded": true
+        },
+        {
+          "alt": "回答上下文与原文引用的前后设计，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "手机检索入口前置且默认折叠",
+          "loaded": true
+        },
+        {
+          "alt": "手机回答、44px 引用与输入区",
+          "loaded": true
+        },
+        {
+          "alt": "桌面回答、来源编号和输入区的实际页面",
+          "loaded": true
+        },
+        {
+          "alt": "同口径公网性能前后对照，精确柱长由脚本按原始数据绘制",
+          "loaded": true
+        },
+        {
+          "alt": "三角色指标、缓冲限制与轮转机制，gpt-image-2.5 英文图",
+          "loaded": true
+        },
+        {
+          "alt": "390px：视频与同步讲稿",
+          "loaded": true
+        },
+        {
+          "alt": "320px：章节、证据与下载",
+          "loaded": true
+        }
+      ],
+      "innerWidth": 320,
+      "scrollWidth": 305
+    },
+    {
+      "page": "evidence",
+      "width": 1440,
+      "clientWidth": 1425,
+      "costText": [
+        "预检、固定回归、RAG 对照与用户价值材料预检累计 42 次，输入 87,158、输出 29,063 Token，合计估算 ¥0.40682。各批 usage、价格来源和复算清单随技术报告保存。"
+      ],
+      "downloads": [
+        {
+          "height": 44,
+          "text": "下载 PDF · 21 页"
+        }
+      ],
+      "innerWidth": 1440,
+      "scrollWidth": 1425
+    },
+    {
+      "page": "evidence",
+      "width": 390,
+      "clientWidth": 375,
+      "costText": [
+        "预检、固定回归、RAG 对照与用户价值材料预检累计 42 次，输入 87,158、输出 29,063 Token，合计估算 ¥0.40682。各批 usage、价格来源和复算清单随技术报告保存。"
+      ],
+      "downloads": [
+        {
+          "height": 44,
+          "text": "下载 PDF · 21 页"
+        }
+      ],
+      "innerWidth": 390,
+      "scrollWidth": 375
+    },
+    {
+      "page": "evidence",
+      "width": 320,
+      "clientWidth": 305,
+      "costText": [
+        "预检、固定回归、RAG 对照与用户价值材料预检累计 42 次，输入 87,158、输出 29,063 Token，合计估算 ¥0.40682。各批 usage、价格来源和复算清单随技术报告保存。"
+      ],
+      "downloads": [
+        {
+          "height": 44,
+          "text": "下载 PDF · 21 页"
+        }
+      ],
+      "innerWidth": 320,
+      "scrollWidth": 305
+    }
+  ],
+  "headingJump": {
+    "title": "08 · 从执行记录到持久回复审核",
+    "top": 19.98958396911621
+  }
+}

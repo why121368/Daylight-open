@@ -1,0 +1,1342 @@
+{
+  "phase": "before",
+  "date": "2026-11-03T06:57:07.872Z",
+  "origin": "https://daylight.yunforis.com",
+  "sampleMethod": "HTTPS from server, decoded full response; nearest-rank percentile",
+  "sizes": [
+    {
+      "bytes": 143373,
+      "emails": 41
+    },
+    {
+      "bytes": 8832321,
+      "emails": 93
+    }
+  ],
+  "attachment": {
+    "type": "application/pdf",
+    "size": 89348
+  },
+  "dbBefore": {
+    "xact_commit": "2357887",
+    "xact_rollback": "47",
+    "blks_read": "18691",
+    "blks_hit": "125717647",
+    "tup_returned": "367485461",
+    "tup_fetched": "313195797",
+    "temp_bytes": "0"
+  },
+  "dbAfter": {
+    "xact_commit": "2359053",
+    "xact_rollback": "47",
+    "blks_read": "18694",
+    "blks_hit": "125978992",
+    "tup_returned": "368540890",
+    "tup_fetched": "314093819",
+    "temp_bytes": "0"
+  },
+  "samples": [
+    {
+      "name": "captcha",
+      "i": 0,
+      "ms": 920.6177150000001,
+      "success": true,
+      "requests": [
+        {
+          "ms": 920.0149860000001,
+          "ttfb": 910.7171370000001,
+          "status": 200,
+          "bytes": 10457,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 1,
+      "ms": 884.5584899999999,
+      "success": true,
+      "requests": [
+        {
+          "ms": 884.4717920000003,
+          "ttfb": 879.2208519999999,
+          "status": 200,
+          "bytes": 7886,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 2,
+      "ms": 800.6595360000001,
+      "success": true,
+      "requests": [
+        {
+          "ms": 800.5631629999998,
+          "ttfb": 797.2858230000002,
+          "status": 200,
+          "bytes": 8139,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 3,
+      "ms": 650.2078899999997,
+      "success": true,
+      "requests": [
+        {
+          "ms": 650.1709379999998,
+          "ttfb": 646.6742079999999,
+          "status": 200,
+          "bytes": 11423,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 4,
+      "ms": 661.8377400000008,
+      "success": true,
+      "requests": [
+        {
+          "ms": 661.8028239999994,
+          "ttfb": 659.064523,
+          "status": 200,
+          "bytes": 8715,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 5,
+      "ms": 689.120105,
+      "success": true,
+      "requests": [
+        {
+          "ms": 689.0854600000002,
+          "ttfb": 685.9396160000006,
+          "status": 200,
+          "bytes": 10016,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 6,
+      "ms": 715.7932030000002,
+      "success": true,
+      "requests": [
+        {
+          "ms": 715.7163620000001,
+          "ttfb": 709.3235199999999,
+          "status": 200,
+          "bytes": 8911,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 7,
+      "ms": 696.131625,
+      "success": true,
+      "requests": [
+        {
+          "ms": 696.0902409999999,
+          "ttfb": 693.6717100000005,
+          "status": 200,
+          "bytes": 9913,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 8,
+      "ms": 671.6312509999998,
+      "success": true,
+      "requests": [
+        {
+          "ms": 671.5419999999995,
+          "ttfb": 668.3571679999995,
+          "status": 200,
+          "bytes": 9415,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 9,
+      "ms": 864.1305410000004,
+      "success": true,
+      "requests": [
+        {
+          "ms": 863.5938069999993,
+          "ttfb": 860.2127080000009,
+          "status": 200,
+          "bytes": 9062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 10,
+      "ms": 718.1375870000011,
+      "success": true,
+      "requests": [
+        {
+          "ms": 718.0803640000013,
+          "ttfb": 714.7672500000008,
+          "status": 200,
+          "bytes": 8784,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "captcha",
+      "i": 11,
+      "ms": 719.3037160000003,
+      "success": true,
+      "requests": [
+        {
+          "ms": 719.2150149999998,
+          "ttfb": 715.6175370000001,
+          "status": 200,
+          "bytes": 8965,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 0,
+      "ms": 1098.592811999999,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1098.117431999999,
+          "ttfb": 1097.192336,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 1,
+      "ms": 1450.7574139999997,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1450.7242910000004,
+          "ttfb": 1450.4562370000003,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 2,
+      "ms": 853.5695649999998,
+      "success": true,
+      "requests": [
+        {
+          "ms": 853.542257000001,
+          "ttfb": 853.0584060000001,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 3,
+      "ms": 689.435281,
+      "success": true,
+      "requests": [
+        {
+          "ms": 689.4064509999989,
+          "ttfb": 689.0452919999989,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 4,
+      "ms": 672.4668780000011,
+      "success": true,
+      "requests": [
+        {
+          "ms": 672.4386169999998,
+          "ttfb": 672.0051559999993,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 5,
+      "ms": 677.8974710000002,
+      "success": true,
+      "requests": [
+        {
+          "ms": 677.8664339999996,
+          "ttfb": 677.4105,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 6,
+      "ms": 677.3190109999996,
+      "success": true,
+      "requests": [
+        {
+          "ms": 677.291448,
+          "ttfb": 677.042214000001,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 7,
+      "ms": 689.7603680000011,
+      "success": true,
+      "requests": [
+        {
+          "ms": 689.7287390000001,
+          "ttfb": 689.2638229999993,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 8,
+      "ms": 684.4929120000015,
+      "success": true,
+      "requests": [
+        {
+          "ms": 684.4258920000029,
+          "ttfb": 683.9694030000028,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 9,
+      "ms": 1317.2563169999994,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1315.0022200000021,
+          "ttfb": 1314.610037999999,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 10,
+      "ms": 1169.4510279999995,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1169.3750360000013,
+          "ttfb": 1167.960776,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "auth_me",
+      "i": 11,
+      "ms": 1205.225555000001,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1205.1316740000002,
+          "ttfb": 1204.6862250000013,
+          "status": 200,
+          "bytes": 289,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 0,
+      "ms": 3009.3557370000017,
+      "success": true,
+      "requests": [
+        {
+          "ms": 3006.209242000001,
+          "ttfb": 1306.9893370000027,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2661.0385730000016,
+          "ttfb": 2320.558062,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 1,
+      "ms": 2429.263143,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2429.143561000001,
+          "ttfb": 1647.0831720000024,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2109.4148349999996,
+          "ttfb": 1692.8262469999972,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 2,
+      "ms": 2592.292157,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2592.2007550000017,
+          "ttfb": 1761.7831939999996,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2136.201996,
+          "ttfb": 1642.327580000001,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 3,
+      "ms": 2448.6546080000007,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2448.560744999999,
+          "ttfb": 1678.4337739999974,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2111.9921829999985,
+          "ttfb": 1642.895762,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 4,
+      "ms": 2380.7635610000034,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2380.6871309999988,
+          "ttfb": 1573.8080869999976,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 1999.296295,
+          "ttfb": 1672.3061710000038,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 5,
+      "ms": 2787.0446999999986,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2786.978572,
+          "ttfb": 1936.0041259999998,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2473.160434999998,
+          "ttfb": 2005.547728999998,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 6,
+      "ms": 2442.710604,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2442.6462480000046,
+          "ttfb": 1636.090403000002,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2015.0002659999955,
+          "ttfb": 1613.6851229999957,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 7,
+      "ms": 2486.1276849999995,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2486.0593939999962,
+          "ttfb": 1766.324063,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2178.648276,
+          "ttfb": 1797.4825930000006,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 8,
+      "ms": 2440.797841000007,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2440.709152000003,
+          "ttfb": 1576.8630380000031,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2124.0846440000023,
+          "ttfb": 1779.2010719999962,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 9,
+      "ms": 3044.0167129999973,
+      "success": true,
+      "requests": [
+        {
+          "ms": 3043.907965000006,
+          "ttfb": 2288.7430440000026,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2722.555177999995,
+          "ttfb": 2398.7738269999973,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 10,
+      "ms": 2478.537247,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2478.483930999995,
+          "ttfb": 1701.6953589999976,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2045.5928340000028,
+          "ttfb": 1668.3913700000048,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace",
+      "i": 11,
+      "ms": 2256.7952210000003,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2256.7438970000003,
+          "ttfb": 1657.6827320000011,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 1969.1086789999972,
+          "ttfb": 1638.8915940000006,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 0,
+      "ms": 2473.2070129999993,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2472.771833999999,
+          "ttfb": 1738.944537999996,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2224.638359999997,
+          "ttfb": 1918.645795999997,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 1,
+      "ms": 2789.5643210000053,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2789.490002999999,
+          "ttfb": 1902.8485650000002,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2258.7914270000038,
+          "ttfb": 1805.282177000001,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 2,
+      "ms": 2363.959928999997,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2363.879796000001,
+          "ttfb": 1643.1426470000006,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2097.6046829999977,
+          "ttfb": 1695.224543000004,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 3,
+      "ms": 2631.782124999998,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2631.717276999996,
+          "ttfb": 1942.9809309999982,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2242.390406999999,
+          "ttfb": 1838.4162769999966,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 4,
+      "ms": 2415.048956999999,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2414.966529999998,
+          "ttfb": 1645.0644949999987,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2153.180791999999,
+          "ttfb": 1729.4103939999986,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_all",
+      "i": 5,
+      "ms": 2611.250909999995,
+      "success": true,
+      "requests": [
+        {
+          "ms": 2611.1719579999917,
+          "ttfb": 1596.010890999998,
+          "status": 200,
+          "bytes": 8991361,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2323.864859999994,
+          "ttfb": 1634.894892000004,
+          "status": 200,
+          "bytes": 3496062,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 0,
+      "ms": 719.0248620000057,
+      "success": true,
+      "requests": [
+        {
+          "ms": 718.6609060000046,
+          "ttfb": 711.8680770000065,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 1,
+      "ms": 712.5431009999884,
+      "success": true,
+      "requests": [
+        {
+          "ms": 712.4669660000072,
+          "ttfb": 703.8289610000065,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 2,
+      "ms": 706.1072819999972,
+      "success": true,
+      "requests": [
+        {
+          "ms": 706.0201800000068,
+          "ttfb": 698.6057520000031,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 3,
+      "ms": 749.0041829999973,
+      "success": true,
+      "requests": [
+        {
+          "ms": 748.872113999998,
+          "ttfb": 733.5039299999917,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 4,
+      "ms": 677.1913349999959,
+      "success": true,
+      "requests": [
+        {
+          "ms": 677.0454600000085,
+          "ttfb": 669.9222620000073,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 5,
+      "ms": 699.0303019999992,
+      "success": true,
+      "requests": [
+        {
+          "ms": 698.890625,
+          "ttfb": 690.4502599999978,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 6,
+      "ms": 887.4172409999883,
+      "success": true,
+      "requests": [
+        {
+          "ms": 887.1600849999959,
+          "ttfb": 879.6815690000076,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 7,
+      "ms": 706.4569689999917,
+      "success": true,
+      "requests": [
+        {
+          "ms": 706.3575679999922,
+          "ttfb": 697.8636410000036,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 8,
+      "ms": 699.644380999991,
+      "success": true,
+      "requests": [
+        {
+          "ms": 699.5806549999979,
+          "ttfb": 692.0577369999955,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 9,
+      "ms": 701.1507580000034,
+      "success": true,
+      "requests": [
+        {
+          "ms": 701.0713670000114,
+          "ttfb": 693.1137170000002,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 10,
+      "ms": 694.1166990000056,
+      "success": true,
+      "requests": [
+        {
+          "ms": 693.8905310000118,
+          "ttfb": 686.686572000006,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "i": 11,
+      "ms": 762.6656300000031,
+      "success": true,
+      "requests": [
+        {
+          "ms": 762.5747109999938,
+          "ttfb": 753.767863000001,
+          "status": 200,
+          "bytes": 89348,
+          "encoding": null
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 0,
+      "ms": 3267.3323579999997,
+      "success": true,
+      "requests": [
+        {
+          "ms": 770.8739260000002,
+          "ttfb": 768.8429060000053,
+          "status": 200,
+          "bytes": 11018,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2495.9130589999986,
+          "ttfb": 2472.9169510000065,
+          "status": 200,
+          "bytes": 148859,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2490.282137999995,
+          "ttfb": 2410.737531999999,
+          "status": 200,
+          "bytes": 635364,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 1,
+      "ms": 7697.659589000003,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1430.7526440000074,
+          "ttfb": 1420.0706210000062,
+          "status": 200,
+          "bytes": 11132,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 6266.701953999989,
+          "ttfb": 3344.6858769999963,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 4444.6528090000065,
+          "ttfb": 3323.9491699999926,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 2,
+      "ms": 4489.303981999998,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1830.0007579999947,
+          "ttfb": 1827.0659329999908,
+          "status": 200,
+          "bytes": 11018,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2653.919406000001,
+          "ttfb": 2622.5007919999916,
+          "status": 200,
+          "bytes": 148859,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 2657.8520889999927,
+          "ttfb": 2585.4470290000027,
+          "status": 200,
+          "bytes": 635364,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 3,
+      "ms": 6645.547041999991,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1496.9600280000013,
+          "ttfb": 1492.5794490000117,
+          "status": 200,
+          "bytes": 11132,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 5148.372438000006,
+          "ttfb": 3157.932507000005,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 4326.878054999994,
+          "ttfb": 2910.927491999988,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 4,
+      "ms": 4401.675409000003,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1393.2980309999984,
+          "ttfb": 1387.1509389999992,
+          "status": 200,
+          "bytes": 11018,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 3002.0338340000017,
+          "ttfb": 2984.037498999998,
+          "status": 200,
+          "bytes": 148859,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 3005.1017799999972,
+          "ttfb": 2913.9244659999968,
+          "status": 200,
+          "bytes": 635364,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "switch_mailbox",
+      "i": 5,
+      "ms": 6854.779723,
+      "success": true,
+      "requests": [
+        {
+          "ms": 1445.2485949999973,
+          "ttfb": 1438.521424999999,
+          "status": 200,
+          "bytes": 11132,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 5409.318222000002,
+          "ttfb": 4202.883700999999,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 4864.541448999997,
+          "ttfb": 4166.062374999994,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_c4",
+      "i": 0,
+      "ms": 17996.218030999997,
+      "success": true,
+      "requests": [
+        {
+          "ms": 13051.433375000008,
+          "ttfb": 9488.747430000003,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 10547.276200000008,
+          "ttfb": 9556.806956,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 17098.535399999993,
+          "ttfb": 10040.008950999996,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 16038.578557999994,
+          "ttfb": 14582.448959000001,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 17788.260372000004,
+          "ttfb": 14082.524526000008,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 15902.851410999996,
+          "ttfb": 14313.694224000006,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 17930.147106000004,
+          "ttfb": 14472.159732999993,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 15957.515285000001,
+          "ttfb": 14402.049861000007,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_c4",
+      "i": 1,
+      "ms": 18236.711655999985,
+      "success": true,
+      "requests": [
+        {
+          "ms": 18146.389338999987,
+          "ttfb": 15686.06661400001,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 16470.469509000002,
+          "ttfb": 15502.247147000002,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 13301.079748999982,
+          "ttfb": 8124.473236999984,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 9239.990226999987,
+          "ttfb": 7552.832146000015,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 13038.942549999992,
+          "ttfb": 7517.802322999996,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 12153.193698000003,
+          "ttfb": 10972.350377999988,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 18149.502714000002,
+          "ttfb": 15718.924517000007,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 9345.909125999999,
+          "ttfb": 7598.112234999993,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "name": "workspace_c4",
+      "i": 2,
+      "ms": 17685.259853000025,
+      "success": false,
+      "requests": [
+        {
+          "ms": 16536.791734,
+          "ttfb": 10482.682656999998,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 12691.635279999988,
+          "ttfb": 10221.062776999985,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 17679.39037899999,
+          "ttfb": 14480.018946999975,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 12973.635851,
+          "ttfb": 10605.452529000002,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 17548.67300400001,
+          "ttfb": 14324.01217999999,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 12565.664360999974,
+          "ttfb": 10111.987985999993,
+          "status": 200,
+          "bytes": 2850561,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 16331.745760999998,
+          "ttfb": 10084.708799000015,
+          "status": 200,
+          "bytes": 8829645,
+          "encoding": "gzip"
+        },
+        {
+          "ms": 6807.939417000016,
+          "ttfb": 6802.758537000016,
+          "status": 503,
+          "bytes": 51,
+          "encoding": null
+        }
+      ]
+    }
+  ]
+}

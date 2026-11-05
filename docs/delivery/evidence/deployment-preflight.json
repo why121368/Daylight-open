@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "at": "2026-10-28T00:30:44.869Z",
+  "scope": "source-assets",
+  "checks": [
+    {
+      "key": "node-version",
+      "ok": true,
+      "message": "Node.js >=22.19 is required by the HTTP/PDF dependencies."
+    },
+    {
+      "key": "dependency-lock",
+      "ok": true,
+      "message": "package.json and lockfile dependencies must agree."
+    },
+    {
+      "key": "file:Dockerfile",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:.dockerignore",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docker-compose.yml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/public/compose.public.yml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/public/Caddyfile",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/apps.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/migrate.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/kustomization.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/backup.sh",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/restore.sh",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/README.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/cloud-deployment.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/demo-script.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "compose-parser",
+      "ok": true,
+      "message": "Docker Compose config must parse successfully (no containers are started)."
+    }
+  ],
+  "liveServicesChecked": false,
+  "cloudAcceptance": false
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gpt-image-2.5",
+  "tool": "imagegen bundled CLI",
+  "language": "English",
+  "size": "1536x1024",
+  "quality": "high",
+  "calls": 1,
+  "previousImageCalls": 13,
+  "totalImageCalls": 14,
+  "prompt": "continuity-prompt.txt",
+  "promptSha256": "6b8d6e427c17ca903a419eb312b0abcea6c296435bcd8fd167484a23c6cdd4c7",
+  "generated": {
+    "file": "assets/continuity-generated.png",
+    "bytes": 1406274,
+    "sha256": "4705d382aec73af8cc82af9112909026e3cd097b345e251ed798326f67bea2b1"
+  },
+  "final": {
+    "file": "assets/continuity.webp",
+    "bytes": 94072,
+    "sha256": "3f71f36f4df009827f52f0e0665eb590892367ea71d26d627b4b77533f81f6d0"
+  },
+  "postprocess": "Pillow WebP quality 88, method 6; generated lettering and arrows retained.",
+  "review": "English spelling, exact step URL, replay direction and both refresh/return and phone branches checked.",
+  "billing": "Supplier invoice; API returned no billable amount."
+}

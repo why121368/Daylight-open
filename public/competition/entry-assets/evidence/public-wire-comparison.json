@@ -1,0 +1,42 @@
+{
+  "metric": "HTTPS response body bytes; static JS import closure, CSS and startup image; gzip accepted; headers excluded",
+  "before": {
+    "javaScript": {
+      "resources": 10,
+      "wireBytes": 218078,
+      "decodedBytes": 636188
+    },
+    "css": {
+      "resources": 1,
+      "wireBytes": 38003,
+      "decodedBytes": 207310
+    },
+    "startupImage": {
+      "resources": 1,
+      "wireBytes": 115160,
+      "decodedBytes": 115160
+    }
+  },
+  "after": {
+    "javaScript": {
+      "resources": 13,
+      "wireBytes": 171985,
+      "decodedBytes": 501402
+    },
+    "css": {
+      "resources": 1,
+      "wireBytes": 29805,
+      "decodedBytes": 177057
+    },
+    "startupImage": {
+      "resources": 1,
+      "wireBytes": 8278,
+      "decodedBytes": 8278
+    }
+  },
+  "beforeBytes": 371241,
+  "afterBytes": 210068,
+  "reductionPercent": 43.41,
+  "beforeSha256": "c7d108b256e5006425fb54660ed389019112e0a0d742eb83e42b61d7c9538356",
+  "afterSha256": "86d3947475827499bbbc02f9c64d1468be8c5a0c5780e779ff385c141a1b10cc"
+}

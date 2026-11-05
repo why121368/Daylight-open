@@ -1,0 +1,100 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-rag-latency-20261104050256
+RELEASE_HASHES_OK 492
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  69.23MB
+
+
+Step 1/8 : FROM sha256:5140e8c84c3cc5c6bc536a3c825910d255a47a2d071801aa60d9a1fc6448a81e
+ ---> 5140e8c84c3c
+Step 2/8 : USER root
+ ---> Running in a6f02777378a
+ ---> Removed intermediate container a6f02777378a
+ ---> 07044f1782db
+Step 3/8 : RUN rm -rf /app/dist
+ ---> Running in 0aca25058d61
+ ---> Removed intermediate container 0aca25058d61
+ ---> 6841f0971a2c
+Step 4/8 : COPY --chown=node:node server/ /app/server/
+ ---> ce9da85ba698
+Step 5/8 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> c787ee069dd8
+Step 6/8 : COPY --chown=node:node dist/ /app/dist/
+ ---> dc53cdf64b34
+Step 7/8 : LABEL org.opencontainers.image.revision="a8daafc1bf88c747fb1e6104a89c56a6f90ff06b"
+ ---> Running in 78dc6aa72105
+ ---> Removed intermediate container 78dc6aa72105
+ ---> f63b699a3321
+Step 8/8 : USER node
+ ---> Running in 7a56d800a13d
+ ---> Removed intermediate container 7a56d800a13d
+ ---> 0bca96d41fe1
+Successfully built 0bca96d41fe1
+Successfully tagged daylight:public-competition-20261104-v16
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13030.496409
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6569.081093
+PRODUCTION_POSTGRES_RAG_OK 8 checks; schema removed
+{
+  "ok": true,
+  "samples": 48,
+  "rounds": 3,
+  "modelCalls": 42,
+  "sourceSha256": "f8776aea617be29f61f5ec1040e0aded5ca0324d7f07fe6f690a24aef650ce3c",
+  "afterP95Ms": 3134.212,
+  "outputTokens": 3812,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageSha256": "5459811b6d752c9453b29babc280e1a6905265b03278a435d2d87319d247c3e9",
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-worker-1  Starting
+ Container daylight-scheduler-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Started
+ Container daylight-scheduler-1  Started
+ Container daylight-api-1  Started
+ Container daylight-scheduler-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-api-1  Healthy
+ Container daylight-worker-1  Healthy
+ Container daylight-scheduler-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"f3af966d-2c1f-473a-a371-949795677bb7","written":13,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"f3af966d-2c1f-473a-a371-949795677bb7","written":62,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"0c01d9e5-e99a-46fb-b747-45de1d711e6f","written":116,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"6c3dda69-21bc-4bab-a6f4-05e5b7ef9dd3","written":55,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v16 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v16 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v16 healthy restart=0 oom=false
+sha256:0bca96d41fe1ef666cc1c3f26eb1200854f3ca473463653960357067876a46b3
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+RAG_LATENCY_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-rag-latency-20261104050256
+
+REMOTE_EXIT 0

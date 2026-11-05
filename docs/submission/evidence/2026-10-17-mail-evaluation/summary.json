@@ -1,0 +1,31 @@
+{
+  "planned_count": 15,
+  "completed_count": 15,
+  "passed_count": 15,
+  "failed_count": 0,
+  "interrupted_or_unattempted_count": 0,
+  "success_denominator": 15,
+  "success_rate": 1,
+  "latency": {
+    "sample_count": 15,
+    "includes_failures": true,
+    "method": "nearest-rank",
+    "p50_ms": 5269.738,
+    "p95_ms": 7656.791
+  },
+  "costs": {
+    "known_call_count": 15,
+    "unknown_usage_count": 0,
+    "unknown_cost_count": 0,
+    "known_subtotal_cny": 0.04872552,
+    "total_cny": 0.04872552,
+    "fully_priced_mean_cny": 0.003248368,
+    "coverage": 1,
+    "billing_verified": false
+  },
+  "status": "complete",
+  "finished_at": "2026-10-16T17:39:22.958Z",
+  "source_changed_during_run": false,
+  "dataset_changed_during_run": false,
+  "interpretation": "Fixed synthetic regression cases, one call each, no retries. Not representative user accuracy or full business-chain validation."
+}

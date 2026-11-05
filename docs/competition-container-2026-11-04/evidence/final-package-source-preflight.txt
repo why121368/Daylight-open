@@ -1,0 +1,17 @@
+PASS node-version: Node.js >=22.19 is required by the HTTP/PDF dependencies.
+PASS dependency-lock: package.json and lockfile dependencies must agree.
+PASS file:Dockerfile: Required delivery asset exists.
+PASS file:.dockerignore: Required delivery asset exists.
+PASS file:docker-compose.yml: Required delivery asset exists.
+PASS file:deploy/public/compose.public.yml: Required delivery asset exists.
+PASS file:deploy/public/Caddyfile: Required delivery asset exists.
+PASS file:deploy/kubernetes/apps.yaml: Required delivery asset exists.
+PASS file:deploy/kubernetes/migrate.yaml: Required delivery asset exists.
+PASS file:deploy/kubernetes/kustomization.yaml: Required delivery asset exists.
+PASS file:deploy/backup.sh: Required delivery asset exists.
+PASS file:deploy/restore.sh: Required delivery asset exists.
+PASS file:docs/delivery/README.md: Required delivery asset exists.
+PASS file:docs/delivery/cloud-deployment.md: Required delivery asset exists.
+PASS file:docs/delivery/demo-script.md: Required delivery asset exists.
+PASS frontend-evidence-snapshot: 5 public sources must match the tracked build snapshot. Run npm run evidence:sync after updating evidence.
+PASS: 16 checks. Live dependencies, DNS, TLS and cloud acceptance require a separate run.

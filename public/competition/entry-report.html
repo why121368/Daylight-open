@@ -1,0 +1,242 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公开页面首屏加载优化 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="公开页面首屏加载优化">公开页面首屏加载优化</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#公开页面首屏加载优化">公开页面首屏加载优化</a><ul>
+<li><a href="#1-目标与结果">1. 目标与结果</a></li>
+<li><a href="#2-怎样找到等待来源">2. 怎样找到等待来源</a></li>
+<li><a href="#3-技术选型与设计逻辑">3. 技术选型与设计逻辑</a></li>
+<li><a href="#4-前后测量方法">4. 前后测量方法</a><ul>
+<li><a href="#41-构建和传输条件">4.1 构建和传输条件</a></li>
+<li><a href="#42-可操作的定义">4.2 “可操作”的定义</a></li>
+</ul>
+</li>
+<li><a href="#5-页面和业务检查">5. 页面和业务检查</a><ul>
+<li><a href="#51-首屏前后">5.1 首屏前后</a></li>
+<li><a href="#52-延后加载的功能">5.2 延后加载的功能</a></li>
+</ul>
+</li>
+<li><a href="#6-复现步骤">6. 复现步骤</a></li>
+<li><a href="#7-图片费用和竞赛考核">7. 图片、费用和竞赛考核</a></li>
+<li><a href="#8-发布记录">8. 发布记录</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-04，北京时间。场景是评委在电脑打开官网，或用手机扫码进入三分钟体验。本文记录依赖定位、选型、前后测量、实际页面与发布过程。</p>
+<p><a href="https://daylight.yunforis.com/experience">在线体验</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a> · <a href="https://daylight.yunforis.com/competition/entry-report.html">本轮图文</a></p>
+<h2 id="1-目标与结果">1. 目标与结果</h2>
+<p>评委首先要能点下“开始体验”。本轮减少公开页首次下载的工作区代码、日历时间库、公式样式和启动图片，同时保留登录、工作区和各业务页的完整操作。</p>
+<p><img alt="公开页加载边界与前后对照，gpt-image-2.5 英文图" src="/competition/entry-assets/assets/entry-loading.webp" loading="lazy" decoding="async"></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">优化前</th>
+<th style="text-align: right;">优化后</th>
+<th style="text-align: right;">变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>体验页 JavaScript，最终文件</td>
+<td style="text-align: right;">636,188 bytes</td>
+<td style="text-align: right;">501,402 bytes</td>
+<td style="text-align: right;">减少 21.19%</td>
+</tr>
+<tr>
+<td>体验页 JavaScript，逐文件 gzip</td>
+<td style="text-align: right;">210,510 bytes</td>
+<td style="text-align: right;">165,987 bytes</td>
+<td style="text-align: right;">减少 21.15%</td>
+</tr>
+<tr>
+<td>首屏 CSS，逐文件 gzip</td>
+<td style="text-align: right;">36,430 bytes</td>
+<td style="text-align: right;">28,119 bytes</td>
+<td style="text-align: right;">减少 22.81%</td>
+</tr>
+<tr>
+<td>启动标记图片</td>
+<td style="text-align: right;">115,160 bytes</td>
+<td style="text-align: right;">8,278 bytes</td>
+<td style="text-align: right;">512px PNG → 128px WebP</td>
+</tr>
+<tr>
+<td>上述 JS、CSS、启动图合计</td>
+<td style="text-align: right;">362,100 bytes</td>
+<td style="text-align: right;">202,384 bytes</td>
+<td style="text-align: right;">减少 44.11%</td>
+</tr>
+<tr>
+<td>1440px 页面可操作 p50</td>
+<td style="text-align: right;">2.424 秒</td>
+<td style="text-align: right;">1.641 秒</td>
+<td style="text-align: right;">缩短 32.29%</td>
+</tr>
+<tr>
+<td>390px 页面可操作 p50</td>
+<td style="text-align: right;">2.424 秒</td>
+<td style="text-align: right;">1.613 秒</td>
+<td style="text-align: right;">缩短 33.44%</td>
+</tr>
+</tbody>
+</table>
+<p>体积采用十进制 bytes / KB。表中合计覆盖体验路由的静态 JS 依赖、CSS 与启动标记；HTML、favicon、接口和外部字体单独保存在浏览器原始资源记录中。页面耗时来自第 4 节的本地受控传输，共 20 次导航；公网交付记录在发布节。</p>
+<h2 id="2-怎样找到等待来源">2. 怎样找到等待来源</h2>
+<p>入口 <code>src/main.jsx</code> 原先直接加载 <code>temporal-polyfill/global</code> 和 KaTeX CSS；<code>src/App.jsx</code> 直接导入工作区状态、新手引导、官网与认证页面。这些导入位于路由判断之前，打开 <code>/experience</code> 也会下载相应代码。</p>
+<p>新增分析脚本读取 Rollup 模块归属，再从最终 <code>dist/.vite/manifest.json</code> 递归追踪静态 <code>imports</code> 和 CSS。Vite 会在 <code>generateBundle</code> 后继续添加预加载映射，因此字节、gzip 和 SHA-256 在构建落盘后计算。数据保存在<a href="/competition/entry-assets/evidence/bundle-before.json">优化前清单</a>和<a href="/competition/entry-assets/evidence/bundle-after.json">优化后清单</a>。</p>
+<p>优化前入口本身为 613,700 bytes，gzip 201,269 bytes；体验页及其共享依赖加入后为 636,188 bytes，gzip 210,510 bytes。实际浏览器采样中的 JS、CSS 压缩体积逐次与清单相等，每项都有正数网络传输字节。</p>
+<h2 id="3-技术选型与设计逻辑">3. 技术选型与设计逻辑</h2>
+<table>
+<thead>
+<tr>
+<th>修改</th>
+<th>设计原因</th>
+<th>代价与验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>独立懒加载 <code>WorkspaceEntry</code></td>
+<td>认证通过后才加载工作区 Provider、新手引导与全局日程弹窗；公开访问的依赖与业务状态分开</td>
+<td>首次进入工作区增加一个异步边界；统一启动画面承接，演示登录与日历实际打开验证</td>
+</tr>
+<tr>
+<td>官网、登录、注册、密码和法律页按路由加载</td>
+<td>每个入口只下载当前页面正文及表单</td>
+<td>站内跳转首次访问会请求对应 chunk；构建清单与页面跳转检查共同验证</td>
+</tr>
+<tr>
+<td>Temporal 放入 <code>studio-calendar.jsx</code> 的首个导入</td>
+<td>时间补丁与 FullCalendar 同时进入日历依赖图，确保模块求值前初始化</td>
+<td>实际月历、切月与日程北京时间字段验证</td>
+</tr>
+<tr>
+<td>KaTeX CSS 放入 <code>rich-markdown.jsx</code></td>
+<td>公式字体与渲染器一起加载；公开体验与技术说明不使用该渲染器</td>
+<td>实际构建的小 D 中渲染行内公式、块公式和 GFM 表格，检查字体和样式文件</td>
+</tr>
+<tr>
+<td>128px 透明 WebP 启动标记</td>
+<td>40–44px 展示使用双倍以上像素密度，减少首屏图片传输</td>
+<td>Lanczos 缩放后使用无损 WebP，保留原标记与透明度；原 PNG 继续作为品牌源图</td>
+</tr>
+</tbody>
+</table>
+<p>优化后的体验路由静态依赖清单中，<code>workspace</code>、<code>workbenches</code>、<code>onboarding</code>、官网正文、Temporal 和 KaTeX 均已移出。对应模块随实际页面加载；业务 API、Agent 执行与服务拓扑继续复用现有实现。</p>
+<h2 id="4-前后测量方法">4. 前后测量方法</h2>
+<h3 id="41-构建和传输条件">4.1 构建和传输条件</h3>
+<ul>
+<li>优化前源码：<code>435c7c7</code>，正式 v16 客户端；优化后文件摘要见<a href="/competition/entry-assets/evidence/source-hashes.json">源码清单</a>。两份构建使用同一 Node.js、Vite 7.3.7 和依赖安装。</li>
+<li>浏览器：Windows 上的 IAB Chromium，16 个逻辑处理器。视口分别为 1440×900、390×844；设备和完整 UA 随<a href="/competition/entry-assets/evidence/browser-samples.json">采样记录</a>保存。</li>
+<li>本地服务为每个版本提供共享 <strong>200,000 bytes/s</strong> 字节预算，所有在途响应轮换写出，每次响应前增加 <strong>80ms</strong> 延迟；文本资源使用 gzip，第一方响应统一 <code>Cache-Control: no-store</code>。</li>
+<li>两份页面共用独立演示 API；外部 Google Fonts 使用当前浏览器已有缓存，位于本地传输控制范围之外。CPU 使用本机执行环境。</li>
+<li>每个视口、每个版本 5 次。配对顺序 AB / BA 交替，保留全部 20 个样本。最初 1280px 探索导航单独保存，正式统计使用上述固定尺寸。</li>
+</ul>
+<p>这是可复现的本地传输模型，页面导航、资源加载、JavaScript 执行、体验 API、启动画面退出均包含在计时中。手机设备与微信真机验收沿用独立记录。</p>
+<h3 id="42-可操作的定义">4.2 “可操作”的定义</h3>
+<p>从导航开始，到可见的“开始体验：处理面试通知”按钮启用、<code>daylight-boot</code> 已移除，再等待两次动画帧。探针由本地对照服务在 HTML 头部加入，结果写入 DOM；正式产品 HTML 使用原有入口。</p>
+<table>
+<thead>
+<tr>
+<th>视口</th>
+<th>版本</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">平均</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p95</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1440×900</td>
+<td>前</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.421 秒</td>
+<td style="text-align: right;">2.424 秒</td>
+<td style="text-align: right;">2.447 秒</td>
+</tr>
+<tr>
+<td>1440×900</td>
+<td>后</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.639 秒</td>
+<td style="text-align: right;">1.641 秒</td>
+<td style="text-align: right;">1.696 秒</td>
+</tr>
+<tr>
+<td>390×844</td>
+<td>前</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.417 秒</td>
+<td style="text-align: right;">2.424 秒</td>
+<td style="text-align: right;">2.432 秒</td>
+</tr>
+<tr>
+<td>390×844</td>
+<td>后</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.613 秒</td>
+<td style="text-align: right;">1.613 秒</td>
+<td style="text-align: right;">1.620 秒</td>
+</tr>
+</tbody>
+</table>
+<p>分位数用 nearest-rank，n=5 的 p95 取该组最大值。20/20 就绪；每次记录资源起止、编码字节、解码字节、传输字节、页面绘制和导航时间。<a href="/competition/entry-assets/evidence/summary.json">完整汇总</a> · <a href="/competition/entry-assets/evidence/samples.csv">逐次 CSV</a> · <a href="/competition/entry-assets/evidence/browser-samples.json">浏览器原始资源</a>。</p>
+<h2 id="5-页面和业务检查">5. 页面和业务检查</h2>
+<h3 id="51-首屏前后">5.1 首屏前后</h3>
+<table>
+<thead>
+<tr>
+<th>1440px 优化前</th>
+<th>1440px 优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="电脑首屏基线" src="/competition/entry-assets/assets/before-desktop.png" loading="lazy" decoding="async"></td>
+<td><img alt="电脑首屏优化后" src="/competition/entry-assets/assets/after-desktop.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>390px 优化前</th>
+<th>390px 优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="手机尺寸首屏基线" src="/competition/entry-assets/assets/before-mobile.png" loading="lazy" decoding="async"></td>
+<td><img alt="手机尺寸首屏优化后" src="/competition/entry-assets/assets/after-mobile.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-延后加载的功能">5.2 延后加载的功能</h3>
+<p>本地实际构建已完成七步体验、未登录工作区跳转、演示账号登录、月历显示、下一月/上一月及日程详情。月历沿用北京时间；资料渲染在小 D 对话中通过本地合成响应检查，两条公式使用 <code>KaTeX_Main</code>，块公式与表格均正常。</p>
+<p><img alt="移动尺寸月历，Temporal 随日历加载" src="/competition/entry-assets/assets/calendar-mobile.png" loading="lazy" decoding="async"></p>
+<p><img alt="实际构建的小 D：本地合成公式和表格" src="/competition/entry-assets/assets/math-desktop.png" loading="lazy" decoding="async"></p>
+<p><a href="/competition/entry-assets/evidence/ui-checks.json">20项操作与页面状态</a>。公式检查使用 <code>entry-server.mjs --math-fixture</code> 的独立合成响应，模型与 SMTP 调用均为 0。图文报告在1440/390/320px无整页横向溢出，7张图片按需加载；<a href="/competition/entry-assets/evidence/report-layouts.json">三尺寸记录</a>。正式发布构建的132份JS/CSS均与受测构建摘要相等，<a href="/competition/entry-assets/evidence/final-build-check.json">最终文件核对</a>。</p>
+<h2 id="6-复现步骤">6. 复现步骤</h2>
+<p>在优化前源码快照和本轮源码中分别安装锁定依赖；将本轮分析脚本放入两份快照的 <code>scripts/</code>。各自执行以下命令，保留生成的 <code>dist</code> 和 <code>inventory.json</code>：</p>
+<pre><code class="language-sh">node scripts/analyze-client-bundle.mjs work/entry-v17/before
+node scripts/analyze-client-bundle.mjs work/entry-v17/after
+</code></pre>
+<p>将两个结果放在同一源码目录下的对应位置，启动独立演示和本地对照服务：</p>
+<pre><code class="language-sh">npm run demo -- --port 3196 --no-build
+node scripts/performance/entry-server.mjs --before work/entry-v17/before/dist --after work/entry-v17/after/dist --api http://127.0.0.1:3196
+</code></pre>
+<p>浏览器在 1440×900、390×844 下交替打开 <code>http://127.0.0.1:3197/experience?entry-bench=编号</code> 与 <code>http://127.0.0.1:3198/experience?entry-bench=编号</code>。读取 HTML 元素的 <code>data-entry-benchmark</code>，按原始格式保存为 <code>work/entry-v17/browser/samples.json</code>，再执行：</p>
+<pre><code class="language-sh">node scripts/performance/summarize-entry.mjs work/entry-v17
+</code></pre>
+<p>脚本复算分位数、传输体积，并校验每次第一方 JS/CSS 的实际传输与构建清单一致。图片可执行 <code>python scripts/build-entry-brand.py</code> 重建，需要 Pillow 的 WebP 支持。</p>
+<h2 id="7-图片费用和竞赛考核">7. 图片、费用和竞赛考核</h2>
+<ul>
+<li>本轮图像使用 imagegen 技能附带 CLI，明确指定 <code>gpt-image-2.5</code>、1536×1024、high；<a href="/competition/entry-assets/entry-prompt.txt">完整提示词</a>、<a href="/competition/entry-assets/image-generation.json">生成参数与摘要</a>、<a href="/competition/entry-assets/assets/entry-loading-generated.png">生成原图</a>均保留。图内英文；正文中文说明。</li>
+<li>本轮新增文字模型 0 次、图像生成 1 次、云采购 ¥0。累计文字模型 84 次，输入 104,267 / 输出 38,445 Token，按公开价估算 ¥0.516094；图像累计 12 次，费用按供应商账单登记。<a href="/competition/entry-assets/evidence/budget-total.json">累计清单</a>。总预算 ¥500。</li>
+<li>场景价值：扫码后更快进入可操作的邮件变化主线；工程与 Demo：公开页与工作区按路径加载，日历和公式功能实际验证；成本与性能：下载量和页面等待采用相同条件前后测量。云端服务与 Agent 的既有证据通过<a href="https://daylight.yunforis.com/competition/technical-report.html">统一技术报告</a>关联。</li>
+</ul>
+<h2 id="8-发布记录">8. 发布记录</h2>
+<p>v17以v16固定镜像摘要为基础，完整替换前端目录。发布脚本先备份数据库、当前前端与配置，核对包内文件摘要，再运行生产候选和测量资料检查；随后更新API、Worker、Scheduler，检查三个角色的健康、指标写入与七步业务。完整运行记录、正式HTTPS和手机尺寸截图随本轮部署归档保存。</p>
+<p><strong>已部署v17：</strong>候选29/29、正式HTTPS80项、180份关联资源与三页三尺寸布局通过。三角色各564文件、完整dist539文件一致，8服务healthy，应用restart=0 / OOM=false；公网相同资源范围响应体371,241→210,068 bytes，减少43.41%。<a href="/competition/entry-release-v17.html">精确镜像、备份、原始输出与正式截图</a>。</p></main></html>

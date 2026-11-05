@@ -1,0 +1,387 @@
+{
+  "date": "2026-11-03T16:49:25.368Z",
+  "origin": "https://daylight.yunforis.com",
+  "path": "/api/experience?step=7",
+  "scope": "Synthetic preset through live tools. 40 bounded HTTPS requests, client wall time, includes failed responses. Not live model throughput.",
+  "method": "Nearest rank; 20 sequential, then 5 batches of 4 concurrent",
+  "summary": {
+    "sequential": {
+      "count": 20,
+      "successes": 20,
+      "meanMs": 62.537615,
+      "p50Ms": 40.8433,
+      "p95Ms": 81.65729999999996,
+      "maxBytes": 16523
+    },
+    "concurrent-4": {
+      "count": 20,
+      "successes": 20,
+      "meanMs": 139.524445,
+      "p50Ms": 100.4534000000001,
+      "p95Ms": 346.2258999999999,
+      "maxBytes": 16523
+    }
+  },
+  "samples": [
+    {
+      "batch": "sequential",
+      "i": 0,
+      "ms": 374.42990000000003,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 56.77
+    },
+    {
+      "batch": "sequential",
+      "i": 1,
+      "ms": 81.65729999999996,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 17.59
+    },
+    {
+      "batch": "sequential",
+      "i": 2,
+      "ms": 67.26240000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.54
+    },
+    {
+      "batch": "sequential",
+      "i": 3,
+      "ms": 48.25810000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.87
+    },
+    {
+      "batch": "sequential",
+      "i": 4,
+      "ms": 49.51660000000004,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 22.78
+    },
+    {
+      "batch": "sequential",
+      "i": 5,
+      "ms": 40.17410000000007,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.94
+    },
+    {
+      "batch": "sequential",
+      "i": 6,
+      "ms": 39.6416999999999,
+      "status": 200,
+      "bytes": 16522,
+      "success": true,
+      "serverMs": 14.9
+    },
+    {
+      "batch": "sequential",
+      "i": 7,
+      "ms": 39.89570000000003,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.28
+    },
+    {
+      "batch": "sequential",
+      "i": 8,
+      "ms": 40.14980000000003,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 16.73
+    },
+    {
+      "batch": "sequential",
+      "i": 9,
+      "ms": 39.9312000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.98
+    },
+    {
+      "batch": "sequential",
+      "i": 10,
+      "ms": 39.6019,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.63
+    },
+    {
+      "batch": "sequential",
+      "i": 11,
+      "ms": 41.46399999999994,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 12.38
+    },
+    {
+      "batch": "sequential",
+      "i": 12,
+      "ms": 40.8433,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.57
+    },
+    {
+      "batch": "sequential",
+      "i": 13,
+      "ms": 38.239799999999946,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.54
+    },
+    {
+      "batch": "sequential",
+      "i": 14,
+      "ms": 52.87479999999994,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.11
+    },
+    {
+      "batch": "sequential",
+      "i": 15,
+      "ms": 46.731500000000096,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.99
+    },
+    {
+      "batch": "sequential",
+      "i": 16,
+      "ms": 43.74479999999994,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.29
+    },
+    {
+      "batch": "sequential",
+      "i": 17,
+      "ms": 46.88779999999997,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.88
+    },
+    {
+      "batch": "sequential",
+      "i": 18,
+      "ms": 39.602100000000064,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.17
+    },
+    {
+      "batch": "sequential",
+      "i": 19,
+      "ms": 39.84550000000013,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.52
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 0,
+      "ms": 30.595599999999877,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 17.24
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 2,
+      "ms": 77.99500000000012,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.44
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 1,
+      "ms": 99.18309999999997,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.12
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 3,
+      "ms": 119.8400999999999,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.01
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 5,
+      "ms": 107.97499999999991,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.79
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 6,
+      "ms": 107.93020000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.95
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 4,
+      "ms": 117.06320000000005,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 29.87
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 7,
+      "ms": 137.08249999999998,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 25.24
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 8,
+      "ms": 83.7514000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 13.61
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 10,
+      "ms": 83.37619999999993,
+      "status": 200,
+      "bytes": 16522,
+      "success": true,
+      "serverMs": 14.7
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 9,
+      "ms": 100.4534000000001,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.77
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 11,
+      "ms": 121.66010000000006,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 22.17
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 12,
+      "ms": 286.4937000000002,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.99
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 14,
+      "ms": 316.41690000000017,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 15.58
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 13,
+      "ms": 346.2258999999999,
+      "status": 200,
+      "bytes": 16522,
+      "success": true,
+      "serverMs": 24.4
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 15,
+      "ms": 376.04140000000007,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 28.67
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 16,
+      "ms": 40.35889999999972,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 12.94
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 18,
+      "ms": 59.33830000000012,
+      "status": 200,
+      "bytes": 16522,
+      "success": true,
+      "serverMs": 14.5
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 17,
+      "ms": 79.51780000000008,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 14.26
+    },
+    {
+      "batch": "concurrent-4",
+      "i": 19,
+      "ms": 99.1902,
+      "status": 200,
+      "bytes": 16523,
+      "success": true,
+      "serverMs": 17.64
+    }
+  ]
+}

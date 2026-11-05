@@ -1,0 +1,127 @@
+{
+  "at": "2026-11-03T20:30:49.800563+00:00",
+  "scope": "Authored report, source-record baseline and byte-identical public copy",
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad",
+  "bytes": 3111267,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 633,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 2,
+      "characters": 879,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 3,
+      "characters": 637,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 4,
+      "characters": 517,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 5,
+      "characters": 474,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 6,
+      "characters": 769,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 7,
+      "characters": 467,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 8,
+      "characters": 747,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 9,
+      "characters": 543,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 10,
+      "characters": 457,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 11,
+      "characters": 411,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 12,
+      "characters": 810,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 13,
+      "characters": 406,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 14,
+      "characters": 436,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 15,
+      "characters": 835,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 16,
+      "characters": 480,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 17,
+      "characters": 538,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 18,
+      "characters": 855,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 19,
+      "characters": 537,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 20,
+      "characters": 729,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 21,
+      "characters": 674,
+      "overflowCharacters": 0
+    }
+  ],
+  "bookmarks": 21,
+  "validInternalLinks": 6,
+  "externalLinks": 39,
+  "sourceRecords": 13,
+  "baselineSha256": "e368d47c737ebe55a66c7df297599b3e62ca47963a8c836a49219c47fa0711a2",
+  "snapshotRelease": "daylight:public-competition-20261104-v14",
+  "embeddedTextFonts": [
+    "AAAAAA+MicrosoftYaHei-0",
+    "AAAAAA+MicrosoftYaHei-Bold-0",
+    "AAAAAB+MicrosoftYaHei-0",
+    "AAAAAB+MicrosoftYaHei-Bold-0",
+    "AAAAAC+MicrosoftYaHei-0"
+  ],
+  "textBounds": "45pt horizontal / 15pt top / 14pt bottom"
+}

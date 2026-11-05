@@ -1,0 +1,51 @@
+metrics sink: /var/lib/daylight-metrics
+  11 process file(s), 181412 samples, 0 malformed line(s)
+  window: 2026-10-17T11:11:03.028+08:00 → 2026-10-17T12:57:08.467+08:00
+  runId(s): fresh-install
+  provenance: e0ff650 (dirty)
+  - metrics-1b597eb01df0-7.jsonl: 6318
+  - metrics-23a10096d72d-6.jsonl: 95168
+  - metrics-57785edfa362-7.jsonl: 6165
+  - metrics-7490db71e71c-7.jsonl: 4609
+  - metrics-8d5c6d9f5bb2-8.jsonl: 1583
+  - metrics-b3991e7904b3-6.jsonl: 23309
+  - metrics-b4f1fa2f12ba-6.jsonl: 7884
+  - metrics-c1c7db02dd79-7.jsonl: 2109
+  - metrics-cd63e4f74226-7.jsonl: 95
+  - metrics-d5badb328028-7.jsonl: 11851
+  - metrics-f99d486d091c-7.jsonl: 22321
+  health: no drops, no sink errors reported
+
+metric                   count   unit     p50        p95         p99         max         mean         
+───────────────────────  ──────  ───────  ─────────  ──────────  ──────────  ──────────  ─────────────
+pg.query.ms              141401  ms       0.463      3.122       27.468      317.813     1.382        
+gc.pause.ms              6917    ms       1.413      12.568      32.973      101.626     3.683        
+eventloop.delay.ms       6416    ms       10.715     44.696      78.643      452.198     15.673       
+process.rss.bytes        3208    bytes    158052352  368078848   454549504   966127616   201055622.703
+process.heap_used.bytes  3208    bytes    47531872   142838592   181480568   246300248   57294947.628 
+process.external.bytes   3208    bytes    4380066    13699894    38627224    57483224    5870918.07   
+process.cpu.percent      3208    percent  0.71       34.18       101.72      137.46      4.737        
+process.handles          3208    count    5          7           8           9           5.581        
+process.uptime.seconds   3208    seconds  905.937    2516.179    3156.216    3316.223    1094.098     
+storage.snapshot.ms      2972    ms       61.67      110.887     162.63      387.47      64.21        
+redis.command.ms         1701    ms       2.294      7.33        13.33       41.728      3.144        
+mq.wakeup_total          196     count    1          1           1           1           1            
+mq.publish.ms            196     ms       7.997      59.937      76.698      99.326      20.11        
+mq.publish_total         196     count    1          1           1           1           1            
+imap.connect.ms          167     ms       523.196    786.553     1567.313    1808.539    513.779      
+imap.messages_total      167     count    15         15          15          15          13.994       
+imap.read.ms             167     ms       777.456    1793.678    72879.011   80691.332   3245.927     
+imap.read_total          167     count    1          1           1           1           1            
+job.execute.ms           167     ms       2304.352   100765.155  249652.769  300008.332  12874.771    
+job.executed_total       167     count    1          1           1           1           1            
+oss.bytes_total          153     count    87139      2511259     7066245     8599467     609163.405   
+model.request.ms         146     ms       140.174    48156.036   60002.854   60003.463   7559.011     
+model.requests_total     146     count    1          1           1           1           1            
+storage.commit.ms        132     ms       28.721     68.456      124.416     173.713     33.496       
+oss.put.ms               119     ms       11.042     131.11      200.094     207.24      26.852       
+oss.put_total            119     count    1          1           1           1           1            
+http.inflight            91      count    1          1           1           1           1            
+http.request.ms          91      ms       136.414    354.594     12778.9     16474.32    468.834      
+http.requests_total      91      count    1          1           1           1           1            
+oss.get.ms               34      ms       5.424      8.368       11.855      11.855      5.85         
+  … 2 more metric(s); use --top N

@@ -1,0 +1,261 @@
+ Image daylight:compose-check Building 
+ Image daylight:compose-check Building 
+ Image daylight:compose-check Building 
+ Image daylight:compose-check Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.00kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.07kB 0.0s done
+#2 DONE 0.1s
+
+#3 [scheduler internal] load metadata for docker.io/library/node:22.23.3-bookworm-slim
+#3 DONE 1.8s
+
+#4 [worker internal] load .dockerignore
+#4 transferring context: 129B done
+#4 DONE 0.0s
+
+#5 [migrate dependencies 1/4] FROM docker.io/library/node:22.23.3-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#5 resolve docker.io/library/node:22.23.3-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.1s done
+#5 DONE 0.1s
+
+#6 [scheduler internal] load build context
+#6 transferring context: 789.07kB 0.1s done
+#6 DONE 0.1s
+
+#7 [worker dependencies 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [worker dependencies 3/4] COPY package.json package-lock.json ./
+#8 DONE 0.0s
+
+#9 [scheduler dependencies 4/4] RUN npm ci --no-audit --no-fund
+#9 99.03 
+#9 99.03 added 515 packages in 2m
+#9 99.03 npm notice
+#9 99.03 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+#9 99.03 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#9 99.03 npm notice To update run: npm install -g npm@12.2.0
+#9 99.03 npm notice
+#9 DONE 99.5s
+
+#10 [scheduler build 1/5] COPY index.html vite.config.* ./
+#10 DONE 0.3s
+
+#11 [api build 2/5] COPY src ./src
+#11 DONE 0.1s
+
+#12 [worker build 3/5] COPY public ./public
+#12 DONE 0.0s
+
+#13 [migrate build 4/5] COPY shared ./shared
+#13 DONE 0.0s
+
+#14 [migrate build 5/5] RUN npm run build
+#14 0.347 
+#14 0.347 > daylight-mail-calendar@0.1.0 build
+#14 0.347 > vite build
+#14 0.347 
+#14 0.989 vite v7.3.7 building client environment for production...
+#14 1.130 transforming...
+#14 ...
+
+#15 [worker runtime 2/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates fonts-noto-cjk     && rm -rf /var/lib/apt/lists/*
+#15 CACHED
+
+#16 [worker runtime 3/9] WORKDIR /app
+#16 CACHED
+
+#15 [scheduler runtime 2/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates fonts-noto-cjk     && rm -rf /var/lib/apt/lists/*
+#15 CACHED
+
+#16 [scheduler runtime 3/9] WORKDIR /app
+#16 CACHED
+
+#17 [migrate runtime 4/9] COPY --from=dependencies /app/node_modules ./node_modules
+#17 CACHED
+
+#18 [migrate runtime 5/9] COPY package.json ./
+#18 DONE 0.2s
+
+#14 [migrate build 5/5] RUN npm run build
+#14 11.03 ✓ 2447 modules transformed.
+#14 12.71 rendering chunks...
+#14 12.75 computing gzip size...
+#14 12.86 dist/index.html                                           3.24 kB │ gzip:   1.45 kB
+#14 12.86 dist/assets/KaTeX_Size3-Regular-CTq5MqoE.woff             4.42 kB
+#14 12.86 dist/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2            4.93 kB
+#14 12.86 dist/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2            5.21 kB
+#14 12.86 dist/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2            5.47 kB
+#14 12.86 dist/assets/KaTeX_Size4-Regular-BF-4gkZK.woff             5.98 kB
+#14 12.86 dist/assets/KaTeX_Size2-Regular-oD1tc_U0.woff             6.19 kB
+#14 12.86 dist/assets/KaTeX_Size1-Regular-C195tn64.woff             6.50 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2      6.91 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2         6.91 kB
+#14 12.86 dist/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf              7.59 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff       7.66 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff          7.72 kB
+#14 12.86 dist/assets/KaTeX_Script-Regular-D3wIWfF6.woff2           9.64 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2       10.34 kB
+#14 12.86 dist/assets/KaTeX_Size4-Regular-DWFBv043.ttf             10.36 kB
+#14 12.86 dist/assets/KaTeX_Script-Regular-D5yQViql.woff           10.59 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2         11.32 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2            11.35 kB
+#14 12.86 dist/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf             11.51 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2        12.03 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2          12.22 kB
+#14 12.86 dist/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf             12.23 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff        12.32 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf       12.34 kB
+#14 12.86 dist/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf          12.37 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff          13.21 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff             13.30 kB
+#14 12.86 dist/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2      13.57 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff         14.11 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff           14.41 kB
+#14 12.86 dist/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff       16.03 kB
+#14 12.86 dist/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2         16.40 kB
+#14 12.86 dist/assets/KaTeX_Math-Italic-t53AETM-.woff2             16.44 kB
+#14 12.86 dist/assets/KaTeX_Script-Regular-C5JkGWo-.ttf            16.65 kB
+#14 12.86 dist/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2         16.78 kB
+#14 12.86 dist/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2             16.99 kB
+#14 12.86 dist/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff          18.67 kB
+#14 12.86 dist/assets/KaTeX_Math-Italic-DA0__PXp.woff              18.75 kB
+#14 12.86 dist/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff          19.41 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf         19.44 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Regular-CB_wures.ttf           19.57 kB
+#14 12.86 dist/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf              19.58 kB
+#14 12.86 dist/assets/KaTeX_Main-Italic-BMLOBm91.woff              19.68 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf          22.36 kB
+#14 12.86 dist/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf            24.50 kB
+#14 12.86 dist/assets/KaTeX_Main-Bold-Cx986IdX.woff2               25.32 kB
+#14 12.86 dist/assets/KaTeX_Main-Regular-B22Nviop.woff2            26.27 kB
+#14 12.86 dist/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf        27.56 kB
+#14 12.86 dist/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2             28.08 kB
+#14 12.86 dist/assets/KaTeX_Main-Bold-Jm3AIy58.woff                29.91 kB
+#14 12.86 dist/assets/KaTeX_Main-Regular-Dr94JaBh.woff             30.77 kB
+#14 12.86 dist/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf           31.20 kB
+#14 12.86 dist/assets/KaTeX_Math-Italic-flOr_0UB.ttf               31.31 kB
+#14 12.86 dist/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf           32.97 kB
+#14 12.86 dist/assets/KaTeX_AMS-Regular-DMm9YOAa.woff              33.52 kB
+#14 12.86 dist/assets/KaTeX_Main-Italic-3WenGoN9.ttf               33.58 kB
+#14 12.86 dist/assets/KaTeX_Main-Bold-waoOVXN0.ttf                 51.34 kB
+#14 12.86 dist/assets/KaTeX_Main-Regular-ypZvNtVU.ttf              53.58 kB
+#14 12.86 dist/assets/KaTeX_AMS-Regular-DRggAlZN.ttf               63.63 kB
+#14 12.86 dist/assets/index-C5hiobL3.css                          199.75 kB │ gzip:  35.87 kB
+#14 12.86 dist/assets/index-CnDDP4JA.js                         1,842.86 kB │ gzip: 551.55 kB
+#14 12.86 
+#14 12.86 (!) Some chunks are larger than 500 kB after minification. Consider:
+#14 12.86 - Using dynamic import() to code-split the application
+#14 12.86 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+#14 12.86 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#14 12.86 ✓ built in 11.82s
+#14 DONE 13.3s
+
+#19 [api runtime 6/9] COPY --from=build /app/dist ./dist
+#19 DONE 0.0s
+
+#20 [migrate runtime 7/9] COPY server ./server
+#20 DONE 0.1s
+
+#21 [api runtime 8/9] COPY shared ./shared
+#21 DONE 0.0s
+
+#22 [scheduler runtime 9/9] COPY scripts ./scripts
+#22 DONE 0.0s
+
+#23 [migrate] exporting to image
+#23 exporting layers
+#23 exporting layers 0.2s done
+#23 exporting manifest sha256:d9a67fe8841d012b743dd006a0aed5b8f7b2d6093373c0651e1cae4759bc1b84 0.0s done
+#23 exporting config sha256:34e08cc7b566d118bfd1b0afc7b0e57c6e24f441391f9b87b68a7ee7cdb4036c 0.0s done
+#23 exporting attestation manifest sha256:bbe22fa1216219c27892bae5ef555a4f868f03f8400ee3daf8005fa43d45c6ce 0.0s done
+#23 exporting manifest list sha256:57abeae8573ac0ddd804fd4b571d70e57fd7dcef1a7e4d7a1670c1ff47277ae2
+#23 exporting manifest list sha256:57abeae8573ac0ddd804fd4b571d70e57fd7dcef1a7e4d7a1670c1ff47277ae2 0.0s done
+#23 naming to docker.io/library/daylight:compose-check done
+#23 unpacking to docker.io/library/daylight:compose-check
+#23 unpacking to docker.io/library/daylight:compose-check 0.2s done
+#23 DONE 0.6s
+
+#24 [api] exporting to image
+#24 exporting layers 0.2s done
+#24 exporting manifest sha256:94076264bf6aa442385210c33c7a9f4165f7a0b3e3925c8647f87cfd94fafc8d 0.0s done
+#24 exporting config sha256:841c2d2bb6120a7aa9b9e78c724f0fd1a5d2c295889ba2c56bf0b3a117cb8437 0.0s done
+#24 exporting attestation manifest sha256:a3a273eae4eedf27baf7afc2485ff07cf2dc3c11e518f07c07f2c11493507519 0.0s done
+#24 exporting manifest list sha256:27238d4ec5663b3ecc46b6f80f0354b1488016a4c824fe3070d78f4eb728a4ee 0.0s done
+#24 naming to docker.io/library/daylight:compose-check 0.0s done
+#24 unpacking to docker.io/library/daylight:compose-check 0.2s done
+#24 DONE 0.5s
+
+#25 [scheduler] exporting to image
+#25 exporting layers 0.2s done
+#25 exporting manifest sha256:c553a86a66e1f8514e0f70bcba55c99d44c0d9b6229c1408c3c55e8951aaf94e 0.0s done
+#25 exporting config sha256:a75287249ada90d638fe6f45681b67a3086f5d071e4c90f7863f16ca7223281d 0.0s done
+#25 exporting attestation manifest sha256:e2a261442005431dd0811e149d10712d860352e1efb504238fdea174e21589f8 0.0s done
+#25 exporting manifest list sha256:fc2f03b751115fa8d656f12558086890d0a87e04388d92ed8182ae6e04cfe357 0.0s done
+#25 naming to docker.io/library/daylight:compose-check done
+#25 unpacking to docker.io/library/daylight:compose-check 0.2s done
+#25 DONE 0.5s
+
+#26 [worker] exporting to image
+#26 exporting layers 0.2s done
+#26 exporting manifest sha256:f955c9ae9abf2fa0e76ab3352d96128c4c18c58fa081368fb87b7a8a7fdca020 0.0s done
+#26 exporting config sha256:6ffe6d728c88e51e355845c79eebf847cefb409270325c642e656b678bfc6d18 0.0s done
+#26 exporting attestation manifest sha256:df150bc191fe5f6ee812dfcd46999d367dacfdbc525d8757bb0f7646517eafb9 0.0s done
+#26 exporting manifest list sha256:ba1c257a2cc320115dd11611e7a3a1b9679c082645bbe7f543557e3879489b3e 0.0s done
+#26 naming to docker.io/library/daylight:compose-check done
+#26 unpacking to docker.io/library/daylight:compose-check 0.2s done
+#26 DONE 0.5s
+
+#27 [api] resolving provenance for metadata file
+#27 ...
+
+#28 [worker] resolving provenance for metadata file
+#28 DONE 0.1s
+
+#27 [api] resolving provenance for metadata file
+#27 DONE 0.3s
+
+#29 [migrate] resolving provenance for metadata file
+#29 DONE 0.0s
+
+#30 [scheduler] resolving provenance for metadata file
+#30 DONE 0.3s
+ Image daylight:compose-check Built 
+ Image daylight:compose-check Built 
+ Image daylight:compose-check Built 
+ Image daylight:compose-check Built 
+ Image postgres:17.6-bookworm Pulling 
+ Image minio/mc:RELEASE.2025-04-08T15-39-49Z Pulling 
+ Image minio/minio:RELEASE.2025-04-03T14-56-28Z Pulling 
+ Image rabbitmq:4.1.4-management-alpine Pulling 
+ 43297198b981 Pulling fs layer 0B
+ 752fc1bcb5e0 Pulling fs layer 0B
+ 68ae6031e0df Pulling fs layer 0B
+ 33049f381174 Pulling fs layer 0B
+ aa186232e6d4 Pulling fs layer 0B
+ 553e8b781e3b Pulling fs layer 0B
+ f6184d0dc2fb Pulling fs layer 0B
+ 162e72af9357 Pulling fs layer 0B
+ 9119c7c41821 Pulling fs layer 0B
+ a5d51e77f69f Pulling fs layer 0B
+ 359be260dcae Pulling fs layer 0B
+ 0f6c9876a1a2 Pulling fs layer 0B
+ f6080d7cc0c1 Pulling fs layer 0B
+ 38723cf27dcc Pulling fs layer 0B
+ 489aeaba3b05 Pulling fs layer 0B
+ cd200f65b5c2 Pulling fs layer 0B
+ 1dc67d5840c0 Pulling fs layer 0B
+ 2de9d90d8c86 Pulling fs layer 0B
+ aeaa179ecde5 Pulling fs layer 0B
+ 2c9f1a21a466 Pulling fs layer 0B
+ 04912bb0ce4e Pulling fs layer 0B
+ 6c2027acd59a Pulling fs layer 0B
+ 1b0a558e746e Pulling fs layer 0B
+ Image rabbitmq:4.1.4-management-alpine Pulled 
+ 2bb5199ad8d8 Downloading 1.691kB
+ Image minio/minio:RELEASE.2025-04-03T14-56-28Z Interrupted 
+failed commit on ref "unknown-sha256:2bb5199ad8d8d3760e6b0b96f15fe4626b70d22950838745c0bd80d86519073b": commit failed: "unknown-sha256:2bb5199ad8d8d3760e6b0b96f15fe4626b70d22950838745c0bd80d86519073b" failed size validation: 1691 != 1324: failed precondition
+time="2026-10-17T01:13:10+08:00" level=warning msg="Warning: No resource found to remove for project \"daylight-check-18039b078dd1\"."

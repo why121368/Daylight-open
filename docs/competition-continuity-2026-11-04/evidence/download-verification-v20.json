@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-03T23:13:14.639029+00:00",
+  "ok": true,
+  "release": "v20",
+  "method": "Browser standard download link, documented downloadMedia action; saved local PNG fully decoded and byte verified.",
+  "linkHref": "/competition/experience-step-3-qr.png",
+  "savedFilename": "experience-step-3-qr.png",
+  "bytes": 5613,
+  "sha256": "2e500c29fc131e7dd6464356a556bb37445ffa0a8a21620c525741f65557e8fc",
+  "size": [
+    768,
+    768
+  ],
+  "decoder": "zxing-cpp 3.1.1",
+  "url": "https://daylight.yunforis.com/experience?step=3",
+  "ordinaryClick": {
+    "ok": true,
+    "method": "click with bounded browser download event",
+    "savedFilename": "daylight-experience-step-3.png",
+    "bytes": 5613,
+    "sha256": "2e500c29fc131e7dd6464356a556bb37445ffa0a8a21620c525741f65557e8fc",
+    "decodedUrl": "https://daylight.yunforis.com/experience?step=3"
+  }
+}

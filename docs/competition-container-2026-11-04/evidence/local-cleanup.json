@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-11-04T00:47:45.450842+00:00",
+  "finishedAt": "2026-11-04T00:47:50.261000+00:00",
+  "ok": true,
+  "project": "daylight-container-20261104",
+  "removedContainers": 9,
+  "removedVolumes": [
+    "daylight-container-20261104_metrics-data",
+    "daylight-container-20261104_minio-data",
+    "daylight-container-20261104_postgres-data",
+    "daylight-container-20261104_rabbitmq-data",
+    "daylight-container-20261104_redis-data"
+  ],
+  "remainingProjectContainers": 0,
+  "remainingProjectVolumes": 0,
+  "otherContainerIdsUnchanged": true,
+  "otherContainerCount": 20,
+  "preserved": [
+    "full source image",
+    "logs",
+    "private portable package",
+    "participant kit",
+    "other Docker projects"
+  ]
+}

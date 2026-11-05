@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: slow disk charges in-flight data to both limits without growing a second queue
+ok 1 - slow disk charges in-flight data to both limits without growing a second queue
+  ---
+  duration_ms: 130.937281
+  type: 'test'
+  ...
+# Subtest: shutdown awaits failed writes and persists their final dropped count
+ok 2 - shutdown awaits failed writes and persists their final dropped count
+  ---
+  duration_ms: 139.646186
+  type: 'test'
+  ...
+# Subtest: rotated files obey the per-process file count and byte limits
+ok 3 - rotated files obey the per-process file count and byte limits
+  ---
+  duration_ms: 97.923217
+  type: 'test'
+  ...
+# Subtest: directory retention reclaims files left by previous instances
+ok 4 - directory retention reclaims files left by previous instances
+  ---
+  duration_ms: 227.345105
+  type: 'test'
+  ...
+# Subtest: three roles produce independent atomic summaries and the CLI aggregates each
+ok 5 - three roles produce independent atomic summaries and the CLI aggregates each
+  ---
+  duration_ms: 528.322989
+  type: 'test'
+  ...
+# Subtest: metric identities, numeric payloads and aggregate cardinality are bounded
+ok 6 - metric identities, numeric payloads and aggregate cardinality are bounded
+  ---
+  duration_ms: 377.535772
+  type: 'test'
+  ...
+# Subtest: recording starts with the switch; the sink is created by the service entry point
+ok 7 - recording starts with the switch; the sink is created by the service entry point
+  ---
+  duration_ms: 6.982101
+  type: 'test'
+  ...
+# Subtest: each sample carries the required fields and Beijing timestamps
+ok 8 - each sample carries the required fields and Beijing timestamps
+  ---
+  duration_ms: 33.927619
+  type: 'test'
+  ...
+# Subtest: labels are sanitised so private and unbounded values never leave the process
+ok 9 - labels are sanitised so private and unbounded values never leave the process
+  ---
+  duration_ms: 8.245732
+  type: 'test'
+  ...
+# Subtest: an overflowing buffer drops samples and reports the loss instead of blocking
+ok 10 - an overflowing buffer drops samples and reports the loss instead of blocking
+  ---
+  duration_ms: 13.679636
+  type: 'test'
+  ...
+# Subtest: latency metrics keep every raw sample so percentiles can be recomputed
+ok 11 - latency metrics keep every raw sample so percentiles can be recomputed
+  ---
+  duration_ms: 8.331229
+  type: 'test'
+  ...
+# Subtest: timers record a duration in milliseconds and always release
+ok 12 - timers record a duration in milliseconds and always release
+  ---
+  duration_ms: 9.741154
+  type: 'test'
+  ...
+# Subtest: the rolling summary carries count, sum, min, max and percentiles
+ok 13 - the rolling summary carries count, sum, min, max and percentiles
+  ---
+  duration_ms: 37.309115
+  type: 'test'
+  ...
+# Subtest: a failing sink never throws into the caller and is reported as status
+ok 14 - a failing sink never throws into the caller and is reported as status
+  ---
+  duration_ms: 88.26549
+  type: 'test'
+  ...
+# Subtest: metrics stay completely off when the environment switch is absent
+ok 15 - metrics stay completely off when the environment switch is absent
+  ---
+  duration_ms: 94.816549
+  type: 'test'
+  ...
+# Subtest: provenance reports unknown rather than a false clean tree when git is unavailable
+ok 16 - provenance reports unknown rather than a false clean tree when git is unavailable
+  ---
+  duration_ms: 89.146273
+  type: 'test'
+  ...
+# Subtest: sink names differ for the same PID under different container host tags
+ok 17 - sink names differ for the same PID under different container host tags
+  ---
+  duration_ms: 157.028284
+  type: 'test'
+  ...
+# Subtest: an unusable metrics directory degrades to sinkError instead of crashing the service
+ok 18 - an unusable metrics directory degrades to sinkError instead of crashing the service
+  ---
+  duration_ms: 143.736627
+  type: 'test'
+  ...
+# Subtest: dependency outage and draining reject readiness without killing liveness
+ok 19 - dependency outage and draining reject readiness without killing liveness
+  ---
+  duration_ms: 11.765156
+  type: 'test'
+  ...
+# Subtest: hung readiness times out, aborts its check and still serves liveness
+ok 20 - hung readiness times out, aborts its check and still serves liveness
+  ---
+  duration_ms: 31.572637
+  type: 'test'
+  ...
+# Subtest: draining during an in-flight readiness check cannot return ready
+ok 21 - draining during an in-flight readiness check cannot return ready
+  ---
+  duration_ms: 1.364266
+  type: 'test'
+  ...
+# Subtest: shutdown closes idle connections and forces active ones before cleaning resources
+ok 22 - shutdown closes idle connections and forces active ones before cleaning resources
+  ---
+  duration_ms: 43.149157
+  type: 'test'
+  ...
+# Subtest: failed resource cleanup keeps the hard deadline instead of leaving a live process
+ok 23 - failed resource cleanup keeps the hard deadline instead of leaving a live process
+  ---
+  duration_ms: 216.157521
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2949.836762

@@ -1,0 +1,26 @@
+# Production task state on the cloud instance (read-only queries, 2026-10-17 03:20 +0800)
+# Database: daylight (business). Server: 127.0.0.1, PostgreSQL 16.15.
+
+## daylight_jobs (all rows)
+idempotency_key|kind|status|attempts|finished_at|error
+scheduled:29869586|mailbox.sync|failed|5|02:26:29|{"code": "JOB_FAILED", "message": "Job execution failed"}
+scheduled:29869587|mailbox.sync|failed|5|02:27:17|{"code": "JOB_FAILED", "message": "Job execution failed"}
+
+## daylight_job_outbox
+unpublished=0 total=10 oldest=2026-10-17 02:26:15.908657+08
+Both jobs have 5 wake-up rows each (one per claim attempt); every row was published
+exactly once (attempts=1, published_at set). No unpublished backlog.
+
+## Interpretation
+The two idempotency keys are consecutive minute slots (29869586 at 02:26, 29869587 at
+02:27), i.e. the same failing mailbox was re-enqueued on two back-to-back minutes and
+each job burned its full 5-attempt budget. This is the real-world shape of the D1 defect
+(no backoff for a permanently failing mailbox) captured before the fix was deployed at
+03:15. After the fixture set all mailboxes autoSync=false, the scheduler stopped
+producing scheduled syncs; no further jobs were created.
+Errors show the pre-fix placeholder reason ({"code": "JOB_FAILED", "message": "Job
+execution failed"}); the fix records a bounded, redacted reason plus job/kind/mailbox/attempt.
+
+## Service state at capture
+systemctl is-active: daylight-api=active daylight-worker=active daylight-scheduler=active
+listeners: 0.0.0.0:3000 (api) 0.0.0.0:3002 (worker health) 0.0.0.0:3003 (scheduler health)

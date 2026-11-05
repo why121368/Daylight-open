@@ -1,0 +1,24 @@
+{
+  "model": "gpt-image-2.5",
+  "tool": "imagegen bundled CLI",
+  "size": "1536x1024",
+  "quality": "high",
+  "language": "English",
+  "calls": 1,
+  "previousImageCalls": 10,
+  "totalImageCalls": 11,
+  "prompt": "latency-prompt.txt",
+  "promptSha256": "781b6650751843670c3c9bc3a45632abc49c8fca678a995e2145b04f5bfb74bd",
+  "generated": {
+    "file": "assets/concise-answers-generated.png",
+    "sha256": "d1d6cfd7ed532d366871ddd0edfd01f99f6922783fff465c37e44d142ca4b500",
+    "bytes": 1497057
+  },
+  "final": {
+    "file": "assets/concise-answers.webp",
+    "sha256": "5459811b6d752c9453b29babc280e1a6905265b03278a435d2d87319d247c3e9",
+    "bytes": 131592
+  },
+  "postprocess": "Pillow replaces only the compressed currency value line with exact horizontal typography; generated layout and all other labels retained.",
+  "billing": "Supplier invoice; image API returned no billable amount."
+}

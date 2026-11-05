@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: daylight
+# Migration and secrets are separate, ordered release steps; see deploy/README.md.
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - apps.yaml
+  - service.yaml

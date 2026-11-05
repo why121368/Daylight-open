@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-03T07:40:44.314840+00:00",
+  "containers": [
+    {
+      "name": "/daylight-api-1",
+      "image": "daylight:public-perf-20261103",
+      "imageId": "sha256:51fefd3034da2151a08e4c1d3d8f572f9727172f8ede56c1fc5ffd6afb25906d",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-worker-1",
+      "image": "daylight:public-perf-20261103",
+      "imageId": "sha256:51fefd3034da2151a08e4c1d3d8f572f9727172f8ede56c1fc5ffd6afb25906d",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-scheduler-1",
+      "image": "daylight:public-perf-20261103",
+      "imageId": "sha256:51fefd3034da2151a08e4c1d3d8f572f9727172f8ede56c1fc5ffd6afb25906d",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-postgres-1",
+      "image": "docker.m.daocloud.io/library/postgres:17.6-bookworm",
+      "imageId": "sha256:f3bd19c606e442c3d7bdfa8002e03fe260a1023351e0ea4598032022b68dd6e3",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-redis-1",
+      "image": "docker.m.daocloud.io/library/redis:7.4.5-bookworm",
+      "imageId": "sha256:90e7a336d044f1abc9e9dbc05d65566850896d11453bbd1dd0fb7e5059f0e8fb",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-rabbitmq-1",
+      "image": "docker.m.daocloud.io/library/rabbitmq:4.1.4-management-alpine",
+      "imageId": "sha256:5cbd7145b0306399ad68422c3350b6cbd1bb95704b39f5896480e5b6d4238a04",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-minio-1",
+      "image": "daylight-minio:RELEASE.2025-04-22T22-12-26Z",
+      "imageId": "sha256:c8ab2ce88284e5503209d2fc9a3d4c19f3fd5f3736f64d474e1a0ae486254abf",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    },
+    {
+      "name": "/daylight-caddy-1",
+      "image": "docker.m.daocloud.io/library/caddy:2.10.2-alpine",
+      "imageId": "sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d",
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false
+    }
+  ],
+  "ready": {
+    "ok": true,
+    "role": "api",
+    "draining": false,
+    "metrics": {
+      "enabled": false,
+      "runId": "4c5c071f-4f29-4523-980b-2ba0fa5e8802",
+      "written": 0,
+      "dropped": 0,
+      "sinkError": null
+    }
+  },
+  "sourceSha256": [
+    "daceff9fe02dce59c261413828971d4f07622d6c67843af055512170b6fae7ce  /opt/daylight/server/index.js",
+    "651a7951cebecf0557c53bd1f9a4d097ca6b959198462c9a1a6289b8c82058ee  /opt/daylight/server/storage/index.js",
+    "9a6fde6629fc5baf2819cf07e978c59e642b80707b035c5e735c7d474109a430  /opt/daylight/server/production-api.js"
+  ]
+}

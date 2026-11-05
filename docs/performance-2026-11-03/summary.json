@@ -1,0 +1,424 @@
+{
+  "http": {
+    "before": {
+      "captcha": {
+        "n": 12,
+        "mean": 749.3441165833335,
+        "p50": 715.7932030000002,
+        "p95": 920.6177150000001,
+        "min": 650.2078899999997,
+        "max": 920.6177150000001,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 9307.166666666666,
+        "successQps": 1.3345003688819799
+      },
+      "auth_me": {
+        "n": 12,
+        "mean": 932.1853843333334,
+        "p50": 689.7603680000011,
+        "p95": 1450.7574139999997,
+        "min": 672.4668780000011,
+        "max": 1450.7574139999997,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 289,
+        "successQps": 1.0727479928417514
+      },
+      "workspace": {
+        "n": 12,
+        "mean": 2566.363268083334,
+        "p50": 2448.6546080000007,
+        "p95": 3044.0167129999973,
+        "min": 2256.7952210000003,
+        "max": 3044.0167129999973,
+        "successfulSamples": 12,
+        "requestCount": 24,
+        "successfulRequests": 24,
+        "meanDecodedBytes": 11680206,
+        "successQps": 0.7793128996479451
+      },
+      "workspace_all": {
+        "n": 6,
+        "mean": 2547.4688758333323,
+        "p50": 2473.2070129999993,
+        "p95": 2789.5643210000053,
+        "min": 2363.959928999997,
+        "max": 2789.5643210000053,
+        "successfulSamples": 6,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 12487423,
+        "successQps": 0.7850930070129931
+      },
+      "attachment": {
+        "n": 12,
+        "mean": 726.1960619166639,
+        "p50": 706.1072819999972,
+        "p95": 887.4172409999883,
+        "min": 677.1913349999959,
+        "max": 887.4172409999883,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 89348,
+        "successQps": 1.3770385883953706
+      },
+      "switch_mailbox": {
+        "n": 6,
+        "mean": 5559.383017166666,
+        "p50": 4489.303981999998,
+        "p95": 7697.659589000003,
+        "min": 3267.3323579999997,
+        "max": 7697.659589000003,
+        "successfulSamples": 6,
+        "requestCount": 18,
+        "successfulRequests": 18,
+        "meanDecodedBytes": 6243289.5,
+        "successQps": 0.5396282268619347
+      },
+      "workspace_c4": {
+        "n": 3,
+        "mean": 17972.72984666667,
+        "p50": 17996.218030999997,
+        "p95": 18236.711655999985,
+        "min": 17685.259853000025,
+        "max": 18236.711655999985,
+        "successfulSamples": 2,
+        "requestCount": 24,
+        "successfulRequests": 23,
+        "meanDecodedBytes": 45770654,
+        "successQps": 0.42657218642211847
+      }
+    },
+    "after": {
+      "captcha": {
+        "n": 12,
+        "mean": 60.80477458333329,
+        "p50": 42.00862200000006,
+        "p95": 204.14258999999993,
+        "min": 30.10303799999997,
+        "max": 204.14258999999993,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 9568.333333333334,
+        "successQps": 16.446076921632102
+      },
+      "auth_me": {
+        "n": 12,
+        "mean": 19.765808499999974,
+        "p50": 17.97514799999999,
+        "p95": 30.388574000000062,
+        "min": 15.673321999999871,
+        "max": 30.388574000000062,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 289,
+        "successQps": 50.59241568590536
+      },
+      "workspace": {
+        "n": 12,
+        "mean": 697.6628704166666,
+        "p50": 644.6830550000004,
+        "p95": 893.9272259999998,
+        "min": 539.4756820000002,
+        "max": 893.9272259999998,
+        "successfulSamples": 12,
+        "requestCount": 24,
+        "successfulRequests": 24,
+        "meanDecodedBytes": 3414473,
+        "successQps": 2.866714117673391
+      },
+      "workspace_all": {
+        "n": 6,
+        "mean": 1087.6788296666664,
+        "p50": 704.2623339999991,
+        "p95": 2471.491817,
+        "min": 699.5128939999995,
+        "max": 2471.491817,
+        "successfulSamples": 6,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 4193513,
+        "successQps": 1.8387780891285035
+      },
+      "attachment": {
+        "n": 12,
+        "mean": 232.9657631666672,
+        "p50": 220.9856170000021,
+        "p95": 405.29135099999985,
+        "min": 128.68493800000215,
+        "max": 405.29135099999985,
+        "successfulSamples": 12,
+        "requestCount": 12,
+        "successfulRequests": 12,
+        "meanDecodedBytes": 89348,
+        "successQps": 4.292476226580062
+      },
+      "switch_mailbox": {
+        "n": 6,
+        "mean": 407.6542633333338,
+        "p50": 207.11756900000182,
+        "p95": 664.2727100000011,
+        "min": 191.84609099999943,
+        "max": 664.2727100000011,
+        "successfulSamples": 6,
+        "requestCount": 18,
+        "successfulRequests": 18,
+        "meanDecodedBytes": 2096008,
+        "successQps": 7.359177297618344
+      },
+      "workspace_c4": {
+        "n": 3,
+        "mean": 2732.702973000001,
+        "p50": 2744.4723970000014,
+        "p95": 2840.9359409999997,
+        "min": 2612.700581000001,
+        "max": 2840.9359409999997,
+        "successfulSamples": 3,
+        "requestCount": 24,
+        "successfulRequests": 24,
+        "meanDecodedBytes": 13657892,
+        "successQps": 2.927504408288283
+      }
+    }
+  },
+  "sync": {
+    "before": {
+      "n": 3,
+      "mean": 17017.333333333332,
+      "p50": 17199,
+      "p95": 17455,
+      "min": 16398,
+      "max": 17455
+    },
+    "after": {
+      "n": 3,
+      "mean": 2593.3333333333335,
+      "p50": 2231,
+      "p95": 3458,
+      "min": 2091,
+      "max": 3458
+    }
+  },
+  "browser": {
+    "before": {
+      "login_captcha": {
+        "n": 5,
+        "mean": 2707.86088,
+        "p50": 2646.0132000000012,
+        "p95": 3102.8614000000002,
+        "min": 2515.8917,
+        "max": 3102.8614000000002,
+        "meanTransferBytes": 904624,
+        "success": 5
+      },
+      "workspace": {
+        "n": 5,
+        "mean": 8771.32564,
+        "p50": 9424.215199999999,
+        "p95": 9854.0861,
+        "min": 6273.223700000002,
+        "max": 9854.0861,
+        "meanTransferBytes": 7382953.2,
+        "success": 5
+      }
+    },
+    "after": {
+      "login_captcha": {
+        "n": 5,
+        "mean": 359.91154,
+        "p50": 325.40700000000015,
+        "p95": 454.14650000000006,
+        "min": 286.68650000000025,
+        "max": 454.14650000000006,
+        "meanTransferBytes": 368651.8,
+        "success": 5
+      },
+      "workspace": {
+        "n": 5,
+        "mean": 2380.94998,
+        "p50": 2495.6658000000007,
+        "p95": 3348.595799999999,
+        "min": 1018.6931000000004,
+        "max": 3348.595799999999,
+        "meanTransferBytes": 860075,
+        "success": 5
+      }
+    }
+  },
+  "resources": {
+    "before": {
+      "durationSec": 164.78831601142883,
+      "meanLoad1m": 2.7589340672348484,
+      "minAvailableMiB": 767.1875,
+      "maxSwapMiB": 0.0,
+      "api": {
+        "cpuSec": 143.92575,
+        "meanCpuPercentOneCore": 87.33977837968688,
+        "meanMemoryMiB": 725.999834280303,
+        "peakMemoryMiB": 1106.4765625
+      },
+      "worker": {
+        "cpuSec": 54.386082,
+        "meanCpuPercentOneCore": 33.00360323861072,
+        "meanMemoryMiB": 239.91399147727273,
+        "peakMemoryMiB": 354.9609375
+      },
+      "postgres": {
+        "cpuSec": 43.810189,
+        "meanCpuPercentOneCore": 26.58573742386054,
+        "meanMemoryMiB": 212.47795928030303,
+        "peakMemoryMiB": 309.8046875
+      },
+      "redis": {
+        "cpuSec": 3.678205,
+        "meanCpuPercentOneCore": 2.2320787596038665,
+        "meanMemoryMiB": 17.871022727272727,
+        "peakMemoryMiB": 20.40234375
+      },
+      "minio": {
+        "cpuSec": 0.77286,
+        "meanCpuPercentOneCore": 0.46900169787911333,
+        "meanMemoryMiB": 276.5754971590909,
+        "peakMemoryMiB": 280.078125
+      },
+      "scheduler": {
+        "cpuSec": 1.166329,
+        "meanCpuPercentOneCore": 0.7077740875263934,
+        "meanMemoryMiB": 81.55426136363636,
+        "peakMemoryMiB": 95.39453125
+      }
+    },
+    "sync-before": {
+      "durationSec": 57.28571128845215,
+      "meanLoad1m": 1.173449286099138,
+      "minAvailableMiB": 1443.41796875,
+      "maxSwapMiB": 0.0,
+      "api": {
+        "cpuSec": 5.952222,
+        "meanCpuPercentOneCore": 10.390413012467683,
+        "meanMemoryMiB": 364.29660560344826,
+        "peakMemoryMiB": 414.03515625
+      },
+      "worker": {
+        "cpuSec": 48.950721,
+        "meanCpuPercentOneCore": 85.45014087983867,
+        "meanMemoryMiB": 309.6658135775862,
+        "peakMemoryMiB": 369.08203125
+      },
+      "postgres": {
+        "cpuSec": 13.766934,
+        "meanCpuPercentOneCore": 24.032055621477785,
+        "meanMemoryMiB": 202.66594827586206,
+        "peakMemoryMiB": 234.58203125
+      },
+      "redis": {
+        "cpuSec": 1.094011,
+        "meanCpuPercentOneCore": 1.909744987700859,
+        "meanMemoryMiB": 17.76117995689655,
+        "peakMemoryMiB": 19.265625
+      },
+      "minio": {
+        "cpuSec": 0.170125,
+        "meanCpuPercentOneCore": 0.2969763247651153,
+        "meanMemoryMiB": 274.8036099137931,
+        "peakMemoryMiB": 274.8125
+      },
+      "scheduler": {
+        "cpuSec": 0.502784,
+        "meanCpuPercentOneCore": 0.8776778514075166,
+        "meanMemoryMiB": 80.88341864224138,
+        "peakMemoryMiB": 81.0625
+      }
+    },
+    "after": {
+      "durationSec": 30.12529730796814,
+      "meanLoad1m": 1.4514238911290323,
+      "minAvailableMiB": 1760.66796875,
+      "maxSwapMiB": 0.0,
+      "api": {
+        "cpuSec": 27.207693,
+        "meanCpuPercentOneCore": 90.31510202823316,
+        "meanMemoryMiB": 304.8736139112903,
+        "peakMemoryMiB": 379.02734375
+      },
+      "worker": {
+        "cpuSec": 1.488822,
+        "meanCpuPercentOneCore": 4.942098943555345,
+        "meanMemoryMiB": 75.86617943548387,
+        "peakMemoryMiB": 106.0859375
+      },
+      "postgres": {
+        "cpuSec": 10.9438,
+        "meanCpuPercentOneCore": 36.32760828257574,
+        "meanMemoryMiB": 193.87689012096774,
+        "peakMemoryMiB": 269.5703125
+      },
+      "redis": {
+        "cpuSec": 0.734242,
+        "meanCpuPercentOneCore": 2.437293788319868,
+        "meanMemoryMiB": 17.166834677419356,
+        "peakMemoryMiB": 17.203125
+      },
+      "minio": {
+        "cpuSec": 0.142999,
+        "meanCpuPercentOneCore": 0.4746807924852471,
+        "meanMemoryMiB": 272.06439012096774,
+        "peakMemoryMiB": 272.171875
+      },
+      "scheduler": {
+        "cpuSec": 0.567873,
+        "meanCpuPercentOneCore": 1.8850369979578512,
+        "meanMemoryMiB": 70.84034778225806,
+        "peakMemoryMiB": 80.11328125
+      }
+    },
+    "sync-after": {
+      "durationSec": 11.019034147262573,
+      "meanLoad1m": 0.7408040364583334,
+      "minAvailableMiB": 1851.8125,
+      "maxSwapMiB": 0.0,
+      "api": {
+        "cpuSec": 1.429634,
+        "meanCpuPercentOneCore": 12.97422243087576,
+        "meanMemoryMiB": 138.35709635416666,
+        "peakMemoryMiB": 143.59375
+      },
+      "worker": {
+        "cpuSec": 4.148864,
+        "meanCpuPercentOneCore": 37.65179365589578,
+        "meanMemoryMiB": 170.32877604166666,
+        "peakMemoryMiB": 240.6484375
+      },
+      "postgres": {
+        "cpuSec": 1.150961,
+        "meanCpuPercentOneCore": 10.445207670818679,
+        "meanMemoryMiB": 188.451171875,
+        "peakMemoryMiB": 194.98046875
+      },
+      "redis": {
+        "cpuSec": 0.177586,
+        "meanCpuPercentOneCore": 1.6116294552378456,
+        "meanMemoryMiB": 17.173177083333332,
+        "peakMemoryMiB": 17.40234375
+      },
+      "minio": {
+        "cpuSec": 0.036668,
+        "meanCpuPercentOneCore": 0.33276963761029205,
+        "meanMemoryMiB": 271.6171875,
+        "peakMemoryMiB": 271.6171875
+      },
+      "scheduler": {
+        "cpuSec": 0.055385,
+        "meanCpuPercentOneCore": 0.5026302601463407,
+        "meanMemoryMiB": 72.10579427083333,
+        "peakMemoryMiB": 72.1953125
+      }
+    }
+  }
+}

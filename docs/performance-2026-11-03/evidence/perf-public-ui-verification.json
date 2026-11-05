@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-03T07:29:44.099Z",
+  "viewport": "390x844",
+  "checks": [
+    {
+      "name": "workspace renders",
+      "ok": true
+    },
+    {
+      "name": "summary excludes raw HTML and OCR",
+      "ok": true,
+      "emails": 134
+    },
+    {
+      "name": "detail integrity and authorization",
+      "ok": true,
+      "detail": 200,
+      "html": true,
+      "body": true,
+      "attachments": true,
+      "unknown": 403,
+      "anonymous": 401,
+      "attachmentAnonymous": 401
+    },
+    {
+      "name": "email deep link renders full original",
+      "ok": true
+    },
+    {
+      "name": "real PDF canvas rendered",
+      "ok": true,
+      "ms": 3580
+    },
+    {
+      "name": "no browser runtime errors",
+      "ok": true
+    }
+  ],
+  "errors": []
+}

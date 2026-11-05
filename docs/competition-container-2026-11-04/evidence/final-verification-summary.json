@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "at": "2026-11-04T00:36:56.517Z",
+  "sourceCommit": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a",
+  "dirty": false,
+  "sourceInventory": "git-checkout",
+  "node": "v24.14.0",
+  "platform": "win32/x64",
+  "sourceDigest": "d7ff283e9d9050fc63f49c556c711f9461f55be36d8490791135f2b14155b4d2",
+  "buildDigest": "8226713c441ee46cd61f4946e5371169bdc52e21d0ea316abf182b80d204f8f6",
+  "scope": "isolated-offline-release",
+  "liveServicesChecked": false,
+  "cloudAcceptance": false,
+  "stages": [
+    {
+      "name": "tests",
+      "code": 0,
+      "elapsedMs": 84598,
+      "log": "tests.log",
+      "summary": [
+        "# tests 1051",
+        "# suites 1",
+        "# pass 1021",
+        "# fail 0",
+        "# cancelled 0",
+        "# skipped 30",
+        "# todo 0",
+        "# duration_ms 84404.3935"
+      ]
+    },
+    {
+      "name": "build",
+      "code": 0,
+      "elapsedMs": 56736,
+      "log": "build.log"
+    },
+    {
+      "name": "evaluation-corpus",
+      "code": 0,
+      "elapsedMs": 157,
+      "log": "evaluation-corpus.log"
+    },
+    {
+      "name": "demo",
+      "code": 0,
+      "elapsedMs": 6751,
+      "log": "demo.log"
+    },
+    {
+      "name": "deployment-assets",
+      "code": 0,
+      "elapsedMs": 122,
+      "log": "deployment-assets.log"
+    }
+  ],
+  "blockedExternalAttempts": 2
+}

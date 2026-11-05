@@ -1,0 +1,77 @@
+[
+  {
+    "page": "entry-report",
+    "documentWidth": 1425,
+    "figureLoaded": true,
+    "figureText": "公开页加载边界与前后对照，gpt-image-2.5 英文图",
+    "images": 7,
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "page": "entry-report",
+    "documentWidth": 375,
+    "figureLoaded": true,
+    "figureText": "公开页加载边界与前后对照，gpt-image-2.5 英文图",
+    "images": 7,
+    "width": 390,
+    "ok": true
+  },
+  {
+    "page": "entry-report",
+    "documentWidth": 305,
+    "figureLoaded": true,
+    "figureText": "公开页加载边界与前后对照，gpt-image-2.5 英文图",
+    "images": 7,
+    "width": 320,
+    "ok": true
+  },
+  {
+    "page": "experience",
+    "buttonHeight": 48,
+    "buttonTop": 675.6666870117188,
+    "documentWidth": 1425,
+    "startEnabled": true,
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "page": "experience",
+    "buttonHeight": 48,
+    "buttonTop": 304.66668701171875,
+    "documentWidth": 375,
+    "startEnabled": true,
+    "width": 390,
+    "ok": true
+  },
+  {
+    "page": "experience",
+    "buttonHeight": 48,
+    "buttonTop": 380.6666870117187,
+    "documentWidth": 305,
+    "startEnabled": true,
+    "width": 320,
+    "ok": true
+  },
+  {
+    "page": "evidence",
+    "documentWidth": 1425,
+    "headings": 5,
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "page": "evidence",
+    "documentWidth": 375,
+    "headings": 5,
+    "width": 390,
+    "ok": true
+  },
+  {
+    "page": "evidence",
+    "documentWidth": 305,
+    "headings": 5,
+    "width": 320,
+    "ok": true
+  }
+]

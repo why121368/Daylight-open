@@ -1,0 +1,10 @@
+=== compose stack on 4 vCPU cloud instance, 2026-10-17T10:25:08+08:00 ===
+--- host readiness (public interface 0.0.0.0:3000) ---
+/health/live 200
+/health/ready 200
+--- frontend ---
+GET / -> 200 (3240 bytes)
+--- role readiness + metrics ---
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"05cbc76b-5d4e-4fa7-969c-dca9a08d66bf","written":1709,"dropped":0,"sinkError":null}}
+worker: {"ok":true,"role":"worker","draining":false,"metrics":{"enabled":true,"runId":"05c21a29-fcb3-4ab7-bf5c-df75cfb8af2e","written":16018,"dropped":0,"sinkError":null}}
+scheduler: {"ok":true,"role":"scheduler","draining":false,"metrics":{"enabled":true,"runId":"fa55b98e-d286-40d3-85b4-2431c71d6087","written":2113,"dropped":0,"sinkError":null}}

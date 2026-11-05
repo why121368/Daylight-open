@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-03T09:09:38.142Z",
+  "checks": [
+    {
+      "name": "both menu weeks retained",
+      "ok": true,
+      "menus": 1564
+    },
+    {
+      "name": "anonymous private endpoint rejected",
+      "ok": true
+    },
+    {
+      "name": "guest does not infer private free time",
+      "ok": true
+    },
+    {
+      "name": "guest budget and Chinese date query",
+      "ok": true,
+      "cards": 1
+    },
+    {
+      "name": "account model configured",
+      "ok": true,
+      "savedSchoolItems": 50
+    },
+    {
+      "name": "real configured model used by default for dinner",
+      "ok": true,
+      "ms": 3221,
+      "cards": 1,
+      "tools": [
+        "intent",
+        "weekly_menu"
+      ]
+    },
+    {
+      "name": "real model calendar then navigation plan",
+      "ok": true,
+      "ms": 4141,
+      "cards": 4,
+      "routeCards": 0,
+      "tools": [
+        "intent",
+        "personal_calendar",
+        "ground_navigation"
+      ]
+    }
+  ],
+  "realModelRequests": 2
+}

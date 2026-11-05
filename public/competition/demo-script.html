@@ -1,0 +1,86 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三分钟演示讲稿 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="三分钟演示讲稿">三分钟演示讲稿</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#三分钟演示讲稿">三分钟演示讲稿</a><ul>
+<li><a href="#现场准备">现场准备</a></li>
+<li><a href="#五项追问定位">五项追问定位</a></li>
+<li><a href="#视频与分章入口">视频与分章入口</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>主入口：<a href="https://daylight.yunforis.com/experience">https://daylight.yunforis.com/experience</a>。电脑直接打开，手机扫码打开同一入口。公开体验的输入为原创合成邮件、提取为预置结果，日历和任务由生产工具当场计算。真实模型回归另在技术页和证据包展示。</p>
+<p>备用：<a href="https://daylight.yunforis.com/competition/demo.mp4">三分钟字幕讲解视频</a>，采用实际页面截图和工程图片，1920×1080，无音轨；12 个镜头和字幕见 <a href="/competition/report-assets/evidence/video-manifest.json">清单</a>。</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>画面与操作</th>
+<th>讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00–0:20</td>
+<td>首页点击「三分钟体验」</td>
+<td>多个申请同时推进，面试时间、材料截止和临时改期散在邮件中。Daylight 把它们组织成可以追踪的下一步。</td>
+</tr>
+<tr>
+<td>0:20–0:45</td>
+<td>处理第一封通知，展开原邮件</td>
+<td>10:00 面试进入日历，研究经历成为 11 月 4 日 18:00 到期的待办。通知原文随时可核对。</td>
+</tr>
+<tr>
+<td>0:45–1:05</td>
+<td>下一步「发现冲突」，查看黄色安排</td>
+<td>实验室交流和已有组会重叠。系统标记冲突，生成回复草稿，让本人决定如何协调。</td>
+</tr>
+<tr>
+<td>1:05–1:25</td>
+<td>「面试改期」，展开已取消历史</td>
+<td>面试从 10:00 改到 15:00。旧安排留痕，新安排关联来源。</td>
+</tr>
+<tr>
+<td>1:25–1:40</td>
+<td>「重复收信」</td>
+<td>同一个邮件 ID 再出现，日程和待办数量保持相同，提取直接跳过。</td>
+</tr>
+<tr>
+<td>1:40–2:05</td>
+<td>「异常阻断」，展开工具执行</td>
+<td>这里故意给出无效时间。整封校验失败，日历与待办数量保持原样，失败步骤可查看。</td>
+</tr>
+<tr>
+<td>2:05–2:20</td>
+<td>「修正重试」再「取消留痕」</td>
+<td>修正后同一封邮件处理成功；后续取消仍保留通知与原因。材料待办继续由本人处理。</td>
+</tr>
+<tr>
+<td>2:20–2:45</td>
+<td>打开「技术与实测」，架构、流程和模型结果</td>
+<td>API、Worker、Scheduler 按负载拆分，PostgreSQL 保存权威状态。模型回归有逐例断言、时间与 Token，失败恢复走相同工具。</td>
+</tr>
+<tr>
+<td>2:45–3:00</td>
+<td>修改成本计算器的邮件数和缓存比例</td>
+<td>月费用可以按实际负载和单价估算。通过去重、上下文管理和按需加载减少重复工作。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="现场准备">现场准备</h2>
+<ol>
+<li>确认正式 HTTPS、二维码和手机网络可打开；从未登录的新窗口开始。</li>
+<li>用 390px 与桌面窗口各走一次七步。微信检查正常浏览、折叠原文、工具记录、返回与重试；校园定位与地图外跳另行操作。</li>
+<li>技术页保留实际环境与原始记录的链接。若网络临时受限，使用本轮截图讲解视频与本地 <code>npm run demo -- --no-build</code>。</li>
+<li>真实邮箱展示由本人登录操作，避开私人正文；主动发信按已授权收件范围执行。</li>
+</ol>
+<h2 id="五项追问定位">五项追问定位</h2>
+<ul>
+<li>场景：日程、材料、来源和后续变更如何连起来？看步骤 1、3、7。</li>
+<li>架构：谁保存任务状态，消息丢失怎么办？看架构图、租约及幂等记录。</li>
+<li>Agent：模型错了会发生什么？看整封校验失败、修正重试及模糊目标测试。</li>
+<li>工程：如何复现与回滚？看 Compose、发布 manifest、备份与镜像记录。</li>
+<li>成本：测量包含哪些环节？分别展示公开样例工具、合成邮件真实模型、真实邮箱同步三种口径。</li>
+</ul>
+<h2 id="视频与分章入口">视频与分章入口</h2>
+<p><a href="https://daylight.yunforis.com/demo">站内分章播放器</a>提供十二章、每章15秒的实际视频时间轴和同步文字；完整逐章内容见<a href="/competition/demo-transcript.html">视频讲稿</a>。上方为现场交互讲解安排。</p></main></html>

@@ -1,0 +1,23 @@
+✔ a returned visitor restores the selected step and completed review range (2.5945ms)
+✔ an explicit shared step works on a fresh device (0.4303ms)
+✔ restart at step zero resets the previous review range (0.2774ms)
+✔ malformed or duplicated URL steps start with bounded empty state (0.2448ms)
+✔ changed fixtures and corrupted session records are ignored (0.2319ms)
+✔ denied browser storage preserves shared-link navigation (0.2332ms)
+✔ saved progress contains only the version and bounded indices (0.2103ms)
+✔ step navigation replaces ambiguous parameters while preserving other page preferences (0.4761ms)
+✔ cross-device links include only the public path and current step (0.2893ms)
+✔ public experience: state transition, conflict, linked reschedule, dedup, retry, cancel (35.5335ms)
+✔ public experience isolates concurrent visitors and ignores ambient account scope (10.6557ms)
+✔ public experience rejects arbitrary workload and untrusted input (0.815ms)
+✔ experience HTTP validation, public access, no-store, safe unknown routes (60.3402ms)
+✔ experience HTTP backpressure and failure never disclose runtime details (14.1127ms)
+✔ cost estimates price cached tokens once and reject invalid or overflowing values (0.4465ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1097.7336

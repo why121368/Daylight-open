@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>用户价值对照记录 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="用户价值对照记录">用户价值对照记录</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#用户价值对照记录">用户价值对照记录</a><ul>
+<li><a href="#开始采集">开始采集</a></li>
+<li><a href="#记录与汇总">记录与汇总</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>现已提供可运行的本地主持工具，包含两套原创邮件、同一结果编辑器、服务端计时、12项自动核对、主持人复核和匿名 JSON 导出。</p>
+<p><strong>完整方法与截图：</strong><a href="/competition/value-report.html">用户价值对照图文报告</a>。材料和逐例真实模型预检在报告中可直接下载。</p>
+<h2 id="开始采集">开始采集</h2>
+<pre><code class="language-sh">npm run study -- --practice
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3190</code> 熟悉流程。真实参与使用：</p>
+<pre><code class="language-sh">npm run study -- --live --settings &lt;private-file&gt; --max-calls 20
+</code></pre>
+<p>每位参与者完成两轮，编号按 P01、P02、P03、P04 轮换人工/Daylight 与 A/B 材料顺序。点击开始到确认完成持续计时，包括阅读、模型等待、核验与修正。两轮完成后统一展示评分，再由主持人核对标题含义和冲突说明。</p>
+<h2 id="记录与汇总">记录与汇总</h2>
+<p>结果保存在每次新建的 <code>work/value-study-*</code>。真人配对汇总纳入完成两轮、同意匿名记录且标为目标用户参与的真实模型记录，练习、自查、中断记录另列。主持人导出 JSON 后，按 <a href="/competition/report-assets/value-study.csv">CSV 字段</a> 整理提交材料。</p>
+<p>探索性验证计划采集 3–5 位目标用户，保留逐人耗时、范围、中位数、错误、帮助与反馈；当前真人记录等待采集。10次真实模型的自动材料预检已完成，两套均12/12，原始usage及延迟见完整报告。</p></main></html>

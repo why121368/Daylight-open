@@ -1,0 +1,158 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RAG 图文与实测证据 v10 发布记录 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="rag-图文与实测证据-v10-发布记录">RAG 图文与实测证据 v10 发布记录</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#rag-图文与实测证据-v10-发布记录">RAG 图文与实测证据 v10 发布记录</a><ul>
+<li><a href="#发布结果">发布结果</a></li>
+<li><a href="#手机图片与证据阅读">手机图片与证据阅读</a></li>
+<li><a href="#发布与恢复步骤">发布与恢复步骤</a></li>
+<li><a href="#发布后实际采集">发布后实际采集</a></li>
+<li><a href="#归档与复现">归档与复现</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：<strong>2026-11-04，北京时间</strong>。<a href="/competition/rag-report.html">RAG 设计与前后对照</a> · <a href="/competition/rag-deployment.html">v9 应用与 PostgreSQL 验证</a> · <a href="https://daylight.yunforis.com/competition/rag-report.html">官网图文</a>。</p>
+<h2 id="发布结果">发布结果</h2>
+<p>v10 基于 v9 应用镜像发布 15 份静态资料，将数据库实连、完整交付检查和 v9 发布记录放进官网，并为手机提供轻量流程图和 PNG 原图入口。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前镜像</td>
+<td><code>daylight:public-competition-20261104-v10</code></td>
+</tr>
+<tr>
+<td>镜像 ID</td>
+<td><code>sha256:7d40e303985212a070b47cd2126a22c05e1043a592ca55d28210db8c38423886</code></td>
+</tr>
+<tr>
+<td>应用源码</td>
+<td><code>db3ee897a696bf5f70365f8c901237f020cf8691</code></td>
+</tr>
+<tr>
+<td>静态资料源码</td>
+<td><code>653fbd4edd75d68c653a5fe6f13b4ff77bd9d626</code></td>
+</tr>
+<tr>
+<td>基础镜像</td>
+<td>v9，<code>sha256:6fd765cedc96333c12d895634f695a1df4229beacf4a25a257667a90d610e91c</code></td>
+</tr>
+<tr>
+<td>更新包</td>
+<td>15 份静态文件，285,994 bytes</td>
+</tr>
+<tr>
+<td>更新包 SHA-256</td>
+<td><code>da728eccf12e6d94804fc4e8d6cdc89d93b787d7e4bcb3826edc12bde42be66f</code></td>
+</tr>
+<tr>
+<td>发布前备份</td>
+<td><code>/opt/daylight-backups/before-rag-evidence-20261104014854</code></td>
+</tr>
+<tr>
+<td>候选镜像检查</td>
+<td>production 运行、观测与七步工具链 29/29</td>
+</tr>
+<tr>
+<td>服务健康</td>
+<td>8 服务 healthy；三个应用容器 restart=0、OOM=false</td>
+</tr>
+<tr>
+<td>公网复查</td>
+<td>38 项业务、权限、资源与视频检查；15 份更新资料均 HTTP 200 且 SHA-256 一致</td>
+</tr>
+<tr>
+<td>运行文件核对</td>
+<td>API / Worker / Scheduler 各 366 份文件；完整 dist 文件集合及摘要均为 349 份</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/rag-assets/evidence/release-v10-manifest.json">候选包清单</a> · <a href="/competition/rag-assets/evidence/candidate-production-tests-v10.txt">候选测试</a> · <a href="/competition/rag-assets/evidence/deploy-v10.txt">发布日志</a>。</p>
+<h2 id="手机图片与证据阅读">手机图片与证据阅读</h2>
+<p>流程图由 <strong>gpt-image-2.5</strong> 生成，全英文标注，中文选型与设计逻辑放在正文。页面显示 WebP，点击打开 PNG 原图。</p>
+<table>
+<thead>
+<tr>
+<th>图像</th>
+<th style="text-align: right;">文件大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PNG 原图，1536×1024</td>
+<td style="text-align: right;">1,485,094 bytes</td>
+<td>点击放大与归档</td>
+</tr>
+<tr>
+<td>WebP，1536×1024</td>
+<td style="text-align: right;">117,338 bytes</td>
+<td>手机与桌面正文显示</td>
+</tr>
+<tr>
+<td>正文图片传输量变化</td>
+<td style="text-align: right;"><strong>减少 92.1%</strong></td>
+<td>保持原图尺寸，降低打开报告的传输量</td>
+</tr>
+</tbody>
+</table>
+<p>新增 <code>/competition/rag-deployment.html</code> 集中展示 v9 的完整交付、候选镜像、真实 PostgreSQL 和发布结果；对应原始文件位于 <code>/competition/rag-assets/evidence/</code>，从报告即可打开。公开报告已完成 320、390、1440px 布局检查，8 张内嵌图片均正常加载。</p>
+<p>390×844 浏览器实际打开公网 v10：WebP 正常加载、链接指向 PNG，技术页的 RAG 卡片显示内容检查、耗时、价格与图文入口。</p>
+<p><img src="/competition/rag-assets/images/public-diagram-v10-mobile.png" alt="公网手机报告中的英文流程图和中文设计说明" width="360">
+<img src="/competition/rag-assets/images/public-evidence-rag-mobile.png" alt="公网手机技术页展示 RAG 内容检查、延迟、价格与报告入口" width="360"></p>
+<h2 id="发布与恢复步骤">发布与恢复步骤</h2>
+<ol>
+<li>持有部署锁，核对三个应用角色的基础镜像均为指定 v9 ID。</li>
+<li>保存 Compose 环境、镜像信息、前端目录与 PostgreSQL custom dump，检查备份可读取。</li>
+<li>核对更新包 SHA-256、路径及 15 份静态文件摘要，以完整 v9 镜像 ID 构建候选。</li>
+<li>在 production 模式、关闭网络的候选容器中运行 29 项检查。</li>
+<li>切换三个应用角色，等待健康探针通过；检查业务结果、公开报告和三个角色的指标采集。</li>
+<li>对公网 15 份更新资料逐一核对状态和字节摘要，再核对三个运行容器的完整前端集合、文件摘要及镜像 ID。</li>
+</ol>
+<p>发布脚本包含切换后的恢复处理，可从保存的环境文件与 v9 镜像恢复。首次上传的脚本使用 CRLF，在执行 <code>set -eu</code> 时退出；转换为 LF 后完成上述流程，最终 <code>REMOTE_EXIT 0</code>。</p>
+<h2 id="发布后实际采集">发布后实际采集</h2>
+<p>运行复查时间为 <strong>2026-11-04 01:50:05，北京时间</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th style="text-align: right;">已写入样本</th>
+<th style="text-align: right;">丢样</th>
+<th>写入错误</th>
+<th style="text-align: right;">已核对文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td style="text-align: right;">266</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">366</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td style="text-align: right;">473</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">366</td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">366</td>
+</tr>
+</tbody>
+</table>
+<p>三角色 readiness 均为 <code>ok=true</code>，运行镜像与前端文件逐项一致。PostgreSQL、Redis、RabbitMQ、MinIO 和 Caddy 均 healthy。</p>
+<p><a href="/competition/rag-assets/evidence/public-verification-v10.json">38 项公网结果</a> · <a href="/competition/rag-assets/evidence/static-verification-v10.json">15 份资料 HTTP 与摘要</a> · <a href="/competition/rag-assets/evidence/runtime-verification-v10.json">运行镜像、文件与 readiness</a>。</p>
+<h2 id="归档与复现">归档与复现</h2>
+<p>仓库保存 v10 发布记录与最终核对结果；官网的 <code>/competition/rag-deployment.html</code> 保存 v9 应用发布快照。原始评测与日志通过 Git 属性保持字节原样，Windows 与 Linux 检出后可按清单复核 SHA-256。</p>
+<p>本轮业务源码的完整交付为 <strong>980 项、951 通过、29 条件跳过、0 失败</strong>；v9 候选 RAG <strong>33/33</strong>、production <strong>29/29</strong>、真实 PostgreSQL 独立空间 <strong>8/8</strong>。这三组验证和 14 次真实模型前后对照均随 <a href="/competition/rag-deployment.html">v9 记录</a> 和 <a href="/competition/rag-report.html">主报告</a> 保存。</p></main></html>

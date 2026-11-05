@@ -1,0 +1,2450 @@
+{
+  "phase": "after",
+  "note": "Windows Edge headless 390px fresh browser context each run, actual public HTTPS; temporary authorized session for workspace, no password/captcha login timed",
+  "samples": [
+    {
+      "action": "login_captcha",
+      "i": 0,
+      "ms": 1986.6683,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 492886,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1713.300000011921,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 142.30000001192093,
+          "transferBytes": 210715,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "asset",
+          "ms": 116.5,
+          "transferBytes": 37852,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "other",
+          "ms": 116.80000001192093,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 43.60000002384186,
+          "transferBytes": 4157,
+          "decodedBytes": 8853
+        },
+        {
+          "kind": "api",
+          "ms": 30.299999952316284,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 1,
+      "ms": 5381.8446,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 493312,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 5158.899999976158,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 84,
+          "transferBytes": 37852,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "asset",
+          "ms": 113,
+          "transferBytes": 210924,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "other",
+          "ms": 82,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 42.19999998807907,
+          "transferBytes": 4374,
+          "decodedBytes": 9322
+        },
+        {
+          "kind": "api",
+          "ms": 16.19999998807907,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 2,
+      "ms": 1125.2277000000013,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 493268,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 918.4000000357628,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 114.10000002384186,
+          "transferBytes": 210699,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "asset",
+          "ms": 69.09999996423721,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "other",
+          "ms": 68.80000001192093,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 47.69999998807907,
+          "transferBytes": 4611,
+          "decodedBytes": 9899
+        },
+        {
+          "kind": "api",
+          "ms": 37.5,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 3,
+      "ms": 1165.108400000001,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 493093,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 940.1999999880791,
+          "transferBytes": 124245,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 114.90000003576279,
+          "transferBytes": 210699,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "asset",
+          "ms": 80,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "other",
+          "ms": 79.60000002384186,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 25.600000023841858,
+          "transferBytes": 4434,
+          "decodedBytes": 9453
+        },
+        {
+          "kind": "api",
+          "ms": 20.80000001192093,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 4,
+      "ms": 2047.1815000000006,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 492705,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1835,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 227.5999999642372,
+          "transferBytes": 210699,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "asset",
+          "ms": 141.4000000357628,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "other",
+          "ms": 140.9000000357628,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 53.89999997615814,
+          "transferBytes": 4048,
+          "decodedBytes": 8387
+        },
+        {
+          "kind": "api",
+          "ms": 22.600000023841858,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 0,
+      "ms": 2662.8945999999996,
+      "success": true,
+      "errors": [],
+      "resourceCount": 72,
+      "transferBytes": 1105952,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 984.8999999761581,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 161.69999998807907,
+          "transferBytes": 210699,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "other",
+          "ms": 85.10000002384186,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "asset",
+          "ms": 122.70000004768372,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "api",
+          "ms": 123.59999996423721,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 147.10000002384186,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 101.39999997615814,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "api",
+          "ms": 730.1999999880791,
+          "transferBytes": 199073,
+          "decodedBytes": 2850561
+        },
+        {
+          "kind": "api",
+          "ms": 642.3000000119209,
+          "transferBytes": 126512,
+          "decodedBytes": 563912
+        },
+        {
+          "kind": "asset",
+          "ms": 157.69999998807907,
+          "transferBytes": 25444,
+          "decodedBytes": 72820
+        },
+        {
+          "kind": "asset",
+          "ms": 157.80000001192093,
+          "transferBytes": 23295,
+          "decodedBytes": 73389
+        },
+        {
+          "kind": "asset",
+          "ms": 116.79999995231628,
+          "transferBytes": 908,
+          "decodedBytes": 1268
+        },
+        {
+          "kind": "asset",
+          "ms": 159.10000002384186,
+          "transferBytes": 683,
+          "decodedBytes": 891
+        },
+        {
+          "kind": "asset",
+          "ms": 185.80000001192093,
+          "transferBytes": 5103,
+          "decodedBytes": 10638
+        },
+        {
+          "kind": "asset",
+          "ms": 184.10000002384186,
+          "transferBytes": 424,
+          "decodedBytes": 124
+        },
+        {
+          "kind": "asset",
+          "ms": 183.5,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 184.10000002384186,
+          "transferBytes": 416,
+          "decodedBytes": 116
+        },
+        {
+          "kind": "asset",
+          "ms": 165.0999999642372,
+          "transferBytes": 708,
+          "decodedBytes": 693
+        },
+        {
+          "kind": "asset",
+          "ms": 191.60000002384186,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 141.5999999642372,
+          "transferBytes": 496,
+          "decodedBytes": 196
+        },
+        {
+          "kind": "asset",
+          "ms": 157.80000001192093,
+          "transferBytes": 629,
+          "decodedBytes": 329
+        },
+        {
+          "kind": "asset",
+          "ms": 190.69999998807907,
+          "transferBytes": 767,
+          "decodedBytes": 467
+        },
+        {
+          "kind": "asset",
+          "ms": 157.39999997615814,
+          "transferBytes": 2421,
+          "decodedBytes": 3582
+        },
+        {
+          "kind": "asset",
+          "ms": 262,
+          "transferBytes": 139974,
+          "decodedBytes": 438708
+        },
+        {
+          "kind": "asset",
+          "ms": 200.0999999642372,
+          "transferBytes": 809,
+          "decodedBytes": 1027
+        },
+        {
+          "kind": "asset",
+          "ms": 250.80000001192093,
+          "transferBytes": 5153,
+          "decodedBytes": 14252
+        },
+        {
+          "kind": "asset",
+          "ms": 261.30000001192093,
+          "transferBytes": 452,
+          "decodedBytes": 152
+        },
+        {
+          "kind": "asset",
+          "ms": 262.10000002384186,
+          "transferBytes": 8943,
+          "decodedBytes": 23420
+        },
+        {
+          "kind": "asset",
+          "ms": 270.80000001192093,
+          "transferBytes": 2329,
+          "decodedBytes": 5145
+        },
+        {
+          "kind": "asset",
+          "ms": 278.69999998807907,
+          "transferBytes": 677,
+          "decodedBytes": 618
+        },
+        {
+          "kind": "asset",
+          "ms": 237.4000000357628,
+          "transferBytes": 2040,
+          "decodedBytes": 3716
+        },
+        {
+          "kind": "asset",
+          "ms": 236.20000004768372,
+          "transferBytes": 628,
+          "decodedBytes": 328
+        },
+        {
+          "kind": "asset",
+          "ms": 392.60000002384186,
+          "transferBytes": 464,
+          "decodedBytes": 164
+        },
+        {
+          "kind": "asset",
+          "ms": 293.9000000357628,
+          "transferBytes": 461,
+          "decodedBytes": 161
+        },
+        {
+          "kind": "asset",
+          "ms": 313.5999999642372,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 314.19999998807907,
+          "transferBytes": 587,
+          "decodedBytes": 287
+        },
+        {
+          "kind": "asset",
+          "ms": 316.89999997615814,
+          "transferBytes": 548,
+          "decodedBytes": 248
+        },
+        {
+          "kind": "asset",
+          "ms": 324.5,
+          "transferBytes": 528,
+          "decodedBytes": 228
+        },
+        {
+          "kind": "asset",
+          "ms": 333,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 385.60000002384186,
+          "transferBytes": 7174,
+          "decodedBytes": 16155
+        },
+        {
+          "kind": "asset",
+          "ms": 215.10000002384186,
+          "transferBytes": 2539,
+          "decodedBytes": 4842
+        },
+        {
+          "kind": "asset",
+          "ms": 235.19999998807907,
+          "transferBytes": 483,
+          "decodedBytes": 183
+        },
+        {
+          "kind": "asset",
+          "ms": 394.60000002384186,
+          "transferBytes": 573,
+          "decodedBytes": 521
+        },
+        {
+          "kind": "asset",
+          "ms": 404.69999998807907,
+          "transferBytes": 6747,
+          "decodedBytes": 14852
+        },
+        {
+          "kind": "asset",
+          "ms": 413,
+          "transferBytes": 874,
+          "decodedBytes": 1070
+        },
+        {
+          "kind": "asset",
+          "ms": 276.89999997615814,
+          "transferBytes": 1906,
+          "decodedBytes": 2931
+        },
+        {
+          "kind": "asset",
+          "ms": 277.30000001192093,
+          "transferBytes": 340,
+          "decodedBytes": 40
+        },
+        {
+          "kind": "asset",
+          "ms": 388.39999997615814,
+          "transferBytes": 596,
+          "decodedBytes": 296
+        },
+        {
+          "kind": "asset",
+          "ms": 291.19999998807907,
+          "transferBytes": 583,
+          "decodedBytes": 283
+        },
+        {
+          "kind": "asset",
+          "ms": 294.5,
+          "transferBytes": 544,
+          "decodedBytes": 244
+        },
+        {
+          "kind": "asset",
+          "ms": 301.19999998807907,
+          "transferBytes": 450,
+          "decodedBytes": 150
+        },
+        {
+          "kind": "asset",
+          "ms": 222.5,
+          "transferBytes": 771,
+          "decodedBytes": 863
+        },
+        {
+          "kind": "asset",
+          "ms": 482.89999997615814,
+          "transferBytes": 4251,
+          "decodedBytes": 9337
+        },
+        {
+          "kind": "asset",
+          "ms": 484.9000000357628,
+          "transferBytes": 1096,
+          "decodedBytes": 1256
+        },
+        {
+          "kind": "asset",
+          "ms": 492.5,
+          "transferBytes": 566,
+          "decodedBytes": 266
+        },
+        {
+          "kind": "asset",
+          "ms": 496.30000001192093,
+          "transferBytes": 1842,
+          "decodedBytes": 2969
+        },
+        {
+          "kind": "asset",
+          "ms": 414.69999998807907,
+          "transferBytes": 1736,
+          "decodedBytes": 2493
+        },
+        {
+          "kind": "asset",
+          "ms": 415.30000001192093,
+          "transferBytes": 561,
+          "decodedBytes": 261
+        },
+        {
+          "kind": "asset",
+          "ms": 282.10000002384186,
+          "transferBytes": 672,
+          "decodedBytes": 696
+        },
+        {
+          "kind": "asset",
+          "ms": 279.5,
+          "transferBytes": 547,
+          "decodedBytes": 247
+        },
+        {
+          "kind": "asset",
+          "ms": 275.30000001192093,
+          "transferBytes": 573,
+          "decodedBytes": 273
+        },
+        {
+          "kind": "asset",
+          "ms": 420.19999998807907,
+          "transferBytes": 1033,
+          "decodedBytes": 1291
+        },
+        {
+          "kind": "asset",
+          "ms": 449.19999998807907,
+          "transferBytes": 531,
+          "decodedBytes": 231
+        },
+        {
+          "kind": "asset",
+          "ms": 452.5,
+          "transferBytes": 473,
+          "decodedBytes": 173
+        },
+        {
+          "kind": "asset",
+          "ms": 455.89999997615814,
+          "transferBytes": 555,
+          "decodedBytes": 255
+        },
+        {
+          "kind": "asset",
+          "ms": 447.89999997615814,
+          "transferBytes": 8363,
+          "decodedBytes": 21951
+        },
+        {
+          "kind": "asset",
+          "ms": 452.5,
+          "transferBytes": 554,
+          "decodedBytes": 254
+        },
+        {
+          "kind": "asset",
+          "ms": 456.39999997615814,
+          "transferBytes": 654,
+          "decodedBytes": 354
+        },
+        {
+          "kind": "asset",
+          "ms": 419.10000002384186,
+          "transferBytes": 2470,
+          "decodedBytes": 4726
+        },
+        {
+          "kind": "other",
+          "ms": 96.39999997615814,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "asset",
+          "ms": 23,
+          "transferBytes": 2618,
+          "decodedBytes": 6243
+        },
+        {
+          "kind": "asset",
+          "ms": 22.5,
+          "transferBytes": 520,
+          "decodedBytes": 220
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 1,
+      "ms": 4948.7124,
+      "success": true,
+      "errors": [],
+      "resourceCount": 72,
+      "transferBytes": 1105731,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 842.1999999880791,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 224.69999998807907,
+          "transferBytes": 210758,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "asset",
+          "ms": 174.10000002384186,
+          "transferBytes": 37846,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "other",
+          "ms": 102.69999998807907,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 733,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 950.5,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 641.5,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "api",
+          "ms": 895.1999999880791,
+          "transferBytes": 198446,
+          "decodedBytes": 2850561
+        },
+        {
+          "kind": "api",
+          "ms": 939.3999999761581,
+          "transferBytes": 126808,
+          "decodedBytes": 563912
+        },
+        {
+          "kind": "other",
+          "ms": 115.70000004768372,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "asset",
+          "ms": 116,
+          "transferBytes": 25460,
+          "decodedBytes": 72820
+        },
+        {
+          "kind": "asset",
+          "ms": 115.20000004768372,
+          "transferBytes": 23280,
+          "decodedBytes": 73389
+        },
+        {
+          "kind": "asset",
+          "ms": 101.39999997615814,
+          "transferBytes": 908,
+          "decodedBytes": 1268
+        },
+        {
+          "kind": "asset",
+          "ms": 102.69999998807907,
+          "transferBytes": 683,
+          "decodedBytes": 891
+        },
+        {
+          "kind": "asset",
+          "ms": 112.39999997615814,
+          "transferBytes": 5103,
+          "decodedBytes": 10638
+        },
+        {
+          "kind": "asset",
+          "ms": 115,
+          "transferBytes": 424,
+          "decodedBytes": 124
+        },
+        {
+          "kind": "asset",
+          "ms": 103.69999998807907,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 108.5,
+          "transferBytes": 416,
+          "decodedBytes": 116
+        },
+        {
+          "kind": "asset",
+          "ms": 103.90000003576279,
+          "transferBytes": 708,
+          "decodedBytes": 693
+        },
+        {
+          "kind": "asset",
+          "ms": 103.59999996423721,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 102.10000002384186,
+          "transferBytes": 496,
+          "decodedBytes": 196
+        },
+        {
+          "kind": "asset",
+          "ms": 108,
+          "transferBytes": 629,
+          "decodedBytes": 329
+        },
+        {
+          "kind": "asset",
+          "ms": 107.5,
+          "transferBytes": 767,
+          "decodedBytes": 467
+        },
+        {
+          "kind": "asset",
+          "ms": 115,
+          "transferBytes": 2421,
+          "decodedBytes": 3582
+        },
+        {
+          "kind": "asset",
+          "ms": 276.60000002384186,
+          "transferBytes": 139974,
+          "decodedBytes": 438708
+        },
+        {
+          "kind": "asset",
+          "ms": 117.59999996423721,
+          "transferBytes": 809,
+          "decodedBytes": 1027
+        },
+        {
+          "kind": "asset",
+          "ms": 121.5,
+          "transferBytes": 5153,
+          "decodedBytes": 14252
+        },
+        {
+          "kind": "asset",
+          "ms": 123.19999998807907,
+          "transferBytes": 452,
+          "decodedBytes": 152
+        },
+        {
+          "kind": "asset",
+          "ms": 137.10000002384186,
+          "transferBytes": 8943,
+          "decodedBytes": 23420
+        },
+        {
+          "kind": "asset",
+          "ms": 133.10000002384186,
+          "transferBytes": 2329,
+          "decodedBytes": 5145
+        },
+        {
+          "kind": "asset",
+          "ms": 132.5,
+          "transferBytes": 677,
+          "decodedBytes": 618
+        },
+        {
+          "kind": "asset",
+          "ms": 132.69999998807907,
+          "transferBytes": 2040,
+          "decodedBytes": 3716
+        },
+        {
+          "kind": "asset",
+          "ms": 138.4000000357628,
+          "transferBytes": 628,
+          "decodedBytes": 328
+        },
+        {
+          "kind": "asset",
+          "ms": 137.5,
+          "transferBytes": 464,
+          "decodedBytes": 164
+        },
+        {
+          "kind": "asset",
+          "ms": 137.10000002384186,
+          "transferBytes": 461,
+          "decodedBytes": 161
+        },
+        {
+          "kind": "asset",
+          "ms": 136.60000002384186,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 138.10000002384186,
+          "transferBytes": 587,
+          "decodedBytes": 287
+        },
+        {
+          "kind": "asset",
+          "ms": 137.69999998807907,
+          "transferBytes": 548,
+          "decodedBytes": 248
+        },
+        {
+          "kind": "asset",
+          "ms": 138.19999998807907,
+          "transferBytes": 528,
+          "decodedBytes": 228
+        },
+        {
+          "kind": "asset",
+          "ms": 144.69999998807907,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 140.60000002384186,
+          "transferBytes": 7174,
+          "decodedBytes": 16155
+        },
+        {
+          "kind": "asset",
+          "ms": 140.79999995231628,
+          "transferBytes": 2539,
+          "decodedBytes": 4842
+        },
+        {
+          "kind": "asset",
+          "ms": 169.89999997615814,
+          "transferBytes": 483,
+          "decodedBytes": 183
+        },
+        {
+          "kind": "asset",
+          "ms": 336.5,
+          "transferBytes": 573,
+          "decodedBytes": 521
+        },
+        {
+          "kind": "asset",
+          "ms": 371.89999997615814,
+          "transferBytes": 6747,
+          "decodedBytes": 14852
+        },
+        {
+          "kind": "asset",
+          "ms": 196.10000002384186,
+          "transferBytes": 874,
+          "decodedBytes": 1070
+        },
+        {
+          "kind": "asset",
+          "ms": 371.39999997615814,
+          "transferBytes": 1906,
+          "decodedBytes": 2931
+        },
+        {
+          "kind": "asset",
+          "ms": 213.19999998807907,
+          "transferBytes": 340,
+          "decodedBytes": 40
+        },
+        {
+          "kind": "asset",
+          "ms": 227.5,
+          "transferBytes": 596,
+          "decodedBytes": 296
+        },
+        {
+          "kind": "asset",
+          "ms": 226.5999999642372,
+          "transferBytes": 583,
+          "decodedBytes": 283
+        },
+        {
+          "kind": "asset",
+          "ms": 271.60000002384186,
+          "transferBytes": 544,
+          "decodedBytes": 244
+        },
+        {
+          "kind": "asset",
+          "ms": 272.19999998807907,
+          "transferBytes": 450,
+          "decodedBytes": 150
+        },
+        {
+          "kind": "asset",
+          "ms": 294.80000001192093,
+          "transferBytes": 771,
+          "decodedBytes": 863
+        },
+        {
+          "kind": "asset",
+          "ms": 301.69999998807907,
+          "transferBytes": 4251,
+          "decodedBytes": 9337
+        },
+        {
+          "kind": "asset",
+          "ms": 330.80000001192093,
+          "transferBytes": 1096,
+          "decodedBytes": 1256
+        },
+        {
+          "kind": "asset",
+          "ms": 388.39999997615814,
+          "transferBytes": 566,
+          "decodedBytes": 266
+        },
+        {
+          "kind": "asset",
+          "ms": 395.30000001192093,
+          "transferBytes": 1842,
+          "decodedBytes": 2969
+        },
+        {
+          "kind": "asset",
+          "ms": 409.0999999642372,
+          "transferBytes": 1736,
+          "decodedBytes": 2493
+        },
+        {
+          "kind": "asset",
+          "ms": 484.5,
+          "transferBytes": 561,
+          "decodedBytes": 261
+        },
+        {
+          "kind": "asset",
+          "ms": 410.60000002384186,
+          "transferBytes": 672,
+          "decodedBytes": 696
+        },
+        {
+          "kind": "asset",
+          "ms": 427.69999998807907,
+          "transferBytes": 547,
+          "decodedBytes": 247
+        },
+        {
+          "kind": "asset",
+          "ms": 437.5999999642372,
+          "transferBytes": 573,
+          "decodedBytes": 273
+        },
+        {
+          "kind": "asset",
+          "ms": 536,
+          "transferBytes": 1033,
+          "decodedBytes": 1291
+        },
+        {
+          "kind": "asset",
+          "ms": 624.8999999761581,
+          "transferBytes": 531,
+          "decodedBytes": 231
+        },
+        {
+          "kind": "asset",
+          "ms": 640.7000000476837,
+          "transferBytes": 473,
+          "decodedBytes": 173
+        },
+        {
+          "kind": "asset",
+          "ms": 472.69999998807907,
+          "transferBytes": 555,
+          "decodedBytes": 255
+        },
+        {
+          "kind": "asset",
+          "ms": 471,
+          "transferBytes": 8363,
+          "decodedBytes": 21951
+        },
+        {
+          "kind": "asset",
+          "ms": 646.6000000238419,
+          "transferBytes": 554,
+          "decodedBytes": 254
+        },
+        {
+          "kind": "asset",
+          "ms": 880.8999999761581,
+          "transferBytes": 654,
+          "decodedBytes": 354
+        },
+        {
+          "kind": "asset",
+          "ms": 370.5999999642372,
+          "transferBytes": 2470,
+          "decodedBytes": 4726
+        },
+        {
+          "kind": "asset",
+          "ms": 601.6000000238419,
+          "transferBytes": 2618,
+          "decodedBytes": 6243
+        },
+        {
+          "kind": "asset",
+          "ms": 618.8000000119209,
+          "transferBytes": 520,
+          "decodedBytes": 220
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 2,
+      "ms": 6370.081000000002,
+      "success": true,
+      "errors": [],
+      "resourceCount": 72,
+      "transferBytes": 1109297,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1301.5,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "other",
+          "ms": 1080.699999988079,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "asset",
+          "ms": 1203.0999999642372,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "asset",
+          "ms": 2112,
+          "transferBytes": 210699,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "api",
+          "ms": 1320.6000000238419,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1971.699999988079,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 936.8000000119209,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 641,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 1196.0999999642372,
+          "transferBytes": 202549,
+          "decodedBytes": 2850561
+        },
+        {
+          "kind": "api",
+          "ms": 1235.4000000357628,
+          "transferBytes": 126512,
+          "decodedBytes": 563912
+        },
+        {
+          "kind": "asset",
+          "ms": 129.30000001192093,
+          "transferBytes": 25460,
+          "decodedBytes": 72820
+        },
+        {
+          "kind": "asset",
+          "ms": 129.30000001192093,
+          "transferBytes": 23280,
+          "decodedBytes": 73389
+        },
+        {
+          "kind": "asset",
+          "ms": 78.60000002384186,
+          "transferBytes": 908,
+          "decodedBytes": 1268
+        },
+        {
+          "kind": "asset",
+          "ms": 115.80000001192093,
+          "transferBytes": 683,
+          "decodedBytes": 891
+        },
+        {
+          "kind": "asset",
+          "ms": 128.0999999642372,
+          "transferBytes": 5103,
+          "decodedBytes": 10638
+        },
+        {
+          "kind": "asset",
+          "ms": 115.89999997615814,
+          "transferBytes": 424,
+          "decodedBytes": 124
+        },
+        {
+          "kind": "asset",
+          "ms": 116,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 128.19999998807907,
+          "transferBytes": 416,
+          "decodedBytes": 116
+        },
+        {
+          "kind": "asset",
+          "ms": 134,
+          "transferBytes": 708,
+          "decodedBytes": 693
+        },
+        {
+          "kind": "asset",
+          "ms": 133.5,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 132.80000001192093,
+          "transferBytes": 496,
+          "decodedBytes": 196
+        },
+        {
+          "kind": "asset",
+          "ms": 134,
+          "transferBytes": 629,
+          "decodedBytes": 329
+        },
+        {
+          "kind": "asset",
+          "ms": 134.69999998807907,
+          "transferBytes": 767,
+          "decodedBytes": 467
+        },
+        {
+          "kind": "asset",
+          "ms": 135.39999997615814,
+          "transferBytes": 2421,
+          "decodedBytes": 3582
+        },
+        {
+          "kind": "asset",
+          "ms": 206,
+          "transferBytes": 139842,
+          "decodedBytes": 438708
+        },
+        {
+          "kind": "asset",
+          "ms": 138.60000002384186,
+          "transferBytes": 809,
+          "decodedBytes": 1027
+        },
+        {
+          "kind": "asset",
+          "ms": 137.89999997615814,
+          "transferBytes": 5153,
+          "decodedBytes": 14252
+        },
+        {
+          "kind": "asset",
+          "ms": 140.30000001192093,
+          "transferBytes": 452,
+          "decodedBytes": 152
+        },
+        {
+          "kind": "asset",
+          "ms": 129.80000001192093,
+          "transferBytes": 8943,
+          "decodedBytes": 23420
+        },
+        {
+          "kind": "asset",
+          "ms": 242.5,
+          "transferBytes": 2329,
+          "decodedBytes": 5145
+        },
+        {
+          "kind": "asset",
+          "ms": 169.30000001192093,
+          "transferBytes": 677,
+          "decodedBytes": 618
+        },
+        {
+          "kind": "asset",
+          "ms": 180.30000001192093,
+          "transferBytes": 2040,
+          "decodedBytes": 3716
+        },
+        {
+          "kind": "asset",
+          "ms": 187.80000001192093,
+          "transferBytes": 628,
+          "decodedBytes": 328
+        },
+        {
+          "kind": "asset",
+          "ms": 191,
+          "transferBytes": 464,
+          "decodedBytes": 164
+        },
+        {
+          "kind": "asset",
+          "ms": 196.69999998807907,
+          "transferBytes": 461,
+          "decodedBytes": 161
+        },
+        {
+          "kind": "asset",
+          "ms": 222.30000001192093,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 237.20000004768372,
+          "transferBytes": 587,
+          "decodedBytes": 287
+        },
+        {
+          "kind": "asset",
+          "ms": 243.4000000357628,
+          "transferBytes": 548,
+          "decodedBytes": 248
+        },
+        {
+          "kind": "asset",
+          "ms": 152.19999998807907,
+          "transferBytes": 528,
+          "decodedBytes": 228
+        },
+        {
+          "kind": "asset",
+          "ms": 129.10000002384186,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 167.0999999642372,
+          "transferBytes": 2539,
+          "decodedBytes": 4842
+        },
+        {
+          "kind": "asset",
+          "ms": 228.0999999642372,
+          "transferBytes": 7174,
+          "decodedBytes": 16155
+        },
+        {
+          "kind": "asset",
+          "ms": 173.4000000357628,
+          "transferBytes": 483,
+          "decodedBytes": 183
+        },
+        {
+          "kind": "asset",
+          "ms": 204.39999997615814,
+          "transferBytes": 573,
+          "decodedBytes": 521
+        },
+        {
+          "kind": "asset",
+          "ms": 204.69999998807907,
+          "transferBytes": 6747,
+          "decodedBytes": 14852
+        },
+        {
+          "kind": "asset",
+          "ms": 205,
+          "transferBytes": 874,
+          "decodedBytes": 1070
+        },
+        {
+          "kind": "asset",
+          "ms": 208.10000002384186,
+          "transferBytes": 1906,
+          "decodedBytes": 2931
+        },
+        {
+          "kind": "asset",
+          "ms": 216.30000001192093,
+          "transferBytes": 340,
+          "decodedBytes": 40
+        },
+        {
+          "kind": "asset",
+          "ms": 232.5999999642372,
+          "transferBytes": 596,
+          "decodedBytes": 296
+        },
+        {
+          "kind": "asset",
+          "ms": 151.60000002384186,
+          "transferBytes": 583,
+          "decodedBytes": 283
+        },
+        {
+          "kind": "asset",
+          "ms": 311,
+          "transferBytes": 544,
+          "decodedBytes": 244
+        },
+        {
+          "kind": "asset",
+          "ms": 128.19999998807907,
+          "transferBytes": 450,
+          "decodedBytes": 150
+        },
+        {
+          "kind": "asset",
+          "ms": 128.69999998807907,
+          "transferBytes": 771,
+          "decodedBytes": 863
+        },
+        {
+          "kind": "asset",
+          "ms": 259.19999998807907,
+          "transferBytes": 4251,
+          "decodedBytes": 9337
+        },
+        {
+          "kind": "asset",
+          "ms": 261.5,
+          "transferBytes": 1096,
+          "decodedBytes": 1256
+        },
+        {
+          "kind": "asset",
+          "ms": 268.5999999642372,
+          "transferBytes": 566,
+          "decodedBytes": 266
+        },
+        {
+          "kind": "asset",
+          "ms": 271.89999997615814,
+          "transferBytes": 1842,
+          "decodedBytes": 2969
+        },
+        {
+          "kind": "asset",
+          "ms": 281.5,
+          "transferBytes": 1736,
+          "decodedBytes": 2493
+        },
+        {
+          "kind": "asset",
+          "ms": 284.19999998807907,
+          "transferBytes": 561,
+          "decodedBytes": 261
+        },
+        {
+          "kind": "asset",
+          "ms": 296.10000002384186,
+          "transferBytes": 672,
+          "decodedBytes": 696
+        },
+        {
+          "kind": "asset",
+          "ms": 324.7999999523163,
+          "transferBytes": 547,
+          "decodedBytes": 247
+        },
+        {
+          "kind": "asset",
+          "ms": 329.30000001192093,
+          "transferBytes": 573,
+          "decodedBytes": 273
+        },
+        {
+          "kind": "asset",
+          "ms": 330.69999998807907,
+          "transferBytes": 1033,
+          "decodedBytes": 1291
+        },
+        {
+          "kind": "asset",
+          "ms": 332.80000001192093,
+          "transferBytes": 531,
+          "decodedBytes": 231
+        },
+        {
+          "kind": "asset",
+          "ms": 335.89999997615814,
+          "transferBytes": 473,
+          "decodedBytes": 173
+        },
+        {
+          "kind": "asset",
+          "ms": 340.5,
+          "transferBytes": 555,
+          "decodedBytes": 255
+        },
+        {
+          "kind": "asset",
+          "ms": 242.30000001192093,
+          "transferBytes": 8363,
+          "decodedBytes": 21951
+        },
+        {
+          "kind": "asset",
+          "ms": 301.2999999523163,
+          "transferBytes": 554,
+          "decodedBytes": 254
+        },
+        {
+          "kind": "asset",
+          "ms": 278.60000002384186,
+          "transferBytes": 654,
+          "decodedBytes": 354
+        },
+        {
+          "kind": "asset",
+          "ms": 291.2000000476837,
+          "transferBytes": 2470,
+          "decodedBytes": 4726
+        },
+        {
+          "kind": "asset",
+          "ms": 20.899999976158142,
+          "transferBytes": 2618,
+          "decodedBytes": 6243
+        },
+        {
+          "kind": "asset",
+          "ms": 40.30000001192093,
+          "transferBytes": 520,
+          "decodedBytes": 220
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 3,
+      "ms": 9530.063400000003,
+      "success": true,
+      "errors": [],
+      "resourceCount": 72,
+      "transferBytes": 860428,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1701.1000000238419,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 117.70000004768372,
+          "transferBytes": 37852,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "asset",
+          "ms": 180.4000000357628,
+          "transferBytes": 210924,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "other",
+          "ms": 115.80000001192093,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 2648.300000011921,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 3805.400000035763,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1271.5999999642372,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 368.5,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 1953.300000011921,
+          "transferBytes": 56403,
+          "decodedBytes": 635364
+        },
+        {
+          "kind": "api",
+          "ms": 1541.699999988079,
+          "transferBytes": 23376,
+          "decodedBytes": 120682
+        },
+        {
+          "kind": "asset",
+          "ms": 799.8000000119209,
+          "transferBytes": 25460,
+          "decodedBytes": 72820
+        },
+        {
+          "kind": "asset",
+          "ms": 799.8999999761581,
+          "transferBytes": 23280,
+          "decodedBytes": 73389
+        },
+        {
+          "kind": "asset",
+          "ms": 600.8999999761581,
+          "transferBytes": 908,
+          "decodedBytes": 1268
+        },
+        {
+          "kind": "asset",
+          "ms": 603.9000000357628,
+          "transferBytes": 683,
+          "decodedBytes": 891
+        },
+        {
+          "kind": "asset",
+          "ms": 603.6999999880791,
+          "transferBytes": 5103,
+          "decodedBytes": 10638
+        },
+        {
+          "kind": "asset",
+          "ms": 603.3999999761581,
+          "transferBytes": 424,
+          "decodedBytes": 124
+        },
+        {
+          "kind": "asset",
+          "ms": 600.3000000119209,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 910.0999999642372,
+          "transferBytes": 416,
+          "decodedBytes": 116
+        },
+        {
+          "kind": "asset",
+          "ms": 1035.800000011921,
+          "transferBytes": 708,
+          "decodedBytes": 693
+        },
+        {
+          "kind": "asset",
+          "ms": 1180.7999999523163,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 1487.7999999523163,
+          "transferBytes": 496,
+          "decodedBytes": 196
+        },
+        {
+          "kind": "asset",
+          "ms": 1696,
+          "transferBytes": 629,
+          "decodedBytes": 329
+        },
+        {
+          "kind": "asset",
+          "ms": 1798,
+          "transferBytes": 767,
+          "decodedBytes": 467
+        },
+        {
+          "kind": "asset",
+          "ms": 599.0999999642372,
+          "transferBytes": 2421,
+          "decodedBytes": 3582
+        },
+        {
+          "kind": "asset",
+          "ms": 2397.699999988079,
+          "transferBytes": 139974,
+          "decodedBytes": 438708
+        },
+        {
+          "kind": "asset",
+          "ms": 2164.800000011921,
+          "transferBytes": 809,
+          "decodedBytes": 1027
+        },
+        {
+          "kind": "asset",
+          "ms": 1366.8999999761581,
+          "transferBytes": 5153,
+          "decodedBytes": 14252
+        },
+        {
+          "kind": "asset",
+          "ms": 1616.9000000357628,
+          "transferBytes": 452,
+          "decodedBytes": 152
+        },
+        {
+          "kind": "asset",
+          "ms": 1981.300000011921,
+          "transferBytes": 8943,
+          "decodedBytes": 23420
+        },
+        {
+          "kind": "asset",
+          "ms": 806.6000000238419,
+          "transferBytes": 2329,
+          "decodedBytes": 5145
+        },
+        {
+          "kind": "asset",
+          "ms": 2058,
+          "transferBytes": 677,
+          "decodedBytes": 618
+        },
+        {
+          "kind": "asset",
+          "ms": 3147.099999964237,
+          "transferBytes": 2040,
+          "decodedBytes": 3716
+        },
+        {
+          "kind": "asset",
+          "ms": 3149.800000011921,
+          "transferBytes": 628,
+          "decodedBytes": 328
+        },
+        {
+          "kind": "asset",
+          "ms": 3216.399999976158,
+          "transferBytes": 464,
+          "decodedBytes": 164
+        },
+        {
+          "kind": "asset",
+          "ms": 2325.199999988079,
+          "transferBytes": 461,
+          "decodedBytes": 161
+        },
+        {
+          "kind": "asset",
+          "ms": 3115.5,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 2379.899999976158,
+          "transferBytes": 587,
+          "decodedBytes": 287
+        },
+        {
+          "kind": "asset",
+          "ms": 2475.800000011921,
+          "transferBytes": 548,
+          "decodedBytes": 248
+        },
+        {
+          "kind": "asset",
+          "ms": 2577.5,
+          "transferBytes": 528,
+          "decodedBytes": 228
+        },
+        {
+          "kind": "asset",
+          "ms": 2625.100000023842,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 2715.800000011921,
+          "transferBytes": 7174,
+          "decodedBytes": 16155
+        },
+        {
+          "kind": "asset",
+          "ms": 2823.599999964237,
+          "transferBytes": 2539,
+          "decodedBytes": 4842
+        },
+        {
+          "kind": "asset",
+          "ms": 2935.900000035763,
+          "transferBytes": 483,
+          "decodedBytes": 183
+        },
+        {
+          "kind": "asset",
+          "ms": 2983.199999988079,
+          "transferBytes": 573,
+          "decodedBytes": 521
+        },
+        {
+          "kind": "asset",
+          "ms": 3105.300000011921,
+          "transferBytes": 6747,
+          "decodedBytes": 14852
+        },
+        {
+          "kind": "asset",
+          "ms": 2801.399999976158,
+          "transferBytes": 874,
+          "decodedBytes": 1070
+        },
+        {
+          "kind": "asset",
+          "ms": 2854.300000011921,
+          "transferBytes": 1906,
+          "decodedBytes": 2931
+        },
+        {
+          "kind": "asset",
+          "ms": 3119.5,
+          "transferBytes": 340,
+          "decodedBytes": 40
+        },
+        {
+          "kind": "asset",
+          "ms": 3159.5,
+          "transferBytes": 596,
+          "decodedBytes": 296
+        },
+        {
+          "kind": "asset",
+          "ms": 3169.400000035763,
+          "transferBytes": 583,
+          "decodedBytes": 283
+        },
+        {
+          "kind": "asset",
+          "ms": 3178.199999988079,
+          "transferBytes": 544,
+          "decodedBytes": 244
+        },
+        {
+          "kind": "asset",
+          "ms": 3196.100000023842,
+          "transferBytes": 450,
+          "decodedBytes": 150
+        },
+        {
+          "kind": "asset",
+          "ms": 2424.5,
+          "transferBytes": 771,
+          "decodedBytes": 863
+        },
+        {
+          "kind": "asset",
+          "ms": 2524.800000011921,
+          "transferBytes": 4251,
+          "decodedBytes": 9337
+        },
+        {
+          "kind": "asset",
+          "ms": 2673.199999988079,
+          "transferBytes": 1096,
+          "decodedBytes": 1256
+        },
+        {
+          "kind": "asset",
+          "ms": 2902.800000011921,
+          "transferBytes": 566,
+          "decodedBytes": 266
+        },
+        {
+          "kind": "asset",
+          "ms": 3013.399999976158,
+          "transferBytes": 1842,
+          "decodedBytes": 2969
+        },
+        {
+          "kind": "asset",
+          "ms": 3052.699999988079,
+          "transferBytes": 1736,
+          "decodedBytes": 2493
+        },
+        {
+          "kind": "asset",
+          "ms": 3084,
+          "transferBytes": 561,
+          "decodedBytes": 261
+        },
+        {
+          "kind": "asset",
+          "ms": 3111.600000023842,
+          "transferBytes": 672,
+          "decodedBytes": 696
+        },
+        {
+          "kind": "asset",
+          "ms": 3143.699999988079,
+          "transferBytes": 547,
+          "decodedBytes": 247
+        },
+        {
+          "kind": "asset",
+          "ms": 3179.699999988079,
+          "transferBytes": 573,
+          "decodedBytes": 273
+        },
+        {
+          "kind": "asset",
+          "ms": 3190.900000035763,
+          "transferBytes": 1033,
+          "decodedBytes": 1291
+        },
+        {
+          "kind": "asset",
+          "ms": 2267.699999988079,
+          "transferBytes": 531,
+          "decodedBytes": 231
+        },
+        {
+          "kind": "asset",
+          "ms": 3191.600000023842,
+          "transferBytes": 473,
+          "decodedBytes": 173
+        },
+        {
+          "kind": "asset",
+          "ms": 3122.699999988079,
+          "transferBytes": 555,
+          "decodedBytes": 255
+        },
+        {
+          "kind": "asset",
+          "ms": 3140.399999976158,
+          "transferBytes": 8363,
+          "decodedBytes": 21951
+        },
+        {
+          "kind": "asset",
+          "ms": 3152.100000023842,
+          "transferBytes": 554,
+          "decodedBytes": 254
+        },
+        {
+          "kind": "asset",
+          "ms": 3165,
+          "transferBytes": 654,
+          "decodedBytes": 354
+        },
+        {
+          "kind": "asset",
+          "ms": 3176.5,
+          "transferBytes": 2470,
+          "decodedBytes": 4726
+        },
+        {
+          "kind": "asset",
+          "ms": 23.799999952316284,
+          "transferBytes": 2618,
+          "decodedBytes": 6243
+        },
+        {
+          "kind": "asset",
+          "ms": 14.5,
+          "transferBytes": 520,
+          "decodedBytes": 220
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 4,
+      "ms": 8663.552300000003,
+      "success": true,
+      "errors": [],
+      "resourceCount": 71,
+      "transferBytes": 849486,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 7336.700000047684,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 163.19999998807907,
+          "transferBytes": 37796,
+          "decodedBytes": 201813
+        },
+        {
+          "kind": "asset",
+          "ms": 222.5,
+          "transferBytes": 210798,
+          "decodedBytes": 612757
+        },
+        {
+          "kind": "other",
+          "ms": 96,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 38.30000001192093,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 56.89999997615814,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 32.40000003576279,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "api",
+          "ms": 154.20000004768372,
+          "transferBytes": 56338,
+          "decodedBytes": 635364
+        },
+        {
+          "kind": "api",
+          "ms": 55.5,
+          "transferBytes": 23325,
+          "decodedBytes": 120682
+        },
+        {
+          "kind": "asset",
+          "ms": 114.19999998807907,
+          "transferBytes": 25460,
+          "decodedBytes": 72820
+        },
+        {
+          "kind": "asset",
+          "ms": 90.30000001192093,
+          "transferBytes": 23295,
+          "decodedBytes": 73389
+        },
+        {
+          "kind": "asset",
+          "ms": 94.19999998807907,
+          "transferBytes": 908,
+          "decodedBytes": 1268
+        },
+        {
+          "kind": "asset",
+          "ms": 116.30000001192093,
+          "transferBytes": 683,
+          "decodedBytes": 891
+        },
+        {
+          "kind": "asset",
+          "ms": 121.5,
+          "transferBytes": 5103,
+          "decodedBytes": 10638
+        },
+        {
+          "kind": "asset",
+          "ms": 123,
+          "transferBytes": 424,
+          "decodedBytes": 124
+        },
+        {
+          "kind": "asset",
+          "ms": 123.40000003576279,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 129.5999999642372,
+          "transferBytes": 416,
+          "decodedBytes": 116
+        },
+        {
+          "kind": "asset",
+          "ms": 132.60000002384186,
+          "transferBytes": 708,
+          "decodedBytes": 693
+        },
+        {
+          "kind": "asset",
+          "ms": 93.30000001192093,
+          "transferBytes": 426,
+          "decodedBytes": 126
+        },
+        {
+          "kind": "asset",
+          "ms": 135.80000001192093,
+          "transferBytes": 496,
+          "decodedBytes": 196
+        },
+        {
+          "kind": "asset",
+          "ms": 142.89999997615814,
+          "transferBytes": 629,
+          "decodedBytes": 329
+        },
+        {
+          "kind": "asset",
+          "ms": 145.4000000357628,
+          "transferBytes": 767,
+          "decodedBytes": 467
+        },
+        {
+          "kind": "asset",
+          "ms": 157.19999998807907,
+          "transferBytes": 2421,
+          "decodedBytes": 3582
+        },
+        {
+          "kind": "asset",
+          "ms": 209.70000004768372,
+          "transferBytes": 139963,
+          "decodedBytes": 438708
+        },
+        {
+          "kind": "asset",
+          "ms": 134.5,
+          "transferBytes": 809,
+          "decodedBytes": 1027
+        },
+        {
+          "kind": "asset",
+          "ms": 167.10000002384186,
+          "transferBytes": 5153,
+          "decodedBytes": 14252
+        },
+        {
+          "kind": "asset",
+          "ms": 173.5999999642372,
+          "transferBytes": 452,
+          "decodedBytes": 152
+        },
+        {
+          "kind": "asset",
+          "ms": 181.9000000357628,
+          "transferBytes": 8943,
+          "decodedBytes": 23420
+        },
+        {
+          "kind": "asset",
+          "ms": 188.79999995231628,
+          "transferBytes": 2329,
+          "decodedBytes": 5145
+        },
+        {
+          "kind": "asset",
+          "ms": 194.69999998807907,
+          "transferBytes": 677,
+          "decodedBytes": 618
+        },
+        {
+          "kind": "asset",
+          "ms": 198.60000002384186,
+          "transferBytes": 2040,
+          "decodedBytes": 3716
+        },
+        {
+          "kind": "asset",
+          "ms": 199.60000002384186,
+          "transferBytes": 628,
+          "decodedBytes": 328
+        },
+        {
+          "kind": "asset",
+          "ms": 212.4000000357628,
+          "transferBytes": 464,
+          "decodedBytes": 164
+        },
+        {
+          "kind": "asset",
+          "ms": 214.20000004768372,
+          "transferBytes": 461,
+          "decodedBytes": 161
+        },
+        {
+          "kind": "asset",
+          "ms": 301.80000001192093,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 305.39999997615814,
+          "transferBytes": 587,
+          "decodedBytes": 287
+        },
+        {
+          "kind": "asset",
+          "ms": 308.0999999642372,
+          "transferBytes": 548,
+          "decodedBytes": 248
+        },
+        {
+          "kind": "asset",
+          "ms": 312.30000001192093,
+          "transferBytes": 528,
+          "decodedBytes": 228
+        },
+        {
+          "kind": "asset",
+          "ms": 371,
+          "transferBytes": 475,
+          "decodedBytes": 175
+        },
+        {
+          "kind": "asset",
+          "ms": 353.19999998807907,
+          "transferBytes": 7174,
+          "decodedBytes": 16155
+        },
+        {
+          "kind": "asset",
+          "ms": 380.19999998807907,
+          "transferBytes": 2539,
+          "decodedBytes": 4842
+        },
+        {
+          "kind": "asset",
+          "ms": 222.60000002384186,
+          "transferBytes": 483,
+          "decodedBytes": 183
+        },
+        {
+          "kind": "asset",
+          "ms": 231.60000002384186,
+          "transferBytes": 573,
+          "decodedBytes": 521
+        },
+        {
+          "kind": "asset",
+          "ms": 297.39999997615814,
+          "transferBytes": 6747,
+          "decodedBytes": 14852
+        },
+        {
+          "kind": "asset",
+          "ms": 308.89999997615814,
+          "transferBytes": 874,
+          "decodedBytes": 1070
+        },
+        {
+          "kind": "asset",
+          "ms": 314.60000002384186,
+          "transferBytes": 1906,
+          "decodedBytes": 2931
+        },
+        {
+          "kind": "asset",
+          "ms": 316.5,
+          "transferBytes": 340,
+          "decodedBytes": 40
+        },
+        {
+          "kind": "asset",
+          "ms": 318.5,
+          "transferBytes": 596,
+          "decodedBytes": 296
+        },
+        {
+          "kind": "asset",
+          "ms": 319.69999998807907,
+          "transferBytes": 583,
+          "decodedBytes": 283
+        },
+        {
+          "kind": "asset",
+          "ms": 326.0999999642372,
+          "transferBytes": 544,
+          "decodedBytes": 244
+        },
+        {
+          "kind": "asset",
+          "ms": 330.60000002384186,
+          "transferBytes": 450,
+          "decodedBytes": 150
+        },
+        {
+          "kind": "asset",
+          "ms": 359.30000001192093,
+          "transferBytes": 771,
+          "decodedBytes": 863
+        },
+        {
+          "kind": "asset",
+          "ms": 338,
+          "transferBytes": 4251,
+          "decodedBytes": 9337
+        },
+        {
+          "kind": "asset",
+          "ms": 359.80000001192093,
+          "transferBytes": 1096,
+          "decodedBytes": 1256
+        },
+        {
+          "kind": "asset",
+          "ms": 160.30000001192093,
+          "transferBytes": 566,
+          "decodedBytes": 266
+        },
+        {
+          "kind": "asset",
+          "ms": 223.5,
+          "transferBytes": 1842,
+          "decodedBytes": 2969
+        },
+        {
+          "kind": "asset",
+          "ms": 226.10000002384186,
+          "transferBytes": 1736,
+          "decodedBytes": 2493
+        },
+        {
+          "kind": "asset",
+          "ms": 233.70000004768372,
+          "transferBytes": 561,
+          "decodedBytes": 261
+        },
+        {
+          "kind": "asset",
+          "ms": 236.60000002384186,
+          "transferBytes": 672,
+          "decodedBytes": 696
+        },
+        {
+          "kind": "asset",
+          "ms": 237.29999995231628,
+          "transferBytes": 547,
+          "decodedBytes": 247
+        },
+        {
+          "kind": "asset",
+          "ms": 245.4000000357628,
+          "transferBytes": 573,
+          "decodedBytes": 273
+        },
+        {
+          "kind": "asset",
+          "ms": 250.30000001192093,
+          "transferBytes": 1033,
+          "decodedBytes": 1291
+        },
+        {
+          "kind": "asset",
+          "ms": 252.89999997615814,
+          "transferBytes": 531,
+          "decodedBytes": 231
+        },
+        {
+          "kind": "asset",
+          "ms": 259.7999999523163,
+          "transferBytes": 473,
+          "decodedBytes": 173
+        },
+        {
+          "kind": "asset",
+          "ms": 270.39999997615814,
+          "transferBytes": 555,
+          "decodedBytes": 255
+        },
+        {
+          "kind": "asset",
+          "ms": 276.39999997615814,
+          "transferBytes": 8363,
+          "decodedBytes": 21951
+        },
+        {
+          "kind": "asset",
+          "ms": 277.2000000476837,
+          "transferBytes": 554,
+          "decodedBytes": 254
+        },
+        {
+          "kind": "asset",
+          "ms": 279.19999998807907,
+          "transferBytes": 654,
+          "decodedBytes": 354
+        },
+        {
+          "kind": "asset",
+          "ms": 214.80000001192093,
+          "transferBytes": 2470,
+          "decodedBytes": 4726
+        },
+        {
+          "kind": "asset",
+          "ms": 15.800000011920929,
+          "transferBytes": 2618,
+          "decodedBytes": 6243
+        },
+        {
+          "kind": "asset",
+          "ms": 24.19999998807907,
+          "transferBytes": 520,
+          "decodedBytes": 220
+        }
+      ]
+    }
+  ]
+}

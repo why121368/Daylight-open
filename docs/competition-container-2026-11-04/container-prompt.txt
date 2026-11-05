@@ -1,0 +1,11 @@
+Use case: infographic-diagram
+Asset type: technical competition report, 1536 x 1024 landscape
+Primary request: a precise, elegant English-only engineering diagram for Daylight showing how reproducible container builds use tracked public evidence snapshots.
+Style: clean editorial engineering infographic on warm ivory, dark forest green type, restrained amber accents, ample whitespace, crisp flat shapes and clear arrows. Professional report typography, legible when scaled. No decorative microtext, no Chinese characters, no invented labels or logos.
+Title verbatim: "Daylight | Reproducible Container Build"
+Composition: two horizontal lanes; a narrow BEFORE lane above a larger AFTER lane. Numbered circles may be used only in the AFTER lane, 1 through 5. All arrows follow left-to-right order with no ambiguous crossings.
+BEFORE lane verbatim labels, in order: "BEFORE"; "Frontend imports"; "docs/*.json"; "Excluded by Docker"; "Build fails". Show the missing file boundary with a clear amber broken link between the docs and build result.
+AFTER lane five boxes in order, verbatim: "1. Public evidence" with subtitle "5 JSON sources"; "2. Tracked snapshot" with subtitle "src/data"; "3. Vite graph check" with subtitle "Resolved imports"; "4. Docker build" with subtitle "Locked dependencies"; "5. Runtime" with subtitle "Non-root + read-only". Keep the five boxes aligned, large enough for all text; use a second aligned line if needed but preserve a clear reading order.
+Below the AFTER lane, a small feedback arrow from "Tracked snapshot" to "Public evidence", label verbatim: "Deployment check: source and snapshot must match".
+Footer verbatim: "Source -> Snapshot -> Build -> Run"
+Constraints: render exactly these English words, accurate spelling, no performance numbers, no badges claiming production certification, no screenshots, no watermark. Distinguish the evidence consistency check from the Vite import check visually. Do not add services or infrastructure not listed.

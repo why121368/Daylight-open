@@ -1,0 +1,36 @@
+fatal: detected dubious ownership in repository at '/opt/daylight/app'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/daylight/app
+### 1w-metrics-on ... drained 600/600 in 10.93s => 54.89 jobs/s, p95 e2e 11233ms (12.9s wall)
+### 2w-metrics-on ... drained 600/600 in 7.70s => 77.93 jobs/s, p95 e2e 8173ms (9.9s wall)
+### 4w-metrics-on ... drained 600/600 in 6.10s => 98.36 jobs/s, p95 e2e 6305ms (8.2s wall)
+### 4w-pool-5 ... drained 600/600 in 6.30s => 95.21 jobs/s, p95 e2e 6645ms (8.1s wall)
+### 2w-single-mailbox ... drained 120/120 in 2.83s => 42.46 jobs/s, p95 e2e 2710ms (3.6s wall)
+### 2w-work-25ms ... drained 240/240 in 10.08s => 23.81 jobs/s, p95 e2e 9889ms (11.0s wall)
+### 2w-failures-10pct ... drained 240/240 in 3.84s => 62.57 jobs/s, p95 e2e 3862ms (4.8s wall)
+### overhead-off#1 ... drained 600/600 in 7.54s => 79.53 jobs/s, p95 e2e 7746ms (9.2s wall)
+### overhead-off#2 ... drained 600/600 in 8.32s => 72.12 jobs/s, p95 e2e 8667ms (10.5s wall)
+### overhead-off#3 ... drained 600/600 in 7.54s => 79.61 jobs/s, p95 e2e 7621ms (9.2s wall)
+### overhead-on#1 ... drained 600/600 in 7.88s => 76.19 jobs/s, p95 e2e 8016ms (9.9s wall)
+### overhead-on#2 ... drained 600/600 in 7.69s => 78.04 jobs/s, p95 e2e 7976ms (9.5s wall)
+### overhead-on#3 ... drained 600/600 in 7.69s => 78.02 jobs/s, p95 e2e 8039ms (9.9s wall)
+
+Evidence directory: /root/daylight-evidence/compose/load-matrix
+  raw.jsonl    6600 per-job records
+  series.csv   463 per-second samples
+  summary.json matrix + analysis
+  1w-metrics-on        drain=   54.89 jobs/s seed=  370.37 jobs/s p95e2e=  11233ms p95queue=  11227ms rss=109MiB cpu=35.37%
+  2w-metrics-on        drain=   77.93 jobs/s seed=   341.3 jobs/s p95e2e=   8173ms p95queue=   8167ms rss=109MiB cpu=53.44%
+  4w-metrics-on        drain=   98.36 jobs/s seed=  379.99 jobs/s p95e2e=   6305ms p95queue=   6281ms rss=112MiB cpu=75.59%
+  4w-pool-5            drain=   95.21 jobs/s seed=  447.76 jobs/s p95e2e=   6645ms p95queue=   6628ms rss=109MiB cpu=69.41%
+  2w-single-mailbox    drain=   42.46 jobs/s seed=  254.78 jobs/s p95e2e=   2710ms p95queue=   2703ms rss=88MiB cpu=51.32%
+  2w-work-25ms         drain=   23.81 jobs/s seed=  356.08 jobs/s p95e2e=   9889ms p95queue=   9855ms rss=100MiB cpu=81.09%
+  2w-failures-10pct    drain=   62.57 jobs/s seed=  356.61 jobs/s p95e2e=   3862ms p95queue=   3852ms rss=99MiB cpu=50.08%
+  overhead-off#1       drain=   79.53 jobs/s seed=  445.77 jobs/s p95e2e=   7746ms p95queue=   7725ms rss=101MiB cpu=45.97%
+  overhead-off#2       drain=   72.12 jobs/s seed=  368.55 jobs/s p95e2e=   8667ms p95queue=   8660ms rss=101MiB cpu=50.06%
+  overhead-off#3       drain=   79.61 jobs/s seed=  441.83 jobs/s p95e2e=   7621ms p95queue=   7608ms rss=102MiB cpu=46.66%
+  overhead-on#1        drain=   76.19 jobs/s seed=   354.4 jobs/s p95e2e=   8016ms p95queue=   8002ms rss=110MiB cpu=55.45%
+  overhead-on#2        drain=   78.04 jobs/s seed=  427.66 jobs/s p95e2e=   7976ms p95queue=   7965ms rss=109MiB cpu=53.5%
+  overhead-on#3        drain=   78.02 jobs/s seed=  350.47 jobs/s p95e2e=   8039ms p95queue=   8032ms rss=108MiB cpu=51.78%
+  metrics overhead: -1.9% throughput at 2 workers (78.02 vs 79.53 jobs/s median of 3; observed spread 9.42% -> delta is within the observed run-to-run spread)

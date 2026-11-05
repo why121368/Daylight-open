@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-03T16:12:52.786Z",
+  "origin": "https://daylight.yunforis.com",
+  "assertions": {
+    "statuses": [
+      "completed",
+      "conflict",
+      "completed",
+      "duplicate",
+      "failed",
+      "completed",
+      "completed"
+    ],
+    "cancelledEvents": 2,
+    "tasks": 1,
+    "modelCalls": 0,
+    "persisted": false
+  },
+  "checks": [
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "bytes": 157,
+      "sha256": "a487ea8f672ca5c231bc5183c9829155e81fca0997a246e4856679929506809b",
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/state",
+      "status": 401,
+      "bytes": 24,
+      "sha256": "9ae5df81a66150b59c285b977d88c172ec17a2d4e79f7b0c6c7d234513589abf",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/experience?step=8",
+      "status": 400,
+      "bytes": 78,
+      "sha256": "92184e721040abb951c7e1251f0d4288cb4f4fa1e3a7fb22db9184bdb2614d22",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/experience",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "f36bf6c5e39042f5ca43751d86ed420a99dc0ba4091fb4b793c96fd22f56092d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/evidence",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "f36bf6c5e39042f5ca43751d86ed420a99dc0ba4091fb4b793c96fd22f56092d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/architecture.webp",
+      "status": 200,
+      "bytes": 145242,
+      "sha256": "c8327608e14741e4e3d8a54cee5021277c37ce6cc86340b4872afc5ad7d0b9e4",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/dataflow.webp",
+      "status": 200,
+      "bytes": 117296,
+      "sha256": "74ba0623847e51a4a23b7927408e5b376c383f3972d8fb8ec530cd5ef004e248",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/performance.webp",
+      "status": 200,
+      "bytes": 60870,
+      "sha256": "d0db189f1bd3053dfd9384724793ceb0badeb7e2996e59f56606773885b9feab",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/experience-qr.png",
+      "status": 200,
+      "bytes": 4485,
+      "sha256": "6ab3f31787c5667870ca2203dc8f320b2689c887ebb6753ff9c5ec261eb6bf34",
+      "contentType": "image/png"
+    },
+    {
+      "path": "/competition/report.html",
+      "status": 200,
+      "bytes": 25565,
+      "sha256": "31752a834e915806ce174dd175cd49f4b3f2ad7c7ca24656f09469b26adacfa2",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/performance-report.html",
+      "status": 200,
+      "bytes": 38267,
+      "sha256": "ffcad85abaa315257f6287bc3e1c0cda576ec6eff945299b355e986033b33096",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/capacity-design.html",
+      "status": 200,
+      "bytes": 41929,
+      "sha256": "61b3644933f99756385111df34bdab27d80ebcb172005d9bb78c2e0e676f76ec",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/k8s-measurements.html",
+      "status": 200,
+      "bytes": 87673,
+      "sha256": "087ab107ee44e59ac3365008884228eaee41b7180a703e43dd5147028d4f8aa4",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/reproduce.html",
+      "status": 200,
+      "bytes": 3881,
+      "sha256": "7b7df44e7eed494a3d8d078b86883d1e586f563bf9bb5250e3eabddd3a79af8d",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/deployment-snapshot.html",
+      "status": 200,
+      "bytes": 11442,
+      "sha256": "1f172b452dc26f058b256b96b8f879f18563d7f9881fa9d747395e1240fdb6a1",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/report-assets/evidence/model-full/summary.json",
+      "status": 200,
+      "bytes": 879,
+      "sha256": "e02ab7a5692f7694fc5442dfb76271b3f702aad125d19b909d7bdd36c3087568",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "path": "/competition/report-assets/evidence/model-full/results.jsonl",
+      "status": 200,
+      "bytes": 29736,
+      "sha256": "6e55c71b88d5dd3317de63753ada9f7a89766f65d298064b574f46fbfea4640f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/competition/demo.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-31/1431534"
+    }
+  ],
+  "scope": "Anonymous public synthetic workflow, HTTPS resources, private-state denial, video range, exact local image bytes."
+}

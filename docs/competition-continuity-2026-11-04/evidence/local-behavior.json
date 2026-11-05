@@ -1,0 +1,100 @@
+[
+  {
+    "name": "shared-step-on-fresh-tab",
+    "expected": 3,
+    "actual": 3,
+    "url": "http://127.0.0.1:3202/experience?step=3",
+    "ok": true
+  },
+  {
+    "name": "browser-back-after-evidence",
+    "expected": 3,
+    "actual": 3,
+    "url": "http://127.0.0.1:3202/experience?step=3",
+    "ok": true
+  },
+  {
+    "name": "reload-retains-step",
+    "expected": 3,
+    "actual": 3,
+    "url": "http://127.0.0.1:3202/experience?step=3",
+    "ok": true
+  },
+  {
+    "name": "generic-navigation-restores-tab-progress",
+    "expected": 3,
+    "actual": 3,
+    "url": "http://127.0.0.1:3202/experience?step=3",
+    "ok": true
+  },
+  {
+    "name": "http503-keeps-completed-state",
+    "progress": 3,
+    "url": "http://127.0.0.1:3203/experience?step=3",
+    "error": "验证用临时故障，请重试。\n\n重试加载",
+    "ok": true
+  },
+  {
+    "name": "retry-commits-step-on-success",
+    "progress": 4,
+    "url": "http://127.0.0.1:3203/experience?step=4",
+    "ok": true
+  },
+  {
+    "name": "continue-step-4",
+    "expected": 4,
+    "actual": 4,
+    "url": "http://127.0.0.1:3202/experience?step=4",
+    "ok": true
+  },
+  {
+    "name": "continue-step-5",
+    "expected": 5,
+    "actual": 5,
+    "url": "http://127.0.0.1:3202/experience?step=5",
+    "ok": true
+  },
+  {
+    "name": "continue-step-6",
+    "expected": 6,
+    "actual": 6,
+    "url": "http://127.0.0.1:3202/experience?step=6",
+    "ok": true
+  },
+  {
+    "name": "continue-step-7",
+    "expected": 7,
+    "actual": 7,
+    "url": "http://127.0.0.1:3202/experience?step=7",
+    "ok": true
+  },
+  {
+    "name": "review-earlier-step",
+    "expected": 2,
+    "actual": 2,
+    "url": "http://127.0.0.1:3202/experience?step=2",
+    "ok": true
+  },
+  {
+    "name": "reload-keeps-furthest-review",
+    "ok": true
+  },
+  {
+    "name": "explicit-restart",
+    "expected": 0,
+    "actual": 0,
+    "url": "http://127.0.0.1:3202/experience?step=0",
+    "ok": true
+  },
+  {
+    "name": "restart-survives-reload",
+    "expected": 0,
+    "actual": 0,
+    "url": "http://127.0.0.1:3202/experience?step=0",
+    "ok": true
+  },
+  {
+    "name": "restart-clears-review-range",
+    "ok": true
+  }
+]

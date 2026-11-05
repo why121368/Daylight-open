@@ -1,0 +1,64 @@
+# Requires Docker Compose >= 2.24.4 for !override. Always combine with docker-compose.yml.
+# Run through up.sh, or provide BOTH compose.env and compose.env.public to Compose.
+x-public-environment: &public-environment
+  DAYLIGHT_PUBLIC_BASE_URL: https://${DAYLIGHT_PUBLIC_HOST:?Set DAYLIGHT_PUBLIC_HOST}
+
+services:
+  api:
+    environment:
+      <<: *public-environment
+      DAYLIGHT_TRUST_PROXY: ${DAYLIGHT_CADDY_IP:-172.30.255.2}/32
+    networks:
+      default: {}
+      public-ingress: {}
+    # Replace, rather than append to, any existing public API binding. Keep its port.
+    ports: !override ['127.0.0.1:${DAYLIGHT_PORT:-3000}:3000']
+  worker:
+    environment: *public-environment
+  scheduler:
+    environment: *public-environment
+  migrate:
+    environment: *public-environment
+  caddy:
+    image: ${DAYLIGHT_CADDY_IMAGE:-caddy:2.10.2-alpine}
+    restart: unless-stopped
+    environment:
+      DAYLIGHT_PUBLIC_HOST: ${DAYLIGHT_PUBLIC_HOST:?Set DAYLIGHT_PUBLIC_HOST}
+      DAYLIGHT_ACME_EMAIL: ${DAYLIGHT_ACME_EMAIL:?Set DAYLIGHT_ACME_EMAIL}
+    networks:
+      public-ingress:
+        ipv4_address: ${DAYLIGHT_CADDY_IP:-172.30.255.2}
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./deploy/public/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      # Container-local admin API; it is never published on the host.
+      # This checks loaded Caddy configuration, not public DNS/TLS reachability.
+      test: [CMD-SHELL, 'wget -q -O /dev/null http://127.0.0.1:2019/config/']
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
+    stop_grace_period: 30s
+
+volumes:
+  caddy-data:
+  caddy-config:
+
+networks:
+  public-ingress:
+    ipam:
+      config:
+        - subnet: ${DAYLIGHT_INGRESS_SUBNET:-172.30.255.0/29}

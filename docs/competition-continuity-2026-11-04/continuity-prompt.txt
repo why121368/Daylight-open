@@ -1,0 +1,17 @@
+Use case: infographic-diagram
+Asset type: Daylight engineering report workflow figure
+Primary request: Show how an interactive seven-step public demo continues across refresh, reading a report, and scanning a step link on a phone.
+Style: Clean technical editorial infographic. Warm ivory background, deep forest green linework and typography, pale sage cards, a small amber accent. Spacious and readable. English labels only. No Chinese characters. Crisp, correctly spelled text. No decorative microtext. Landscape 1536 x 1024.
+Text and composition:
+Title: "DAYLIGHT / CONTINUE THE EXPERIENCE"
+Subtitle: "One completed step, a clear path back"
+Top row, left to right, three large connected cards:
+1. "COMPLETE STEP 3" with a desktop window icon and small label "Interview rescheduled"
+2. "SAVE THE STEP" with a link icon and the exact path "/experience?step=3"
+3. "REBUILD THE RESULT" with a calendar and checklist icon and small label "Replay steps 1 to 3"
+From the middle card, a clearly drawn branch descends into two lower cards:
+Left lower card: "REFRESH OR RETURN" with a browser arrow icon and small label "Continue at step 3"
+Right lower card: "SCAN ON A PHONE" with a phone outline icon and small label "Open the same step link"
+From both lower cards, arrows point to the top-right REBUILD THE RESULT card. Keep all arrows outside card text and make arrowheads unmistakable. The relationship is: a successful completed step produces the step link; returning to that link or opening it on a phone requests a fresh replay to the selected step.
+Use a small bottom caption: "Step links and tab progress keep the journey connected"
+Constraints: All lettering must be English, high contrast, correctly spelled. Use only the exact text provided. No real QR pattern, no metrics, no personal data, no invented service names. Use simple line icons. Make every path and label legible at half-size.

@@ -1,0 +1,28 @@
+.campus-guide-map .leaflet-container { height: 100%; width: 100%; background: #eaf0e8; font-family: inherit; }
+.campus-guide-map .leaflet-control-attribution { max-width: 100%; font-size: 9px; background: #ffffffde; color: #45534b; }
+.campus-guide-map .leaflet-control-attribution a { color: #396859; }
+.campus-guide-map .leaflet-tooltip { border: 1px solid #d9e2d9; border-radius: 8px; box-shadow: 0 3px 12px #19392a12; padding: 4px 8px; color: #233e31; font-size: 11px; }
+.campus-guide-map .campus-marker { position: relative; display: grid; place-items: center; width: var(--marker-size, 28px); height: var(--marker-size, 28px); border: 2px solid white; border-radius: 50%; box-shadow: 0 1px 5px #233e3126; color: white; font-size: 10px; font-weight: 650; }
+.campus-guide-map .campus-marker.is-selected { outline: 3px solid #e0b04a; outline-offset: 3px; }
+.campus-guide-map .campus-marker.is-selected, .campus-guide-map .campus-building-group { font-size: 12px; }
+.campus-guide-map .campus-marker-cluster { background: #fff; border: 2px solid #75968b; color: #315e50; box-shadow: 0 0 0 4px #ffffff70, 0 2px 8px #233e3120; font-size: 12px; }
+.campus-guide-map .campus-label-anchor { pointer-events: none; }
+.campus-guide-map .campus-map-label { display: block; width: max-content; max-width: 132px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #dce4daa8; border-radius: 5px; background: #fffffff0; padding: 2px 6px; color: #2c4438; box-shadow: 0 1px 3px #233e310d; font-size: 11px; line-height: 16px; font-weight: 500; }
+.campus-guide-map .campus-map-label.is-selected { max-width: 240px; white-space: normal; overflow-wrap: anywhere; border-color: #d8ad53; background: #fff9e9; color: #6d4b16; font-weight: 650; }
+.campus-guide-map .campus-label-measure { position: absolute; top: 0; left: 0; visibility: hidden; pointer-events: none; }
+.campus-guide-map .campus-map-detail { max-width: min(260px, 65vw); white-space: normal; overflow-wrap: anywhere; }
+.campus-guide-map .campus-nearby-count { position: absolute; bottom: -7px; right: -9px; min-width: 17px; height: 17px; border: 1px solid #c1d3c8; border-radius: 9px; background: #fff; color: #315e50; padding: 0 3px; font-size: 9px; }
+.campus-guide-map .campus-nearby-popup .leaflet-popup-content { margin: 12px; }
+.campus-guide-map .campus-nearby-heading { margin: 0 0 8px; color: #315e50; font-size: 12px; font-weight: 650; }
+.campus-guide-map .campus-nearby-items { max-height: 210px; overflow-y: auto; }
+.campus-guide-map .campus-nearby-place { display: flex; align-items: center; gap: 8px; width: 100%; border-radius: 6px; padding: 8px 6px; text-align: left; font: inherit; color: #2c4438; cursor: pointer; }
+.campus-guide-map .campus-nearby-place:hover, .campus-guide-map .campus-nearby-place[aria-current] { background: #edf4ef; }
+.campus-guide-map .campus-nearby-dot { width: 7px; height: 7px; flex: none; border-radius: 50%; }
+.campus-guide-map .campus-nearby-zoom { width: 100%; margin-top: 8px; border: 1px solid #c5d6ca; border-radius: 6px; padding: 6px; font-size: 11px; color: #315e50; cursor: pointer; }
+.campus-guide-map .campus-nearby-place:focus-visible, .campus-guide-map .campus-nearby-zoom:focus-visible { outline: 2px solid #c58d22; outline-offset: -2px; }
+.campus-guide-map .leaflet-marker-icon:focus-visible { outline: 3px solid #dfac3f; outline-offset: 4px; }
+.campus-guide-map .campus-event-count { position: absolute; right: -10px; top: -8px; display: grid; place-items: center; width: 19px; height: 19px; background: #d9942e; border: 2px solid white; border-radius: 999px; font: 600 10px/1 sans-serif; color: white; }
+.campus-guide-map .campus-simulation-marker { width: 18px; height: 18px; border: 3px solid white; border-radius: 999px; background: #266b62; box-shadow: 0 0 0 7px #266b6226; }
+.campus-guide-map svg [role=button]:focus-visible { outline: none; filter: drop-shadow(0 0 5px #db9e31); }
+.campus-indoor-diagram [role=button]:focus-visible { outline: none; stroke: #b77917; stroke-width: 5; }
+@media (prefers-reduced-motion: reduce) { .campus-guide-map *, .campus-indoor-diagram * { scroll-behavior: auto !important; transition: none !important; } }

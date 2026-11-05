@@ -1,0 +1,93 @@
+BACKUP=/opt/daylight-backups/before-competition-20261104001040
+RELEASE_HASHES_OK 290
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  38.03MB
+
+
+Step 1/4 : FROM daylight:public-competition-20261103-v5
+ ---> ba4dfb748369
+Step 2/4 : COPY --chown=node:node server/ /app/server/
+ ---> db3b7e7ccc0f
+Step 3/4 : COPY --chown=node:node shared/ /app/shared/
+ ---> ee917b93a1fb
+Step 4/4 : COPY --chown=node:node dist/ /app/dist/
+ ---> a944408a0a92
+Successfully built a944408a0a92
+Successfully tagged daylight:public-competition-20261103-v6
+TAP version 13
+# Subtest: public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+ok 1 - public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+  ---
+  duration_ms: 197.297999
+  type: 'test'
+  ...
+# Subtest: public experience isolates concurrent visitors and ignores ambient account scope
+ok 2 - public experience isolates concurrent visitors and ignores ambient account scope
+  ---
+  duration_ms: 98.424619
+  type: 'test'
+  ...
+# Subtest: public experience rejects arbitrary workload and untrusted input
+ok 3 - public experience rejects arbitrary workload and untrusted input
+  ---
+  duration_ms: 6.361157
+  type: 'test'
+  ...
+# Subtest: experience HTTP validation, public access, no-store, safe unknown routes
+ok 4 - experience HTTP validation, public access, no-store, safe unknown routes
+  ---
+  duration_ms: 503.978955
+  type: 'test'
+  ...
+# Subtest: experience HTTP backpressure and failure never disclose runtime details
+ok 5 - experience HTTP backpressure and failure never disclose runtime details
+  ---
+  duration_ms: 320.610787
+  type: 'test'
+  ...
+# Subtest: cost estimates price cached tokens once and reject invalid or overflowing values
+ok 6 - cost estimates price cached tokens once and reject invalid or overflowing values
+  ---
+  duration_ms: 7.057868
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4774.75701
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-scheduler-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-worker-1  Started
+ Container daylight-scheduler-1  Started
+ Container daylight-api-1  Started
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-scheduler-1  Waiting
+ Container daylight-api-1  Healthy
+ Container daylight-scheduler-1  Healthy
+ Container daylight-worker-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":false,"runId":"2e81c749-4956-4621-a805-96c6ac4687a3","written":0,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_PROBE_OK
+/daylight-api-1 daylight:public-competition-20261103-v6 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261103-v6 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261103-v6 healthy restart=0 oom=false
+sha256:a944408a0a92df5bf4cb9d66073ab2d1c81cfb6ede7aaf678f26fc2310265f8c
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+COMPETITION_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-competition-20261104001040
+
+REMOTE_EXIT 0

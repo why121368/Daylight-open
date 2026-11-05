@@ -1,0 +1,14 @@
+flowchart LR
+  email[Received mail] --> dedup{Processed ID?}
+  dedup -- Yes --> skip[Skip extraction]
+  dedup -- No --> context[Active calendar and tasks]
+  context --> extract[Structured extraction]
+  extract --> valid{All fields valid?}
+  valid -- No --> failed[Trace failure; retain retry]
+  failed --> retry[Correct / retry]
+  retry --> extract
+  valid -- Yes --> tools[Calendar and task tools]
+  tools --> changes[Create / cancel / linked reschedule]
+  changes --> conflict[Mark conflicts and suggest slots]
+  conflict --> draft[Trace and reply draft]
+  draft --> review[Human approval before send]

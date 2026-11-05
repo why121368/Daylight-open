@@ -1,0 +1,27 @@
+{
+  "url": "https://daylight.yunforis.com/",
+  "status": "verified-from-this-machine",
+  "generatedAt": "2026-11-04T06:10:39.158Z",
+  "checkedAt": "2026-11-04T06:10:39.158Z",
+  "timezone": "Asia/Shanghai",
+  "probes": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/health/ready",
+      "status": 200
+    },
+    {
+      "path": "/api/state",
+      "status": 401,
+      "authenticated": false
+    },
+    {
+      "path": "/api/auth/config",
+      "status": 200
+    }
+  ],
+  "note": "Reachable from this machine at the recorded time. Independently scan with a phone on mobile data."
+}

@@ -1,0 +1,238 @@
+TAP version 13
+# Subtest: a returned visitor restores the selected step and completed review range
+ok 1 - a returned visitor restores the selected step and completed review range
+  ---
+  duration_ms: 3.531513
+  type: 'test'
+  ...
+# Subtest: an explicit shared step works on a fresh device
+ok 2 - an explicit shared step works on a fresh device
+  ---
+  duration_ms: 3.886728
+  type: 'test'
+  ...
+# Subtest: restart at step zero resets the previous review range
+ok 3 - restart at step zero resets the previous review range
+  ---
+  duration_ms: 0.832217
+  type: 'test'
+  ...
+# Subtest: malformed or duplicated URL steps start with bounded empty state
+ok 4 - malformed or duplicated URL steps start with bounded empty state
+  ---
+  duration_ms: 0.998797
+  type: 'test'
+  ...
+# Subtest: changed fixtures and corrupted session records are ignored
+ok 5 - changed fixtures and corrupted session records are ignored
+  ---
+  duration_ms: 0.794825
+  type: 'test'
+  ...
+# Subtest: denied browser storage preserves shared-link navigation
+ok 6 - denied browser storage preserves shared-link navigation
+  ---
+  duration_ms: 0.698136
+  type: 'test'
+  ...
+# Subtest: saved progress contains only the version and bounded indices
+ok 7 - saved progress contains only the version and bounded indices
+  ---
+  duration_ms: 0.809548
+  type: 'test'
+  ...
+# Subtest: step navigation replaces ambiguous parameters while preserving other page preferences
+ok 8 - step navigation replaces ambiguous parameters while preserving other page preferences
+  ---
+  duration_ms: 1.027679
+  type: 'test'
+  ...
+# Subtest: cross-device links include only the public path and current step
+ok 9 - cross-device links include only the public path and current step
+  ---
+  duration_ms: 1.622123
+  type: 'test'
+  ...
+# Subtest: public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+ok 10 - public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+  ---
+  duration_ms: 311.219339
+  type: 'test'
+  ...
+# Subtest: public experience isolates concurrent visitors and ignores ambient account scope
+ok 11 - public experience isolates concurrent visitors and ignores ambient account scope
+  ---
+  duration_ms: 126.292572
+  type: 'test'
+  ...
+# Subtest: public experience rejects arbitrary workload and untrusted input
+ok 12 - public experience rejects arbitrary workload and untrusted input
+  ---
+  duration_ms: 4.943499
+  type: 'test'
+  ...
+# Subtest: experience HTTP validation, public access, no-store, safe unknown routes
+ok 13 - experience HTTP validation, public access, no-store, safe unknown routes
+  ---
+  duration_ms: 635.815962
+  type: 'test'
+  ...
+# Subtest: experience HTTP backpressure and failure never disclose runtime details
+ok 14 - experience HTTP backpressure and failure never disclose runtime details
+  ---
+  duration_ms: 174.705411
+  type: 'test'
+  ...
+# Subtest: cost estimates price cached tokens once and reject invalid or overflowing values
+ok 15 - cost estimates price cached tokens once and reject invalid or overflowing values
+  ---
+  duration_ms: 7.857346
+  type: 'test'
+  ...
+# Subtest: slow disk charges in-flight data to both limits without growing a second queue
+ok 16 - slow disk charges in-flight data to both limits without growing a second queue
+  ---
+  duration_ms: 388.501271
+  type: 'test'
+  ...
+# Subtest: shutdown awaits failed writes and persists their final dropped count
+ok 17 - shutdown awaits failed writes and persists their final dropped count
+  ---
+  duration_ms: 443.617099
+  type: 'test'
+  ...
+# Subtest: rotated files obey the per-process file count and byte limits
+ok 18 - rotated files obey the per-process file count and byte limits
+  ---
+  duration_ms: 593.010565
+  type: 'test'
+  ...
+# Subtest: directory retention reclaims files left by previous instances
+ok 19 - directory retention reclaims files left by previous instances
+  ---
+  duration_ms: 829.273044
+  type: 'test'
+  ...
+# Subtest: three roles produce independent atomic summaries and the CLI aggregates each
+ok 20 - three roles produce independent atomic summaries and the CLI aggregates each
+  ---
+  duration_ms: 963.199746
+  type: 'test'
+  ...
+# Subtest: metric identities, numeric payloads and aggregate cardinality are bounded
+ok 21 - metric identities, numeric payloads and aggregate cardinality are bounded
+  ---
+  duration_ms: 654.478365
+  type: 'test'
+  ...
+# Subtest: recording starts with the switch; the sink is created by the service entry point
+ok 22 - recording starts with the switch; the sink is created by the service entry point
+  ---
+  duration_ms: 24.313068
+  type: 'test'
+  ...
+# Subtest: each sample carries the required fields and Beijing timestamps
+ok 23 - each sample carries the required fields and Beijing timestamps
+  ---
+  duration_ms: 74.531641
+  type: 'test'
+  ...
+# Subtest: labels are sanitised so private and unbounded values never leave the process
+ok 24 - labels are sanitised so private and unbounded values never leave the process
+  ---
+  duration_ms: 12.612992
+  type: 'test'
+  ...
+# Subtest: an overflowing buffer drops samples and reports the loss instead of blocking
+ok 25 - an overflowing buffer drops samples and reports the loss instead of blocking
+  ---
+  duration_ms: 30.723896
+  type: 'test'
+  ...
+# Subtest: latency metrics keep every raw sample so percentiles can be recomputed
+ok 26 - latency metrics keep every raw sample so percentiles can be recomputed
+  ---
+  duration_ms: 30.391468
+  type: 'test'
+  ...
+# Subtest: timers record a duration in milliseconds and always release
+ok 27 - timers record a duration in milliseconds and always release
+  ---
+  duration_ms: 36.068743
+  type: 'test'
+  ...
+# Subtest: the rolling summary carries count, sum, min, max and percentiles
+ok 28 - the rolling summary carries count, sum, min, max and percentiles
+  ---
+  duration_ms: 33.509697
+  type: 'test'
+  ...
+# Subtest: a failing sink never throws into the caller and is reported as status
+ok 29 - a failing sink never throws into the caller and is reported as status
+  ---
+  duration_ms: 95.661428
+  type: 'test'
+  ...
+# Subtest: metrics stay completely off when the environment switch is absent
+ok 30 - metrics stay completely off when the environment switch is absent
+  ---
+  duration_ms: 192.511115
+  type: 'test'
+  ...
+# Subtest: provenance reports unknown rather than a false clean tree when git is unavailable
+ok 31 - provenance reports unknown rather than a false clean tree when git is unavailable
+  ---
+  duration_ms: 202.481808
+  type: 'test'
+  ...
+# Subtest: sink names differ for the same PID under different container host tags
+ok 32 - sink names differ for the same PID under different container host tags
+  ---
+  duration_ms: 256.791263
+  type: 'test'
+  ...
+# Subtest: an unusable metrics directory degrades to sinkError instead of crashing the service
+ok 33 - an unusable metrics directory degrades to sinkError instead of crashing the service
+  ---
+  duration_ms: 149.558059
+  type: 'test'
+  ...
+# Subtest: dependency outage and draining reject readiness without killing liveness
+ok 34 - dependency outage and draining reject readiness without killing liveness
+  ---
+  duration_ms: 4.709815
+  type: 'test'
+  ...
+# Subtest: hung readiness times out, aborts its check and still serves liveness
+ok 35 - hung readiness times out, aborts its check and still serves liveness
+  ---
+  duration_ms: 21.702192
+  type: 'test'
+  ...
+# Subtest: draining during an in-flight readiness check cannot return ready
+ok 36 - draining during an in-flight readiness check cannot return ready
+  ---
+  duration_ms: 1.557095
+  type: 'test'
+  ...
+# Subtest: shutdown closes idle connections and forces active ones before cleaning resources
+ok 37 - shutdown closes idle connections and forces active ones before cleaning resources
+  ---
+  duration_ms: 42.751781
+  type: 'test'
+  ...
+# Subtest: failed resource cleanup keeps the hard deadline instead of leaving a live process
+ok 38 - failed resource cleanup keeps the hard deadline instead of leaving a live process
+  ---
+  duration_ms: 208.952351
+  type: 'test'
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11941.178562

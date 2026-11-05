@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-04T00:39:41.419Z",
+  "node": "v24.14.0",
+  "npm": "11.9.0",
+  "emptyNodeModulesBeforeInstall": true,
+  "stages": [
+    {
+      "name": "install",
+      "code": 0,
+      "elapsedMs": 60184
+    },
+    {
+      "name": "integrity",
+      "code": 0,
+      "elapsedMs": 1837
+    },
+    {
+      "name": "source-preflight",
+      "code": 0,
+      "elapsedMs": 130
+    },
+    {
+      "name": "demo",
+      "code": 0,
+      "elapsedMs": 7318
+    }
+  ],
+  "ok": true
+}

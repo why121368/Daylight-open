@@ -1,0 +1,24 @@
+{
+  "source": "https://www.compshare.cn/model-api",
+  "priceObservation": "2026-11-04",
+  "inputCnyPerMillion": 2,
+  "outputCnyPerMillion": 8,
+  "cachePolicy": "Charged as regular input for estimation",
+  "groups": {
+    "before": {
+      "calls": 7,
+      "inputTokens": 1708,
+      "outputTokens": 765,
+      "estimatedCny": 0.009536
+    },
+    "after": {
+      "calls": 7,
+      "inputTokens": 2869,
+      "outputTokens": 2149,
+      "estimatedCny": 0.02293
+    }
+  },
+  "estimatedTotalCny": 0.032466,
+  "basis": "Current public price estimate; supplier invoice recorded separately",
+  "resultsSha256": "17ac8bea6444ca5b3c0ec899d0f4ca21d48e22271dfb87b773a872fe4bc3f2c3"
+}

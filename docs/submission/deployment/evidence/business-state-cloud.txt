@@ -1,0 +1,23 @@
+Output format is unaligned.
+Field separator is "|".
+0c305b84|17|9|15|0|0|0
+170e71cd|1|3|13|0|0|0
+1791edc8|6|8|15|1|1|1
+
+=== recruitment ===
+8|8|0|0
+
+=== candidate completeness (profile sections present) ===
+20ab19555c7bc7f40c16ab87ecc6|t|t|t|t|1
+38baee5e6470fe92d213311cae33|t|t|t|t|1
+687912620f149476473b59918423|t|t|t|t|1
+7585fc3c4f3c2e999549065e482c|t|t|t|t|1
+791ddaf5f7fa8eaf6e18e556fbd8|t|t|t|t|1
+8018cdf2453fe25e6e8e84e18a16|t|t|t|t|1
+8e5e90bbaf335cf86285d496152b|t|t|t|t|1
+c6d1f8b32826a1d95c7ccdc361ff|t|t|t|t|1
+
+=== traces per mailbox ===
+traces:0c305b84-f93c-4|2|2|2
+traces:170e71cd-e12e-4|2|2|1
+traces:1791edc8-ccf6-4|3|0|3

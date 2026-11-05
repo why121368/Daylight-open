@@ -1,0 +1,85 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-chapter-video-20261104040719
+RELEASE_HASHES_OK 446
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  60.91MB
+
+
+Step 1/7 : FROM sha256:369fe6cdf3a537df7eae07759272fb6434df218214c4ff9afd5e23c9dbf5c222
+ ---> 369fe6cdf3a5
+Step 2/7 : USER root
+ ---> Running in 7d45acd226d0
+ ---> Removed intermediate container 7d45acd226d0
+ ---> 238a1516130b
+Step 3/7 : RUN rm -rf /app/dist
+ ---> Running in 6d44b9c581cd
+ ---> Removed intermediate container 6d44b9c581cd
+ ---> bbd1d09e8298
+Step 4/7 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> 96c720e52ec8
+Step 5/7 : COPY --chown=node:node dist/ /app/dist/
+ ---> 6b1fffe8c60b
+Step 6/7 : LABEL org.opencontainers.image.revision="154936206ed85098a28ebc756344bc6b438fe8be"
+ ---> Running in dd66346b6bb0
+ ---> Removed intermediate container dd66346b6bb0
+ ---> 9ade1dca4ff5
+Step 7/7 : USER node
+ ---> Running in 2f460b1c57cc
+ ---> Removed intermediate container 2f460b1c57cc
+ ---> 9d634d54c28c
+Successfully built 9d634d54c28c
+Successfully tagged daylight:public-competition-20261104-v14
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11038.523189
+{
+  "ok": true,
+  "chapters": 12,
+  "videoSha256": "a1fd4dfbf4130a9ab83d5163bed71c4fc570d9870e34825cce0d800aca068a13",
+  "videoBytes": 1431534,
+  "posterBytes": 61383,
+  "subtitles": 12,
+  "chapterCues": 12,
+  "transcriptCaptions": 33,
+  "pageChunk": "demo-page-BdCYWNjn.js"
+}
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-api-1  Starting
+ Container daylight-scheduler-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-worker-1  Started
+ Container daylight-scheduler-1  Started
+ Container daylight-api-1  Started
+ Container daylight-worker-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-scheduler-1  Waiting
+ Container daylight-scheduler-1  Healthy
+ Container daylight-worker-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"a7b80ac0-e13d-40de-b6f9-d88dce74d774","written":5,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"a7b80ac0-e13d-40de-b6f9-d88dce74d774","written":54,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"88fe4012-64d9-47a6-be0e-7e8b21d7f6d7","written":143,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"801db7db-0013-4a56-a651-fa7c05a94c85","written":55,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v14 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v14 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v14 healthy restart=0 oom=false
+sha256:9d634d54c28c105207d1ca9af368b23c4c44aa50f7bb7005e0d596c94e6fcbdf
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+CHAPTER_VIDEO_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-chapter-video-20261104040719
+
+REMOTE_EXIT 0

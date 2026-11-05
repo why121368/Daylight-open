@@ -1,0 +1,8 @@
+{
+  "nodeImage": "public.ecr.aws/docker/library/node:22.23.3-bookworm-slim",
+  "seconds": 39.8116057,
+  "exitCode": 0,
+  "tag": "daylight:source-release-20261104-v22-final",
+  "dirty": false,
+  "sourceCommit": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a"
+}

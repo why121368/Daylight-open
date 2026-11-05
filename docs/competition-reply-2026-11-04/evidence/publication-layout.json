@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-03T19:37:22.039Z",
+  "measurements": [
+    {
+      "documentWidth": 1425,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/reply-assets/assets/reply-flow.webp",
+          "width": 1100
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/reply-assets/assets/reply-review-desktop.png",
+          "width": 1099.9896240234375
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-review-mobile.png",
+          "width": 390
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-edit-mobile.png",
+          "width": 390
+        }
+      ],
+      "scrollWidth": 1425,
+      "url": "/competition/reply-review-report.html",
+      "width": 1440
+    },
+    {
+      "documentWidth": 375,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/reply-assets/assets/reply-flow.webp",
+          "width": 342.65625
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/reply-assets/assets/reply-review-desktop.png",
+          "width": 342.65625
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-review-mobile.png",
+          "width": 342.66668701171875
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-edit-mobile.png",
+          "width": 342.66668701171875
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "/competition/reply-review-report.html",
+      "width": 390
+    },
+    {
+      "documentWidth": 305,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/reply-assets/assets/reply-flow.webp",
+          "width": 272.65625
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/reply-assets/assets/reply-review-desktop.png",
+          "width": 272.6458435058594
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-review-mobile.png",
+          "width": 272.66668701171875
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-edit-mobile.png",
+          "width": 272.66668701171875
+        }
+      ],
+      "scrollWidth": 305,
+      "url": "/competition/reply-review-report.html",
+      "width": 320
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+✔ public experience: state transition, conflict, linked reschedule, dedup, retry, cancel (33.2202ms)
+✔ public experience isolates concurrent visitors and ignores ambient account scope (10.3829ms)
+✔ public experience rejects arbitrary workload and untrusted input (0.7639ms)
+✔ experience HTTP validation, public access, no-store, safe unknown routes (57.2752ms)
+✔ experience HTTP backpressure and failure never disclose runtime details (13.0903ms)
+✔ cost estimates price cached tokens once and reject invalid or overflowing values (0.5351ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 980.764

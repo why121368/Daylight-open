@@ -1,0 +1,14 @@
+{
+  "baseCommit": "332b714b630935f7a396d5580c196b1f9652b5b9",
+  "createdAt": "2026-11-03T23:02:23.700941+00:00",
+  "files": {
+    "shared/experience-progress.js": "a7b7ebcdc448edf8a00beb621148cf24fe985cd0c277eccad66f37406ffc0956",
+    "server/experience-progress.test.js": "c26af772c89cf2107fd5183bc9b2e9f84bfd6c55cd710e4b9306ed0eeb22a941",
+    "src/pages/experience-page.jsx": "74c06e9e94c0e59b48af1a36a62ed22f53edaf700de829ad92155ca4a0e8b0d2",
+    "src/components/campus-guide/share-dialog.jsx": "0ecf006431b5cd0702ac9d5b7408544804db20ee5d68effec9cfa973260c5dca",
+    "src/pages/evidence-page.jsx": "2e8c17daa8b23d1783e607de6989b96155fa8801a827fff1251878fa0d2621f1",
+    "scripts/experience-qr-assets.mjs": "80c2c9e8bd48c36f983bdd6cef9adfee940de9d2e7429a4c79737b167743e706",
+    "scripts/verify-experience-qr.py": "b242c18489194a219070676231424d3c50bfa872456cf1d57cc8e4ba5b210058",
+    "public/competition/experience-step-qr.json": "bfe2484d7200da779d488a58619e9b6a2dea592f7d6917d3d01cd85c653143bc"
+  }
+}

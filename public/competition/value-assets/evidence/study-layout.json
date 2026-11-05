@@ -1,0 +1,50 @@
+{
+  "kind": "practice-browser-layout",
+  "rows": [
+    {
+      "buttons": [
+        {
+          "height": 48,
+          "label": "五封通知已处理完成"
+        },
+        {
+          "height": 48,
+          "label": "完成本轮并保存"
+        }
+      ],
+      "document": 305,
+      "fieldsOutside": 0,
+      "viewport": 320
+    },
+    {
+      "buttons": [
+        {
+          "height": 48,
+          "label": "五封通知已处理完成"
+        },
+        {
+          "height": 48,
+          "label": "完成本轮并保存"
+        }
+      ],
+      "document": 375,
+      "fieldsOutside": 0,
+      "viewport": 390
+    },
+    {
+      "buttons": [
+        {
+          "height": 48,
+          "label": "五封通知已处理完成"
+        },
+        {
+          "height": 48,
+          "label": "完成本轮并保存"
+        }
+      ],
+      "document": 1425,
+      "fieldsOutside": 0,
+      "viewport": 1440
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从源码构建容器、真实依赖与只读运行 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="从源码构建容器真实依赖与只读运行">从源码构建容器、真实依赖与只读运行</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#从源码构建容器真实依赖与只读运行">从源码构建容器、真实依赖与只读运行</a><ul>
+<li><a href="#1-从实际构建发现问题">1. 从实际构建发现问题</a></li>
+<li><a href="#2-技术选型与设计逻辑">2. 技术选型与设计逻辑</a><ul>
+<li><a href="#将公开展示数据放入前端构建源">将公开展示数据放入前端构建源</a></li>
+<li><a href="#用-vite-的实际解析结果检查导入链">用 Vite 的实际解析结果检查导入链</a></li>
+<li><a href="#复用生产运行约定">复用生产运行约定</a></li>
+</ul>
+</li>
+<li><a href="#3-优化前后对照">3. 优化前后对照</a></li>
+<li><a href="#4-运行与业务验证">4. 运行与业务验证</a></li>
+<li><a href="#5-电脑与手机尺寸截图">5. 电脑与手机尺寸截图</a></li>
+<li><a href="#6-复现步骤">6. 复现步骤</a></li>
+<li><a href="#7-费用登记">7. 费用登记</a></li>
+<li><a href="#8-完整门禁中的兼容修复">8. 完整门禁中的兼容修复</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-04，北京时间。本轮对应云原生架构、工程可复现性与交付成本。基线源码为 <code>30903e6</code>；以下先记录发现、修复与首个候选，最终发布另保存固定版本回执。</p>
+<h2 id="1-从实际构建发现问题">1. 从实际构建发现问题</h2>
+<p>评委取得源码后，应能按仓库 Dockerfile 得到可启动镜像。首轮默认仓库构建在取得 Docker Hub 匿名令牌时连接超时，24.343 秒退出 1；改用已核验的同版本 Node 官方 ECR 镜像后，构建进入 Vite，在 48.519 秒退出 1。错误为技术页无法找到 <code>docs/competition-2026-11-04/evidence/cost-estimate.json</code>。</p>
+<p>技术页共直接导入 5 份文档 JSON，Docker 构建阶段只复制 <code>src</code>、<code>public</code>、<code>shared</code>，<code>.dockerignore</code> 排除了 <code>docs</code>。本机完整工作目录可以构建，容器上下文缺少输入。<a href="/competition/container-assets/evidence/before-build.txt">默认仓库输出</a> · <a href="/competition/container-assets/evidence/before-ecr-build.txt">同版本官方镜像下的缺文件输出</a> · <a href="/competition/container-assets/evidence/Dockerfile.before">原 Dockerfile</a> · <a href="/competition/container-assets/evidence/dockerignore.before">原排除规则</a>。</p>
+<p><img alt="公开证据快照、构建输入与运行边界" src="/competition/container-assets/assets/container.webp" loading="lazy" decoding="async"></p>
+<p>核心图使用 gpt-image-2.5 生成，图内英文，正文中文。<a href="/competition/container-assets/container-prompt.txt">完整提示词</a> · <a href="/competition/container-assets/image-generation.json">图片调用与摘要</a>。</p>
+<h2 id="2-技术选型与设计逻辑">2. 技术选型与设计逻辑</h2>
+<h3 id="将公开展示数据放入前端构建源">将公开展示数据放入前端构建源</h3>
+<p>新增 <code>src/data/competition-evidence.json</code>，内容来自 5 份已经用于公开技术页的 JSON。同步命令保存完整数据、来源路径和规范 JSON 的 SHA-256。快照受 Git 管理，容器直接从 <code>src</code> 复制。<code>docs</code> 继续保存原始证据和解释，修改后执行 <code>npm run evidence:sync</code>，再运行部署检查。</p>
+<p>选择快照的原因：前端构建只需几十 KB 的公开统计，完整文档还包含原始图片、历史记录和测量文件；明确区分原始材料与构建输入，方便源码包、容器和技术页保持对应。规范 JSON 哈希统一 Windows／Linux 换行和缩进，数据变化仍会改变摘要。</p>
+<p>同步由开发者执行，构建不隐式生成统计结果。<code>deploy:check</code> 比较快照的来源与数据，原始证据变化后会报错，重新同步后才通过。快照进入源码摘要，交付验证能够识别它的修改。</p>
+<h3 id="用-vite-的实际解析结果检查导入链">用 Vite 的实际解析结果检查导入链</h3>
+<p>新增 Vite 插件检查解析后的真实文件路径，允许 <code>src</code>、<code>shared</code>、<code>public</code>、依赖及入口 HTML。静态导入、动态导入和符号链接都经过同一边界；发现超出 Docker 构建目录的输入时，构建立即说明具体路径。插件随 Docker 构建阶段复制。</p>
+<p>采用实际构建图可以覆盖间接导入与动态页面；只搜索技术页固定路径无法覆盖未来新增页面。验证用例真实调用 Vite，在临时工程中分别构建允许路径、间接动态导入和指向文档的链接。</p>
+<h3 id="复用生产运行约定">复用生产运行约定</h3>
+<p>镜像保留 Debian glibc，支持 PDF 的原生 canvas；中文字体和 LibreOffice 支持文档预览。API、Worker、Scheduler 使用同一镜像，以 <code>node</code> 用户运行；根目录只读、<code>/tmp</code> 可写、移除 capabilities、启用 no-new-privileges。数据库、缓存、消息队列和私有附件各自使用持久卷。</p>
+<p>本轮复用 Docker Desktop 与已有官方基础镜像。PostgreSQL 17.6、Redis 7.4.5、RabbitMQ 4.1.4 和预载 MinIO 副本在独立 Compose 项目中实连；新建随机凭据和全新卷。预载 MinIO 为 <code>RELEASE.2025-04-22T22-12-26Z</code>，它包含 Bash、没有 curl，首次启动的默认探针因此失败。局部覆盖改用 Bash 请求同一个 <code>/minio/health/live</code>，要求 HTTP 200；修改后健康等待通过。<a href="/competition/container-assets/evidence/minio-probe-before.json">原探针错误</a> · <a href="/competition/container-assets/evidence/compose.check.yml">本地验证覆盖文件</a> · <a href="/competition/container-assets/evidence/compose-up.txt">首次失败</a> · <a href="/competition/container-assets/evidence/compose-up-adapted.txt">适配后输出</a>。</p>
+<h2 id="3-优化前后对照">3. 优化前后对照</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>优化前</th>
+<th>优化后首个候选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前端从排除文档目录直接导入</td>
+<td>5 份 JSON</td>
+<td>0；读取受版本管理快照</td>
+</tr>
+<tr>
+<td>源证据与构建数据一致性门禁</td>
+<td>无</td>
+<td>部署检查中逐源比较</td>
+</tr>
+<tr>
+<td>间接导入与动态导入边界</td>
+<td>缺少统一检查</td>
+<td>Vite 真实解析文件检查</td>
+</tr>
+<tr>
+<td>同版本官方基础镜像下构建</td>
+<td>缺文件退出 1</td>
+<td>完整 runtime 镜像退出 0</td>
+</tr>
+<tr>
+<td>实际源码 Linux 验证</td>
+<td>本轮问题尚未覆盖</td>
+<td>8/8，无跳过</td>
+</tr>
+<tr>
+<td>独立真实 Compose 依赖</td>
+<td>本轮尚未启动</td>
+<td>7 常驻服务健康、2 初始化退出 0</td>
+</tr>
+<tr>
+<td>任务持久化／租约／队列恢复</td>
+<td>本轮尚未在该镜像运行</td>
+<td>实际 PostgreSQL／RabbitMQ 8/8</td>
+</tr>
+<tr>
+<td>附件读写与隔离</td>
+<td>本轮尚未在该镜像运行</td>
+<td>实际 MinIO 14/14</td>
+</tr>
+</tbody>
+</table>
+<p>基线构建 48.519 秒为失败流程，完整镜像 159.027 秒为成功流程；两者用于说明交付结果，不计算速度提升。后者包含约 187 MB Debian 包下载、字体与 LibreOffice 安装；后续缓存构建另记实际耗时。<a href="/competition/container-assets/evidence/summary.json">结构化前后汇总</a> · <a href="/competition/container-assets/evidence/after-build.txt">完整构建输出</a> · <a href="/competition/container-assets/evidence/after-build.json">构建时间回执</a>。</p>
+<h2 id="4-运行与业务验证">4. 运行与业务验证</h2>
+<p>首个完整源码候选镜像为 <code>daylight:source-candidate-20261104</code>，ID <code>sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059</code>，Linux amd64，镜像解包大小 1,144,230,020 bytes。候选保存修改工作区的首版公开快照；后续发布按固定提交另记。</p>
+<ul>
+<li>Linux 定向 8/8：来源变动、快照改写、无效／缺失 JSON、跨平台格式一致、实际 Vite 动态导入及符号链接。<a href="/competition/container-assets/evidence/linux-source-tests.txt">输出</a>。Windows 同组 7 通过、1 文件链接权限跳过；Linux补齐该用例。</li>
+<li>独立 Compose 适配探针后启动 20.778 秒；7 常驻服务健康，迁移与桶初始化退出 0，三个应用角色 restart=0、OOM=false。<a href="/competition/container-assets/evidence/candidate-runtime.json">运行结构化记录</a>。</li>
+<li>公共 HTTP 115 项：七步、匿名权限、图片、资料、PDF／视频 Range 与本地发布字节一致。<a href="/competition/container-assets/evidence/candidate-public-checks.json">原始记录</a>。</li>
+<li>实际 PostgreSQL／RabbitMQ 8/8：并发幂等、租约围栏、事务回滚、重试预算、历史退避、outbox、重连与 checkpoint 恢复。<a href="/competition/container-assets/evidence/real-jobs.txt">输出</a>。</li>
+<li>实际 MinIO 14/14：上传、回读相同字节、归属路径、缺失对象、错误凭据与清理；put=1、get=3、delete=1、head=2、probe=1。<a href="/competition/container-assets/evidence/real-oss.txt">输出</a>。</li>
+<li>运行用户 UID 1000；写 <code>/app</code> 得到 EROFS，写 <code>/tmp</code> 成功；原生 canvas 输出 PNG、LibreOffice 版本命令成功，Asia/Shanghai 生效。镜像无 <code>/app/docs</code> 和用户 <code>/app/data</code>。<a href="/competition/container-assets/evidence/candidate-runtime.json">运行检查</a>。</li>
+<li>浏览器走完七步，1440／390／320px 均在对应视口内、图片成功、进度为 7；console error 0。<a href="/competition/container-assets/evidence/candidate-browser.json">浏览器记录</a>。</li>
+</ul>
+<h2 id="5-电脑与手机尺寸截图">5. 电脑与手机尺寸截图</h2>
+<p><img alt="完整源码容器的电脑七步结果" src="/competition/container-assets/assets/source-step7-1440.png" loading="lazy" decoding="async"></p>
+<p><img alt="完整源码容器的390px七步结果" src="/competition/container-assets/assets/source-step7-390.png" loading="lazy" decoding="async"></p>
+<p>截图设备为 Windows IAB，手机尺寸390px；微信真机扫码由现场设备采集。</p>
+<h2 id="6-复现步骤">6. 复现步骤</h2>
+<p>准备 Node.js ≥22.19、npm 与 Linux Docker 引擎，在取得私有仓库源码或交付包后执行：</p>
+<pre><code class="language-sh">npm ci
+npm run evidence:sync -- --check
+npm run deploy:check
+npm run verify
+docker build --build-arg NODE_IMAGE=public.ecr.aws/docker/library/node:22.23.3-bookworm-slim -t daylight:release .
+</code></pre>
+<p>源证据需要更新时，先执行 <code>npm run evidence:sync</code>，审阅快照再走验证。固定镜像版本、CPU 架构、Node 来源和构建日志；完整 Compose 配置及生产初始化见仓库 <code>docs/delivery/cloud-deployment.md</code>。目标网络分别检查镜像仓库、npm 与 Debian 源。</p>
+<h2 id="7-费用登记">7. 费用登记</h2>
+<p>本轮文本模型 0 次，gpt-image-2.5 英文图 1 次，新增云采购 ¥0。累计文字调用 84 次、104,267 输入／38,445 输出 Token，按已有公开价估算 ¥0.516094；图片累计16次，图片金额按供应商账单结算。新增模型与云资源预算总额 ¥500。<a href="/competition/container-assets/evidence/budget-total.json">累计用量</a>。</p>
+<p>容器解包大小约1.14GB。字体与文档预览占主要运行依赖；同一镜像便于三个角色统一发布，后续可按真实 Worker 占用决定是否拆出文档转换镜像。本轮实连后即时资源快照中，API约102MiB、Worker约79.65MiB、Scheduler约76.24MiB；这是单时点读数。<a href="/competition/container-assets/evidence/stats-snapshot.txt">完整原始快照</a>。</p>
+<h2 id="8-完整门禁中的兼容修复">8. 完整门禁中的兼容修复</h2>
+<p>固定提交<code>79dbfec</code>首次完整门禁运行1050项，1019通过、30条件跳过、1失败。新增Vite动态导入用例先遇到离线验证封装未保留<code>fs.realpathSync.native</code>的问题；补齐原生方法后，同一用例又发现预算来源更新后仍引用旧夹具路径。前者为Windows验证兼容问题，后者为测试输入错误。</p>
+<p>离线封装现保留<code>realpath.native</code>和<code>realpathSync.native</code>，同时应用原有用户数据目录检查；增加独立子进程验证，确认临时路径可解析、用户数据路径仍被拒绝。动态导入夹具直接引用当前来源清单，避免再复制路径。最终带离线保护的定向9项中8通过、1 Windows链接权限跳过，Linux链接用例已在前面实际通过。</p>
+<p><a href="/competition/container-assets/evidence/final-gate-first-failure.json">首次完整门禁回执</a> · <a href="/competition/container-assets/evidence/final-gate-first-failure.txt">失败片段</a> · <a href="/competition/container-assets/evidence/guarded-source-tests-fixed.txt">修复后定向输出</a>。最终完整门禁与发布按独立回执记录。</p></main></html>

@@ -1,0 +1,25 @@
+Use case: infographic-diagram
+Asset type: Daylight engineering report, 1536x1024 landscape.
+Create a clean, precise English-only technical infographic. Warm ivory background, dark forest green text and panels, muted amber arrows, restrained editorial style matching Daylight. Large readable text; generous margins. No Chinese characters. No screenshots or invented statistics.
+Title: "DAYLIGHT / ANSWERS WITH SOURCES"
+Subtitle: "Bounded context + checked source quotes"
+
+Top row, labeled "BEFORE":
+Three boxes with arrows:
+"Retrieved chunks" -> "280-character excerpts" -> "Answer + all search hits"
+Small note beneath: "Late details can be omitted from model context"
+
+Main lower row, labeled "AFTER":
+Six boxes in two rows of three, arrows left to right on each row, a downward connector from top-right to lower-left:
+1. "Mailbox-scoped retrieval" / "Keywords + optional vectors"
+2. "Bounded source context" / "1,200 chars/source; 6,400 total"
+3. "Structured model reply" / "Claims + source IDs + verbatim quotes"
+4. "Server validation" / "Known ID + exact quote match"
+5. "Numbered evidence" / "Only sources used in the answer"
+6. "Open original" / "Review the quoted passage"
+
+From box 4 a small amber branch leads to a separate compact box:
+"Invalid evidence or model error" -> "Show retrieved excerpts + status"
+
+Footer, one sentence: "Quote matching checks source text; users review the conclusion."
+Do not claim automatic semantic truth verification. Do not combine all mailboxes into one permission scope. Accurate simple vector-like symbols, all labels spelled exactly, no decorative clutter, no watermark.

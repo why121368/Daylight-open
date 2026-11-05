@@ -1,0 +1,78 @@
+{
+  "currency": "CNY",
+  "modelCalls": 84,
+  "inputTokens": 104267,
+  "outputTokens": 38445,
+  "estimatedModelCny": 0.516094,
+  "groups": [
+    {
+      "id": "model-preflight",
+      "calls": 3,
+      "inputTokens": 8446,
+      "outputTokens": 2443,
+      "estimatedCny": 0.036436
+    },
+    {
+      "id": "model-full",
+      "calls": 15,
+      "inputTokens": 41863,
+      "outputTokens": 10169,
+      "estimatedCny": 0.165078
+    },
+    {
+      "id": "rag-before",
+      "calls": 7,
+      "inputTokens": 1708,
+      "outputTokens": 765,
+      "estimatedCny": 0.009536
+    },
+    {
+      "id": "rag-after",
+      "calls": 7,
+      "inputTokens": 2869,
+      "outputTokens": 2149,
+      "estimatedCny": 0.02293
+    },
+    {
+      "id": "value-preflight",
+      "calls": 10,
+      "inputTokens": 32272,
+      "outputTokens": 13537,
+      "estimatedCny": 0.17284
+    },
+    {
+      "id": "rag-concise-before",
+      "calls": 21,
+      "inputTokens": 8607,
+      "outputTokens": 5570,
+      "estimatedCny": 0.061774
+    },
+    {
+      "id": "rag-concise-after",
+      "calls": 21,
+      "inputTokens": 8502,
+      "outputTokens": 3812,
+      "estimatedCny": 0.0475
+    }
+  ],
+  "price": {
+    "inputCnyPerMillion": 2,
+    "outputCnyPerMillion": 8,
+    "cachedInputCnyPerMillion": 2,
+    "source": "https://www.compshare.cn/model-api",
+    "kind": "published-list-price-estimate",
+    "sourceSha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b"
+  },
+  "budgetLimitCny": 500,
+  "previousBaseline": "docs/competition-submission-2026-11-04/evidence/report-baseline.json",
+  "previousBaselineSha256": "e368d47c737ebe55a66c7df297599b3e62ca47963a8c836a49219c47fa0711a2",
+  "currentSummarySha256": "06906e5fa31f7fbc3f0cc905d6ecdc5ba8afcb88a3032695db7e0551275645f8",
+  "imageCalls": 12,
+  "newImageCalls": 1,
+  "imageModel": "gpt-image-2.5",
+  "newTextModelCalls": 0,
+  "newCloudPurchasesCny": 0,
+  "imageCostSource": "Supplier invoice",
+  "previousBudgetPath": "docs/competition-rag-latency-2026-11-04/evidence/budget-total.json",
+  "previousBudgetSha256": "5d9cad06349cc4519546f8de0c04c4b5e2741c384bbbca1083d6da5650e8c278"
+}

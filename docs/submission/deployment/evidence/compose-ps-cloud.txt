@@ -1,0 +1,7 @@
+api	Up 15 minutes (healthy)	0.0.0.0:3000->3000/tcp, 3001/tcp
+minio	Up 2 minutes (healthy)	127.0.0.1:19000->9000/tcp, 127.0.0.1:19001->9001/tcp
+postgres	Up 5 minutes (healthy)	127.0.0.1:15432->5432/tcp
+rabbitmq	Up 5 minutes (healthy)	4369/tcp, 5671/tcp, 15671/tcp, 15691-15692/tcp, 25672/tcp, 127.0.0.1:15673->5672/tcp, 127.0.0.1:15674->15672/tcp
+redis	Up 5 minutes (healthy)	127.0.0.1:16379->6379/tcp
+scheduler	Up 15 minutes (healthy)	3000-3001/tcp
+worker	Up 15 minutes (healthy)	3000-3001/tcp

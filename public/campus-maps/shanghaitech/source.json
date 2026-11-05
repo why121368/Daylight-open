@@ -1,0 +1,25 @@
+{
+  "sourceUrl": "https://map.shanghaitech.edu.cn",
+  "importedAt": "2026-10-28T04:17:09.102Z",
+  "campusName": "上海科技大学浦东校区",
+  "sourceCoordinates": "BD-09",
+  "coordinates": "WGS84",
+  "projection": "EPSG:3857 raster",
+  "bounds": {
+    "south": 31.175186353748813,
+    "west": 121.58364305637129,
+    "north": 31.183560010701047,
+    "east": 121.59784644236271
+  },
+  "width": 3200,
+  "height": 2205,
+  "tileZoom": 19,
+  "tilesLoaded": 126,
+  "tilesMissing": 0,
+  "buildings": 65,
+  "serviceRecords": 44,
+  "placesImported": 109,
+  "skipped": [],
+  "imageSha256": "2b98553ad442a85225c3852ede5f3648d056b914d8ed86086d3b0a82249962d9",
+  "notice": "学校公开地图的有限校园范围快照；保留来源署名。公开运营前需确认学校地图使用许可和资料时效。未导入账号、创建者标识、原站代码、第三方 Key 或导航栅格。"
+}

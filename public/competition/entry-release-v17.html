@@ -1,0 +1,188 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v17 公网发布与首屏验收 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="v17-公网发布与首屏验收">v17 公网发布与首屏验收</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#v17-公网发布与首屏验收">v17 公网发布与首屏验收</a><ul>
+<li><a href="#1-发布版本">1. 发布版本</a></li>
+<li><a href="#2-发布步骤与门禁">2. 发布步骤与门禁</a></li>
+<li><a href="#3-正式运行核对">3. 正式运行核对</a></li>
+<li><a href="#4-公网传输体积实测">4. 公网传输体积实测</a></li>
+<li><a href="#5-正式https与浏览器">5. 正式HTTPS与浏览器</a><ul>
+<li><a href="#正式截图">正式截图</a></li>
+</ul>
+</li>
+<li><a href="#6-恢复与费用">6. 恢复与费用</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-04，北京时间。状态：<strong>部署验证通过</strong>。</p>
+<p><a href="https://daylight.yunforis.com/experience">正式体验</a> · <a href="https://daylight.yunforis.com/competition/entry-report.html">公开图文</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a></p>
+<h2 id="1-发布版本">1. 发布版本</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实际值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>镜像</td>
+<td><code>daylight:public-competition-20261104-v17</code></td>
+</tr>
+<tr>
+<td>镜像ID</td>
+<td><code>sha256:9df78bb6e5c3906422be3475ba4f3c061760348f8ed393fcb1c3c6af33f678a5</code></td>
+</tr>
+<tr>
+<td>本轮前端、资料、验证脚本</td>
+<td><code>a6e0c83a86b2b0c5bd2f929be236f809dcddeb24</code></td>
+</tr>
+<tr>
+<td>后端继承</td>
+<td>v16，<code>a8daafc1bf88c747fb1e6104a89c56a6f90ff06b</code>；之前为v13 <code>9354287</code>与基线<code>db3ee89</code></td>
+</tr>
+<tr>
+<td>基础镜像</td>
+<td>v16，固定摘要<code>sha256:0bca96d41fe1ef666cc1c3f26eb1200854f3ca473463653960357067876a46b3</code></td>
+</tr>
+<tr>
+<td>发布包</td>
+<td>31,317,724 bytes，540文件；完整前端539文件、验证脚本1文件</td>
+</tr>
+<tr>
+<td>发布包SHA-256</td>
+<td><code>edfaa5c0d3e4f6f3b892af1b996cfc4680cbba854638a106b23b87bb3d63e0f8</code></td>
+</tr>
+<tr>
+<td>发布备份</td>
+<td><code>/opt/daylight-backups/before-public-entry-20261104054630</code></td>
+</tr>
+<tr>
+<td>服务器构建目录</td>
+<td><code>/opt/daylight-entry-release-v17</code></td>
+</tr>
+</tbody>
+</table>
+<p>本轮完整替换<code>dist</code>，后端沿用固定v16镜像。发布包附<a href="/competition/entry-assets/evidence/release-v17-manifest.json">文件摘要</a>与<a href="/competition/entry-assets/evidence/release-v17-archive.json">归档摘要</a>。</p>
+<h2 id="2-发布步骤与门禁">2. 发布步骤与门禁</h2>
+<ol>
+<li>固定部署锁，核对API、Worker、Scheduler三个角色均运行目标v16摘要；检查可用磁盘与内存。</li>
+<li>备份Compose配置、镜像记录、完整前端和数据库。<code>pg_dump -Fc</code>完成，<code>pg_restore --list</code>成功读取目录。</li>
+<li>校验发布包SHA、540份文件摘要及路径；以v16摘要构建v17镜像。</li>
+<li>候选容器以1 CPU / 512 MiB运行生产检查，<strong>29/29通过</strong>，涵盖采集边界、服务生命周期和七步体验。模型与SMTP调用为0。</li>
+<li>候选资料检查核对20次采样、132份JS/CSS实际摘要、公开路由依赖移出结果、图片模型与费用清单，以及原21页PDF的完整SHA。</li>
+<li>更新镜像和源码版本，启动三个应用角色并等待健康。随后核对七步状态、匿名接口权限、视频/PDF范围读取和三个角色指标写入。</li>
+<li>正式HTTPS与浏览器验收完成后归档实际运行结果。</li>
+</ol>
+<p><a href="/competition/entry-assets/evidence/deploy-v17.sh">发布脚本</a> · <a href="/competition/entry-assets/evidence/deploy-v17.txt">发布完整输出</a> · <a href="/competition/entry-assets/evidence/candidate-production-tests-v17.txt">候选29项</a> · <a href="/competition/entry-assets/evidence/candidate-entry-checks-v17.json">候选资料核对</a>。</p>
+<h2 id="3-正式运行核对">3. 正式运行核对</h2>
+<p>2026-11-04 <strong>05:49:23 +08:00</strong>采样：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th style="text-align: right;">核对文件</th>
+<th style="text-align: right;">完整dist</th>
+<th style="text-align: right;">指标已写入</th>
+<th style="text-align: right;">丢样</th>
+<th>写入错误</th>
+<th>restart / OOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td style="text-align: right;">564</td>
+<td style="text-align: right;">539</td>
+<td style="text-align: right;">1,139</td>
+<td style="text-align: right;">0</td>
+<td>null</td>
+<td>0 / false</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td style="text-align: right;">564</td>
+<td style="text-align: right;">539</td>
+<td style="text-align: right;">1,432</td>
+<td style="text-align: right;">0</td>
+<td>null</td>
+<td>0 / false</td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td style="text-align: right;">564</td>
+<td style="text-align: right;">539</td>
+<td style="text-align: right;">272</td>
+<td style="text-align: right;">0</td>
+<td>null</td>
+<td>0 / false</td>
+</tr>
+</tbody>
+</table>
+<p>三个角色镜像ID一致，标签与环境中的源码版本均为<code>a6e0c83</code>。累计后端文件摘要合并v7、v9、v13、v16覆盖，再应用本轮前端与脚本；逐文件核对同时检查前端文件集合。API、Worker、Scheduler、PostgreSQL、Redis、RabbitMQ、MinIO、Caddy共8服务均为running / healthy。</p>
+<p><a href="/competition/entry-assets/evidence/runtime-v17.json">运行原始记录</a> · <a href="/competition/entry-assets/evidence/verify-runtime-v17.py">复核脚本</a>。</p>
+<h2 id="4-公网传输体积实测">4. 公网传输体积实测</h2>
+<p>从同一Windows环境，使用Node直接HTTPS请求，标准TLS校验，接受gzip。读取体验路由的完整静态JS依赖、CSS和启动标记，记录响应体在线编码字节，并解码核对本地完整SHA。</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th style="text-align: right;">v16响应体</th>
+<th style="text-align: right;">v17响应体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript</td>
+<td style="text-align: right;">218,078 bytes，10资源</td>
+<td style="text-align: right;">171,985 bytes，13资源</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td style="text-align: right;">38,003 bytes</td>
+<td style="text-align: right;">29,805 bytes</td>
+</tr>
+<tr>
+<td>启动图片</td>
+<td style="text-align: right;">115,160 bytes</td>
+<td style="text-align: right;">8,278 bytes</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;"><strong>371,241 bytes</strong></td>
+<td style="text-align: right;"><strong>210,068 bytes</strong></td>
+</tr>
+</tbody>
+</table>
+<p>相同资源范围的实际响应体减少<strong>43.41%</strong>。HTTPS头部、HTML、接口、favicon和外部字体位于此合计范围之外。Caddy实际编码与本地<code>gzipSync</code>分别记录：本地构建口径减少44.11%，公网响应体口径减少43.41%。</p>
+<p><a href="/competition/entry-assets/evidence/public-before.json">公网前记录</a> · <a href="/competition/entry-assets/evidence/public-after.json">公网后记录</a> · <a href="/competition/entry-assets/evidence/public-wire-comparison.json">逐类汇总与摘要</a>。</p>
+<h2 id="5-正式https与浏览器">5. 正式HTTPS与浏览器</h2>
+<ul>
+<li><strong>80项HTTPS检查通过</strong>：七步结果、权限、参数范围、核心图片、图文与原始证据、累计费用、演示视频、PDF和部分内容读取。</li>
+<li><strong>180份关联资料通过</strong>：HTTP、MIME和完整SHA-256；PDF的<code>bytes=0-31</code>返回206和实际32字节。</li>
+<li><strong>9组布局通过</strong>：<code>/experience</code>、<code>/evidence</code>与本轮图文，各测1440/390/320px，无整页横向溢出。体验按钮均48px，390px顶部约305px，320px约381px；报告7张图片按需加载。</li>
+<li>正式浏览器完成七步，逐步等待对应结果出现；页面模块为<code>/assets/index-CTgyeG_T.js</code>，控制台错误记录为空。</li>
+<li>手机设备和微信真机使用单独验收记录；本节设备为Windows浏览器的三个视口。</li>
+</ul>
+<p><a href="/competition/entry-assets/evidence/public-verification-v17.json">80项完整记录</a> · <a href="/competition/entry-assets/evidence/resources-public-v17.json">180份资源与PDF Range</a> · <a href="/competition/entry-assets/evidence/public-layouts.json">三页三尺寸</a> · <a href="/competition/entry-assets/evidence/public-seven-steps.json">正式七步页面</a>。</p>
+<h3 id="正式截图">正式截图</h3>
+<p><img alt="v17正式电脑体验首屏" src="/competition/entry-assets/assets/public-experience-desktop.png" loading="lazy" decoding="async"></p>
+<table>
+<thead>
+<tr>
+<th>正式390px体验</th>
+<th>正式320px图文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="v17正式手机尺寸体验" src="/competition/entry-assets/assets/public-experience-mobile.png" loading="lazy" decoding="async"></td>
+<td><img alt="v17正式窄屏图文" src="/competition/entry-assets/assets/public-report-mobile.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/entry-assets/evidence/screenshot-review.json">截图URL、视口、图片尺寸和SHA</a>。</p>
+<h2 id="6-恢复与费用">6. 恢复与费用</h2>
+<p>发布脚本在切换后发生错误时，恢复备份的镜像配置并等待三个角色健康，恢复宿主前端与本轮验证脚本。上一个v16镜像与数据库备份均保留；v17本轮业务检查成功，发布输出为<code>PUBLIC_ENTRY_PUBLISHED_OK</code>和<code>REMOTE_EXIT 0</code>。</p>
+<p>本轮文字模型0、图像生成1、云采购0。图像使用<code>gpt-image-2.5</code>，英文图文；累计文字模型84次、公开价估算¥0.516094，图片12次按供应商账单登记。<a href="/competition/entry-assets/evidence/budget-total.json">预算清单</a>。</p></main></html>

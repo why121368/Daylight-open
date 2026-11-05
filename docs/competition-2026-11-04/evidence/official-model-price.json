@@ -1,0 +1,11 @@
+{
+  "source": "https://www.compshare.cn/model-api",
+  "observedAt": "2026-11-03T16:23:27.003Z",
+  "model": "deepseek-v4.1-flash",
+  "modelLink": "https://console.compshare.cn/light-gpu/model-center?modelId=umodel-1789039387",
+  "cardText": "模型上新\ndeepseek-v4.1-flash\n\nDeepSeek\n\n文本生成\n视觉理解\n深度思考\n1000K\n输入\n2\n元/百万 Token\n文本输出\n8\n元/百万 Token",
+  "inputCnyPerMillion": 2,
+  "outputCnyPerMillion": 8,
+  "cachedInputCnyPerMillion": null,
+  "pricingNotice": "模型与价格以控制台实时信息为准。"
+}

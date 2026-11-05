@@ -1,0 +1,14 @@
+Pausing application writers and MinIO; the site will be unavailable during the backup.
+ Container daylight-worker-1  Stopping
+ Container daylight-scheduler-1  Stopping
+ Container daylight-api-1  Stopping
+ Container daylight-worker-1  Stopped
+ Container daylight-scheduler-1  Stopped
+ Container daylight-api-1  Stopped
+ Container daylight-minio-1  Stopping
+ Container daylight-minio-1  Stopped
+unknown flag: --wait
+Failed to resume object storage; inspect the retained stack.
+unknown flag: --wait
+Failed to resume application roles; inspect the retained stack.
+Backup failed; incomplete files retained at /opt/daylight-backups/recovery-20261104-v18/daylight-20261103T220506Z-nxOGqV

@@ -1,0 +1,29 @@
+=== mailbox: 170e71cd-e12e-47fa-807c-51e1f61b9381 (?) ===
+baseline: events=1 tasks=3
+
+--- event create / reschedule / cancel / delete ---
+  PASS  POST /api/events -> created — status=200 id=1c5b43a8-2972-4a85-aad5-8804035f4b20
+  PASS  PUT /api/events/:id -> rescheduled — time=14:30
+  PASS  PUT /api/events/:id -> cancelled — status=cancelled
+  PASS  cancelled event keeps its record and reason — reason=端到端校验取消
+  PASS  DELETE /api/events/:id -> removed — status=200
+
+--- task create / edit / complete ---
+  PASS  POST /api/tasks -> created — status=201
+  PASS  PUT /api/tasks/:id -> due/priority/assignee — dueAt=2026-11-04T09:30:00+08:00 priority=high
+  PASS  PUT /api/tasks/:id -> completed — status=done completedAt=2026-10-17T04:57:13.210Z
+
+--- task delete via 小D (the only product path) ---
+  PASS  POST /api/assistant/chat -> answered — reply=已删除待办「Daylight 端到端校验待办（临时）」，该待办此前状态为已完成（截止时间 2026-11-04 09:30，责任人：招聘团队）。…
+  PASS  task removed by 小D — tasks now 3
+
+--- residue check ---
+  PASS  no residual event/task left behind — events 1->1, tasks 3->3
+  PASS  no trace/reply artifact created by manual CRUD
+  PASS  no REST DELETE for tasks (assistant owns task deletion) — status=404
+
+--- read-only surfaces ---
+  PASS  GET /api/jobs -> ok — jobs=50 statuses=succeeded
+  PASS  GET /api/recruitment -> ok — candidates=8 attachments=8
+
+=== 15 passed / 0 failed ===

@@ -1,0 +1,199 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公网发布与验收 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。 此页保存 v6 发布归档。</p><h1 id="公网发布与验收">公网发布与验收</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#公网发布与验收">公网发布与验收</a><ul>
+<li><a href="#入口与版本">入口与版本</a></li>
+<li><a href="#发布过程与选型">发布过程与选型</a></li>
+<li><a href="#备份与回滚">备份与回滚</a></li>
+<li><a href="#实际验收">实际验收</a></li>
+<li><a href="#从-github-复现">从 GitHub 复现</a></li>
+<li><a href="#现场采集">现场采集</a></li>
+<li><a href="#官网材料与版本记录">官网材料与版本记录</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-03 至 2026-11-04，北京时间。工作分支：<code>feat/competition-experience-20261103</code>。</p>
+<p><strong>后续发布：</strong>本页归档 v1–v6 体验与公开证据发布。11 月 4 日的 v7 已更新费用计算器、启用三个角色的指标采集，并加入有界缓冲、轮转和独立摘要；v8 进一步发布实测图文、截图和原始证据。最新版本、备份与验证见 <a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/docs/competition-2026-11-04/deployment-v8.md">v8 发布记录</a>，技术设计与实测见 <a href="/competition/operations-report.html#发布与公网检查">成本与运行观测报告</a>。</p>
+<h2 id="入口与版本">入口与版本</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>当前值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交互体验</td>
+<td><a href="https://daylight.yunforis.com/experience">https://daylight.yunforis.com/experience</a></td>
+</tr>
+<tr>
+<td>五项技术与实测</td>
+<td><a href="https://daylight.yunforis.com/evidence">https://daylight.yunforis.com/evidence</a></td>
+</tr>
+<tr>
+<td>三分钟字幕讲解</td>
+<td><a href="https://daylight.yunforis.com/competition/demo.mp4">https://daylight.yunforis.com/competition/demo.mp4</a></td>
+</tr>
+<tr>
+<td>手机扫码</td>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/public/competition/experience-qr.png">二维码 PNG</a>，只编码公开体验 URL</td>
+</tr>
+<tr>
+<td>最终镜像</td>
+<td><code>daylight:public-competition-20261103-v6</code></td>
+</tr>
+<tr>
+<td>镜像 ID</td>
+<td><code>sha256:a944408a0a92df5bf4cb9d66073ab2d1c81cfb6ede7aaf678f26fc2310265f8c</code></td>
+</tr>
+<tr>
+<td>原有业务底座</td>
+<td><code>daylight:public-campus-assistant-20261103</code>，随后按 v1 → v2 → v3 → v4 → v5 → v6 发布</td>
+</tr>
+<tr>
+<td>最终候选包 SHA-256</td>
+<td><code>b442b9a974ebfc6e60d221731f6a56df45c3b55be1f9439fbe1ce28fac6d3025</code></td>
+</tr>
+<tr>
+<td>文件清单</td>
+<td><a href="/competition/report-assets/evidence/release-v6-manifest.json">290 个候选文件及 SHA-256</a>，包括前端、更新的后端/共享模块和候选测试</td>
+</tr>
+</tbody>
+</table>
+<p>v1 发布七步体验、技术页与核心图；v2 更新文字、路由滚动复位与字幕视频；v3 增加三张技术图的大图入口并简化成本说明。v4 修正从公开页返回首页时的浏览器标题。v5 发布站内图文与原始证据，v6 将手机报告改为标题在前、目录折叠。六次使用独立镜像标签。</p>
+<h2 id="发布过程与选型">发布过程与选型</h2>
+<ol>
+<li>核对服务器正在运行的基础镜像，避免覆盖其他版本；以部署锁串行执行。</li>
+<li>备份 PostgreSQL custom dump，列出归档目录；保存环境配置、Compose、原后端、dist 与原镜像 ID。</li>
+<li>在独立构建目录解包候选，逐文件校验 SHA-256，基于现有镜像构建。复用原有 LibreOffice、OCR 和运行依赖。</li>
+<li>候选镜像在 <code>DAYLIGHT_RUNTIME=production</code>、<code>--network=none</code> 下运行新链路 <strong>6/6</strong> 测试。公开样例通过请求内只读合成快照执行，真实工具结果可重复生成。</li>
+<li>更新 API、Worker、Scheduler 三个应用角色。数据服务继续使用原卷与账号数据，业务 schema 沿用当前版本。</li>
+<li>等待容器健康后，从服务内检查七步结果、匿名权限与资源；再从 Windows 客户端通过正式 HTTPS 核验。</li>
+<li>发布脚本在更新后的验证失败时恢复上一环境文件与应用镜像。该保护保留在执行脚本中；本次最终发布走成功路径。</li>
+</ol>
+<p>采用现有单节点 Compose 是基于当前预算和实际负载的选择：2 vCPU / 3499 MiB 主机复用，新增公开体验只执行固定七步工具，且不产生实时模型调用。API / Worker / Scheduler 的服务边界保留；Kubernetes、资源请求/限制与跨区扩展依据见 <a href="/competition/capacity-design.html">独立 k3s 容量及容错记录</a>。</p>
+<h2 id="备份与回滚">备份与回滚</h2>
+<table>
+<thead>
+<tr>
+<th>发布</th>
+<th>发布前备份</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1</td>
+<td><code>/opt/daylight-backups/before-competition-20261103231503</code></td>
+</tr>
+<tr>
+<td>v2</td>
+<td><code>/opt/daylight-backups/before-competition-20261103233843</code></td>
+</tr>
+<tr>
+<td>v3</td>
+<td><code>/opt/daylight-backups/before-competition-20261103234417</code></td>
+</tr>
+<tr>
+<td>v4</td>
+<td><code>/opt/daylight-backups/before-competition-20261103235216</code></td>
+</tr>
+<tr>
+<td>v5</td>
+<td><code>/opt/daylight-backups/before-competition-20261104000622</code></td>
+</tr>
+<tr>
+<td>v6</td>
+<td><code>/opt/daylight-backups/before-competition-20261104001040</code></td>
+</tr>
+</tbody>
+</table>
+<p>备份位于服务器私有目录。数据库归档已成功列出 TOC；完整数据库恢复演练沿用既有运维验收流程。</p>
+<p>回退 v6 应用到 v5：</p>
+<pre><code class="language-sh">cd /opt/daylight
+cp /opt/daylight-backups/before-competition-20261104001040/compose.env deploy/compose.env
+./manage.sh up -d --no-deps --no-build --pull never --wait --wait-timeout 180 api worker scheduler
+curl -fsS https://daylight.yunforis.com/health/ready
+</code></pre>
+<p>该操作恢复上一应用版本，保留当前业务数据。若需恢复数据库，先按业务时间点评估发布之后的新增数据，再使用备份恢复流程。</p>
+<h2 id="实际验收">实际验收</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结果</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>服务健康</td>
+<td>Caddy、API、Worker、Scheduler、PostgreSQL、Redis、RabbitMQ、MinIO 共 8 服务 healthy</td>
+<td><a href="/competition/report-assets/evidence/deploy-v6.txt">v6 发布日志</a></td>
+</tr>
+<tr>
+<td>应用容器</td>
+<td>API / Worker / Scheduler restart=0，OOM=false</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>HTTPS readiness</td>
+<td>200，<code>ok:true</code></td>
+<td><a href="/competition/report-assets/evidence/public-verification-v6.json">公网逐项结果</a></td>
+</tr>
+<tr>
+<td>七步状态</td>
+<td>completed → conflict → completed → duplicate → failed → completed → completed</td>
+<td>同上；去重与失败前后计数相同，最终取消历史 2 项、材料待办 1 项</td>
+</tr>
+<tr>
+<td>访问面</td>
+<td>匿名 <code>/api/state</code> 401；非法 <code>step=8</code> 400；样例响应 <code>no-store</code></td>
+<td>同上</td>
+</tr>
+<tr>
+<td>页面和图像</td>
+<td>两个公开路由、三张 WebP 与二维码 200；图像与本地 SHA-256 一致</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><code>video/mp4</code>，32 字节分段读取 206；本地完整解码通过</td>
+<td>同上；1920×1080，约 3 分钟，1,431,534 字节</td>
+</tr>
+<tr>
+<td>桌面与窄屏</td>
+<td>320 / 360 / 390 / 768 / 1440px 两页均无横向溢出；320px 开始按钮 top≈381、bottom≈429，48px 高</td>
+<td><a href="/competition/report-assets/evidence/browser-verification.json">浏览器记录</a></td>
+</tr>
+<tr>
+<td>交互</td>
+<td>桌面与手机七步、原文/工具展开、步骤回看；结果到技术页滚动复位；费用计算与非法数值</td>
+<td>同上、<a href="/competition/report.html#逐步页面证据">逐步截图</a></td>
+</tr>
+<tr>
+<td>前端错误恢复</td>
+<td>本地首次503显示重试，重试后基线日程加载、开始按钮恢复</td>
+<td><a href="/competition/report.html#前端加载错误与恢复">图文</a></td>
+</tr>
+</tbody>
+</table>
+<p>健康检查与业务 Trace 用于本轮验收；服务器当前 <code>metrics.enabled=false</code>，Prometheus 采集关闭。此前工作区与真实邮箱同步的 CPU、峰值内存、耗时和优化前后数据见 <a href="/competition/performance-report.html">性能报告</a>。本轮公开接口为预置提取与实时工具，顺序和4并发共40次HTTPS采样全部成功，原始记录见 <a href="/competition/report-assets/evidence/public-benchmark.json">JSON</a>。</p>
+<h2 id="从-github-复现">从 GitHub 复现</h2>
+<p>准备 Node.js ≥22.19 与 npm，检出本分支后执行：</p>
+<pre><code class="language-sh">npm ci
+npm test
+npm run build
+npm run demo -- --no-build --port 3180
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3180/experience</code> 或 <code>/evidence</code>。完整生产拓扑使用 <code>sh deploy/up.sh</code>，配置步骤见 <a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/deploy/README.md">部署说明</a>。</p>
+<p>复查公网与有界测量：</p>
+<pre><code class="language-sh">node scripts/verify-competition.mjs https://daylight.yunforis.com work/competition-public-check.json
+node scripts/benchmark-experience.mjs https://daylight.yunforis.com work/competition-public-benchmark.json
+</code></pre>
+<p>视频可用 <code>python scripts/competition-walkthrough.py --ffmpeg /path/to/ffmpeg</code> 复现，依赖 Pillow 与 Microsoft YaHei 或 Noto Sans CJK 字体。图像来源、提示词、六次调用登记及 ¥500 预算见 <a href="/competition/budget.html">生成记录</a>。</p>
+<h2 id="现场采集">现场采集</h2>
+<p>按 <a href="/competition/demo-script.html">三分钟讲稿</a> 在手机微信扫码检查七步、折叠原文、工具记录、大图与返回；按 <a href="/competition/value-study.html">对照方案</a> 记录真人耗时、遗漏和修正；把供应商实际单价及账单填入费用登记。浏览器尺寸验证、模型API回归和现场真机记录分别保存。</p>
+<h2 id="官网材料与版本记录">官网材料与版本记录</h2>
+<p>技术页主要证据均指向站内HTML，官网资料为生成时的快照，其中发布归档保存v4记录；本文件及v5/v6日志记录随后两次补充发布。最终公网18项路径检查包括报告、容量设计、k3s实测、模型原始结果、图片及视频，公开文件与本地SHA-256一致。HTML使用白名单生成器，运行 <code>python scripts/competition-public-report.py</code> 后构建；v6仅更新静态HTML，沿用v5已通过的前端构建。</p></main></html>

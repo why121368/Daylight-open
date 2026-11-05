@@ -1,0 +1,27 @@
+Use case: infographic-diagram
+Asset type: Daylight competition engineering report, landscape 1536x1024.
+Create an English-only workflow infographic explaining an implemented paired user study. Warm ivory background, forest green panels, amber connectors, crisp editorial typography. Short large labels, generous margins. Flat schematic icons. All text must be exact, readable, and entirely English.
+
+Title: "DAYLIGHT / MEASURING USER VALUE"
+Subtitle: "Two matched mail sets. One shared result editor."
+
+Upper panel labeled "ROTATE THE ORDER" with four compact rows:
+"P01: Manual A -> Daylight B"
+"P02: Daylight A -> Manual B"
+"P03: Manual B -> Daylight A"
+"P04: Daylight B -> Manual A"
+Small note: "6 displayed mails / 5 unique IDs per set"
+
+Middle panel: two parallel routes, clearly separated.
+Left route heading "MANUAL": "Read mail" -> "Edit results" -> "Verify"
+Right route heading "DAYLIGHT": "Read mail" -> "Model + tools" -> "Verify + edit"
+Both routes sit inside a shared outlined timer boundary labeled:
+"START READING -> CONFIRM FINISH"
+Single short caption: "Reading + model wait + review + corrections"
+
+Both routes lead into a common lower flow:
+"12 structured checks" -> "Host reviews titles + conflicts" -> "Paired summary"
+
+Footer: "Live participants enter the summary. Practice and automated preflight stay separate."
+
+Constraints: show a study method, no outcome chart, no invented user results, no percentages, no screenshots, no Chinese, no watermark. Directional arrows must show unambiguous forward flow. Do not imply that a model reviews itself or that a synthetic preflight is a human participant.

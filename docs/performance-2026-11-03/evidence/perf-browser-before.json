@@ -1,0 +1,620 @@
+{
+  "phase": "before",
+  "note": "Windows Edge headless 390px fresh browser context each run, actual public HTTPS; temporary authorized session for workspace, no password/captcha login timed",
+  "samples": [
+    {
+      "action": "login_captcha",
+      "i": 0,
+      "ms": 3102.8614000000002,
+      "success": true,
+      "errors": [],
+      "resourceCount": 7,
+      "transferBytes": 904905,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 510,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 231.79999995231628,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "asset",
+          "ms": 116.60000002384186,
+          "transferBytes": 41245,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "other",
+          "ms": 101.59999996423721,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 2328.600000023842,
+          "transferBytes": 4136,
+          "decodedBytes": 8711
+        },
+        {
+          "kind": "api",
+          "ms": 2313.899999976158,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 55.19999998807907,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 1,
+      "ms": 2515.8917,
+      "success": true,
+      "errors": [],
+      "resourceCount": 7,
+      "transferBytes": 903882,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 457.10000002384186,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 229,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "asset",
+          "ms": 97.30000001192093,
+          "transferBytes": 41174,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "other",
+          "ms": 90.59999996423721,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 1853,
+          "transferBytes": 3184,
+          "decodedBytes": 6391
+        },
+        {
+          "kind": "api",
+          "ms": 1845,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 282.39999997615814,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 2,
+      "ms": 2702.486999999999,
+      "success": true,
+      "errors": [],
+      "resourceCount": 7,
+      "transferBytes": 904824,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 441.80000001192093,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 77.40000003576279,
+          "transferBytes": 41174,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "asset",
+          "ms": 207.19999998807907,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "other",
+          "ms": 95.60000002384186,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 2040.7000000476837,
+          "transferBytes": 4126,
+          "decodedBytes": 8643
+        },
+        {
+          "kind": "api",
+          "ms": 2040.699999988079,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 276.5999999642372,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 3,
+      "ms": 2572.0511000000006,
+      "success": true,
+      "errors": [],
+      "resourceCount": 7,
+      "transferBytes": 905245,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 428.30000001192093,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 181,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "asset",
+          "ms": 73.5,
+          "transferBytes": 41245,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "other",
+          "ms": 69.5,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 1947.9000000357628,
+          "transferBytes": 4476,
+          "decodedBytes": 9517
+        },
+        {
+          "kind": "api",
+          "ms": 1939.300000011921,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 471.5,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        }
+      ]
+    },
+    {
+      "action": "login_captcha",
+      "i": 4,
+      "ms": 2646.0132000000012,
+      "success": true,
+      "errors": [],
+      "resourceCount": 6,
+      "transferBytes": 904264,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 506,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 95.60000002384186,
+          "transferBytes": 41174,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "asset",
+          "ms": 307.80000001192093,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "other",
+          "ms": 146.5,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 1933,
+          "transferBytes": 4025,
+          "decodedBytes": 8460
+        },
+        {
+          "kind": "other",
+          "ms": 374.80000001192093,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 0,
+      "ms": 6273.223700000002,
+      "success": true,
+      "errors": [],
+      "resourceCount": 10,
+      "transferBytes": 7369209,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 436.69999998807907,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 209.10000002384186,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "other",
+          "ms": 83.59999996423721,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "asset",
+          "ms": 94.39999997615814,
+          "transferBytes": 41174,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "api",
+          "ms": 1327.1000000238419,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 3711,
+          "transferBytes": 300,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1316.5,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 365.5,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 4069.600000023842,
+          "transferBytes": 6269532,
+          "decodedBytes": 8829645
+        },
+        {
+          "kind": "api",
+          "ms": 2525.599999964237,
+          "transferBytes": 198090,
+          "decodedBytes": 2850561
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 1,
+      "ms": 9766.3795,
+      "success": true,
+      "errors": [],
+      "resourceCount": 10,
+      "transferBytes": 7371945,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1142.9000000357628,
+          "transferBytes": 125053,
+          "decodedBytes": 475704
+        },
+        {
+          "kind": "asset",
+          "ms": 457.39999997615814,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "asset",
+          "ms": 334.39999997615814,
+          "transferBytes": 41245,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "other",
+          "ms": 323.5,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 1689.3999999761581,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 5613.300000011921,
+          "transferBytes": 300,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1691,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 107.19999998807907,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 5512.199999988079,
+          "transferBytes": 6269532,
+          "decodedBytes": 8829645
+        },
+        {
+          "kind": "api",
+          "ms": 4092.5,
+          "transferBytes": 199945,
+          "decodedBytes": 2850561
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 2,
+      "ms": 9424.215199999999,
+      "success": true,
+      "errors": [],
+      "resourceCount": 10,
+      "transferBytes": 7366929,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 590.6999999880791,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "asset",
+          "ms": 326.5,
+          "transferBytes": 608714,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "other",
+          "ms": 119.10000002384186,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "asset",
+          "ms": 134.5,
+          "transferBytes": 41174,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "api",
+          "ms": 3798.199999988079,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 6281.600000023842,
+          "transferBytes": 300,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 3727,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 871.8000000119209,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 4326.699999988079,
+          "transferBytes": 6269532,
+          "decodedBytes": 8829645
+        },
+        {
+          "kind": "api",
+          "ms": 2684.400000035763,
+          "transferBytes": 195810,
+          "decodedBytes": 2850561
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 3,
+      "ms": 9854.0861,
+      "success": true,
+      "errors": [],
+      "resourceCount": 10,
+      "transferBytes": 7438872,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 745.4000000357628,
+          "transferBytes": 125053,
+          "decodedBytes": 475704
+        },
+        {
+          "kind": "asset",
+          "ms": 2241.199999988079,
+          "transferBytes": 609411,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "asset",
+          "ms": 517.3000000119209,
+          "transferBytes": 41245,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "other",
+          "ms": 193.10000002384186,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "api",
+          "ms": 1416,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 4048.5,
+          "transferBytes": 300,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1423.300000011921,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "other",
+          "ms": 23.399999976158142,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 4144.699999988079,
+          "transferBytes": 6339897,
+          "decodedBytes": 8829645
+        },
+        {
+          "kind": "api",
+          "ms": 2933.2000000476837,
+          "transferBytes": 195810,
+          "decodedBytes": 2850561
+        }
+      ]
+    },
+    {
+      "action": "workspace",
+      "i": 4,
+      "ms": 8538.723699999995,
+      "success": true,
+      "errors": [],
+      "resourceCount": 10,
+      "transferBytes": 7367811,
+      "resources": [
+        {
+          "kind": "other",
+          "ms": 1861.4000000357628,
+          "transferBytes": 124243,
+          "decodedBytes": 455825
+        },
+        {
+          "kind": "other",
+          "ms": 205,
+          "transferBytes": 115460,
+          "decodedBytes": 115160
+        },
+        {
+          "kind": "asset",
+          "ms": 261.30000001192093,
+          "transferBytes": 41245,
+          "decodedBytes": 217114
+        },
+        {
+          "kind": "asset",
+          "ms": 427.89999997615814,
+          "transferBytes": 609525,
+          "decodedBytes": 1930978
+        },
+        {
+          "kind": "api",
+          "ms": 1651.7000000476837,
+          "transferBytes": 589,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "api",
+          "ms": 1674.5,
+          "transferBytes": 459,
+          "decodedBytes": 159
+        },
+        {
+          "kind": "api",
+          "ms": 3770.599999964237,
+          "transferBytes": 300,
+          "decodedBytes": 289
+        },
+        {
+          "kind": "other",
+          "ms": 440.30000001192093,
+          "transferBytes": 10648,
+          "decodedBytes": 10348
+        },
+        {
+          "kind": "api",
+          "ms": 3826.399999976158,
+          "transferBytes": 6269532,
+          "decodedBytes": 8829645
+        },
+        {
+          "kind": "api",
+          "ms": 2292.100000023842,
+          "transferBytes": 195810,
+          "decodedBytes": 2850561
+        }
+      ]
+    }
+  ]
+}

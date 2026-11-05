@@ -1,0 +1,14 @@
+Pausing application writers and MinIO; the site will be unavailable during the backup.
+Backup complete: /opt/daylight-recovery-v18/smoke-backups/daylight-20261103T221628Z-y3aVlf
+ Container daylight-backup-smoke-d1644542-api-1  Stopping
+ Container daylight-backup-smoke-d1644542-api-1  Stopped
+ Container daylight-backup-smoke-d1644542-minio-1  Stopping
+ Container daylight-backup-smoke-d1644542-minio-1  Stopped
+ Container daylight-backup-smoke-d1644542-minio-1  Starting
+ Container daylight-backup-smoke-d1644542-minio-1  Started
+ Container daylight-backup-smoke-d1644542-minio-1  Waiting
+ Container daylight-backup-smoke-d1644542-minio-1  Healthy
+ Container daylight-backup-smoke-d1644542-api-1  Starting
+ Container daylight-backup-smoke-d1644542-api-1  Started
+ Container daylight-backup-smoke-d1644542-api-1  Waiting
+ Container daylight-backup-smoke-d1644542-api-1  Healthy

@@ -1,0 +1,28 @@
+// Original, public synthetic inputs. No private mail, account, credentials or API result.
+export const EXPERIENCE_VERSION = '2026-11-03-v1';
+export const EXPERIENCE_STEPS = [
+  { id: 'invitation', label: '收到面试', title: '把通知变成安排和待办',
+    description: '面试时间与材料截止分开记录，点开原邮件可以核对。',
+    subject: '【示例】研究助理面试通知', receivedAt: '2026-11-03T09:00:00+08:00',
+    body: '同学你好：请于11月5日10:00–10:30参加研究助理面试，地点为线上会议室。请在11月4日18:00前准备一页研究经历。此邮件为原创演示样例。' },
+  { id: 'conflict', label: '发现冲突', title: '冲突可见，回复先留作草稿',
+    description: '第二场面试与已有组会重叠。系统保留通知并标记冲突，供本人决定。',
+    subject: '【示例】实验室交流安排', receivedAt: '2026-11-03T10:00:00+08:00',
+    body: '邀请你于11月5日14:00–14:30参加实验室交流，地点为B楼会议室。此邮件为原创演示样例。' },
+  { id: 'reschedule', label: '面试改期', title: '旧安排留痕，新安排有来源',
+    description: '上午面试调整到下午；原日程标为已取消，并与新日程双向关联。',
+    subject: '【示例】研究助理面试时间调整', receivedAt: '2026-11-03T11:00:00+08:00',
+    body: '原定11月5日10:00的研究助理面试调整至当天15:00–15:30，地点不变。此邮件为原创演示样例。' },
+  { id: 'duplicate', label: '重复收信', title: '相同邮件再次出现，不重复写入',
+    description: '重复投递第一封通知。邮件 ID 去重后跳过提取，安排和待办数量不增加。' },
+  { id: 'failure', label: '异常阻断', title: '整封校验失败，保留重试机会',
+    description: '注入一份包含无效时间的预置提取结果，验证不会留下半条日程或待办。',
+    subject: '【示例】补充交流安排', receivedAt: '2026-11-03T12:00:00+08:00',
+    body: '补充交流为11月5日16:00–16:30，请核对时间。本步骤故意提供一份无效的预置提取结果，测试失败恢复。' },
+  { id: 'retry', label: '修正重试', title: '修正输入后，同一封邮件可以重试',
+    description: '使用有效预置时间重新处理上一步邮件，成功写入，失败记录仍可回查。' },
+  { id: 'cancel', label: '取消留痕', title: '取消释放时间，历史和材料仍保留',
+    description: '研究助理面试取消；保留取消原因与来源邮件，材料待办仍需本人处理。',
+    subject: '【示例】研究助理面试取消', receivedAt: '2026-11-03T13:00:00+08:00',
+    body: '很抱歉，原定11月5日15:00的研究助理面试取消。此邮件为原创演示样例。' },
+];

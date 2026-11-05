@@ -1,0 +1,20 @@
+flowchart TB
+  browser[Desktop / Mobile / WeChat] --> ingress[Caddy HTTPS]
+  ingress --> api[API container]
+  ingress --> example[Public experience router]
+  subgraph business[Connected workspace]
+    api --> pg[(PostgreSQL business and jobs)]
+    scheduler[Scheduler container] --> pg
+    scheduler --> mq[RabbitMQ wake-ups]
+    mq --> worker[Worker container]
+    worker --> pg
+    api --> redis[Redis sessions / coordination]
+    worker --> oss[MinIO private attachments]
+    worker --> external[IMAP / SMTP / Models / Calendars]
+  end
+  subgraph isolated[Per-request public walkthrough]
+    example --> fixtures[Bounded synthetic fixtures]
+    fixtures --> preset[Preset extraction]
+    preset --> tools[Production processEmails / calendar / Trace]
+    tools --> memory[Request-local results]
+  end

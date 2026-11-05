@@ -1,0 +1,213 @@
+{
+  "checks": [
+    {
+      "page": "evidence",
+      "anchorTop": 24.20833396911621,
+      "heading": "每个下一步，都有依据。",
+      "images": [
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/architecture.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/dataflow.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/performance.webp",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 1425,
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "page": "evidence",
+      "anchorTop": 23.77083396911621,
+      "heading": "每个下一步，都有依据。",
+      "images": [
+        {
+          "loaded": true,
+          "loading": "auto",
+          "src": "/logo-small.webp",
+          "withinViewport": true
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/architecture.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/dataflow.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/performance.webp",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 390,
+      "ok": true
+    },
+    {
+      "page": "evidence",
+      "anchorTop": 23.77083396911621,
+      "heading": "每个下一步，都有依据。",
+      "images": [
+        {
+          "loaded": true,
+          "loading": "auto",
+          "src": "/logo-small.webp",
+          "withinViewport": true
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/architecture.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/dataflow.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/performance.webp",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 320,
+      "ok": true
+    },
+    {
+      "page": "reproduce",
+      "anchorTop": null,
+      "heading": "运行与源码",
+      "images": [],
+      "scrollWidth": 1425,
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "page": "reproduce",
+      "anchorTop": null,
+      "heading": "运行与源码",
+      "images": [],
+      "scrollWidth": 375,
+      "width": 390,
+      "ok": true
+    },
+    {
+      "page": "reproduce",
+      "anchorTop": null,
+      "heading": "运行与源码",
+      "images": [],
+      "scrollWidth": 305,
+      "width": 320,
+      "ok": true
+    },
+    {
+      "page": "container",
+      "anchorTop": null,
+      "heading": "从源码构建容器、真实依赖与只读运行",
+      "images": [
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/container.webp",
+          "withinViewport": true
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-1440.png",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-390.png",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 1425,
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "page": "container",
+      "anchorTop": null,
+      "heading": "从源码构建容器、真实依赖与只读运行",
+      "images": [
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/container.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-1440.png",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-390.png",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 390,
+      "ok": true
+    },
+    {
+      "page": "container",
+      "anchorTop": null,
+      "heading": "从源码构建容器、真实依赖与只读运行",
+      "images": [
+        {
+          "loaded": true,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/container.webp",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-1440.png",
+          "withinViewport": false
+        },
+        {
+          "loaded": false,
+          "loading": "lazy",
+          "src": "/competition/container-assets/assets/source-step7-390.png",
+          "withinViewport": false
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 320,
+      "ok": true
+    }
+  ],
+  "method": "Set viewport before page mount, wait for exact h1, then check horizontal bounds and visible/eager images; fragment top checked for evidence.",
+  "initialChecks": "Initial blanket image check included an offscreen lazy image; initial rapid resize capture included bootstrap shell. Replaced with ready-page, fresh-mount checks."
+}

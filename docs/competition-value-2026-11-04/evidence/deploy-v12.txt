@@ -1,0 +1,74 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-value-study-20261104031242
+RELEASE_HASHES_OK 379
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  54.97MB
+
+
+Step 1/7 : FROM sha256:03f52e88c185088d6261753c0a25c9fca60d699b96fca8e9a3e19c6344632026
+ ---> 03f52e88c185
+Step 2/7 : USER root
+ ---> Using cache
+ ---> d1543eb83ab6
+Step 3/7 : RUN rm -rf /app/dist
+ ---> Using cache
+ ---> 1a221986facf
+Step 4/7 : COPY --chown=node:node dist/ /app/dist/
+ ---> Using cache
+ ---> bc6d5813093b
+Step 5/7 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> ce24a9f7c443
+Step 6/7 : LABEL org.opencontainers.image.revision="2e5a682dc988169f8eb1f2eb4f18085481c9f42c"
+ ---> Running in e82e6f125735
+ ---> Removed intermediate container e82e6f125735
+ ---> 11bbc5cfd387
+Step 7/7 : USER node
+ ---> Running in a794e6a5f67b
+ ---> Removed intermediate container a794e6a5f67b
+ ---> 2d12d546999a
+Successfully built 2d12d546999a
+Successfully tagged daylight:public-competition-20261104-v12-r1
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11486.117236
+CANDIDATE_REPORT_AND_STUDY_BYTES_OK
+ Container daylight-api-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-scheduler-1  Starting
+ Container daylight-scheduler-1  Started
+ Container daylight-worker-1  Started
+ Container daylight-api-1  Started
+ Container daylight-worker-1  Waiting
+ Container daylight-scheduler-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-scheduler-1  Healthy
+ Container daylight-worker-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"8add4adc-e0ce-4525-934a-a0c61f68d491","written":5,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_REPORT_OK
+ROLE_READY api {"enabled":true,"runId":"8add4adc-e0ce-4525-934a-a0c61f68d491","written":31,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"2e26d780-90b2-442e-b5c3-e63cb701252d","written":130,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"e2598896-f6e9-4d68-b48c-6a23d2670a6a","written":55,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v12-r1 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v12-r1 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v12-r1 healthy restart=0 oom=false
+sha256:2d12d546999aebcabef12606f3dbb2f10881505a2b939685d90447d8b9cade15
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+VALUE_STUDY_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-value-study-20261104031242
+
+REMOTE_EXIT 0

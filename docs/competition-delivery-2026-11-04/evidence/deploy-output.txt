@@ -1,0 +1,107 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-portable-delivery-20261104074910
+RELEASE_HASHES_OK 673
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  78.29MB
+
+
+Step 1/9 : FROM sha256:512a096ec1d021b77a27143b0deb67d7e8d354063cd26922ab23572a41dc6add
+ ---> 512a096ec1d0
+Step 2/9 : USER root
+ ---> Running in 11463600b575
+ ---> Removed intermediate container 11463600b575
+ ---> a96d955a29a2
+Step 3/9 : RUN rm -rf /app/dist
+ ---> Running in 8665d57f77c1
+ ---> Removed intermediate container 8665d57f77c1
+ ---> 04490b561969
+Step 4/9 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> 84e17b5d4e6d
+Step 5/9 : COPY --chown=node:node package.json /app/package.json
+ ---> 6fdd76534292
+Step 6/9 : COPY --chown=node:node server/ /app/server/
+ ---> 11b0672c49dc
+Step 7/9 : COPY --chown=node:node dist/ /app/dist/
+ ---> 9c144e9fbe2d
+Step 8/9 : LABEL org.opencontainers.image.revision="054f9cf8a50f10e600732efe559c763ea4a72dd7"
+ ---> Running in 170efe3833cf
+ ---> Removed intermediate container 170efe3833cf
+ ---> c74354f7f796
+Step 9/9 : USER node
+ ---> Running in b8142fc9ca7d
+ ---> Removed intermediate container b8142fc9ca7d
+ ---> 55f7a1780e8e
+Successfully built 55f7a1780e8e
+Successfully tagged daylight:public-competition-20261104-v21
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11359.402061
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 340.320165
+{
+  "ok": true,
+  "portableSource": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+  "files": 2345,
+  "archiveBytes": 112500706,
+  "cleanInstallMs": 61135,
+  "tests": {
+    "total": 1042,
+    "pass": 1013,
+    "skipped": 29,
+    "fail": 0
+  },
+  "demoHttpRequests": 24,
+  "filesFaultsDetected": 4,
+  "browserChecks": 12,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 15,
+  "modelCalls": 84,
+  "estimatedTextCny": 0.516094
+}
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-scheduler-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-scheduler-1  Started
+ Container daylight-worker-1  Started
+ Container daylight-api-1  Started
+ Container daylight-scheduler-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-scheduler-1  Healthy
+ Container daylight-worker-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"ee16979d-fa32-4d4c-bd9c-de02908e17bf","written":5,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"ee16979d-fa32-4d4c-bd9c-de02908e17bf","written":81,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"a4daf862-6597-406c-8d6f-6db99e2f8a5b","written":173,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"6596328d-d13f-4315-b541-664254c0863f","written":65,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v21 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v21 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v21 healthy restart=0 oom=false
+sha256:55f7a1780e8e8766e2b9a449b8804b333d93c578621cc0a573c9736044bc9dc2
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+PUBLIC_PORTABLE_DELIVERY_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-portable-delivery-20261104074910
+
+REMOTE_EXIT 0

@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: engineering report image, landscape 1536x1024
+Primary request: Create a precise, readable engineering infographic for Daylight with all labels in English. Warm off-white background, forest-green and muted amber accents, refined flat vector appearance, clear generous spacing. No Chinese text. No invented graphs, numerical trends, logos or components.
+Title: "DAYLIGHT / BOUNDED OBSERVABILITY"
+Subtitle: "API + Worker + Scheduler"
+Two horizontal comparison panels with short text:
+Top panel labelled "BEFORE": "Bounded buffer" -> "Growing write queue" -> "Unrotated raw file". Below this chain show three role arrows converging on one document labelled "Shared summary". Use muted amber for the growing queue and shared summary.
+Bottom larger panel labelled "AFTER": Three small role boxes "API", "Worker", "Scheduler" each lead to a box labelled "One bounded buffer" with caption "Queued + in-flight <= 1 MiB". Then one async arrow to "Rotating JSONL" with caption "8 MiB / file, 4 files / process". Show separate document icons labelled "Atomic role summaries". End with a shared storage boundary labelled "Shared retention target: 128 MiB" and a small caption "Oldest metrics files reclaimed first". Add a small downward arrow from the full buffer labelled "Count dropped samples".
+Footer sentence: "HTTP, database, jobs, model latency and process resources"
+Avoid overlapping arrows and text. Use consistent left-to-right reading order. All text must be crisp and spelled exactly. This is an implemented recording design; do not add Prometheus, Grafana or external collectors.

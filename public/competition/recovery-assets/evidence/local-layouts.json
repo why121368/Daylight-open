@@ -1,0 +1,173 @@
+[
+  {
+    "images": [
+      {
+        "loading": "auto",
+        "naturalWidth": 128,
+        "src": "/logo-small.webp",
+        "width": 40
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/competition/architecture.webp",
+        "width": 1215
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/competition/dataflow.webp",
+        "width": 1215
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/competition/performance.webp",
+        "width": 1215
+      }
+    ],
+    "links": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "pageWidth": 1425,
+    "recoveryTop": 23.77083396911621,
+    "url": "http://127.0.0.1:3201/evidence#recovery",
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "width": 1100
+      }
+    ],
+    "links": [
+      {
+        "height": 0,
+        "href": "#2-恢复流程与数据边界"
+      }
+    ],
+    "pageWidth": 1425,
+    "url": "http://127.0.0.1:3201/competition/recovery-report.html",
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loading": "auto",
+        "naturalWidth": 128,
+        "src": "/logo-small.webp",
+        "width": 40
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/architecture.webp",
+        "width": 341
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/dataflow.webp",
+        "width": 341
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/competition/performance.webp",
+        "width": 341
+      }
+    ],
+    "links": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "pageWidth": 375,
+    "recoveryTop": 24.21875,
+    "url": "http://127.0.0.1:3201/evidence#recovery",
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "width": 343
+      }
+    ],
+    "links": [
+      {
+        "height": 0,
+        "href": "#2-恢复流程与数据边界"
+      }
+    ],
+    "pageWidth": 375,
+    "url": "http://127.0.0.1:3201/competition/recovery-report.html",
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loading": "auto",
+        "naturalWidth": 128,
+        "src": "/logo-small.webp",
+        "width": 40
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/architecture.webp",
+        "width": 271
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/dataflow.webp",
+        "width": 271
+      },
+      {
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/competition/performance.webp",
+        "width": 271
+      }
+    ],
+    "links": [
+      {
+        "height": 44,
+        "href": "/competition/recovery-report.html"
+      }
+    ],
+    "pageWidth": 305,
+    "recoveryTop": 24.21875,
+    "url": "http://127.0.0.1:3201/evidence#recovery",
+    "width": 320
+  },
+  {
+    "images": [
+      {
+        "loading": "lazy",
+        "naturalWidth": 1536,
+        "src": "/competition/recovery-assets/assets/recovery-flow.webp",
+        "width": 273
+      }
+    ],
+    "links": [
+      {
+        "height": 0,
+        "href": "#2-恢复流程与数据边界"
+      }
+    ],
+    "pageWidth": 305,
+    "url": "http://127.0.0.1:3201/competition/recovery-report.html",
+    "width": 320
+  }
+]

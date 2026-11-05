@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: 回复审核：并发准备复用同一草稿，取回编辑版本并保留线程，只确认发送一次
+ok 1 - 回复审核：并发准备复用同一草稿，取回编辑版本并保留线程，只确认发送一次
+  ---
+  duration_ms: 243.805155
+  type: 'test'
+  ...
+# Subtest: 回复审核：来源按邮箱查找，放弃后显式重新准备，发送结果未知时取回原回执
+ok 2 - 回复审核：来源按邮箱查找，放弃后显式重新准备，发送结果未知时取回原回执
+  ---
+  duration_ms: 57.439083
+  type: 'test'
+  ...
+# Subtest: 草稿持久化且不会发送；同一操作幂等，校验收件人与邮件头注入
+ok 3 - 草稿持久化且不会发送；同一操作幂等，校验收件人与邮件头注入
+  ---
+  duration_ms: 31.948635
+  type: 'test'
+  ...
+# Subtest: 发送必须明确确认且审核版本匹配，修改后旧版本不能发出
+ok 4 - 发送必须明确确认且审核版本匹配，修改后旧版本不能发出
+  ---
+  duration_ms: 45.39424
+  type: 'test'
+  ...
+# Subtest: 并发点击先持久化 sending；第二次请求不能产生重复 SMTP
+ok 5 - 并发点击先持久化 sending；第二次请求不能产生重复 SMTP
+  ---
+  duration_ms: 29.124309
+  type: 'test'
+  ...
+# Subtest: 部分收件人接受时列出回执并禁止整封重发
+ok 6 - 部分收件人接受时列出回执并禁止整封重发
+  ---
+  duration_ms: 35.078679
+  type: 'test'
+  ...
+# Subtest: 认证失败可审核重试，DATA 超时保留未知且隐藏凭据
+ok 7 - 认证失败可审核重试，DATA 超时保留未知且隐藏凭据
+  ---
+  duration_ms: 49.013334
+  type: 'test'
+  ...
+# Subtest: SMTP 返回后存储失败依然保留发送屏障，恢复读取不会再次发信
+ok 8 - SMTP 返回后存储失败依然保留发送屏障，恢复读取不会再次发信
+  ---
+  duration_ms: 32.203833
+  type: 'test'
+  ...
+# Subtest: 发送前校验发件邮箱变化、SMTP缺失与草稿放弃
+ok 9 - 发送前校验发件邮箱变化、SMTP缺失与草稿放弃
+  ---
+  duration_ms: 23.446427
+  type: 'test'
+  ...
+# Subtest: 跨邮箱与跨用户无法读取或发送他人的草稿
+ok 10 - 跨邮箱与跨用户无法读取或发送他人的草稿
+  ---
+  duration_ms: 25.536732
+  type: 'test'
+  ...
+# Subtest: 会议邀约链接、过期、已改动或已取消的日程在 SMTP 前拦截
+ok 11 - 会议邀约链接、过期、已改动或已取消的日程在 SMTP 前拦截
+  ---
+  duration_ms: 41.712134
+  type: 'test'
+  ...
+# Subtest: 会议邀约以审核后的中文正文发送纯文本与 HTML MIME，仅真实会议链接可点击且重复确认不重发
+ok 12 - 会议邀约以审核后的中文正文发送纯文本与 HTML MIME，仅真实会议链接可点击且重复确认不重发
+  ---
+  duration_ms: 670.301965
+  type: 'test'
+  ...
+# Subtest: 真实 SMTP 发送路径接受多收件人并保留部分拒绝回执，使用 TLS 并关闭传输
+ok 13 - 真实 SMTP 发送路径接受多收件人并保留部分拒绝回执，使用 TLS 并关闭传输
+  ---
+  duration_ms: 10.273889
+  type: 'test'
+  ...
+# Subtest: 真实 Express HTTP：小 D 起草审核发送、飞书入历邀约、简报、SSE恢复与用户邮箱隔离（全部外部传输为合成模拟）
+ok 14 - 真实 Express HTTP：小 D 起草审核发送、飞书入历邀约、简报、SSE恢复与用户邮箱隔离（全部外部传输为合成模拟）
+  ---
+  duration_ms: 12115.195217
+  type: 'test'
+  ...
+# Subtest: 会议邀约 API 不会把外部提交的非 HTTPS 或含认证信息的链接渲染为 HTML 超链接
+ok 15 - 会议邀约 API 不会把外部提交的非 HTTPS 或含认证信息的链接渲染为 HTML 超链接
+  ---
+  duration_ms: 4247.341009
+  type: 'test'
+  ...
+# Subtest: iOS/shared HTTP: invitation review, deduplication, Web state visibility, preferences and private ICS isolation
+ok 16 - iOS/shared HTTP: invitation review, deduplication, Web state visibility, preferences and private ICS isolation
+  ---
+  duration_ms: 4323.501211
+  type: 'test'
+  ...
+# Subtest: manual task creation/editing share ownership, title validation and completion state with Web
+ok 17 - manual task creation/editing share ownership, title validation and completion state with Web
+  ---
+  duration_ms: 5215.702633
+  type: 'test'
+  ...
+# Subtest: 真实 Express HTTP：执行记录回复进入持久审核，跨邮箱隔离、版本校验、线程与重启回执（合成SMTP）
+ok 18 - 真实 Express HTTP：执行记录回复进入持久审核，跨邮箱隔离、版本校验、线程与重启回执（合成SMTP）
+  ---
+  duration_ms: 8465.64152
+  type: 'test'
+  ...
+# Subtest: trace reply uses source Reply-To and preserves source identity and thread headers
+ok 19 - trace reply uses source Reply-To and preserves source identity and thread headers
+  ---
+  duration_ms: 11.80767
+  type: 'test'
+  ...
+# Subtest: trace reply handles named addresses, groups and source draft precedence
+ok 20 - trace reply handles named addresses, groups and source draft precedence
+  ---
+  duration_ms: 3.639478
+  type: 'test'
+  ...
+# Subtest: trace reply falls back to the original sender and leaves source records intact
+ok 21 - trace reply falls back to the original sender and leaves source records intact
+  ---
+  duration_ms: 1.747191
+  type: 'test'
+  ...
+# Subtest: trace reply requires a unique owned source and keeps preset and legacy-sent flows separate
+ok 22 - trace reply requires a unique owned source and keeps preset and legacy-sent flows separate
+  ---
+  duration_ms: 3.567769
+  type: 'test'
+  ...
+# Subtest: trace reply rejects malformed Reply-To instead of silently choosing a different recipient
+ok 23 - trace reply rejects malformed Reply-To instead of silently choosing a different recipient
+  ---
+  duration_ms: 2.311942
+  type: 'test'
+  ...
+# Subtest: trace reply bounds thread history and filters invalid header identities
+ok 24 - trace reply bounds thread history and filters invalid header identities
+  ---
+  duration_ms: 1.734319
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 39788.426846

@@ -1,0 +1,203 @@
+[
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接"
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG"
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单"
+      }
+    ],
+    "dialog": {
+      "bottom": 736.4167175292969,
+      "clientHeight": 572,
+      "left": 496,
+      "right": 944,
+      "scrollHeight": 572,
+      "top": 163.58334350585938
+    },
+    "documentWidth": 1440,
+    "downloadName": "daylight-experience-step-3.png",
+    "href": "/competition/experience-step-3-qr.png",
+    "imageLoaded": true,
+    "shareUrl": "https://daylight.yunforis.com/experience?step=3",
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    },
+    "page": "experience-share",
+    "ok": true
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接"
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG"
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单"
+      }
+    ],
+    "dialog": {
+      "bottom": 710.4167175292969,
+      "clientHeight": 576,
+      "left": 16,
+      "right": 374,
+      "scrollHeight": 576,
+      "top": 133.58334350585938
+    },
+    "documentWidth": 390,
+    "downloadName": "daylight-experience-step-3.png",
+    "href": "/competition/experience-step-3-qr.png",
+    "imageLoaded": true,
+    "shareUrl": "https://daylight.yunforis.com/experience?step=3",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "page": "experience-share",
+    "ok": true
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接"
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG"
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单"
+      }
+    ],
+    "dialog": {
+      "bottom": 539.5989799499512,
+      "clientHeight": 510,
+      "left": 16,
+      "right": 304,
+      "scrollHeight": 578,
+      "top": 28.401042938232425
+    },
+    "documentWidth": 320,
+    "downloadName": "daylight-experience-step-3.png",
+    "href": "/competition/experience-step-3-qr.png",
+    "imageLoaded": true,
+    "shareUrl": "https://daylight.yunforis.com/experience?step=3",
+    "viewport": {
+      "height": 568,
+      "width": 320
+    },
+    "page": "experience-share",
+    "ok": true
+  },
+  {
+    "documentWidth": 1425,
+    "heading": "体验进度恢复与手机继续",
+    "imageCount": 7,
+    "navControls": [
+      {
+        "height": 44,
+        "text": "三分钟体验"
+      },
+      {
+        "height": 44,
+        "text": "技术与实测"
+      },
+      {
+        "height": 44,
+        "text": "图文总览"
+      },
+      {
+        "height": 44,
+        "text": "运行与源码"
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    },
+    "page": "continuity-report",
+    "ok": true
+  },
+  {
+    "documentWidth": 375,
+    "heading": "体验进度恢复与手机继续",
+    "imageCount": 7,
+    "navControls": [
+      {
+        "height": 44,
+        "text": "三分钟体验"
+      },
+      {
+        "height": 44,
+        "text": "技术与实测"
+      },
+      {
+        "height": 44,
+        "text": "图文总览"
+      },
+      {
+        "height": 44,
+        "text": "运行与源码"
+      }
+    ],
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "page": "continuity-report",
+    "ok": true
+  },
+  {
+    "documentWidth": 305,
+    "heading": "体验进度恢复与手机继续",
+    "imageCount": 7,
+    "navControls": [
+      {
+        "height": 44,
+        "text": "三分钟体验"
+      },
+      {
+        "height": 44,
+        "text": "技术与实测"
+      },
+      {
+        "height": 44,
+        "text": "图文总览"
+      },
+      {
+        "height": 44,
+        "text": "运行与源码"
+      }
+    ],
+    "viewport": {
+      "height": 568,
+      "width": 320
+    },
+    "page": "continuity-report",
+    "ok": true
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "remainingVolumes": 0,
+    "remainingContainers": 0,
+    "verifiedWorkspace": true,
+    "project": "daylight-delivery-7f1848de"
+  },
+  {
+    "remainingVolumes": 0,
+    "remainingContainers": 0,
+    "verifiedWorkspace": true,
+    "project": "daylight-delivery-7f1848de-restore"
+  },
+  {
+    "remainingVolumes": 0,
+    "remainingContainers": 0,
+    "verifiedWorkspace": true,
+    "project": "daylight-delivery-7f1848de-restore-v2"
+  },
+  {
+    "remainingVolumes": 0,
+    "remainingContainers": 0,
+    "verifiedWorkspace": true,
+    "project": "daylight-delivery-7f1848de-restore-final"
+  }
+]

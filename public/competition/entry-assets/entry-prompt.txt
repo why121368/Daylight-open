@@ -1,0 +1,15 @@
+Use case: infographic-diagram
+Asset type: engineering report figure for Daylight, 1536x1024 landscape.
+Primary request: Create a precise, elegant before-and-after loading-boundary diagram. All text must be English. Use a warm ivory background, dark forest-green type, muted orange for the old startup, green for the improved routes, generous spacing and crisp large sans-serif text. Flat diagram, clean readable arrows, no 3D objects, no fake browser chrome, no Chinese characters.
+Title (verbatim): "LOAD THE PAGE YOU OPEN"
+Subtitle: "Daylight public entry | v16 to v17"
+Composition: two equal columns in the upper two thirds, three numerical cards across the bottom. Each column is a technical flow with aligned rounded rectangles and real arrow connections.
+Left heading: "BEFORE"
+Left flow: "Public visit" points to "Shared startup". Inside the shared startup show four small stacked labels: "Workspace state", "Onboarding", "Temporal", "Math CSS". Caption: "Loaded before the public page".
+Right heading: "AFTER"
+Right flow: "Public visit" points to "Public shell + selected page". Below, show three separate deferred branches: "Workspace | after sign-in", "Calendar | Temporal", "Markdown | KaTeX CSS". Caption: "Load when the matching route opens".
+Bottom card 1 heading: "PUBLIC JAVASCRIPT / GZIP". Values exactly: "210.5 KB -> 166.0 KB".
+Bottom card 2 heading: "JS + CSS + STARTUP IMAGE". Values exactly: "362.1 KB -> 202.4 KB". Small label: "44.11% fewer bytes".
+Bottom card 3 heading: "390PX PAGE READY / P50". Values exactly: "2.424 s -> 1.613 s". Small label: "33.44% faster".
+Footer (small but legible): "Local shaped transport | 200 KB/s + 80 ms | 5 samples per variant"
+Constraints: Preserve every number and technical label exactly. All metric bars or connectors must be consistent with the stated decrease. Do not add claims about real phones, mobile networks, global performance, server capacity, or savings in model calls. No watermark. Use clear straight text with sufficient contrast.

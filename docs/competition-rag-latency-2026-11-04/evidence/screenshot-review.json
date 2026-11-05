@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-03T21:13:33.285505+00:00",
+  "scope": "Official HTTPS screenshots with completed page content",
+  "images": [
+    {
+      "file": "assets/public-evidence-mobile.png",
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "bytes": 41025,
+      "sha256": "5c19f617fb1a8e15b322a0574e4c515d3e96060f7fc9ca1310230481035caaf6",
+      "imagePixels": [
+        65536,
+        4292542531
+      ],
+      "review": "Visually checked completed page after loaded-state observation."
+    },
+    {
+      "file": "assets/public-evidence-desktop.png",
+      "url": "https://daylight.yunforis.com/evidence#rag-latency",
+      "bytes": 83863,
+      "sha256": "000e619a8c74eddd3ce61281512d06d5e50c7c5841ee1edadbd42c601d607311",
+      "imagePixels": [
+        65536,
+        4292542531
+      ],
+      "review": "Visually checked completed page after loaded-state observation."
+    },
+    {
+      "file": "assets/public-report-mobile.png",
+      "url": "https://daylight.yunforis.com/competition/rag-latency-report.html",
+      "bytes": 51961,
+      "sha256": "ea0aef234d776c826aeb731de0626bc2a17b80d3355e36cfcf9f2704dfe93f4e",
+      "imagePixels": [
+        65536,
+        4292542531
+      ],
+      "review": "Visually checked completed page after loaded-state observation."
+    }
+  ]
+}

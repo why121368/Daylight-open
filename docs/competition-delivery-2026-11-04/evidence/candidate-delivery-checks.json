@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "portableSource": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+  "files": 2345,
+  "archiveBytes": 112500706,
+  "cleanInstallMs": 61135,
+  "tests": {
+    "total": 1042,
+    "pass": 1013,
+    "skipped": 29,
+    "fail": 0
+  },
+  "demoHttpRequests": 24,
+  "filesFaultsDetected": 4,
+  "browserChecks": 12,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 15,
+  "modelCalls": 84,
+  "estimatedTextCny": 0.516094
+}

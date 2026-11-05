@@ -1,0 +1,208 @@
+{
+  "checkedAt": "2026-11-04T00:27:47.732814+00:00",
+  "ok": true,
+  "scope": "Full-source Linux image with isolated real Compose dependencies",
+  "image": {
+    "tag": "daylight:source-candidate-20261104",
+    "id": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+    "bytes": 1144230020,
+    "platform": "linux/amd64"
+  },
+  "sourceTests": {
+    "total": 8,
+    "passed": 8,
+    "skipped": 0
+  },
+  "publicHttpChecks": 115,
+  "realJobsChecks": 8,
+  "realObjectStorageChecks": 14,
+  "roles": [
+    {
+      "role": "api",
+      "imageId": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "node",
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOptions": [
+        "no-new-privileges:true"
+      ]
+    },
+    {
+      "role": "worker",
+      "imageId": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "node",
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOptions": [
+        "no-new-privileges:true"
+      ]
+    },
+    {
+      "role": "scheduler",
+      "imageId": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "node",
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOptions": [
+        "no-new-privileges:true"
+      ]
+    },
+    {
+      "role": "postgres",
+      "imageId": "sha256:567d5d704a3e5a4864393b623a0d50eb1b5a4ad134cdac7cf19555cb2d8ffe9e",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "",
+      "readOnlyRoot": false,
+      "capDrop": null,
+      "securityOptions": null
+    },
+    {
+      "role": "redis",
+      "imageId": "sha256:bfbfb199fe6c9acd1dcacba0e86908b27c0de864bb7fddad3be185d234f39378",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "",
+      "readOnlyRoot": false,
+      "capDrop": null,
+      "securityOptions": null
+    },
+    {
+      "role": "rabbitmq",
+      "imageId": "sha256:f86bbe7a086c3921c08210ac2bc6ba66338cf6c6fb640c470fc9c2e5ff035465",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "",
+      "readOnlyRoot": false,
+      "capDrop": null,
+      "securityOptions": null
+    },
+    {
+      "role": "minio",
+      "imageId": "sha256:c376372cfc8a33e8b92334e57f723fae0f61d9a1c70ca98f19599d442ae1b450",
+      "state": "running",
+      "exitCode": 0,
+      "health": "healthy",
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "1001:1001",
+      "readOnlyRoot": false,
+      "capDrop": null,
+      "securityOptions": null
+    },
+    {
+      "role": "migrate",
+      "imageId": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+      "state": "exited",
+      "exitCode": 0,
+      "health": null,
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "node",
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOptions": [
+        "no-new-privileges:true"
+      ]
+    },
+    {
+      "role": "minio-init",
+      "imageId": "sha256:29d4d31ac8808ce910d883101499389b1c44e3b74e36756207c6cee73c1a1059",
+      "state": "exited",
+      "exitCode": 0,
+      "health": null,
+      "restartCount": 0,
+      "oomKilled": false,
+      "user": "node",
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOptions": [
+        "no-new-privileges:true"
+      ]
+    }
+  ],
+  "runtime": {
+    "uid": 1000,
+    "rootWriteError": "EROFS",
+    "tmpWrite": true,
+    "nativeCanvasPngBytes": 341,
+    "libreOffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "docsIncluded": false,
+    "userDataIncluded": false,
+    "timezone": "Asia/Shanghai"
+  },
+  "readiness": {
+    "api": {
+      "ok": true,
+      "role": "api",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "source-build-20261104",
+        "written": 1522,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    "worker": {
+      "ok": true,
+      "role": "worker",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "source-build-20261104",
+        "written": 10463,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    "scheduler": {
+      "ok": true,
+      "role": "scheduler",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "source-build-20261104",
+        "written": 1464,
+        "dropped": 0,
+        "sinkError": null
+      }
+    }
+  },
+  "textModelCalls": 0,
+  "newCloudPurchasesCny": 0
+}

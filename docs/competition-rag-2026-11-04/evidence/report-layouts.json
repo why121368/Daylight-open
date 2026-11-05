@@ -1,0 +1,119 @@
+[
+  {
+    "images": [
+      {
+        "alt": "RAG evidence flow: before and after",
+        "loaded": true
+      },
+      {
+        "alt": "桌面两封邮件汇总与引用",
+        "loaded": true
+      },
+      {
+        "alt": "打开第二条引用后定位原信并高亮",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机折叠入口，位于邮件列表之前",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机展开后的回答、44px 引用编号和输入区",
+        "loaded": true
+      },
+      {
+        "alt": "模型不可用时展示状态与检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "引用检查未通过时展示检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "延迟响应结束后，个人邮箱仍保持当前范围的空会话",
+        "loaded": true
+      }
+    ],
+    "scrollWidth": 305,
+    "title": "邮件问答的上下文、原文引用与手机交互优化",
+    "width": 320
+  },
+  {
+    "images": [
+      {
+        "alt": "RAG evidence flow: before and after",
+        "loaded": true
+      },
+      {
+        "alt": "桌面两封邮件汇总与引用",
+        "loaded": true
+      },
+      {
+        "alt": "打开第二条引用后定位原信并高亮",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机折叠入口，位于邮件列表之前",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机展开后的回答、44px 引用编号和输入区",
+        "loaded": true
+      },
+      {
+        "alt": "模型不可用时展示状态与检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "引用检查未通过时展示检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "延迟响应结束后，个人邮箱仍保持当前范围的空会话",
+        "loaded": true
+      }
+    ],
+    "scrollWidth": 375,
+    "title": "邮件问答的上下文、原文引用与手机交互优化",
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "alt": "RAG evidence flow: before and after",
+        "loaded": true
+      },
+      {
+        "alt": "桌面两封邮件汇总与引用",
+        "loaded": true
+      },
+      {
+        "alt": "打开第二条引用后定位原信并高亮",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机折叠入口，位于邮件列表之前",
+        "loaded": true
+      },
+      {
+        "alt": "390px 手机展开后的回答、44px 引用编号和输入区",
+        "loaded": true
+      },
+      {
+        "alt": "模型不可用时展示状态与检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "引用检查未通过时展示检索原文",
+        "loaded": true
+      },
+      {
+        "alt": "延迟响应结束后，个人邮箱仍保持当前范围的空会话",
+        "loaded": true
+      }
+    ],
+    "scrollWidth": 1425,
+    "title": "邮件问答的上下文、原文引用与手机交互优化",
+    "width": 1440
+  }
+]

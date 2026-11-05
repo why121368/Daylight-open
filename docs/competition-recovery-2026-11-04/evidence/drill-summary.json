@@ -1,0 +1,151 @@
+{
+  "startedAt": "2026-11-03T22:08:15.098521+00:00",
+  "sourceImage": "daylight:public-competition-20261104-v17",
+  "toolImage": "daylight:recovery-tools-20261104-v18",
+  "phases": [
+    {
+      "name": "compatible_health_resume",
+      "durationMs": 1575,
+      "exitCode": 0,
+      "log": "compatible-resume.txt"
+    },
+    {
+      "name": "restore_and_verify",
+      "durationMs": 48000,
+      "exitCode": 0,
+      "log": "restore.txt"
+    },
+    {
+      "name": "content_failure_probes",
+      "durationMs": 71317,
+      "exitCode": 0,
+      "log": "failure-probes.txt"
+    },
+    {
+      "name": "existing_target_refusal",
+      "durationMs": 1082,
+      "exitCode": 0,
+      "log": "existing-target.txt"
+    },
+    {
+      "name": "remove_temporary_restore",
+      "durationMs": 1156,
+      "exitCode": 0,
+      "log": "cleanup.txt"
+    }
+  ],
+  "initialBackupAttempt": {
+    "startedAt": "2026-11-03T22:05:06.152670+00:00",
+    "sourceImage": "daylight:public-competition-20261104-v17",
+    "toolImage": "daylight:recovery-tools-20261104-v18",
+    "phases": [
+      {
+        "name": "consistent_backup",
+        "durationMs": 53440,
+        "exitCode": 1,
+        "log": "backup.txt"
+      }
+    ],
+    "finishedAt": "2026-11-03T22:05:59.593979+00:00",
+    "productionAfter": [
+      {
+        "role": "api",
+        "image": "daylight:public-competition-20261104-v17",
+        "health": "unhealthy",
+        "restarts": 0,
+        "oom": false
+      },
+      {
+        "role": "worker",
+        "image": "daylight:public-competition-20261104-v17",
+        "health": "unhealthy",
+        "restarts": 0,
+        "oom": false
+      },
+      {
+        "role": "scheduler",
+        "image": "daylight:public-competition-20261104-v17",
+        "health": "unhealthy",
+        "restarts": 0,
+        "oom": false
+      }
+    ]
+  },
+  "backupDirectory": "/opt/daylight-backups/recovery-20261104-v18/daylight-20261103T220506Z-nxOGqV",
+  "backupFiles": [
+    {
+      "name": "COMPLETE",
+      "bytes": 27
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 406
+    },
+    {
+      "name": "database.dump",
+      "bytes": 27146983
+    },
+    {
+      "name": "images.txt",
+      "bytes": 442
+    },
+    {
+      "name": "metadata.txt",
+      "bytes": 209
+    },
+    {
+      "name": "minio-data.tar",
+      "bytes": 200415232
+    },
+    {
+      "name": "recovery-manifest.json",
+      "bytes": 56419
+    }
+  ],
+  "snapshotFinishedAt": "2026-11-03T22:05:50.204Z",
+  "project": "daylight-recovery-20261104-8f9503",
+  "restoredRoles": [
+    {
+      "role": "minio",
+      "health": "healthy",
+      "memoryLimit": 268435456,
+      "restarts": 0,
+      "oom": false
+    },
+    {
+      "role": "postgres",
+      "health": "healthy",
+      "memoryLimit": 268435456,
+      "restarts": 0,
+      "oom": false
+    }
+  ],
+  "restoreNetworkInternal": true,
+  "publishedRestorePorts": 0,
+  "temporaryResourcesRemoved": true,
+  "ok": true,
+  "finishedAt": "2026-11-03T22:10:18.679417+00:00",
+  "productionAfter": [
+    {
+      "role": "api",
+      "image": "daylight:public-competition-20261104-v17",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false
+    },
+    {
+      "role": "worker",
+      "image": "daylight:public-competition-20261104-v17",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false
+    },
+    {
+      "role": "scheduler",
+      "image": "daylight:public-competition-20261104-v17",
+      "health": "healthy",
+      "restarts": 0,
+      "oom": false
+    }
+  ]
+}

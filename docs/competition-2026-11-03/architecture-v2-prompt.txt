@@ -1,0 +1,11 @@
+Use case: infographic-diagram
+Asset type: factual Chinese system architecture poster for Daylight competition.
+Primary request: A professional readable flat landscape infographic, off-white background, dark forest green, amber highlights, precise simple typography. Draw separated containers and service groups. Do not add unspecified arrows. Exact diagram below.
+Title: "Daylight · 公网部署与执行边界"
+Subtitle: "单台主机 · Docker Compose · API / Worker / Scheduler 分离"
+Top row: "电脑浏览器" and "手机 / 微信扫码" with arrows into "Caddy · HTTPS". One arrow from Caddy into API service in the left panel.
+LEFT PANEL: title "真实业务工作区". Inside three blocks in a horizontal row, "API · 请求与确认", "Scheduler · 到期派发", "Worker · 模型与耗时任务". Below them a thin full-width text strip "三类服务通过共享基础设施协作". Below that four equal blocks with no arrows between blocks: "PostgreSQL：业务与任务权威状态", "Redis：会话与临时协调", "RabbitMQ：任务唤醒通知", "MinIO：私有附件". Below a text strip "任务租约 · 幂等键 · 版本校验 · 发信须审核". ONLY from the Worker block draw one short outward arrow to the external tools block beneath the panel labelled "外部工具：IMAP / SMTP · 兼容模型 API · 日历 / 飞书（按配置）". No other arrows in this left panel.
+RIGHT PANEL completely visually separated from the business panel: title "免登录交互体验". Text blocks stacked with arrows ONLY within this panel: "原创合成邮件" -> "预置结构化提取" -> "生产 processEmails / 日历 / Trace 工具" -> "当前请求内结果". Bottom badge "独立内存 · 不读私人数据 · 不写数据库 · 不调模型". The right panel must have NO arrows or connection to Worker, real business state stores, IMAP or model APIs. A thin arrow from Caddy directly into this right panel labelled "公开体验路由" is allowed.
+Footer band: "健康检查 · 指标与 Trace · 数据库备份 · 镜像回滚"
+Bottom footnote exactly "当前公网为单节点；历史多副本 k3s 实测单独提供，不代表本机高可用。"
+Constraints: No arrows between PostgreSQL, Redis, RabbitMQ, MinIO; no duplicate RabbitMQ; experience must not connect external tools. All text legible. No fake metrics. Keep clear panel separation. White margins around all groups. No logos needed.

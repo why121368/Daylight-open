@@ -1,0 +1,9 @@
+{
+  "release": "v19",
+  "displayedPngSaved": true,
+  "change": "Replace detached data-URL activation with a real download anchor; serve fixed step PNG files for the public deployment.",
+  "observedAt": "2026-11-03T22:59:51.2228282Z",
+  "displayedPngBytes": 16809,
+  "expectedFileFoundInCheckedLocations": false,
+  "downloadEventCaptured": false
+}

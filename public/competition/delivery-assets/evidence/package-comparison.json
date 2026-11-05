@@ -1,0 +1,40 @@
+{
+  "before": {
+    "archive": "daylight-demo-20261028T005135.tar.gz",
+    "archiveBytes": 25525525,
+    "sha256": "fda68adda30fee7865bc0e7913f21dba0048efebae423e9e38ddb3e1ce80f3e4",
+    "sourceCommit": "c36cae6a5686f60f8d7cfb2df5144bf8e67ffbb7",
+    "sourceDigest": "1ef3356233a9877050b4b2895aaf6ae91a201f91d443671cb4c900c8eb4856df",
+    "buildDigest": "5083ed3b09c5d5210e74829cd49915e9203ab3bc38696fef6b363281d1e7f865",
+    "filesInInventory": 808,
+    "archiveFilesIncludingManifest": 810,
+    "startGuideInInventory": false,
+    "checkCommandIncluded": false,
+    "sevenStepEntryInGuide": false,
+    "experienceSourceIncluded": false,
+    "chapterVideoIncluded": false,
+    "resumeStepQrIncluded": false,
+    "distFiles": 130,
+    "sourceAndDocsFiles": 672,
+    "guide": "# Daylight 演示交付包\n\n需要 Node.js >=22.19 和 npm。\n\n```sh\nnpm ci\nnpm run demo -- --no-build\n```\n\n打开 http://127.0.0.1:3180/login，点击「进入演示工作区」。预置数据不调用真实邮箱、模型或 SMTP。\n\n云端部署：docs/delivery/cloud-deployment.md。演示脚本：docs/delivery/demo-script.md。验证与证据：delivery-evidence/summary.json。\n\n交付包包含当前工作区源码及构建产物，版本和逐文件校验见 DELIVERY-MANIFEST.json。node_modules 不随包分发，首次 npm ci 需要联网。\n"
+  },
+  "after": {
+    "archive": "daylight-demo-20261103T233654.tar.gz",
+    "archiveBytes": 112500706,
+    "sha256": "46a5570589a94a35fa3542173bedb66d401180b91fec60e267f8b7c3a27dad24",
+    "sourceCommit": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+    "sourceDigest": "99e52b04c54b8cb6c8b0ce4bca90bddbdb6e79224215d99c38d7bc7644a5cd62",
+    "buildDigest": "f156f96fd51b2f4d1d3b109cfc073242016f208ae0ac23fbbbe7ffc4c07c69ec",
+    "filesInInventory": 2345,
+    "archiveFilesIncludingManifest": 2346,
+    "startGuideInInventory": true,
+    "checkCommandIncluded": true,
+    "sevenStepEntryInGuide": true,
+    "experienceSourceIncluded": true,
+    "chapterVideoIncluded": true,
+    "resumeStepQrIncluded": true,
+    "distFiles": 633,
+    "sourceAndDocsFiles": 1706,
+    "guide": "# Daylight 竞赛交付包\n\n源码版本：`fc3ae1de6002bc56d1b4ca2038097862e62e40fe`。需要 Node.js >=22.19 和 npm。\n\n## 1. 校验文件\n\n在解压目录执行：\n\n```sh\nnode scripts/verify-delivery.mjs . --out work/package-integrity.json\n```\n\n校验覆盖源码、构建、说明和五阶段验证日志。拿到交付包时，先核对随包提供的 SHA-256。\n\n## 2. 安装与启动\n\n```sh\nnpm ci\nnpm run demo -- --no-build\n```\n\n打开 http://127.0.0.1:3180/experience，免登录走完七步体验。\n\n- 技术与实测：http://127.0.0.1:3180/evidence\n- 分章讲解：http://127.0.0.1:3180/demo\n- 完整工作区：http://127.0.0.1:3180/login，点击「进入演示工作区」\n\n演示使用独立样例数据，邮件提取采用预置结果，工具当场执行。实时邮箱、模型和 SMTP 由演示模式关闭。每次启动在 work 下新建数据目录；Ctrl+C 结束。\n\n## 3. 重新验证与部署\n\n```sh\nnpm run verify\n```\n\n五阶段原始结果：delivery-evidence/summary.json。部署方式：docs/delivery/cloud-deployment.md；现场脚本：docs/delivery/demo-script.md。\n\n公网体验：https://daylight.yunforis.com/experience。node_modules 由首次联网安装取得，源码和构建的完整清单见 DELIVERY-MANIFEST.json。\n"
+  }
+}

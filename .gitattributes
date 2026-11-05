@@ -1,0 +1,51 @@
+# Keep published measurement bytes stable across Git checkouts on Windows and Linux.
+*.sh text eol=lf
+src/data/competition-evidence.json text eol=lf
+
+docs/competition-container-2026-11-04/evidence/** -text -whitespace
+public/competition/container-assets/evidence/** -text -whitespace
+docs/competition-container-2026-11-04/container-prompt.txt -text
+docs/competition-container-2026-11-04/image-generation.json -text -whitespace
+public/competition/container-assets/container-prompt.txt -text
+public/competition/container-assets/image-generation.json -text -whitespace
+
+docs/competition-continuity-2026-11-04/evidence/** -text -whitespace
+public/competition/continuity-assets/evidence/** -text -whitespace
+docs/competition-continuity-2026-11-04/continuity-prompt.txt -text
+docs/competition-continuity-2026-11-04/image-generation.json -text -whitespace
+public/competition/continuity-assets/continuity-prompt.txt -text
+public/competition/continuity-assets/image-generation.json -text -whitespace
+
+docs/competition-recovery-2026-11-04/evidence/** -text -whitespace
+public/competition/recovery-assets/evidence/** -text -whitespace
+docs/competition-recovery-2026-11-04/recovery-prompt.txt -text
+docs/competition-recovery-2026-11-04/image-generation.json -text -whitespace
+public/competition/recovery-assets/recovery-prompt.txt -text
+public/competition/recovery-assets/image-generation.json -text -whitespace
+
+docs/competition-rag-2026-11-04/evidence/** -text -whitespace
+public/competition/rag-assets/evidence/** -text -whitespace
+docs/competition-submission-2026-11-04/evidence/** -text -whitespace
+docs/competition-submission-2026-11-04/technical-report.md -text
+public/competition/submission-assets/evidence/** -text -whitespace
+public/competition/technical-report.pdf binary
+
+# Inputs and screenshots for the current unified report retain their exact bytes.
+docs/competition-video-2026-11-04/evidence/runtime-verification-v14.json -text -whitespace
+docs/competition-video-2026-11-04/evidence/release-v14-manifest.json -text -whitespace
+docs/competition-video-2026-11-04/evidence/public-verification-v14.json -text -whitespace
+docs/competition-video-2026-11-04/evidence/static-verification-v14.json -text -whitespace
+docs/competition-video-2026-11-04/evidence/media-inventory.json -text -whitespace
+docs/competition-video-2026-11-04/evidence/candidate-media-checks-v14.json -text -whitespace
+docs/competition-reply-2026-11-04/evidence/postgres-verification.json -text -whitespace
+docs/competition-value-2026-11-04/evidence/summary.json -text -whitespace
+docs/competition-2026-11-04/evidence/cost-estimate.json -text -whitespace
+docs/competition-2026-11-03/generation-and-budget.md -text
+docs/competition-report-refresh-2026-11-04/evidence/** -text -whitespace
+public/competition/report-refresh-assets/evidence/** -text -whitespace
+docs/competition-rag-latency-2026-11-04/evidence/** -text -whitespace
+public/competition/rag-latency-assets/evidence/** -text -whitespace
+docs/competition-rag-latency-2026-11-04/latency-prompt.txt -text
+docs/competition-rag-latency-2026-11-04/image-generation.json -text -whitespace
+public/competition/rag-latency-assets/latency-prompt.txt -text
+public/competition/rag-latency-assets/image-generation.json -text -whitespace

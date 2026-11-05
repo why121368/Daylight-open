@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-03T19:14:49.420Z",
+  "checks": [
+    {
+      "page": "evidence",
+      "url": "https://daylight.yunforis.com/evidence#value",
+      "methodLink": [
+        {
+          "height": 44,
+          "text": "用户对照方法、工具与真实模型预检"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "page": "value-report",
+      "url": "https://daylight.yunforis.com/competition/value-report.html",
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/value-assets/assets/study-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1425,
+          "src": "/competition/value-assets/assets/study-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-editor.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-analysis.png"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "page": "value-report-desktop",
+      "url": "https://daylight.yunforis.com/competition/value-report.html#%E5%AF%B9%E7%85%A7%E6%B5%81%E7%A8%8B%E5%9B%BE",
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1425
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375
+        }
+      ],
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "methodLinkNavigation": true,
+  "tocNavigation": {
+    "text": "对照流程图",
+    "top": 20.15625
+  },
+  "originalImage": {
+    "images": [
+      {
+        "complete": true,
+        "naturalHeight": 1024,
+        "naturalWidth": 1536
+      }
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "csvDownload": {
+    "filename": "calls.csv",
+    "bytes": 780,
+    "sha256": "a1e0d9971e05371ebbbd06a1ad2d2211c56021b9d67320b3ed265a949a8c8dbf"
+  }
+}

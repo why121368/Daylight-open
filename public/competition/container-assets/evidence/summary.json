@@ -1,0 +1,24 @@
+{
+  "baselineCommit": "30903e66071d58bb97ae96040a86fd265ec343d9",
+  "before": {
+    "defaultRegistryExit": 1,
+    "officialMirrorBuildExit": 1,
+    "missingFrontendEvidenceSources": 5,
+    "mirrorFailureSeconds": 48.5193815
+  },
+  "after": {
+    "fullSourceBuildExit": 0,
+    "firstFullRuntimeBuildSeconds": 159.0265949,
+    "linuxSourceTests": 8,
+    "publicHttpChecks": 115,
+    "realJobsChecks": 8,
+    "realObjectStorageChecks": 14,
+    "healthyLongRunningServices": 7,
+    "initServicesExitZero": 2,
+    "adaptedComposeSeconds": 20.7784849
+  },
+  "scope": "First full-source candidate; image 29d4d31 includes initial public evidence snapshot. Final publication uses a separate immutable source and image record.",
+  "newTextModelCalls": 0,
+  "newImageCalls": 1,
+  "newCloudPurchasesCny": 0
+}

@@ -1,0 +1,188 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分章视频与手机讲稿优化 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="分章视频与手机讲稿优化">分章视频与手机讲稿优化</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#分章视频与手机讲稿优化">分章视频与手机讲稿优化</a><ul>
+<li><a href="#目标与改前观察">目标与改前观察</a></li>
+<li><a href="#前后对照">前后对照</a></li>
+<li><a href="#技术选型与设计逻辑">技术选型与设计逻辑</a><ul>
+<li><a href="#原生视频与响应式页面">原生视频与响应式页面</a></li>
+<li><a href="#同一时间轴生成所有资料">同一时间轴生成所有资料</a></li>
+<li><a href="#加载失败与恢复">加载失败与恢复</a></li>
+</ul>
+</li>
+<li><a href="#电脑与手机结果">电脑与手机结果</a></li>
+<li><a href="#媒体与资源测量">媒体与资源测量</a></li>
+<li><a href="#复现与验证">复现与验证</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026 年 11 月 4 日，北京时间。<a href="https://daylight.yunforis.com/demo">分章播放器</a> · <a href="/competition/demo-transcript.html">十二章完整讲稿</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a>。</p>
+<p><strong>v14已发布：</strong>候选production29/29、正式HTTPS66项、116份关联资料与三角色各470份运行文件核对通过；完整前端445份。正式390/320/1440px页面、选章播放与MP4浏览器下载通过，8服务healthy。<a href="/competition/video-release-v14.html">发布过程、运行指标与正式手机截图</a>。</p>
+<h2 id="目标与改前观察">目标与改前观察</h2>
+<p>评委观看三分钟演示时，需要快速找到场景结果、Agent 工具、架构与性能。原技术页直接链接 MP4，手机浏览器会进入原生视频页面：390px 竖屏里横向画面较小，图内讲解文字随画面缩小；查看相关技术证据需要再返回技术页。</p>
+<p>本轮增加 <code>/demo</code> 分章页面。视频与当前讲稿一起呈现，十二章支持一键定位；每章提供对应的业务或实测资料。手机用原生章节选择器，桌面用右侧完整目录。</p>
+<h2 id="前后对照">前后对照</h2>
+<p><img alt="手机视频观看改前与改后" src="/competition/video-assets/assets/mobile-comparison.jpg"></p>
+<table>
+<thead>
+<tr>
+<th>观察项</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术页视频入口</td>
+<td>直接打开 MP4</td>
+<td>进入站内分章播放器</td>
+</tr>
+<tr>
+<td>手机阅读</td>
+<td>随视频缩小的画内文字</td>
+<td>视频下方 14px 正文、28px 行高的同步讲稿</td>
+</tr>
+<tr>
+<td>定位内容</td>
+<td>拖动原生时间进度条</td>
+<td>12 章按时间命名，手机选择器、桌面目录</td>
+</tr>
+<tr>
+<td>选章后的播放意图</td>
+<td>原生拖动进度</td>
+<td>保持原有播放或暂停状态</td>
+</tr>
+<tr>
+<td>分享具体内容</td>
+<td>整个 MP4 地址</td>
+<td><code>/demo?chapter=architecture</code> 等固定章节链接</td>
+</tr>
+<tr>
+<td>查证</td>
+<td>返回技术页查找</td>
+<td>当前章节直接连接来源与实测报告</td>
+</tr>
+<tr>
+<td>资源异常</td>
+<td>原生媒体错误</td>
+<td>明确提示、重试加载、完整讲稿和下载入口</td>
+</tr>
+<tr>
+<td>字幕与讲稿</td>
+<td>烧录中文字幕</td>
+<td>保留画内字幕，增加 WebVTT、完整文字稿与同步正文</td>
+</tr>
+<tr>
+<td>媒体体积</td>
+<td>MP4 1,431,534 bytes</td>
+<td>同一 MP4；新增海报 61,383 bytes</td>
+</tr>
+</tbody>
+</table>
+<p>这些变化改善观看、阅读与查证路径。功能操作和尺寸数据随下文归档。</p>
+<h2 id="技术选型与设计逻辑">技术选型与设计逻辑</h2>
+<h3 id="原生视频与响应式页面">原生视频与响应式页面</h3>
+<p>使用浏览器原生 <code>&lt;video controls playsInline preload="metadata"&gt;</code>，页面通过 React 懒加载。原生播放器提供进度、全屏、字幕和平台播放能力；<code>playsInline</code> 提供页面内播放提示，文字仍可在播放器下阅读。桌面保留右侧章节目录，手机使用 44px 原生选择器，便于在小屏快速定位。</p>
+<p>播放由用户点击启动，章节选择修改 <code>currentTime</code>，沿用已有播放状态。页面从媒体的 <code>play</code>、<code>pause</code>、<code>timeupdate</code>、<code>ended</code> 事件更新界面，讲稿按当前实际播放时间切换。自定义按钮采用现有 shadcn Button，保持站点主题和键盘焦点样式。</p>
+<h3 id="同一时间轴生成所有资料">同一时间轴生成所有资料</h3>
+<p>原始 <a href="/competition/report-assets/evidence/video-manifest.json">视频 manifest</a> 保存十二幅画面的标题、15 秒时长与中文讲解。<code>npm run demo:assets</code> 从这份记录生成：</p>
+<ul>
+<li>React 与公开下载共用的 <a href="/competition/demo-chapters.json">章节 JSON</a>。</li>
+<li><a href="/competition/demo-zh.vtt">中文字幕 WebVTT</a> 与 <a href="/competition/demo-chapters.vtt">原生章节 WebVTT</a>。</li>
+<li><a href="/competition/demo-transcript.html">完整 Markdown 讲稿</a>、<a href="/competition/demo-transcript.txt">纯文字下载</a>与响应式 HTML。</li>
+<li>1200×675 JPEG 海报，以及 <a href="/competition/video-assets/evidence/media-inventory.json">媒体字节、摘要和 MP4 结构记录</a>。</li>
+</ul>
+<p>章节时间区间采用 <code>[start, end)</code>，最后一个编码帧归最后一章。共享链接按固定 ID 查找章节，未知 ID 从首章开始。元数据尚未加载时保存待定位时间，收到 <code>loadedmetadata</code> 后完成跳转。刷新和浏览器返回都会恢复链接中的章节。</p>
+<p>字幕默认关闭，画内已有烧录中文字幕；提供原生章节轨，页面讲稿独立呈现。原生字幕实测发现，暂停在章节交界会叠加相邻两段；现将每段字幕结束时间提前1毫秒，消除交界重叠。讲稿与字幕文本逐条对照原始manifest，验证同时覆盖每段字幕的时间边界。</p>
+<p><img alt="135秒交界：修正后只显示当前章的两行字幕" src="/competition/video-assets/assets/native-subtitles-fixed.jpg"></p>
+<p><a href="/competition/video-assets/assets/native-subtitles.jpg">修正前相邻两段叠加的实际画面</a>。实际浏览器中通过原生菜单选择“中文讲解”，在135秒暂停位置对照，结果与字幕文件的1毫秒间隔一致。</p>
+<h3 id="加载失败与恢复">加载失败与恢复</h3>
+<p>媒体错误后保留当前章节和讲稿，展示重试按钮。重试调用原生 <code>load()</code>，元数据加载后恢复当前章起点；继续播放由用户启动。下载 MP4 和完整文字稿入口持续可见。</p>
+<p>在本地受控代理中对视频返回 503，浏览器实际显示错误、禁用播放按钮并保留架构讲稿；恢复视频资源后点击重试，重新加载到 <strong>135 秒</strong>，保持暂停状态。</p>
+<p><img alt="媒体加载失败：讲稿与重试入口" src="/competition/video-assets/assets/media-error.jpg"></p>
+<h2 id="电脑与手机结果">电脑与手机结果</h2>
+<p><img alt="桌面播放器、当前讲稿与十二章目录" src="/competition/video-assets/assets/after-desktop.jpg"></p>
+<table>
+<thead>
+<tr>
+<th>尺寸</th>
+<th style="text-align: right;">页面内容宽度</th>
+<th style="text-align: right;">整页横向溢出</th>
+<th>可见主要控件高度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1440×900</td>
+<td style="text-align: right;">1425px</td>
+<td style="text-align: right;">0px</td>
+<td>播放、下载和证据入口 44px，章节按钮 48px</td>
+</tr>
+<tr>
+<td>390×844</td>
+<td style="text-align: right;">375px</td>
+<td style="text-align: right;">0px</td>
+<td>播放、下载、选择器与证据入口 44px</td>
+</tr>
+<tr>
+<td>320×760</td>
+<td style="text-align: right;">305px</td>
+<td style="text-align: right;">0px</td>
+<td>播放、下载、选择器与证据入口 44px</td>
+</tr>
+</tbody>
+</table>
+<p>内容宽度按浏览器 <code>documentElement.clientWidth</code> 记录，含浏览器纵向滚动条所占宽度的差值。</p>
+<p>浏览器操作覆盖播放与暂停、播放中选择架构章、暂停中选择性能章、章节链接刷新、浏览器返回、桌面直接进入数据流章，以及视频 503 后恢复。播放中跳转后实际时间为 135.2006 秒且继续播放；刷新恢复到 135 秒并保持暂停。每个操作记录实际媒体时间、讲稿标题与可见控件尺寸。</p>
+<p><a href="/competition/video-assets/evidence/browser-verification.json">本地浏览器原始记录</a> · <a href="/competition/video-assets/assets/after-320.jpg">320px 页面截图</a> · <a href="/competition/video-assets/evidence/unit-tests.txt">7项时间轴与媒体验证</a>。</p>
+<h2 id="媒体与资源测量">媒体与资源测量</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实际值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MP4</td>
+<td>1920×1080，1,431,534 bytes</td>
+</tr>
+<tr>
+<td>原始时间轴</td>
+<td>180 秒，12 章，每章 15 秒</td>
+</tr>
+<tr>
+<td>MP4 movie header 时长</td>
+<td>179.917 秒；浏览器报告 179.916667 秒</td>
+</tr>
+<tr>
+<td>时长差</td>
+<td>0.083 秒，约 1 个 12fps 帧</td>
+</tr>
+<tr>
+<td>快速起播</td>
+<td><code>moov</code> 从第 32 byte 开始，位于 <code>mdat</code> 之前</td>
+</tr>
+<tr>
+<td>JPEG 海报</td>
+<td>1200×675，61,383 bytes</td>
+</tr>
+<tr>
+<td>MP4 SHA-256</td>
+<td><code>a1fd4dfbf4130a9ab83d5163bed71c4fc570d9870e34825cce0d800aca068a13</code></td>
+</tr>
+</tbody>
+</table>
+<p>保留现有 H.264 视频及 fast-start 结构，观看页只增加轻量章节、字幕、海报与讲稿。主入口按 metadata 预加载，浏览器根据自身媒体策略请求视频；实际流量与起播时间可从部署后的请求记录核对。</p>
+<p>本轮文字模型、图片生成、SMTP 与新增云采购均为 <strong>0</strong>。截图来自实际页面；沿用现有工程图。文本模型累计 42 次、公开价估算 ¥0.406820，图片累计 10 次，预算上限继续为 ¥500。</p>
+<h2 id="复现与验证">复现与验证</h2>
+<pre><code class="language-sh">npm run demo:assets
+python scripts/competition-public-report.py --only demo-transcript.html --only video-report.html --only reply-release-v13.html --only reproduce.html
+node --test server/demo-video.test.js
+npm run build
+npm run demo -- --no-build --port 3194
+</code></pre>
+<p>打开 <code>/demo</code> 或 <code>/demo?chapter=architecture</code>。7 项定向验证覆盖连续时间轴、边界与最后一帧、章节参数、打包与公开数据一致、VTT、实际 MP4 摘要与 fast-start，以及讲稿内容。视频、海报、字幕、JSON 与报告由 HTTPS 复查脚本核对 MIME、Range 和逐文件摘要。</p>
+<p>实现入口：<code>src/pages/demo-page.jsx</code>、<code>shared/demo-video.js</code>、<code>scripts/competition-video-assets.mjs</code>。页面从技术页视频卡、体验页次要链接和公开页页脚进入。</p></main></html>

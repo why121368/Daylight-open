@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-03T15:46:09.083Z",
+  "origin": "https://daylight.yunforis.com",
+  "assertions": {
+    "statuses": [
+      "completed",
+      "conflict",
+      "completed",
+      "duplicate",
+      "failed",
+      "completed",
+      "completed"
+    ],
+    "cancelledEvents": 2,
+    "tasks": 1,
+    "modelCalls": 0,
+    "persisted": false
+  },
+  "checks": [
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "bytes": 157,
+      "sha256": "f5b90bd28a317335a507eb6e524ef40b930953be51fd9d107663289426129ed8",
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/state",
+      "status": 401,
+      "bytes": 24,
+      "sha256": "9ae5df81a66150b59c285b977d88c172ec17a2d4e79f7b0c6c7d234513589abf",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/experience?step=8",
+      "status": 400,
+      "bytes": 78,
+      "sha256": "92184e721040abb951c7e1251f0d4288cb4f4fa1e3a7fb22db9184bdb2614d22",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/experience",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "83aba30bdd00c9222b69be44f9b19c516ffa48648a350435694e7714db68874c",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/evidence",
+      "status": 200,
+      "bytes": 3426,
+      "sha256": "83aba30bdd00c9222b69be44f9b19c516ffa48648a350435694e7714db68874c",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/competition/architecture.webp",
+      "status": 200,
+      "bytes": 145242,
+      "sha256": "c8327608e14741e4e3d8a54cee5021277c37ce6cc86340b4872afc5ad7d0b9e4",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/dataflow.webp",
+      "status": 200,
+      "bytes": 117296,
+      "sha256": "74ba0623847e51a4a23b7927408e5b376c383f3972d8fb8ec530cd5ef004e248",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/performance.webp",
+      "status": 200,
+      "bytes": 60870,
+      "sha256": "d0db189f1bd3053dfd9384724793ceb0badeb7e2996e59f56606773885b9feab",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/competition/experience-qr.png",
+      "status": 200,
+      "bytes": 4485,
+      "sha256": "6ab3f31787c5667870ca2203dc8f320b2689c887ebb6753ff9c5ec261eb6bf34",
+      "contentType": "image/png"
+    },
+    {
+      "path": "/competition/demo.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-31/1431534"
+    }
+  ],
+  "scope": "Anonymous public synthetic workflow, HTTPS resources, private-state denial, video range, exact local image bytes."
+}

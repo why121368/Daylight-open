@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-11-04T00:56:16.368164+00:00",
+  "ok": true,
+  "scope": "post-release handoff documentation and existing raw evidence consistency",
+  "releaseSourceCommit": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a",
+  "archiveBranch": "feat/competition-experience-20261103",
+  "checks": [
+    {
+      "name": "fixed-source",
+      "ok": true,
+      "detail": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a"
+    },
+    {
+      "name": "complete-gate",
+      "ok": true,
+      "detail": "five stages; 1051/1021/30/0"
+    },
+    {
+      "name": "source-image",
+      "ok": true,
+      "detail": {
+        "tag": "daylight:source-release-20261104-v22-final",
+        "id": "sha256:551cf718c2f5198fe5c6b57c20ff0218e287e20d74c480a245cf1b0b81737fcd",
+        "bytes": 1144592376,
+        "platform": "linux/amd64"
+      }
+    },
+    {
+      "name": "public-inventory",
+      "ok": true,
+      "detail": "120 HTTPS; 330 resources"
+    },
+    {
+      "name": "browser-records",
+      "ok": true,
+      "detail": "9 layouts; 11 interactions; 0 console errors"
+    },
+    {
+      "name": "archived-original-bytes",
+      "ok": true,
+      "detail": {
+        "files": 46
+      }
+    },
+    {
+      "name": "local-portable-package",
+      "ok": true,
+      "detail": "8495c32bb81f65696f30a77dacee2b59bb21027a0adac32134786d981f9c0d0e"
+    },
+    {
+      "name": "json-parse",
+      "ok": true,
+      "detail": {
+        "files": 36
+      }
+    },
+    {
+      "name": "document-local-links",
+      "ok": true,
+      "detail": {
+        "checked": 373,
+        "missing": []
+      }
+    },
+    {
+      "name": "handoff-version-values",
+      "ok": true,
+      "detail": "source, package hash and both image IDs match raw records"
+    },
+    {
+      "name": "unfinished-work-present",
+      "ok": true,
+      "detail": "participant, device, source access, submission, report, bill"
+    },
+    {
+      "name": "rollback-shell-syntax",
+      "ok": true,
+      "detail": {
+        "exitCode": 0,
+        "mode": "parse only; rollback not executed"
+      }
+    },
+    {
+      "name": "local-cleanup",
+      "ok": true,
+      "detail": "9 temporary containers and 5 test volumes removed; other container IDs unchanged"
+    },
+    {
+      "name": "final-cloud-health",
+      "ok": true,
+      "detail": "2026-11-04T00:52:17.368407+00:00"
+    },
+    {
+      "name": "handoff-credential-patterns",
+      "ok": true,
+      "detail": {
+        "matches": 0,
+        "scope": "handoff documents and archived text; PEM private keys, AWS access IDs, API token prefixes"
+      }
+    },
+    {
+      "name": "git-diff-whitespace",
+      "ok": true,
+      "detail": {
+        "exitCode": 0
+      }
+    }
+  ],
+  "newModelCalls": 0,
+  "newImageCalls": 0,
+  "newCloudPurchasesCny": 0
+}

@@ -1,0 +1,7 @@
+daylight-container-20261104-worker-1 79.65MiB / 7.686GiB 10.61%
+daylight-container-20261104-scheduler-1 76.24MiB / 7.686GiB 14.56%
+daylight-container-20261104-api-1 102MiB / 7.686GiB 19.35%
+daylight-container-20261104-minio-1 234.9MiB / 7.686GiB 1.80%
+daylight-container-20261104-rabbitmq-1 148.4MiB / 7.686GiB 0.20%
+daylight-container-20261104-postgres-1 73.03MiB / 7.686GiB 0.98%
+daylight-container-20261104-redis-1 14.11MiB / 7.686GiB 0.27%

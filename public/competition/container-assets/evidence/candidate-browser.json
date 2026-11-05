@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "name": "seven-step-sequence",
+      "ok": true,
+      "steps": [
+        {
+          "step": 2,
+          "url": "http://127.0.0.1:3206/experience?step=2",
+          "visibleResult": true
+        },
+        {
+          "step": 3,
+          "url": "http://127.0.0.1:3206/experience?step=3",
+          "visibleResult": true
+        },
+        {
+          "step": 4,
+          "url": "http://127.0.0.1:3206/experience?step=4",
+          "visibleResult": true
+        },
+        {
+          "step": 5,
+          "url": "http://127.0.0.1:3206/experience?step=5",
+          "visibleResult": true
+        },
+        {
+          "step": 6,
+          "url": "http://127.0.0.1:3206/experience?step=6",
+          "visibleResult": true
+        },
+        {
+          "step": 7,
+          "url": "http://127.0.0.1:3206/experience?step=7",
+          "visibleResult": true
+        }
+      ]
+    },
+    {
+      "name": "step7-layout-1440",
+      "ok": true,
+      "layout": {
+        "images": true,
+        "progress": "7",
+        "scrollWidth": 1425,
+        "width": 1440
+      }
+    },
+    {
+      "name": "step7-layout-390",
+      "ok": true,
+      "layout": {
+        "images": true,
+        "progress": "7",
+        "scrollWidth": 375,
+        "width": 390
+      }
+    },
+    {
+      "name": "step7-layout-320",
+      "ok": true,
+      "layout": {
+        "images": true,
+        "progress": "7",
+        "scrollWidth": 305,
+        "width": 320
+      }
+    }
+  ],
+  "errors": []
+}

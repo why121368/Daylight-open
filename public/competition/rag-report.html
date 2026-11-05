@@ -1,0 +1,406 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>邮件问答的上下文、原文引用与手机交互优化 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="邮件问答的上下文原文引用与手机交互优化">邮件问答的上下文、原文引用与手机交互优化</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#邮件问答的上下文原文引用与手机交互优化">邮件问答的上下文、原文引用与手机交互优化</a><ul>
+<li><a href="#本轮结果">本轮结果</a></li>
+<li><a href="#优化前的问题与原因">优化前的问题与原因</a><ul>
+<li><a href="#检索命中了回答仍缺少后半段内容">检索命中了，回答仍缺少后半段内容</a></li>
+<li><a href="#回答下方的来源与具体结论缺少对应关系">回答下方的来源与具体结论缺少对应关系</a></li>
+<li><a href="#页面位置与异步状态影响使用">页面位置与异步状态影响使用</a></li>
+</ul>
+</li>
+<li><a href="#设计与技术选型">设计与技术选型</a><ul>
+<li><a href="#1-展示摘录与回答上下文分别处理">1. 展示摘录与回答上下文分别处理</a></li>
+<li><a href="#2-结论来源和摘句使用同一份协议">2. 结论、来源和摘句使用同一份协议</a></li>
+<li><a href="#3-请求结果有明确的状态">3. 请求结果有明确的状态</a></li>
+<li><a href="#4-视图版本与邮箱范围一起管理">4. 视图版本与邮箱范围一起管理</a></li>
+<li><a href="#5-继续使用现有分块与存储边界">5. 继续使用现有分块与存储边界</a></li>
+</ul>
+</li>
+<li><a href="#真实模型前后对照">真实模型前后对照</a><ul>
+<li><a href="#测量条件">测量条件</a></li>
+<li><a href="#逐例结果">逐例结果</a></li>
+<li><a href="#质量延迟与成本的取舍">质量、延迟与成本的取舍</a></li>
+</ul>
+</li>
+<li><a href="#模型成本与预算">模型成本与预算</a></li>
+<li><a href="#电脑与手机效果">电脑与手机效果</a><ul>
+<li><a href="#桌面回答和原信连在一起">桌面：回答和原信连在一起</a></li>
+<li><a href="#手机入口在前内容按需展开">手机：入口在前、内容按需展开</a></li>
+<li><a href="#异常与切换范围">异常与切换范围</a></li>
+</ul>
+</li>
+<li><a href="#验证与复现">验证与复现</a><ul>
+<li><a href="#定向检查">定向检查</a></li>
+<li><a href="#重跑真实模型对照">重跑真实模型对照</a></li>
+<li><a href="#重现页面夹具">重现页面夹具</a></li>
+<li><a href="#原始资料">原始资料</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>记录日期：<strong>2026-11-04，北京时间</strong>。本轮围绕一个具体问题展开：用户记得通知的大意，需要一次找齐截止时间、报到地点和附件材料，并能立即回到原文核对。</p>
+<p><a href="https://daylight.yunforis.com/app/mail">公网工作区</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a> · <a href="https://daylight.yunforis.com/experience">三分钟体验</a></p>
+<p><strong>v9 已发布：</strong>8 服务 healthy，三角色均启用指标采集、丢样 0；候选 RAG 33/33、运行与七步体验 29/29、真实 PostgreSQL 独立空间 8/8，公网 38 项检查通过。<a href="/competition/rag-deployment.html">完整验证、备份、镜像与发布记录</a>。</p>
+<h2 id="本轮结果">本轮结果</h2>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>改进</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景价值</td>
+<td>长通知后半段和附件里的关键信息进入回答上下文，减少反复翻信</td>
+<td>固定案例内容检查 <strong>6/8 → 8/8</strong>；改善来自长邮件与长附件两例</td>
+</tr>
+<tr>
+<td>Agent 与 RAG</td>
+<td>结论携带来源编号与逐字摘句，服务端核对后生成引用；信息不足时给出明确结果</td>
+<td>结构化协议、校验器与定向测试；14 次真实模型调用</td>
+</tr>
+<tr>
+<td>多邮箱状态</td>
+<td>切换检索范围后清理旧会话，请求完成时核对视图版本</td>
+<td>9 秒延迟响应期间切换邮箱的浏览器验收</td>
+</tr>
+<tr>
+<td>电脑与手机</td>
+<td>桌面输入按钮完整显示；手机入口移到邮件列表前，支持折叠；引用编号 44px</td>
+<td>1440、390、320px 浏览器检查与实际页面截图</td>
+</tr>
+<tr>
+<td>成本与性能</td>
+<td>来源内容和输出数量设上限，每次问答一次模型请求，保留逐例 Token 和耗时</td>
+<td>两组各 7 次模型调用；公开价估算合计 <strong>¥0.032466</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="优化前的问题与原因">优化前的问题与原因</h2>
+<h3 id="检索命中了回答仍缺少后半段内容">检索命中了，回答仍缺少后半段内容</h3>
+<p>检索器返回完整 <code>hits.content</code>，同时为界面生成最多约 280 字的 <code>citation.quote</code>。原问答实现把这个短摘录作为模型输入。长通知前面重复介绍流程、最后给出截止时间时，检索已经找到正确分块，模型却看不到截止时间。</p>
+<p>附件也有同样的情况：原文要求位于块内后半段，展示摘录截断了材料清单。旧版在两个固定案例中都回答“没有找到”，新版分别回答 <strong>11 月 6 日 17:00</strong>、<strong>学生证原件和本人签名的保密协议</strong>。</p>
+<h3 id="回答下方的来源与具体结论缺少对应关系">回答下方的来源与具体结论缺少对应关系</h3>
+<p>旧版接受模型自由文本，并附上全部检索命中。新版让模型逐条给出结论、来源编号和原文摘句，服务端把实际使用的来源装配为 <code>[1]</code>、<code>[2]</code> 等引用，用户能逐条返回原信。</p>
+<h3 id="页面位置与异步状态影响使用">页面位置与异步状态影响使用</h3>
+<ul>
+<li>桌面知识卡高度未扣除顶部布局，底部“查找”按钮可能落到视口外。</li>
+<li>手机知识卡位于每页 20 封邮件之后，需要长距离滚动。</li>
+<li>检索请求进行中切换邮箱，旧请求的完成回调会继续更新当前组件。</li>
+<li>一些历史邮件缺少处理时间，日期格式化抛出异常，打开原信时进入错误页。</li>
+</ul>
+<h2 id="设计与技术选型">设计与技术选型</h2>
+<p><a href="/competition/rag-assets/images/rag-evidence-flow.png"><img alt="RAG evidence flow: before and after" src="/competition/rag-assets/images/rag-evidence-flow.webp"></a></p>
+<p>图片使用 <strong>gpt-image-2.5</strong>、1536×1024、high 生成，最终采用英文标签；<a href="/competition/rag-assets/rag-prompt.txt">完整提示词</a> 随仓库保存。页面加载 117 KB 的 WebP，点击可查看 PNG 原图。中文设计说明见本节。</p>
+<h3 id="1-展示摘录与回答上下文分别处理">1. 展示摘录与回答上下文分别处理</h3>
+<p><code>buildAnswerSources</code> 从命中分块的 <code>content</code> 构造上下文，短摘录继续用于检索列表。默认最多 6 个来源，允许上限 8 个；单来源最多 1,200 字，全部来源正文合计最多 6,400 字。超长历史分块围绕命中摘录截取。</p>
+<p>这些限制覆盖本项目当前的短邮件、通知和附件分块，也为异常长数据设定稳定的输入规模。来源文件名另限 200 字。字符上限用于限制内容规模，实际计费按模型返回的 Token 统计。</p>
+<h3 id="2-结论来源和摘句使用同一份协议">2. 结论、来源和摘句使用同一份协议</h3>
+<p>模型读取编号为 <code>S1</code>、<code>S2</code> 等的来源，返回如下 JSON：</p>
+<pre><code class="language-json">{
+  &quot;answerable&quot;: true,
+  &quot;claims&quot;: [{
+    &quot;text&quot;: &quot;报到时需携带校园卡与纸质录取通知书。&quot;,
+    &quot;evidence&quot;: [{
+      &quot;sourceId&quot;: &quot;S2&quot;,
+      &quot;quote&quot;: &quot;星河项目报到时需携带校园卡与纸质录取通知书。&quot;
+    }]
+  }]
+}
+</code></pre>
+<p>服务端逐项检查：来源编号属于本次检索；摘句逐字存在于指定来源；每条结论有依据；结论最多 6 条、每条依据最多 3 条、不同摘句合计最多 8 条。结论最多 600 字，摘句 4–500 字。重复的“来源＋摘句”共用引用编号。</p>
+<p>服务端清理模型自行填写的数字引用，按结论顺序生成最终编号，返回实际使用的来源。UI 使用“<strong>原文摘句已核对</strong>”描述这项检查。用户通过原信继续核对结论含义、上下文和后续通知。</p>
+<h3 id="3-请求结果有明确的状态">3. 请求结果有明确的状态</h3>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>服务端结果</th>
+<th>页面行为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结论与摘句检查通过</td>
+<td><code>mode=model</code>、<code>evidenceStatus=verified_quotes</code></td>
+<td>展示回答、编号和实际摘句</td>
+</tr>
+<tr>
+<td>来源无法回答问题</td>
+<td><code>evidenceStatus=insufficient</code></td>
+<td>提示补充关键词或调整范围，引用为空</td>
+</tr>
+<tr>
+<td>来源编号或摘句不符合协议</td>
+<td><code>fallbackReason=citation_validation</code></td>
+<td>展示检索原文及状态说明</td>
+</tr>
+<tr>
+<td>模型请求失败</td>
+<td><code>fallbackReason=model_error</code></td>
+<td>显示“模型问答暂时不可用”，继续展示原文</td>
+</tr>
+<tr>
+<td>未配置模型或没有检索命中</td>
+<td>原有关键词检索结果</td>
+<td>提供原文或引导同步、入库</td>
+</tr>
+</tbody>
+</table>
+<p>问答关闭 JSON 修复追加请求，每次最多调用模型一次。来源状态通过现有 API 返回，前端展示状态与引用。</p>
+<h3 id="4-视图版本与邮箱范围一起管理">4. 视图版本与邮箱范围一起管理</h3>
+<p>前端为当前邮箱／混合范围维护递增的 <code>scopeEpoch</code>。范围改变后清空消息、忙碌和错误状态；检索、入库和启用向量的回调只更新发起时对应的视图版本。服务端检索继续复用现有邮箱授权与索引范围。</p>
+<h3 id="5-继续使用现有分块与存储边界">5. 继续使用现有分块与存储边界</h3>
+<p>改动位于 RAG 回答装配层和界面，不需要新增云服务。线上继续使用 API / Worker / Scheduler、PostgreSQL、Redis、RabbitMQ 与私有对象存储的现有拓扑。回答来源携带 <code>mailboxId</code>、<code>emailId</code>、附件与页码，复用原有邮件详情和附件预览。</p>
+<table>
+<thead>
+<tr>
+<th>代码入口</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/server/rag/answer-evidence.js">answer-evidence.js</a></td>
+<td>有界来源、逐字摘句校验、引用编号</td>
+</tr>
+<tr>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/server/rag/ask.js">ask.js</a></td>
+<td>Prompt、一次模型请求、结果状态与原文返回</td>
+</tr>
+<tr>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/src/pages/mail-page.jsx">mail-page.jsx</a></td>
+<td>范围版本、消息状态、响应式知识卡</td>
+</tr>
+<tr>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/src/components/rag-citations.jsx">rag-citations.jsx</a></td>
+<td>44px 引用编号、摘句切换、打开原信</td>
+</tr>
+<tr>
+<td><a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/src/lib/time.js">time.js</a></td>
+<td>缺失或无效日期显示 <code>—</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="真实模型前后对照">真实模型前后对照</h2>
+<h3 id="测量条件">测量条件</h3>
+<ul>
+<li>时间：2026-11-04 <strong>01:11:41–01:12:23（UTC+08:00）</strong>。</li>
+<li>原创合成邮件、附件提取文本，共 8 个案例；每例每版本运行一次，按案例交替先后顺序。</li>
+<li>原版取自提交 <code>924373e</code> 的 <code>server/rag/ask.js</code>，临时文件仅调整 import 路径和用量采集参数；新版源码摘要随 manifest 保存。</li>
+<li>模型：<code>deepseek-v4.1-flash</code>，ModelVerse 兼容接口；Windows、Node v24.14.0。</li>
+<li>新建独立本地索引，<strong>关键词检索，Embedding 关闭</strong>。本次对照测量回答上下文和引用机制；输入包括附件提取文本。</li>
+<li>两组各 7 次真实模型调用，另各 1 次空库查询，共 14 次；每次调用保存原始回答、引用、耗时和 usage。</li>
+<li>p50/p95 使用 nearest-rank。8 例含空库统计与仅 7 次模型请求分别列出。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">优化前</th>
+<th style="text-align: right;">优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固定案例内容检查</td>
+<td style="text-align: right;">6/8</td>
+<td style="text-align: right;">8/8</td>
+</tr>
+<tr>
+<td>引用邮箱范围检查</td>
+<td style="text-align: right;">8/8</td>
+<td style="text-align: right;">8/8</td>
+</tr>
+<tr>
+<td>实际模型调用</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>输入 Token</td>
+<td style="text-align: right;">1,708</td>
+<td style="text-align: right;">2,869</td>
+</tr>
+<tr>
+<td>输出 Token</td>
+<td style="text-align: right;">765</td>
+<td style="text-align: right;">2,149</td>
+</tr>
+<tr>
+<td>8 例全部查询 p50</td>
+<td style="text-align: right;">2,191.654 ms</td>
+<td style="text-align: right;">2,877.790 ms</td>
+</tr>
+<tr>
+<td>8 例全部查询 p95</td>
+<td style="text-align: right;">2,826.937 ms</td>
+<td style="text-align: right;">8,387.334 ms</td>
+</tr>
+<tr>
+<td>7 次模型查询 p50</td>
+<td style="text-align: right;">2,369.705 ms</td>
+<td style="text-align: right;">2,937.557 ms</td>
+</tr>
+<tr>
+<td>当前公开价估算</td>
+<td style="text-align: right;">¥0.009536</td>
+<td style="text-align: right;">¥0.022930</td>
+</tr>
+</tbody>
+</table>
+<h3 id="逐例结果">逐例结果</h3>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>检查内容</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长邮件后半段截止</td>
+<td>11 月 6 日 17:00</td>
+<td>未找到截止时间</td>
+<td>正确，摘句对应截止时间</td>
+</tr>
+<tr>
+<td>长附件后半段材料</td>
+<td>学生证原件、签名保密协议</td>
+<td>未找到两项材料</td>
+<td>正确，摘句对应材料清单</td>
+</tr>
+<tr>
+<td>改期通知</td>
+<td>11 月 7 日 14:30</td>
+<td>正确</td>
+<td>正确，引用后续改期通知</td>
+</tr>
+<tr>
+<td>两封邮件汇总</td>
+<td>地点、时间、校园卡、录取通知书</td>
+<td>正确</td>
+<td>正确，每条结论有引用</td>
+</tr>
+<tr>
+<td>未提供补贴金额</td>
+<td>说明没有金额</td>
+<td>正确</td>
+<td>正确，返回信息不足、无引用</td>
+</tr>
+<tr>
+<td>邮件夹带无关指令</td>
+<td>11 月 8 日 09:30</td>
+<td>正确，明确拒绝无关指令</td>
+<td>正确，引用有效报到时间</td>
+</tr>
+<tr>
+<td>另一邮箱同主题</td>
+<td>只使用当前邮箱的时间</td>
+<td>正确</td>
+<td>正确</td>
+</tr>
+<tr>
+<td>空库</td>
+<td>提示无相关片段</td>
+<td>正确</td>
+<td>正确，无模型请求</td>
+</tr>
+</tbody>
+</table>
+<p><strong>评分复核：</strong>初始关键词评分把旧版在拒绝说明中引用的“12 月 31 日”“已取得管理员权限”误计为执行了指令。复核原始回答后，将该例记为正确；最终为 <strong>6/8 → 8/8</strong>。原始输入与模型响应保留，修改发生在评分阶段，未追加模型调用。<a href="/competition/rag-assets/evidence/scoring-review.json">复核记录</a>、<a href="/competition/rag-assets/evidence/initial-summary.json">初始摘要</a> 和 <a href="/competition/rag-assets/evidence/initial-results.jsonl">初始逐例结果</a> 可逐项对照。</p>
+<p>返回摘句逐字存在于对应分块的案例数为 6/8 → 8/8（均含空库）。旧版两个长文摘录带截断省略号，影响逐字匹配；新版按模型实际使用的连续原文装配。该指标用于检查摘句完整性，结论内容另按上表核对。</p>
+<h3 id="质量延迟与成本的取舍">质量、延迟与成本的取舍</h3>
+<p>新版读取更多来源正文，同时生成结论与摘句，输入和输出 Token 随之增加。仅模型查询 p50 从 <strong>2.370 秒增至 2.938 秒</strong>；新版多来源例输出用量 970 Token、耗时 8.387 秒，是本批最长的一例。每组仅 7 次模型调用，p95 对应本组最大观测值。</p>
+<p>当前优先保证截止时间与材料信息可读、引用可核对。后续性能工作可从合并同一来源的相邻结论、缩短结构化输出，以及按来源版本缓存已回答问题入手，再用相同案例测量影响。</p>
+<h2 id="模型成本与预算">模型成本与预算</h2>
+<p>采用 <a href="https://www.compshare.cn/model-api">ModelVerse 官方模型目录</a> 2026-11-04 观察价：输入 <strong>¥2／百万 Token</strong>、输出 <strong>¥8／百万 Token</strong>，缓存输入按普通输入计算。官网价格截图和上一批计算见 <a href="/competition/operations-report.html#模型成本">成本报告</a>。</p>
+<pre><code class="language-text">before = (1708 × 2 + 765 × 8) / 1000000 = ¥0.009536
+after  = (2869 × 2 + 2149 × 8) / 1000000 = ¥0.022930
+本次 14 次调用合计 = ¥0.032466
+</code></pre>
+<p><a href="/competition/rag-assets/evidence/cost-estimate.csv">逐例 CSV</a> · <a href="/competition/rag-assets/evidence/cost-estimate.json">计算 JSON</a></p>
+<p>上一批 18 次预检和回归估算 ¥0.201514，加上本批共 <strong>32 次、¥0.233980</strong>。这些数值按公开价和原始 usage 计算，供应商出账另行登记。图像成功调用累计 <strong>8 次</strong>，最新一张为本报告英文流程图；图片费用按供应商账单登记。新增云资源采购 0 项，继续复用现有服务器；本轮新增模型与云资源预算合计上限 <strong>¥500</strong>。</p>
+<h2 id="电脑与手机效果">电脑与手机效果</h2>
+<h3 id="桌面回答和原信连在一起">桌面：回答和原信连在一起</h3>
+<p>1440×844 视口下，知识卡扣除顶部布局高度，底部“查找”按钮位于 y=752–796。回答引用第二条材料通知后，原信显示对应摘句高亮；历史邮件没有处理时间时显示 <code>—</code>。</p>
+<p><img alt="桌面两封邮件汇总与引用" src="/competition/rag-assets/images/desktop-answer.jpg"></p>
+<p><img alt="打开第二条引用后定位原信并高亮" src="/competition/rag-assets/images/original-highlight.jpg"></p>
+<h3 id="手机入口在前内容按需展开">手机：入口在前、内容按需展开</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>检索入口</td>
+<td>位于最多 20 封邮件之后</td>
+<td>位于列表前，点击“用一句话找邮件”展开</td>
+</tr>
+<tr>
+<td>页面空间</td>
+<td>问答卡始终展开</td>
+<td>默认折叠，保留范围与索引状态</td>
+</tr>
+<tr>
+<td>引用编号</td>
+<td>紧凑按钮</td>
+<td>手机最小 44×44px</td>
+</tr>
+<tr>
+<td>对话与输入</td>
+<td>长消息可能挤出输入区域</td>
+<td>对话区独立滚动，输入与查找按钮保留</td>
+</tr>
+<tr>
+<td>320 / 390px 宽度</td>
+<td>本轮定位并调整知识卡布局</td>
+<td>两种视口整页宽度均等于视口，无横向溢出</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/competition/rag-assets/images/mobile-entry.jpg" alt="390px 手机折叠入口，位于邮件列表之前" width="390">
+<img src="/competition/rag-assets/images/mobile-answer.jpg" alt="390px 手机展开后的回答、44px 引用编号和输入区" width="390"></p>
+<p>手机页面操作在 390×844 与 320×844 浏览器视口进行，输入、查找、折叠和引用均实际点击；<a href="/competition/rag-assets/images/mobile-320.jpg">320px 截图</a> 同步保存。</p>
+<h3 id="异常与切换范围">异常与切换范围</h3>
+<p>本地隔离夹具分别返回 HTTP 503、无效来源 <code>S99</code>、延迟 9 秒的结构化回答，验证界面状态和异步回调。夹具使用原创样例和本地模型替身。</p>
+<p><img alt="模型不可用时展示状态与检索原文" src="/competition/rag-assets/images/model-unavailable.jpg"></p>
+<p><img alt="引用检查未通过时展示检索原文" src="/competition/rag-assets/images/citation-validation.jpg"></p>
+<p><img alt="延迟响应结束后，个人邮箱仍保持当前范围的空会话" src="/competition/rag-assets/images/mailbox-switch.jpg"></p>
+<p><a href="/competition/rag-assets/evidence/browser-verification.json">浏览器验收 JSON</a> · <a href="/competition/rag-assets/evidence/mailbox-switch-snapshot.txt">切换后可见页面文本</a> · <a href="/competition/rag-assets/evidence/ui-model-requests.jsonl">本地替身完成日志</a></p>
+<h2 id="验证与复现">验证与复现</h2>
+<h3 id="定向检查">定向检查</h3>
+<pre><code class="language-bash">node --test server/rag-answer.test.js server/rag.test.js
+node scripts/evaluate-rag.mjs
+</code></pre>
+<p>定向测试 <strong>33/33 通过</strong>，覆盖完整分块、上下文上限、来源编号、逐字摘句、引用去重、信息不足、模型故障和原文返回。第二条命令核对固定数据集，模型调用数为 0。</p>
+<p>完整交付五阶段通过，<strong>980 项中 951 通过、29 条件跳过、0 失败</strong>；候选镜像与服务器真实 PostgreSQL 检查见 <a href="/competition/rag-deployment.html">发布验证</a>。</p>
+<h3 id="重跑真实模型对照">重跑真实模型对照</h3>
+<pre><code class="language-bash">node scripts/evaluate-rag.mjs --live --settings data/settings.json --limit 8 --baseline-ref 924373e
+</code></pre>
+<p>命令从指定私有配置只读获取模型连接字段，在新的 <code>work/rag-evaluation-*</code> 写入合成索引和证据。启用 <code>--live</code> 后会实际调用模型。需要选择用户级配置时加 <code>--settings-user &lt;用户ID&gt;</code>。</p>
+<h3 id="重现页面夹具">重现页面夹具</h3>
+<pre><code class="language-bash">npm run build
+node scripts/rag-ui-fixture.mjs
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3187/login</code>，点击“进入演示工作区”，在邮件页询问“星河项目报到的地点、时间和材料分别是什么？”。问句加入“故障”“伪造”“延迟”分别触发上述状态。演示数据写入新的 <code>work/rag-ui-*</code>，Ctrl+C 结束。</p>
+<h3 id="原始资料">原始资料</h3>
+<ul>
+<li><a href="/competition/rag-assets/evidence/manifest.json">执行清单、源码摘要与环境</a></li>
+<li><a href="/competition/rag-assets/evidence/corpus.json">首次执行的输入集</a></li>
+<li><a href="/competition/rag-assets/evidence/results.jsonl">复核后逐例结果，含原始回答和 usage</a></li>
+<li><a href="/competition/rag-assets/evidence/summary.json">汇总</a>、<a href="/competition/rag-assets/evidence/cost-estimate.json">费用</a>、<a href="/competition/rag-assets/evidence/scoring-review.json">评分复核</a></li>
+<li><a href="/competition/rag-assets/rag-prompt.txt">英文图提示词</a></li>
+</ul>
+<p>源码摘要和输入集摘要对应首次执行快照，之后的评分修正记录在复核文件中。发布验证和运行镜像信息在完成部署后单独归档。</p></main></html>

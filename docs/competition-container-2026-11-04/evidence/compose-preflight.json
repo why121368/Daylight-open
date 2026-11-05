@@ -1,0 +1,139 @@
+{
+  "ok": true,
+  "at": "2026-11-04T00:14:10.067Z",
+  "scope": "compose-configuration",
+  "checks": [
+    {
+      "key": "node-version",
+      "ok": true,
+      "message": "Node.js >=22.19 is required by the HTTP/PDF dependencies."
+    },
+    {
+      "key": "dependency-lock",
+      "ok": true,
+      "message": "package.json and lockfile dependencies must agree."
+    },
+    {
+      "key": "file:Dockerfile",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:.dockerignore",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docker-compose.yml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/public/compose.public.yml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/public/Caddyfile",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/apps.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/migrate.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/kubernetes/kustomization.yaml",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/backup.sh",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:deploy/restore.sh",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/README.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/cloud-deployment.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "file:docs/delivery/demo-script.md",
+      "ok": true,
+      "message": "Required delivery asset exists."
+    },
+    {
+      "key": "frontend-evidence-snapshot",
+      "ok": true,
+      "message": "5 public sources must match the tracked build snapshot. Run npm run evidence:sync after updating evidence."
+    },
+    {
+      "key": "POSTGRES_PASSWORD",
+      "ok": true,
+      "message": "Use independent random hex secrets (at least 32 characters)."
+    },
+    {
+      "key": "REDIS_PASSWORD",
+      "ok": true,
+      "message": "Use independent random hex secrets (at least 32 characters)."
+    },
+    {
+      "key": "RABBITMQ_PASSWORD",
+      "ok": true,
+      "message": "Use independent random hex secrets (at least 32 characters)."
+    },
+    {
+      "key": "MINIO_ROOT_PASSWORD",
+      "ok": true,
+      "message": "Use independent random hex secrets (at least 32 characters)."
+    },
+    {
+      "key": "independent-secrets",
+      "ok": true,
+      "message": "Each dependency needs an independent secret."
+    },
+    {
+      "key": "DAYLIGHT_JWT_SECRET",
+      "ok": true,
+      "message": "Use at least 48 random characters for JWT."
+    },
+    {
+      "key": "MINIO_ROOT_USER",
+      "ok": true,
+      "message": "Set the object storage user."
+    },
+    {
+      "key": "DAYLIGHT_ADMIN_EMAILS",
+      "ok": true,
+      "message": "Set your administrator email before bootstrap."
+    },
+    {
+      "key": "demo-disabled",
+      "ok": true,
+      "message": "Production authentication must remain enabled."
+    },
+    {
+      "key": "compose-parser",
+      "ok": true,
+      "message": "Docker Compose config must parse successfully (no containers are started)."
+    }
+  ],
+  "liveServicesChecked": false,
+  "cloudAcceptance": false
+}

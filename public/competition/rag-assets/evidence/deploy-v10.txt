@@ -1,0 +1,56 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-rag-evidence-20261104014854
+STATIC_HASHES_OK 15
+Sending build context to Docker daemon  710.1kB
+
+
+Step 1/2 : FROM sha256:6fd765cedc96333c12d895634f695a1df4229beacf4a25a257667a90d610e91c
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+ ---> 6fd765cedc96
+Step 2/2 : COPY --chown=node:node dist/ /app/dist/
+ ---> 7d40e3039852
+Successfully built 7d40e3039852
+Successfully tagged daylight:public-competition-20261104-v10
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11884.890196
+ Container daylight-api-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreated
+ Container daylight-worker-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-scheduler-1  Starting
+ Container daylight-worker-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Started
+ Container daylight-scheduler-1  Started
+ Container daylight-api-1  Started
+ Container daylight-scheduler-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Healthy
+ Container daylight-scheduler-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"3824280f-ed9e-4e85-bf62-34471efdb3d4","written":12,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"3824280f-ed9e-4e85-bf62-34471efdb3d4","written":47,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"973218bb-ecc3-4c19-9ce5-2356cc246835","written":233,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"27a8c23e-8430-4f3d-81b6-2cbc154e10c4","written":59,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v10 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v10 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v10 healthy restart=0 oom=false
+sha256:7d40e303985212a070b47cd2126a22c05e1043a592ca55d28210db8c38423886
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+RAG_EVIDENCE_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-rag-evidence-20261104014854
+
+REMOTE_EXIT 0

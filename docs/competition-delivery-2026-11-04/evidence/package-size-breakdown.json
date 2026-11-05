@@ -1,0 +1,122 @@
+{
+  ".dockerignore": {
+    "files": 1,
+    "bytes": 107
+  },
+  ".gitattributes": {
+    "files": 1,
+    "bytes": 2786
+  },
+  ".github": {
+    "files": 1,
+    "bytes": 910
+  },
+  ".gitignore": {
+    "files": 1,
+    "bytes": 587
+  },
+  ".nvmrc": {
+    "files": 1,
+    "bytes": 4
+  },
+  "AGENTS.md": {
+    "files": 1,
+    "bytes": 5744
+  },
+  "CONTRIBUTING.md": {
+    "files": 1,
+    "bytes": 3356
+  },
+  "DEPLOY.md": {
+    "files": 1,
+    "bytes": 17577
+  },
+  "Dockerfile": {
+    "files": 1,
+    "bytes": 1909
+  },
+  "README.md": {
+    "files": 1,
+    "bytes": 77445
+  },
+  "README_EN.md": {
+    "files": 1,
+    "bytes": 47567
+  },
+  "STATUS.md": {
+    "files": 1,
+    "bytes": 330175
+  },
+  "components.json": {
+    "files": 1,
+    "bytes": 448
+  },
+  "deploy": {
+    "files": 28,
+    "bytes": 77533
+  },
+  "docker-compose.yml": {
+    "files": 1,
+    "bytes": 7587
+  },
+  "docs": {
+    "files": 727,
+    "bytes": 62733586
+  },
+  "index.html": {
+    "files": 1,
+    "bytes": 3394
+  },
+  "jsconfig.json": {
+    "files": 1,
+    "bytes": 241
+  },
+  "package-lock.json": {
+    "files": 1,
+    "bytes": 354707
+  },
+  "package.json": {
+    "files": 1,
+    "bytes": 3813
+  },
+  "public": {
+    "files": 381,
+    "bytes": 34661227
+  },
+  "scripts": {
+    "files": 86,
+    "bytes": 605068
+  },
+  "server": {
+    "files": 286,
+    "bytes": 3489388
+  },
+  "shared": {
+    "files": 25,
+    "bytes": 195420
+  },
+  "src": {
+    "files": 152,
+    "bytes": 1619723
+  },
+  "study.html": {
+    "files": 1,
+    "bytes": 323
+  },
+  "vite.config.js": {
+    "files": 1,
+    "bytes": 422
+  },
+  "dist": {
+    "files": 633,
+    "bytes": 43832631
+  },
+  "delivery-evidence": {
+    "files": 6,
+    "bytes": 271208
+  },
+  "START-HERE.md": {
+    "files": 1,
+    "bytes": 1268
+  }
+}

@@ -1,0 +1,5 @@
+# captured 2026-10-17T12:57:07+08:00 on 192.0.2.10 from the deployment itself
+GET /health/live -> 200 {"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"fresh-install","written":4607,"dropped":0,"sinkError":null}}
+GET /health/ready -> 200 {"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"fresh-install","written":4607,"dropped":0,"sinkError":null}}
+worker /health/ready -> 200 {"ok":true,"role":"worker","draining":false,"metrics":{"enabled":true,"runId":"fresh-install","written":23260,"dropped":0,"sinkError":null}}
+scheduler /health/ready -> 200 {"ok":true,"role":"scheduler","draining":false,"metrics":{"enabled":true,"runId":"fresh-install","written":1571,"dropped":0,"sinkError":null}}

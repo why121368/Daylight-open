@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daylight 11 月 6 日竞赛交付计划 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="daylight-11-月-6-日竞赛交付计划">Daylight 11 月 6 日竞赛交付计划</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#daylight-11-月-6-日竞赛交付计划">Daylight 11 月 6 日竞赛交付计划</a><ul>
+<li><a href="#本轮验收">本轮验收</a></li>
+<li><a href="#图文记录规则">图文记录规则</a></li>
+<li><a href="#预算登记">预算登记</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>记录日期：2026-11-03（北京时间）。用户确认截止日期为 <strong>11 月 6 日</strong>，未指定当天时刻；新增模型调用与云资源合计预算 <strong>¥500</strong>。当前使用 <code>feat/competition-experience-20261103</code>，复用已有公网服务器。</p>
+<h2 id="本轮验收">本轮验收</h2>
+<table>
+<thead>
+<tr>
+<th>考核点</th>
+<th>具体改进</th>
+<th>验收证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景价值</td>
+<td>首页优先 Web 体验；新增免登录邮件变化主线；写清申请者的痛点、确认和回执语义</td>
+<td>改前/改后截图、三分钟脚本、人工价值验证表（待真人填写）</td>
+</tr>
+<tr>
+<td>云原生</td>
+<td>体验使用有界合成输入和请求内状态，复用生产工具，不访问业务数据库；明确实际 Compose 与历史 k3s 拓扑</td>
+<td>架构图、数据流、技术决策、发布与回滚记录</td>
+</tr>
+<tr>
+<td>Agent 链路</td>
+<td>可操作的新增、冲突、改期、重复、失败、重试、取消；展示实际工具执行记录与来源</td>
+<td>生产 <code>processEmails</code> 的隔离执行、整封校验、去重、状态关联与并发隔离测试</td>
+</tr>
+<tr>
+<td>工程与体验</td>
+<td>懒加载公开路由、手机触控与窄屏；错误可重试；公开证据入口、二维码、同版操作说明</td>
+<td>构建、回归、浏览器交互、HTTPS 与资源检查</td>
+</tr>
+<tr>
+<td>成本性能</td>
+<td>体验明确标注预置提取，实时模型成本为零；真实调用测量与合成工具路径分别统计；提供有假设的成本计算</td>
+<td>原始 JSON/CSV、样本数与 p50/p95、费用覆盖与账单边界</td>
+</tr>
+</tbody>
+</table>
+<h2 id="图文记录规则">图文记录规则</h2>
+<p>每项记录：改前问题 → 选型及取舍 → 代码入口 → 图示 → 测量条件与改后结果 → 边界。用户在本轮更新目标，将后续优先生图模型改为 <code>gpt-image-2.5</code>；此前两张已调用 <code>gpt-image-2</code> 的来源保留。若失败先报告错误再采用可维护 SVG；精确数字必须和机器证据一致。截图不得包含真实邮件或私人账号数据。</p>
+<h2 id="预算登记">预算登记</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">新增实际支出</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现有服务器</td>
+<td style="text-align: right;">未新增采购</td>
+<td>已有资源账单不据此计为零运营成本</td>
+</tr>
+<tr>
+<td>图片</td>
+<td style="text-align: right;">6 次调用，待账单核算</td>
+<td>最终架构与流程使用 gpt-image-2.5 英文图</td>
+</tr>
+<tr>
+<td>真实模型评测</td>
+<td style="text-align: right;">3 例预检 + 15 例完整回归</td>
+<td>usage 与逐例结果已保存，单价待填</td>
+</tr>
+</tbody>
+</table>
+<p>本轮复用现有服务器，执行固定小批次模型评测；优先把预算用在可重复的业务与工程验证。真人收益按用户对照表采集。</p></main></html>

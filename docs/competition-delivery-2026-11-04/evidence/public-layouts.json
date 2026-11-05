@@ -1,0 +1,89 @@
+[
+  {
+    "height": 900,
+    "page": "evidence",
+    "scrollWidth": 1425,
+    "sectionTop": 24.20833396911621,
+    "url": "https://daylight.yunforis.com/evidence#delivery",
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "height": 844,
+    "page": "evidence",
+    "scrollWidth": 375,
+    "sectionTop": 23.77083396911621,
+    "url": "https://daylight.yunforis.com/evidence#delivery",
+    "width": 390,
+    "ok": true
+  },
+  {
+    "height": 700,
+    "page": "evidence",
+    "scrollWidth": 305,
+    "sectionTop": 23.77083396911621,
+    "url": "https://daylight.yunforis.com/evidence#delivery",
+    "width": 320,
+    "ok": true
+  },
+  {
+    "height": 900,
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 1536,
+        "src": "/competition/delivery-assets/assets/delivery.webp"
+      }
+    ],
+    "scrollWidth": 1425,
+    "url": "https://daylight.yunforis.com/competition/delivery-report.html",
+    "width": 1440,
+    "page": "delivery-report",
+    "ok": true
+  },
+  {
+    "height": 844,
+    "images": [],
+    "scrollWidth": 375,
+    "url": "https://daylight.yunforis.com/competition/delivery-report.html",
+    "width": 390,
+    "page": "delivery-report",
+    "ok": true
+  },
+  {
+    "height": 700,
+    "images": [],
+    "scrollWidth": 305,
+    "url": "https://daylight.yunforis.com/competition/delivery-report.html",
+    "width": 320,
+    "page": "delivery-report",
+    "ok": true
+  },
+  {
+    "height": 900,
+    "images": [],
+    "scrollWidth": 1425,
+    "url": "https://daylight.yunforis.com/competition/reproduce.html",
+    "width": 1440,
+    "page": "reproduce",
+    "ok": true
+  },
+  {
+    "height": 844,
+    "images": [],
+    "scrollWidth": 375,
+    "url": "https://daylight.yunforis.com/competition/reproduce.html",
+    "width": 390,
+    "page": "reproduce",
+    "ok": true
+  },
+  {
+    "height": 700,
+    "images": [],
+    "scrollWidth": 305,
+    "url": "https://daylight.yunforis.com/competition/reproduce.html",
+    "width": 320,
+    "page": "reproduce",
+    "ok": true
+  }
+]

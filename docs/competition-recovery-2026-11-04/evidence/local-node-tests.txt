@@ -1,0 +1,22 @@
+✔ backup resumes only its original application roles and marks complete payloads (4460.2773ms)
+✔ a failed database dump resumes paused writers and never marks a backup complete (3434.9716ms)
+✔ unsupported Compose health flags stop backup before any service is paused (655.248ms)
+✔ restore refuses any existing target before creating or changing its services (5098.0444ms)
+✔ restore rejects modified backup bytes before any Docker invocation (4940.1234ms)
+✔ a verified backup restores and checks data while application roles remain stopped by default (7663.8077ms)
+✔ a failed inventory capture resumes writers and leaves no completed backup (2913.2ms)
+✔ activation follows successful content verification and stops on verification failure (11439.9113ms)
+✔ legacy v1 backup remains importable without starting applications (7397.0375ms)
+✔ recovery proof accepts identical inventories and counts every table row and object byte (4.3359ms)
+✔ row, sequence and object corruption each fail verification without exposing private names (0.9018ms)
+✔ missing and unexpected relations and objects are detected even when counts match (0.4638ms)
+✔ invalid hashes, counts and duplicate names cannot produce a successful proof (1.917ms)
+✔ object digest covers all chunks and a changed final byte (0.819ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 48144.6177

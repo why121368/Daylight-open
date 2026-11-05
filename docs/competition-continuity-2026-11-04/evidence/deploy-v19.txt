@@ -1,0 +1,92 @@
+release.tar.gz: OK
+BACKUP=/opt/daylight-backups/before-experience-continuity-20261104065155
+RELEASE_HASHES_OK 626
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  76.98MB
+Step 1/9 : FROM sha256:fd6d5eb07f80e325426e804a78693f31ec244d19e366ffef86a910405f17bab5
+ ---> fd6d5eb07f80
+Step 2/9 : USER root
+ ---> Running in 9dafe9c5eb4d
+ ---> Removed intermediate container 9dafe9c5eb4d
+ ---> f1f83ed2dedd
+Step 3/9 : RUN rm -rf /app/dist
+ ---> Running in 01986946b43f
+ ---> Removed intermediate container 01986946b43f
+ ---> 861912f7deeb
+Step 4/9 : COPY --chown=node:node scripts/ /app/scripts/
+ ---> 5df90c682dec
+Step 5/9 : COPY --chown=node:node shared/ /app/shared/
+ ---> bcd7f0a66b9d
+Step 6/9 : COPY --chown=node:node server/ /app/server/
+ ---> 090ced657f9f
+Step 7/9 : COPY --chown=node:node dist/ /app/dist/
+ ---> 36d0a6373e45
+Step 8/9 : LABEL org.opencontainers.image.revision="332b714b630935f7a396d5580c196b1f9652b5b9"
+ ---> Running in 52111d34f548
+ ---> Removed intermediate container 52111d34f548
+ ---> 5eda667f1ddb
+Step 9/9 : USER node
+ ---> Running in 5fe04e2a96ba
+ ---> Removed intermediate container 5fe04e2a96ba
+ ---> 2689195d2f2d
+Successfully built 2689195d2f2d
+Successfully tagged daylight:public-competition-20261104-v19
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12382.416985
+{
+  "ok": true,
+  "behaviorChecks": 15,
+  "layouts": 3,
+  "qrDecoded": true,
+  "finalResultFocused": true,
+  "assetFilesVerified": 133,
+  "entry": "assets/index-Ci2qu_-C.js",
+  "initialJavaScriptGzipBytes": 167519,
+  "deferredShareJavaScriptGzipBytes": 17067,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 14,
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}
+ Container daylight-api-1  Recreate
+ Container daylight-worker-1  Recreate
+ Container daylight-scheduler-1  Recreate
+ Container daylight-worker-1  Recreated
+ Container daylight-scheduler-1  Recreated
+ Container daylight-api-1  Recreated
+ Container daylight-worker-1  Starting
+ Container daylight-scheduler-1  Starting
+ Container daylight-api-1  Starting
+ Container daylight-worker-1  Started
+ Container daylight-scheduler-1  Started
+ Container daylight-api-1  Started
+ Container daylight-scheduler-1  Waiting
+ Container daylight-api-1  Waiting
+ Container daylight-worker-1  Waiting
+ Container daylight-worker-1  Healthy
+ Container daylight-scheduler-1  Healthy
+ Container daylight-api-1  Healthy
+{"ok":true,"role":"api","draining":false,"metrics":{"enabled":true,"runId":"9ae91805-2fa6-4d17-9ffb-24e5c636a702","written":18,"dropped":0,"sinkError":null}}PUBLIC_BUSINESS_AND_VIDEO_EVIDENCE_OK
+ROLE_READY api {"enabled":true,"runId":"9ae91805-2fa6-4d17-9ffb-24e5c636a702","written":87,"dropped":0,"sinkError":null}
+ROLE_READY worker {"enabled":true,"runId":"29c3179c-c267-428e-b582-a42e557d251c","written":217,"dropped":0,"sinkError":null}
+ROLE_READY scheduler {"enabled":true,"runId":"7aaec4fb-c470-477d-8889-7e20cfaf6a52","written":66,"dropped":0,"sinkError":null}
+/daylight-api-1 daylight:public-competition-20261104-v19 healthy restart=0 oom=false
+/daylight-worker-1 daylight:public-competition-20261104-v19 healthy restart=0 oom=false
+/daylight-scheduler-1 daylight:public-competition-20261104-v19 healthy restart=0 oom=false
+sha256:2689195d2f2d4c7e346c590a9834784c6e332a9568e18658b573f7cba6ecd982
+SERVICE_HEALTH [('api', 'healthy', 'running'), ('caddy', 'healthy', 'running'), ('minio', 'healthy', 'running'), ('postgres', 'healthy', 'running'), ('rabbitmq', 'healthy', 'running'), ('redis', 'healthy', 'running'), ('scheduler', 'healthy', 'running'), ('worker', 'healthy', 'running')]
+PUBLIC_CONTINUITY_PUBLISHED_OK
+BACKUP=/opt/daylight-backups/before-experience-continuity-20261104065155
+
+REMOTE_EXIT 0

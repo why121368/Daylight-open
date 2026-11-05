@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: Chinese cloud-native competition architecture diagram for Daylight, a real deployed mail Agent application.
+Primary request: Draw a crisp, professional, spacious system architecture infographic with readable Simplified Chinese text. Landscape 1536x1024. Off-white background, dark pine green text, amber accents, fine connectors. Flat architectural blocks, no perspective, no decorative robots. Exact factual topology below; do not invent infrastructure or claims.
+Text and structure:
+Title: "Daylight · 实际公网架构"
+Subtitle: "单节点 Docker Compose · 2026-11-03"
+Top clients: "电脑浏览器" and "手机 / 微信扫码" -> "Caddy · HTTPS" -> "React / API"
+Separate side path from React / API to "免登录体验" with subtitle "原创样例 · 预置提取 · 请求内真实工具执行" and a badge "不读私人数据 · 不写数据库 · 不调模型".
+Main application services in one container host boundary: "API · 请求与确认", "Scheduler · 到期派发", "Worker · 邮箱 / 模型 / OCR". API -> PostgreSQL job store. Scheduler -> job store. Job store -> Worker using RabbitMQ wake-ups. PostgreSQL is authority, RabbitMQ is notification. Label "PostgreSQL · 业务与任务权威状态". Additional blocks: "Redis · 会话 / 临时协调", "MinIO · 私有附件", "RabbitMQ · 唤醒通知". Three application roles use shared persistence. External boundary: "IMAP / SMTP", "兼容模型 API", "日历 / 飞书（按配置）". Worker connects external tools. API connected to human confirmation before outgoing side effects; small badge "发信须审核".
+Bottom band: "健康检查 · 指标 / Trace · 备份与镜像回滚"
+Footer exactly: "当前公网为单节点；历史多副本 k3s 实测单独提供，不代表本机高可用。"
+Constraints: Clear hierarchy and generous whitespace. No Kubernetes logo inside the deployed host, no imaginary cloud provider certification, no cost or throughput numbers. Every line must remain legible. This image is an explanatory diagram, not a screenshot or measurement evidence.

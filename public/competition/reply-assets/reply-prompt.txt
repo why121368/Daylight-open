@@ -1,0 +1,17 @@
+Use case: infographic-diagram
+Asset type: technical report workflow for the Daylight email Agent
+Primary request: Draw the implemented flow from an execution trace to a reviewed email reply, with accurate durable states. All text in English.
+Style: refined editorial engineering infographic, flat icons and clear connectors, warm ivory background, dark forest green panels, restrained gold arrows. Match Daylight's existing technical diagrams. Landscape 1536x1024, legible text and generous spacing.
+Top title: "DAYLIGHT / FROM TRACE TO REVIEWED REPLY"
+Subtitle: "Source identity, review version, durable delivery state"
+Main flow, left to right, with exactly these steps and labels:
+1. "OPEN TRACE" / "Choose an owned mailbox"
+2. "PREPARE REPLY" / "Read original Reply-To and draft"
+3. "PENDING DRAFT" / "Reuse the current draft for this trace"
+4. "REVIEW + EDIT" / "Check sender, recipients, subject and body"
+5. "CONFIRM REVISION" / "Persist the sending marker"
+Under the main flow, show a clear state branch: "SENDING" flows separately to "SENT", "FAILED", and "UNKNOWN". Under SENT: "Saved SMTP receipt". Under FAILED: "Verified not accepted; review before retry". Under UNKNOWN: "Verify the mailbox before any next send". Do not draw a resend arrow from UNKNOWN.
+A lower recovery band: "REOPEN TRACE -> RECOVER SAVED DRAFT + RECEIPT".
+A lower metadata band: "Reply-To | In-Reply-To | References".
+Footer: "Prepare and edit: 0 model calls, 0 SMTP calls".
+Constraints: All labels verbatim, clear large typography, no Chinese text, no watermark. Show process and states only; no fabricated performance numbers. Arrows must follow the described flow and branch directions. Avoid dense tiny text and crossing connectors.

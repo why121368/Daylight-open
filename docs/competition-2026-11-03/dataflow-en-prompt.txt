@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: precise engineering workflow infographic, ALL ENGLISH labels.
+Primary request: Landscape 1536x1024, warm ivory, forest green typography and amber highlights. Large legible text and airy spacing. Title "DAYLIGHT / FROM MAIL TO NEXT STEPS". Subtitle "A visible path through context, tools and recovery".
+Use TWO ROWS of three large stages connected in reading order. Top row: "01 Receive mail" -> "02 Check message ID" -> "03 Load active context". Bottom row from left to right: "04 Extract and validate" -> "05 Apply calendar and tasks" -> "06 Trace and reply draft". Connect stage 03 to stage 04 with one clear connector around the edge. No crossed arrows.
+Smaller branch cards below their corresponding stages, connected by short lines:
+From stage 02: "Duplicate: skip extraction".
+From stage 04: "Invalid fields: stop, correct, retry".
+From stage 05: "Reschedule: link old and new" and "Conflict: mark for user review".
+From stage 06: "Sending requires approval".
+Bottom legend, two parallel small boxes: "Public walkthrough / Synthetic mail + preset extraction + live tools" and "Connected workspace / IMAP + configured model + persistent state".
+Footer three short labels: "Source links" / "Idempotent processing" / "Recoverable failures".
+Constraints: All text in English only. No Chinese, no invented numbers, no unsupported claims. Basic mail calendar actions execute after validation; sending requires approval. Do not imply all calendar writes await approval. Legible and polished. No fake screenshots. No decorative robot.

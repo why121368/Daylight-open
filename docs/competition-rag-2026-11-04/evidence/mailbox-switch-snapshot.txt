@@ -1,0 +1,135 @@
+- list:
+  - link "Daylight 邮件工作空间":
+    - /url: /app
+    - generic: Daylight
+    - generic: 邮件工作空间
+- button "Quick Create":
+  - text: Quick Create
+- button:
+- generic: Workspace
+- list:
+  - link "总览":
+    - /url: /app
+    - generic: 总览
+  - link "日历":
+    - /url: /app/calendar
+    - generic: 日历
+  - link "待办":
+    - /url: /app/todos
+    - generic: 待办
+  - link "邮件":
+    - /url: /app/mail
+    - generic: 邮件
+  - link "校园生活":
+    - /url: /campus
+    - generic: 校园生活
+  - link "证据链":
+    - /url: /app/traces
+    - generic: 证据链
+  - link "后台任务":
+    - /url: /app/jobs
+    - generic: 后台任务
+  - link "设置":
+    - /url: /app/settings
+    - generic: 设置
+  - link "账号":
+    - /url: /app/account
+    - generic: 账号
+- link "我的工作台":
+  - /url: /app/workbenches
+- list:
+  - link "发票助手":
+    - /url: /app/invoices
+    - generic: 发票助手
+  - link "智能招聘":
+    - /url: /app/recruitment
+    - generic: 智能招聘
+  - link "科大学习站":
+    - /url: /app/campus
+    - generic: 科大学习站
+  - link "邮件收发":
+    - /url: /app/mail-desk
+    - generic: 邮件收发
+  - link "智能招聘":
+    - /url: /app/workbenches/2483ad34-42a0-4a40-848b-6953d495708d
+    - generic: 智能招聘
+  - link "发票助手":
+    - /url: /app/workbenches/cedcc3e0-d7d9-498f-b534-fbc192debdda
+    - generic: 发票助手
+  - link "管理工作台":
+    - /url: /app/workbenches?adjust=1
+    - generic: 管理工作台
+- list:
+  - button "demo 个人 · personal@example.invalid":
+    - generic: demo
+    - generic: 个人 · personal@example.invalid
+  - button "退出 / 回首页":
+    - generic: 退出 / 回首页
+- button "Toggle Sidebar"
+- main:
+  - button "Toggle Sidebar":
+    - generic: Toggle Sidebar
+  - button "搜索日程、待办、发票、邮件，或执行操作… CTRL + J":
+    - generic: 搜索日程、待办、发票、邮件，或执行操作…
+    - generic: CTRL + J
+  - button "主题色":
+  - button "暗夜":
+  - button "语言":
+  - button "同步":
+    - generic: 同步
+  - button "添加日程":
+    - generic: 添加日程
+  - status: 隔离演示 · 预置结果 · 未调用真实邮箱、模型或发信服务。地图为示意目录。关闭并重新启动演示可重置样例。
+  - heading "邮件" [level=1]
+  - paragraph: 0 封已处理 · 0 封冲突待确认 · 按主题分类筛选
+  - checkbox "显示求职简历 0" [checked]:
+  - text: 显示求职简历
+  - generic: "0"
+  - button "同步":
+    - text: 同步
+  - button "演示"
+  - button "全部 0":
+    - text: 全部
+    - generic: "0"
+  - button "会议 0":
+    - text: 会议
+    - generic: "0"
+  - button "任务 0":
+    - text: 任务
+    - generic: "0"
+  - button "通知 0":
+    - text: 通知
+    - generic: "0"
+  - button "询问 0":
+    - text: 询问
+    - generic: "0"
+  - button "发票报销 0":
+    - text: 发票报销
+    - generic: "0"
+  - button "推广 0":
+    - text: 推广
+    - generic: "0"
+  - button "求职简历 0":
+    - text: 求职简历
+    - generic: "0"
+  - button "普通沟通 0":
+    - text: 普通沟通
+    - generic: "0"
+  - button "无关 0":
+    - text: 无关
+    - generic: "0"
+  - generic: 处理记录
+  - generic: 点击查看原文与提取结果
+  - textbox "按关键词查找已处理邮件":
+    - /placeholder: 关键词：主题、发件人、正文或附件
+  - paragraph: 暂无邮件。同步邮箱或导入演示数据。
+  - text: 在当前邮箱里找
+  - generic: 把已处理邮件和附件纳入知识库后，可以用一句话找回通知。
+  - button "纳入已处理邮件"
+  - button "启用向量检索"
+  - paragraph: 例如：我忘了之前有一个比赛的通知，帮我找找相关邮件。回答下面会列出证据片段，点开即可查看原文并高亮。
+  - textbox "描述你记得的比赛、截止或附件…"
+  - button "查找" [disabled]
+- button "打开小 D":
+  - generic: 小 D
+- region "Notifications alt+T"

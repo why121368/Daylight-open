@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-03T19:43:32.593Z",
+  "scope": "Read-only HTTP on running production API with existing account scopes and temporary Redis sessions",
+  "checks": [
+    {
+      "name": "Anonymous draft read",
+      "status": 401,
+      "elapsedMs": 111.85444299999995
+    },
+    {
+      "name": "Account 1 default draft scope",
+      "status": 200,
+      "elapsedMs": 48.13464099999999,
+      "drafts": 0
+    },
+    {
+      "name": "Account 1 foreign mailbox",
+      "status": 409,
+      "elapsedMs": 26.73532499999999
+    },
+    {
+      "name": "Account 2 default draft scope",
+      "status": 200,
+      "elapsedMs": 1208.4946260000002,
+      "drafts": 3
+    },
+    {
+      "name": "Account 2 owned mailbox 1",
+      "status": 200,
+      "elapsedMs": 729.5738769999998,
+      "drafts": 3
+    },
+    {
+      "name": "Account 2 owned mailbox 2",
+      "status": 200,
+      "elapsedMs": 903.7503609999999,
+      "drafts": 3
+    },
+    {
+      "name": "Account 2 foreign mailbox",
+      "status": 409,
+      "elapsedMs": 846.4531060000004
+    }
+  ],
+  "modelCalls": 0,
+  "smtpCalls": 0,
+  "ok": true,
+  "temporarySessionsRemoved": true
+}

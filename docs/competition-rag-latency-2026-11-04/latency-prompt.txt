@@ -1,0 +1,15 @@
+Use case: infographic-diagram
+Create a polished engineering evidence infographic for Daylight, an email and calendar Agent. All visible text must be English, spelled exactly as below. Landscape 1536 x 1024. Warm ivory paper, deep forest green typography, restrained gold arrows, soft sage cards, generous whitespace, crisp professional sans-serif. Match the calm Daylight engineering-report visual language. Flat editorial design with clean line icons.
+
+Title: "DAYLIGHT / CONCISE ANSWERS"
+Subtitle: "Same sources. Less repetition. Measured live."
+
+Upper half: two clearly labeled flow cards. The left card reads "BEFORE" and contains three small answer lines labeled "Location", "Time", "Materials", each with its own source tag. Two of these source tags read "S1" and the third reads "S2". The right card reads "AFTER" and contains two answer lines labeled "Location + time" with source tag "S1", and "Materials" with source tag "S2". A gold arrow connects the left and right cards. Below the cards a shared green strip reads "Source IDs + exact quotes checked by the server". Show the shared check strip connected to both cards. All source tags should look like small readable pills.
+
+Lower half: three equally sized metric cards with exact numbers and labels, with large value pairs. First card: label "MODEL p95", values "5.812 s" then an arrow then "3.134 s", badge "46.07% lower". Second card: label "OUTPUT TOKENS", values "5,570" then an arrow then "3,812", badge "31.56% fewer". Third card: label "LIST-PRICE ESTIMATE", values "CNY 0.061774" then an arrow then "CNY 0.047500", badge "23.11% lower". Use text and clean cards, without proportional bar charts.
+
+Footer: "8 synthetic cases x 3 rounds / 21 model calls per version"
+Second footer line: "Answer, scope and quote checks: 24/24 in both versions"
+Small final caption: "deepseek-v4.1-flash / keyword retrieval / 2026-11-04"
+
+Keep every number exact, retain all footer context, use only the specified English labels. No Chinese, photos, extra badges, logos or decorative filler. All type must be legible at presentation scale, with no overlapping or clipped text.

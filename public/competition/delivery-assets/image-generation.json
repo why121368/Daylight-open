@@ -1,0 +1,25 @@
+{
+  "model": "gpt-image-2.5",
+  "tool": "imagegen bundled CLI",
+  "language": "English",
+  "size": "1536x1024",
+  "quality": "high",
+  "calls": 1,
+  "previousImageCalls": 14,
+  "totalImageCalls": 15,
+  "prompt": "delivery-prompt.txt",
+  "promptSha256": "72df3910ef6eb153facd847638019228054468c2e05914df34758c59177189c4",
+  "generated": {
+    "file": "assets/delivery-generated.png",
+    "bytes": 1443442,
+    "sha256": "7b1b0a571ba54790c24a0a8211c38764eb60e9146aa9854a7d45651588bb6d2f"
+  },
+  "final": {
+    "file": "assets/delivery.webp",
+    "bytes": 106760,
+    "sha256": "3a7dea27b1742e607a985232822dc01cad87b40b8c123454ca65406964773bb8"
+  },
+  "postprocess": "Pillow WebP quality 88, method 6; generated lettering and arrows retained.",
+  "review": "All English words and the six-step reading order checked against the prompt.",
+  "billing": "Supplier invoice; API returned no billable amount."
+}

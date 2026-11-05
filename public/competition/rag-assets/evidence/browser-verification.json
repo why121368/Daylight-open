@@ -1,0 +1,95 @@
+{
+  "recordedAt": "2026-11-03T17:31:24.669531+00:00",
+  "environment": "Isolated local fixture at 127.0.0.1:3187; original synthetic mail; local model stub at 3197; built application",
+  "checks": [
+    {
+      "name": "desktop answer and used sources",
+      "viewport": [
+        1440,
+        844
+      ],
+      "passed": true,
+      "details": "Two claims with [1], [2]; exact-quote label; original materials message opened from second citation"
+    },
+    {
+      "name": "original quote highlight",
+      "passed": true,
+      "observedMarkTexts": [
+        "星河项目报到时需携带校园卡与纸质录取通知书。"
+      ]
+    },
+    {
+      "name": "missing historical timestamp",
+      "passed": true,
+      "observed": "Processing time displays —; original message renders"
+    },
+    {
+      "name": "desktop submit visible",
+      "viewport": [
+        1440,
+        844
+      ],
+      "passed": true,
+      "buttonBounds": {
+        "top": 752,
+        "bottom": 796
+      }
+    },
+    {
+      "name": "mobile entry and citation targets",
+      "viewport": [
+        390,
+        844
+      ],
+      "passed": true,
+      "citationTargetPx": [
+        44,
+        44
+      ],
+      "documentWidth": 390,
+      "scrollWidth": 390,
+      "details": "Knowledge card before mail list; expands and collapses; separate message scrolling"
+    },
+    {
+      "name": "narrow phone input and submit",
+      "viewport": [
+        320,
+        844
+      ],
+      "passed": true,
+      "documentWidth": 320,
+      "scrollWidth": 320
+    },
+    {
+      "name": "model HTTP 503",
+      "passed": true,
+      "observedNotice": "模型问答暂时不可用，以下是检索到的原文。"
+    },
+    {
+      "name": "unknown citation source S99",
+      "passed": true,
+      "observedNotice": "本次展示检索原文，可点击摘录核对信息。"
+    },
+    {
+      "name": "switch mailbox during 9-second response",
+      "passed": true,
+      "afterMailbox": "demo-personal",
+      "scopeChanged": true,
+      "staleAnswerAbsent": true,
+      "searchingAbsent": true,
+      "modelResponseCompletedAt": "2026-11-03T17:28:18.856Z"
+    }
+  ],
+  "guardViolationLogPresent": false,
+  "screenshots": [
+    "citation-validation.jpg",
+    "desktop-answer.jpg",
+    "mailbox-switch.jpg",
+    "mobile-320.jpg",
+    "mobile-answer.jpg",
+    "mobile-entry.jpg",
+    "model-unavailable.jpg",
+    "original-highlight.jpg"
+  ],
+  "viewportReset": true
+}

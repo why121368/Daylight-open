@@ -1,0 +1,25 @@
+{
+  "mode": "dataset-validation-only",
+  "model_calls": 0,
+  "valid": true,
+  "cases": 15,
+  "ids": [
+    "absolute-interview",
+    "relative-interview",
+    "all-day-campus",
+    "multi-day-camp",
+    "material-deadline",
+    "relative-deadline",
+    "existing-task-reminder",
+    "cancel-interview",
+    "reschedule-interview",
+    "location-only-change",
+    "ambiguous-cancel",
+    "newsletter-no-action",
+    "untrusted-instruction-only",
+    "invitation-with-injection",
+    "two-independent-events"
+  ],
+  "dataset_sha256": "de74ad463b2f4b2c38b099eb6c6795899541e19b52daa9bfd400581223eec2b1",
+  "note": "Validates fixture structure only. This is not model accuracy, performance or end-to-end evidence."
+}

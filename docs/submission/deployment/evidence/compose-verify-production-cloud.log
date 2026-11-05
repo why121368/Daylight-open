@@ -1,0 +1,14 @@
+Evidence directory: /opt/daylight/app/work/production-verify-gl9ckk
+PASS production API auth and owned scenario setup
+PASS HTTP enqueue is idempotent; queued cancellation and manual retry
+PASS second user cannot read/retry/cancel jobs or plan/confirm another owner
+PASS independent real worker commits business result and plan.persist checkpoint
+PASS API and worker restart recover committed checkpoint without duplicated business actions
+PASS calendar confirmation transaction failure rolls back scenario and calendar together
+PASS concurrent calendar confirmations produce exactly one event and execution
+PASS production OSS adapter PUT/GET uses local S3 mock; no local authoritative JSON created
+PASS calendar HTTP event and durable intent commit atomically in real PostgreSQL
+PASS independent scheduler creates calendar job/outbox and worker PATCHes fixed identity once
+PASS deleted local calendar retains target identity and worker DELETEs once without rescheduling success
+PASS lost calendar create response persists unknown and manual retry makes no second remote POST
+Local production dependency verification passed. S3 and Google calendar use local HTTP mocks; no cloud/model/IMAP/SMTP verification.

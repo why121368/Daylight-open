@@ -1,0 +1,19 @@
+✔ 生产接口面：共享存储上的业务可服务 (6.3386ms)
+✔ 生产接口面：本地文件流程被显式拒绝，而不是静默降级 (3.8635ms)
+✔ 生产接口面：按段匹配，不能把前缀相同的陌生路径放进来 (1.0477ms)
+✔ 接口面分类表自身一致：条目互不重叠且都能匹配自身 (1.6122ms)
+✔ index.js 注册的每个 /api 路由都必须在接口面里被明确表态 (7.2337ms)
+✔ public experience: state transition, conflict, linked reschedule, dedup, retry, cancel (40.7994ms)
+✔ public experience isolates concurrent visitors and ignores ambient account scope (11.5459ms)
+✔ public experience rejects arbitrary workload and untrusted input (1.1587ms)
+✔ experience HTTP validation, public access, no-store, safe unknown routes (61.8431ms)
+✔ experience HTTP backpressure and failure never disclose runtime details (15.5044ms)
+✔ cost estimates price cached tokens once and reject invalid or overflowing values (0.5195ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1182.2747

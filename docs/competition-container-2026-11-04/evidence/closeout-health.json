@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-04T00:52:17.368407+00:00",
+  "ok": true,
+  "sourceCommit": "8ff41a1ba28576dd8bfa9fa3a109a96ffa00606a",
+  "roles": [
+    {
+      "role": "api",
+      "image": "daylight:public-competition-20261104-v22",
+      "imageId": "sha256:11b018846e30ed419440c812d4e5e8d99f2f37e75ba1a94a481e5fd74e9b97af",
+      "healthy": true,
+      "restarts": 0,
+      "oomKilled": false,
+      "metrics": {
+        "enabled": true,
+        "written": 4267,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    {
+      "role": "worker",
+      "image": "daylight:public-competition-20261104-v22",
+      "imageId": "sha256:11b018846e30ed419440c812d4e5e8d99f2f37e75ba1a94a481e5fd74e9b97af",
+      "healthy": true,
+      "restarts": 0,
+      "oomKilled": false,
+      "metrics": {
+        "enabled": true,
+        "written": 12500,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    {
+      "role": "scheduler",
+      "image": "daylight:public-competition-20261104-v22",
+      "imageId": "sha256:11b018846e30ed419440c812d4e5e8d99f2f37e75ba1a94a481e5fd74e9b97af",
+      "healthy": true,
+      "restarts": 0,
+      "oomKilled": false,
+      "metrics": {
+        "enabled": true,
+        "written": 1819,
+        "dropped": 0,
+        "sinkError": null
+      }
+    }
+  ],
+  "healthyServices": 8,
+  "publicChecks": [
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/experience?step=7",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "diskAvailableBytes": 10322907136,
+  "newModelCalls": 0,
+  "newCloudPurchasesCny": 0
+}

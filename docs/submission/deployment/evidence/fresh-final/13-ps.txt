@@ -1,0 +1,10 @@
+NAME                          IMAGE                                      COMMAND                   SERVICE      CREATED          STATUS                      PORTS
+daylight-fresh-api-1          daylight:local                             "docker-entrypoint.s…"   api          20 seconds ago   Up 6 seconds (healthy)      3001/tcp, 0.0.0.0:3100->3000/tcp
+daylight-fresh-migrate-1      daylight:local                             "docker-entrypoint.s…"   migrate      20 seconds ago   Exited (0) 12 seconds ago   
+daylight-fresh-minio-1        minio/minio:RELEASE.2025-09-07T16-13-09Z   "/usr/bin/docker-ent…"   minio        20 seconds ago   Up 19 seconds (healthy)     127.0.0.1:29000->9000/tcp, 127.0.0.1:29001->9001/tcp
+daylight-fresh-minio-init-1   minio/mc:RELEASE.2025-04-16T18-13-26Z      "/bin/sh -ec 'mc ali…"   minio-init   20 seconds ago   Exited (0) 13 seconds ago   
+daylight-fresh-postgres-1     postgres:17.6-bookworm                     "docker-entrypoint.s…"   postgres     20 seconds ago   Up 19 seconds (healthy)     127.0.0.1:25432->5432/tcp
+daylight-fresh-rabbitmq-1     rabbitmq:4.1.4-management-alpine           "docker-entrypoint.s…"   rabbitmq     20 seconds ago   Up 19 seconds (healthy)     4369/tcp, 5671/tcp, 15671/tcp, 15691-15692/tcp, 25672/tcp, 127.0.0.1:25673->5672/tcp, 127.0.0.1:25674->15672/tcp
+daylight-fresh-redis-1        redis:7.4.5-bookworm                       "docker-entrypoint.s…"   redis        20 seconds ago   Up 19 seconds (healthy)     127.0.0.1:26379->6379/tcp
+daylight-fresh-scheduler-1    daylight:local                             "docker-entrypoint.s…"   scheduler    20 seconds ago   Up 6 seconds (healthy)      3000-3001/tcp
+daylight-fresh-worker-1       daylight:local                             "docker-entrypoint.s…"   worker       20 seconds ago   Up 6 seconds (healthy)      3000-3001/tcp

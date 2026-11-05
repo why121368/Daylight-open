@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "behaviorChecks": 15,
+  "layouts": 3,
+  "qrDecoded": true,
+  "staticQrFiles": 8,
+  "downloadLayouts": 3,
+  "downloadIsAnchor": true,
+  "finalResultFocused": true,
+  "assetFilesVerified": 133,
+  "entry": "assets/index-CGFrY5P9.js",
+  "initialJavaScriptGzipBytes": 167601,
+  "deferredShareJavaScriptGzipBytes": 17091,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 14,
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}

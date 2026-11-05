@@ -1,0 +1,350 @@
+2026/11/04 08:34:53 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile:
+#1 transferring dockerfile: 2.00kB 0.4s done
+#1 DONE 0.5s
+
+#2 [internal] load metadata for public.ecr.aws/docker/library/node:22.23.3-bookworm-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 147B 0.1s done
+#3 DONE 0.2s
+
+#4 [dependencies 1/4] FROM public.ecr.aws/docker/library/node:22.23.3-bookworm-slim
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 97.89kB 0.9s done
+#5 DONE 1.0s
+
+#6 [build 1/6] COPY index.html vite.config.* ./
+#6 CACHED
+
+#7 [dependencies 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 CACHED
+
+#9 [dependencies 4/4] RUN npm ci --no-audit --no-fund
+#9 CACHED
+
+#10 [build 2/6] COPY src ./src
+#10 CACHED
+
+#11 [build 3/6] COPY public ./public
+#11 DONE 0.9s
+
+#12 [build 4/6] COPY shared ./shared
+#12 DONE 0.1s
+
+#13 [build 5/6] COPY scripts/lib/frontend-inputs.mjs ./scripts/lib/
+#13 DONE 0.1s
+
+#14 [build 6/6] RUN npm run build
+#14 1.336 
+#14 1.336 > daylight-mail-calendar@0.1.0 build
+#14 1.336 > vite build
+#14 1.336 
+#14 2.617 vite v7.3.7 building client environment for production...
+#14 2.936 transforming...
+#14 21.49 ✓ 2763 modules transformed.
+#14 22.78 rendering chunks...
+#14 23.43 computing gzip size...
+#14 23.57 dist/index.html                                           3.46 kB │ gzip:   1.55 kB
+#14 23.57 dist/assets/KaTeX_Size3-Regular-CTq5MqoE.woff             4.42 kB
+#14 23.57 dist/assets/ETHK-B5-H-1MLb5v9x.bcmap                      4.43 kB
+#14 23.57 dist/assets/HKscs-B5-H-CXbBbq6g.bcmap                     4.44 kB
+#14 23.57 dist/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2            4.93 kB
+#14 23.57 dist/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2            5.21 kB
+#14 23.57 dist/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2            5.47 kB
+#14 23.57 dist/assets/KaTeX_Size4-Regular-BF-4gkZK.woff             5.98 kB
+#14 23.57 dist/assets/KaTeX_Size2-Regular-oD1tc_U0.woff             6.19 kB
+#14 23.57 dist/assets/quickjs-eval-CRWuirmK.js                      6.23 kB
+#14 23.57 dist/assets/KaTeX_Size1-Regular-C195tn64.woff             6.50 kB
+#14 23.57 dist/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2      6.91 kB
+#14 23.57 dist/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2         6.91 kB
+#14 23.57 dist/assets/GBT-H-DL9h-WkS.bcmap                          7.27 kB
+#14 23.57 dist/assets/GBT-EUC-H-BTsQIL1M.bcmap                      7.29 kB
+#14 23.57 dist/assets/GBTpc-EUC-H-DnIh5WJ3.bcmap                    7.30 kB
+#14 23.57 dist/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf              7.59 kB
+#14 23.57 dist/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff       7.66 kB
+#14 23.57 dist/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff          7.72 kB
+#14 23.57 dist/assets/KaTeX_Script-Regular-D3wIWfF6.woff2           9.64 kB
+#14 23.57 dist/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2       10.34 kB
+#14 23.57 dist/assets/KaTeX_Size4-Regular-DWFBv043.ttf             10.36 kB
+#14 23.57 dist/assets/KaTeX_Script-Regular-D5yQViql.woff           10.59 kB
+#14 23.57 dist/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2         11.32 kB
+#14 23.57 dist/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2            11.35 kB
+#14 23.57 dist/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf             11.51 kB
+#14 23.57 dist/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2        12.03 kB
+#14 23.57 dist/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2          12.22 kB
+#14 23.57 dist/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf             12.23 kB
+#14 23.57 dist/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff        12.32 kB
+#14 23.58 dist/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf       12.34 kB
+#14 23.58 dist/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf          12.37 kB
+#14 23.58 dist/assets/LICENSE_JBIG2-C_izpuvI.                      12.86 kB
+#14 23.58 dist/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff          13.21 kB
+#14 23.58 dist/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff             13.30 kB
+#14 23.58 dist/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2      13.57 kB
+#14 23.58 dist/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff         14.11 kB
+#14 23.58 dist/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff           14.41 kB
+#14 23.58 dist/assets/GBKp-EUC-H-CElrnV5g.bcmap                    14.69 kB
+#14 23.58 dist/assets/GBK-EUC-H-CAORqCkf.bcmap                     14.69 kB
+#14 23.58 dist/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff       16.03 kB
+#14 23.58 dist/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2         16.40 kB
+#14 23.58 dist/assets/KaTeX_Math-Italic-t53AETM-.woff2             16.44 kB
+#14 23.58 dist/assets/KaTeX_Script-Regular-C5JkGWo-.ttf            16.65 kB
+#14 23.58 dist/assets/FoxitSymbol-BVtbc20u.pfb                     16.73 kB
+#14 23.58 dist/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2         16.78 kB
+#14 23.58 dist/assets/KSC-Johab-H-CGtV3MPT.bcmap                   16.79 kB
+#14 23.58 dist/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2             16.99 kB
+#14 23.58 dist/assets/FoxitFixed-Dyd5Nipw.pfb                      17.60 kB
+#14 23.58 dist/assets/FoxitFixedBold-D5TuYRwj.pfb                  18.06 kB
+#14 23.58 dist/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff          18.67 kB
+#14 23.58 dist/assets/FoxitFixedItalic-DqjQkmbS.pfb                18.75 kB
+#14 23.58 dist/assets/KaTeX_Math-Italic-DA0__PXp.woff              18.75 kB
+#14 23.58 dist/assets/FoxitFixedBoldItalic-BqlXQ_Yv.pfb            19.15 kB
+#14 23.58 dist/assets/FoxitSerifBold-DZZ4CclT.pfb                  19.40 kB
+#14 23.58 dist/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff          19.41 kB
+#14 23.58 dist/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf         19.44 kB
+#14 23.58 dist/assets/FoxitSerif-qbgiDIe-.pfb                      19.47 kB
+#14 23.58 dist/assets/KaTeX_Fraktur-Regular-CB_wures.ttf           19.57 kB
+#14 23.58 dist/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf              19.58 kB
+#14 23.58 dist/assets/GBK2K-H-Cv55KPk8.bcmap                       19.66 kB
+#14 23.58 dist/assets/KaTeX_Main-Italic-BMLOBm91.woff              19.68 kB
+#14 23.58 dist/assets/FoxitSerifBoldItalic-DSQtwd_X.pfb            20.73 kB
+#14 23.58 dist/assets/FoxitSerifItalic-CQs5lx9Y.pfb                21.23 kB
+#14 23.58 dist/assets/LICENSE_LIBERATION-DvFkOp_c.                 22.15 kB
+#14 23.58 dist/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf          22.36 kB
+#14 23.58 dist/assets/Adobe-Korea1-UCS2-BEQZuOdo.bcmap             23.29 kB
+#14 23.58 dist/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf            24.50 kB
+#14 23.58 dist/assets/KaTeX_Main-Bold-Cx986IdX.woff2               25.32 kB
+#14 23.58 dist/assets/UniJIS-UCS2-H-2DbZ0MaQ.bcmap                 25.44 kB
+#14 23.58 dist/assets/UniKS-UCS2-H-YeUc7k1L.bcmap                  25.78 kB
+#14 23.58 dist/assets/KaTeX_Main-Regular-B22Nviop.woff2            26.27 kB
+#14 23.58 dist/assets/UniKS-UTF16-H-B0dvB-Td.bcmap                 26.33 kB
+#14 23.58 dist/assets/UniKS-UTF32-H-olR_LtmR.bcmap                 26.45 kB
+#14 23.58 dist/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf        27.56 kB
+#14 23.58 dist/assets/UniKS-UTF8-H-CbpebD-y.bcmap                  27.79 kB
+#14 23.58 dist/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2             28.08 kB
+#14 23.58 dist/assets/FoxitDingbats-BaQLufoW.pfb                   29.51 kB
+#14 23.58 dist/assets/KaTeX_Main-Bold-Jm3AIy58.woff                29.91 kB
+#14 23.58 dist/assets/KaTeX_Main-Regular-Dr94JaBh.woff             30.77 kB
+#14 23.58 dist/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf           31.20 kB
+#14 23.58 dist/assets/KaTeX_Math-Italic-flOr_0UB.ttf               31.31 kB
+#14 23.58 dist/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf           32.97 kB
+#14 23.58 dist/assets/KaTeX_AMS-Regular-DMm9YOAa.woff              33.52 kB
+#14 23.58 dist/assets/KaTeX_Main-Italic-3WenGoN9.ttf               33.58 kB
+#14 23.58 dist/assets/Adobe-GB1-UCS2-BA083yIo.bcmap                33.97 kB
+#14 23.58 dist/assets/UniJIS-UTF16-H-BlDDPdCK.bcmap                39.44 kB
+#14 23.58 dist/assets/UniJIS2004-UTF16-H-KXixH-HI.bcmap            39.53 kB
+#14 23.58 dist/assets/UniJISX0213-UTF32-H-BavAhZjb.bcmap           40.52 kB
+#14 23.58 dist/assets/UniJIS-UTF32-H-BIQPWkjv.bcmap                40.54 kB
+#14 23.58 dist/assets/UniJISX02132004-UTF32-H-DAH-AgUq.bcmap       40.61 kB
+#14 23.58 dist/assets/UniJIS2004-UTF32-H-CXrD-9YE.bcmap            40.63 kB
+#14 23.58 dist/assets/Adobe-Japan1-UCS2-BL-4M2vS.bcmap             40.95 kB
+#14 23.58 dist/assets/Adobe-CNS1-UCS2-fO900upv.bcmap               41.19 kB
+#14 23.58 dist/assets/UniJIS-UTF8-H-CGusholx.bcmap                 41.70 kB
+#14 23.58 dist/assets/UniJIS2004-UTF8-H-BkOctZjn.bcmap             41.78 kB
+#14 23.58 dist/assets/UniGB-UCS2-H-D7xzRvZN.bcmap                  43.37 kB
+#14 23.58 dist/assets/UniGB-UTF16-H-DKjbEwc0.bcmap                 44.09 kB
+#14 23.58 dist/assets/UniGB-UTF32-H-Behfouj5.bcmap                 45.74 kB
+#14 23.58 dist/assets/UniGB-UTF8-H-EROft1ro.bcmap                  46.84 kB
+#14 23.58 dist/assets/UniCNS-UCS2-H-DWzv8UhH.bcmap                 48.28 kB
+#14 23.58 dist/assets/UniCNS-UTF16-H-Bw0JKgCq.bcmap                50.42 kB
+#14 23.58 dist/assets/KaTeX_Main-Bold-waoOVXN0.ttf                 51.34 kB
+#14 23.58 dist/assets/UniCNS-UTF32-H-IE_GrH2i.bcmap                52.68 kB
+#14 23.58 dist/assets/KaTeX_Main-Regular-ypZvNtVU.ttf              53.58 kB
+#14 23.58 dist/assets/UniCNS-UTF8-H-BbLcFh6Q.bcmap                 53.63 kB
+#14 23.58 dist/assets/KaTeX_AMS-Regular-DRggAlZN.ttf               63.63 kB
+#14 23.58 dist/assets/qcms_bg-3PJi_GXR.wasm                        96.59 kB │ gzip:  35.85 kB
+#14 23.58 dist/assets/jbig2-BUnLb-NU.wasm                         103.67 kB │ gzip:  41.22 kB
+#14 23.58 dist/assets/LiberationSans-BoldItalic-Bj53-jFw.ttf      135.12 kB
+#14 23.58 dist/assets/LiberationSans-Bold-BPt4bU5Z.ttf            137.05 kB
+#14 23.58 dist/assets/LiberationSans-Regular-cbskN6YR.ttf         139.51 kB
+#14 23.58 dist/assets/jbig2_nowasm_fallback-DHGs-rAY.js           152.01 kB
+#14 23.58 dist/assets/LiberationSans-Italic-5QhGB3P9.ttf          162.04 kB
+#14 23.58 dist/assets/openjpeg-tw7Aizcv.wasm                      251.13 kB │ gzip:  82.31 kB
+#14 23.58 dist/assets/openjpeg_nowasm_fallback-CmMvpOQT.js        445.78 kB
+#14 23.58 dist/assets/quickjs-eval-zJSp5SB4.wasm                  469.11 kB │ gzip: 218.89 kB
+#14 23.58 dist/assets/pdf.worker.min-CjEcRF4W.mjs               1,264.34 kB
+#14 23.58 dist/assets/calendar-page-sgqpUF_E.css                   15.55 kB │ gzip:   3.51 kB
+#14 23.58 dist/assets/campus-guide-page-DZqmGraJ.css               19.39 kB │ gzip:   7.44 kB
+#14 23.58 dist/assets/rich-markdown-C-EwFotM.css                   30.25 kB │ gzip:   8.09 kB
+#14 23.58 dist/assets/index-CFLvxfPR.css                          176.60 kB │ gzip:  28.04 kB
+#14 23.58 dist/assets/workspace-mode-LZuWceM7.js                    0.04 kB │ gzip:   0.06 kB
+#14 23.58 dist/assets/check-BChd3dnH.js                             0.12 kB │ gzip:   0.13 kB
+#14 23.58 dist/assets/chevron-down-C9gUJ9Cl.js                      0.12 kB │ gzip:   0.14 kB
+#14 23.58 dist/assets/chevron-left-BEXuXbwr.js                      0.13 kB │ gzip:   0.14 kB
+#14 23.58 dist/assets/chevron-right-ZL9QoFPH.js                     0.13 kB │ gzip:   0.14 kB
+#14 23.58 dist/assets/plus-Ddnpo5JF.js                              0.15 kB │ gzip:   0.15 kB
+#14 23.58 dist/assets/x-DvIErH5E.js                                 0.15 kB │ gzip:   0.15 kB
+#14 23.58 dist/assets/index-D17hSi50.js                             0.15 kB │ gzip:   0.15 kB
+#14 23.58 dist/assets/arrow-right-BYcMN02D.js                       0.16 kB │ gzip:   0.16 kB
+#14 23.58 dist/assets/arrow-up-right-D6mMn4Ia.js                    0.16 kB │ gzip:   0.16 kB
+#14 23.58 dist/assets/search-Db58Y5wZ.js                            0.16 kB │ gzip:   0.16 kB
+#14 23.58 dist/assets/circle-check-C-MUPadr.js                      0.17 kB │ gzip:   0.16 kB
+#14 23.58 dist/assets/user-round-CuJKWYZX.js                        0.17 kB │ gzip:   0.17 kB
+#14 23.58 dist/assets/message-square-2nhUUUvC.js                    0.18 kB │ gzip:   0.17 kB
+#14 23.58 dist/assets/check-check-BEpoQfHI.js                       0.18 kB │ gzip:   0.17 kB
+#14 23.58 dist/assets/panel-left-CIPqe1KX.js                        0.18 kB │ gzip:   0.18 kB
+#14 23.58 dist/assets/rotate-ccw-x79HwBl9.js                        0.20 kB │ gzip:   0.18 kB
+#14 23.58 dist/assets/mail-QdQHrFRn.js                              0.21 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/square-check-big-BG4-_tWL.js                  0.22 kB │ gzip:   0.19 kB
+#14 23.58 dist/assets/copy-tKApPU-Z.js                              0.23 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/activity-BiDrEjB8.js                          0.23 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/settings-2-BIEy4-KM.js                        0.24 kB │ gzip:   0.19 kB
+#14 23.58 dist/assets/video-CYw13Ug9.js                             0.25 kB │ gzip:   0.21 kB
+#14 23.58 dist/assets/circle-alert-CsNN0fAp.js                      0.25 kB │ gzip:   0.19 kB
+#14 23.58 dist/assets/external-link-rkB31Cp9.js                     0.25 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/eye-BTFaAY2k.js                               0.25 kB │ gzip:   0.19 kB
+#14 23.58 dist/assets/map-pin-BPO9R_I3.js                           0.25 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/upload-MeRUuUs0.js                            0.25 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/log-out-D64-L2D0.js                           0.26 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/download-B9PS1muz.js                          0.26 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/triangle-alert-Hbh0JKGZ.js                    0.26 kB │ gzip:   0.21 kB
+#14 23.58 dist/assets/image-C-59hoTJ.js                             0.27 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/shield-BUdLx8B8.js                            0.27 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/git-branch-B0M80pk6.js                        0.27 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/pencil-DtnyZ7lE.js                            0.27 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/send-horizontal-XyiLUApB.js                   0.28 kB │ gzip:   0.23 kB
+#14 23.58 dist/assets/inbox-D2vhgHQL.js                             0.28 kB │ gzip:   0.23 kB
+#14 23.58 dist/assets/play-BB6xgKBn.js                              0.29 kB │ gzip:   0.21 kB
+#14 23.58 dist/assets/send-CrHaoXup.js                              0.29 kB │ gzip:   0.23 kB
+#14 23.58 dist/assets/receipt-text-C-KL9mFf.js                      0.29 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/list-todo-B_JuWRXl.js                         0.30 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/calendar-check-2-B1wEaZQW.js                  0.32 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/save-CYgXWXO7.js                              0.32 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/attachment-source-aEUFFR1Z.js                 0.33 kB │ gzip:   0.20 kB
+#14 23.58 dist/assets/file-text-CCarpJ9X.js                         0.33 kB │ gzip:   0.22 kB
+#14 23.58 dist/assets/share-2-BJ5Kyw-d.js                           0.35 kB │ gzip:   0.23 kB
+#14 23.58 dist/assets/calendar-plus-BpGVTJyy.js                     0.35 kB │ gzip:   0.23 kB
+#14 23.58 dist/assets/trash-2-BvT_-guE.js                           0.35 kB │ gzip:   0.24 kB
+#14 23.58 dist/assets/brand-mark-BrnPPk9A.js                        0.41 kB │ gzip:   0.31 kB
+#14 23.58 dist/assets/layers-DLWmU9-F.js                            0.42 kB │ gzip:   0.24 kB
+#14 23.58 dist/assets/map-CREGSOOy.js                               0.42 kB │ gzip:   0.27 kB
+#14 23.58 dist/assets/calendar-days-SKTWKqz5.js                     0.49 kB │ gzip:   0.26 kB
+#14 23.58 dist/assets/sparkles-CWk40yHg.js                          0.51 kB │ gzip:   0.30 kB
+#14 23.58 dist/assets/panels-top-left-D6EIuum6.js                   0.52 kB │ gzip:   0.28 kB
+#14 23.58 dist/assets/users-D0an0kom.js                             0.58 kB │ gzip:   0.35 kB
+#14 23.58 dist/assets/star-aO72xyeQ.js                              0.60 kB │ gzip:   0.37 kB
+#14 23.58 dist/assets/textarea-gtZ0AoVL.js                          0.62 kB │ gzip:   0.38 kB
+#14 23.58 dist/assets/label-DTPk009l.js                             0.68 kB │ gzip:   0.44 kB
+#14 23.58 dist/assets/input-BHRxyBsl.js                             0.84 kB │ gzip:   0.47 kB
+#14 23.58 dist/assets/separator-Dgik1EFZ.js                         0.86 kB │ gzip:   0.47 kB
+#14 23.58 dist/assets/card-_gSx9Kg4.js                              0.89 kB │ gzip:   0.38 kB
+#14 23.58 dist/assets/shield-check-DIq9rayw.js                      0.91 kB │ gzip:   0.45 kB
+#14 23.58 dist/assets/alert-C3fMc9Dz.js                             1.03 kB │ gzip:   0.51 kB
+#14 23.58 dist/assets/time-ODzKvYC0.js                              1.13 kB │ gzip:   0.57 kB
+#14 23.58 dist/assets/workbench-filter-BdhGfv0D.js                  1.18 kB │ gzip:   0.69 kB
+#14 23.58 dist/assets/table-B-hW2521.js                             1.21 kB │ gzip:   0.48 kB
+#14 23.58 dist/assets/captcha-field-DfnxGzWi.js                     1.23 kB │ gzip:   0.77 kB
+#14 23.58 dist/assets/api-CTCBQpvJ.js                               1.25 kB │ gzip:   0.84 kB
+#14 23.58 dist/assets/badge-C1lDa3-u.js                             1.27 kB │ gzip:   0.60 kB
+#14 23.58 dist/assets/auth-fetch-901L6nfc.js                        1.28 kB │ gzip:   0.80 kB
+#14 23.58 dist/assets/i18n-gPqgOdjv.js                              1.29 kB │ gzip:   0.71 kB
+#14 23.58 dist/assets/forgot-password-page-rnldbVi4.js              1.54 kB │ gzip:   0.96 kB
+#14 23.58 dist/assets/reset-password-page-B7nWWkuY.js               1.78 kB │ gzip:   1.00 kB
+#14 23.59 dist/assets/workspace-entry-BUAetXS9.js                   1.78 kB │ gzip:   0.94 kB
+#14 23.59 dist/assets/account-page-C1nrlEHy.js                      2.25 kB │ gzip:   1.06 kB
+#14 23.59 dist/assets/email-html-view-CzACTYcq.js                   2.49 kB │ gzip:   1.39 kB
+#14 23.59 dist/assets/collapsible-D7wXLwWd.js                       2.51 kB │ gzip:   1.06 kB
+#14 23.59 dist/assets/workbenches-Dk0mMdGG.js                       2.58 kB │ gzip:   1.44 kB
+#14 23.59 dist/assets/experience-shell-sTlxaQmr.js                  2.86 kB │ gzip:   1.30 kB
+#14 23.59 dist/assets/invoices-uGm2WxSQ.js                          2.93 kB │ gzip:   1.51 kB
+#14 23.59 dist/assets/recruitment-page-qQkmN1KP.js                  2.94 kB │ gzip:   1.55 kB
+#14 23.59 dist/assets/invoice-email-summary-GcCnFP6L.js             3.05 kB │ gzip:   1.49 kB
+#14 23.59 dist/assets/admin-login-page-j4vTjprN.js                  3.25 kB │ gzip:   1.53 kB
+#14 23.59 dist/assets/auth-shell-D05me28H.js                        3.44 kB │ gzip:   1.48 kB
+#14 23.59 dist/assets/recruitment-CAzcPyBp.js                       3.58 kB │ gzip:   2.02 kB
+#14 23.59 dist/assets/rag-citations-CYV_Krsw.js                     3.86 kB │ gzip:   1.71 kB
+#14 23.59 dist/assets/login-page-DP2z5wos.js                        3.87 kB │ gzip:   1.88 kB
+#14 23.59 dist/assets/legal-page-Dq-05BzV.js                        4.14 kB │ gzip:   2.09 kB
+#14 23.59 dist/assets/register-page-VrsYZ6JD.js                     4.29 kB │ gzip:   2.10 kB
+#14 23.59 dist/assets/jobs-page-CTKtyYfa.js                         4.54 kB │ gzip:   2.00 kB
+#14 23.59 dist/assets/switch-CSiWWkrz.js                            4.55 kB │ gzip:   1.91 kB
+#14 23.59 dist/assets/workbench-agent-D3Tsuy9y.js                   4.59 kB │ gzip:   2.13 kB
+#14 23.59 dist/assets/checkbox-B4YY0Ny7.js                          4.72 kB │ gzip:   1.99 kB
+#14 23.59 dist/assets/tabs-B-pm5gQF.js                              5.14 kB │ gzip:   1.88 kB
+#14 23.59 dist/assets/overview-BSykrWT9.js                          6.38 kB │ gzip:   2.16 kB
+#14 23.59 dist/assets/dialog-Ck3i8N9q.js                            7.43 kB │ gzip:   2.65 kB
+#14 23.59 dist/assets/todos-page-VQX7zKtY.js                        8.08 kB │ gzip:   3.21 kB
+#14 23.59 dist/assets/agent-thinking-CYtR3R7v.js                    8.23 kB │ gzip:   3.57 kB
+#14 23.59 dist/assets/attachment-viewer-CzrD7mWD.js                 9.46 kB │ gzip:   3.76 kB
+#14 23.59 dist/assets/demo-page-Clxj9BB5.js                        11.45 kB │ gzip:   5.05 kB
+#14 23.59 dist/assets/landing-page-7s-9DA06.js                     11.83 kB │ gzip:   4.30 kB
+#14 23.59 dist/assets/assistant-draft-review-z7yTGYGO.js           11.84 kB │ gzip:   4.39 kB
+#14 23.59 dist/assets/onboarding-DZVa2bFe.js                       12.67 kB │ gzip:   5.43 kB
+#14 23.59 dist/assets/mail-page-DLbUE5tr.js                        13.45 kB │ gzip:   5.27 kB
+#14 23.59 dist/assets/scroll-area-ONgZbv5x.js                      14.25 kB │ gzip:   4.49 kB
+#14 23.59 dist/assets/campus-page-R5xHRZQT.js                      14.91 kB │ gzip:   5.63 kB
+#14 23.59 dist/assets/mail-desk-page-a5q_ohKK.js                   14.92 kB │ gzip:   5.63 kB
+#14 23.59 dist/assets/command-palette-CtAyyjKP.js                  15.04 kB │ gzip:   6.16 kB
+#14 23.59 dist/assets/workspace-BDhtHfJr.js                        15.16 kB │ gzip:   6.19 kB
+#14 23.59 dist/assets/voice-briefing-BXR3abOH.js                   16.18 kB │ gzip:   6.57 kB
+#14 23.59 dist/assets/invoices-page-Dr0N-63C.js                    19.99 kB │ gzip:   6.33 kB
+#14 23.59 dist/assets/admin-shell-d5mLKG9L.js                      19.99 kB │ gzip:   7.70 kB
+#14 23.59 dist/assets/experience-page-CfTXEzBW.js                  21.04 kB │ gzip:   7.96 kB
+#14 23.59 dist/assets/traces-page-G88L-Yqi.js                      21.77 kB │ gzip:   7.83 kB
+#14 23.59 dist/assets/event-dialog-DBvSMUXV.js                     22.21 kB │ gzip:   7.56 kB
+#14 23.59 dist/assets/select-D2SP6yyq.js                           23.41 kB │ gzip:   8.12 kB
+#14 23.59 dist/assets/share-dialog-CjBUlGZD.js                     31.51 kB │ gzip:  13.18 kB
+#14 23.59 dist/assets/evidence-page-DtdWgdkF.js                    40.70 kB │ gzip:  14.52 kB
+#14 23.59 dist/assets/admin-page-B1-FWQJl.js                       41.09 kB │ gzip:  10.14 kB
+#14 23.59 dist/assets/settings-page-D09s4aRV.js                    51.26 kB │ gzip:  15.16 kB
+#14 23.59 dist/assets/app-shell-Ba9pOh7H.js                        62.76 kB │ gzip:  20.96 kB
+#14 23.59 dist/assets/workbenches-page-D2gxUxWf.js                 72.70 kB │ gzip:  21.93 kB
+#14 23.59 dist/assets/Recruitment-CNOd_SIW.js                      73.76 kB │ gzip:  21.30 kB
+#14 23.59 dist/assets/leaflet-src-ClNlEAhG.js                     149.90 kB │ gzip:  43.48 kB
+#14 23.59 dist/assets/campus-guide-page-CS0sD_Lm.js               361.70 kB │ gzip: 118.09 kB
+#14 23.59 dist/assets/calendar-page-CenodL9c.js                   363.21 kB │ gzip: 104.86 kB
+#14 23.59 dist/assets/rich-markdown-DYtxVbGl.js                   438.71 kB │ gzip: 132.51 kB
+#14 23.59 
+#14 23.59 (!) Some chunks are larger than 500 kB after minification. Consider:
+#14 23.59 - Using dynamic import() to code-split the application
+#14 23.59 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+#14 23.59 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#14 23.59 dist/assets/index-DwB7a1UT.js                           477.93 kB │ gzip: 156.08 kB
+#14 23.59 dist/assets/pdf-preview-CiDKq-w0.js                     590.14 kB │ gzip: 187.39 kB
+#14 23.59 ✓ built in 20.86s
+#14 DONE 23.8s
+
+#15 [runtime 2/9] RUN printf 'Acquire::ForceIPv4 "true";\n' > /etc/apt/apt.conf.d/99force-ipv4     && for f in /etc/apt/sources.list /etc/apt/sources.list.d/debian.sources; do          [ -f "$f" ] && sed -i "s|deb.debian.org|deb.debian.org|g" "$f" || true;        done     && apt-get update && apt-get install -y --no-install-recommends ca-certificates fonts-noto-cjk libreoffice-impress     && rm -rf /var/lib/apt/lists/*     && mkdir -p /var/lib/daylight-metrics && chown -R node:node /var/lib/daylight-metrics
+#15 CACHED
+
+#16 [runtime 3/9] WORKDIR /app
+#16 CACHED
+
+#17 [runtime 4/9] COPY --from=dependencies /app/node_modules ./node_modules
+#17 CACHED
+
+#18 [runtime 5/9] COPY package.json ./
+#18 CACHED
+
+#19 [runtime 6/9] COPY --from=build /app/dist ./dist
+#19 DONE 0.5s
+
+#20 [runtime 7/9] COPY server ./server
+#20 DONE 0.2s
+
+#21 [runtime 8/9] COPY shared ./shared
+#21 DONE 0.1s
+
+#22 [runtime 9/9] COPY scripts ./scripts
+#22 DONE 0.1s
+
+#23 exporting to image
+#23 exporting layers
+#23 exporting layers 0.3s done
+#23 writing image sha256:551cf718c2f5198fe5c6b57c20ff0218e287e20d74c480a245cf1b0b81737fcd done
+#23 naming to docker.io/library/daylight:source-release-20261104-v22-final done
+#23 DONE 0.3s
+
+View build details: docker-desktop://dashboard/build/default/default/ouwbrt5kxj8yiagmdrc677w17

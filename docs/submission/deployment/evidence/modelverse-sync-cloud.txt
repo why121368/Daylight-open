@@ -1,0 +1,137 @@
+POST /api/sync/qq -> 202 {"job":{"id":"4ca08e29-d9a2-4c03-bf9c-6f8665d53423","mailboxId":"170e71cd-e12e-47fa-807c-51e1f61b9381","kind":"mailbox.sync","status":"succeeded","attempts":1,"
+  t+10s: matched=2/2 statuses=imported,conflict
+
+=== processed mails ===
+{
+ "subject": "Re: 数据分析师岗位沟通 - 面试时间确认（李宛蓉）",
+ "status": "conflict",
+ "category": "meeting",
+ "priority": "normal",
+ "summary": "新增 1 项日程；1 项日程冲突，已加入日历并标记，回复草稿待确认",
+ "eventIds": [
+  "795d8035-e33c-46fd-b241-fad2998a5b25"
+ ],
+ "taskIds": [],
+ "error": null
+}
+{
+ "subject": "【面试安排】10 月 22 日 16:30 王梓睿 数据分析师 二面",
+ "status": "imported",
+ "category": "meeting",
+ "priority": "normal",
+ "summary": "新增 1 项日程；新增 1 项待办",
+ "eventIds": [
+  "34056ded-56fd-4137-bafc-29e008486ce6"
+ ],
+ "taskIds": [
+  "c9423a2d-c688-4d25-aee8-7b168ec8334f"
+ ],
+ "error": null
+}
+
+=== events / tasks created from those mails ===
+{
+ "kind": "task",
+ "title": "完成王梓睿二面面评表模板填写准备",
+ "dueAt": "2026-10-21T18:00:00+08:00",
+ "status": "pending",
+ "sources": [
+  null
+ ]
+}
+
+=== trace for the new mails ===
+{
+ "subject": "【面试安排】10 月 22 日 16:30 王梓睿 数据分析师 二面",
+ "status": "imported",
+ "error": null,
+ "model": null,
+ "endpoint": null,
+ "usage": null,
+ "cost_cny": 0.01600392,
+ "modelCalls": null,
+ "spans": [
+  {
+   "stage": "receive_email",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "parse",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "queue_wait",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "check_calendar",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "extract",
+   "status": "success",
+   "cost_cny": 0.01600392
+  },
+  {
+   "stage": "create_task",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "draft_reply",
+   "status": "success",
+   "cost_cny": 0
+  }
+ ]
+}
+{
+ "subject": "Re: 数据分析师岗位沟通 - 面试时间确认（李宛蓉）",
+ "status": "conflict",
+ "error": null,
+ "model": null,
+ "endpoint": null,
+ "usage": null,
+ "cost_cny": 0.027839919999999997,
+ "modelCalls": null,
+ "spans": [
+  {
+   "stage": "receive_email",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "parse",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "queue_wait",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "check_calendar",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "extract",
+   "status": "success",
+   "cost_cny": 0.027839919999999997
+  },
+  {
+   "stage": "create_task",
+   "status": "success",
+   "cost_cny": 0
+  },
+  {
+   "stage": "draft_reply",
+   "status": "success",
+   "cost_cny": 0
+  }
+ ]
+}

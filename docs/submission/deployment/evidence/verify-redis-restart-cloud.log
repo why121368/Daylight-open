@@ -1,0 +1,12 @@
+{"at":"2026-10-16T18:35:23.806Z","stage":"environment","node":"v22.23.3","platform":"linux","directory":"/opt/daylight/app/work/redis-restart-abNvw7"}
+{"at":"2026-10-16T18:35:23.842Z","stage":"redis-started","pid":12850,"port":36773}
+{"at":"2026-10-16T18:35:23.964Z","stage":"initialized"}
+{"at":"2026-10-16T18:35:23.968Z","stage":"own-redis-killed","pid":12850}
+{"at":"2026-10-16T18:35:23.971Z","stage":"outage-rejected","mode":"redis","fallback":false}
+{"at":"2026-10-16T18:35:24.004Z","stage":"redis-started","pid":12863,"port":36773}
+{"at":"2026-10-16T18:35:24.196Z","stage":"recovered","elapsedMs":190}
+{"at":"2026-10-16T18:35:24.205Z","stage":"closed-connected","elapsedMs":7,"rejected":false}
+{"at":"2026-10-16T18:35:24.212Z","stage":"initialized-again"}
+{"at":"2026-10-16T18:35:24.213Z","stage":"own-redis-killed","pid":12863}
+{"at":"2026-10-16T18:35:24.215Z","stage":"closed-disconnected","elapsedMs":0,"rejected":true}
+{"at":"2026-10-16T18:35:26.226Z","stage":"PASS","naturalClientExit":true,"exitAfterCloseMs":2010,"port":36773,"evidence":"/opt/daylight/app/work/redis-restart-abNvw7/evidence.jsonl"}

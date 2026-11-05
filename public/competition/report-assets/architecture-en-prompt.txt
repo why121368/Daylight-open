@@ -1,0 +1,18 @@
+Use case: infographic-diagram
+Asset type: final architecture infographic, English text only, for the Daylight cloud-native Agent competition report.
+Primary request: Design a beautiful precise technical architecture diagram. 1536x1024 landscape, warm ivory background, forest-green type and lines, restrained amber highlights. Spacious grid, large legible text, minimal flat icons. ALL TEXT IN ENGLISH. No Chinese characters. No typographic ornaments crossing letters.
+Title exactly: "DAYLIGHT / CLOUD ARCHITECTURE"
+Subtitle: "API, Worker and Scheduler run as separate containers"
+Top: two client cards "Desktop browser" and "Mobile / WeChat" feed "Caddy / HTTPS".
+Below split into two large independent panels:
+LEFT (60% width), header "Connected workspace". Service cards in row: "API" with caption "Requests and approvals"; "Scheduler" with caption "Due task dispatch"; "Worker" with caption "Mail, models and OCR".
+Below these service cards one horizontal band: "Shared infrastructure".
+Below four equal boxes, no arrows between boxes: "PostgreSQL" / "Business and task authority"; "Redis" / "Sessions and coordination"; "RabbitMQ" / "Task wake-ups"; "MinIO" / "Private attachments".
+Below a line of text: "Leases / Idempotency / Version checks / Send approval".
+Below a separate slim external tools strip: "IMAP / SMTP / Model API / Calendars".
+RIGHT (35% width), header "Public walkthrough". Four stacked boxes with downward arrows: "Synthetic emails" -> "Preset extraction" -> "Production mail and calendar tools" -> "Request-local results".
+Bottom pill inside right panel: "Isolated memory / No live model calls".
+The HTTPS card branches to both panel headers. No connections between the public walkthrough panel and the connected workspace panel. No arrows between the shared infrastructure boxes. Avoid extra arrows or duplicated components.
+Footer band: "Health checks / Metrics and Trace / Database backup / Image rollback"
+Footnote: "Current public deployment: one Docker Compose host. Multi-zone k3s results are documented separately."
+Constraints: Every word correct and readable, no invented measurements, no fake certification, English only. This must read as an engineering diagram, not marketing art. Use hierarchy, whitespace, and aligned text for clarity.

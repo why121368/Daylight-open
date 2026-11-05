@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-11-03T21:39:40.862Z",
+  "origin": "https://daylight.yunforis.com",
+  "transport": "Node HTTPS, direct, standard TLS validation, Accept-Encoding: gzip",
+  "scope": "Wire body bytes for the experience static import closure, CSS and startup image; response headers excluded; no browser latency claim.",
+  "inventorySha256": "88c1e03abd1f14fa0f73ff93d8e461fda2edff938e3151c36c82d6193e40b0f3",
+  "entry": "assets/index-uWxkp93S.js",
+  "html": {
+    "requestPath": "/experience",
+    "status": 200,
+    "encoding": "gzip",
+    "contentType": "text/html; charset=UTF-8",
+    "cacheControl": "public, max-age=0",
+    "wireBytes": 1558,
+    "decodedBytes": 3426,
+    "wireSha256": "e018a4c94f223c04bca7007fb4b535bc0b0f01b785fe82b9b49c123583c08721",
+    "decodedSha256": "c58c073258f71737b4c20807de828bbeeb8fbfce9dbcfec90ff7fc79a1481905",
+    "elapsedMs": 199.382
+  },
+  "totals": {
+    "javaScript": {
+      "resources": 10,
+      "wireBytes": 218078,
+      "decodedBytes": 636188
+    },
+    "css": {
+      "resources": 1,
+      "wireBytes": 38003,
+      "decodedBytes": 207310
+    },
+    "startupImage": {
+      "resources": 1,
+      "wireBytes": 115160,
+      "decodedBytes": 115160
+    }
+  },
+  "checks": [
+    {
+      "requestPath": "/assets/arrow-right-DVjsxITB.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 161,
+      "decodedBytes": 161,
+      "wireSha256": "2f5be85eb72941def37bd0a66996425e0ed41cd533c3d9ac8c1c50b7a117ae67",
+      "decodedSha256": "2f5be85eb72941def37bd0a66996425e0ed41cd533c3d9ac8c1c50b7a117ae67",
+      "elapsedMs": 19.108,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/card-Cg9xDERv.js",
+      "status": 200,
+      "encoding": "gzip",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 392,
+      "decodedBytes": 886,
+      "wireSha256": "15d791e35e88a0898392be7ef0ec6ce1d95c350b82015468f2806e88874354fb",
+      "decodedSha256": "3b5776872a65dda3a17a6a1d7f8aafbb4e4915e72b77b8d26d4527f6850d40e5",
+      "elapsedMs": 45.564,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/check-DsmE9rEO.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 116,
+      "decodedBytes": 116,
+      "wireSha256": "95987f3a3c1d76ae0a24e86fd1ecd116f5e291e220c6824e02948762320bccc7",
+      "decodedSha256": "95987f3a3c1d76ae0a24e86fd1ecd116f5e291e220c6824e02948762320bccc7",
+      "elapsedMs": 36.682,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/check-check-Bgjx1efu.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 175,
+      "decodedBytes": 175,
+      "wireSha256": "6dd629d137acb0c3e974e73be6b71e8411fb6d2498ccef23f758331cff5ffc49",
+      "decodedSha256": "6dd629d137acb0c3e974e73be6b71e8411fb6d2498ccef23f758331cff5ffc49",
+      "elapsedMs": 23.58,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/circle-alert-CiTZhRdt.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 246,
+      "decodedBytes": 246,
+      "wireSha256": "b107a45ac5530332307e7e03f38755c5a53a89850c8cbeb97b564d4f35904ee9",
+      "decodedSha256": "b107a45ac5530332307e7e03f38755c5a53a89850c8cbeb97b564d4f35904ee9",
+      "elapsedMs": 15.452,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/experience-page-doziL5t6.js",
+      "status": 200,
+      "encoding": "gzip",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 6716,
+      "decodedBytes": 17579,
+      "wireSha256": "24b2c7275b93ebba71f1fe63db9bac05c80bcb8f120f3a6d9912e21de75cd6fb",
+      "decodedSha256": "efb9ecd4625f5e6b287e250df3181b50a5ad99c702afa36de6c50eca3a3bec09",
+      "elapsedMs": 22.797,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/experience-shell-B4L8WVFp.js",
+      "status": 200,
+      "encoding": "gzip",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 1297,
+      "decodedBytes": 2813,
+      "wireSha256": "1953ee832d23a9d74df1148c311b84c04d6ff5efffad962178f79f5a30628a48",
+      "decodedSha256": "59450242547c61175218fea300a538c6327f3295da5eaaf4fa341b586719886b",
+      "elapsedMs": 20.273,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/index-uWxkp93S.js",
+      "status": 200,
+      "encoding": "gzip",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 208463,
+      "decodedBytes": 613700,
+      "wireSha256": "deb604203f6345866f9b28a8e69e96145eca9f5d3e99de2834924ba033541b04",
+      "decodedSha256": "cde56777a197fd1cd4e7f9152430d63b7e1edf429799d056b7707a540c21aa40",
+      "elapsedMs": 74.17,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/rotate-ccw-rspaiTXc.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 196,
+      "decodedBytes": 196,
+      "wireSha256": "35de61848880c6e6a8d0e6b5ab360cafa94d7ca98f8583a1e4bab4d92b0c2418",
+      "decodedSha256": "35de61848880c6e6a8d0e6b5ab360cafa94d7ca98f8583a1e4bab4d92b0c2418",
+      "elapsedMs": 16.368,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/shield-check-CUeeJCXq.js",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 316,
+      "decodedBytes": 316,
+      "wireSha256": "97aa33816db8fe4644cdb095172f4a8bc0993dbb650b435e181f9e236468f9ef",
+      "decodedSha256": "97aa33816db8fe4644cdb095172f4a8bc0993dbb650b435e181f9e236468f9ef",
+      "elapsedMs": 22.183,
+      "group": "javaScript"
+    },
+    {
+      "requestPath": "/assets/index-BOUmGwgB.css",
+      "status": 200,
+      "encoding": "gzip",
+      "contentType": "text/css; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "wireBytes": 38003,
+      "decodedBytes": 207310,
+      "wireSha256": "d81454439f99ca99f07d567f064bc5dcb131a1123d4ab95db7918e8ce96bc3d3",
+      "decodedSha256": "bef6589479df02f0746b2082734dd806a6efa1e5a003c10d64eb01612ccf4584",
+      "elapsedMs": 51.564,
+      "group": "css"
+    },
+    {
+      "requestPath": "/logo.png",
+      "status": 200,
+      "encoding": "identity",
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0",
+      "wireBytes": 115160,
+      "decodedBytes": 115160,
+      "wireSha256": "39f8e32044bd6b0056416f54c5d7e1e48b6019cd4d8de52deaeeebfa8ece2a79",
+      "decodedSha256": "39f8e32044bd6b0056416f54c5d7e1e48b6019cd4d8de52deaeeebfa8ece2a79",
+      "elapsedMs": 50.331,
+      "group": "startupImage"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "ok": true,
+  "at": "2026-10-28T00:46:15.289Z",
+  "scope": "isolated-local-containers",
+  "cloudAcceptance": false,
+  "checks": [
+    {
+      "name": "real PG/RabbitMQ leases, outbox, heartbeat and idempotency",
+      "ok": true,
+      "ms": 8547,
+      "detail": "isolated schema and queue removed by verifier"
+    },
+    {
+      "name": "20 real concurrency and isolation checks",
+      "ok": true,
+      "ms": 5128,
+      "detail": "dedicated schema, own Redis/RabbitMQ containers"
+    },
+    {
+      "name": "S3 attachment upload/download, keys and missing-credential refusal",
+      "ok": true,
+      "ms": 596,
+      "detail": "real local MinIO, no cloud provider claim"
+    },
+    {
+      "name": "production API writes owned synthetic calendar data",
+      "ok": true,
+      "ms": 271,
+      "detail": {
+        "auth": 401,
+        "foreignMailbox": 404,
+        "admin": 403,
+        "syntheticEventPersisted": true
+      }
+    },
+    {
+      "name": "actual cold backup resumes original healthy application stack",
+      "ok": true,
+      "ms": 27667,
+      "detail": {
+        "ms": 27667,
+        "complete": true,
+        "checksums": 4
+      }
+    },
+    {
+      "name": "actual restore into new Compose project preserves DB and object SHA256",
+      "ok": true,
+      "ms": 48661,
+      "detail": {
+        "ms": 48660,
+        "objectSha256": "c2b1537a23b0164c1e467e25700d922418feea3d66f76aeeb0cfd6ecb82c4189",
+        "sourceStillReadable": true
+      }
+    }
+  ],
+  "sourceState": [
+    {
+      "Service": "api",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "migrate",
+      "State": "exited",
+      "Health": "",
+      "ExitCode": 0
+    },
+    {
+      "Service": "minio",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "minio-init",
+      "State": "exited",
+      "Health": "",
+      "ExitCode": 0
+    },
+    {
+      "Service": "postgres",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "rabbitmq",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "redis",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "scheduler",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "worker",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    }
+  ],
+  "restoredState": [
+    {
+      "Service": "api",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "migrate",
+      "State": "exited",
+      "Health": "",
+      "ExitCode": 0
+    },
+    {
+      "Service": "minio",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "minio-init",
+      "State": "exited",
+      "Health": "",
+      "ExitCode": 0
+    },
+    {
+      "Service": "postgres",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "rabbitmq",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "redis",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "scheduler",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    },
+    {
+      "Service": "worker",
+      "State": "running",
+      "Health": "healthy",
+      "ExitCode": 0
+    }
+  ],
+  "minio": {
+    "version": "RELEASE.2025-04-22T22-12-26Z",
+    "source": "pre-existing local cache; not distributed",
+    "defaultComposeVersionChecked": false
+  },
+  "externalMailAndModelCalls": false,
+  "appImageId": "sha256:fe48aad934f456e654679540a18a82d053f78fe9408a5f3b134eb751e2de2881",
+  "sourceDigest": "1ef3356233a9877050b4b2895aaf6ae91a201f91d443671cb4c900c8eb4856df"
+}

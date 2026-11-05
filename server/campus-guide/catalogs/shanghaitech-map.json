@@ -1,0 +1,6074 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "revision": 0,
+    "title": "上海科技大学校园地图",
+    "description": "上海科技大学浦东校区 · 建筑与校园服务",
+    "timezone": "Asia/Shanghai",
+    "dataSource": "上海科技大学校园地图 https://map.shanghaitech.edu.cn；公开建筑与服务点数据，BD-09 转 WGS84。",
+    "notice": "已导入学校地图的建筑轮廓与服务点。数据为抓取快照，部分原始记录更新于 2018 年；建筑中心不是入口，开放时间与道路通行需现场核对。课表、活动、菜单及可导航路网需另行补充。",
+    "isDemo": false,
+    "updatedAt": "",
+    "center": {
+      "lat": 31.17925887,
+      "lng": 121.59071597
+    },
+    "zoom": 17,
+    "mapImage": {
+      "url": "/campus-maps/shanghaitech/map.webp",
+      "bounds": {
+        "south": 31.175186353748813,
+        "west": 121.58364305637129,
+        "north": 31.183560010701047,
+        "east": 121.59784644236271
+      },
+      "attribution": "地图来源：上海科技大学校园地图",
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "importedAt": "2026-10-28T04:17:09.102Z",
+      "sourceCoordinates": "BD-09",
+      "coordinates": "WGS84"
+    },
+    "mapTileUrl": "",
+    "mapAttribution": "",
+    "satelliteTileUrl": "",
+    "satelliteAttribution": ""
+  },
+  "places": [
+    {
+      "id": "sht-building-49c92421fec648beb34c0e15c3097ff2",
+      "name": "丝路餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "丝路餐厅",
+      "floor": "",
+      "room": "",
+      "lat": 31.18035627,
+      "lng": 121.59318719,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "食堂餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=49c92421fec648beb34c0e15c3097ff2typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-49c92421fec648beb34c0e15c3097ff2",
+          "points": [
+            {
+              "lat": 31.1807047,
+              "lng": 121.59313971
+            },
+            {
+              "lat": 31.18068177,
+              "lng": 121.59319848
+            },
+            {
+              "lat": 31.18071047,
+              "lng": 121.5932383
+            },
+            {
+              "lat": 31.1806406,
+              "lng": 121.59324332
+            },
+            {
+              "lat": 31.18055541,
+              "lng": 121.5934535
+            },
+            {
+              "lat": 31.18048189,
+              "lng": 121.59342167
+            },
+            {
+              "lat": 31.18039246,
+              "lng": 121.59339482
+            },
+            {
+              "lat": 31.18046478,
+              "lng": 121.59313585
+            },
+            {
+              "lat": 31.18034488,
+              "lng": 121.59308213
+            },
+            {
+              "lat": 31.18018998,
+              "lng": 121.59308221
+            },
+            {
+              "lat": 31.18012479,
+              "lng": 121.59329237
+            },
+            {
+              "lat": 31.18003952,
+              "lng": 121.59327449
+            },
+            {
+              "lat": 31.18006377,
+              "lng": 121.5931221
+            },
+            {
+              "lat": 31.18000158,
+              "lng": 121.59310919
+            },
+            {
+              "lat": 31.18003316,
+              "lng": 121.59292095
+            },
+            {
+              "lat": 31.18009838,
+              "lng": 121.59293486
+            },
+            {
+              "lat": 31.18031254,
+              "lng": 121.59300646
+            },
+            {
+              "lat": 31.18039389,
+              "lng": 121.59302833
+            },
+            {
+              "lat": 31.18057974,
+              "lng": 121.59308201
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-ce3cc625afb04ad89ee754f2803ab91f",
+      "name": "教授公寓1号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓1号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17766206,
+      "lng": 121.59364697,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=ce3cc625afb04ad89ee754f2803ab91ftypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-ce3cc625afb04ad89ee754f2803ab91f",
+          "points": [
+            {
+              "lat": 31.1778928,
+              "lng": 121.59327541
+            },
+            {
+              "lat": 31.177765,
+              "lng": 121.59322665
+            },
+            {
+              "lat": 31.17755651,
+              "lng": 121.59324864
+            },
+            {
+              "lat": 31.17743614,
+              "lng": 121.59361618
+            },
+            {
+              "lat": 31.17743211,
+              "lng": 121.59406734
+            },
+            {
+              "lat": 31.17771388,
+              "lng": 121.59406325
+            },
+            {
+              "lat": 31.17781066,
+              "lng": 121.59405425
+            },
+            {
+              "lat": 31.17782586,
+              "lng": 121.59383912
+            },
+            {
+              "lat": 31.17781869,
+              "lng": 121.59365986
+            },
+            {
+              "lat": 31.17788101,
+              "lng": 121.59345468
+            },
+            {
+              "lat": 31.17784562,
+              "lng": 121.59343178
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-027658990162450091ed9a5015aa9717",
+      "name": "教授公寓2号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓2号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17761282,
+      "lng": 121.59454384,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=027658990162450091ed9a5015aa9717typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-027658990162450091ed9a5015aa9717",
+          "points": [
+            {
+              "lat": 31.17784466,
+              "lng": 121.59422654
+            },
+            {
+              "lat": 31.1774508,
+              "lng": 121.5942217
+            },
+            {
+              "lat": 31.17743743,
+              "lng": 121.59460217
+            },
+            {
+              "lat": 31.17738031,
+              "lng": 121.59482529
+            },
+            {
+              "lat": 31.17770882,
+              "lng": 121.59486601
+            },
+            {
+              "lat": 31.17775097,
+              "lng": 121.59475943
+            },
+            {
+              "lat": 31.17776817,
+              "lng": 121.59465584
+            },
+            {
+              "lat": 31.17782774,
+              "lng": 121.59463291
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-fcc24b4351c949738935b29a11968e5c",
+      "name": "教授公寓3号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓3号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17762972,
+      "lng": 121.5953267,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=fcc24b4351c949738935b29a11968e5ctypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-fcc24b4351c949738935b29a11968e5c",
+          "points": [
+            {
+              "lat": 31.17755325,
+              "lng": 121.59500252
+            },
+            {
+              "lat": 31.17754526,
+              "lng": 121.59500252
+            },
+            {
+              "lat": 31.17744138,
+              "lng": 121.59500655
+            },
+            {
+              "lat": 31.1774324,
+              "lng": 121.5954189
+            },
+            {
+              "lat": 31.17750626,
+              "lng": 121.59565096
+            },
+            {
+              "lat": 31.17773712,
+              "lng": 121.59565087
+            },
+            {
+              "lat": 31.17783325,
+              "lng": 121.59560203
+            },
+            {
+              "lat": 31.17775306,
+              "lng": 121.59540982
+            },
+            {
+              "lat": 31.17776071,
+              "lng": 121.59521261
+            },
+            {
+              "lat": 31.17780201,
+              "lng": 121.59511399
+            },
+            {
+              "lat": 31.1777612,
+              "lng": 121.59500643
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-ac56d5e061e54f73998adecdff73b968",
+      "name": "教授公寓4号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓4号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17712852,
+      "lng": 121.59334738,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=ac56d5e061e54f73998adecdff73b968typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-ac56d5e061e54f73998adecdff73b968",
+          "points": [
+            {
+              "lat": 31.17721693,
+              "lng": 121.59303862
+            },
+            {
+              "lat": 31.17698989,
+              "lng": 121.59302973
+            },
+            {
+              "lat": 31.17689408,
+              "lng": 121.59309251
+            },
+            {
+              "lat": 31.1770165,
+              "lng": 121.59345498
+            },
+            {
+              "lat": 31.17704323,
+              "lng": 121.59366511
+            },
+            {
+              "lat": 31.17725602,
+              "lng": 121.59366006
+            },
+            {
+              "lat": 31.17736364,
+              "lng": 121.59364209
+            },
+            {
+              "lat": 31.17733559,
+              "lng": 121.59341404
+            },
+            {
+              "lat": 31.17726542,
+              "lng": 121.59312326
+            },
+            {
+              "lat": 31.17721393,
+              "lng": 121.59303862
+            },
+            {
+              "lat": 31.17720993,
+              "lng": 121.59303862
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-491a728df0784c5ba99cc3df13325be7",
+      "name": "教授公寓5号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓5号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.1770914,
+      "lng": 121.59421535,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=491a728df0784c5ba99cc3df13325be7typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-491a728df0784c5ba99cc3df13325be7",
+          "points": [
+            {
+              "lat": 31.17732212,
+              "lng": 121.59383731
+            },
+            {
+              "lat": 31.1771934,
+              "lng": 121.59379254
+            },
+            {
+              "lat": 31.17698952,
+              "lng": 121.59379261
+            },
+            {
+              "lat": 31.17688068,
+              "lng": 121.594196
+            },
+            {
+              "lat": 31.17684936,
+              "lng": 121.59440616
+            },
+            {
+              "lat": 31.17685338,
+              "lng": 121.59463822
+            },
+            {
+              "lat": 31.17724309,
+              "lng": 121.59463411
+            },
+            {
+              "lat": 31.17723952,
+              "lng": 121.59442794
+            },
+            {
+              "lat": 31.17729791,
+              "lng": 121.59422275
+            },
+            {
+              "lat": 31.17733366,
+              "lng": 121.59403849
+            },
+            {
+              "lat": 31.177267,
+              "lng": 121.59399867
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-0861c5f7cf734a3fb80db2668d6a28e6",
+      "name": "教授公寓6号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教授公寓6号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.1771753,
+      "lng": 121.59508084,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教授公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=0861c5f7cf734a3fb80db2668d6a28e6typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-0861c5f7cf734a3fb80db2668d6a28e6",
+          "points": [
+            {
+              "lat": 31.17737113,
+              "lng": 121.59475657
+            },
+            {
+              "lat": 31.17696936,
+              "lng": 121.59475671
+            },
+            {
+              "lat": 31.17696956,
+              "lng": 121.59517702
+            },
+            {
+              "lat": 31.17707736,
+              "lng": 121.59540508
+            },
+            {
+              "lat": 31.17728594,
+              "lng": 121.59538708
+            },
+            {
+              "lat": 31.17738724,
+              "lng": 121.5953492
+            },
+            {
+              "lat": 31.17737805,
+              "lng": 121.59527848
+            },
+            {
+              "lat": 31.17732241,
+              "lng": 121.59517989
+            },
+            {
+              "lat": 31.17737622,
+              "lng": 121.59517091
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-08935e62bb8944eb9d14e917475bd8d6",
+      "name": "学生公寓1号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓1号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18065377,
+      "lng": 121.59364566,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=08935e62bb8944eb9d14e917475bd8d6typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-08935e62bb8944eb9d14e917475bd8d6",
+          "points": [
+            {
+              "lat": 31.18091955,
+              "lng": 121.59330592
+            },
+            {
+              "lat": 31.1807792,
+              "lng": 121.59322532
+            },
+            {
+              "lat": 31.18061753,
+              "lng": 121.59323835
+            },
+            {
+              "lat": 31.18053834,
+              "lng": 121.59356107
+            },
+            {
+              "lat": 31.18049244,
+              "lng": 121.59356507
+            },
+            {
+              "lat": 31.18045933,
+              "lng": 121.59389674
+            },
+            {
+              "lat": 31.18039737,
+              "lng": 121.59389677
+            },
+            {
+              "lat": 31.18038897,
+              "lng": 121.59404417
+            },
+            {
+              "lat": 31.18066296,
+              "lng": 121.594053
+            },
+            {
+              "lat": 31.18087106,
+              "lng": 121.59406584
+            },
+            {
+              "lat": 31.18092058,
+              "lng": 121.59358776
+            },
+            {
+              "lat": 31.1808204,
+              "lng": 121.59357387
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-870c648baede4d7695c9d6ba21b6941d",
+      "name": "学生公寓2号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓2号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18022479,
+      "lng": 121.59349151,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=870c648baede4d7695c9d6ba21b6941dtypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-870c648baede4d7695c9d6ba21b6941d",
+          "points": [
+            {
+              "lat": 31.18038431,
+              "lng": 121.59338586
+            },
+            {
+              "lat": 31.18048972,
+              "lng": 121.5934127
+            },
+            {
+              "lat": 31.18045509,
+              "lng": 121.5938828
+            },
+            {
+              "lat": 31.18018564,
+              "lng": 121.59390484
+            },
+            {
+              "lat": 31.17996523,
+              "lng": 121.59387407
+            },
+            {
+              "lat": 31.18002178,
+              "lng": 121.59339998
+            },
+            {
+              "lat": 31.18010673,
+              "lng": 121.59339994
+            },
+            {
+              "lat": 31.18018191,
+              "lng": 121.59307823
+            },
+            {
+              "lat": 31.18034514,
+              "lng": 121.59309607
+            },
+            {
+              "lat": 31.18045762,
+              "lng": 121.59312689
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-e2d546c8f5594eb88b2fdc40bdc9a4af",
+      "name": "学生公寓3号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓3号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17977899,
+      "lng": 121.59331993,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=e2d546c8f5594eb88b2fdc40bdc9a4aftypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-e2d546c8f5594eb88b2fdc40bdc9a4af",
+          "points": [
+            {
+              "lat": 31.179746,
+              "lng": 121.59290216
+            },
+            {
+              "lat": 31.17988091,
+              "lng": 121.5929021
+            },
+            {
+              "lat": 31.18001771,
+              "lng": 121.59295083
+            },
+            {
+              "lat": 31.17994506,
+              "lng": 121.59324565
+            },
+            {
+              "lat": 31.18004232,
+              "lng": 121.59326353
+            },
+            {
+              "lat": 31.17998873,
+              "lng": 121.59373363
+            },
+            {
+              "lat": 31.17970298,
+              "lng": 121.59373775
+            },
+            {
+              "lat": 31.17952154,
+              "lng": 121.59370696
+            },
+            {
+              "lat": 31.17952315,
+              "lng": 121.59357251
+            },
+            {
+              "lat": 31.17956497,
+              "lng": 121.59356353
+            },
+            {
+              "lat": 31.17959788,
+              "lng": 121.5932239
+            },
+            {
+              "lat": 31.17966016,
+              "lng": 121.5932418
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-bcb08e41d2d04acf83bbaae4a21196ae",
+      "name": "学生公寓4号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓4号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.1793419,
+      "lng": 121.59316128,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=bcb08e41d2d04acf83bbaae4a21196aetypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-bcb08e41d2d04acf83bbaae4a21196ae",
+          "points": [
+            {
+              "lat": 31.17932256,
+              "lng": 121.59275396
+            },
+            {
+              "lat": 31.17945448,
+              "lng": 121.59275391
+            },
+            {
+              "lat": 31.17958622,
+              "lng": 121.59279866
+            },
+            {
+              "lat": 31.17950612,
+              "lng": 121.59306759
+            },
+            {
+              "lat": 31.17961062,
+              "lng": 121.59309841
+            },
+            {
+              "lat": 31.17956505,
+              "lng": 121.59356851
+            },
+            {
+              "lat": 31.17924924,
+              "lng": 121.59356865
+            },
+            {
+              "lat": 31.17907864,
+              "lng": 121.59352889
+            },
+            {
+              "lat": 31.17912043,
+              "lng": 121.59307174
+            },
+            {
+              "lat": 31.17924028,
+              "lng": 121.59306771
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-f79abaa2ff4447aa8a26c63533c0d0dc",
+      "name": "学生公寓5号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓5号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.178717,
+      "lng": 121.59292402,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=f79abaa2ff4447aa8a26c63533c0d0dctypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-f79abaa2ff4447aa8a26c63533c0d0dc",
+          "points": [
+            {
+              "lat": 31.17873664,
+              "lng": 121.59251919
+            },
+            {
+              "lat": 31.17888364,
+              "lng": 121.59252411
+            },
+            {
+              "lat": 31.17901122,
+              "lng": 121.5925599
+            },
+            {
+              "lat": 31.17893529,
+              "lng": 121.59283679
+            },
+            {
+              "lat": 31.17905211,
+              "lng": 121.59288554
+            },
+            {
+              "lat": 31.17884304,
+              "lng": 121.59331984
+            },
+            {
+              "lat": 31.17858136,
+              "lng": 121.59332892
+            },
+            {
+              "lat": 31.17838663,
+              "lng": 121.59322642
+            },
+            {
+              "lat": 31.17858717,
+              "lng": 121.59281901
+            },
+            {
+              "lat": 31.17866489,
+              "lng": 121.59280603
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-2376c9073269497c911f0f20fb7ed44b",
+      "name": "尚科餐厅/西餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [
+        "尚科餐厅",
+        "西餐厅"
+      ],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "尚科餐厅/西餐厅",
+      "floor": "",
+      "room": "",
+      "lat": 31.1794653,
+      "lng": 121.59285449,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "食堂餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=2376c9073269497c911f0f20fb7ed44btypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-2376c9073269497c911f0f20fb7ed44b",
+          "points": [
+            {
+              "lat": 31.17913088,
+              "lng": 121.592765
+            },
+            {
+              "lat": 31.17914654,
+              "lng": 121.59258175
+            },
+            {
+              "lat": 31.17924741,
+              "lng": 121.59257773
+            },
+            {
+              "lat": 31.17979664,
+              "lng": 121.59277367
+            },
+            {
+              "lat": 31.17977095,
+              "lng": 121.59284538
+            },
+            {
+              "lat": 31.17972412,
+              "lng": 121.59290814
+            },
+            {
+              "lat": 31.17967017,
+              "lng": 121.59313125
+            },
+            {
+              "lat": 31.17952573,
+              "lng": 121.59304667
+            },
+            {
+              "lat": 31.17958609,
+              "lng": 121.59279169
+            },
+            {
+              "lat": 31.17945803,
+              "lng": 121.59272901
+            },
+            {
+              "lat": 31.17931144,
+              "lng": 121.592747
+            },
+            {
+              "lat": 31.17925744,
+              "lng": 121.59296612
+            },
+            {
+              "lat": 31.17923422,
+              "lng": 121.59295318
+            },
+            {
+              "lat": 31.17916134,
+              "lng": 121.5929572
+            },
+            {
+              "lat": 31.17921241,
+              "lng": 121.59279684
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-3f62d5cd197f47f786b55b933a1c7154",
+      "name": "学生公寓6号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓6号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17827727,
+      "lng": 121.59275938,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=3f62d5cd197f47f786b55b933a1c7154typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-3f62d5cd197f47f786b55b933a1c7154",
+          "points": [
+            {
+              "lat": 31.17831641,
+              "lng": 121.59238392
+            },
+            {
+              "lat": 31.17846683,
+              "lng": 121.59235697
+            },
+            {
+              "lat": 31.17858275,
+              "lng": 121.5924107
+            },
+            {
+              "lat": 31.17851834,
+              "lng": 121.59266069
+            },
+            {
+              "lat": 31.17861252,
+              "lng": 121.59272838
+            },
+            {
+              "lat": 31.17841938,
+              "lng": 121.59315769
+            },
+            {
+              "lat": 31.17808365,
+              "lng": 121.5931618
+            },
+            {
+              "lat": 31.17794712,
+              "lng": 121.59307222
+            },
+            {
+              "lat": 31.1781324,
+              "lng": 121.59265188
+            },
+            {
+              "lat": 31.1782511,
+              "lng": 121.59263889
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-df290f76befc4c1eb3ba2cedb6c985c1",
+      "name": "体育馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "体育馆",
+      "floor": "",
+      "room": "",
+      "lat": 31.17872659,
+      "lng": 121.59399513,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=df290f76befc4c1eb3ba2cedb6c985c1typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-df290f76befc4c1eb3ba2cedb6c985c1",
+          "points": [
+            {
+              "lat": 31.17902852,
+              "lng": 121.59352094
+            },
+            {
+              "lat": 31.17909719,
+              "lng": 121.59367329
+            },
+            {
+              "lat": 31.17902311,
+              "lng": 121.59406273
+            },
+            {
+              "lat": 31.17886583,
+              "lng": 121.5943845
+            },
+            {
+              "lat": 31.1788647,
+              "lng": 121.59454983
+            },
+            {
+              "lat": 31.178582,
+              "lng": 121.59444238
+            },
+            {
+              "lat": 31.17835813,
+              "lng": 121.59444247
+            },
+            {
+              "lat": 31.17837739,
+              "lng": 121.59422833
+            },
+            {
+              "lat": 31.17846313,
+              "lng": 121.59404504
+            },
+            {
+              "lat": 31.17868121,
+              "lng": 121.59354798
+            },
+            {
+              "lat": 31.17876081,
+              "lng": 121.59347225
+            },
+            {
+              "lat": 31.17889616,
+              "lng": 121.59344033
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-e2473fa9855d45cbb5c5b8d15bc8b8f4",
+      "name": "图书馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "图书馆",
+      "floor": "",
+      "room": "",
+      "lat": 31.17753014,
+      "lng": 121.5925087,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=e2473fa9855d45cbb5c5b8d15bc8b8f4typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-e2473fa9855d45cbb5c5b8d15bc8b8f4",
+          "points": [
+            {
+              "lat": 31.17817833,
+              "lng": 121.59215692
+            },
+            {
+              "lat": 31.17798256,
+              "lng": 121.59205442
+            },
+            {
+              "lat": 31.17795484,
+              "lng": 121.59201459
+            },
+            {
+              "lat": 31.17750694,
+              "lng": 121.59200579
+            },
+            {
+              "lat": 31.17749252,
+              "lng": 121.59203667
+            },
+            {
+              "lat": 31.17737275,
+              "lng": 121.59204568
+            },
+            {
+              "lat": 31.17705801,
+              "lng": 121.59232263
+            },
+            {
+              "lat": 31.17699205,
+              "lng": 121.59232265
+            },
+            {
+              "lat": 31.17687735,
+              "lng": 121.5926095
+            },
+            {
+              "lat": 31.17709618,
+              "lng": 121.59271699
+            },
+            {
+              "lat": 31.1770814,
+              "lng": 121.59278372
+            },
+            {
+              "lat": 31.17743267,
+              "lng": 121.59297581
+            },
+            {
+              "lat": 31.17766031,
+              "lng": 121.59296278
+            },
+            {
+              "lat": 31.17768664,
+              "lng": 121.59292692
+            },
+            {
+              "lat": 31.17783808,
+              "lng": 121.59301151
+            },
+            {
+              "lat": 31.17798477,
+              "lng": 121.59299851
+            },
+            {
+              "lat": 31.17797474,
+              "lng": 121.59288598
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-6b98ac6446604b2ea213ed8bf0a1e54b",
+      "name": "学生公寓7号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓7号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17830896,
+      "lng": 121.59374731,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=6b98ac6446604b2ea213ed8bf0a1e54btypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-6b98ac6446604b2ea213ed8bf0a1e54b",
+          "points": [
+            {
+              "lat": 31.17874102,
+              "lng": 121.59342745
+            },
+            {
+              "lat": 31.17849944,
+              "lng": 121.59395041
+            },
+            {
+              "lat": 31.17844563,
+              "lng": 121.5939594
+            },
+            {
+              "lat": 31.17834053,
+              "lng": 121.59412078
+            },
+            {
+              "lat": 31.1779902,
+              "lng": 121.59414781
+            },
+            {
+              "lat": 31.17787615,
+              "lng": 121.59402734
+            },
+            {
+              "lat": 31.17819199,
+              "lng": 121.59335198
+            },
+            {
+              "lat": 31.17860866,
+              "lng": 121.59334683
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-a747029d40c840d2860b01d14be486dd",
+      "name": "学生公寓8号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓8号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17945175,
+      "lng": 121.59411384,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=a747029d40c840d2860b01d14be486ddtypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-a747029d40c840d2860b01d14be486dd",
+          "points": [
+            {
+              "lat": 31.17976096,
+              "lng": 121.59379549
+            },
+            {
+              "lat": 31.17972403,
+              "lng": 121.59431042
+            },
+            {
+              "lat": 31.17963924,
+              "lng": 121.59431942
+            },
+            {
+              "lat": 31.17965273,
+              "lng": 121.59446283
+            },
+            {
+              "lat": 31.17914687,
+              "lng": 121.5944541
+            },
+            {
+              "lat": 31.17913781,
+              "lng": 121.59416328
+            },
+            {
+              "lat": 31.17918876,
+              "lng": 121.59376487
+            },
+            {
+              "lat": 31.17962557,
+              "lng": 121.59376866
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-73374de7e44541c99a1bb59f68d9df1f",
+      "name": "学生公寓9号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓9号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17991017,
+      "lng": 121.5942675,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=73374de7e44541c99a1bb59f68d9df1ftypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-73374de7e44541c99a1bb59f68d9df1f",
+          "points": [
+            {
+              "lat": 31.18018659,
+              "lng": 121.59395862
+            },
+            {
+              "lat": 31.18017868,
+              "lng": 121.59396361
+            },
+            {
+              "lat": 31.18003505,
+              "lng": 121.59392284
+            },
+            {
+              "lat": 31.18002714,
+              "lng": 121.59392782
+            },
+            {
+              "lat": 31.17977621,
+              "lng": 121.59392296
+            },
+            {
+              "lat": 31.179718,
+              "lng": 121.59430843
+            },
+            {
+              "lat": 31.17964427,
+              "lng": 121.59432141
+            },
+            {
+              "lat": 31.17963433,
+              "lng": 121.59461224
+            },
+            {
+              "lat": 31.17993115,
+              "lng": 121.5946121
+            },
+            {
+              "lat": 31.18007391,
+              "lng": 121.59460307
+            },
+            {
+              "lat": 31.18006358,
+              "lng": 121.59446861
+            },
+            {
+              "lat": 31.18015246,
+              "lng": 121.59446459
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-c7dec4f5551e487d92e9e4c434503218",
+      "name": "学生公寓10号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "residence",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生公寓10号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.1803383,
+      "lng": 121.59437536,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "学生公寓"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=c7dec4f5551e487d92e9e4c434503218typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-c7dec4f5551e487d92e9e4c434503218",
+          "points": [
+            {
+              "lat": 31.18061709,
+              "lng": 121.59411577
+            },
+            {
+              "lat": 31.18047471,
+              "lng": 121.59408895
+            },
+            {
+              "lat": 31.18034263,
+              "lng": 121.59408005
+            },
+            {
+              "lat": 31.18018872,
+              "lng": 121.59408013
+            },
+            {
+              "lat": 31.18016039,
+              "lng": 121.59423153
+            },
+            {
+              "lat": 31.18015268,
+              "lng": 121.59447754
+            },
+            {
+              "lat": 31.18007166,
+              "lng": 121.59447359
+            },
+            {
+              "lat": 31.18006569,
+              "lng": 121.59459012
+            },
+            {
+              "lat": 31.18006362,
+              "lng": 121.59464391
+            },
+            {
+              "lat": 31.18006,
+              "lng": 121.59466582
+            },
+            {
+              "lat": 31.18024098,
+              "lng": 121.59467071
+            },
+            {
+              "lat": 31.18051481,
+              "lng": 121.59467058
+            },
+            {
+              "lat": 31.18050533,
+              "lng": 121.59452716
+            },
+            {
+              "lat": 31.18059412,
+              "lng": 121.59451815
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-ded84a6dea0b457e9c7dc11a07f07534",
+      "name": "物质学院1号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院1号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18014132,
+      "lng": 121.58883046,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=ded84a6dea0b457e9c7dc11a07f07534typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-ded84a6dea0b457e9c7dc11a07f07534",
+          "points": [
+            {
+              "lat": 31.18042699,
+              "lng": 121.58923711
+            },
+            {
+              "lat": 31.18034395,
+              "lng": 121.58897326
+            },
+            {
+              "lat": 31.18040939,
+              "lng": 121.58894634
+            },
+            {
+              "lat": 31.18038408,
+              "lng": 121.58882586
+            },
+            {
+              "lat": 31.1803033,
+              "lng": 121.58883486
+            },
+            {
+              "lat": 31.18022399,
+              "lng": 121.58855806
+            },
+            {
+              "lat": 31.18030525,
+              "lng": 121.58852217
+            },
+            {
+              "lat": 31.18026332,
+              "lng": 121.58836983
+            },
+            {
+              "lat": 31.18004328,
+              "lng": 121.58836097
+            },
+            {
+              "lat": 31.17985578,
+              "lng": 121.58843276
+            },
+            {
+              "lat": 31.17998329,
+              "lng": 121.58887585
+            },
+            {
+              "lat": 31.18007241,
+              "lng": 121.58930003
+            },
+            {
+              "lat": 31.1802543,
+              "lng": 121.58929994
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-7414c5fbe7c34a08837882cfe1d4611a",
+      "name": "物质学院2号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院2号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17992073,
+      "lng": 121.58781531,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=7414c5fbe7c34a08837882cfe1d4611atypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-7414c5fbe7c34a08837882cfe1d4611a",
+          "points": [
+            {
+              "lat": 31.18025667,
+              "lng": 121.5882334
+            },
+            {
+              "lat": 31.1801475,
+              "lng": 121.58775943
+            },
+            {
+              "lat": 31.18000792,
+              "lng": 121.58731634
+            },
+            {
+              "lat": 31.17988009,
+              "lng": 121.58732139
+            },
+            {
+              "lat": 31.17968826,
+              "lng": 121.58737525
+            },
+            {
+              "lat": 31.17958528,
+              "lng": 121.5874241
+            },
+            {
+              "lat": 31.17969352,
+              "lng": 121.58784928
+            },
+            {
+              "lat": 31.17979552,
+              "lng": 121.58831429
+            },
+            {
+              "lat": 31.1799924,
+              "lng": 121.58831419
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-f3f53eebc38742cbb402414c935c05bd",
+      "name": "行政中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "行政中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.17742697,
+      "lng": 121.58927475,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=f3f53eebc38742cbb402414c935c05bdtypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-f3f53eebc38742cbb402414c935c05bd",
+          "points": [
+            {
+              "lat": 31.17744498,
+              "lng": 121.58873152
+            },
+            {
+              "lat": 31.17749845,
+              "lng": 121.58886096
+            },
+            {
+              "lat": 31.17747506,
+              "lng": 121.58889183
+            },
+            {
+              "lat": 31.17764757,
+              "lng": 121.58918255
+            },
+            {
+              "lat": 31.17781271,
+              "lng": 121.58955891
+            },
+            {
+              "lat": 31.17777849,
+              "lng": 121.58959876
+            },
+            {
+              "lat": 31.17781577,
+              "lng": 121.58971924
+            },
+            {
+              "lat": 31.1776207,
+              "lng": 121.58981392
+            },
+            {
+              "lat": 31.17748585,
+              "lng": 121.58981795
+            },
+            {
+              "lat": 31.17729539,
+              "lng": 121.58937089
+            },
+            {
+              "lat": 31.17704079,
+              "lng": 121.58896866
+            },
+            {
+              "lat": 31.17722614,
+              "lng": 121.58878537
+            },
+            {
+              "lat": 31.17731117,
+              "lng": 121.58878932
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-335e450978a74653a51c3b98fd5face1",
+      "name": "物质学院3号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院3号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.179674,
+      "lng": 121.58692762,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=335e450978a74653a51c3b98fd5face1typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-335e450978a74653a51c3b98fd5face1",
+          "points": [
+            {
+              "lat": 31.17977979,
+              "lng": 121.58653868
+            },
+            {
+              "lat": 31.17958362,
+              "lng": 121.58657462
+            },
+            {
+              "lat": 31.1793467,
+              "lng": 121.58667332
+            },
+            {
+              "lat": 31.17951591,
+              "lng": 121.58724985
+            },
+            {
+              "lat": 31.17957352,
+              "lng": 121.5872319
+            },
+            {
+              "lat": 31.17959799,
+              "lng": 121.58730758
+            },
+            {
+              "lat": 31.17971809,
+              "lng": 121.58731648
+            },
+            {
+              "lat": 31.18000174,
+              "lng": 121.58720481
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-35af883db43a4fdda740867dcf15bdaf",
+      "name": "物质学院4号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院4号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17962087,
+      "lng": 121.58925792,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=35af883db43a4fdda740867dcf15bdaftypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-35af883db43a4fdda740867dcf15bdaf",
+          "points": [
+            {
+              "lat": 31.17998283,
+              "lng": 121.5890073
+            },
+            {
+              "lat": 31.17956415,
+              "lng": 121.58911504
+            },
+            {
+              "lat": 31.17917288,
+              "lng": 121.58924468
+            },
+            {
+              "lat": 31.17922392,
+              "lng": 121.58950855
+            },
+            {
+              "lat": 31.18006999,
+              "lng": 121.5893299
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-6f964a8f7e7842dcaa566c02e3efd5a9",
+      "name": "物质学院5号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院5号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17931841,
+      "lng": 121.58878404,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=6f964a8f7e7842dcaa566c02e3efd5a9typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-6f964a8f7e7842dcaa566c02e3efd5a9",
+          "points": [
+            {
+              "lat": 31.17971343,
+              "lng": 121.58846171
+            },
+            {
+              "lat": 31.1794794,
+              "lng": 121.58855642
+            },
+            {
+              "lat": 31.17943108,
+              "lng": 121.58843495
+            },
+            {
+              "lat": 31.17933444,
+              "lng": 121.58839914
+            },
+            {
+              "lat": 31.17923871,
+              "lng": 121.58846192
+            },
+            {
+              "lat": 31.1791871,
+              "lng": 121.5883773
+            },
+            {
+              "lat": 31.17906109,
+              "lng": 121.58847594
+            },
+            {
+              "lat": 31.17887732,
+              "lng": 121.58853378
+            },
+            {
+              "lat": 31.17901925,
+              "lng": 121.5888962
+            },
+            {
+              "lat": 31.17910988,
+              "lng": 121.58919093
+            },
+            {
+              "lat": 31.1792986,
+              "lng": 121.58918188
+            },
+            {
+              "lat": 31.17947155,
+              "lng": 121.58913301
+            },
+            {
+              "lat": 31.1794045,
+              "lng": 121.58886915
+            },
+            {
+              "lat": 31.17975265,
+              "lng": 121.58868077
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-3daa8855730c44e884aa085c66f07410",
+      "name": "物质学院6号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院6号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17941129,
+      "lng": 121.58800824,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=3daa8855730c44e884aa085c66f07410typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-3daa8855730c44e884aa085c66f07410",
+          "points": [
+            {
+              "lat": 31.17974016,
+              "lng": 121.58844875
+            },
+            {
+              "lat": 31.17949721,
+              "lng": 121.58746895
+            },
+            {
+              "lat": 31.17908456,
+              "lng": 121.58767926
+            },
+            {
+              "lat": 31.17927927,
+              "lng": 121.58833743
+            },
+            {
+              "lat": 31.17937939,
+              "lng": 121.58834634
+            },
+            {
+              "lat": 31.17947223,
+              "lng": 121.58854746
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-df01a02575b748e4b3a92d2c43265cfd",
+      "name": "物质学院7号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院7号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17907148,
+      "lng": 121.58731678,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=df01a02575b748e4b3a92d2c43265cfdtypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-df01a02575b748e4b3a92d2c43265cfd",
+          "points": [
+            {
+              "lat": 31.17925103,
+              "lng": 121.58770807
+            },
+            {
+              "lat": 31.17924128,
+              "lng": 121.58761845
+            },
+            {
+              "lat": 31.17924128,
+              "lng": 121.58761845
+            },
+            {
+              "lat": 31.17941785,
+              "lng": 121.58755065
+            },
+            {
+              "lat": 31.17952813,
+              "lng": 121.58746595
+            },
+            {
+              "lat": 31.17944812,
+              "lng": 121.58730964
+            },
+            {
+              "lat": 31.17927423,
+              "lng": 121.58730972
+            },
+            {
+              "lat": 31.17903013,
+              "lng": 121.58688957
+            },
+            {
+              "lat": 31.17886023,
+              "lng": 121.58688964
+            },
+            {
+              "lat": 31.1786127,
+              "lng": 121.58705904
+            },
+            {
+              "lat": 31.17890938,
+              "lng": 121.58761361
+            },
+            {
+              "lat": 31.17901587,
+              "lng": 121.58774402
+            },
+            {
+              "lat": 31.17916278,
+              "lng": 121.58774396
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-a18b0cdd36dd46e79b49937779eddca2",
+      "name": "物质学院8号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "物质学院8号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17886418,
+      "lng": 121.58803736,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=a18b0cdd36dd46e79b49937779eddca2typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-a18b0cdd36dd46e79b49937779eddca2",
+          "points": [
+            {
+              "lat": 31.17884653,
+              "lng": 121.58756783
+            },
+            {
+              "lat": 31.17907064,
+              "lng": 121.58793918
+            },
+            {
+              "lat": 31.17930234,
+              "lng": 121.5883414
+            },
+            {
+              "lat": 31.17921468,
+              "lng": 121.58840816
+            },
+            {
+              "lat": 31.17919492,
+              "lng": 121.58836834
+            },
+            {
+              "lat": 31.17904245,
+              "lng": 121.58849388
+            },
+            {
+              "lat": 31.17886181,
+              "lng": 121.5885069
+            },
+            {
+              "lat": 31.17842628,
+              "lng": 121.58774726
+            },
+            {
+              "lat": 31.17866963,
+              "lng": 121.5875679
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-90e46c483efb4a6bb61aac4146bf7187",
+      "name": "生命学院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "生命学院",
+      "floor": "",
+      "room": "",
+      "lat": 31.18180326,
+      "lng": 121.59034174,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=90e46c483efb4a6bb61aac4146bf7187typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-90e46c483efb4a6bb61aac4146bf7187",
+          "points": [
+            {
+              "lat": 31.18141018,
+              "lng": 121.58953833
+            },
+            {
+              "lat": 31.18226563,
+              "lng": 121.58932872
+            },
+            {
+              "lat": 31.18244393,
+              "lng": 121.58935052
+            },
+            {
+              "lat": 31.18249982,
+              "lng": 121.5896592
+            },
+            {
+              "lat": 31.18151607,
+              "lng": 121.58990175
+            },
+            {
+              "lat": 31.18179698,
+              "lng": 121.59128281
+            },
+            {
+              "lat": 31.18158345,
+              "lng": 121.59135463
+            },
+            {
+              "lat": 31.18139699,
+              "lng": 121.59132387
+            },
+            {
+              "lat": 31.18125156,
+              "lng": 121.59060395
+            },
+            {
+              "lat": 31.18116865,
+              "lng": 121.59023654
+            },
+            {
+              "lat": 31.1810837,
+              "lng": 121.58981634
+            },
+            {
+              "lat": 31.18109767,
+              "lng": 121.58960622
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-82807efc2a064e7a9dd37462c36f6263",
+      "name": "信息学院1号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "信息学院1号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.17983174,
+      "lng": 121.59070027,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=82807efc2a064e7a9dd37462c36f6263typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-82807efc2a064e7a9dd37462c36f6263",
+          "points": [
+            {
+              "lat": 31.18018463,
+              "lng": 121.59009862
+            },
+            {
+              "lat": 31.18019764,
+              "lng": 121.59015239
+            },
+            {
+              "lat": 31.18033222,
+              "lng": 121.5901344
+            },
+            {
+              "lat": 31.18026812,
+              "lng": 121.58981278
+            },
+            {
+              "lat": 31.18012512,
+              "lng": 121.58980787
+            },
+            {
+              "lat": 31.17982228,
+              "lng": 121.58991158
+            },
+            {
+              "lat": 31.17930864,
+              "lng": 121.59007215
+            },
+            {
+              "lat": 31.17942213,
+              "lng": 121.5907881
+            },
+            {
+              "lat": 31.17936772,
+              "lng": 121.59156587
+            },
+            {
+              "lat": 31.17976498,
+              "lng": 121.59159258
+            },
+            {
+              "lat": 31.17983642,
+              "lng": 121.59108267
+            },
+            {
+              "lat": 31.17980158,
+              "lng": 121.59082377
+            },
+            {
+              "lat": 31.18009048,
+              "lng": 121.59082762
+            },
+            {
+              "lat": 31.1800376,
+              "lng": 121.59046118
+            },
+            {
+              "lat": 31.18010537,
+              "lng": 121.59039841
+            },
+            {
+              "lat": 31.18008902,
+              "lng": 121.59032671
+            },
+            {
+              "lat": 31.17998033,
+              "lng": 121.59028693
+            },
+            {
+              "lat": 31.17997021,
+              "lng": 121.59017541
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-0e1be3485aa9405f958585eaa9ef1a7e",
+      "name": "信息学院2号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "信息学院2号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18050142,
+      "lng": 121.59030859,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=0e1be3485aa9405f958585eaa9ef1a7etypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-0e1be3485aa9405f958585eaa9ef1a7e",
+          "points": [
+            {
+              "lat": 31.18058449,
+              "lng": 121.58978972
+            },
+            {
+              "lat": 31.18034447,
+              "lng": 121.58978088
+            },
+            {
+              "lat": 31.18027595,
+              "lng": 121.58980381
+            },
+            {
+              "lat": 31.18034404,
+              "lng": 121.59012543
+            },
+            {
+              "lat": 31.18025553,
+              "lng": 121.59014838
+            },
+            {
+              "lat": 31.1803633,
+              "lng": 121.59077371
+            },
+            {
+              "lat": 31.180452,
+              "lng": 121.59076072
+            },
+            {
+              "lat": 31.18047242,
+              "lng": 121.59083639
+            },
+            {
+              "lat": 31.18057702,
+              "lng": 121.59081841
+            },
+            {
+              "lat": 31.18075333,
+              "lng": 121.59078745
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-cc7ff26a3d6a41f590d43770f319db18",
+      "name": "信息学院3号楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "信息学院3号楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18063113,
+      "lng": 121.59136012,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=cc7ff26a3d6a41f590d43770f319db18typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-cc7ff26a3d6a41f590d43770f319db18",
+          "points": [
+            {
+              "lat": 31.18077298,
+              "lng": 121.59076952
+            },
+            {
+              "lat": 31.18041854,
+              "lng": 121.5908414
+            },
+            {
+              "lat": 31.18039534,
+              "lng": 121.59104257
+            },
+            {
+              "lat": 31.18034611,
+              "lng": 121.59108243
+            },
+            {
+              "lat": 31.18044872,
+              "lng": 121.59181631
+            },
+            {
+              "lat": 31.18049502,
+              "lng": 121.59183422
+            },
+            {
+              "lat": 31.18052415,
+              "lng": 121.59195072
+            },
+            {
+              "lat": 31.18070978,
+              "lng": 121.59193668
+            },
+            {
+              "lat": 31.18092083,
+              "lng": 121.59189176
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-c813d9f099ae4730808a12ab76665261",
+      "name": "生医工学院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "生医工学院",
+      "floor": "",
+      "room": "",
+      "lat": 31.18007626,
+      "lng": 121.59140272,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=c813d9f099ae4730808a12ab76665261typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-c813d9f099ae4730808a12ab76665261",
+          "points": [
+            {
+              "lat": 31.18032746,
+              "lng": 121.59110036
+            },
+            {
+              "lat": 31.18031952,
+              "lng": 121.59089024
+            },
+            {
+              "lat": 31.18015372,
+              "lng": 121.5908953
+            },
+            {
+              "lat": 31.18005419,
+              "lng": 121.59091726
+            },
+            {
+              "lat": 31.1798684,
+              "lng": 121.59092233
+            },
+            {
+              "lat": 31.17984774,
+              "lng": 121.59104682
+            },
+            {
+              "lat": 31.17982849,
+              "lng": 121.5918923
+            },
+            {
+              "lat": 31.18003746,
+              "lng": 121.59189718
+            },
+            {
+              "lat": 31.18029263,
+              "lng": 121.59191498
+            },
+            {
+              "lat": 31.1803155,
+              "lng": 121.5914768
+            },
+            {
+              "lat": 31.18032198,
+              "lng": 121.5912348
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-16b2b62dc8364beaaaa228226788274e",
+      "name": "创业与管理学院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "创业与管理学院",
+      "floor": "",
+      "room": "",
+      "lat": 31.17881961,
+      "lng": 121.59074156,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=16b2b62dc8364beaaaa228226788274etypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-16b2b62dc8364beaaaa228226788274e",
+          "points": [
+            {
+              "lat": 31.17932162,
+              "lng": 121.59012392
+            },
+            {
+              "lat": 31.17924664,
+              "lng": 121.59007018
+            },
+            {
+              "lat": 31.17916162,
+              "lng": 121.59006624
+            },
+            {
+              "lat": 31.17853706,
+              "lng": 121.5902806
+            },
+            {
+              "lat": 31.17831404,
+              "lng": 121.59032551
+            },
+            {
+              "lat": 31.17823512,
+              "lng": 121.59043309
+            },
+            {
+              "lat": 31.1783611,
+              "lng": 121.59059436
+            },
+            {
+              "lat": 31.17872396,
+              "lng": 121.5905982
+            },
+            {
+              "lat": 31.17886969,
+              "lng": 121.5905354
+            },
+            {
+              "lat": 31.17899086,
+              "lng": 121.59081318
+            },
+            {
+              "lat": 31.17907071,
+              "lng": 121.59139472
+            },
+            {
+              "lat": 31.17937294,
+              "lng": 121.59141649
+            },
+            {
+              "lat": 31.17940356,
+              "lng": 121.59102312
+            },
+            {
+              "lat": 31.17939633,
+              "lng": 121.59063873
+            },
+            {
+              "lat": 31.1793749,
+              "lng": 121.59029817
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-0b3d7b25868f41308bbb4a739fd0147b",
+      "name": "创意与艺术学院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "创意与艺术学院",
+      "floor": "",
+      "room": "",
+      "lat": 31.17857955,
+      "lng": 121.58892427,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=0b3d7b25868f41308bbb4a739fd0147btypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-0b3d7b25868f41308bbb4a739fd0147b",
+          "points": [
+            {
+              "lat": 31.17883413,
+              "lng": 121.58847106
+            },
+            {
+              "lat": 31.17863734,
+              "lng": 121.58847613
+            },
+            {
+              "lat": 31.17835471,
+              "lng": 121.58864155
+            },
+            {
+              "lat": 31.17828076,
+              "lng": 121.58864158
+            },
+            {
+              "lat": 31.17811666,
+              "lng": 121.58873525
+            },
+            {
+              "lat": 31.17814469,
+              "lng": 121.58878901
+            },
+            {
+              "lat": 31.17809082,
+              "lng": 121.58879401
+            },
+            {
+              "lat": 31.17806018,
+              "lng": 121.58881195
+            },
+            {
+              "lat": 31.1780325,
+              "lng": 121.58877611
+            },
+            {
+              "lat": 31.1781468,
+              "lng": 121.58900212
+            },
+            {
+              "lat": 31.17827082,
+              "lng": 121.58926597
+            },
+            {
+              "lat": 31.17834292,
+              "lng": 121.58937747
+            },
+            {
+              "lat": 31.17845451,
+              "lng": 121.5893595
+            },
+            {
+              "lat": 31.17861599,
+              "lng": 121.58933753
+            },
+            {
+              "lat": 31.17885816,
+              "lng": 121.58930157
+            },
+            {
+              "lat": 31.1789814,
+              "lng": 121.58926567
+            },
+            {
+              "lat": 31.17912904,
+              "lng": 121.58919988
+            },
+            {
+              "lat": 31.17908724,
+              "lng": 121.58920886
+            },
+            {
+              "lat": 31.17900199,
+              "lng": 121.58898584
+            },
+            {
+              "lat": 31.17903962,
+              "lng": 121.58896789
+            },
+            {
+              "lat": 31.17895308,
+              "lng": 121.58883349
+            },
+            {
+              "lat": 31.17899046,
+              "lng": 121.58880261
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-13818b1c7b0746e99e49eee18e88ccc5",
+      "name": "人字楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "人字楼",
+      "floor": "",
+      "room": "",
+      "lat": 31.18231398,
+      "lng": 121.59063422,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=13818b1c7b0746e99e49eee18e88ccc5typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-13818b1c7b0746e99e49eee18e88ccc5",
+          "points": [
+            {
+              "lat": 31.18232451,
+              "lng": 121.59000386
+            },
+            {
+              "lat": 31.18216269,
+              "lng": 121.59000794
+            },
+            {
+              "lat": 31.18206319,
+              "lng": 121.5900309
+            },
+            {
+              "lat": 31.18193586,
+              "lng": 121.59006184
+            },
+            {
+              "lat": 31.18188701,
+              "lng": 121.59012062
+            },
+            {
+              "lat": 31.18196805,
+              "lng": 121.59070613
+            },
+            {
+              "lat": 31.18174674,
+              "lng": 121.59105479
+            },
+            {
+              "lat": 31.18194307,
+              "lng": 121.59123891
+            },
+            {
+              "lat": 31.18226435,
+              "lng": 121.59126462
+            },
+            {
+              "lat": 31.18239184,
+              "lng": 121.59108131
+            },
+            {
+              "lat": 31.18247372,
+              "lng": 121.59113105
+            },
+            {
+              "lat": 31.1827707,
+              "lng": 121.59113983
+            },
+            {
+              "lat": 31.18289408,
+              "lng": 121.59089777
+            },
+            {
+              "lat": 31.18253768,
+              "lng": 121.59065202
+            },
+            {
+              "lat": 31.18247761,
+              "lng": 121.59054052
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-7a72bc5652354bac92c7bf044d744656",
+      "name": "免疫化学研究所",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "免疫化学研究所",
+      "floor": "",
+      "room": "",
+      "lat": 31.18229249,
+      "lng": 121.59063424,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=7a72bc5652354bac92c7bf044d744656typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-7a72bc5652354bac92c7bf044d744656",
+          "points": [
+            {
+              "lat": 31.18284345,
+              "lng": 121.59091573
+            },
+            {
+              "lat": 31.18250602,
+              "lng": 121.59061618
+            },
+            {
+              "lat": 31.18232893,
+              "lng": 121.59002576
+            },
+            {
+              "lat": 31.18215562,
+              "lng": 121.59000396
+            },
+            {
+              "lat": 31.18184826,
+              "lng": 121.59007982
+            },
+            {
+              "lat": 31.18192474,
+              "lng": 121.59068823
+            },
+            {
+              "lat": 31.18175474,
+              "lng": 121.59105479
+            },
+            {
+              "lat": 31.181904,
+              "lng": 121.59123396
+            },
+            {
+              "lat": 31.18220239,
+              "lng": 121.59126466
+            },
+            {
+              "lat": 31.18238844,
+              "lng": 121.59111318
+            },
+            {
+              "lat": 31.18279043,
+              "lng": 121.59112588
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-042bf0bcfc1545ceb59ea2d9df5ef7b7",
+      "name": "iHuman研究所",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "iHuman研究所",
+      "floor": "",
+      "room": "",
+      "lat": 31.18231415,
+      "lng": 121.59064319,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=042bf0bcfc1545ceb59ea2d9df5ef7b7typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-042bf0bcfc1545ceb59ea2d9df5ef7b7",
+          "points": [
+            {
+              "lat": 31.18229795,
+              "lng": 121.59002578
+            },
+            {
+              "lat": 31.18248712,
+              "lng": 121.59062117
+            },
+            {
+              "lat": 31.18288609,
+              "lng": 121.59089777
+            },
+            {
+              "lat": 31.18279326,
+              "lng": 121.59111692
+            },
+            {
+              "lat": 31.18238878,
+              "lng": 121.5911311
+            },
+            {
+              "lat": 31.18225662,
+              "lng": 121.59127857
+            },
+            {
+              "lat": 31.18191999,
+              "lng": 121.59123395
+            },
+            {
+              "lat": 31.18175507,
+              "lng": 121.59107271
+            },
+            {
+              "lat": 31.18195623,
+              "lng": 121.59071509
+            },
+            {
+              "lat": 31.18188792,
+              "lng": 121.59037954
+            },
+            {
+              "lat": 31.18186351,
+              "lng": 121.59009375
+            },
+            {
+              "lat": 31.18217868,
+              "lng": 121.59000793
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-edb12f3dec97483791e3d63280b2d22c",
+      "name": "教学中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "teaching",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "教学中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.1777988,
+      "lng": 121.5910661,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=edb12f3dec97483791e3d63280b2d22ctypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-edb12f3dec97483791e3d63280b2d22c",
+          "points": [
+            {
+              "lat": 31.17801199,
+              "lng": 121.59052479
+            },
+            {
+              "lat": 31.17770716,
+              "lng": 121.5905249
+            },
+            {
+              "lat": 31.17760797,
+              "lng": 121.59056477
+            },
+            {
+              "lat": 31.17762007,
+              "lng": 121.59099497
+            },
+            {
+              "lat": 31.17756411,
+              "lng": 121.59153075
+            },
+            {
+              "lat": 31.17775043,
+              "lng": 121.59160736
+            },
+            {
+              "lat": 31.17796721,
+              "lng": 121.5916023
+            },
+            {
+              "lat": 31.17799662,
+              "lng": 121.59135632
+            },
+            {
+              "lat": 31.17803109,
+              "lng": 121.59111531
+            },
+            {
+              "lat": 31.17803712,
+              "lng": 121.59079764
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-cd9d3699e4e849f9a4516121222bde64",
+      "name": "报告厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "teaching",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "报告厅",
+      "floor": "",
+      "room": "",
+      "lat": 31.17821103,
+      "lng": 121.59157333,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=cd9d3699e4e849f9a4516121222bde64typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-cd9d3699e4e849f9a4516121222bde64",
+          "points": [
+            {
+              "lat": 31.17847393,
+              "lng": 121.59149555
+            },
+            {
+              "lat": 31.17804318,
+              "lng": 121.59133439
+            },
+            {
+              "lat": 31.17794889,
+              "lng": 121.59169194
+            },
+            {
+              "lat": 31.17833789,
+              "lng": 121.59181228
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-025af73a7496470fbde898016fc93784",
+      "name": "H2楼,学生科创中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [
+        "H2楼",
+        "学生科创中心"
+      ],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "H2楼,学生科创中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.17885233,
+      "lng": 121.59187929,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=025af73a7496470fbde898016fc93784typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-025af73a7496470fbde898016fc93784",
+          "points": [
+            {
+              "lat": 31.17925684,
+              "lng": 121.59183879
+            },
+            {
+              "lat": 31.17918824,
+              "lng": 121.59212961
+            },
+            {
+              "lat": 31.17901568,
+              "lng": 121.59214761
+            },
+            {
+              "lat": 31.17844691,
+              "lng": 121.591871
+            },
+            {
+              "lat": 31.17851106,
+              "lng": 121.59161105
+            },
+            {
+              "lat": 31.17865007,
+              "lng": 121.59161598
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-d719150862544f6385c87129271bdd00",
+      "name": "白玉兰餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "白玉兰餐厅",
+      "floor": "",
+      "room": "",
+      "lat": 31.17848452,
+      "lng": 121.59245008,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "食堂餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=d719150862544f6385c87129271bdd00typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-d719150862544f6385c87129271bdd00",
+          "points": [
+            {
+              "lat": 31.1781397,
+              "lng": 121.59239395
+            },
+            {
+              "lat": 31.17818958,
+              "lng": 121.59217085
+            },
+            {
+              "lat": 31.1782707,
+              "lng": 121.59217978
+            },
+            {
+              "lat": 31.17858598,
+              "lng": 121.5923141
+            },
+            {
+              "lat": 31.17882766,
+              "lng": 121.59241359
+            },
+            {
+              "lat": 31.1788058,
+              "lng": 121.59253011
+            },
+            {
+              "lat": 31.17875163,
+              "lng": 121.59251918
+            },
+            {
+              "lat": 31.17867849,
+              "lng": 121.59272934
+            },
+            {
+              "lat": 31.17852354,
+              "lng": 121.59267165
+            },
+            {
+              "lat": 31.17857993,
+              "lng": 121.59242066
+            },
+            {
+              "lat": 31.17847094,
+              "lng": 121.59236294
+            },
+            {
+              "lat": 31.17830495,
+              "lng": 121.59235803
+            },
+            {
+              "lat": 31.17825107,
+              "lng": 121.59258213
+            },
+            {
+              "lat": 31.17821674,
+              "lng": 121.59261799
+            },
+            {
+              "lat": 31.17815545,
+              "lng": 121.59260009
+            },
+            {
+              "lat": 31.17821691,
+              "lng": 121.59240786
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-dbe3b0a12e9845b389cddc3944ace241",
+      "name": "体育场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "体育场",
+      "floor": "",
+      "room": "",
+      "lat": 31.1785806,
+      "lng": 121.59529247,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=dbe3b0a12e9845b389cddc3944ace241typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-dbe3b0a12e9845b389cddc3944ace241",
+          "points": [
+            {
+              "lat": 31.17930891,
+              "lng": 121.59475083
+            },
+            {
+              "lat": 31.17784178,
+              "lng": 121.59475142
+            },
+            {
+              "lat": 31.1777666,
+              "lng": 121.59532416
+            },
+            {
+              "lat": 31.17790679,
+              "lng": 121.59581616
+            },
+            {
+              "lat": 31.17860868,
+              "lng": 121.59583382
+            },
+            {
+              "lat": 31.17926424,
+              "lng": 121.59577078
+            },
+            {
+              "lat": 31.17939489,
+              "lng": 121.59527868
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-67a2a330debc4292bb768bff52e88e68",
+      "name": "篮球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "篮球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.17983979,
+      "lng": 121.59511214,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=67a2a330debc4292bb768bff52e88e68typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-67a2a330debc4292bb768bff52e88e68",
+          "points": [
+            {
+              "lat": 31.18023402,
+              "lng": 121.59484701
+            },
+            {
+              "lat": 31.17945361,
+              "lng": 121.59485435
+            },
+            {
+              "lat": 31.17944229,
+              "lng": 121.59536332
+            },
+            {
+              "lat": 31.17955029,
+              "lng": 121.59536725
+            },
+            {
+              "lat": 31.17973218,
+              "lng": 121.59536717
+            },
+            {
+              "lat": 31.17997121,
+              "lng": 121.59537702
+            },
+            {
+              "lat": 31.17999539,
+              "lng": 121.59521167
+            },
+            {
+              "lat": 31.18024275,
+              "lng": 121.59518266
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-3a541f1f57154e7284db50fb5ee4bf10",
+      "name": "游泳馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "游泳馆",
+      "floor": "",
+      "room": "",
+      "lat": 31.18199819,
+      "lng": 121.59296074,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=3a541f1f57154e7284db50fb5ee4bf10typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-3a541f1f57154e7284db50fb5ee4bf10",
+          "points": [
+            {
+              "lat": 31.18240588,
+              "lng": 121.59287485
+            },
+            {
+              "lat": 31.18229737,
+              "lng": 121.59328722
+            },
+            {
+              "lat": 31.1821623,
+              "lng": 121.59327834
+            },
+            {
+              "lat": 31.18159088,
+              "lng": 121.59306853
+            },
+            {
+              "lat": 31.18167597,
+              "lng": 121.59263427
+            },
+            {
+              "lat": 31.18182212,
+              "lng": 121.59264713
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-1f043d2c3d214561a0d4e3fb9268721e",
+      "name": "会议中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "会议中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.18205094,
+      "lng": 121.59356224,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=1f043d2c3d214561a0d4e3fb9268721etypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-1f043d2c3d214561a0d4e3fb9268721e",
+          "points": [
+            {
+              "lat": 31.18245084,
+              "lng": 121.5937114
+            },
+            {
+              "lat": 31.18233922,
+              "lng": 121.59372939
+            },
+            {
+              "lat": 31.18228887,
+              "lng": 121.59370751
+            },
+            {
+              "lat": 31.18217744,
+              "lng": 121.59413284
+            },
+            {
+              "lat": 31.1820805,
+              "lng": 121.5941329
+            },
+            {
+              "lat": 31.18200314,
+              "lng": 121.59411004
+            },
+            {
+              "lat": 31.18193154,
+              "lng": 121.59424453
+            },
+            {
+              "lat": 31.18161965,
+              "lng": 121.59423973
+            },
+            {
+              "lat": 31.18163442,
+              "lng": 121.5939987
+            },
+            {
+              "lat": 31.18160712,
+              "lng": 121.59398079
+            },
+            {
+              "lat": 31.18156657,
+              "lng": 121.59411925
+            },
+            {
+              "lat": 31.18143927,
+              "lng": 121.59409741
+            },
+            {
+              "lat": 31.18163083,
+              "lng": 121.59334537
+            },
+            {
+              "lat": 31.18169978,
+              "lng": 121.59334533
+            },
+            {
+              "lat": 31.18174927,
+              "lng": 121.59309533
+            },
+            {
+              "lat": 31.18214599,
+              "lng": 121.59326042
+            },
+            {
+              "lat": 31.18228929,
+              "lng": 121.59328225
+            },
+            {
+              "lat": 31.18240198,
+              "lng": 121.59287984
+            },
+            {
+              "lat": 31.18266159,
+              "lng": 121.59297827
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-70bba10b81b444ea8759b6427c654628",
+      "name": "H1,校园服务中心,309室 IT服务中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [
+        "H1",
+        "校园服务中心",
+        "309室 IT服务中心"
+      ],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "H1,校园服务中心,309室 IT服务中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.17989758,
+      "lng": 121.59227966,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=70bba10b81b444ea8759b6427c654628typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-70bba10b81b444ea8759b6427c654628",
+          "points": [
+            {
+              "lat": 31.18059864,
+              "lng": 121.59263485
+            },
+            {
+              "lat": 31.18059766,
+              "lng": 121.59258107
+            },
+            {
+              "lat": 31.18058925,
+              "lng": 121.59255817
+            },
+            {
+              "lat": 31.18055843,
+              "lng": 121.59256715
+            },
+            {
+              "lat": 31.18050788,
+              "lng": 121.5925353
+            },
+            {
+              "lat": 31.18046162,
+              "lng": 121.59251939
+            },
+            {
+              "lat": 31.18040317,
+              "lng": 121.59249253
+            },
+            {
+              "lat": 31.18042552,
+              "lng": 121.59240289
+            },
+            {
+              "lat": 31.18035775,
+              "lng": 121.59230433
+            },
+            {
+              "lat": 31.17925386,
+              "lng": 121.59189356
+            },
+            {
+              "lat": 31.179201,
+              "lng": 121.59217143
+            },
+            {
+              "lat": 31.17983553,
+              "lng": 121.59243903
+            },
+            {
+              "lat": 31.18018052,
+              "lng": 121.59255937
+            },
+            {
+              "lat": 31.18046827,
+              "lng": 121.59261001
+            },
+            {
+              "lat": 31.18047535,
+              "lng": 121.59261499
+            },
+            {
+              "lat": 31.18050942,
+              "lng": 121.59261995
+            },
+            {
+              "lat": 31.18055997,
+              "lng": 121.59265179
+            },
+            {
+              "lat": 31.1805912,
+              "lng": 121.59266572
+            },
+            {
+              "lat": 31.18059104,
+              "lng": 121.59265676
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-ecdba91f46c34d25ab920be789610eda",
+      "name": "学生活动中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生活动中心",
+      "floor": "",
+      "room": "",
+      "lat": 31.18077052,
+      "lng": 121.59383284,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=ecdba91f46c34d25ab920be789610edatypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-ecdba91f46c34d25ab920be789610eda",
+          "points": [
+            {
+              "lat": 31.18090954,
+              "lng": 121.59330493
+            },
+            {
+              "lat": 31.18073569,
+              "lng": 121.59325124
+            },
+            {
+              "lat": 31.18065465,
+              "lng": 121.59426315
+            },
+            {
+              "lat": 31.18063176,
+              "lng": 121.59438368
+            },
+            {
+              "lat": 31.18089914,
+              "lng": 121.59441441
+            },
+            {
+              "lat": 31.18087545,
+              "lng": 121.59431682
+            },
+            {
+              "lat": 31.1809125,
+              "lng": 121.59358279
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-c9e29e1ba374411bbbda3ee581a73c64",
+      "name": "上海科技大学东门(中科路1号)",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "gate",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海科技大学东门(中科路1号)",
+      "floor": "",
+      "room": "",
+      "lat": 31.18114656,
+      "lng": 121.5948819,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=c9e29e1ba374411bbbda3ee581a73c64typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-c9e29e1ba374411bbbda3ee581a73c64",
+          "points": [
+            {
+              "lat": 31.18121914,
+              "lng": 121.59465627
+            },
+            {
+              "lat": 31.18099612,
+              "lng": 121.59482172
+            },
+            {
+              "lat": 31.18107996,
+              "lng": 121.59510753
+            },
+            {
+              "lat": 31.18129786,
+              "lng": 121.59499188
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-6cccd83bc8554dfcadd9a1a226cd91ca",
+      "name": "上海科技大学南门(华夏中路393号)",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "gate",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海科技大学南门(华夏中路393号)",
+      "floor": "",
+      "room": "",
+      "lat": 31.17600865,
+      "lng": 121.59042089,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=6cccd83bc8554dfcadd9a1a226cd91catypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-6cccd83bc8554dfcadd9a1a226cd91ca",
+          "points": [
+            {
+              "lat": 31.17614,
+              "lng": 121.59020575
+            },
+            {
+              "lat": 31.17580581,
+              "lng": 121.59029149
+            },
+            {
+              "lat": 31.17584331,
+              "lng": 121.59063603
+            },
+            {
+              "lat": 31.17602289,
+              "lng": 121.59061905
+            },
+            {
+              "lat": 31.17621098,
+              "lng": 121.5905234
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-18dccb41f7fb4464bf6ca1e457b2be98",
+      "name": "上海科技大学东南门(环科路199号)",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "gate",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海科技大学东南门(环科路199号)",
+      "floor": "",
+      "room": "",
+      "lat": 31.17749824,
+      "lng": 121.59576949,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=18dccb41f7fb4464bf6ca1e457b2be98typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-18dccb41f7fb4464bf6ca1e457b2be98",
+          "points": [
+            {
+              "lat": 31.17768034,
+              "lng": 121.59578138
+            },
+            {
+              "lat": 31.17754386,
+              "lng": 121.59598861
+            },
+            {
+              "lat": 31.1773162,
+              "lng": 121.59576059
+            },
+            {
+              "lat": 31.1774516,
+              "lng": 121.59555037
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-bf9445e8e352431984e9176c1eb6bd78",
+      "name": "上海科技大学西门(集慧路249号)",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "gate",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海科技大学西门(集慧路249号)",
+      "floor": "",
+      "room": "",
+      "lat": 31.17939466,
+      "lng": 121.58489607,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=bf9445e8e352431984e9176c1eb6bd78typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-bf9445e8e352431984e9176c1eb6bd78",
+          "points": [
+            {
+              "lat": 31.17956075,
+              "lng": 121.58500704
+            },
+            {
+              "lat": 31.17939883,
+              "lng": 121.58465155
+            },
+            {
+              "lat": 31.17922911,
+              "lng": 121.58481298
+            },
+            {
+              "lat": 31.17939748,
+              "lng": 121.58514058
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-cf81ca1c074245e3b501121765e9fbd8",
+      "name": "上海科技大学北门(海科路230号)",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "gate",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海科技大学北门(海科路230号)",
+      "floor": "",
+      "room": "",
+      "lat": 31.1825813,
+      "lng": 121.58898447,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=cf81ca1c074245e3b501121765e9fbd8typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-cf81ca1c074245e3b501121765e9fbd8",
+          "points": [
+            {
+              "lat": 31.18267219,
+              "lng": 121.58869712
+            },
+            {
+              "lat": 31.18278892,
+              "lng": 121.58915314
+            },
+            {
+              "lat": 31.18246741,
+              "lng": 121.58927184
+            },
+            {
+              "lat": 31.18237294,
+              "lng": 121.58877796
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-9267d351830441fb84713b2dbc10ef25",
+      "name": "网球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "网球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.18163863,
+      "lng": 121.5919322,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=9267d351830441fb84713b2dbc10ef25typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-9267d351830441fb84713b2dbc10ef25",
+          "points": [
+            {
+              "lat": 31.1817765,
+              "lng": 121.59157859
+            },
+            {
+              "lat": 31.18148045,
+              "lng": 121.59161959
+            },
+            {
+              "lat": 31.18148873,
+              "lng": 121.59228582
+            },
+            {
+              "lat": 31.18180144,
+              "lng": 121.59228066
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-33115ddbc53547649ba73f5a89a95721",
+      "name": "排球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "排球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.18039529,
+      "lng": 121.59498537,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=33115ddbc53547649ba73f5a89a95721typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-33115ddbc53547649ba73f5a89a95721",
+          "points": [
+            {
+              "lat": 31.18049889,
+              "lng": 121.59484887
+            },
+            {
+              "lat": 31.18028702,
+              "lng": 121.59484897
+            },
+            {
+              "lat": 31.18029868,
+              "lng": 121.59512188
+            },
+            {
+              "lat": 31.18049526,
+              "lng": 121.59510385
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-04efe709b15541e4be9ad1d72bd63e19",
+      "name": "健身场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "健身场",
+      "floor": "",
+      "room": "",
+      "lat": 31.17959514,
+      "lng": 121.59547829,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "体育运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=04efe709b15541e4be9ad1d72bd63e19typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-04efe709b15541e4be9ad1d72bd63e19",
+          "points": [
+            {
+              "lat": 31.17970161,
+              "lng": 121.59539109
+            },
+            {
+              "lat": 31.1794739,
+              "lng": 121.59540016
+            },
+            {
+              "lat": 31.17947653,
+              "lng": 121.59555654
+            },
+            {
+              "lat": 31.17971654,
+              "lng": 121.59556539
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-c333109b5216446084f36141178bddc5",
+      "name": "数学科学研究所",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "数学科学研究所",
+      "floor": "",
+      "room": "",
+      "lat": 31.17802018,
+      "lng": 121.58922523,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=c333109b5216446084f36141178bddc5typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-c333109b5216446084f36141178bddc5",
+          "points": [
+            {
+              "lat": 31.17801707,
+              "lng": 121.58875321
+            },
+            {
+              "lat": 31.1779947,
+              "lng": 121.58878509
+            },
+            {
+              "lat": 31.17780537,
+              "lng": 121.58876226
+            },
+            {
+              "lat": 31.17765313,
+              "lng": 121.58890073
+            },
+            {
+              "lat": 31.17791221,
+              "lng": 121.58953597
+            },
+            {
+              "lat": 31.17801224,
+              "lng": 121.58969726
+            },
+            {
+              "lat": 31.17825875,
+              "lng": 121.58967924
+            },
+            {
+              "lat": 31.1783859,
+              "lng": 121.58948201
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-bb45edc5493c4454af96530515376910",
+      "name": "人文科学研究院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "人文科学研究院",
+      "floor": "",
+      "room": "",
+      "lat": 31.17880954,
+      "lng": 121.58942408,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=bb45edc5493c4454af96530515376910typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-bb45edc5493c4454af96530515376910",
+          "points": [
+            {
+              "lat": 31.17911805,
+              "lng": 121.58919989
+            },
+            {
+              "lat": 31.17912622,
+              "lng": 121.58920885
+            },
+            {
+              "lat": 31.1784064,
+              "lng": 121.58935255
+            },
+            {
+              "lat": 31.17842806,
+              "lng": 121.5896483
+            },
+            {
+              "lat": 31.17921379,
+              "lng": 121.58955336
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-5aae1afd26364613a4c1e34971876e5a",
+      "name": "上海张江海科雅乐轩酒店",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海张江海科雅乐轩酒店",
+      "floor": "",
+      "room": "",
+      "lat": 31.18285459,
+      "lng": 121.59351495,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=5aae1afd26364613a4c1e34971876e5atypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-5aae1afd26364613a4c1e34971876e5a",
+          "points": [
+            {
+              "lat": 31.18323126,
+              "lng": 121.59331354
+            },
+            {
+              "lat": 31.18320419,
+              "lng": 121.59330858
+            },
+            {
+              "lat": 31.18300548,
+              "lng": 121.59320613
+            },
+            {
+              "lat": 31.18263871,
+              "lng": 121.59320635
+            },
+            {
+              "lat": 31.18247925,
+              "lng": 121.59379205
+            },
+            {
+              "lat": 31.18269227,
+              "lng": 121.59380089
+            },
+            {
+              "lat": 31.18288483,
+              "lng": 121.59378284
+            },
+            {
+              "lat": 31.18309742,
+              "lng": 121.59382354
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-8227e54787b4491ab0bf9961af4fbf50",
+      "name": "卫生所",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "卫生所",
+      "floor": "",
+      "room": "",
+      "lat": 31.18068677,
+      "lng": 121.59248044,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=8227e54787b4491ab0bf9961af4fbf50typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-8227e54787b4491ab0bf9961af4fbf50",
+          "points": [
+            {
+              "lat": 31.18085397,
+              "lng": 121.59222342
+            },
+            {
+              "lat": 31.18085388,
+              "lng": 121.59221844
+            },
+            {
+              "lat": 31.18043389,
+              "lng": 121.59225948
+            },
+            {
+              "lat": 31.18044954,
+              "lng": 121.59251442
+            },
+            {
+              "lat": 31.18058967,
+              "lng": 121.59258107
+            },
+            {
+              "lat": 31.18064381,
+              "lng": 121.59264578
+            },
+            {
+              "lat": 31.18094038,
+              "lng": 121.59274222
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-e390ec90cae245d494970b411819a3b6",
+      "name": "纪念品店",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "纪念品店",
+      "floor": "",
+      "room": "",
+      "lat": 31.17886563,
+      "lng": 121.59246785,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=e390ec90cae245d494970b411819a3b6typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-e390ec90cae245d494970b411819a3b6",
+          "points": [
+            {
+              "lat": 31.17892831,
+              "lng": 121.59245238
+            },
+            {
+              "lat": 31.17891622,
+              "lng": 121.59244741
+            },
+            {
+              "lat": 31.17882971,
+              "lng": 121.59241657
+            },
+            {
+              "lat": 31.17880344,
+              "lng": 121.5925102
+            },
+            {
+              "lat": 31.17889455,
+              "lng": 121.59251912
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-562411a5007b450f83bbd32602694ffc",
+      "name": "KFC",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "KFC",
+      "floor": "",
+      "room": "",
+      "lat": 31.17984383,
+      "lng": 121.59284087,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=562411a5007b450f83bbd32602694ffctypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-562411a5007b450f83bbd32602694ffc",
+          "points": [
+            {
+              "lat": 31.17992254,
+              "lng": 121.59282738
+            },
+            {
+              "lat": 31.17991138,
+              "lng": 121.59281843
+            },
+            {
+              "lat": 31.17980663,
+              "lng": 121.59277366
+            },
+            {
+              "lat": 31.17976584,
+              "lng": 121.59289418
+            },
+            {
+              "lat": 31.17988202,
+              "lng": 121.59290807
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-6a1bae5c8ede4faaaf933be76a08465d",
+      "name": "上海银行",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "上海银行",
+      "floor": "",
+      "room": "",
+      "lat": 31.18079996,
+      "lng": 121.59451605,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共服务"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=6a1bae5c8ede4faaaf933be76a08465dtypebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-6a1bae5c8ede4faaaf933be76a08465d",
+          "points": [
+            {
+              "lat": 31.180893,
+              "lng": 121.59440645
+            },
+            {
+              "lat": 31.18090022,
+              "lng": 121.59441939
+            },
+            {
+              "lat": 31.18071911,
+              "lng": 121.59440654
+            },
+            {
+              "lat": 31.18067985,
+              "lng": 121.59462069
+            },
+            {
+              "lat": 31.18092378,
+              "lng": 121.59462555
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-building-57aad6d6bb9c4b3d9f91f781bebd31e3",
+      "name": "学生处",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "research",
+      "description": "来源：上海科技大学校园地图。点位取建筑轮廓中心，不代表出入口；开放时间、无障碍和步行接驳尚待现场核验。",
+      "address": "",
+      "building": "学生处",
+      "floor": "",
+      "room": "",
+      "lat": 31.180791,
+      "lng": 121.5938891,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "教学研究"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/?id=57aad6d6bb9c4b3d9f91f781bebd31e3typebuilding|22f2832a4e894959954f838da53632c1",
+      "isDemo": false,
+      "polygons": [
+        {
+          "id": "sht-outline-57aad6d6bb9c4b3d9f91f781bebd31e3",
+          "points": [
+            {
+              "lat": 31.18088975,
+              "lng": 121.59314858
+            },
+            {
+              "lat": 31.18089391,
+              "lng": 121.59315754
+            },
+            {
+              "lat": 31.18072417,
+              "lng": 121.59316659
+            },
+            {
+              "lat": 31.18068738,
+              "lng": 121.5945938
+            },
+            {
+              "lat": 31.18091186,
+              "lng": 121.59462954
+            },
+            {
+              "lat": 31.18091808,
+              "lng": 121.59452695
+            },
+            {
+              "lat": 31.18088961,
+              "lng": 121.59444131
+            },
+            {
+              "lat": 31.18082993,
+              "lng": 121.59434274
+            },
+            {
+              "lat": 31.18089376,
+              "lng": 121.59376605
+            }
+          ]
+        }
+      ],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-035e4e3af18e415a8496ee7017cb8b2d",
+      "name": "体育馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "体育馆",
+      "floor": "",
+      "room": "",
+      "lat": 31.17872659,
+      "lng": 121.59399513,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-0395352324dd49eaa2595cccc42d8ad8",
+      "name": "咖啡厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18081922,
+      "lng": 121.59328406,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-0436da9b54784a1198525a987dd7a09c",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1815446,
+      "lng": 121.5944061,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-04496d91aa5d431a852252ed5fda6bd8",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1805247,
+      "lng": 121.59454906,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-076e5a66ac484f3a81c3595ab0f56205",
+      "name": "上海银行ATM",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17761896,
+      "lng": 121.59222783,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-0946b1b329a94459806cee67b155df39",
+      "name": "全家便利店",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1793933,
+      "lng": 121.59318516,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-1382d8df1ebd4da08dc6dd6ce7c7c2b1",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18155214,
+      "lng": 121.5913905,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-161618a0da314b2788ddfc8946e18c2a",
+      "name": "篮球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "篮球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.17983979,
+      "lng": 121.59511214,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-164235623608429383432866209f6098",
+      "name": "(浦东25路)金科路中科路",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18060255,
+      "lng": 121.59789198,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-18165b05d45646888ae63c76ac10722c",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18239934,
+      "lng": 121.59385086,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-1bdc8674323047019e9ef96c60177ed8",
+      "name": "图书馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17781219,
+      "lng": 121.59224668,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-1def9a3660f24f00ad091c4f48ce0aeb",
+      "name": "健身场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "健身场",
+      "floor": "",
+      "room": "",
+      "lat": 31.17959514,
+      "lng": 121.59547829,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-241bf2ad2e874050bc54ed49b30607c0",
+      "name": "KFC",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17974246,
+      "lng": 121.59287228,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-25250bbc37274eb69ff420fe47fc5ecf",
+      "name": "校园理发中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18013827,
+      "lng": 121.59320771,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-2891773a8b6f4bde8b800d09d85bf66d",
+      "name": "文印室",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17799203,
+      "lng": 121.59279236,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-316aa14a65ee463999df5517547d1ad0",
+      "name": "(浦东58路)环科路金科路",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17725518,
+      "lng": 121.5956381,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-31b3c869c10141e49acfcae9a55dbfff",
+      "name": "地铁13号线中科路站",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18110035,
+      "lng": 121.59815972,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-435c1c6331104bfda6e0dd3366a6580a",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17768971,
+      "lng": 121.59485905,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-5149e81e317346adb7f4bd7b108f26d8",
+      "name": "耐思咖啡",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18081097,
+      "lng": 121.59349321,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-56b3c18a230f4afcb9da0913786538cd",
+      "name": "(浦东58路)海科路科苑路",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18293089,
+      "lng": 121.59228896,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-5ceab330cb934f43929b41a9d509f8cd",
+      "name": "游泳馆",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "游泳馆",
+      "floor": "",
+      "room": "",
+      "lat": 31.18199819,
+      "lng": 121.59296074,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-5fc99e4d9bde4d03bd62c914c066ff93",
+      "name": "(南川线)华夏中路殷家浜路",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17431199,
+      "lng": 121.59099986,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-604e5cc37ada4cbdbe40aa8783e7d420",
+      "name": "尚科餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17977744,
+      "lng": 121.59287227,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-78728cdab57d4545b5d001dca8db0784",
+      "name": "纪念品专卖",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17888384,
+      "lng": 121.59242551,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-7ab31906eede48c9a3ca83196cb03688",
+      "name": "(浦东58路)海科路金科路",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18295162,
+      "lng": 121.59610949,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "公共交通"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-80ebccc280c548eaade204b8d3292698",
+      "name": "菜鸟驿站",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1787191,
+      "lng": 121.59456782,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-8137aa89cca1437fa04632465de2956a",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18238475,
+      "lng": 121.58970408,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-82c19dfc151744d49444d437bbe69068",
+      "name": "丝路餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18018901,
+      "lng": 121.59302843,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-9a5774fc529f413f9ae3de1b9cdc705c",
+      "name": "车库出入口",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "parking",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1793933,
+      "lng": 121.58553697,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "车库出入"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-9b1fc653f63a42f28dc63d35b26a07c4",
+      "name": "网球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "网球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.18163863,
+      "lng": 121.5919322,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-9b3959579a3045f09fc539fc4cd8cf2b",
+      "name": "尚科餐厅二楼自选区",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17956872,
+      "lng": 121.59288133,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-a7e65a5329684f209b471687ef016218",
+      "name": "运动场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17842315,
+      "lng": 121.59531993,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-b2f5c7d51294404288711fbb6b176905",
+      "name": "白玉兰一楼学生食堂",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "白玉兰餐厅",
+      "floor": "",
+      "room": "",
+      "lat": 31.17848452,
+      "lng": 121.59245008,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-c678e4abfb4f402aa011fdeb60df559a",
+      "name": "医务室",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.18076445,
+      "lng": 121.59262978,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-ce53c23ff2ae4c6fbda0781eab773ecb",
+      "name": "校园服务中心",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17998255,
+      "lng": 121.59233539,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-d18cce070ff6498482e12767b7bace68",
+      "name": "信息学院",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1794516,
+      "lng": 121.59070742,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-dbd256d44d1c4ad2a9bb31de435f2149",
+      "name": "排球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "排球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.18039529,
+      "lng": 121.59498537,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-dddd4057102b4c2da95b56e7ed9d875e",
+      "name": "学校班车",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "transit",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17827229,
+      "lng": 121.59462178,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-de9406b0fcef41a08443f8855f2cc8bf",
+      "name": "自助打印",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17797111,
+      "lng": 121.59100778,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-e0e80c9f09804bd28f6ff65a7d394e20",
+      "name": "网球场",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "sports",
+      "description": "来源：上海科技大学校园地图。原站关联至建筑，显示建筑中心，具体楼层和服务入口待核对。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "网球场",
+      "floor": "",
+      "room": "",
+      "lat": 31.18163863,
+      "lng": 121.5919322,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "运动",
+        "建筑中心位置"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-e32fb6793fce48e697ee4b30933a007f",
+      "name": "上海银行",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "service",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.1807029,
+      "lng": 121.5945669,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "生活信息"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-e3ccaf6be0d7452bba494cad47491bb2",
+      "name": "西餐厅",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17957739,
+      "lng": 121.59314026,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-fcd6a84e9af648fdac33832762876cdc",
+      "name": "尚科餐厅1楼",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17938791,
+      "lng": 121.59272008,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    },
+    {
+      "id": "sht-service-fe2a1ecf2ec1414b8d6324bf93fb5f42",
+      "name": "教工餐厅与点餐区",
+      "englishName": "",
+      "occupants": [],
+      "groupId": "",
+      "groupName": "",
+      "aliases": [],
+      "category": "dining",
+      "description": "来源：上海科技大学校园地图。沿用原站服务点坐标。营业时间与服务状态待核验。",
+      "address": "",
+      "building": "",
+      "floor": "",
+      "room": "",
+      "lat": 31.17825825,
+      "lng": 121.59231821,
+      "nodeId": "",
+      "tags": [
+        "学校地图",
+        "餐饮"
+      ],
+      "openHours": [],
+      "accessible": false,
+      "sourceUrl": "https://map.shanghaitech.edu.cn/",
+      "isDemo": false,
+      "polygons": [],
+      "entrances": []
+    }
+  ],
+  "nodes": [],
+  "edges": [],
+  "events": [],
+  "venues": [],
+  "menus": [],
+  "indoorPlans": [],
+  "parcelStations": [],
+  "streetViews": []
+}

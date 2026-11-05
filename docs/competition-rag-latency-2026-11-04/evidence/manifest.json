@@ -1,0 +1,35 @@
+{
+  "startedAt": "2026-11-03T20:44:23.108Z",
+  "scope": "Original synthetic mail and attachment text; isolated local index and real compatible model API",
+  "baselineRef": "ec793b8",
+  "baselineSha256": "878148994ffa5d2960a1584bef7621a04d69a752fcb345510409e6bfd4254871",
+  "baselineInstrumentation": "Import paths and usage context only",
+  "sourceHashes": {
+    "server/rag/ask.js": "f8776aea617be29f61f5ec1040e0aded5ca0324d7f07fe6f690a24aef650ce3c",
+    "server/rag/answer-evidence.js": "fe52142ba5d01c076de827ce2013d323d26569ae3a8bab7c22502233fb8e86d5",
+    "server/rag/retrieve.js": "06a587b4ba03eea62f9689cca5388acb500f137991828901c4c64b9885cf2d9e",
+    "server/model-json.js": "e6190c8afd57c5ff9cd11cb2972552ba80c580d6de0b355905f367f4f8692bfe",
+    "scripts/evaluate-rag.mjs": "b978a21e079164e1ed97d09b7bce2ecb25b1605215f59f0eb277f25dad7d395b",
+    "scripts/fixtures/rag-evaluation.mjs": "1a0c36c082b3a6cf53c3fd3af8ef476dbc44c75d84626a950e7e4290496d839b"
+  },
+  "datasetSha256": "8b8ca9c95b95c11daad7a0a37c6c5ec39939c587a2558f1b415e2e75dde76967",
+  "node": "v24.14.0",
+  "platform": "win32",
+  "rounds": 3,
+  "order": "Alternate method order per case and round; same isolated corpus across rounds",
+  "model": "deepseek-v4.1-flash",
+  "endpointOrigin": "https://api.modelverse.cn",
+  "embeddings": false,
+  "maxModelCalls": 48,
+  "selectedCases": [
+    "late-deadline",
+    "attachment-detail",
+    "reschedule",
+    "multi-source",
+    "insufficient",
+    "injection",
+    "scope",
+    "empty"
+  ],
+  "billing": "Raw usage retained. Prices and supplier invoice are recorded separately."
+}

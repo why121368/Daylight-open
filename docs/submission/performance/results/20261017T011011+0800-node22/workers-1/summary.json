@@ -1,0 +1,61 @@
+{
+  "runId": "jobs_bench_e9ee346aa8044dd3a4902a99e5084c21",
+  "at": "2026-10-16T17:10:11.996Z",
+  "commit": "9bb3cea8779b72af425085c156c4992de23bb83f",
+  "dirty": true,
+  "mode": "real-pg-synthetic-handler-no-model",
+  "config": {
+    "jobs": 200,
+    "concurrency": 1,
+    "mailboxes": 16,
+    "stubMs": 20,
+    "failEvery": 10,
+    "timeoutMs": 120000
+  },
+  "environment": {
+    "node": "v22.23.3",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpuCount": 8,
+    "databaseVersion": "16.12 (Postgres.app)"
+  },
+  "failure": null,
+  "requested": 200,
+  "admitted": 200,
+  "observed": 200,
+  "succeeded": 180,
+  "failed": 20,
+  "censored": 0,
+  "nonSuccessRate": 0.1,
+  "latencyTerminalIncludingFailures": {
+    "n": 200,
+    "p50Ms": 4243.141084,
+    "p95Ms": 8052.661
+  },
+  "latencySuccessOnly": {
+    "n": 180,
+    "p50Ms": 4237.287,
+    "p95Ms": 7787.244458000001
+  },
+  "elapsedMs": 8491.381958,
+  "terminalPerSecond": 23.553292148349737,
+  "cpuMicroseconds": {
+    "user": 768004,
+    "system": 174536
+  },
+  "maxSampledRssBytes": 78675968,
+  "costs": {
+    "modelCalls": 0,
+    "modelCost": "unknown/not-applicable",
+    "infrastructureCost": "unknown",
+    "totalCost": "unknown"
+  },
+  "limitations": [
+    "Burst admission then drain",
+    "One Node process",
+    "No MQ transport or HTTP",
+    "No model, IMAP or SMTP",
+    "CPU/RSS exclude PostgreSQL",
+    "Censored jobs excluded from terminal percentiles; count and lower-bound latency retained"
+  ]
+}

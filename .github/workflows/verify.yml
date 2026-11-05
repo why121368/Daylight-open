@@ -1,0 +1,32 @@
+name: Verify release
+on:
+  push:
+    branches: ['feat/**', master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run verify
+      - run: docker compose --env-file deploy/compose.env.example config --quiet
+      - name: Keep verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-verification
+          path: |
+            work/release-check-*/*.log
+            work/release-check-*/summary.json
+            work/release-check-*/guard.jsonl
+            work/demo-*/verification.json
+          retention-days: 14

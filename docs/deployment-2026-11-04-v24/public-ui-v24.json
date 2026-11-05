@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "id": "todos",
+      "width": 1440,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "mail",
+      "width": 1440,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "traces",
+      "width": 1440,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "jobs",
+      "width": 1440,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "todos",
+      "width": 390,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "mail",
+      "width": 390,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "traces",
+      "width": 390,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "jobs",
+      "width": 390,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "todos",
+      "width": 320,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "mail",
+      "width": 320,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "traces",
+      "width": 320,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    },
+    {
+      "id": "jobs",
+      "width": 320,
+      "layout": true,
+      "correctImage": true,
+      "zoom": true
+    }
+  ],
+  "assets": [
+    "todos.webp",
+    "todos-1280.webp",
+    "mail.webp",
+    "mail-1280.webp",
+    "traces.webp",
+    "traces-1280.webp",
+    "jobs.webp",
+    "jobs-1280.webp"
+  ],
+  "errors": []
+}

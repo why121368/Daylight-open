@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: answer context preserves a late detail lost from the 280-character display excerpt
+ok 1 - answer context preserves a late detail lost from the 280-character display excerpt
+  ---
+  duration_ms: 2.48784
+  type: 'test'
+  ...
+# Subtest: answer sources keep total and individual context bounded, including long legacy chunks
+ok 2 - answer sources keep total and individual context bounded, including long legacy chunks
+  ---
+  duration_ms: 5.103577
+  type: 'test'
+  ...
+# Subtest: only used evidence is returned and server numbers follow claim order
+ok 3 - only used evidence is returned and server numbers follow claim order
+  ---
+  duration_ms: 8.834252
+  type: 'test'
+  ...
+# Subtest: unknown sources, invented quotes, quotes from another source, empty and oversized claims reject the answer
+ok 4 - unknown sources, invented quotes, quotes from another source, empty and oversized claims reject the answer
+  ---
+  duration_ms: 2.222969
+  type: 'test'
+  ...
+# Subtest: insufficient evidence returns a fixed response without attaching unrelated sources
+ok 5 - insufficient evidence returns a fixed response without attaching unrelated sources
+  ---
+  duration_ms: 1.08894
+  type: 'test'
+  ...
+# Subtest: exact duplicate evidence is reused while individual quotes keep their original metadata
+ok 6 - exact duplicate evidence is reused while individual quotes keep their original metadata
+  ---
+  duration_ms: 2.590904
+  type: 'test'
+  ...
+# Subtest: invalid model evidence and model errors produce explicit extracts, never the unsupported answer
+ok 7 - invalid model evidence and model errors produce explicit extracts, never the unsupported answer
+  ---
+  duration_ms: 194.892278
+  type: 'test'
+  ...
+# Subtest: one concise answer can cover multiple facts and retain both original source references
+ok 8 - one concise answer can cover multiple facts and retain both original source references
+  ---
+  duration_ms: 1.976599
+  type: 'test'
+  ...
+# Subtest: 分块：按页切分并在超长页上重叠
+ok 9 - 分块：按页切分并在超长页上重叠
+  ---
+  duration_ms: 5.021545
+  type: 'test'
+  ...
+# Subtest: 余弦相似度：相同向量为 1，正交为 0
+ok 10 - 余弦相似度：相同向量为 1，正交为 0
+  ---
+  duration_ms: 0.908261
+  type: 'test'
+  ...
+# Subtest: 入库与关键词检索：同邮箱命中，跨邮箱隔离
+ok 11 - 入库与关键词检索：同邮箱命中，跨邮箱隔离
+  ---
+  duration_ms: 24.150989
+  type: 'test'
+  ...
+# Subtest: 普通邮件入库后，口语问题能找回比赛通知且不跨邮箱
+ok 12 - 普通邮件入库后，口语问题能找回比赛通知且不跨邮箱
+  ---
+  duration_ms: 17.374479
+  type: 'test'
+  ...
+# Subtest: ensure 只补未入库邮件，已有片段不重复写入
+ok 13 - ensure 只补未入库邮件，已有片段不重复写入
+  ---
+  duration_ms: 8.141238
+  type: 'test'
+  ...
+# Subtest: ragEnabled=false 时跳过入库
+ok 14 - ragEnabled=false 时跳过入库
+  ---
+  duration_ms: 1.491936
+  type: 'test'
+  ...
+# Subtest: 邮件正文与附件用可解析的引用编码，引用能定位回原邮件或附件
+ok 15 - 邮件正文与附件用可解析的引用编码，引用能定位回原邮件或附件
+  ---
+  duration_ms: 6.302179
+  type: 'test'
+  ...
+# Subtest: 中文长句按二字切分，短词整体匹配
+ok 16 - 中文长句按二字切分，短词整体匹配
+  ---
+  duration_ms: 3.28358
+  type: 'test'
+  ...
+# Subtest: 知识库为空时直接说明没找到，也不会调用模型
+ok 17 - 知识库为空时直接说明没找到，也不会调用模型
+  ---
+  duration_ms: 1.753664
+  type: 'test'
+  ...
+# Subtest: 未配置模型时按命中片段列出结果，模式为 keyword
+ok 18 - 未配置模型时按命中片段列出结果，模式为 keyword
+  ---
+  duration_ms: 2.486532
+  type: 'test'
+  ...
+# Subtest: 配置模型时只依据命中片段作答，并把片段声明为数据
+ok 19 - 配置模型时只依据命中片段作答，并把片段声明为数据
+  ---
+  duration_ms: 238.669766
+  type: 'test'
+  ...
+# Subtest: 重建索引幂等，且跳过没有 id 的邮件
+ok 20 - 重建索引幂等，且跳过没有 id 的邮件
+  ---
+  duration_ms: 13.902678
+  type: 'test'
+  ...
+# Subtest: HTML 邮件入库时剥离脚本与样式，正文仍可检索
+ok 21 - HTML 邮件入库时剥离脚本与样式，正文仍可检索
+  ---
+  duration_ms: 7.363597
+  type: 'test'
+  ...
+# Subtest: 向量检索默认开启，显式 false 才关闭
+ok 22 - 向量检索默认开启，显式 false 才关闭
+  ---
+  duration_ms: 2.0538
+  type: 'test'
+  ...
+# Subtest: 自动挑选 embedding 模型：中文优先，未知供应商退回任意 embed 模型
+ok 23 - 自动挑选 embedding 模型：中文优先，未知供应商退回任意 embed 模型
+  ---
+  duration_ms: 2.857663
+  type: 'test'
+  ...
+# Subtest: 证据片段以命中词为中心截取，无命中词时退回开头
+ok 24 - 证据片段以命中词为中心截取，无命中词时退回开头
+  ---
+  duration_ms: 1.660257
+  type: 'test'
+  ...
+# Subtest: 默认开启向量检索但没配置模型时，仍能入库并退回关键词
+ok 25 - 默认开启向量检索但没配置模型时，仍能入库并退回关键词
+  ---
+  duration_ms: 6.750349
+  type: 'test'
+  ...
+# Subtest: 检索按相关性排序，用 MMR 去冗余：长邮件不再挤掉其它相关邮件
+ok 26 - 检索按相关性排序，用 MMR 去冗余：长邮件不再挤掉其它相关邮件
+  ---
+  duration_ms: 10.426516
+  type: 'test'
+  ...
+# Subtest: MMR 不丢信息：只有一封相关邮件时仍返回它的多条片段
+ok 27 - MMR 不丢信息：只有一封相关邮件时仍返回它的多条片段
+  ---
+  duration_ms: 6.446055
+  type: 'test'
+  ...
+# Subtest: 片段冗余度：同一附件完全重复，同一封邮件高度冗余，跨来源按向量计算
+ok 28 - 片段冗余度：同一附件完全重复，同一封邮件高度冗余，跨来源按向量计算
+  ---
+  duration_ms: 2.831545
+  type: 'test'
+  ...
+# Subtest: 混合检索用 RRF 融合两路排名，两路都靠前的片段排第一
+ok 29 - 混合检索用 RRF 融合两路排名，两路都靠前的片段排第一
+  ---
+  duration_ms: 276.271935
+  type: 'test'
+  ...
+# Subtest: 配置可用的 embedding 模型时自动向量化并走混合检索
+ok 30 - 配置可用的 embedding 模型时自动向量化并走混合检索
+  ---
+  duration_ms: 282.131391
+  type: 'test'
+  ...
+# Subtest: embedding 遇到限流会退避重试，成功即返回向量
+ok 31 - embedding 遇到限流会退避重试，成功即返回向量
+  ---
+  duration_ms: 1138.492357
+  type: 'test'
+  ...
+# Subtest: embedding 遇到参数错误不重试，直接回退空向量
+ok 32 - embedding 遇到参数错误不重试，直接回退空向量
+  ---
+  duration_ms: 50.542618
+  type: 'test'
+  ...
+# Subtest: embedding 重试耗尽后仍回退空向量，不抛错、不阻断入库
+ok 33 - embedding 重试耗尽后仍回退空向量，不抛错、不阻断入库
+  ---
+  duration_ms: 2891.256788
+  type: 'test'
+  ...
+# Subtest: 混合视图检索：mailboxIds 合并多个邮箱的召回池，找回别的邮箱里的通知
+ok 34 - 混合视图检索：mailboxIds 合并多个邮箱的召回池，找回别的邮箱里的通知
+  ---
+  duration_ms: 13.145324
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6569.081093

@@ -1,0 +1,115 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>技术报告与当前交付证据同步 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="技术报告与当前交付证据同步">技术报告与当前交付证据同步</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#技术报告与当前交付证据同步">技术报告与当前交付证据同步</a><ul>
+<li><a href="#改前观察与目标">改前观察与目标</a></li>
+<li><a href="#技术选型与设计逻辑">技术选型与设计逻辑</a><ul>
+<li><a href="#一份正文pdf-和手机-html-两种阅读方式">一份正文，PDF 和手机 HTML 两种阅读方式</a></li>
+<li><a href="#快照与源记录绑定">快照与源记录绑定</a></li>
+<li><a href="#从实际-usage-复算费用">从实际 usage 复算费用</a></li>
+</ul>
+</li>
+<li><a href="#排版与内容核验">排版与内容核验</a></li>
+<li><a href="#电脑与手机阅读">电脑与手机阅读</a></li>
+<li><a href="#复现">复现</a></li>
+<li><a href="#调用与预算">调用与预算</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026-11-04，北京时间。对应竞赛五项考核的统一阅读入口。</p>
+<p><a href="https://daylight.yunforis.com/competition/technical-report.html">完整技术报告</a> · <a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/public/competition/technical-report.pdf">21 页 PDF</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a> · <a href="https://daylight.yunforis.com/demo">十二章视频</a>。</p>
+<h2 id="改前观察与目标">改前观察与目标</h2>
+<p>官网首屏下载报告仍采用 v10 快照，后续 v12 用户价值工具、v13 回复审核、v14 分章视频分散在各自记录里。报告封面、页脚、累计调用量及工程验证需要一起更新，让评委从同一份材料查阅设计、页面和原始证据。</p>
+<p><img alt="技术报告封面与版本前后对照" src="/competition/report-refresh-assets/assets/cover-comparison.jpg"></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>报告结构</td>
+<td>17 页、16 节</td>
+<td>21 页、20 节；增加价值工具、回复链路、审核界面和分章视频</td>
+</tr>
+<tr>
+<td>运行快照</td>
+<td>v10；应用 db3ee89、证据006a177</td>
+<td>v14；前端1549362、后端9354287、基线db3ee89、证据归档2b58328</td>
+</tr>
+<tr>
+<td>工程验证</td>
+<td>951 通过；v10 HTTPS 38 项、更新资源15份</td>
+<td>本轮全量988通过、29条件跳过；v14 HTTPS 66项、关联资料116份</td>
+</tr>
+<tr>
+<td>用户价值</td>
+<td>对照方法与记录表</td>
+<td>可运行主持工具；10次真实模型预检；两套各12/12；真人参与0</td>
+</tr>
+<tr>
+<td>回复闭环</td>
+<td>草稿与人工确认说明</td>
+<td>来源邮箱、revision、sending、回执及unknown；真实PostgreSQL 8/8</td>
+</tr>
+<tr>
+<td>演示阅读</td>
+<td>MP4 与现场脚本</td>
+<td>十二章播放器、33条讲解、同步讲稿、字幕与失败恢复</td>
+</tr>
+<tr>
+<td>累计文本调用</td>
+<td>32次、输入54,886／输出15,526</td>
+<td>42次、输入87,158／输出29,063</td>
+</tr>
+<tr>
+<td>累计模型估算</td>
+<td>¥0.233980</td>
+<td>¥0.406820；按输入¥2、输出¥8／百万Token复算</td>
+</tr>
+<tr>
+<td>阅读定位</td>
+<td>17书签、6内部跳转、28外链</td>
+<td>21书签、6内部跳转、39外链</td>
+</tr>
+</tbody>
+</table>
+<p>前后运行检查数分别对应各自版本和资源集合；模型累计量覆盖各批实际调用。数据来源登记在<a href="/competition/submission-assets/evidence/report-baseline.json">报告机器基线</a>。</p>
+<h2 id="技术选型与设计逻辑">技术选型与设计逻辑</h2>
+<h3 id="一份正文pdf-和手机-html-两种阅读方式">一份正文，PDF 和手机 HTML 两种阅读方式</h3>
+<p>继续使用既有 Markdown 正文及 ReportLab 构建器。PDF 按主题分节并嵌入中文字体，支持复制、书签与内部跳转；HTML 从同一份正文生成，提供折叠目录、自适应图片与局部滚动表格。技术页的页数和文件大小直接读取构建清单。</p>
+<p>本轮沿用已核对的 <strong>gpt-image-2.5 英文工程图</strong>，中文解释放在正文；电脑与手机效果采用实际页面截图。图片以网页 WebP、PDF 内 JPEG 发布。</p>
+<h3 id="快照与源记录绑定">快照与源记录绑定</h3>
+<p>新增 <code>scripts/competition_report_baseline.py</code>，读取 v14 运行、HTTPS、静态资源和媒体记录，以及 RAG、价值材料、回复 PostgreSQL、价格、预算登记和本轮全量测试。每个来源保存 SHA-256，校验服务健康、运行文件集合、模型预检、参与人数与调用费用。</p>
+<p>构建器首先复算并核对机器基线，再生成 PDF；构建清单保存正文与基线摘要。页脚同时写出前后端版本，发布时可以追溯静态资料和继承的服务代码。内部章节跳转根据章节标题生成，新增章节后仍指向对应内容。</p>
+<h3 id="从实际-usage-复算费用">从实际 usage 复算费用</h3>
+<p>预检、固定回归、RAG 前后及价值材料预检分别计入调用总数。各批费用按原始输入和输出 Token 重算，使用 Decimal 校验到六位小数，汇总后供技术页和报告共同读取。15例提取任务的平均用量继续作为可编辑计算器的初值。</p>
+<h2 id="排版与内容核验">排版与内容核验</h2>
+<p>21页全部渲染检查，正文位于安全边界内；21个书签逐一对应实际页码，6个内部目标有效，39个HTTPS外链可提取，所有实际文字字体嵌入。原始结果见<a href="/competition/submission-assets/evidence/pdf-verification.json">PDF验证</a>与<a href="/competition/submission-assets/evidence/report-manifest.json">构建清单</a>。</p>
+<p><img alt="第1至7页" src="/competition/report-refresh-assets/assets/pages-01-07.jpg"></p>
+<p><img alt="第8至14页" src="/competition/report-refresh-assets/assets/pages-08-14.jpg"></p>
+<p><img alt="第15至21页" src="/competition/report-refresh-assets/assets/pages-15-21.jpg"></p>
+<p>本轮<a href="/competition/report-refresh-assets/evidence/full-tests.txt">全量测试</a>：1,017项，988通过、29条件跳过、0失败，63.26秒。正文清楚登记真人参与0、合成输入与真实模型调用，以及真实PostgreSQL加注入SMTP的检查环境。</p>
+<h2 id="电脑与手机阅读">电脑与手机阅读</h2>
+<p>本地1440、390、320px分别核对完整报告和技术页，六组均无整页横向溢出；报告15张图片全部加载成功。报告下载入口56px、技术页下载入口44px。390px展开目录并选择回复审核章后，标题位于视口顶部19.99px。</p>
+<p><img src="/competition/report-refresh-assets/assets/local-evidence-mobile.png" alt="390px技术页：21页报告和更新记录入口" width="340">
+<img src="/competition/report-refresh-assets/assets/local-reply-chapter.png" alt="390px目录跳转到持久回复审核章" width="340"></p>
+<p><a href="/competition/report-refresh-assets/evidence/browser-verification.json">浏览器布局与章节操作</a>保留实际innerWidth、clientWidth、scrollWidth、图片加载状态和累计费用正文。</p>
+<h2 id="复现">复现</h2>
+<p>准备 Node.js ≥22.19 与 Python 3.11+，安装原有<a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/docs/competition-submission-2026-11-04/report-requirements.txt">报告依赖</a>。</p>
+<pre><code class="language-sh">npm test &gt; docs/competition-report-refresh-2026-11-04/evidence/full-tests.txt
+python scripts/competition_report_baseline.py
+python scripts/build-competition-report.py
+python scripts/verify-competition-report.py
+python scripts/competition-public-report.py --only technical-report.html --only report-refresh.html
+npm run build
+python scripts/verify-competition-resources.py https://daylight.yunforis.com work/report-resources.json
+</code></pre>
+<p>Windows 默认使用 Microsoft YaHei；其他主机通过 <code>--font</code> 和 <code>--font-bold</code> 提供中文字体。用 Poppler 渲染 PDF 复核后，按已归档版本核对摘要。</p>
+<h2 id="调用与预算">调用与预算</h2>
+<p>本轮新增文字模型、图片生成、SMTP与云资源采购均为 <strong>0</strong>。文本累计42次、公开价估算¥0.406820；图片累计10次，费用按供应商账单登记；新增总预算上限¥500。</p>
+<p>优化前报告摘要和结构保存在<a href="/competition/report-refresh-assets/evidence/before-manifest.json">改前清单</a>，排版验证保存在<a href="/competition/report-refresh-assets/evidence/before-pdf-verification.json">改前验证</a>。</p></main></html>

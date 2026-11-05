@@ -1,0 +1,15 @@
+✔ video chapter timeline covers the original frames, captions and duration without gaps (1.6488ms)
+✔ seeking uses half-open boundaries and handles the final encoded frame (0.256ms)
+✔ shared chapter lookup handles valid links and malformed parameters (0.2358ms)
+✔ public player catalog exactly matches the bundled catalog (4.2581ms)
+✔ subtitles and native chapter track use the same chapter intervals and text (1.9683ms)
+✔ encoded MP4 matches the catalog digest, duration and fast-start layout (3.0981ms)
+✔ downloadable transcript preserves every caption and chapter link (1.9061ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 273.0967

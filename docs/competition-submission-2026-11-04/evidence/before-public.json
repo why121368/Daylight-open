@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-03T18:06:20.612Z",
+  "scope": "Public report delivery before report integration",
+  "checks": [
+    {
+      "path": "/competition/technical-report.pdf",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 3426,
+      "sha256": "84c563a65b18e1cea8238dbff7cd83f71f1a55f9e1259782ac803bc67d07b12d"
+    },
+    {
+      "path": "/competition/technical-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 3426,
+      "sha256": "84c563a65b18e1cea8238dbff7cd83f71f1a55f9e1259782ac803bc67d07b12d"
+    }
+  ]
+}

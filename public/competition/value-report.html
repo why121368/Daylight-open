@@ -1,0 +1,281 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>用户价值对照：从测量方案到可运行工具 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="用户价值对照从测量方案到可运行工具">用户价值对照：从测量方案到可运行工具</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#用户价值对照从测量方案到可运行工具">用户价值对照：从测量方案到可运行工具</a><ul>
+<li><a href="#本轮目标">本轮目标</a></li>
+<li><a href="#优化前后">优化前后</a></li>
+<li><a href="#对照流程图">对照流程图</a></li>
+<li><a href="#启动">启动</a></li>
+<li><a href="#对照方法">对照方法</a><ul>
+<li><a href="#主持步骤">主持步骤</a></li>
+<li><a href="#评分口径">评分口径</a></li>
+</ul>
+</li>
+<li><a href="#技术选型与设计">技术选型与设计</a></li>
+<li><a href="#真实模型材料预检">真实模型材料预检</a><ul>
+<li><a href="#原始证据与复算">原始证据与复算</a></li>
+</ul>
+</li>
+<li><a href="#工程与页面验证">工程与页面验证</a><ul>
+<li><a href="#日期输入的修复记录">日期输入的修复记录</a></li>
+<li><a href="#发布">发布</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026 年 11 月 4 日 · 对应场景价值、Agent 链路、工程交付、成本与性能。</p>
+<h2 id="本轮目标">本轮目标</h2>
+<p>测量目标用户整理通知所用的完整时间和最终结果质量。两轮使用同一套阅读和编辑界面，人工轮自行整理，Daylight 轮调用现有邮件提取、日历与待办工具后核验。材料是两套原创通知，各展示六封，包含五个唯一邮件 ID；两套标题和正文合计 572 / 575 字。</p>
+<p><a href="https://daylight.yunforis.com/competition/value-report.html">官网阅读</a> · <a href="/competition/value-assets/evidence/study-inputs.json">原始通知</a> · <a href="/competition/value-assets/evidence/summary.json">自动预检摘要</a> · <a href="/competition/value-assets/evidence/calls.csv">逐次调用CSV</a>。</p>
+<h2 id="优化前后">优化前后</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>优化前</th>
+<th>本轮结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>采集入口</td>
+<td>文字方案与空白CSV表头</td>
+<td>可运行的邮件阅读、结果编辑、计时、评分与JSON导出</td>
+</tr>
+<tr>
+<td>对照材料</td>
+<td>A/B材料主题说明</td>
+<td>两套固定原创通知，572/575字，均含邀请、独立材料截止、冲突、改期、重复与取消</td>
+</tr>
+<tr>
+<td>顺序控制</td>
+<td>由主持人手动安排</td>
+<td>匿名编号轮换四种材料和工具顺序</td>
+</tr>
+<tr>
+<td>时间口径</td>
+<td>手动计时说明</td>
+<td>服务端单调时钟，读取开始至本人确认完成</td>
+</tr>
+<tr>
+<td>质量判断</td>
+<td>人工统计遗漏、错时、重复</td>
+<td>12项结构化检查，加标题和冲突人工复核</td>
+</tr>
+<tr>
+<td>修正证据</td>
+<td>手工填“修正次数”</td>
+<td>保存模型草稿、最终结果，以及增加/移除的条目数</td>
+</tr>
+<tr>
+<td>模型与成本</td>
+<td>待测量</td>
+<td>10次真实调用，两套各12/12；usage与逐次延迟归档</td>
+</tr>
+</tbody>
+</table>
+<p>本轮主要增强场景价值的采集方式，也为Agent链路质量、工程可复现和成本分析提供了固定输入。真人配对结果在采集后按相同方法追加。</p>
+<h2 id="对照流程图">对照流程图</h2>
+<p><a href="/competition/value-assets/assets/study-flow.png"><img alt="Daylight paired study workflow" src="/competition/value-assets/assets/study-flow.webp"></a></p>
+<p>图由 <strong>gpt-image-2.5</strong> 通过 imagegen 自带CLI生成，1536×1024、high；英文标签经检查。<a href="/competition/value-assets/study-prompt.txt">提示词</a>与<a href="/competition/value-assets/image-generation.json">文件摘要</a>保留。网页采用130,170 bytes的WebP，点击查看PNG原图。</p>
+<p>四种顺序轮换控制材料和工具的先后；人工与Daylight两条路径均包含阅读和核验，再进入同一评分与主持人复核流程。图底部按记录类型区分真人、练习和自动材料预检。</p>
+<h2 id="启动">启动</h2>
+<p>准备 Node.js ≥22.19、npm，安装依赖后在项目根目录执行：</p>
+<pre><code class="language-sh">npm run study -- --validate
+npm run study -- --practice
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3190</code>，按页面说明完成两轮。练习使用预置提取，调用模型为零。</p>
+<p><img alt="电脑：原文与处理记录" src="/competition/value-assets/assets/study-desktop.png"></p>
+<p>截图为本地预置练习：左侧阅读通知，右侧显示处理记录与可编辑结果；两种条件共用编辑器。</p>
+<p>真实模型由主持人在本机指定已有配置文件：</p>
+<pre><code class="language-sh">npm run study -- --live --settings &lt;private-file&gt; --max-calls 20
+</code></pre>
+<p>配置读取 <code>baseUrl</code>、<code>apiKey</code>、<code>model</code> 及 Token 单价；多用户设置可加 <code>--settings-user &lt;id&gt;</code>。结果保存在每次新建的 <code>work/value-study-*</code>。完成两轮或结束参与后可导出 JSON。Ctrl+C 保存中断状态并结束服务。</p>
+<p>两套自动模型预检命令：</p>
+<pre><code class="language-sh">npm run study -- --live --settings &lt;private-file&gt; --max-calls 10 --preflight
+node scripts/value-study-evidence.mjs --run-dir work/value-study-&lt;run&gt; --out work/value-study-&lt;run&gt;/evidence
+</code></pre>
+<p>第二条命令仅接受标为自动预检、真实模型且输入ID属于本套材料的记录。真人原始记录在主持人本地导出，公开报告使用经确认的匿名汇总。</p>
+<h2 id="对照方法">对照方法</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>第一轮</th>
+<th>第二轮</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P01</td>
+<td>人工 A</td>
+<td>Daylight B</td>
+</tr>
+<tr>
+<td>P02</td>
+<td>Daylight A</td>
+<td>人工 B</td>
+</tr>
+<tr>
+<td>P03</td>
+<td>人工 B</td>
+<td>Daylight A</td>
+</tr>
+<tr>
+<td>P04</td>
+<td>Daylight B</td>
+<td>人工 A</td>
+</tr>
+</tbody>
+</table>
+<p>P05 起重复四种顺序。每轮点击开始后才显示通知；点击确认完成时停止计时。阅读、模型等待、核验、修正和求助都计入；两轮之间的休息不计入。两轮完成后展示评分，主持人导出也在两轮完成或结束参与后开放。</p>
+<p>自动检查时间、地点、数量、旧时间释放与通知来源，共 12 项；标题含义和冲突识别由主持人结合原文复核。保存模型草稿与最终结果的条目差异，修改一个条目记为移除旧项、增加新项。练习、自查、中断记录均保留，在真人配对汇总中单列。</p>
+<h3 id="主持步骤">主持步骤</h3>
+<ol>
+<li>招募3–5位经常处理校园申请或招聘通知的自愿参与者，使用P01起连续编号。项目成员自查选择对应用途。</li>
+<li>说明记录用途与随时结束的方式，先用预置练习熟悉按钮、来源选择及时间输入。</li>
+<li>新开真实模型场次，按编号依次完成。每位领取后只在“开始本轮”时看到输入；主持人在两轮间可安排休息。</li>
+<li>两轮均按本人判断结束，保留未填内容和错误；按实际情况填写求助次数、中断及体验反馈。</li>
+<li>两轮结束后，主持人结合原文复核标题含义，以及是否识别交流与已有例会的重叠。保留复核依据。</li>
+<li>导出原始JSON，汇报逐人耗时、配对差值、中位数、范围、检查结果、条目变化和具体反馈；中断记录保留在排除列表。</li>
+</ol>
+<h3 id="评分口径">评分口径</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>自动检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前面试</td>
+<td>唯一起止、地点</td>
+</tr>
+<tr>
+<td>日历状态</td>
+<td>已有例会保留、旧面试释放、已取消交流释放、有效安排共2项</td>
+</tr>
+<tr>
+<td>材料</td>
+<td>两个独立截止、待办共2项</td>
+</tr>
+<tr>
+<td>来源</td>
+<td>当前面试及两项材料均可回查对应通知</td>
+</tr>
+</tbody>
+</table>
+<p>标题相近、自由文本描述和冲突说明由主持人判断。自动检查与人工判断分别记录，便于查看时间正确而标题错误等情况。对照结果反映这一套共享编辑器中的处理方式；其他邮箱/日历软件的操作习惯可在访谈中补充。</p>
+<h2 id="技术选型与设计">技术选型与设计</h2>
+<p>独立 Vite 入口复用 shadcn 组件及项目主题；Express 只监听本机，模型设置只读白名单字段。生产 Agent 的 <code>extractEvents</code>、<code>processEmails</code> 和 Trace 在独立合成快照中运行，按邮件 ID 去重，保留改期关联、取消历史、冲突与通知来源。</p>
+<p>服务器以单调时钟计时；每次草稿和结果通过临时文件、fsync、原子重命名保存后确认。单场同一时间一位参与者、一个分析；总模型额度显式指定，每封唯一通知每次分析最多调用一次，成功邮件在重试中跳过。写入失败停止本场并在页面呈现状态。Windows 使用 IPC 结束消息保存中断记录。</p>
+<table>
+<thead>
+<tr>
+<th>选型</th>
+<th>设计原因与代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>独立本地入口</td>
+<td>主持人管理模型额度及匿名记录；参与者在同一台主持设备完成，远程多人采集需另设主持和授权机制</td>
+</tr>
+<tr>
+<td>复用现有Agent工具</td>
+<td>预检能覆盖实际改期、取消、去重和Trace语义；每封仍按顺序调用，完整五封模型等待计入</td>
+</tr>
+<tr>
+<td>两轮共用编辑器</td>
+<td>减少表单和日历交互差异对结果的影响；结论范围对应本工具流程</td>
+</tr>
+<tr>
+<td>单调时钟</td>
+<td>计时不受系统时钟调整影响；刷新继续当前轮，进程退出保存为中断，新进程开启新场次</td>
+</tr>
+<tr>
+<td>JSON原子记录</td>
+<td>便于现场运行和逐人审阅；每次保存同步落盘，吞吐取单主持场景所需范围</td>
+</tr>
+<tr>
+<td>两轮后评分</td>
+<td>减少第一轮答案对第二轮的提示；模型结果仍供本轮核验和编辑</td>
+</tr>
+<tr>
+<td>原始usage与单价分离</td>
+<td>可按供应商账单复算；价格快照和当前模型身份按配置值记录</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="手机：跳转到结果与编辑" src="/competition/value-assets/assets/study-mobile-editor.png"></p>
+<p>手机提供“通知原文 / 整理结果”定位按钮，主操作48px，表单按单列排列；来源下拉使用与原文相同的通知序号。</p>
+<p><img alt="手机：展开处理过程与冲突" src="/competition/value-assets/assets/study-mobile-analysis.png"></p>
+<p>手机截图为预置练习，用于核对交互和文字。模型自动预检的输入与输出保存在下面的原始证据中。</p>
+<h2 id="真实模型材料预检">真实模型材料预检</h2>
+<p>源码 <strong><code>d895e674077b6d26b5642dbf38620bb126ca56a7</code></strong>，2026-11-04 02:52北京时间开始，Windows / Node v24.14.0；配置模型 <code>deepseek-v4.1-flash</code>，接口 <code>https://api.modelverse.cn</code>。两组各五次顺序调用，原邮件ID去重，未重试。</p>
+<table>
+<thead>
+<tr>
+<th>材料</th>
+<th style="text-align: right;">结构化检查</th>
+<th style="text-align: right;">成功处理</th>
+<th style="text-align: right;">重复跳过</th>
+<th>冲突 / 改期 / 取消</th>
+<th style="text-align: right;">整组耗时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td style="text-align: right;">12/12</td>
+<td style="text-align: right;">5封</td>
+<td style="text-align: right;">1封</td>
+<td>各1次</td>
+<td style="text-align: right;">74.40秒</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: right;">12/12</td>
+<td style="text-align: right;">5封</td>
+<td style="text-align: right;">1封</td>
+<td>各1次</td>
+<td style="text-align: right;">39.47秒</td>
+</tr>
+</tbody>
+</table>
+<p>逐次模型调用p50 <strong>9.2345秒</strong>，p95 <strong>32.503秒</strong>（10次的最近秩p95取最慢一条）；两组输入共32,272、输出13,537 Token，缓存输入22,528。供应商usage中的全部输出Token纳入计价。</p>
+<p>按<a href="/competition/operations-assets/evidence/official-model-price.json">已保存的官方目录单价</a>输入¥2、输出¥8／百万Token计算，缓存按普通输入价：</p>
+<pre><code class="language-text">(32,272 × 2 + 13,537 × 8) ÷ 1,000,000 = ¥0.172840
+</code></pre>
+<p>两组耗时差异和最慢调用表明，模型响应主导这条短通知链的等待。顺序处理保留前信日历与待办上下文；后续优化优先评测更紧凑的输出约束和受控模型配置，保持12项固定检查及变更历史。批量提取还需验证同一批中改期、取消和重复的先后语义。</p>
+<p>当前真人配对数为 <strong>0</strong>，已完成工具、固定材料与真实模型预检；用户耗时从现场参与流程采集。</p>
+<h3 id="原始证据与复算">原始证据与复算</h3>
+<ul>
+<li><a href="/competition/value-assets/evidence/manifest.json">运行manifest与逐文件摘要</a>：运行时有新增截图等未提交文件，<code>sourceDirty:true</code>；运行文件字节摘要逐一保存。</li>
+<li><a href="/competition/value-assets/evidence/preflight.json">两组完整原始结果和Trace</a>：原创合成输入、模型内容响应、usage、工具结果与历史。</li>
+<li><a href="/competition/value-assets/evidence/summary.json">机器可读摘要</a> · <a href="/competition/value-assets/evidence/calls.csv">逐调用CSV</a> · <a href="/competition/value-assets/evidence/study-inputs.json">固定输入</a>。</li>
+<li>费用统计脚本：<code>scripts/value-study-evidence.mjs</code>；取价、缓存按普通输入计价及原文件SHA关联均在摘要中记录。</li>
+</ul>
+<p>本轮新增文本模型调用10次、图片调用1次、云采购0。文本累计42次，公开价估算¥0.406820；图片累计9次，图像及服务器费用按供应商账单登记。新增总预算继续为¥500。</p>
+<h2 id="工程与页面验证">工程与页面验证</h2>
+<ul>
+<li>最终定向 21 项通过，覆盖评分、UTC/北京时间、顺序、计时、额度预留、并发、失败重试、写入失败、跨来源写入、Windows 子进程结束及在途分析中断。<a href="/competition/value-assets/evidence/targeted-tests.txt">最终定向日志</a>随报告归档。</li>
+<li>预置 A / B 两套均 12/12，改期、取消、重复、冲突及来源由现有工具执行。</li>
+<li>
+<p>页面已操作检查新增安排和待办、保存/刷新、两轮提交、主持人复核和 JSON 下载；日期字段秒/毫秒归一，输入事件和服务端格式核对。</p>
+</li>
+<li>
+<p>全量 <code>npm test</code> 共1000项，971通过、29条件跳过、0失败，约63.56秒。<a href="/competition/value-assets/evidence/tests.txt">测试日志</a>随报告归档。</p>
+</li>
+<li><a href="/competition/value-assets/evidence/study-layout.json">三尺寸布局记录</a>：320/390/1440px，无表单超出视口，主操作均48px；较窄页面使用原文/结果定位。</li>
+<li><a href="/competition/value-assets/evidence/publication-layout.json">公开资料三尺寸检查</a>：技术页与本报告共六项布局检查通过，四张内嵌图加载完成，方法入口高度44px，点击进入对应报告。</li>
+<li>真实模型预检两套各12/12，逐邮件处理错误为0，详见上节。</li>
+</ul>
+<p>全量1000项对应工具实现提交<code>d895e67</code>；随后补充在途分析中断处理，并完成上述最终21项定向检查。中断后已发出的调用返回时保留中断状态，进度、模型草稿与分析结果均先检查当前参与状态再写入。</p>
+<h3 id="日期输入的修复记录">日期输入的修复记录</h3>
+<p>页面操作中发现，原控件在浏览器写入日期后会清空；新增安排/待办的截止未保留。修复为统一处理不带秒、带秒、带毫秒三种原生输入，显式解释为UTC+08:00，并同时处理原生input事件；UTC模型结果按北京时间显示。修复后四个新增时间字段输入、保存、刷新与最终12项检查均通过。</p>
+<h3 id="发布">发布</h3>
+<p>官网技术页提供方法和材料入口，图文、截图、原始合成预检与逐次CSV作为静态资料发布。本地主持工具通过源码命令运行，原始参与记录留在主持目录。发布版本、备份、候选及公网核对见本目录的发布记录。</p></main></html>

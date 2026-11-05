@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "applicationCommit": "db3ee89",
+  "evidenceCommit": "006a177",
+  "source": "docs/competition-submission-2026-11-04/technical-report.md",
+  "sourceSha256": "f8fdf9cdacd0555fd0613f59452f0dabc55cd171883c201de67a2a55fd960f6c",
+  "pdf": "output/pdf/daylight-technical-report-20261104.pdf",
+  "pdfSha256": "c45ec46e0293933099f4d02f88302945ed4c4dd7d71406d03d80924330223da5",
+  "bytes": 2187994,
+  "pages": 17,
+  "sections": 17,
+  "externalLinks": 28,
+  "bookmarks": 17,
+  "textChecks": [
+    "Daylight",
+    "6/8",
+    "8/8",
+    "951",
+    "0.233980",
+    "db3ee89",
+    "006a177",
+    "8.77",
+    "2.38"
+  ],
+  "fontNames": [
+    "DaylightRegular",
+    "DaylightBold"
+  ]
+}

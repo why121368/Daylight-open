@@ -1,0 +1,17 @@
+✔ tracked frontend evidence matches all five sources and has reproducible hashes (32.3972ms)
+✔ updating a source fails the deployment gate until the snapshot is regenerated (30.9991ms)
+✔ Windows and Linux JSON formatting keeps the same snapshot and canonical hashes (34.4341ms)
+✔ missing, invalid, and non-object evidence cannot become a build snapshot (41.1632ms)
+✔ edited snapshot data or source provenance fails the deployment gate (40.3823ms)
+✔ the actual Vite graph accepts src/shared/public data included by Docker COPY (255.95ms)
+✔ an indirect dynamic import from excluded docs fails the actual Vite graph (67.5122ms)
+﹣ a symlink from src to an excluded source cannot bypass the Vite boundary (27.4246ms) # OS does not grant file symlink creation.
+✔ offline realpath native variants resolve fixture paths and still reject user data (185.0447ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 1261.2647

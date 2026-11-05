@@ -1,0 +1,47 @@
+# Modelverse (api.modelverse.cn) connectivity probe, 2026-10-17T13:09:36+08:00
+
+## GET /v1/models
+http=200
+model_count=274
+kimi-tools-fetch-custom
+gemini-4-argon
+ai-mediakit-video-enhancement-std
+claude-haiku-5-5
+gemini-nano-banana-2.1
+gpt-6.1-sol
+doubao-seed-2-1-lite-260915
+claude-sonnet-5-5
+claude-opus-5-5
+gpt-6-luna
+gpt-6-sol
+grok-4.7
+mimo-v2.6-flash
+mimo-v2.6-pro
+laya
+jev-1.13.0
+gemini-3.5-live-translate-preview
+gemini-omni-1.1-flash-preview
+gemini-3.5-transcribe-live-preview
+suno-v6-mini
+suno-v6-wild
+suno-v6
+gpt-image-2.5-flare
+gpt-image-2.5-sunburst
+deepseek-v4.1-flash
+qwen-audio-3.0-realtime-flash
+qwen-audio-3.0-realtime-plus
+LingDT-3.0-flash
+gpt-6-astra
+gemini-3.8-flash
+gpt-live-transcribe
+claude-fable-5-1
+MiniMax-H3-Max
+minimax-h3-context-ir
+glm-5.3-flash
+suno-boost-music-style
+suno-generate-lyrics
+qwen-image-3.0-pro
+qwen-image-3.0
+http=200
+model=deepseek-v4.1-flash content=
+usage={"completion_tokens":32,"completion_tokens_details":{"reasoning_tokens":32},"prompt_tokens":61,"prompt_tokens_details":{"cached_tokens":0},"total_tokens":93}

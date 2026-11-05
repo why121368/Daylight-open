@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "pages": 21,
+  "bookmarks": 21,
+  "externalLinks": 39,
+  "pdfBytes": 3111267,
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad",
+  "baselineSha256": "e368d47c737ebe55a66c7df297599b3e62ca47963a8c836a49219c47fa0711a2",
+  "sourceRecords": 13,
+  "tests": {
+    "tests": 1017,
+    "pass": 988,
+    "fail": 0,
+    "skipped": 29
+  },
+  "modelCalls": 42,
+  "estimatedModelCny": 0.40682,
+  "chapters": 12
+}

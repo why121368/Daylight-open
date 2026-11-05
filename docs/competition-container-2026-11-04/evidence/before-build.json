@@ -1,0 +1,7 @@
+{
+  "source": "30903e66071d58bb97ae96040a86fd265ec343d9",
+  "command": "docker build --progress plain --target build --tag daylight:source-before-20261104 .",
+  "seconds": 24.3426319,
+  "started": "2026-11-04T00:09:01.4158714Z",
+  "exitCode": 1
+}

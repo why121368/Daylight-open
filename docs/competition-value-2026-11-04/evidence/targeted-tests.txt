@@ -1,0 +1,29 @@
+✔ study server IPC shutdown preserves interrupted records on Windows and releases its port (1233.1572ms)
+✔ study practice runs production calendar/task semantics with conflicts, linked changes and no model calls (48.2667ms)
+✔ study runner retries a failed unique mail through the production extractor without replaying successful work (88.8987ms)
+✔ study runner makes one model attempt per unique identity even when a failed original is repeated (33.1574ms)
+✔ study materials balance four assignments and hide fixed answers from participants (2.7734ms)
+✔ study scoring catches deadlines, stale and repeated calendar entries and missing sources (1.6495ms)
+✔ study time validation treats UTC and Beijing equally and rejects invalid dates and oversized records (2.6269ms)
+✔ study input conversion normalizes native seconds and UTC results without shifting Beijing wall time (0.3844ms)
+✔ study draft comparison counts row changes independently of row order and timezone formatting (0.7503ms)
+✔ study sessions require consent, one active participant, unique IDs and delayed scoring (2.0093ms)
+✔ study clock includes model waiting and verification until explicit completion (10.4161ms)
+✔ study quota is reserved before work, dispatches at most the limit and releases unused calls (1.9935ms)
+✔ study retries only unprocessed identities and preserves completed work (1.2831ms)
+✔ study rejects insufficient quota before making a call (0.4053ms)
+✔ study analysis failures release reservations, return safe status and allow one retry (0.8395ms)
+✔ study persistence failure closes the run visibly and retains the last saved draft (0.6005ms)
+✔ study interruption preserves elapsed time and prevents completion or further model dispatch (0.3534ms)
+✔ study interruption during an in-flight call preserves interruption and blocks late result overwrite (2.0609ms)
+✔ study summary excludes presets, project self-checks and incomplete participants (0.4775ms)
+✔ study practice records remain labeled and all mutations save before acknowledgement (0.5704ms)
+✔ study HTTP rejects cross-origin writes and invalid bodies while exposing no server error details (137.4053ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1358.9399

@@ -1,0 +1,48 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>运行与源码 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="运行与源码">运行与源码</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#运行与源码">运行与源码</a><ul>
+<li><a href="#在线与隔离体验">在线与隔离体验</a></li>
+<li><a href="#从交付包启动">从交付包启动</a></li>
+<li><a href="#容器构建">容器构建</a></li>
+<li><a href="#从源码启动">从源码启动</a></li>
+<li><a href="#容器化部署">容器化部署</a></li>
+<li><a href="#公开业务复查">公开业务复查</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<h2 id="在线与隔离体验">在线与隔离体验</h2>
+<p><a href="/experience">在线七步体验</a> · <a href="/evidence">技术与实测</a> · <a href="/competition/report.html">图文与实测证据</a> · <a href="/demo">分章讲解与同步讲稿</a> · <a href="/competition/demo.mp4">下载 MP4</a>。</p>
+<h2 id="从交付包启动">从交付包启动</h2>
+<p>源码与交付包通过竞赛提交渠道提供。解压后的 <code>START-HERE.md</code> 包含版本和启动步骤，<code>DELIVERY-MANIFEST.json</code> 保存源码、构建、说明与验证日志的逐文件摘要。</p>
+<p>准备 Node.js ≥22.19 和 npm，先核对随包提供的整个压缩包 SHA-256，再在解压目录执行：</p>
+<pre><code class="language-sh">node scripts/verify-delivery.mjs . --out work/package-integrity.json
+npm ci
+npm run demo -- --no-build
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3180/experience</code>，走完创建、冲突、改期、重复、异常、重试与取消；技术页为 <code>/evidence</code>，分章视频为 <code>/demo</code>，完整工作区在 <code>/login</code>，选择「进入演示工作区」。</p>
+<p><a href="/competition/delivery-report.html">交付流程、前后对照与实际安装记录</a>。</p>
+<h2 id="容器构建">容器构建</h2>
+<pre><code class="language-sh">npm ci
+npm run deploy:check
+docker build --build-arg NODE_IMAGE=public.ecr.aws/docker/library/node:22.23.3-bookworm-slim -t daylight:release .
+</code></pre>
+<p><a href="/competition/container-report.html">完整源码容器构建、真实依赖、只读运行与原始记录</a>。构建使用受版本管理的公开证据快照，修改源证据后执行 <code>npm run evidence:sync</code> 再验证。</p>
+<h2 id="从源码启动">从源码启动</h2>
+<p>源码仓库：<a href="https://github.com/why121368/Daylight">why121368/Daylight</a>，分支 <code>feat/competition-experience-20261103</code>。仓库访问沿用当前 GitHub 权限，评审源码按参赛提交方式提供。</p>
+<p>准备 Node.js ≥22.19 和 npm，在取得源码后执行：</p>
+<pre><code class="language-sh">npm ci
+npm run verify
+npm run demo -- --no-build --port 3180
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3180/experience</code> 或 <code>/evidence</code>。演示服务使用独立样例数据。</p>
+<h2 id="容器化部署">容器化部署</h2>
+<p>准备 Docker 与 Compose v2、openssl、curl，在项目根目录执行：</p>
+<pre><code class="language-sh">sh deploy/up.sh
+</code></pre>
+<p>启动后按页面设置邮箱和模型。PostgreSQL、Redis、RabbitMQ、MinIO 与 API/Worker/Scheduler 按项目配置启动。</p>
+<h2 id="公开业务复查">公开业务复查</h2>
+<pre><code class="language-sh">node scripts/verify-competition.mjs https://daylight.yunforis.com work/competition-check.json
+node scripts/benchmark-experience.mjs https://daylight.yunforis.com work/competition-benchmark.json
+</code></pre></main></html>

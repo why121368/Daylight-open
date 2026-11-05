@@ -1,0 +1,104 @@
+{
+  "at": "2026-11-03T18:26:43.883559+00:00",
+  "scope": "Authored 17-page PDF and byte-identical public copy",
+  "pdfSha256": "c45ec46e0293933099f4d02f88302945ed4c4dd7d71406d03d80924330223da5",
+  "bytes": 2187994,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 573,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 2,
+      "characters": 818,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 3,
+      "characters": 724,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 4,
+      "characters": 468,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 5,
+      "characters": 760,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 6,
+      "characters": 459,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 7,
+      "characters": 731,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 8,
+      "characters": 402,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 9,
+      "characters": 801,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 10,
+      "characters": 397,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 11,
+      "characters": 427,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 12,
+      "characters": 787,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 13,
+      "characters": 471,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 14,
+      "characters": 529,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 15,
+      "characters": 797,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 16,
+      "characters": 668,
+      "overflowCharacters": 0
+    },
+    {
+      "page": 17,
+      "characters": 702,
+      "overflowCharacters": 0
+    }
+  ],
+  "bookmarks": 17,
+  "validInternalLinks": 6,
+  "externalLinks": 28,
+  "embeddedTextFonts": [
+    "AAAAAA+MicrosoftYaHei-0",
+    "AAAAAA+MicrosoftYaHei-Bold-0",
+    "AAAAAB+MicrosoftYaHei-0",
+    "AAAAAB+MicrosoftYaHei-Bold-0",
+    "AAAAAC+MicrosoftYaHei-0"
+  ],
+  "textBounds": "45pt horizontal / 15pt top / 14pt bottom"
+}

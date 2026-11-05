@@ -1,0 +1,166 @@
+{
+  "createdAt": "2026-11-03T21:28:19.958Z",
+  "method": {
+    "environment": "Windows, IAB Chromium, local isolated demo API",
+    "builds": {
+      "beforeSource": "435c7c7",
+      "afterSource": "working tree recorded in source-hashes.json"
+    },
+    "transport": {
+      "sharedBytesPerSecond": 200000,
+      "perResponseDelayMs": 80,
+      "firstPartyCacheControl": "no-store",
+      "gzip": true,
+      "scope": "Local server applies one shared byte budget per variant; external Google Fonts uses the existing browser cache and is outside the shaped transport."
+    },
+    "samplesPerVariantAndWidth": 5,
+    "widths": [
+      1440,
+      390
+    ],
+    "order": "Alternating paired AB / BA within each width",
+    "readyDefinition": "From navigation start until the visible start button is enabled, the startup overlay is removed, and two animation frames have elapsed.",
+    "percentile": "nearest rank; all samples retained; p95 is the maximum of n=5",
+    "hardware": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 16
+    },
+    "deviceScope": "Desktop browser with two viewport sizes; no CPU emulation; WeChat device validation is recorded separately."
+  },
+  "bundle": {
+    "before": {
+      "entryJavaScript": {
+        "files": [
+          "assets/index-uWxkp93S.js"
+        ],
+        "bytes": 613700,
+        "gzipBytes": 201269
+      },
+      "experienceJavaScript": {
+        "files": [
+          "assets/arrow-right-DVjsxITB.js",
+          "assets/card-Cg9xDERv.js",
+          "assets/check-DsmE9rEO.js",
+          "assets/check-check-Bgjx1efu.js",
+          "assets/circle-alert-CiTZhRdt.js",
+          "assets/experience-page-doziL5t6.js",
+          "assets/experience-shell-B4L8WVFp.js",
+          "assets/index-uWxkp93S.js",
+          "assets/rotate-ccw-rspaiTXc.js",
+          "assets/shield-check-CUeeJCXq.js"
+        ],
+        "bytes": 636188,
+        "gzipBytes": 210510
+      },
+      "experienceCss": {
+        "files": [
+          "assets/index-BOUmGwgB.css"
+        ],
+        "bytes": 207310,
+        "gzipBytes": 36430
+      },
+      "bootImage": {
+        "file": "logo.png",
+        "bytes": 115160
+      },
+      "combinedGzipJsCssAndBootImageBytes": 362100
+    },
+    "after": {
+      "entryJavaScript": {
+        "files": [
+          "assets/index-CTgyeG_T.js"
+        ],
+        "bytes": 477895,
+        "gzipBytes": 156057
+      },
+      "experienceJavaScript": {
+        "files": [
+          "assets/arrow-right-DEeU11ri.js",
+          "assets/arrow-up-right-C88mkKOT.js",
+          "assets/calendar-days-Ddi-XTbC.js",
+          "assets/card-CF9kgT5U.js",
+          "assets/check-DICyxZWg.js",
+          "assets/check-check-BL0k_ju2.js",
+          "assets/circle-alert-B7h-97kW.js",
+          "assets/experience-page-CVdtoVhE.js",
+          "assets/experience-shell-D7bRcM7u.js",
+          "assets/index-CTgyeG_T.js",
+          "assets/mail-DWjeCMlo.js",
+          "assets/rotate-ccw-CB_uq3T3.js",
+          "assets/shield-check-jF4abqXe.js"
+        ],
+        "bytes": 501402,
+        "gzipBytes": 165987
+      },
+      "experienceCss": {
+        "files": [
+          "assets/index-DCf0QkC-.css"
+        ],
+        "bytes": 177057,
+        "gzipBytes": 28119
+      },
+      "bootImage": {
+        "file": "logo-small.webp",
+        "bytes": 8278
+      },
+      "combinedGzipJsCssAndBootImageBytes": 202384,
+      "excludedPublicModules": {
+        "src/context/workspace.jsx": true,
+        "src/context/workbenches.jsx": true,
+        "src/components/onboarding.jsx": true,
+        "src/pages/landing-page.jsx": true,
+        "temporal-polyfill": true,
+        "katex": true
+      }
+    },
+    "reductions": {
+      "javaScriptPercent": 21.19,
+      "gzipJavaScriptPercent": 21.15,
+      "gzipCssPercent": 22.81,
+      "combinedGzipJsCssAndBootImagePercent": 44.11
+    }
+  },
+  "browser": {
+    "390": {
+      "before": {
+        "samples": 5,
+        "p50Ms": 2423.7,
+        "p95Ms": 2432.2,
+        "meanMs": 2416.86
+      },
+      "after": {
+        "samples": 5,
+        "p50Ms": 1613.1,
+        "p95Ms": 1620.2,
+        "meanMs": 1612.74
+      },
+      "p50ReductionPercent": 33.44,
+      "p95ReductionPercent": 33.39
+    },
+    "1440": {
+      "before": {
+        "samples": 5,
+        "p50Ms": 2423.5,
+        "p95Ms": 2446.5,
+        "meanMs": 2420.72
+      },
+      "after": {
+        "samples": 5,
+        "p50Ms": 1641,
+        "p95Ms": 1695.6,
+        "meanMs": 1639.22
+      },
+      "p50ReductionPercent": 32.29,
+      "p95ReductionPercent": 30.69
+    }
+  },
+  "costs": {
+    "realModelCalls": 0,
+    "newCloudPurchases": 0
+  },
+  "hashes": {
+    "beforeInventory": "88c1e03abd1f14fa0f73ff93d8e461fda2edff938e3151c36c82d6193e40b0f3",
+    "afterInventory": "dce449864ce848a26438ca344c4293b8b0877aafddcdff449294377babb8f71c",
+    "browserSamples": "faea853168c488b1b60ba1a987b85ae3da4ece1f5f6c03a8fd52387e8dc6dfda"
+  }
+}

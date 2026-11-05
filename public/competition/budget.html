@@ -1,0 +1,95 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>图像来源与预算登记 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><p class="stamp">最新累计：文本 84 次、公开价估算 ¥0.516094；图片 16 次。<a href="/competition/container-report.html#7-费用登记">查看新增调用、逐批清单与费用登记</a>。以下保存前批登记快照。</p><h1 id="图像来源与预算登记">图像来源与预算登记</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#图像来源与预算登记">图像来源与预算登记</a><ul>
+<li><a href="#最终图片">最终图片</a></li>
+<li><a href="#新增调用与资源">新增调用与资源</a></li>
+<li><a href="#11-月-4-日追加">11 月 4 日追加</a></li>
+<li><a href="#邮件问答追加">邮件问答追加</a></li>
+<li><a href="#用户价值对照工具追加">用户价值对照工具追加</a></li>
+<li><a href="#执行记录回复审核追加">执行记录回复审核追加</a></li>
+<li><a href="#分章视频与手机讲稿追加">分章视频与手机讲稿追加</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<h2 id="最终图片">最终图片</h2>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>方法</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公网架构</td>
+<td>gpt-image-2.5，英文，1536×1024，high</td>
+<td><a href="/competition/report-assets/architecture-en-prompt.txt">architecture-en-prompt.txt</a></td>
+</tr>
+<tr>
+<td>数据流</td>
+<td>gpt-image-2.5，英文，1536×1024，high</td>
+<td><a href="/competition/report-assets/dataflow-en-prompt.txt">dataflow-en-prompt.txt</a></td>
+</tr>
+<tr>
+<td>性能数据图</td>
+<td>gpt-image-2.5 视觉方案；Pillow 按原数据精确落图</td>
+<td><a href="/competition/report-assets/performance-prompt.txt">performance-prompt.txt</a>、<a href="https://github.com/why121368/Daylight/blob/feat/competition-experience-20261103/scripts/competition-figures.py">脚本</a></td>
+</tr>
+</tbody>
+</table>
+<p>调用方式为 imagegen 技能自带 CLI，使用用户已配置 API，显式传入 <code>--model gpt-image-2.5</code>。原 PNG 放入 docs，WebP 放入 public，提示词随仓库保存。架构与流程标签用英文，正文提供中文解释。</p>
+<p>本轮共调用图片 6 次：目标更新前 <code>gpt-image-2</code> 两次；更新后 <code>gpt-image-2.5</code> 四次（其中一张为中文流程草案，最终换为英文）。草案留在被忽略的 output 工作产物中，正式报告仅引用选定版本。性能视觉稿经坐标检查后，精确图由脚本输出。</p>
+<h2 id="新增调用与资源">新增调用与资源</h2>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th style="text-align: right;">本轮用量</th>
+<th>费用记录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前模型预检</td>
+<td style="text-align: right;">3 次</td>
+<td>usage 已记录；单价未配置，null</td>
+</tr>
+<tr>
+<td>当前模型完整回归</td>
+<td style="text-align: right;">15 次</td>
+<td>输入 41,863 / 输出 10,169 / 缓存输入 33,920 Token；单价未配置，null</td>
+</tr>
+<tr>
+<td>图片</td>
+<td style="text-align: right;">6 次</td>
+<td>API 返回文件，未提供本地可核算账单</td>
+</tr>
+<tr>
+<td>云资源采购</td>
+<td style="text-align: right;">0 项</td>
+<td>复用现有服务器</td>
+</tr>
+<tr>
+<td>公开七步体验</td>
+<td style="text-align: right;">0 次实时模型调用</td>
+<td>模型费用 ¥0；占用服务器 CPU 与网络</td>
+</tr>
+</tbody>
+</table>
+<p>新增预算上限合计 <strong>¥500</strong>。本轮采用固定小批次、单次模型调用和有界接口验证。待提供实际单价与账单后复算累计支出，当前没有把未知费用按零填入。完整资源月成本包括主机、磁盘、对象存储、网络、备份与运维，按真实账单登记。</p>
+<h2 id="11-月-4-日追加">11 月 4 日追加</h2>
+<p><a href="/competition/operations-report.html#模型成本">费用与运行报告</a> 已保存官网模型卡片：当前输入 ¥2、输出 ¥8／百万 Token，缓存输入按普通输入价计算。3 次预检估算 ¥0.036436，15 次回归估算 ¥0.165078，合计 ¥0.201514。新增文件关联原始 usage 的 SHA-256，原记录保留。</p>
+<p>新增 <code>gpt-image-2.5</code> 英文观测机制对照图 1 张；图像调用总数 7 次，最终图、提示词、来源与各次用途随报告保存。图片费用按供应商出账记录登记。</p>
+<h2 id="邮件问答追加">邮件问答追加</h2>
+<p><a href="/competition/rag-report.html">RAG 图文报告</a> 新增 14 次真实模型调用，输入 4,577、输出 2,914 Token，按相同公开价估算 <strong>¥0.032466</strong>。连同前批共 <strong>32 次、¥0.233980</strong>。本轮英文流程图由 gpt-image-2.5 生成，图片成功调用累计 <strong>8 次</strong>；提示词随报告保存。图片费用与服务器运营费用按供应商账单登记，新增预算上限继续为 ¥500。</p>
+<h2 id="用户价值对照工具追加">用户价值对照工具追加</h2>
+<p><a href="/competition/value-report.html">对照工具与自动材料预检</a> 新增10次真实模型调用，输入32,272、输出13,537 Token，按相同公开价估算 <strong>¥0.172840</strong>。文本调用累计 <strong>42次、¥0.406820</strong>，累计输入87,158、输出29,063 Token。计价包括供应商返回的全部输出Token，缓存输入沿用普通输入价。</p>
+<p>本轮新增 gpt-image-2.5 英文方法图1次，图片成功调用累计 <strong>9次</strong>；<a href="/competition/value-assets/study-prompt.txt">提示词</a>与<a href="/competition/value-assets/image-generation.json">文件摘要</a>保存。新增云采购0，继续复用现有服务器。图片与服务器费用按供应商账单登记，新增总预算上限¥500。</p>
+<h2 id="执行记录回复审核追加">执行记录回复审核追加</h2>
+<p><a href="/competition/reply-review-report.html">回复闭环图文报告</a> 新增 gpt-image-2.5 英文流程图1次，图片调用累计 <strong>10次</strong>。<a href="/competition/reply-assets/reply-prompt.txt">提示词</a>及<a href="/competition/reply-assets/image-generation.json">生成参数与文件摘要</a>随版本保存。</p>
+<p>本轮文字模型调用0、真实SMTP调用0、云采购0。文本累计仍为 <strong>42次、输入87,158、输出29,063 Token、公开价估算¥0.406820</strong>。图片和服务器费用按供应商账单登记，新增总预算上限¥500。</p>
+<h2 id="分章视频与手机讲稿追加">分章视频与手机讲稿追加</h2>
+<p><a href="/competition/video-report.html">十二章播放器与同步讲稿</a>复用原MP4和现有工程图，以实际页面截图记录前后效果。新增文字模型、图片生成、SMTP与云采购均为0。文本累计42次、公开价估算¥0.406820；图片累计10次，新增预算上限¥500。</p></main></html>

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "technical-page-container-link",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-1",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-2",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-3",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-4",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-5",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-6",
+    "ok": true
+  },
+  {
+    "name": "mobile-step-7",
+    "ok": true
+  },
+  {
+    "name": "mobile-step7-share-address",
+    "ok": true
+  },
+  {
+    "name": "mobile-step7-refresh",
+    "ok": true
+  },
+  {
+    "name": "reproduction-container-link",
+    "ok": true,
+    "initialClick": "No navigation observed. Retried with navigation wait after checking the actual href."
+  }
+]

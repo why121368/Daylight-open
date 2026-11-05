@@ -1,0 +1,9 @@
+{
+  "target": "runtime",
+  "started": "2026-11-04T00:12:22.1476756Z",
+  "nodeImage": "public.ecr.aws/docker/library/node:22.23.3-bookworm-slim",
+  "source": "30903e66071d58bb97ae96040a86fd265ec343d9",
+  "seconds": 159.0265949,
+  "exitCode": 0,
+  "workingTreeChangesIncluded": true
+}

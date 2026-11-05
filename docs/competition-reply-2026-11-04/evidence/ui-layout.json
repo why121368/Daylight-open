@@ -1,0 +1,204 @@
+{
+  "checkedAt": "2026-11-03T19:34:39.767Z",
+  "origin": "http://127.0.0.1:3193",
+  "scope": "Original synthetic fixture; preparation, editing, saving and reload recovery; zero model and real SMTP calls",
+  "actions": [
+    "prepare original Reply-To and subject",
+    "edit body",
+    "save revision",
+    "reload and recover reviewed body",
+    "inspect 1440, 390 and 320px"
+  ],
+  "measurements": [
+    {
+      "bodyWidth": 1440,
+      "controls": [
+        {
+          "height": 60,
+          "text": "邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核",
+          "width": 726
+        },
+        {
+          "height": 44,
+          "text": "确认发送真实邮件",
+          "width": 152
+        },
+        {
+          "height": 44,
+          "text": "编辑",
+          "width": 69.33333587646484
+        },
+        {
+          "height": 44,
+          "text": "放弃",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "text": "核验状态",
+          "width": 96
+        }
+      ],
+      "height": 1000,
+      "reviewBody": "回复审核\n邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核\n发件邮箱\ndemo@example.invalid\n收件人\nreply@example.invalid\n主题\nRe: 【合成测试】远航项目面试确认\n完整邮件正文\n您好，感谢邀请。我已核对安排，可以参加11月6日14:00的面试；材料将于11月5日18:00前补交。谢谢。\n\n请核对上方发件邮箱、全部收件人、主题和正文。点击确认后将真实发信。\n\n确认发送真实邮件\n编辑\n放弃\n核验状态",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "bodyWidth": 390,
+      "controls": [
+        {
+          "height": 76,
+          "text": "邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核",
+          "width": 292
+        },
+        {
+          "height": 44,
+          "text": "draft-to-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 268
+        },
+        {
+          "height": 44,
+          "text": "draft-subject-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 268
+        },
+        {
+          "height": 160,
+          "text": "draft-body-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 268
+        },
+        {
+          "height": 44,
+          "text": "保存修改",
+          "width": 96
+        },
+        {
+          "height": 44,
+          "text": "取消编辑",
+          "width": 80
+        },
+        {
+          "height": 44,
+          "text": "核验状态",
+          "width": 96
+        }
+      ],
+      "height": 844,
+      "mode": "editing",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "controls": [
+        {
+          "height": 76,
+          "text": "邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核",
+          "width": 292
+        },
+        {
+          "height": 44,
+          "text": "确认发送真实邮件",
+          "width": 152
+        },
+        {
+          "height": 44,
+          "text": "编辑",
+          "width": 69.33333587646484
+        },
+        {
+          "height": 44,
+          "text": "放弃",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "text": "核验状态",
+          "width": 96
+        }
+      ],
+      "height": 844,
+      "mode": "review",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "bodyWidth": 320,
+      "controls": [
+        {
+          "height": 92,
+          "text": "邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核",
+          "width": 222
+        },
+        {
+          "height": 44,
+          "text": "确认发送真实邮件",
+          "width": 152
+        },
+        {
+          "height": 44,
+          "text": "编辑",
+          "width": 69.33333587646484
+        },
+        {
+          "height": 44,
+          "text": "放弃",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "text": "核验状态",
+          "width": 96
+        }
+      ],
+      "height": 760,
+      "mode": "review",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "bodyWidth": 320,
+      "controls": [
+        {
+          "height": 92,
+          "text": "邮件回复\nRe: 【合成测试】远航项目面试确认\n待审核",
+          "width": 222
+        },
+        {
+          "height": 44,
+          "text": "draft-to-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 198
+        },
+        {
+          "height": 44,
+          "text": "draft-subject-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 198
+        },
+        {
+          "height": 160,
+          "text": "draft-body-ece1ae67-2263-4c29-8ade-f6a098ef8a15",
+          "width": 198
+        },
+        {
+          "height": 44,
+          "text": "保存修改",
+          "width": 96
+        },
+        {
+          "height": 44,
+          "text": "取消编辑",
+          "width": 80
+        },
+        {
+          "height": 44,
+          "text": "核验状态",
+          "width": 96
+        }
+      ],
+      "height": 760,
+      "mode": "editing",
+      "scrollWidth": 320,
+      "width": 320
+    }
+  ]
+}

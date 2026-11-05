@@ -1,0 +1,119 @@
+database.dump: OK
+minio-data.tar: OK
+images.txt: OK
+metadata.txt: OK
+recovery-manifest.json: OK
+ Network daylight-recovery-20261104-8f9503_default  Creating
+ Network daylight-recovery-20261104-8f9503_default  Created
+ Volume daylight-recovery-20261104-8f9503_postgres-data  Creating
+ Volume daylight-recovery-20261104-8f9503_postgres-data  Created
+ Container daylight-recovery-20261104-8f9503-postgres-1  Creating
+ Container daylight-recovery-20261104-8f9503-postgres-1  Created
+ Container daylight-recovery-20261104-8f9503-postgres-1  Starting
+ Container daylight-recovery-20261104-8f9503-postgres-1  Started
+ Container daylight-recovery-20261104-8f9503-postgres-1  Waiting
+ Container daylight-recovery-20261104-8f9503-postgres-1  Healthy
+ Volume daylight-recovery-20261104-8f9503_minio-data  Creating
+ Volume daylight-recovery-20261104-8f9503_minio-data  Created
+ Container daylight-recovery-20261104-8f9503-minio-1  Creating
+ Container daylight-recovery-20261104-8f9503-minio-1  Created
+ Container daylight-recovery-20261104-8f9503-minio-1  Starting
+ Container daylight-recovery-20261104-8f9503-minio-1  Started
+ Container daylight-recovery-20261104-8f9503-minio-1  Waiting
+ Container daylight-recovery-20261104-8f9503-minio-1  Healthy
+ Volume daylight-recovery-20261104-8f9503_redis-data  Creating
+ Volume daylight-recovery-20261104-8f9503_redis-data  Created
+ Volume daylight-recovery-20261104-8f9503_metrics-data  Creating
+ Volume daylight-recovery-20261104-8f9503_metrics-data  Created
+ Volume daylight-recovery-20261104-8f9503_rabbitmq-data  Creating
+ Volume daylight-recovery-20261104-8f9503_rabbitmq-data  Created
+{
+  "ok": true,
+  "checkedAt": "2026-11-03T22:09:04.238Z",
+  "tables": {
+    "expected": 9,
+    "actual": 9,
+    "verified": 9,
+    "mismatchCount": 0,
+    "mismatches": [],
+    "rows": 9269,
+    "details": [
+      {
+        "name": "\"public\".\"app_settings\"",
+        "sha256": "7456757466f53744e111d3c1a8a50903bf29623fc0a14bfc53e2367a4d157820",
+        "rows": 34,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"daylight_job_mailboxes\"",
+        "sha256": "34f5de761c6bca5c001883020a4cc8b6af871453951e55e90ec1ffeff1fe91f2",
+        "rows": 2,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"daylight_job_outbox\"",
+        "sha256": "226f50980809bb6034d77acb42d9f9c6b893b8f69df253d3246005a03c85168e",
+        "rows": 4143,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"daylight_job_steps\"",
+        "sha256": "6e1e829e453ec8b90f39a946c9c496c4faac026742db30083b1e66aa7df03888",
+        "rows": 83,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"daylight_jobs\"",
+        "sha256": "0460b4ffacf5fa78ccd99b9d46de809d0ddc44d7d4914a26d7076852913be947",
+        "rows": 4085,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"mailbox_calendars\"",
+        "sha256": "03bafff6e0cc7527bf687e69aea5fcc0f95428e0478319c3d368b9e5ef551dc3",
+        "rows": 5,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"password_resets\"",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rows": 0,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"rag_chunks\"",
+        "sha256": "4a52d575f084e9875ae77935778e53b97b4adcfe8630ebc7a00e301c4f1d388c",
+        "rows": 915,
+        "match": true
+      },
+      {
+        "name": "\"public\".\"users\"",
+        "sha256": "9b9edd3e21078cad8a5f26b997bd82aa82a59ac281ade9d4dbad17c88ce28e9a",
+        "rows": 2,
+        "match": true
+      }
+    ]
+  },
+  "sequences": {
+    "expected": 1,
+    "actual": 1,
+    "verified": 1,
+    "mismatchCount": 0,
+    "mismatches": []
+  },
+  "objects": {
+    "expected": 187,
+    "actual": 187,
+    "verified": 187,
+    "mismatchCount": 0,
+    "mismatches": [],
+    "bytes": 199654466
+  },
+  "comparison": "exact relation and object sets; sorted SHA-256 of every database row; full SHA-256 of every object",
+  "durationMs": 18280
+}
+NAME                                           IMAGE                                                 COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+daylight-recovery-20261104-8f9503-minio-1      daylight-minio:RELEASE.2025-04-22T22-12-26Z           "/usr/local/bin/mini…"   minio      40 seconds ago   Up 23 seconds (healthy)   6379/tcp
+daylight-recovery-20261104-8f9503-postgres-1   docker.m.daocloud.io/library/postgres:17.6-bookworm   "docker-entrypoint.s…"   postgres   46 seconds ago   Up 45 seconds (healthy)   5432/tcp
+Data restored in the new project; API, Worker and Scheduler remain stopped.
+After recovery review, start the new project with: sh deploy/stack.sh up -d --wait

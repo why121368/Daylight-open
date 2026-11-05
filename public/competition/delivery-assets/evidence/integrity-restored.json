@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "checkedAt": "2026-11-03T23:39:44.025Z",
+  "scope": "extracted-delivery-file-integrity",
+  "sourceCommit": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+  "sourceDigest": "99e52b04c54b8cb6c8b0ce4bca90bddbdb6e79224215d99c38d7bc7644a5cd62",
+  "buildDigest": "f156f96fd51b2f4d1d3b109cfc073242016f208ae0ac23fbbbe7ffc4c07c69ec",
+  "manifestSha256": "001fc6a9dcc0d9f096bc4fddc9075629ec7b96c4f18b15e08b0a7be56fdf6c0a",
+  "files": 2345,
+  "bytes": 148346154,
+  "stages": [
+    "tests",
+    "build",
+    "evaluation-corpus",
+    "demo",
+    "deployment-assets"
+  ],
+  "runtimeDirectories": [
+    "node_modules",
+    "work",
+    "data",
+    "output"
+  ],
+  "elapsedMs": 1282
+}

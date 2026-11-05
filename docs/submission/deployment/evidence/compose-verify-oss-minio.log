@@ -1,0 +1,21 @@
+=== Daylight real OSS verification ===
+provider=s3 bucket=daylight endpoint=127.0.0.1:19000 region=us-east-1 forcePathStyle=true
+runtime=production publicBaseUrl=(unset)
+
+PASS  initOss returns cloud mode (no local fallback) — mode=s3
+PASS  ossStatus HEAD bucket reachable — {"ok":true,"mode":"s3"}
+PASS  testOssConnection put+delete probe — mode=s3 
+PASS  putAttachment uploads to real bucket — key=users/verify-oss/mailboxes/default/2026-10-17/78b3947d-52e7-434a-a4ed-7ae055bd619f-report_最终版.pdf storage=s3
+PASS  attachment key layout scopes user + mailbox — users/verify-oss/mailboxes/default/2026-10-17/78b3947d-52e7-434a-a4ed-7ae055bd619f-report_最终版.pdf
+PASS  attachment key sanitises filename (no raw spaces/paths) — users/verify-oss/mailboxes/default/2026-10-17/78b3947d-52e7-434a-a4ed-7ae055bd619f-report_最终版.pdf
+PASS  getAttachmentObject returns identical bytes — bytes=2093 contentType=application/pdf
+PASS  getAttachmentObject reports cloud storage mode — storage=s3
+PASS  cross-tenant key does not resolve — NoSuchKey
+PASS  invalid keys rejected before any request — rejected 6/6
+PASS  missing object fails loudly (no null fallback) — NoSuchKey
+PASS  missing credentials fail explicitly (no local fallback) — refused: Production requires environment variables: DAYLIGHT_OSS_ACCESS_KEY, DA
+PASS  production initOss refuses local fallback without credentials — refused: Production requires environment variables: DAYLIGHT_OSS_ACCESS_KEY, DA
+PASS  delete removes object from bucket — key=users/verify-oss/mailboxes/default/2026-10-17/78b3947d-52e7-434a-a4ed-7ae055bd619f-report_最终版.pdf
+
+=== summary: 14/14 passed ===
+OSS operations: put=1 get=3 delete=1 head=2 probe=1

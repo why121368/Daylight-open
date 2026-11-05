@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-11-03T21:37:16.010111+00:00",
+  "baseSourceCommit": "435c7c7",
+  "optimizedSourceHashes": {
+    "src/App.jsx": "3c6b7aa38dab9c2cd44f7422861906a6a8fd7449368211b720750a83fadbad0b",
+    "src/main.jsx": "82d7c29eb67b9e83d3b445487efd42eb9b7476178315bcb6b8527cc471ad053d",
+    "src/components/workspace-entry.jsx": "65f0061bc06eea500df74081eb51d7156f6e45225278528f580e8bfda50a9d87",
+    "src/components/studio-calendar.jsx": "b370aa9ab82057c009a6715a2954ecbdc5d65acc92b486d7d2bd39343e621e46",
+    "src/components/rich-markdown.jsx": "ec6317ec07084640a837b2a648358a055bb0be3823d335300b248998a5da1b06",
+    "src/components/boot-screen.jsx": "b9b5b6ac0fb46691ede143db005f65946587f6762bc866344e31788738d2f32a",
+    "index.html": "032c95f8fca0ba01d5455f602b17b63ef298aac26e00bc62176d0055282fd7ed",
+    "public/logo.png": "39f8e32044bd6b0056416f54c5d7e1e48b6019cd4d8de52deaeeebfa8ece2a79",
+    "public/logo-small.webp": "9520381b2c89adab2e23104fa44948d117b235735f778e4152eb5a06b35e53a9",
+    "scripts/analyze-client-bundle.mjs": "90ee995815fff1c4307f2fb9664d1f08850e719c5fc9d75657f5f9e1c64a6e14",
+    "scripts/performance/entry-server.mjs": "dd513a04cf2a0ed090df97724f57b8ed56c033aa3a61ebeae68f768456ad5e39",
+    "scripts/performance/summarize-entry.mjs": "d4401cfb0ad1db8ee256fb78540f1f363dbd2b9ae48360243d255b90e4a2a2ac",
+    "scripts/build-entry-brand.py": "5357dd1b5827d58857909f8e703af71d98cfb8df1746c4d3d434350a2b7a13e4"
+  },
+  "startupImage": {
+    "before": {
+      "file": "public/logo.png",
+      "bytes": 115160,
+      "size": [
+        512,
+        512
+      ]
+    },
+    "after": {
+      "file": "public/logo-small.webp",
+      "bytes": 8278,
+      "size": [
+        128,
+        128
+      ],
+      "format": "lossless WebP after Lanczos resize"
+    }
+  }
+}

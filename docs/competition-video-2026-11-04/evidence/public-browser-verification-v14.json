@@ -1,0 +1,263 @@
+{
+  "checkedAt": "2026-11-03T20:11:46.569Z",
+  "scope": "Formal HTTPS browser checks: desktop and mobile viewport sizes, actual video playback and seek, readable transcript, evidence entry and MP4 download",
+  "rows": [
+    {
+      "label": "public-mobile390",
+      "bodyFont": "14px",
+      "bodyLineHeight": "28px",
+      "chapter": "按负载与状态拆分服务",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频"
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB"
+        },
+        {
+          "height": 44,
+          "text": "章节选择器"
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测"
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接"
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验"
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿"
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿"
+        }
+      ],
+      "height": 844,
+      "scrollWidth": 375,
+      "url": "https://daylight.yunforis.com/demo?chapter=architecture",
+      "video": {
+        "paused": true,
+        "readyState": 1,
+        "time": 135
+      },
+      "width": 390
+    },
+    {
+      "label": "public-mobile390-seek-playing",
+      "bodyFont": "14px",
+      "bodyLineHeight": "28px",
+      "chapter": "Agent 数据流与恢复路径",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "暂停视频"
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB"
+        },
+        {
+          "height": 44,
+          "text": "章节选择器"
+        },
+        {
+          "height": 44,
+          "text": "真实模型逐例回归"
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接"
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验"
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿"
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿"
+        }
+      ],
+      "height": 844,
+      "scrollWidth": 375,
+      "url": "https://daylight.yunforis.com/demo?chapter=dataflow",
+      "video": {
+        "paused": false,
+        "readyState": 4,
+        "time": 150.1998
+      },
+      "width": 390
+    },
+    {
+      "label": "public-mobile320",
+      "bodyFont": "14px",
+      "bodyLineHeight": "28px",
+      "chapter": "Agent 数据流与恢复路径",
+      "clientWidth": 305,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频"
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB"
+        },
+        {
+          "height": 44,
+          "text": "章节选择器"
+        },
+        {
+          "height": 44,
+          "text": "真实模型逐例回归"
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接"
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验"
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿"
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿"
+        }
+      ],
+      "height": 760,
+      "scrollWidth": 305,
+      "url": "https://daylight.yunforis.com/demo?chapter=dataflow",
+      "video": {
+        "paused": true,
+        "readyState": 4,
+        "time": 150.248
+      },
+      "width": 320
+    },
+    {
+      "chapterLinks": 12,
+      "chapters": 12,
+      "clientWidth": 305,
+      "label": "public-transcript320",
+      "scrollWidth": 305,
+      "url": "https://daylight.yunforis.com/competition/demo-transcript.html"
+    },
+    {
+      "label": "public-desktop1440-from-evidence",
+      "bodyFont": "16px",
+      "bodyLineHeight": "28px",
+      "chapter": "从邮件到下一步",
+      "clientWidth": 1425,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频"
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB"
+        },
+        {
+          "height": 44,
+          "text": "用户价值与对照方法"
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接"
+        },
+        {
+          "height": 48,
+          "text": "00:00从邮件到下一步"
+        },
+        {
+          "height": 48,
+          "text": "00:1501 通知变成安排与待办"
+        },
+        {
+          "height": 48,
+          "text": "00:3002 冲突留给本人决定"
+        },
+        {
+          "height": 48,
+          "text": "00:4503 改期关联新旧安排"
+        },
+        {
+          "height": 48,
+          "text": "01:0004 重复邮件直接跳过"
+        },
+        {
+          "height": 48,
+          "text": "01:1505 校验失败保持原状态"
+        },
+        {
+          "height": 48,
+          "text": "01:3006 修正后重试成功"
+        },
+        {
+          "height": 48,
+          "text": "01:4507 取消留痕，材料保留"
+        },
+        {
+          "height": 48,
+          "text": "02:00打开工具，核对执行"
+        },
+        {
+          "height": 48,
+          "text": "02:15按负载与状态拆分服务"
+        },
+        {
+          "height": 48,
+          "text": "02:30Agent 数据流与恢复路径"
+        },
+        {
+          "height": 48,
+          "text": "02:45用实测与公式讨论成本"
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验"
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿"
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿"
+        }
+      ],
+      "height": 900,
+      "scrollWidth": 1425,
+      "url": "https://daylight.yunforis.com/demo",
+      "video": {
+        "paused": true,
+        "readyState": 4,
+        "time": 0
+      },
+      "width": 1440
+    },
+    {
+      "label": "public-browser-download",
+      "filename": "Daylight-3-Minute-Demo.mp4",
+      "completed": true
+    }
+  ]
+}

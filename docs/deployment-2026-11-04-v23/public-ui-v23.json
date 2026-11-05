@@ -1,0 +1,226 @@
+{
+  "ok": true,
+  "results": [
+    "Homepage account entry",
+    {
+      "chapter": "overview",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "calendar",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "todos",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "mail",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "campus",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "traces",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "jobs",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "assistant",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "invoices",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "recruitment",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "work-assistant",
+      "width": 1440,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "overview",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "calendar",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "todos",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "mail",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "campus",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "traces",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "jobs",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "assistant",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "invoices",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "recruitment",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "work-assistant",
+      "width": 390,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "overview",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "calendar",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "todos",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "mail",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "campus",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "traces",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "jobs",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "assistant",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "invoices",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "recruitment",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    {
+      "chapter": "work-assistant",
+      "width": 320,
+      "layout": true,
+      "image": true
+    },
+    "Campus screenshot switch",
+    "Image zoom and close",
+    "Copy prompt",
+    "Current feature share dialog",
+    "Next previous refresh and mobile selector"
+  ],
+  "assets": [
+    "calendar-1280.webp",
+    "calendar.webp",
+    "campus-activities-1280.webp",
+    "campus-activities.webp",
+    "campus-assistant-1280.webp",
+    "campus-assistant.webp",
+    "campus-food-1280.webp",
+    "campus-food.webp",
+    "invoices-1280.webp",
+    "invoices.webp",
+    "overview-1280.webp",
+    "overview.webp",
+    "recruitment-1280.webp",
+    "recruitment.webp"
+  ],
+  "errors": []
+}

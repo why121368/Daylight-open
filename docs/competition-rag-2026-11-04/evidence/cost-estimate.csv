@@ -1,0 +1,17 @@
+method,case_id,input_tokens,output_tokens,estimated_cny
+before,late-deadline,316,56,0.00108
+before,attachment-detail,363,82,0.001382
+before,reschedule,238,128,0.0015
+before,multi-source,220,189,0.001952
+before,insufficient,187,105,0.001214
+before,injection,206,83,0.001076
+before,scope,178,122,0.001332
+before,empty,0,0,0.0
+after,late-deadline,583,222,0.002942
+after,attachment-detail,615,229,0.003062
+after,reschedule,370,408,0.004004
+after,multi-source,352,970,0.008464
+after,insufficient,313,25,0.000826
+after,injection,332,209,0.002336
+after,scope,304,86,0.001296
+after,empty,0,0,0.0

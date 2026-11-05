@@ -1,0 +1,109 @@
+{
+  "project": "daylight-backup-smoke-d1644542",
+  "fixture": "one synthetic database row, one text object and one HTTP stub; actual PostgreSQL/MinIO/Compose",
+  "phases": [
+    {
+      "name": "smoke_start",
+      "durationMs": 1824,
+      "exitCode": 0
+    },
+    {
+      "name": "smoke_consistent_backup",
+      "durationMs": 14991,
+      "exitCode": 0
+    },
+    {
+      "name": "smoke_verify_resumed_data",
+      "durationMs": 3707,
+      "exitCode": 0
+    },
+    {
+      "name": "smoke_cleanup",
+      "durationMs": 1197,
+      "exitCode": 0
+    }
+  ],
+  "initialAttempt": {
+    "project": "daylight-backup-smoke-d1644542",
+    "fixture": "one synthetic database row, one text object and one HTTP stub; actual PostgreSQL/MinIO/Compose",
+    "phases": [
+      {
+        "name": "smoke_start",
+        "durationMs": 8206,
+        "exitCode": 0
+      },
+      {
+        "name": "smoke_fixture",
+        "durationMs": 3068,
+        "exitCode": 0
+      },
+      {
+        "name": "smoke_consistent_backup",
+        "durationMs": 3,
+        "exitCode": 2
+      }
+    ]
+  },
+  "proof": {
+    "ok": true,
+    "checkedAt": "2026-11-03T22:16:46.652Z",
+    "tables": {
+      "expected": 1,
+      "actual": 1,
+      "verified": 1,
+      "mismatchCount": 0,
+      "mismatches": [],
+      "rows": 1,
+      "details": [
+        {
+          "name": "\"public\".\"backup_probe\"",
+          "sha256": "138cf8618f01abda2127bd950aa53b17b55e3a06c10eb7e757e9caa13502b02b",
+          "rows": 1,
+          "match": true
+        }
+      ]
+    },
+    "sequences": {
+      "expected": 0,
+      "actual": 0,
+      "verified": 0,
+      "mismatchCount": 0,
+      "mismatches": []
+    },
+    "objects": {
+      "expected": 1,
+      "actual": 1,
+      "verified": 1,
+      "mismatchCount": 0,
+      "mismatches": [],
+      "bytes": 26
+    },
+    "comparison": "exact relation and object sets; sorted SHA-256 of every database row; full SHA-256 of every object",
+    "durationMs": 276
+  },
+  "resumedRoles": [
+    {
+      "role": "postgres",
+      "image": "docker.m.daocloud.io/library/postgres:17.6-bookworm",
+      "health": "healthy",
+      "oom": false,
+      "restarts": 0
+    },
+    {
+      "role": "api",
+      "image": "daylight:recovery-tools-20261104-v18",
+      "health": "healthy",
+      "oom": false,
+      "restarts": 0
+    },
+    {
+      "role": "minio",
+      "image": "daylight-minio:RELEASE.2025-04-22T22-12-26Z",
+      "health": "healthy",
+      "oom": false,
+      "restarts": 0
+    }
+  ],
+  "temporaryResourcesRemoved": true,
+  "ok": true
+}

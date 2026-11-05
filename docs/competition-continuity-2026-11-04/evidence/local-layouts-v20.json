@@ -1,0 +1,119 @@
+[
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接",
+        "width": 195.33334350585935
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG",
+        "width": 195.33334350585935
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单",
+        "width": 398.6666870117187
+      }
+    ],
+    "dialog": {
+      "bottom": 777.0833587646484,
+      "clientHeight": 653,
+      "left": 496,
+      "right": 944,
+      "scrollHeight": 653,
+      "top": 122.91667175292967
+    },
+    "documentWidth": 1440,
+    "downloadIsAnchor": true,
+    "imageLoaded": true,
+    "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    },
+    "ok": true
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接",
+        "width": 158.33334350585938
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG",
+        "width": 158.33334350585938
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单",
+        "width": 324.66668701171875
+      }
+    ],
+    "dialog": {
+      "bottom": 761.0833587646484,
+      "clientHeight": 677,
+      "left": 16,
+      "right": 374,
+      "scrollHeight": 677,
+      "top": 82.91667175292969
+    },
+    "documentWidth": 390,
+    "downloadIsAnchor": true,
+    "imageLoaded": true,
+    "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "ok": true
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "role": "button",
+        "text": "复制链接",
+        "width": 115.66667175292967
+      },
+      {
+        "height": 44,
+        "role": "link",
+        "text": "下载 PNG",
+        "width": 115.66667175292967
+      },
+      {
+        "height": 44,
+        "role": "button",
+        "text": "打开手机分享菜单",
+        "width": 239.33334350585935
+      }
+    ],
+    "dialog": {
+      "bottom": 539.5989799499512,
+      "clientHeight": 510,
+      "left": 16,
+      "right": 304,
+      "scrollHeight": 700,
+      "top": 28.401042938232425
+    },
+    "documentWidth": 320,
+    "downloadIsAnchor": true,
+    "imageLoaded": true,
+    "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+    "viewport": {
+      "height": 568,
+      "width": 320
+    },
+    "ok": true
+  }
+]

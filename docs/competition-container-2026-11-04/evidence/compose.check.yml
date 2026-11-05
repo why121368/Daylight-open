@@ -1,0 +1,17 @@
+services:
+  postgres:
+    restart: "no"
+  redis:
+    restart: "no"
+  rabbitmq:
+    restart: "no"
+  minio:
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "bash", "-ec", "exec 3<>/dev/tcp/127.0.0.1/9000; printf \"GET /minio/health/live HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n\" >&3; IFS= read -r status <&3; [[ \"$$status\" == *\" 200 \"* ]]"]
+  api:
+    restart: "no"
+  worker:
+    restart: "no"
+  scheduler:
+    restart: "no"

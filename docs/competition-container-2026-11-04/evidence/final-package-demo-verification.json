@@ -1,0 +1,167 @@
+{
+  "ok": true,
+  "at": "2026-11-04T00:40:52.975Z",
+  "mode": "isolated-local-presets",
+  "externalServices": false,
+  "directory": "E:\\AAAproject\\UCloud2609\\Daylight\\work\\container-source-20261104\\extracted-v22\\work\\demo-pgV9Zt",
+  "baseUrl": "http://127.0.0.1:63963",
+  "counts": {
+    "schema": 1,
+    "createdAt": "2026-11-04T00:40:50.853Z",
+    "emails": 24,
+    "events": 12,
+    "tasks": 2,
+    "invoices": 1,
+    "candidates": 3,
+    "cancelled": 2,
+    "preset": true,
+    "externalCalls": false
+  },
+  "checks": [
+    {
+      "route": "/api/auth/config",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 11
+    },
+    {
+      "route": "/api/state",
+      "method": "GET",
+      "status": 401,
+      "elapsedMs": 4
+    },
+    {
+      "route": "/api/auth/captcha",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 11
+    },
+    {
+      "route": "/api/auth/login",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 133
+    },
+    {
+      "route": "/api/state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 13
+    },
+    {
+      "route": "/api/state?mailbox=demo-other-mailbox",
+      "method": "GET",
+      "status": 404,
+      "elapsedMs": 8
+    },
+    {
+      "route": "/api/admin/users",
+      "method": "GET",
+      "status": 403,
+      "elapsedMs": 13
+    },
+    {
+      "route": "/api/recruitment",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 13
+    },
+    {
+      "route": "/api/rag/ask",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 13
+    },
+    {
+      "route": "/api/scenarios",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 8
+    },
+    {
+      "route": "/api/sync/demo",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 52
+    },
+    {
+      "route": "/api/state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 9
+    },
+    {
+      "route": "/",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 6
+    },
+    {
+      "route": "/experience",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "/experience?step=3",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "/evidence",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "/demo",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "/login",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "/app",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "/app/calendar",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "/app/recruitment",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "/app/invoices",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "/campus",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "/api/experience?step=7",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 27
+    }
+  ],
+  "blockedExternalAttempts": 0
+}

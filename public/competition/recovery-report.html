@@ -1,0 +1,317 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公网数据恢复、分阶段启动与异机加密副本 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="公网数据恢复分阶段启动与异机加密副本">公网数据恢复、分阶段启动与异机加密副本</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#公网数据恢复分阶段启动与异机加密副本">公网数据恢复、分阶段启动与异机加密副本</a><ul>
+<li><a href="#1-本轮解决的问题">1. 本轮解决的问题</a></li>
+<li><a href="#2-恢复流程与数据边界">2. 恢复流程与数据边界</a><ul>
+<li><a href="#21-先固定写入再取数据库与附件快照">2.1 先固定写入，再取数据库与附件快照</a></li>
+<li><a href="#22-恢复时核对逻辑内容">2.2 恢复时核对逻辑内容</a></li>
+<li><a href="#23-数据恢复完成后启用业务">2.3 数据恢复完成后启用业务</a></li>
+</ul>
+</li>
+<li><a href="#3-技术选型与取舍">3. 技术选型与取舍</a></li>
+<li><a href="#4-公网实际数据与耗时">4. 公网实际数据与耗时</a></li>
+<li><a href="#5-异常与修复记录">5. 异常与修复记录</a><ul>
+<li><a href="#51-对恢复副本注入差错">5.1 对恢复副本注入差错</a></li>
+<li><a href="#52-compose-版本兼容修复">5.2 Compose 版本兼容修复</a></li>
+</ul>
+</li>
+<li><a href="#6-服务器之外的加密副本">6. 服务器之外的加密副本</a></li>
+<li><a href="#7-复现验证与费用">7. 复现、验证与费用</a><ul>
+<li><a href="#页面与尺寸核对">页面与尺寸核对</a></li>
+<li><a href="#复现命令">复现命令</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：2026-11-04，北京时间。状态：<strong>代码、实际数据恢复、故障注入、加密副本与图文完成</strong>。</p>
+<p><a href="https://daylight.yunforis.com/evidence#recovery">技术与实测</a> · <a href="https://daylight.yunforis.com/competition/recovery-report.html">公开阅读</a> · <a href="/competition/recovery-assets/evidence/recovery-summary.json">完整数据摘要</a></p>
+<h2 id="1-本轮解决的问题">1. 本轮解决的问题</h2>
+<p>日历、回复草稿、任务进度和附件共同组成一条邮件事务。恢复数据库之后，还要能读取原附件、保留账号归属和改期关联，才能继续工作。本轮把已有的数据库与 MinIO 备份，推进到公网实际数据的逐项恢复验证，并补上分阶段启动与服务器之外的加密副本。</p>
+<p>优化前后的操作及证据：</p>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>备份格式</td>
+<td>v1，数据库、冷对象卷、镜像和元信息四份负载</td>
+<td>v2，增加数据库与对象内容清单，五份负载逐一校验</td>
+</tr>
+<tr>
+<td>数据验证</td>
+<td>发布时读取数据库归档目录；既有容器恢复使用小型合成数据</td>
+<td>公网快照 9 表 / 9,269 行、1 序列和 187 个对象全部一致</td>
+</tr>
+<tr>
+<td>恢复启动</td>
+<td>导入后启动整个应用栈</td>
+<td>默认恢复并校验数据，业务进程通过 <code>--activate</code> 或后续启动命令启用</td>
+</tr>
+<tr>
+<td>内容差错</td>
+<td>归档 SHA-256 检查文件完整性</td>
+<td>增加表/对象集合、逐行及逐对象内容校验，识别缺失、额外和改动</td>
+</tr>
+<tr>
+<td>异机副本</td>
+<td>发布备份位于服务器私有目录</td>
+<td>当前 Windows 私有目录保存 AES-256-GCM 副本，密钥由 DPAPI 保存</td>
+</tr>
+<tr>
+<td>Compose 兼容</td>
+<td>运行备份时使用恢复命令</td>
+<td>停服务前检查所需选项，使用已实测的 <code>up --no-deps --no-recreate --wait</code></td>
+</tr>
+<tr>
+<td>跨平台脚本</td>
+<td>Windows 工作文件可使用 CRLF</td>
+<td><code>.sh</code> 固定 LF，发布包同时核对实际脚本摘要</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-恢复流程与数据边界">2. 恢复流程与数据边界</h2>
+<p><a href="/competition/recovery-assets/assets/recovery-flow.webp"><img alt="Daylight backup and staged recovery dataflow" src="/competition/recovery-assets/assets/recovery-flow.webp" loading="lazy" decoding="async"></a></p>
+<p>图片由 <strong>gpt-image-2.5</strong> 生成，图内英文；中文说明与原始输出随文保存。<a href="/competition/recovery-assets/recovery-prompt.txt">提示词</a> · <a href="/competition/recovery-assets/image-generation.json">生成与图片摘要</a>。图中上层为一致备份，下层为新项目恢复；已验证归档进入数据导入步骤，新卷创建是导入的前置条件。</p>
+<h3 id="21-先固定写入再取数据库与附件快照">2.1 先固定写入，再取数据库与附件快照</h3>
+<p><code>deploy/backup.sh</code> 先检查 Compose <code>up</code> 是否支持所需选项，再读取当前运行服务。它暂停原本运行的 API、Worker、Scheduler，等待在途执行退出。一个独立 Node 程序只读取 PostgreSQL 和 S3：使用 <code>REPEATABLE READ READ ONLY</code> 事务计算数据库行摘要，再完整读取当前桶的每个对象。程序仅导入数据库与对象 SDK，不加载应用启动、收信、发信或调度代码。</p>
+<p>清单生成后停止 MinIO，导出 PostgreSQL custom dump，并复制停止状态下的对象卷。这样，数据库引用与对象内容处于同一个停止写入的检查点。<code>SHA256SUMS</code> 包含五份负载，最后写入 <code>COMPLETE</code>。退出清理流程启动原服务，等待对象存储和原应用角色健康。</p>
+<h3 id="22-恢复时核对逻辑内容">2.2 恢复时核对逻辑内容</h3>
+<p><code>scripts/recovery-manifest.mjs</code> 将每个数据库行转为 PostgreSQL JSONB 的稳定文本，计算 SHA-256，将行摘要排序后再计算表摘要。物理行顺序变化不会改变结果；表名集合、行数、表摘要，以及序列的 <code>last_value</code> / <code>is_called</code> 共同参与比对。数据库时间区固定为 UTC，使时间字段的文本表示一致。</p>
+<p>对象逐个流式读取，累计字节数并计算完整 SHA-256；校验当前桶可见对象的完整集合。缺少对象、出现额外对象，或字节内容发生改变，都会返回失败。输出公开摘要时，附件键仅以 SHA-256 表示；包含原键的清单保留在私有备份中。</p>
+<h3 id="23-数据恢复完成后启用业务">2.3 数据恢复完成后启用业务</h3>
+<p><code>deploy/restore.sh</code> 支持既有 v1 和本轮 v2 备份。它验证负载校验和、检查目标项目为空、核对 MinIO 镜像，然后创建全新卷。PostgreSQL 导入使用 <code>pg_restore --exit-on-error</code>，MinIO 使用冷卷恢复；v2 随后运行完整内容核对。</p>
+<p>默认只留下 PostgreSQL 与 MinIO，API、Worker、Scheduler 保持停止。业务启动与数据验证分开，便于核对恢复环境的域名、邮箱、网络和任务状态。<code>--activate</code> 会在校验成功后启动应用栈；恢复后的任务依据 PostgreSQL 的持久状态和租约恢复执行。</p>
+<h2 id="3-技术选型与取舍">3. 技术选型与取舍</h2>
+<table>
+<thead>
+<tr>
+<th>选择</th>
+<th>设计逻辑</th>
+<th>本轮验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PostgreSQL custom dump</td>
+<td>同时保存账号、设置、日历、RAG、任务步骤与 outbox；按原结构导入新库</td>
+<td>9 表、9,269 行与序列摘要一致</td>
+</tr>
+<tr>
+<td>MinIO 冷卷</td>
+<td>与当前部署相同的对象存储格式，保留对象及内部数据；停写后与数据库一起备份</td>
+<td>同版本镜像恢复，187 对象逐个完整回读</td>
+</tr>
+<tr>
+<td>内容清单 + 归档 SHA-256</td>
+<td>分别检查归档文件传输完整性与恢复后的逻辑内容</td>
+<td>三种实际副本差错被识别；全部复原后再次通过</td>
+</tr>
+<tr>
+<td>新项目、新卷、内部网络</td>
+<td>数据恢复与正式业务隔离；复核后再进入应用阶段</td>
+<td>恢复项目发布端口 0，仅两个数据服务运行</td>
+</tr>
+<tr>
+<td>Redis / RabbitMQ 按新环境建立</td>
+<td>会话和唤醒消息在运行环境重建，权威任务与 outbox 在 PostgreSQL 中恢复</td>
+<td>数据恢复阶段保持业务进程停止；后续启动沿用部署流程</td>
+</tr>
+<tr>
+<td>AES-256-GCM 流式加密</td>
+<td>为异机副本同时提供加密与认证；每次使用随机 IV，数据分块处理</td>
+<td>完整解密、SHA-256 与保存后的 DPAPI 密钥回读通过</td>
+</tr>
+</tbody>
+</table>
+<p>本轮沿用服务器已有镜像和协议，使用临时容器、独立网络及新卷。恢复 PostgreSQL / MinIO 各限制 <strong>256 MiB、0.5 CPU</strong>，只读核验进程限制 <strong>512 MiB、1 CPU</strong>。对象流式处理；数据库查询按表读取，本次最大表的资源规模由实际快照决定。</p>
+<h2 id="4-公网实际数据与耗时">4. 公网实际数据与耗时</h2>
+<p>来源：<code>daylight:public-competition-20261104-v17</code>。检查点：<strong>2026-11-04 06:05:50.204 +08:00</strong>；API、Worker、Scheduler 已停止写入。</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">实际结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据库表</td>
+<td style="text-align: right;">9 / 9 一致</td>
+</tr>
+<tr>
+<td>数据库行</td>
+<td style="text-align: right;">9,269，逐行摘要参与比对</td>
+</tr>
+<tr>
+<td>序列</td>
+<td style="text-align: right;">1 / 1 一致</td>
+</tr>
+<tr>
+<td>附件对象</td>
+<td style="text-align: right;">187 / 187 一致</td>
+</tr>
+<tr>
+<td>对象内容</td>
+<td style="text-align: right;">199,654,466 bytes</td>
+</tr>
+<tr>
+<td>数据导入与完整校验</td>
+<td style="text-align: right;"><strong>48.000 秒</strong></td>
+</tr>
+<tr>
+<td>其中内容核对程序</td>
+<td style="text-align: right;">18.280 秒</td>
+</tr>
+<tr>
+<td>表、序列、对象差异</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>临时项目公开端口</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>临时资源清理</td>
+<td style="text-align: right;">完成</td>
+</tr>
+</tbody>
+</table>
+<p>48 秒从新项目开始恢复计时，包含新卷、数据服务启动、数据库和冷对象卷导入、完整清单比对。业务启用和流量切换是后续独立阶段。恢复点对应上述已提交数据检查点。</p>
+<p><a href="/competition/recovery-assets/evidence/recovery-proof.json">每表行数及摘要</a> · <a href="/competition/recovery-assets/evidence/restore.txt">恢复完整输出</a> · <a href="/competition/recovery-assets/evidence/drill-summary.json">阶段计时和实际服务状态</a>。</p>
+<h2 id="5-异常与修复记录">5. 异常与修复记录</h2>
+<h3 id="51-对恢复副本注入差错">5.1 对恢复副本注入差错</h3>
+<p>在内部网络、临时卷中执行以下操作：</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>校验结果</th>
+<th>完成处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新增一个合成表</td>
+<td>检测到 1 个额外表</td>
+<td>删除该表</td>
+</tr>
+<tr>
+<td>修改一个附件的字节</td>
+<td>检测到 1 个内容差异</td>
+<td>写回保存的原字节</td>
+</tr>
+<tr>
+<td>删除该附件</td>
+<td>检测到 1 个缺失对象</td>
+<td>写回原对象</td>
+</tr>
+<tr>
+<td>全部恢复后再次比对</td>
+<td>9 表、187 对象一致</td>
+<td>清理临时项目和卷</td>
+</tr>
+<tr>
+<td>再次使用已有项目作为恢复目标</td>
+<td>创建或写入前拒绝</td>
+<td>保留当前数据</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/recovery-assets/evidence/failure-probes.txt">差错与最终复核</a> · <a href="/competition/recovery-assets/evidence/existing-target.txt">已有项目拒绝输出</a> · <a href="/competition/recovery-assets/evidence/cleanup.txt">清理输出</a>。</p>
+<h3 id="52-compose-版本兼容修复">5.2 Compose 版本兼容修复</h3>
+<p>首次执行已完成数据库、对象卷和清单文件，但服务恢复命令使用了服务器 Compose 不支持的 <code>start --wait</code>，退出码为 1。随后启动原容器，正式 readiness 恢复；再以 <code>up --no-deps --no-recreate --wait</code> 核验原服务健康，三个角色镜像继续为 v17。</p>
+<p>公网每次请求完成后间隔 1 秒采样，共 163 次，其中 144 次为 502 / 503。第一次失败在 <strong>06:05:09.162</strong>，首次恢复 200 在 <strong>06:07:36.550</strong>，二者相隔 <strong>147.388 秒</strong>；之后连续五次 200。此项保存维护期间的实际网站可用性，与上节独立数据恢复计时分别登记。<a href="/competition/recovery-assets/evidence/public-availability.json">原始请求采样</a> · <a href="/competition/recovery-assets/evidence/backup.txt">首次备份输出</a>。</p>
+<p>修复包括：</p>
+<ol>
+<li>暂停服务前检查 Compose 所需选项。</li>
+<li>以 <code>up --no-deps --no-recreate --wait</code> 启动原有容器并等待健康。</li>
+<li>shell 文件固定 LF；发布包核对脚本实际字节。</li>
+<li>在独立合成项目实连 PostgreSQL、MinIO 和 HTTP 占位服务，执行修复后的完整暂停、备份、恢复健康与内容核对。该合成项目的备份及恢复健康耗时 <strong>14.991 秒</strong>，命令退出 0，三个容器健康，随后清理。</li>
+</ol>
+<p><a href="/competition/recovery-assets/evidence/backup-smoke.json">兼容修复后的实际容器流程</a> · <a href="/competition/recovery-assets/evidence/smoke-consistent-backup.txt">完整备份输出</a>。Windows 原始上传的 CRLF 在合成项目中被识别并修正，过程保存在同一记录。</p>
+<h2 id="6-服务器之外的加密副本">6. 服务器之外的加密副本</h2>
+<p>将一致快照的数据库、MinIO 冷卷、清单与校验和组成 tar，通过已核对主机密钥的 SSH 下载。<code>scripts/recovery-encrypted-copy.py</code> 每次最多读取 1 MiB，在本机流式执行 AES-256-GCM；认证头包含格式版本和随机 IV。只有完整解密和源归档 SHA-256 均成功后，才发布最终密文文件。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实际值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>明文归档</td>
+<td>227,635,200 bytes，保留于服务器私有目录</td>
+</tr>
+<tr>
+<td>本机密文</td>
+<td>227,635,247 bytes，保留于 Windows 私有目录</td>
+</tr>
+<tr>
+<td>明文 SHA-256</td>
+<td><code>d5055b6231353e63895fa897b911ee4ef3f90e086f4dc41d1ce90f775c1b46e2</code></td>
+</tr>
+<tr>
+<td>密文 SHA-256</td>
+<td><code>5ce65e733bf04acf898fe3c2b95cd12f4e07304db5f4ad5209b62cc11346028d</code></td>
+</tr>
+<tr>
+<td>下载、加密与完整复核</td>
+<td>159.343 秒</td>
+</tr>
+<tr>
+<td>保存密钥回读</td>
+<td>Windows DPAPI 凭据重新载入，完整认证与摘要通过</td>
+</tr>
+</tbody>
+</table>
+<p>密钥经标准输入进入工具，由当前 Windows 用户的 DPAPI 凭据保存。私有恢复说明记录密文和密钥位置。公开资料只包含计数、大小、摘要和脱敏结果。</p>
+<p><a href="/competition/recovery-assets/evidence/encrypted-copy.json">异机副本回执</a> · <a href="/competition/recovery-assets/evidence/encrypted-copy-key-verification.json">保存密钥重新读取后的全量校验</a>。</p>
+<h2 id="7-复现验证与费用">7. 复现、验证与费用</h2>
+<h3 id="页面与尺寸核对">页面与尺寸核对</h3>
+<p>技术页与图文分别核对 1440、390、320px，共 6 组；页面均保持在视口内，恢复记录链接 44px。图文图片按需加载，点击流程图打开完整图。以下为本地构建的实际页面，数据来自本轮公网恢复记录。</p>
+<p><img alt="本地1440px技术页恢复结果" src="/competition/recovery-assets/assets/local-evidence-desktop.png" loading="lazy" decoding="async"></p>
+<table>
+<thead>
+<tr>
+<th>本地390px结果卡</th>
+<th>本地390px图文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="本地手机尺寸恢复结果卡" src="/competition/recovery-assets/assets/local-evidence-mobile.png" loading="lazy" decoding="async"></td>
+<td><img alt="本地手机尺寸英文流程图" src="/competition/recovery-assets/assets/local-report-mobile.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/recovery-assets/evidence/local-layouts.json">6组布局原始记录</a>。</p>
+<h3 id="复现命令">复现命令</h3>
+<p>准备当前源码、Docker Compose、与备份相同的 MinIO 镜像和兼容 PostgreSQL 主版本。</p>
+<pre><code class="language-sh"># 使用原部署配置和覆盖文件生成备份。
+DAYLIGHT_ENV_FILE=/secure/compose.env DAYLIGHT_PROJECT=daylight \
+sh deploy/backup.sh /secure/backups
+
+# 使用独立恢复配置，默认恢复数据并完成 v2 内容核对。
+DAYLIGHT_ENV_FILE=/secure/restore.env DAYLIGHT_PROJECT=daylight-restore-check \
+sh deploy/restore.sh /secure/backups/ACTUAL_BACKUP
+
+# 同一恢复环境核对完成后启用业务。
+DAYLIGHT_ENV_FILE=/secure/restore.env DAYLIGHT_PROJECT=daylight-restore-check \
+sh deploy/stack.sh up -d --wait
+</code></pre>
+<p>原部署有附加覆盖文件时，以 <code>DAYLIGHT_COMPOSE_OVERRIDE</code> 和 <code>DAYLIGHT_COMPOSE_OVERRIDE_2</code> 按原顺序传入；恢复配置使用新端口和卷。保持这些环境变量应用于后续同一项目的命令。</p>
+<pre><code class="language-sh">node --test server/deployment-backup.test.js server/recovery-manifest.test.js
+python server/recovery_encrypted_copy_test.py
+</code></pre>
+<p>本地 <strong>14 项 Node 检查、4 项加密检查</strong>通过。加密检查包含完整分块数据、认证标签改动、校验失败时清理临时明文，以及保留既有输出。Python 加密工具使用 <code>paramiko</code> / <code>cryptography</code>，图片和公开图文构建使用 <code>Pillow</code> / <code>Markdown</code>。</p>
+<p>本轮文本模型调用 <strong>0</strong>、新增云采购 <strong>0</strong>、图像生成 <strong>1</strong>。复用已有服务器，临时恢复容器与卷已清理；异机副本使用本机私有磁盘。累计文本模型 <strong>84 次</strong>，按公开价格估算 <strong>¥0.516094</strong>；图片累计 <strong>13 次</strong>，按供应商账单登记，预算总上限 <strong>¥500</strong>。<a href="/competition/recovery-assets/evidence/budget-total.json">逐批预算</a>。</p>
+<p>本轮分别补充云原生状态恢复、Agent 任务和来源持久性、可复现运维、恢复耗时与资源约束四类证据。用户价值、问答质量与电脑手机体验继续对应各自的流程和测量记录。</p></main></html>

@@ -1,0 +1,446 @@
+{
+  "checkedAt": "2026-11-03T16:49:30.312571+00:00",
+  "scope": "Live production services and shared metrics volume; public synthetic requests and normal dependency activity",
+  "readiness": [
+    {
+      "ok": true,
+      "role": "api",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "011e08fb-6ea5-4d72-85e9-aaa01c595f1b",
+        "written": 414,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    {
+      "ok": true,
+      "role": "worker",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "9c48983b-b81e-4f88-914f-96ef16ef4287",
+        "written": 801,
+        "dropped": 0,
+        "sinkError": null
+      }
+    },
+    {
+      "ok": true,
+      "role": "scheduler",
+      "draining": false,
+      "metrics": {
+        "enabled": true,
+        "runId": "7f3d4893-c84d-4911-aa14-0a2d3a3435ad",
+        "written": 158,
+        "dropped": 0,
+        "sinkError": null
+      }
+    }
+  ],
+  "resources": [
+    {
+      "role": "api",
+      "image": "daylight:public-competition-20261104-v7",
+      "imageId": "sha256:7cd01b30ebfc137b4ea16b8a17afbe67f76c4078d2fa93f27fca3cba0a66d41d",
+      "restarts": 0,
+      "oom": false,
+      "healthy": "healthy",
+      "memoryLimitBytes": 0,
+      "nanoCpus": 0
+    },
+    {
+      "role": "worker",
+      "image": "daylight:public-competition-20261104-v7",
+      "imageId": "sha256:7cd01b30ebfc137b4ea16b8a17afbe67f76c4078d2fa93f27fca3cba0a66d41d",
+      "restarts": 0,
+      "oom": false,
+      "healthy": "healthy",
+      "memoryLimitBytes": 0,
+      "nanoCpus": 0
+    },
+    {
+      "role": "scheduler",
+      "image": "daylight:public-competition-20261104-v7",
+      "imageId": "sha256:7cd01b30ebfc137b4ea16b8a17afbe67f76c4078d2fa93f27fca3cba0a66d41d",
+      "restarts": 0,
+      "oom": false,
+      "healthy": "healthy",
+      "memoryLimitBytes": 0,
+      "nanoCpus": 0
+    }
+  ],
+  "volume": {
+    "files": [
+      {
+        "name": "metrics-624b2bdb2ebd-6.jsonl",
+        "bytes": 113018
+      },
+      {
+        "name": "metrics-76ce1d0c3d3b-7.jsonl",
+        "bytes": 41168
+      },
+      {
+        "name": "metrics-ca491e2fbbb1-8.jsonl",
+        "bytes": 217878
+      },
+      {
+        "name": "metrics-summary-624b2bdb2ebd-6.json",
+        "bytes": 5035
+      },
+      {
+        "name": "metrics-summary-76ce1d0c3d3b-7.json",
+        "bytes": 3997
+      },
+      {
+        "name": "metrics-summary-ca491e2fbbb1-8.json",
+        "bytes": 3722
+      }
+    ],
+    "totalBytes": 384818
+  },
+  "report": {
+    "dir": "/var/lib/daylight-metrics",
+    "files": 3,
+    "samples": 1409,
+    "malformed": 0,
+    "window": {
+      "from": "2026-11-04T00:48:37.113+08:00",
+      "to": "2026-11-04T00:49:29.543+08:00"
+    },
+    "runIds": [
+      "011e08fb-6ea5-4d72-85e9-aaa01c595f1b",
+      "7f3d4893-c84d-4911-aa14-0a2d3a3435ad",
+      "9c48983b-b81e-4f88-914f-96ef16ef4287"
+    ],
+    "provenance": [
+      "a5183f62dd917ad4218414154c21c5a75c80241c (clean)"
+    ],
+    "processes": [
+      {
+        "file": "metrics-624b2bdb2ebd-6.jsonl",
+        "samples": 423
+      },
+      {
+        "file": "metrics-76ce1d0c3d3b-7.jsonl",
+        "samples": 158
+      },
+      {
+        "file": "metrics-ca491e2fbbb1-8.jsonl",
+        "samples": 828
+      }
+    ],
+    "health": [
+      {
+        "file": "metrics-summary-624b2bdb2ebd-6.json",
+        "role": "api",
+        "runId": "011e08fb-6ea5-4d72-85e9-aaa01c595f1b",
+        "written": 263,
+        "dropped": 0,
+        "buffered": 94,
+        "inFlight": 0,
+        "sinkError": null,
+        "sampling": 1,
+        "gitSha": "a5183f62dd917ad4218414154c21c5a75c80241c",
+        "dirty": false,
+        "limits": {
+          "samples": 10000,
+          "bytes": 1048576,
+          "series": 128,
+          "reservoir": 4000,
+          "fileBytes": 8388608,
+          "files": 4,
+          "directoryBytes": 134217728
+        },
+        "retention": {
+          "evictedFiles": 0,
+          "evictedBytes": 0
+        }
+      },
+      {
+        "file": "metrics-summary-76ce1d0c3d3b-7.json",
+        "role": "scheduler",
+        "runId": "7f3d4893-c84d-4911-aa14-0a2d3a3435ad",
+        "written": 142,
+        "dropped": 0,
+        "buffered": 0,
+        "inFlight": 0,
+        "sinkError": null,
+        "sampling": 1,
+        "gitSha": "a5183f62dd917ad4218414154c21c5a75c80241c",
+        "dirty": false,
+        "limits": {
+          "samples": 10000,
+          "bytes": 1048576,
+          "series": 128,
+          "reservoir": 4000,
+          "fileBytes": 8388608,
+          "files": 4,
+          "directoryBytes": 134217728
+        },
+        "retention": {
+          "evictedFiles": 0,
+          "evictedBytes": 0
+        }
+      },
+      {
+        "file": "metrics-summary-ca491e2fbbb1-8.json",
+        "role": "worker",
+        "runId": "9c48983b-b81e-4f88-914f-96ef16ef4287",
+        "written": 685,
+        "dropped": 0,
+        "buffered": 7,
+        "inFlight": 0,
+        "sinkError": null,
+        "sampling": 1,
+        "gitSha": "a5183f62dd917ad4218414154c21c5a75c80241c",
+        "dirty": false,
+        "limits": {
+          "samples": 10000,
+          "bytes": 1048576,
+          "series": 128,
+          "reservoir": 4000,
+          "fileBytes": 8388608,
+          "files": 4,
+          "directoryBytes": 134217728
+        },
+        "retention": {
+          "evictedFiles": 0,
+          "evictedBytes": 0
+        }
+      }
+    ],
+    "summaryErrors": [],
+    "metrics": [
+      {
+        "metric": "pg.query.ms",
+        "unit": "ms",
+        "count": 844,
+        "min": 0.155,
+        "p50": 0.89,
+        "p90": 2.934,
+        "p95": 4.507,
+        "p99": 10.39,
+        "max": 351.386,
+        "mean": 1.997
+      },
+      {
+        "metric": "gc.pause.ms",
+        "unit": "ms",
+        "count": 82,
+        "min": 0.702,
+        "p50": 1.388,
+        "p90": 26.828,
+        "p95": 46.897,
+        "p99": 65.219,
+        "max": 69.222,
+        "mean": 8.879
+      },
+      {
+        "metric": "http.inflight",
+        "unit": "count",
+        "count": 75,
+        "min": 1,
+        "p50": 1,
+        "p90": 4,
+        "p95": 4,
+        "p99": 5,
+        "max": 5,
+        "mean": 1.8
+      },
+      {
+        "metric": "http.request.ms",
+        "unit": "ms",
+        "count": 75,
+        "min": 1.501,
+        "p50": 17.368,
+        "p90": 30.751,
+        "p95": 44.431,
+        "p99": 184.967,
+        "max": 1262.527,
+        "mean": 38.3
+      },
+      {
+        "metric": "http.requests_total",
+        "unit": "count",
+        "count": 75,
+        "min": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1,
+        "max": 1,
+        "mean": 1
+      },
+      {
+        "metric": "eventloop.delay.ms",
+        "unit": "ms",
+        "count": 60,
+        "min": 10.104,
+        "p50": 11.503,
+        "p90": 52.56,
+        "p95": 195.69,
+        "p99": 509.084,
+        "max": 618.136,
+        "mean": 41.721
+      },
+      {
+        "metric": "process.rss.bytes",
+        "unit": "bytes",
+        "count": 30,
+        "min": 128704512,
+        "p50": 170143744,
+        "p90": 213065728,
+        "p95": 325496832,
+        "p99": 325496832,
+        "max": 325496832,
+        "mean": 177114316.8
+      },
+      {
+        "metric": "process.heap_used.bytes",
+        "unit": "bytes",
+        "count": 30,
+        "min": 38930592,
+        "p50": 50869928,
+        "p90": 75519344,
+        "p95": 161695984,
+        "p99": 161880704,
+        "max": 161880704,
+        "mean": 58275020.8
+      },
+      {
+        "metric": "process.external.bytes",
+        "unit": "bytes",
+        "count": 30,
+        "min": 4162918,
+        "p50": 4301522,
+        "p90": 4773202,
+        "p95": 21116505,
+        "p99": 21130825,
+        "max": 21130825,
+        "mean": 5462700.7
+      },
+      {
+        "metric": "process.cpu.percent",
+        "unit": "percent",
+        "count": 30,
+        "min": 0.31,
+        "p50": 1.94,
+        "p90": 21.49,
+        "p95": 24.53,
+        "p99": 26.36,
+        "max": 26.36,
+        "mean": 5.625
+      },
+      {
+        "metric": "process.handles",
+        "unit": "count",
+        "count": 30,
+        "min": 4,
+        "p50": 6,
+        "p90": 8,
+        "p95": 10,
+        "p99": 28,
+        "max": 28,
+        "mean": 6.467
+      },
+      {
+        "metric": "process.uptime.seconds",
+        "unit": "seconds",
+        "count": 30,
+        "min": 11.908,
+        "p50": 36.91,
+        "p90": 53.562,
+        "p95": 57.408,
+        "p99": 58.562,
+        "max": 58.562,
+        "mean": 35.124
+      },
+      {
+        "metric": "redis.command.ms",
+        "unit": "ms",
+        "count": 11,
+        "min": 4.443,
+        "p50": 8.459,
+        "p90": 15.53,
+        "p95": 15.762,
+        "p99": 15.762,
+        "max": 15.762,
+        "mean": 9.25
+      },
+      {
+        "metric": "process.start_total",
+        "unit": "count",
+        "count": 3,
+        "min": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1,
+        "max": 1,
+        "mean": 1
+      },
+      {
+        "metric": "storage.snapshot.ms",
+        "unit": "ms",
+        "count": 3,
+        "min": 22,
+        "p50": 27.592,
+        "p90": 663.336,
+        "p95": 663.336,
+        "p99": 663.336,
+        "max": 663.336,
+        "mean": 237.643
+      },
+      {
+        "metric": "storage.commit.ms",
+        "unit": "ms",
+        "count": 1,
+        "min": 34.727,
+        "p50": 34.727,
+        "p90": 34.727,
+        "p95": 34.727,
+        "p99": 34.727,
+        "max": 34.727,
+        "mean": 34.727
+      }
+    ],
+    "focus": null
+  },
+  "containerStats": [
+    {
+      "BlockIO": "0B / 164kB",
+      "CPUPerc": "0.58%",
+      "Container": "daylight-api-1",
+      "ID": "624b2bdb2ebd",
+      "MemPerc": "3.76%",
+      "MemUsage": "131.5MiB / 3.417GiB",
+      "Name": "daylight-api-1",
+      "NetIO": "16.2MB / 1.57MB",
+      "PIDs": "14"
+    },
+    {
+      "BlockIO": "0B / 250kB",
+      "CPUPerc": "1.86%",
+      "Container": "daylight-worker-1",
+      "ID": "ca491e2fbbb1",
+      "MemPerc": "2.26%",
+      "MemUsage": "79.02MiB / 3.417GiB",
+      "Name": "daylight-worker-1",
+      "NetIO": "211kB / 246kB",
+      "PIDs": "14"
+    },
+    {
+      "BlockIO": "0B / 77.8kB",
+      "CPUPerc": "0.42%",
+      "Container": "daylight-scheduler-1",
+      "ID": "76ce1d0c3d3b",
+      "MemPerc": "2.15%",
+      "MemUsage": "75.07MiB / 3.417GiB",
+      "Name": "daylight-scheduler-1",
+      "NetIO": "86.7kB / 23.7kB",
+      "PIDs": "14"
+    }
+  ]
+}

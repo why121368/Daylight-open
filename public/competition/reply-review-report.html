@@ -1,0 +1,210 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从执行记录到可审核回复：邮件闭环优化 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="从执行记录到可审核回复邮件闭环优化">从执行记录到可审核回复：邮件闭环优化</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#从执行记录到可审核回复邮件闭环优化">从执行记录到可审核回复：邮件闭环优化</a><ul>
+<li><a href="#本轮解决的问题">本轮解决的问题</a></li>
+<li><a href="#数据流与状态">数据流与状态</a></li>
+<li><a href="#技术选择与设计逻辑">技术选择与设计逻辑</a><ul>
+<li><a href="#复用一个审核状态机">复用一个审核状态机</a></li>
+<li><a href="#postgresql-保存状态事务内处理并发">PostgreSQL 保存状态，事务内处理并发</a></li>
+<li><a href="#混合视图固定来源邮箱">混合视图固定来源邮箱</a></li>
+<li><a href="#保留原回复线程">保留原回复线程</a></li>
+</ul>
+</li>
+<li><a href="#电脑与手机效果">电脑与手机效果</a></li>
+<li><a href="#验证结果">验证结果</a><ul>
+<li><a href="#全量与-http-链路">全量与 HTTP 链路</a></li>
+<li><a href="#服务器真实-postgresql">服务器真实 PostgreSQL</a></li>
+</ul>
+</li>
+<li><a href="#成本与交付">成本与交付</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026 年 11 月 4 日，北京时间。对应竞赛的场景价值、Agent 链路、共享状态、工程体验与调用成本。</p>
+<h2 id="本轮解决的问题">本轮解决的问题</h2>
+<p>用户读完面试通知、确认日程后，下一步通常是回复对方。此前执行记录的“采纳并发送”仍请求旧 <code>/api/traces/:id/send</code>，生产流程中间件返回 503；草稿审核、发信与结果恢复在这条入口断开。</p>
+<p>本轮将执行记录接入已持久化的邮件审核能力：选择原邮件，准备审核卡，核对发件邮箱、收件人、主题和完整正文，编辑保存后确认发送。重新打开同一记录会取回已保存的草稿或回执。</p>
+<table>
+<thead>
+<tr>
+<th>使用环节</th>
+<th>优化前</th>
+<th>优化后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生产入口</td>
+<td>旧 Trace 发信接口返回 503</td>
+<td>复用 <code>/api/assistant/drafts</code> 的持久化审核接口</td>
+</tr>
+<tr>
+<td>审核正文</td>
+<td>浏览器确认框最多预览 280 字</td>
+<td>审核卡展示完整正文，支持编辑和保存</td>
+</tr>
+<tr>
+<td>来源</td>
+<td>当前活动邮箱与 Trace 操作绑定</td>
+<td>草稿固定关联来源邮箱、Trace 与原邮件 ID</td>
+</tr>
+<tr>
+<td>准备并发</td>
+<td>缺少 Trace 到审核草稿的统一关系</td>
+<td>同一来源的并发准备返回同一份草稿</td>
+</tr>
+<tr>
+<td>发送确认</td>
+<td>Trace 发信依赖进程内发送集合</td>
+<td>版本检查、数据库 <code>sending</code> 标记和保存回执</td>
+</tr>
+<tr>
+<td>重新打开</td>
+<td>在不同页面核对原草稿与发送结果</td>
+<td>在原执行记录中恢复当前审核版本与回执</td>
+</tr>
+<tr>
+<td>手机操作</td>
+<td>原有小号操作按钮</td>
+<td>主要按钮及手机输入框至少 44px，高度实测见下文</td>
+</tr>
+<tr>
+<td>准备与编辑成本</td>
+<td>原草稿已生成</td>
+<td>继续使用已生成草稿，模型调用 0、SMTP 调用 0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="数据流与状态">数据流与状态</h2>
+<p><a href="/competition/reply-assets/assets/reply-flow.png"><img alt="从执行记录到回复审核的英文数据流" src="/competition/reply-assets/assets/reply-flow.webp"></a></p>
+<p>图由 <strong>gpt-image-2.5</strong> 生成，1536×1024、high、全英文；中文说明保存在正文。PNG 1,492,272 bytes，网页使用 123,762 bytes 的 WebP，体积减少 <strong>91.7%</strong>。<a href="/competition/reply-assets/reply-prompt.txt">提示词</a>与<a href="/competition/reply-assets/image-generation.json">生成参数、文件摘要</a>随版本保存。</p>
+<ol>
+<li><strong>读取来源。</strong> 服务端从当前用户对应邮箱的已保存邮件和 Trace 读取原始 <code>Reply-To</code>、主题和当前草稿，并要求唯一匹配原邮件。客户端提交来源编号。</li>
+<li><strong>准备草稿。</strong> <code>kind: trace_reply</code> 进入现有草稿存储事务。同一 Trace 已有当前草稿时返回该版本；用户放弃后，可显式重新准备。</li>
+<li><strong>审核和编辑。</strong> 用户阅读发件邮箱、全部收件人、主题与完整正文。保存修改递增 <code>revision</code>，旧版本确认返回 409，页面重新读取当前状态。</li>
+<li><strong>确认发送。</strong> 服务端核对当前版本和邮箱配置，先提交 <code>sending</code> 状态，再调用 SMTP；原邮件 <code>Message-ID</code> 和 <code>References</code> 转为回复线程头。</li>
+<li><strong>保存结果。</strong> 全部收件人被 SMTP 接受时保存 <code>sent</code> 和回执；明确未接受的失败保存 <code>failed</code> 并提供审核后重试；超时或部分接受保存 <code>unknown</code>，页面展示回执与核验入口。</li>
+<li><strong>重新打开。</strong> 从来源 Trace 找回草稿 ID、已审核正文、当前版本与回执；已发送记录的重复确认直接返回保存结果。</li>
+</ol>
+<h2 id="技术选择与设计逻辑">技术选择与设计逻辑</h2>
+<h3 id="复用一个审核状态机">复用一个审核状态机</h3>
+<p>小 D 邮件和会议邀约已有审核卡及持久化状态。本轮新增 <code>trace_reply</code> 类型，复用同一套编辑、确认、回执与失败处理。这样三个入口共享版本检查与发送语义，组件调整也能同时改善手机操作。</p>
+<p>新增 <code>server/trace-reply.js</code> 专门解析原邮件关系；<code>server/assistant-actions.js</code> 承接准备和发送。原 Trace 继续保存处理证据，发送过程保存在草稿记录中。原日历与 Trace 在本轮 PostgreSQL 验证前后保持相同 JSON 值。</p>
+<h3 id="postgresql-保存状态事务内处理并发">PostgreSQL 保存状态，事务内处理并发</h3>
+<p>公网 API、Worker、Scheduler 使用共享 PostgreSQL。审核状态沿用按用户与邮箱定位的 <code>app_settings</code> 记录，事务中通过行锁读取、修改和提交；同一 Trace 的查重在该事务中完成。新增类型复用现有表结构，部署包含三个运行模块和完整前端。</p>
+<p>当前每个邮箱的草稿集合保存在一条 JSONB 记录，适合现有数据规模，代价是同邮箱的审核写入会依次提交。随着草稿量增长，可拆为独立行，并为用户、邮箱、来源 Trace 建立唯一约束；届时结合写入等待时间和记录大小确定迁移时机。</p>
+<h3 id="混合视图固定来源邮箱">混合视图固定来源邮箱</h3>
+<p>用户在全部邮箱或同类邮箱视图中，可能打开非活动邮箱的执行记录。审核接口支持显式选择本人邮箱，服务端检查 <code>X-Mailbox-Id</code> 与创建请求中的邮箱一致。草稿读取、编辑、放弃和发送持续使用来源邮箱；用户与邮箱归属同时检查。</p>
+<h3 id="保留原回复线程">保留原回复线程</h3>
+<p>收件人优先来自原邮件 <code>Reply-To</code>，其后才是发件人。主题已有 <code>Re:</code> 时沿用；<code>In-Reply-To</code> 使用原 <code>Message-ID</code>，<code>References</code> 保留有效线程 ID、去重并限制为 50 个。审核后最终发送的是持久化正文和线程信息。</p>
+<h2 id="电脑与手机效果">电脑与手机效果</h2>
+<p>以下截图使用独立 <code>work/demo-*</code> 中的原创合成邮件。标题、地址和正文均为合成内容；验收操作为准备、编辑、保存、刷新恢复和布局检查。</p>
+<p><img alt="1440px 桌面：完整审核卡及确认区" src="/competition/reply-assets/assets/reply-review-desktop.png"></p>
+<p><img src="/competition/reply-assets/assets/reply-review-mobile.png" alt="390px 手机回复审核" width="390">
+<img src="/competition/reply-assets/assets/reply-edit-mobile.png" alt="390px 手机编辑回复" width="390"></p>
+<table>
+<thead>
+<tr>
+<th>尺寸与状态</th>
+<th>整页横向溢出</th>
+<th>操作按钮高度</th>
+<th>收件人与主题输入高度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1440×1000，审核</td>
+<td>0px</td>
+<td>44px</td>
+<td>桌面阅读态</td>
+</tr>
+<tr>
+<td>390×844，审核</td>
+<td>0px</td>
+<td>44px</td>
+<td>手机阅读态</td>
+</tr>
+<tr>
+<td>390×844，编辑</td>
+<td>0px</td>
+<td>44px</td>
+<td>44px</td>
+</tr>
+<tr>
+<td>320×760，审核</td>
+<td>0px</td>
+<td>44px</td>
+<td>手机阅读态</td>
+</tr>
+<tr>
+<td>320×760，编辑</td>
+<td>0px</td>
+<td>44px</td>
+<td>44px</td>
+</tr>
+</tbody>
+</table>
+<p>正文输入区 160px，可滚动和编辑；按钮按可用宽度换行。刷新页面后，核对后的“我已核对安排”正文仍在相同审核草稿中。<a href="/competition/reply-assets/assets/reply-review-320.png">320px 截图</a> · <a href="/competition/reply-assets/evidence/ui-layout.json">操作与 DOM 测量</a>。</p>
+<h2 id="验证结果">验证结果</h2>
+<h3 id="全量与-http-链路">全量与 HTTP 链路</h3>
+<p><code>npm test</code>：<strong>1,010 项、981 通过、29 条件跳过、0 失败</strong>，耗时 61.10 秒。<a href="/competition/reply-assets/evidence/full-tests.txt">完整结果</a>。最终<code>npm run build</code>通过，33.78秒；<a href="/competition/reply-assets/evidence/build.txt">构建结果</a>保存输出。公开图文页1440/390/320px的四张内嵌图片均加载成功，整页横向溢出0，<a href="/competition/reply-assets/evidence/publication-layout.json">布局记录</a>可复核。</p>
+<p>新增解析、动作与 HTTP 检查覆盖原 Reply-To、草稿优先级、线程头、旧发送记录、并发准备、本人多邮箱、跨用户请求、邮箱参数冲突、编辑版本、显式确认、重复确认、合成 SMTP 一次调用及进程重启后的回执恢复。HTTP 链路使用原创合成邮件和注入的 SMTP transport。</p>
+<h3 id="服务器真实-postgresql">服务器真实 PostgreSQL</h3>
+<p>在当前服务器 PostgreSQL 新建独立 schema，使用生产存储代码与合成通知，完成以下 <strong>8/8</strong> 检查，随后删除该 schema。运行环境 Node.js v22.23.3，1 CPU / 384 MiB 候选容器。<a href="/competition/reply-assets/evidence/postgres-verification.json">原始结果</a>。</p>
+<table>
+<thead>
+<tr>
+<th>检查</th>
+<th>结果</th>
+<th style="text-align: right;">耗时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 个并发准备只保存同一份草稿</td>
+<td>通过</td>
+<td style="text-align: right;">231.48ms</td>
+</tr>
+<tr>
+<td>用户和邮箱归属、原来源访问</td>
+<td>通过</td>
+<td style="text-align: right;">45.45ms</td>
+</tr>
+<tr>
+<td>编辑递增版本、旧确认在传输前返回 409</td>
+<td>通过</td>
+<td style="text-align: right;">41.86ms</td>
+</tr>
+<tr>
+<td>连接池重连恢复正文、线程和来源</td>
+<td>通过</td>
+<td style="text-align: right;">65.37ms</td>
+</tr>
+<tr>
+<td><code>sending</code> 先提交，重复确认只调用一次传输</td>
+<td>通过</td>
+<td style="text-align: right;">46.23ms</td>
+</tr>
+<tr>
+<td>二次重连及重新打开恢复 <code>sent</code> 回执</td>
+<td>通过</td>
+<td style="text-align: right;">47.31ms</td>
+</tr>
+<tr>
+<td><code>unknown</code> 持久保存，后续确认保持当前状态</td>
+<td>通过</td>
+<td style="text-align: right;">90.34ms</td>
+</tr>
+<tr>
+<td>原日历和 Trace 保持相同 JSON 值</td>
+<td>通过</td>
+<td style="text-align: right;">2.93ms</td>
+</tr>
+</tbody>
+</table>
+<p>这组验证的真实模型调用 0、真实 SMTP 调用 0，注入传输 2 次：成功回执一次、超时一次。各项耗时对应这次具体检查的操作组合。源码：<code>scripts/verify-trace-reply-postgres.mjs</code>。</p>
+<h2 id="成本与交付">成本与交付</h2>
+<p>本轮新增文字模型调用 0、图片调用 1、云采购 0；继续复用已有服务器。文本模型累计 42 次，按保存的公开价格估算 <strong>¥0.406820</strong>；图片调用累计 10 次，按供应商出账登记。新增模型与云资源总预算 <strong>¥500</strong>。<a href="/competition/budget.html">预算明细</a>。</p>
+<p>本轮构建、发布版本、数据库备份、候选验证、正式 HTTPS 与三角色实际运行文件摘要在部署后归档。使用入口为登录工作区的“证据链 → 真实邮件 → 准备回复审核”；公开<a href="/evidence">技术与实测</a>提供本报告入口。</p></main></html>

@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: tracked frontend evidence matches all five sources and has reproducible hashes
+ok 1 - tracked frontend evidence matches all five sources and has reproducible hashes
+  ---
+  duration_ms: 5.724082
+  type: 'test'
+  ...
+# Subtest: updating a source fails the deployment gate until the snapshot is regenerated
+ok 2 - updating a source fails the deployment gate until the snapshot is regenerated
+  ---
+  duration_ms: 2.245406
+  type: 'test'
+  ...
+# Subtest: Windows and Linux JSON formatting keeps the same snapshot and canonical hashes
+ok 3 - Windows and Linux JSON formatting keeps the same snapshot and canonical hashes
+  ---
+  duration_ms: 3.408561
+  type: 'test'
+  ...
+# Subtest: missing, invalid, and non-object evidence cannot become a build snapshot
+ok 4 - missing, invalid, and non-object evidence cannot become a build snapshot
+  ---
+  duration_ms: 2.632302
+  type: 'test'
+  ...
+# Subtest: edited snapshot data or source provenance fails the deployment gate
+ok 5 - edited snapshot data or source provenance fails the deployment gate
+  ---
+  duration_ms: 2.453677
+  type: 'test'
+  ...
+# Subtest: the actual Vite graph accepts src/shared/public data included by Docker COPY
+ok 6 - the actual Vite graph accepts src/shared/public data included by Docker COPY
+  ---
+  duration_ms: 349.492327
+  type: 'test'
+  ...
+# Subtest: an indirect dynamic import from excluded docs fails the actual Vite graph
+ok 7 - an indirect dynamic import from excluded docs fails the actual Vite graph
+  ---
+  duration_ms: 40.695291
+  type: 'test'
+  ...
+# Subtest: a symlink from src to an excluded source cannot bypass the Vite boundary
+ok 8 - a symlink from src to an excluded source cannot bypass the Vite boundary
+  ---
+  duration_ms: 9.918339
+  type: 'test'
+  ...
+# Subtest: offline realpath native variants resolve fixture paths and still reject user data
+ok 9 - offline realpath native variants resolve fixture paths and still reject user data
+  ---
+  duration_ms: 53.000307
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 663.111262

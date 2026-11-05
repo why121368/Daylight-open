@@ -1,0 +1,2347 @@
+{
+  "checkedAt": "2026-11-04T00:41:03.741344+00:00",
+  "origin": "https://daylight.yunforis.com",
+  "transport": "direct-https",
+  "scope": "All competition resources referenced by the current technical report and linked release/value/reply/video/refresh records; complete bytes, MIME and PDF range",
+  "pages": [
+    "technical-report.html",
+    "rag-release-v10.html",
+    "value-report.html",
+    "value-study.html",
+    "budget.html",
+    "reply-review-report.html",
+    "value-release-v12.html",
+    "reply-release-v13.html",
+    "video-report.html",
+    "demo-transcript.html",
+    "video-release-v14.html",
+    "report-refresh.html",
+    "rag-latency-report.html",
+    "entry-report.html",
+    "entry-release-v17.html",
+    "recovery-report.html",
+    "recovery-release-v18.html",
+    "continuity-report.html",
+    "delivery-report.html",
+    "container-report.html",
+    "reproduce.html"
+  ],
+  "checks": [
+    {
+      "path": "/competition/architecture.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 145242,
+      "sha256": "c8327608e14741e4e3d8a54cee5021277c37ce6cc86340b4872afc5ad7d0b9e4"
+    },
+    {
+      "path": "/competition/budget.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 8811,
+      "sha256": "97a714ea288b748275da5908841262a32e1e16d8a785481fe42bf03a3439ce53"
+    },
+    {
+      "path": "/competition/capacity-design.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 41929,
+      "sha256": "61b3644933f99756385111df34bdab27d80ebcb172005d9bb78c2e0e676f76ec"
+    },
+    {
+      "path": "/competition/container-assets/assets/container.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 90070,
+      "sha256": "ab347a45618b13cb8e0911ce1f2e0db464547383923f8272012f209d34f8b5ff"
+    },
+    {
+      "path": "/competition/container-assets/assets/source-step7-1440.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 69488,
+      "sha256": "2c59330061beb3b6042db1ff5c712605b948d175af337ae08a9800c140277d9a"
+    },
+    {
+      "path": "/competition/container-assets/assets/source-step7-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5101,
+      "sha256": "2ace47340883d1a6bdecd24067137c901fe7b3a58b204dcbdd87e5b5f4976998"
+    },
+    {
+      "path": "/competition/container-assets/container-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1988,
+      "sha256": "f0cf257400160fe0410bcc1cd5ea79b334b54ea321a01e02f5b43310c7361be6"
+    },
+    {
+      "path": "/competition/container-assets/evidence/Dockerfile.before",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 1909,
+      "sha256": "a20ceacf45763dd133a874eb8b2af7b1dfb0c806dcde583c951aa66795ebc0ea"
+    },
+    {
+      "path": "/competition/container-assets/evidence/after-build.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 292,
+      "sha256": "d36179f6469ea7e6dc29d5846dc2d1756eba24d9fd1af73b973bd9e296d6e6e7"
+    },
+    {
+      "path": "/competition/container-assets/evidence/after-build.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 106450,
+      "sha256": "d0b3c8110a3037af018466f13af394ab0beac99e5ca04497d1812345e320c8a9"
+    },
+    {
+      "path": "/competition/container-assets/evidence/before-build.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1586,
+      "sha256": "0c57047fa22bfb14464ff582daea811e542e16d4d585f1d73f5f7505d16a782e"
+    },
+    {
+      "path": "/competition/container-assets/evidence/before-ecr-build.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3565,
+      "sha256": "65d196ff4e24f87f14f77755dc1b232119d2acef4fdc8263e2c39573b4da9d5c"
+    },
+    {
+      "path": "/competition/container-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2212,
+      "sha256": "a6db833a93a52955d6e28f5c4989ebd7189526afcc52a206bceab0fad48ede6c"
+    },
+    {
+      "path": "/competition/container-assets/evidence/candidate-browser.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1502,
+      "sha256": "9615e60cfc3b508eac596259450a88ae0dab2c893cfa738ef1eaa3449c3f551d"
+    },
+    {
+      "path": "/competition/container-assets/evidence/candidate-public-checks.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 30857,
+      "sha256": "d167b4bdc2bddb49f74dda13761b136950b71a3cc54fd12f34c4edc164c578f9"
+    },
+    {
+      "path": "/competition/container-assets/evidence/candidate-runtime.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 5337,
+      "sha256": "ff4c038adbed06ff2ccf3d1b33331880a29e383db57762cbc1fb89bf86b34c4f"
+    },
+    {
+      "path": "/competition/container-assets/evidence/compose-up-adapted.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 4259,
+      "sha256": "284aeb191777cfe733d10ca9a04e36b0209a12959a1cc2021b6ecba008a9867e"
+    },
+    {
+      "path": "/competition/container-assets/evidence/compose-up.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2700,
+      "sha256": "c4477be071ecd6a463e270f243cd29a4502cdbe13c0fa65600bc68f4411e27e8"
+    },
+    {
+      "path": "/competition/container-assets/evidence/compose.check.yml",
+      "status": 200,
+      "contentType": "text/yaml; charset=UTF-8",
+      "bytes": 476,
+      "sha256": "8882c75e7a06efbff5894f784c24f5f16637e3aa457cc0ac08dab8e286c28413"
+    },
+    {
+      "path": "/competition/container-assets/evidence/dockerignore.before",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 107,
+      "sha256": "28ae7bc681da1187bc2658203f1f31c75ca654251b33168cc03dcfdf67a91347"
+    },
+    {
+      "path": "/competition/container-assets/evidence/final-gate-first-failure.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 910,
+      "sha256": "d3666dfe8d2bea020b441e6b83f109f24585eb401e616a1a530fa502edba7122"
+    },
+    {
+      "path": "/competition/container-assets/evidence/final-gate-first-failure.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2970,
+      "sha256": "28d1cdb0ffe3afa46a406e0be9f04ceefe2542055130d0605d154edf0255d300"
+    },
+    {
+      "path": "/competition/container-assets/evidence/guarded-source-tests-fixed.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1001,
+      "sha256": "ecfbf05c249aaf422194f21460421bc33d4724498a4538fc00474c934dc3df4d"
+    },
+    {
+      "path": "/competition/container-assets/evidence/linux-source-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1934,
+      "sha256": "c06bdccf884813cdd65e72ea5dc761e18386ff9026f995940471343a607f08f8"
+    },
+    {
+      "path": "/competition/container-assets/evidence/minio-probe-before.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1249,
+      "sha256": "646ec55cff558489d31b8e08c6a42ecaf201841b1c4ce4b1e29410f07985572e"
+    },
+    {
+      "path": "/competition/container-assets/evidence/real-jobs.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 745,
+      "sha256": "cf26e0b1c63c22e9e6431eb6cfaae05328a316c4e1919fa2d93e9326685b7133"
+    },
+    {
+      "path": "/competition/container-assets/evidence/real-oss.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1782,
+      "sha256": "2d7d46333663a58652b42de70ef293c60874ac421e0d8d86e0463ac92646a18d"
+    },
+    {
+      "path": "/competition/container-assets/evidence/stats-snapshot.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 451,
+      "sha256": "c2ffb66cbff7840b0af52771f15ad584b5ea19fde24b559966251126c8dee55f"
+    },
+    {
+      "path": "/competition/container-assets/evidence/summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 821,
+      "sha256": "3422e148269ee24d0cf148211146b6befbf900ef6f9cf7b437289ffbb9d9f022"
+    },
+    {
+      "path": "/competition/container-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 960,
+      "sha256": "68301b0ca16ff73431af1354ecaffbb244e624623849a6871cdfe2e63b9b7a25"
+    },
+    {
+      "path": "/competition/container-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 15424,
+      "sha256": "cfa65cbe455a6a874d0f9cab313732f8071c1b69da88b07b22a5c22a092cb8f8"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/after-back.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 54870,
+      "sha256": "c07864f4b1c53d18959a058133aa77ab4dd413abad1207ca093529ebb4ebb465"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/before-back.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 62104,
+      "sha256": "1fab337a80a90bb7b0f005aabca159b80d9e7edbaedd7094d707f7112ad0e209"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/before-step3.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 55949,
+      "sha256": "e4406f012043262936917aa6eb247a584bad5ab0b3cb9edbfb49599bbcf11420"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/continuity.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 94072,
+      "sha256": "3f71f36f4df009827f52f0e0665eb590892367ea71d26d627b4b77533f81f6d0"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/local-failed.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 56176,
+      "sha256": "76c80f84a2e1007d8916882ad9d36d5a3607caf2136017ebe164cac135b290ea"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/local-share-320.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 33142,
+      "sha256": "bc8a88348c876eec156ce58502a0e272b47f32b19f6e521b85a5e87c8e200715"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/local-share-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 7412,
+      "sha256": "1c242abc0161b73a5f64b7a8b7a27a1bf74775b139a58bd972a14ed4048454e3"
+    },
+    {
+      "path": "/competition/continuity-assets/assets/local-step3-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 16315,
+      "sha256": "acd37d3a46a96533d70d3462df7700907376522d8e7a984b9c6ce5317b01fa5b"
+    },
+    {
+      "path": "/competition/continuity-assets/continuity-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1896,
+      "sha256": "6b8d6e427c17ca903a419eb312b0abcea6c296435bcd8fd167484a23c6cdd4c7"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/before-behavior.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 207,
+      "sha256": "e2b5a6fee293242cdf8106b7a34d48121aa5ffe0d0b040f0d494b52f28415f98"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2212,
+      "sha256": "1524dfa2908657600fcbd75ea676b3d6a070747320766326404db74a634aae5e"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/bundle-inventory.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 257742,
+      "sha256": "fa08758495f867901bc76f5881fbd7df6d0eb1bca9b6d301b49fb27b3150c258"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/bundle-summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1736,
+      "sha256": "57902ad66087829bca5fc2ba28820f7765d1fb26f72d3bc05ee69aadc499a31a"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/download-observation-v19.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 354,
+      "sha256": "a3da567761e37c91825eb40efad1e3c525e141549e34b688fc761cfc43fc1368"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/failure-preview.mjs",
+      "status": 200,
+      "contentType": "application/javascript; charset=UTF-8",
+      "bytes": 2162,
+      "sha256": "c3ee48560d2ca900a35224df70366b0d7dc8383faba4c1bdafc970ff25205cd0"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/final-build-behavior.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2515,
+      "sha256": "9e46fc4bac742445127c1e2e75f95ec1725309b7243ed2da33bf2f7264a3689e"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/local-behavior.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2148,
+      "sha256": "493a5d752bd72c88e9bb45629437caf69d3b51dfcca28fdd3922459ebbacb5ba"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/local-layouts-v20.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2530,
+      "sha256": "4908b7bcca6fc2f5e5c4f015cc497fb9d8a951096cf1c1fcc3601d42441be5d6"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/local-layouts.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2149,
+      "sha256": "b50ef301fd8b47c0708dd331d69ac1892dfe13dc1fd7f589bd628ea4da7d7632"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/local-qr-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 210,
+      "sha256": "e13a5497fb8e60668f273f6bfb7d482c5e48f71c84d482407e0892dbaaf9db80"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/local-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1368,
+      "sha256": "086cadba2a8977892f8fa2fc7fa26fce774fa9f0d1d2c0b7f5258fb92ad72482"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/source-hashes.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1021,
+      "sha256": "010d387e36a9038bc7fe2241dfd36e6d7e7940fe0016e9d13c8e66f02c048c9b"
+    },
+    {
+      "path": "/competition/continuity-assets/evidence/static-qr-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2389,
+      "sha256": "df77a2a62d68cdc98f1df519f189057776357b761b81045b97f973f320e68720"
+    },
+    {
+      "path": "/competition/continuity-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 958,
+      "sha256": "7c9b126784013bfd1d9ea757553e47f0e8d8ecba95b1adde8d270cbe09aad1eb"
+    },
+    {
+      "path": "/competition/continuity-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 16205,
+      "sha256": "cc9a2518bed8de15d753433bbdda3e45fed8bbeeb8f575e6d4f2b494a53737b0"
+    },
+    {
+      "path": "/competition/dataflow.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 117296,
+      "sha256": "74ba0623847e51a4a23b7927408e5b376c383f3972d8fb8ec530cd5ef004e248"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/after-reproduce-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5395,
+      "sha256": "4760e8eb9676adda9a31b4f13de5c5508bc21de236319eb236eb95ab8b144fef"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/before-reproduce-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 66462,
+      "sha256": "23b8883c150d687d7150330f5c72f1e201e3cd7c5aa4bbe6612f18ac68d1a32c"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/delivery.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 106760,
+      "sha256": "3a7dea27b1742e607a985232822dc01cad87b40b8c123454ca65406964773bb8"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/package-step7-1440.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 71283,
+      "sha256": "6bb6b8ac0ed59c58e02e656970d1ae0f78e55350d0885febc2b3ef9aac08cd22"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/package-step7-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 33125,
+      "sha256": "0a2bc8e13f82e053e708be7bb7368a7342839ab2634e485c9e7f627393581e94"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/package-video-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 44881,
+      "sha256": "8d7633f3ecbb0fdd27aebb1243592b4c75c268493d6f6ca0fb5d0e4a08bff92a"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/package-workspace-1440.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 38882,
+      "sha256": "9bd8a47c9d9b97f8a6b7443f702b25f90e8fca14eb92973e55e016e368d1b802"
+    },
+    {
+      "path": "/competition/delivery-assets/assets/package-workspace-390.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 24284,
+      "sha256": "fcbfe52582d1a30996e66807770f796488a4fa02134cdf72db839acf6de7ec08"
+    },
+    {
+      "path": "/competition/delivery-assets/delivery-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1810,
+      "sha256": "72df3910ef6eb153facd847638019228054468c2e05914df34758c59177189c4"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2214,
+      "sha256": "b3a859ee75b7be0486c18686dd638bfdfaa35a6927b57d1b09bc7229a8e2f675"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/clean-install.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 26,
+      "sha256": "7d692a4c72e1d6b780c14041a204a3e1d1f63707a644d02e78709439f2bf5374"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/extracted-demo-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3370,
+      "sha256": "fcbbcb0f1ce20c8f6d68a0e827a760db9f49be181df96e7f4edfa00bcddf579f"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/gate-build.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 19825,
+      "sha256": "2074e03166713ddb47e636180d909127343b60a1372afa8ef7dd1327cd05c86d"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/gate-demo.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 262,
+      "sha256": "cdeba1f611407cf84b6608dc565cbf6c858ba95d4b71f442da2288ba8de7043b"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/gate-deployment-assets.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1118,
+      "sha256": "18c563a93b1d6fa125a568e28a42eccad4be85d21b2be0c26646305f40573d93"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/gate-evaluation-corpus.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 711,
+      "sha256": "e66899682371aa2318f6867012c71672d4ff6ed7c41da01d5ab561dfee654b84"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/gate-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 247972,
+      "sha256": "ba9c2e34d2b12b8367906aa63ef6e127a4827e7c27f3c0bd6f6f03087c6b003f"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/integrity-after.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 683,
+      "sha256": "8306fc10a366d5ffdd52e536dfab1b1822700e166ce7084d912e1c54a01ebc2c"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/integrity-before.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 684,
+      "sha256": "66d29eec8d09c9e937c51f5f5c07a8c13f6e3d298ccfee65f22ef1947b4a1fbf"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/integrity-restored.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 683,
+      "sha256": "b7e12e3c5b4c72f26890e2b512cf93f99e636c8a309e549c877bc666be64f103"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/package-browser.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 19056,
+      "sha256": "d63b8b904720172d28ef2dfc483cc700c91d07140ab694bb31c5b4abddfdb902"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/package-comparison.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3476,
+      "sha256": "75e33d180589e06f71cd468195e64e7bc09670f76eb5fb2258c9aa3b59a57d88"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/package-size-breakdown.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1874,
+      "sha256": "3caa94fd1a7333fbab91d32d8c291014b008d14ea6d21b7741f253fa9527349c"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/package-summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2250,
+      "sha256": "e07ebe89ec8e278840b6f759c4b5d018d83db90795653517e443ca3c0d855ec6"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/reproduction.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2548,
+      "sha256": "bfd8b895537f15c6290d82ca58b68ea7e7eb716068cc791c22c8b7b1885505e7"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/source-records.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 4825,
+      "sha256": "d06f1bfc9f29b4c6394e14ed047e5bd6ea81d0e0a93bfcfef0e4bb30f953bfa9"
+    },
+    {
+      "path": "/competition/delivery-assets/evidence/verification-summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1320,
+      "sha256": "95b162ca8b873cecc4b5c4a56bbeaf1f15d279c63f9a7e5ed0fcbc0f85ac321f"
+    },
+    {
+      "path": "/competition/delivery-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 927,
+      "sha256": "1008d1ca8f447dffe6b07d319a9dd1ee198018d87fe6639472ee285808f64d79"
+    },
+    {
+      "path": "/competition/delivery-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 15400,
+      "sha256": "45f67fe70e995874840b6133aff01e4c9cd92113133bff05f84b2962ae8ba72e"
+    },
+    {
+      "path": "/competition/demo-chapters.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 6094,
+      "sha256": "115f075fedc5dcab7be0c44950b699d4c33b8130f683da0d7618903d4a1c6aec"
+    },
+    {
+      "path": "/competition/demo-chapters.vtt",
+      "status": 200,
+      "contentType": "text/vtt; charset=UTF-8",
+      "bytes": 838,
+      "sha256": "8a402173c8536d14871ec0b07ab87c225452ed8e835265a0f432a51cd7f5b944"
+    },
+    {
+      "path": "/competition/demo-poster.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 61383,
+      "sha256": "56d4478ac1f9b36d47ca1af0a822f2fde6b9cc4cb3529c37a98bf0c38d8b06c9"
+    },
+    {
+      "path": "/competition/demo-transcript.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 8517,
+      "sha256": "287e2b914466a1bc0937356a9b7014dd089f27b82df7efd881dfd4b4af71e92a"
+    },
+    {
+      "path": "/competition/demo-transcript.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3759,
+      "sha256": "bff5d3b34ba61b03f9426b441b6d4fb4f3998af533cac14e5590ab59120f1659"
+    },
+    {
+      "path": "/competition/demo-zh.vtt",
+      "status": 200,
+      "contentType": "text/vtt; charset=UTF-8",
+      "bytes": 2541,
+      "sha256": "ad804f0964ff1b1b98add3ffbaf56587f42f4583462a20cd290dbcbb7ac4a2ff"
+    },
+    {
+      "path": "/competition/demo.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 1431534,
+      "sha256": "a1fd4dfbf4130a9ab83d5163bed71c4fc570d9870e34825cce0d800aca068a13"
+    },
+    {
+      "path": "/competition/entry-assets/assets/after-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 78408,
+      "sha256": "71941804892f8669aa7c11f34cca35b820b5f8e1e0882343c405287a1a44bba7"
+    },
+    {
+      "path": "/competition/entry-assets/assets/after-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 37338,
+      "sha256": "dfbb2eb2b41c5dc5558130de6c8022ebedb5217d96cf7bc95044e40c2b689ed5"
+    },
+    {
+      "path": "/competition/entry-assets/assets/before-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 78408,
+      "sha256": "71941804892f8669aa7c11f34cca35b820b5f8e1e0882343c405287a1a44bba7"
+    },
+    {
+      "path": "/competition/entry-assets/assets/before-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 37338,
+      "sha256": "dfbb2eb2b41c5dc5558130de6c8022ebedb5217d96cf7bc95044e40c2b689ed5"
+    },
+    {
+      "path": "/competition/entry-assets/assets/calendar-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 31702,
+      "sha256": "b2eccfa9f137900bafa841ad61e5500f34d00707e6c6ac12c6dfd2a913eb2388"
+    },
+    {
+      "path": "/competition/entry-assets/assets/entry-loading-generated.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1512672,
+      "sha256": "efe7053a69f4c791f1cb9df579d798c2920925d1cca2ae936de4e2b804b97518"
+    },
+    {
+      "path": "/competition/entry-assets/assets/entry-loading.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 130646,
+      "sha256": "39e5b34fa1e6fee6c9831eaf54dfc81a9aa65c10ad788d56d140138171d9d94e"
+    },
+    {
+      "path": "/competition/entry-assets/assets/math-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 77605,
+      "sha256": "7a7b803f2fc0b024bdd933712ae0de804431fe3e5bd59b242fb9ac95210f2289"
+    },
+    {
+      "path": "/competition/entry-assets/assets/public-experience-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 78408,
+      "sha256": "71941804892f8669aa7c11f34cca35b820b5f8e1e0882343c405287a1a44bba7"
+    },
+    {
+      "path": "/competition/entry-assets/assets/public-experience-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 37338,
+      "sha256": "dfbb2eb2b41c5dc5558130de6c8022ebedb5217d96cf7bc95044e40c2b689ed5"
+    },
+    {
+      "path": "/competition/entry-assets/assets/public-report-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 43951,
+      "sha256": "f7e3506b0c06b5877f64bd05a9a106aff5f52cebc292ec9dfcada28543cb5b6e"
+    },
+    {
+      "path": "/competition/entry-assets/entry-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2007,
+      "sha256": "12b156755db93de9ce4e670718d5fd14f63153afb9637b4bd3151929a4856b6e"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/browser-samples.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 129999,
+      "sha256": "faea853168c488b1b60ba1a987b85ae3da4ece1f5f6c03a8fd52387e8dc6dfda"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2215,
+      "sha256": "411c01e03312779fb5a62e142f6e9c7c745002b53e7a4e0a7b6a05ed3906cf9e"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/bundle-after.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 255693,
+      "sha256": "dce449864ce848a26438ca344c4293b8b0877aafddcdff449294377babb8f71c"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/bundle-before.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 218652,
+      "sha256": "88c1e03abd1f14fa0f73ff93d8e461fda2edff938e3151c36c82d6193e40b0f3"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/candidate-entry-checks-v17.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 373,
+      "sha256": "34480c2afecbe5e7b344b0ec95736ecbf34a797c5ff3a43987b2b18f830345e4"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/candidate-production-tests-v17.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6419,
+      "sha256": "dda471154bc4b82d6ed7f634f04fb7db80972af497bd2f16b043c2223f2fd2f3"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/deploy-v17.sh",
+      "status": 200,
+      "contentType": "application/x-sh",
+      "bytes": 9535,
+      "sha256": "4cc015ce4f2a092506fcdfcf8c00521b77567e080ace80cdba3b2a08001b8038"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/deploy-v17.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3833,
+      "sha256": "2ae4ac88514476d72ac55ad90dc5a2a529fbf823cecdebad9eb3bdedb5cf3cd9"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/final-build-check.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 287,
+      "sha256": "601c6104d2d716497756a46e1c5228c733b604fb27c2d4d7dd5564dd6e0718e4"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-after.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 9050,
+      "sha256": "86d3947475827499bbbc02f9c64d1468be8c5a0c5780e779ff385c141a1b10cc"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-before.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 7464,
+      "sha256": "c7d108b256e5006425fb54660ed389019112e0a0d742eb83e42b61d7c9538356"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-layouts.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1551,
+      "sha256": "5a6fa21eae506340e223a30886f84c7784706e848372fd96b8ff32b90e2ccba2"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-seven-steps.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 22857,
+      "sha256": "b507bcb25eb1d559f6848bee5d42b05228bfcfc15533d8a0cca18668fc56d0c9"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-verification-v17.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 20983,
+      "sha256": "a6ecbd2115e8f55fd59b7a6a1ee96ea74340c0973b2746ffe39f76ac7b6275f8"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/public-wire-comparison.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1068,
+      "sha256": "10173e34b02bd9234559cc564595b0b9135303159419a9a766936495b52af950"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/release-v17-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 224,
+      "sha256": "7c43cb1683ddba2f1fc06ae581c534e426cf63554cce9c5ba2250e866c4b43ba"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/release-v17-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 68076,
+      "sha256": "eed7bd7d4986366c9006def6875df31c3e2432bf2887356c06afb3a9e2a2f0cb"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/report-layouts.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 505,
+      "sha256": "2291f1b993d8c1356761e7ba81f1680de78d32c8af1d6da91f7280bd2ba9e6ad"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/resources-public-v17.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 48008,
+      "sha256": "90396480d5963e7f879e874bb34c7be5244a5ef2e2cf231224bb2f0db2b85ceb"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/runtime-v17.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3052,
+      "sha256": "0f30f6891e031f0a8533f2ddbf47bc86a7faef8e5bd61defb2b141a795bad5d2"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/samples.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=UTF-8",
+      "bytes": 571,
+      "sha256": "576f7f2cc8f871b7c404b4d7e407569e4dd34e22638b52322ddb656b51c4bb1e"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/screenshot-review.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1252,
+      "sha256": "4ff5c3565269a4c69f6e8641f06ab7199f4f7cae73858b73cbd7964f286bdf04"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/source-hashes.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1820,
+      "sha256": "e4cf010cbb4cd0d3d016be47f0594af7f125acf82f7160f90c635ae7d545544d"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 4998,
+      "sha256": "f1a1a6109daa1d351e25cd882f0fed66674a14922b6259900ecb6814bac5dd2c"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/ui-checks.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 21245,
+      "sha256": "6a2a6e00014e0c7643af5583a5806a1721031df11b22f0f08a48d7728080886e"
+    },
+    {
+      "path": "/competition/entry-assets/evidence/verify-runtime-v17.py",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 3943,
+      "sha256": "a4f0cee02d1162a771036369b55643653be35d267e0943f1a2b30ff531bd3d42"
+    },
+    {
+      "path": "/competition/entry-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 834,
+      "sha256": "0795126a4bf05f8c850479a45f97ff6b9859b3cea408fd9fea2f57287c3f5f66"
+    },
+    {
+      "path": "/competition/entry-release-v17.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 12038,
+      "sha256": "f3b6976ecb2cc76d8f4cd808d3efb66651fc9b381247882039f1e2c01eb2822f"
+    },
+    {
+      "path": "/competition/entry-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 17994,
+      "sha256": "a5177aa7e8d85a84b74e855e6b61460f85b1eeb2b2780f10b9025bd64e1b150c"
+    },
+    {
+      "path": "/competition/experience-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 4485,
+      "sha256": "6ab3f31787c5667870ca2203dc8f320b2689c887ebb6753ff9c5ec261eb6bf34"
+    },
+    {
+      "path": "/competition/experience-step-0-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5741,
+      "sha256": "efd949e62166d8d100b73328134e49923726510fd86bd66b3d10375331c717a9"
+    },
+    {
+      "path": "/competition/experience-step-1-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5682,
+      "sha256": "10fb2a8ea50ea5e549e44a92fd01c672522de259abd739c916e9c004ccd62ae8"
+    },
+    {
+      "path": "/competition/experience-step-2-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5617,
+      "sha256": "2423b5d2915b6bc17069aff79372c9b0c4a75567ccdb3658653f3577fb24e90e"
+    },
+    {
+      "path": "/competition/experience-step-3-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5613,
+      "sha256": "2e500c29fc131e7dd6464356a556bb37445ffa0a8a21620c525741f65557e8fc"
+    },
+    {
+      "path": "/competition/experience-step-4-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5728,
+      "sha256": "edf6c555c1bbae69c022e7a97891c77755d2fe36a1812eebc781bfe2559550d2"
+    },
+    {
+      "path": "/competition/experience-step-5-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5719,
+      "sha256": "b0d09e09258adff528d5a0cc81db7f6712aafc6970920946e89f5c7bf2c570d7"
+    },
+    {
+      "path": "/competition/experience-step-6-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5686,
+      "sha256": "35d03b1d654754b90faab8ec3e609556298ee5b56056de7b0ff694a8a99ca287"
+    },
+    {
+      "path": "/competition/experience-step-7-qr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 5684,
+      "sha256": "9810964f41fe240ee2bdb4087330927281d0eb145a73888552c997f08622cf3f"
+    },
+    {
+      "path": "/competition/experience-step-qr.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2048,
+      "sha256": "bfe2484d7200da779d488a58619e9b6a2dea592f7d6917d3d01cd85c653143bc"
+    },
+    {
+      "path": "/competition/k8s-measurements.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 87673,
+      "sha256": "087ab107ee44e59ac3365008884228eaee41b7180a703e43dd5147028d4f8aa4"
+    },
+    {
+      "path": "/competition/observability.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 97338,
+      "sha256": "f2f588b8f94787b4414432f4b36ebde99316807c648968ba7b7edbabc71086ac"
+    },
+    {
+      "path": "/competition/operations-assets/evidence/official-model-price.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 566,
+      "sha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b"
+    },
+    {
+      "path": "/competition/operations-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 23260,
+      "sha256": "a2cbd07783a1bd3baa7384785cd67f17c62f68c9f7e77c9498ef1452442a6b68"
+    },
+    {
+      "path": "/competition/performance-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 38267,
+      "sha256": "ffcad85abaa315257f6287bc3e1c0cda576ec6eff945299b355e986033b33096"
+    },
+    {
+      "path": "/competition/performance.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 60870,
+      "sha256": "d0db189f1bd3053dfd9384724793ceb0badeb7e2996e59f56606773885b9feab"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/browser-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2553,
+      "sha256": "49c100b37abc16b3cc76df17c817ae6cc2c20eb16c25a4c6dcf75e86ddb040c0"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/candidate-production-tests-v10.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6424,
+      "sha256": "9840db62873a4e8cb9d97d7077a036773fd2662138084b8ca8b1656b59f6f000"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/deploy-v10.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2782,
+      "sha256": "556f549bb5c0d0b7ded63ad9f57262c13d61a8fc2efe6781b371c93d7c5b7b6d"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/public-verification-v10.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 9766,
+      "sha256": "b0dfa08fb70c8bd175f73e8f04b522cb15472c7c6af714cc4a92a4317b43e62f"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/release-v10-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 44827,
+      "sha256": "cbdeb5728b9aa40adb7ce318d19bf4b6267c8c4303f6b2b0e553dda39a6d4fe0"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/runtime-verification-v10.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3042,
+      "sha256": "60f018f34a8d8f4a95b46c0160be8c4cb8757b64faefea897951e3e9ea61bd29"
+    },
+    {
+      "path": "/competition/rag-assets/evidence/static-verification-v10.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3286,
+      "sha256": "3cc4939a9052fa5e46afeeac30c46b9043db8995850eee9854efb17dad13f56b"
+    },
+    {
+      "path": "/competition/rag-assets/images/desktop-answer.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 160453,
+      "sha256": "93b90d7c38807d9a4f418063b94a2d6fde73a5177d73323a8d170afe2bad683f"
+    },
+    {
+      "path": "/competition/rag-assets/images/mobile-answer.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 48713,
+      "sha256": "1c6812725c4a9732e3bdeab97b81edae9441f3b5f6918eb84be200ef7ac449b9"
+    },
+    {
+      "path": "/competition/rag-assets/images/mobile-entry.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 47731,
+      "sha256": "bbf3ff436ba8bb2d8036d8c750110427692a0cec08640259f4d9d31ba48cf15c"
+    },
+    {
+      "path": "/competition/rag-assets/images/public-diagram-v10-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 62436,
+      "sha256": "acd72790954e25c943fb563d7baa4041c4c673c546d014a2349df0261f15f5e6"
+    },
+    {
+      "path": "/competition/rag-assets/images/public-evidence-rag-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 47123,
+      "sha256": "bde34d84d81eebfc542708d4c89d28b7f1c339fdbad3082eebf6202a7d1fe8fe"
+    },
+    {
+      "path": "/competition/rag-deployment.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 12144,
+      "sha256": "b1461c3ff6e2fe2f184d23984ce73b4ab5e1681302522090967a7a7b91ad1e01"
+    },
+    {
+      "path": "/competition/rag-evidence.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 117338,
+      "sha256": "31d595e603ca16ff09f128fc955549b8e6a0fcd3829bceb42ea99d63703a1bfb"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/concise-answers-generated.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1497057,
+      "sha256": "d1d6cfd7ed532d366871ddd0edfd01f99f6922783fff465c37e44d142ca4b500"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/concise-answers.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 131592,
+      "sha256": "5459811b6d752c9453b29babc280e1a6905265b03278a435d2d87319d247c3e9"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/local-evidence-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 82681,
+      "sha256": "0573d28d56cdb5753ba38af08e3119b5969c9a68f9b066b9640d63ae5869f41a"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/local-evidence-mobile-before.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 47060,
+      "sha256": "1b4c9e50e30005413747c986346bf32c0d048b5d3fe47f98cf0b61e50daec5bd"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/local-evidence-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 40855,
+      "sha256": "9c1cee2b5bdd920f1d3dbab9ea15b83b5b15b1ac0d52fb0283251f747c8add05"
+    },
+    {
+      "path": "/competition/rag-latency-assets/assets/local-report-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 51972,
+      "sha256": "519c49dc8e6d4eee86b3c7469898069707fac8dba0452dcd210830ad17521bd7"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1778,
+      "sha256": "5d9cad06349cc4519546f8de0c04c4b5e2741c384bbbca1083d6da5650e8c278"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/calls.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=UTF-8",
+      "bytes": 4136,
+      "sha256": "fb9e6c54b1b67eb1a8c628514714a8cfa6de0358cc4c4bc5be7757d7b3ad475d"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/corpus.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 8575,
+      "sha256": "8b8ca9c95b95c11daad7a0a37c6c5ec39939c587a2558f1b415e2e75dde76967"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/full-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 103559,
+      "sha256": "aa7d02c8e44ca7df98e97b74188a11a60aa21e610eef94a30c23ee4124b08ed6"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1595,
+      "sha256": "27ecaeb9700158529064937a1beebd265168905e7359379418be91c1f5228cf7"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/results.jsonl",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 52998,
+      "sha256": "35f14da841f7cdec0cdd713d3228d35b1d2a8b865e12fd2752d3259bf68d8a0a"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 5767,
+      "sha256": "06906e5fa31f7fbc3f0cc905d6ecdc5ba8afcb88a3032695db7e0551275645f8"
+    },
+    {
+      "path": "/competition/rag-latency-assets/evidence/ui-layout.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 5886,
+      "sha256": "aaf665cf3a5ae1a450a833f60c057a1220f86766a54b77f8429c62e97fd64e38"
+    },
+    {
+      "path": "/competition/rag-latency-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 916,
+      "sha256": "d26cc860519403c70d8015096790055df94b2e410d0e9d02369246a0db991de4"
+    },
+    {
+      "path": "/competition/rag-latency-assets/latency-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2129,
+      "sha256": "781b6650751843670c3c9bc3a45632abc49c8fca678a995e2145b04f5bfb74bd"
+    },
+    {
+      "path": "/competition/rag-latency-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 18693,
+      "sha256": "be17fb69adc7d5692c5c2bcef4e43066c6aa1e88e4fe873e39423fc964892b5f"
+    },
+    {
+      "path": "/competition/rag-release-v10.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 9702,
+      "sha256": "18a9c168b25428398554beba480a84f1f5c6cb7ad3882c9745b5d0bda8ceef3e"
+    },
+    {
+      "path": "/competition/rag-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 25837,
+      "sha256": "4b3ee6c4cf0865b8ae54007ac4ce191774de9baa4162d3902f583059c88153b9"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/local-evidence-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 112770,
+      "sha256": "333daaff4143529cb9be3d2e66474bc86959b07635dd55142606ca7cb66b3640"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/local-evidence-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 36748,
+      "sha256": "c98ebe2e06a72406fc5886e161b12f98459823c013b5980a3f74db76257b6083"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/local-report-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 66167,
+      "sha256": "f8ef850158096a8b2da01a39cda58dc041b9078380c96de91c8a7ee1bd53a815"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/public-evidence-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 112929,
+      "sha256": "031e0f1d2ce714dac6601ccfa7533b722072101e11de76c36bd45001b589fc89"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/public-evidence-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 36748,
+      "sha256": "c98ebe2e06a72406fc5886e161b12f98459823c013b5980a3f74db76257b6083"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/public-report-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 54123,
+      "sha256": "b5020d900d405bf930f56b2532bcb8df2adcfe255e0a5c3df9909e77c9955e69"
+    },
+    {
+      "path": "/competition/recovery-assets/assets/recovery-flow.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 123450,
+      "sha256": "50faca25925e7e0238091abe746f116ff7c5df66a05738cf39405cdd2cff9feb"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/backup-smoke.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2536,
+      "sha256": "26c68056579439bcd6ed177bd0f09b421bb6e7ae8a4aa4debb1a031a4a8fcfb3"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/backup.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 681,
+      "sha256": "349304d6877d2a2b90f8fb946c8e5405d8b6d1349b451e9d4937e5d0f01df9b3"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/budget-total.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2209,
+      "sha256": "e4d0cfd6e98eddaf9f2e7ac3cce64459ca5cf38245ffbed06801a7413ff58e9e"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/candidate-production-tests-v18.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6423,
+      "sha256": "e8fc64fd7ca3d0b19b34612a532fd696dce8c9ccf0e74fcf5b947cd39bf2edb5"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/candidate-recovery-evidence-v18.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 350,
+      "sha256": "57fa20d044ee635695db6606bcb0c38b529e5be6838c3982f15135ebb7e420ad"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/candidate-recovery-tests-v18.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3287,
+      "sha256": "9cb8316dfd0cefcbc5d76f6ce4b3f308449fba5c1eec435fe424872094e7550b"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/cleanup.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1274,
+      "sha256": "a996f0da80b13e058af5c4ea82c61230f9144d7efd4187540cd3d437830dfbae"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/deploy-v18.sh",
+      "status": 200,
+      "contentType": "application/x-sh",
+      "bytes": 10528,
+      "sha256": "79c464fae4a1fa6e13e132d72cc2c88672a3ce9aab80ec1282d1db66acd8a73b"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/deploy-v18.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 4030,
+      "sha256": "ebb96342e5f6064806f2f1f0c3314e14198b8a7f7a394f8624da0ca3be4e8f41"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/drill-summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3491,
+      "sha256": "c10d29c0b3f0167d470155081a0cd45f6077d5511ad2ba5178de66ad63ea05cc"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/encrypted-copy-key-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 212,
+      "sha256": "43af5be839604005948f95c272906284785cf64db6f113f122b2c36154181704"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/encrypted-copy.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 420,
+      "sha256": "acdc2571373ced4b7bc565a5bf9bc30f8eb02f4d6668006484b34ef02c57fc1e"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/existing-target.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 199,
+      "sha256": "9b87eb790d12d3f6aa847f9be9ddda807391d243bae67069b621e2879da07320"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/failure-probes.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 563,
+      "sha256": "4558300307331f7df56b9234bc2df09e97cad89ff8226bab37000355fc3a89cf"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/local-layouts.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3709,
+      "sha256": "69f66759fcbb63dab4d80e1b16b254e20a786ec59f8e604202650257ad0f79b3"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/public-availability.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 15633,
+      "sha256": "a7ce838a4e6e0a7f672b888e81aff60fa11edcff89f1bf092c5b6dd60770a6b2"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/public-layouts.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3254,
+      "sha256": "d1c0c8310e56695a0cca707734be183fd083a0543337fe817431aa8247c9ef02"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/public-verification-v18.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 23399,
+      "sha256": "d6e657359c1327da252a01d6a7b01724c76ea84d59b7a883d6f5d207f79c8f09"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/recovery-proof.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2384,
+      "sha256": "2404b1416108e7edf19bb1df53b0305f65db6127fd2790a36f6c64a399434552"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/recovery-summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1696,
+      "sha256": "aafb019c5d8bd8e9f7cdddf4421420a86e8210c1482efda98c462c622ea04a4f"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/release-v18-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 224,
+      "sha256": "3a90c12edc9347877e6d69a7c6cf6f0fd71876a9493f8adbf7b2312da274c06a"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/release-v18-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 74807,
+      "sha256": "e03a9dfad632730ceae5b3ed2623a116bceb6d4b99151d91444b7dce5b4cd3df"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/resources-public-v18.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 59385,
+      "sha256": "cc02b30bdc86a2274b2e38f8cebd97c52a6b0785d258ac8978483d82e9c198cf"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/restore.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 4736,
+      "sha256": "c60eba6cbf80fb82c8b2859547d917a74dd00673286f9713d75666988a8f9d84"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/runtime-v18.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3050,
+      "sha256": "63af1d59f2dec575a5ecf9cd9ee2a13f84049573dcccfde0008f9a369a469b7c"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/screenshot-review.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1125,
+      "sha256": "1b25bfe5823e2a78a898da1c44049531a8be95d4691159afee48accac332dafd"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/smoke-consistent-backup.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 878,
+      "sha256": "427404abc397adab20975b7bd571bf0677504060417de95306fa52ca9119a4dd"
+    },
+    {
+      "path": "/competition/recovery-assets/evidence/verify-runtime-v18.py",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 3946,
+      "sha256": "15f5d1b736596c86e511a3ce7467ea2f909cb561cd164d8987f9b97b32a8331c"
+    },
+    {
+      "path": "/competition/recovery-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1095,
+      "sha256": "e86c62765d855e0944476e1b98c0bc1d0f6a858a8c98fdb373af3d976a769fec"
+    },
+    {
+      "path": "/competition/recovery-assets/recovery-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2055,
+      "sha256": "3aa7edc15d9cce8cb1a9676740a68ced8cb6c51479a51107b7b597c66e3f8f3d"
+    },
+    {
+      "path": "/competition/recovery-release-v18.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 10341,
+      "sha256": "49262c1d1b6a42a1eda65b048143384d0f21c6a89050a36e812895abda2434f3"
+    },
+    {
+      "path": "/competition/recovery-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 20771,
+      "sha256": "8fe5c50c31e5e1fe4160580aa8c21e520304799c47e93f7353133354ea674317"
+    },
+    {
+      "path": "/competition/reply-assets/assets/public-flow-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 63576,
+      "sha256": "bd9ba4f62de46103fa74827dfe59895cf6cc6c3c6709b596c48105751d4b6a96"
+    },
+    {
+      "path": "/competition/reply-assets/assets/public-report-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 46837,
+      "sha256": "bb1996be79ee1a68cb1a8627ec533d6dfe6ccd667fddcd9b7dc3425a279aa936"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-edit-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 36147,
+      "sha256": "0060ecb0dd1c7145dc785ff2850a70d2ac4fa63c888d296427e4dd134e681fa3"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-flow.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1492272,
+      "sha256": "374b13a0e22e421adf111abb4af4d8624122b123d476ea8875f94d573beed926"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-flow.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 123762,
+      "sha256": "f1a88b05ef191f28e6e1879e602c6f5dfc40a2063f0bb8fe41e5a98960b137a8"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-review-320.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 35572,
+      "sha256": "73377bb4684d1092f59fd1aa72c2a148901e18a9aa0ce6c31b36cc88940834e1"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-review-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 142698,
+      "sha256": "87df45203985843c6accab73db78d29e479753da3d3d6e3dd207ca6a27a81f97"
+    },
+    {
+      "path": "/competition/reply-assets/assets/reply-review-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 42694,
+      "sha256": "5c623e45e21262e3b1eb98e017c7234a21add64ef21b818e6f2f8848380f1182"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/build.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 17359,
+      "sha256": "9f3be0f23f4770ee08887e7414ec2672b13e5c52e2f49a6d27a425a5f89de0c6"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/candidate-postgres-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1654,
+      "sha256": "a5cdde99dfd17d88504c4f630e140e28fb779fd0dc2be8b787f42b7c6beb8714"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/candidate-production-tests-v13.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6423,
+      "sha256": "3c8b7ba1012fe1aa0268621a644a90faa0cddacc43429b91971d8c6acf049e09"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/candidate-reply-tests-v13.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6146,
+      "sha256": "71f4f1fa978ffb977edad36b9d175504854c830842d1de1d4008b7b285863a4c"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/deploy-v13.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3768,
+      "sha256": "3c3b19a2238783851e950501755f76e0f739bafc24e391651f13c4a9c13fa6a6"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/full-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 102841,
+      "sha256": "1912b56f55c6029dd7982145f77dab190138c50f744b1097064c918bbb9513ff"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/postgres-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1647,
+      "sha256": "537a653ba8ace6e946eecc580649379e3af31c0eea440a0f2d660029378deaba"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/production-read-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1143,
+      "sha256": "85fcb08588ef7804127ec5370fb7175d00d495fb2fa3b8261fd186751a0623cc"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/public-browser-verification-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2293,
+      "sha256": "78b6ddd931d945205655d14eb3753ce67a3d36925e91b1d75deb4ac7741e5a59"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/public-verification-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 14677,
+      "sha256": "c925255d08d094b0158cfa401316563fb8676f0cb69713bdefd057e150015ec3"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/publication-layout.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2818,
+      "sha256": "c97b6e590433247066ff2c3353a7ae1c0284ddd16c1de4cbdbf4a99915900f09"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/release-v13-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 224,
+      "sha256": "ed39c3eb5635ca9173365e5a3c5e4372905504d7b9d9c6dddef29dbb258586d6"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/release-v13-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 52729,
+      "sha256": "7bbd672260c2ec233889db9c1021afbd155dddd96c5023c3fce617e6b979c3df"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/runtime-verification-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3050,
+      "sha256": "d8d4bcd964ad9590c2b99c29021dbb09ca314d99b8df05db1e08b035140d0923"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/static-verification-v13.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 22490,
+      "sha256": "11cb3a28d9e412db12fa457aaa07905371b58ab59f67814ea5200a9be40a0596"
+    },
+    {
+      "path": "/competition/reply-assets/evidence/ui-layout.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 5209,
+      "sha256": "1ed11a19d13be2f52d67a6076e722c49c467ad979ad6c5ee01dd35437e9411ed"
+    },
+    {
+      "path": "/competition/reply-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 665,
+      "sha256": "d40005e5456e9ccb0e792bd9ff074eaf84307d4f2905328d11d09b54a1a53f14"
+    },
+    {
+      "path": "/competition/reply-assets/reply-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1723,
+      "sha256": "5f40cc79220b54e9161e08f2453d3450df13ae940316dd6d11b27df39a369f11"
+    },
+    {
+      "path": "/competition/reply-release-v13.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 10130,
+      "sha256": "b4ad2736c905a260d4768240809e66a2fc07fc3d0ed5d510f433caf237610fcf"
+    },
+    {
+      "path": "/competition/reply-review-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 14744,
+      "sha256": "888b77528773dde539a62c913e107ccb04621364a4c7f765d82f8d9d05abb73f"
+    },
+    {
+      "path": "/competition/report-assets/architecture-en-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2277,
+      "sha256": "55ba6de98678cf75c24e7840755002bf708414c9cba2afc923e05fd57090f07f"
+    },
+    {
+      "path": "/competition/report-assets/dataflow-en-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1575,
+      "sha256": "bb40729c0cb935a88cc0f57fdef2ea521c7f232c98d07d68eeee5caf5345738f"
+    },
+    {
+      "path": "/competition/report-assets/evidence/model-full/results.jsonl",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 29736,
+      "sha256": "6e55c71b88d5dd3317de63753ada9f7a89766f65d298064b574f46fbfea4640f"
+    },
+    {
+      "path": "/competition/report-assets/evidence/video-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 4651,
+      "sha256": "5efa5a7c6f67a7e6bb05f5a476a1610dd153f11cfbce99c1a9838adf92c1daca"
+    },
+    {
+      "path": "/competition/report-assets/performance-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1579,
+      "sha256": "29d4d67212f31da26aea4332560ebbcc07d6e8436f124483d250c92d61fc1287"
+    },
+    {
+      "path": "/competition/report-assets/value-study.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=UTF-8",
+      "bytes": 243,
+      "sha256": "39323bc65a0cd0bc608add38a09e72b033817f01367cf753be795c79028fd5c8"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/cover-comparison.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 141456,
+      "sha256": "7b9114715e6e29109bf17b9e0b96a40f5511e5323ef0e7e33c42cc804c0cd33c"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/local-evidence-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 47091,
+      "sha256": "83457c835cead475f3d41ef4e6294bb2ec72bb9f82fdf62ded23c3a5c925fc50"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/local-reply-chapter.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 55593,
+      "sha256": "cb9a1eb3882f66b7e97768661f2cbd5a80edd00538dfb72e9b1f2752c202593c"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/pages-01-07.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 337543,
+      "sha256": "b956dd46dad78553700f32a90a43200e9e29125f1e088a1eef17f01cd1bec6c0"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/pages-08-14.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 321440,
+      "sha256": "10f85d0353f654dc971fc7e8e0e0d7e6f3b46f2a4cd4f4b7808278e8d9fbd499"
+    },
+    {
+      "path": "/competition/report-refresh-assets/assets/pages-15-21.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 306424,
+      "sha256": "5a82ffb636cfcd177b6c742bb1c2b92609d32f3d8a2df43c540369c702f2a3bc"
+    },
+    {
+      "path": "/competition/report-refresh-assets/evidence/before-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 726,
+      "sha256": "59258e1751eaa4161617d5946a994097bd425e7d101e963b8d0c4d41bb1f495d"
+    },
+    {
+      "path": "/competition/report-refresh-assets/evidence/before-pdf-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2113,
+      "sha256": "c0b87b29575825dcfe062bfe758e2f55dab8cce3d97429fb9016a2be03f372f5"
+    },
+    {
+      "path": "/competition/report-refresh-assets/evidence/browser-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 8073,
+      "sha256": "4cb0e92fee011d2108cfcbb39e1d5aca1b6df3413638c6c2b50f81ffb3deae9b"
+    },
+    {
+      "path": "/competition/report-refresh-assets/evidence/full-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 103419,
+      "sha256": "916cb58dc7a15efab11a5dae2ed3352b0aace7d15c80d8f2eb742bc2bb173333"
+    },
+    {
+      "path": "/competition/report-refresh.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 10741,
+      "sha256": "1e2f12bebcecc059fdd5753bbda694b32a3c831f8174ae73c375abe50be5468d"
+    },
+    {
+      "path": "/competition/report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 28937,
+      "sha256": "99c9c1395c0dd89dd8356ef9f6c48c30017102a171a525d8c25b4236bb12869b"
+    },
+    {
+      "path": "/competition/reproduce.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 5465,
+      "sha256": "44c0bba3a095403d13190580c4789381fa260e021a4b2bd8fea028dad0a50907"
+    },
+    {
+      "path": "/competition/submission-assets/evidence/pdf-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2675,
+      "sha256": "8bc99ced3ba64a84168f3a0bb14fc35bd6e3642887bfa1c956bea99d36039064"
+    },
+    {
+      "path": "/competition/submission-assets/evidence/report-baseline.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 5637,
+      "sha256": "e368d47c737ebe55a66c7df297599b3e62ca47963a8c836a49219c47fa0711a2"
+    },
+    {
+      "path": "/competition/submission-assets/evidence/report-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2095,
+      "sha256": "753511e6e6213fe58480d16b90f52d3f82a49a1adc4cf95110f32f7845aeda6a"
+    },
+    {
+      "path": "/competition/technical-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 45807,
+      "sha256": "a7b8322690c2ef30b0b9933a2663c077b22fc788482c71a7e2d29345ff31f349"
+    },
+    {
+      "path": "/competition/technical-report.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 3111267,
+      "sha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+    },
+    {
+      "path": "/competition/value-assets/assets/public-evidence-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 37425,
+      "sha256": "2182fefbf427895f3056bc8367d3965b5b446207acd8bde51d10f3ef35d1f10f"
+    },
+    {
+      "path": "/competition/value-assets/assets/public-flow-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 55240,
+      "sha256": "f23000d3671e6178a2459fbc091fdf54530997b0eea012463556c8ce55c9e84e"
+    },
+    {
+      "path": "/competition/value-assets/assets/public-value-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 47559,
+      "sha256": "bd0ead4e8d23485b5e49aab10596e28d84ff24b40d0aa109b5d08878008528e5"
+    },
+    {
+      "path": "/competition/value-assets/assets/study-desktop.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 105543,
+      "sha256": "805cb9a1bf1dc3d4c173c57040fbaf292d7605298ea7b7f8ca733faf1b041f8f"
+    },
+    {
+      "path": "/competition/value-assets/assets/study-flow.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1519243,
+      "sha256": "578057e56e1f4e65421cb68086cea2a031ffcd998fd497adbed7a9704ed993f9"
+    },
+    {
+      "path": "/competition/value-assets/assets/study-flow.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 130170,
+      "sha256": "1c51eda3b2360220f4645e1ccba051f2792d1b513744ad10b67ad1bc830ca1de"
+    },
+    {
+      "path": "/competition/value-assets/assets/study-mobile-analysis.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 35490,
+      "sha256": "4a084707e031ac7b1cbbef22da00f2e9a42b18cbd3b729e7ce3e696f199e023a"
+    },
+    {
+      "path": "/competition/value-assets/assets/study-mobile-editor.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 28900,
+      "sha256": "70d6f2982df9266a7d9dd215acf409717732e95b128f2d8e5ca13dc9de254d03"
+    },
+    {
+      "path": "/competition/value-assets/evidence/calls.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=UTF-8",
+      "bytes": 780,
+      "sha256": "a1e0d9971e05371ebbbd06a1ad2d2211c56021b9d67320b3ed265a949a8c8dbf"
+    },
+    {
+      "path": "/competition/value-assets/evidence/candidate-production-tests-v12.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6419,
+      "sha256": "93f060ed5146b18dc7e4be3a82518421b1a45a541c44ffdf401061405bc4dd7b"
+    },
+    {
+      "path": "/competition/value-assets/evidence/deploy-v12-candidate1.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3413,
+      "sha256": "b3bc0a3ab8b604c696936bda8c110df2df479ea1c2f931dca8f7d6b1400b3bfb"
+    },
+    {
+      "path": "/competition/value-assets/evidence/deploy-v12.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3304,
+      "sha256": "651549aa59a23f996725b1b4f7fafec9526885829c2ab813ef36a0010e2ce207"
+    },
+    {
+      "path": "/competition/value-assets/evidence/manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2923,
+      "sha256": "29772bba94500001bbdb6886652a84e67971aec700140e7ab5aa0be848a8758a"
+    },
+    {
+      "path": "/competition/value-assets/evidence/preflight.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 383460,
+      "sha256": "5f296f08293ea31c468c0be008a0361254c6da8620ad48a4eba05e6086372188"
+    },
+    {
+      "path": "/competition/value-assets/evidence/public-browser-verification-v12.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 2264,
+      "sha256": "77cdcd837b4ecf5dc2fa7d885fd657edf650db5f28f5e77aa3746187e361012f"
+    },
+    {
+      "path": "/competition/value-assets/evidence/public-verification-v12.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 13288,
+      "sha256": "c1dd19cf313320857e752c0c8bc2712e6ff22698261b4cce2586e5c3c6aa6d8e"
+    },
+    {
+      "path": "/competition/value-assets/evidence/publication-layout.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3043,
+      "sha256": "489c04e449b4b7676c5ac57581a999cddb4f14b178efe9f7055968f84896f553"
+    },
+    {
+      "path": "/competition/value-assets/evidence/release-v12-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 137,
+      "sha256": "b24e30f0dbd621f1c5e1b2bbcc9d4f3abbbed857993b78bec3db3e3bced3b156"
+    },
+    {
+      "path": "/competition/value-assets/evidence/release-v12-candidate1-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 137,
+      "sha256": "810b4ad8b80415dc3152877bd30c02f7a2e251a27773f4fcd6e42590ef18188a"
+    },
+    {
+      "path": "/competition/value-assets/evidence/release-v12-candidate1-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 47144,
+      "sha256": "d62bc2cc3ad42994b7963554cffd517b7587075b8a1e1f650f04ac33072f8ad3"
+    },
+    {
+      "path": "/competition/value-assets/evidence/release-v12-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 47147,
+      "sha256": "5b7599aba46eb55e77e3b75f1efa4a4aaae85fdb05b18c37eab76881649d7010"
+    },
+    {
+      "path": "/competition/value-assets/evidence/runtime-verification-v12.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3059,
+      "sha256": "bfd309e717d2e74934fbcfc2dd928984e9d4def315c188b5cd05948a3c877156"
+    },
+    {
+      "path": "/competition/value-assets/evidence/static-verification-v12.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 14727,
+      "sha256": "1d5516dddc8897b15d2d21f62dfaefb47c2dbed392a8c4ee20a39ed3454ca22e"
+    },
+    {
+      "path": "/competition/value-assets/evidence/study-inputs.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 6479,
+      "sha256": "e7dc08e188fe08fa31d7c2305cb4ec9098a2545ce1906ae2a4ed2155f4eb4af2"
+    },
+    {
+      "path": "/competition/value-assets/evidence/study-layout.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 936,
+      "sha256": "5c5aed728440003be3d6442da1e85ca12292bc795e415a305bdd537d73d44f94"
+    },
+    {
+      "path": "/competition/value-assets/evidence/summary.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 1678,
+      "sha256": "757edabfd6a899388d6d2445c897397ba7658f86f86d108b123e6102ade90017"
+    },
+    {
+      "path": "/competition/value-assets/evidence/targeted-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 2336,
+      "sha256": "a0b008a3b732bfada2d3d376588c37afa76f81a29335d9f3d8d882c169c2894a"
+    },
+    {
+      "path": "/competition/value-assets/evidence/tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 101747,
+      "sha256": "5dac4eca6edb61736691315c089788c1923c3c80e2d2dd1b418aeed3834b2e52"
+    },
+    {
+      "path": "/competition/value-assets/image-generation.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 613,
+      "sha256": "c98987e929a29c5a45683ead440f2f07316a4b5b4775e1af29cb8b126bfbf3e0"
+    },
+    {
+      "path": "/competition/value-assets/study-prompt.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1623,
+      "sha256": "90cad20fcb83533ff52b8a725974e90e9ebdbf079c8ef2caa846c0873de631ea"
+    },
+    {
+      "path": "/competition/value-release-v12.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 10244,
+      "sha256": "fd96e097d4c16f6e8a0a23bdfe5c814198532bd08dec94eac72aa2dab439d3b2"
+    },
+    {
+      "path": "/competition/value-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 18842,
+      "sha256": "d7fde35451ec2639c1d508aa1307abc43ea140432e4d9b89aa7d56458e216847"
+    },
+    {
+      "path": "/competition/value-study.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 3919,
+      "sha256": "1c43d4922ccfc888ceaae592b1499bc98812a3c8aae44c8bdcdae18b28c86ec0"
+    },
+    {
+      "path": "/competition/video-assets/assets/after-320.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 36338,
+      "sha256": "1a5814d145b1302e6c4196ec8cdd140230e797f88031fc1a6ca96d37a821d466"
+    },
+    {
+      "path": "/competition/video-assets/assets/after-desktop.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 127162,
+      "sha256": "044e79f7a7a19f3ea2586e4b441a317ae49830347cbfdd316db2acea09c9d1e3"
+    },
+    {
+      "path": "/competition/video-assets/assets/after-mobile.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 50662,
+      "sha256": "f39b7440b1da1becc4061cb59aa8df859ac9f5e61ed341780e1085207d1adc60"
+    },
+    {
+      "path": "/competition/video-assets/assets/media-error.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 29947,
+      "sha256": "2ed4bc222c77520dc7d811432eaf9c86a8c99eea8dd262cf42df132c8771c256"
+    },
+    {
+      "path": "/competition/video-assets/assets/mobile-comparison.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 91211,
+      "sha256": "1ce55c8b2999eacb442ade98b81d60b666fda84cb64f18a5e0956c3e194c56fe"
+    },
+    {
+      "path": "/competition/video-assets/assets/native-subtitles-fixed.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 142022,
+      "sha256": "4e1ae4e19db0e7f1edd0c10a7bbf171936819639d31a88907d6903d262da65a4"
+    },
+    {
+      "path": "/competition/video-assets/assets/native-subtitles.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 155365,
+      "sha256": "1e36ad4190c4b3716c857e1ecea2b382878211c34cc86a2eaffb0060e2c05288"
+    },
+    {
+      "path": "/competition/video-assets/assets/public-mobile.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 47688,
+      "sha256": "aced23c3c8f89cda6d34c6953a1ac5f39497d2588984794ebfae72b20590c504"
+    },
+    {
+      "path": "/competition/video-assets/evidence/browser-download-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 167,
+      "sha256": "119e2cbe55851431fb6aedf9b6c689a077e5c180aa8b490b682f30487769dadb"
+    },
+    {
+      "path": "/competition/video-assets/evidence/browser-verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 25315,
+      "sha256": "4e01eb4b9da2e12e5e523e60135bb791ab0dc0a6e250e5f5b42fde37b54f915d"
+    },
+    {
+      "path": "/competition/video-assets/evidence/candidate-media-checks-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 277,
+      "sha256": "f9ade190d6f210a31a17b1d892e7ed967790d89ff400fd0ffed12e71ef815a55"
+    },
+    {
+      "path": "/competition/video-assets/evidence/candidate-production-tests-v14.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 6424,
+      "sha256": "6b7646b73531760a6851006b9c13c66309fb1c6beecc197e6cb0f4ae5d831e9e"
+    },
+    {
+      "path": "/competition/video-assets/evidence/deploy-v14.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 3738,
+      "sha256": "68b1ce437ac473d71570bb853665e056a7d9fce93b17652788bddb436f95f74b"
+    },
+    {
+      "path": "/competition/video-assets/evidence/media-inventory.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 688,
+      "sha256": "114ac68d5993b66419db0308b77d26babc7e1c781b54ee2fe6ea02b2747ce28a"
+    },
+    {
+      "path": "/competition/video-assets/evidence/public-browser-verification-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 6168,
+      "sha256": "1baabea841dd670019e193bc10133cf4e13be4bade517aacdd0cd5c6b9a30d13"
+    },
+    {
+      "path": "/competition/video-assets/evidence/public-verification-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 16903,
+      "sha256": "f2caa4b6ce908156c0ee771630ee1720244688fe5502fc84f8db37620508c946"
+    },
+    {
+      "path": "/competition/video-assets/evidence/release-v14-archive.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 224,
+      "sha256": "fa61ca9167af981de2d4b169012413a6f24f5aecbf77133cea0794d10ef5889e"
+    },
+    {
+      "path": "/competition/video-assets/evidence/release-v14-manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 55904,
+      "sha256": "f1afe79ccdc80d9fe9ec8700e24bc96b464680d91e0667437ae2f0dbec4b5474"
+    },
+    {
+      "path": "/competition/video-assets/evidence/runtime-verification-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 3050,
+      "sha256": "db6ecbd692f8873327d9f75b0be25c018b2b2fdd7d92a7c080182a18620ace2d"
+    },
+    {
+      "path": "/competition/video-assets/evidence/static-verification-v14.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "bytes": 30655,
+      "sha256": "ccc48b9c1ff4ca337de1b35d30e94593e7606e2bff8829726eae9c8bd74c417f"
+    },
+    {
+      "path": "/competition/video-assets/evidence/unit-tests.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 724,
+      "sha256": "d4ab12aeb72b3a78e3848bc63c34a236dc08b5d72d64809d4a907d4e03442920"
+    },
+    {
+      "path": "/competition/video-release-v14.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 9316,
+      "sha256": "a4fd9afe9cbf664ffa55b519a70065be16c49ab52b5b19a26b6c637b94e56275"
+    },
+    {
+      "path": "/competition/video-report.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 13186,
+      "sha256": "36dbc6a9cedd574f4200d004aa1432797d57e3b4bb57f09a24739bfc8e6eb2a1"
+    }
+  ],
+  "pdfRange": {
+    "status": 206,
+    "contentType": "application/pdf",
+    "contentRange": "bytes 0-31/3111267",
+    "bytes": 32
+  }
+}

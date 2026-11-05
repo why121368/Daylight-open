@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-03T21:04:14.103Z",
+  "ok": true,
+  "scope": "Real PostgreSQL, production storage path, isolated schema, synthetic original content and local model stub",
+  "schema": "rag_verify_617793ce12a74f00b03fc7363b5d2968",
+  "schemaRemoved": true,
+  "realModelCalls": 0,
+  "localModelRequests": 10,
+  "checks": [
+    {
+      "name": "PostgreSQL readback retains full body, attachment and source metadata",
+      "passed": true
+    },
+    {
+      "name": "Answer reads deadline beyond the display excerpt from PostgreSQL",
+      "passed": true
+    },
+    {
+      "name": "Answer reads attachment details and retains attachment identity",
+      "passed": true
+    },
+    {
+      "name": "Owner scope rejects another mailbox before retrieval",
+      "passed": true
+    },
+    {
+      "name": "Insufficient information has no unrelated citations",
+      "passed": true
+    },
+    {
+      "name": "Invalid citation IDs return source extracts",
+      "passed": true
+    },
+    {
+      "name": "Model HTTP 503 returns source extracts",
+      "passed": true
+    },
+    {
+      "name": "Pool reconnect and five concurrent reads preserve durable rows",
+      "passed": true
+    }
+  ]
+}

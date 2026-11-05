@@ -1,0 +1,44 @@
+[
+  {
+    "file": "assets/public-evidence-desktop.png",
+    "url": "https://daylight.yunforis.com/evidence#recovery",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "imageSize": [
+      1425,
+      891
+    ],
+    "sha256": "031e0f1d2ce714dac6601ccfa7533b722072101e11de76c36bd45001b589fc89",
+    "reviewed": true
+  },
+  {
+    "file": "assets/public-evidence-mobile.png",
+    "url": "https://daylight.yunforis.com/evidence#recovery",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "imageSize": [
+      375,
+      812
+    ],
+    "sha256": "c98ebe2e06a72406fc5886e161b12f98459823c013b5980a3f74db76257b6083",
+    "reviewed": true
+  },
+  {
+    "file": "assets/public-report-mobile.png",
+    "url": "https://daylight.yunforis.com/competition/recovery-report.html#2-\u6062\u590d\u6d41\u7a0b\u4e0e\u6570\u636e\u8fb9\u754c",
+    "viewport": {
+      "width": 320,
+      "height": 844
+    },
+    "imageSize": [
+      305,
+      804
+    ],
+    "sha256": "b5020d900d405bf930f56b2532bcb8df2adcfe255e0a5c3df9909e77c9955e69",
+    "reviewed": true
+  }
+]

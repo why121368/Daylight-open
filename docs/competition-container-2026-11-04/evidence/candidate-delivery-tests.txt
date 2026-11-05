@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: delivery verifies all bytes, starter, source/build and five logs within a parent checkout
+ok 1 - delivery verifies all bytes, starter, source/build and five logs within a parent checkout
+  ---
+  duration_ms: 42.971933
+  type: 'test'
+  ...
+# Subtest: delivery detects same-length source corruption, removed build assets and changed starter
+ok 2 - delivery detects same-length source corruption, removed build assets and changed starter
+  ---
+  duration_ms: 27.240055
+  type: 'test'
+  ...
+# Subtest: delivery rejects additional executable files, duplicate entries and traversal paths
+ok 3 - delivery rejects additional executable files, duplicate entries and traversal paths
+  ---
+  duration_ms: 33.630191
+  type: 'test'
+  ...
+# Subtest: delivery rejects file digests resealed around a changed source or build
+ok 4 - delivery rejects file digests resealed around a changed source or build
+  ---
+  duration_ms: 12.51337
+  type: 'test'
+  ...
+# Subtest: delivery requires a matching successful verification and all stage logs
+ok 5 - delivery requires a matching successful verification and all stage logs
+  ---
+  duration_ms: 17.271927
+  type: 'test'
+  ...
+# Subtest: delivery rejects a linked directory instead of traversing its target
+ok 6 - delivery rejects a linked directory instead of traversing its target
+  ---
+  duration_ms: 5.881699
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 381.374732

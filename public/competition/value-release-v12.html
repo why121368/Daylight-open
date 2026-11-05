@@ -1,0 +1,169 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>用户价值对照资料 v12 发布记录 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="用户价值对照资料-v12-发布记录">用户价值对照资料 v12 发布记录</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#用户价值对照资料-v12-发布记录">用户价值对照资料 v12 发布记录</a><ul>
+<li><a href="#发布结果">发布结果</a></li>
+<li><a href="#前后变化">前后变化</a></li>
+<li><a href="#发布顺序与回滚记录">发布顺序与回滚记录</a></li>
+<li><a href="#正式页面检查">正式页面检查</a></li>
+<li><a href="#运行指标快照">运行指标快照</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>2026 年 11 月 4 日，北京时间。<a href="/competition/value-report.html">本轮图文方法</a> · <a href="https://daylight.yunforis.com/competition/value-report.html">官网方法与真实模型预检</a> · <a href="https://daylight.yunforis.com/evidence">技术与实测</a>。</p>
+<h2 id="发布结果">发布结果</h2>
+<p>技术页新增用户价值对照入口，公开两套原创材料、主持步骤、计时与评分方法、电脑/手机截图，以及10次真实模型调用的Trace、用量和CSV。独立主持工具通过源码的<code>npm run study</code>运行。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前镜像</td>
+<td><code>daylight:public-competition-20261104-v12-r1</code></td>
+</tr>
+<tr>
+<td>镜像ID</td>
+<td><code>sha256:2d12d546999aebcabef12606f3dbb2f10881505a2b939685d90447d8b9cade15</code></td>
+</tr>
+<tr>
+<td>前端、资料与验证脚本源码</td>
+<td><code>2e5a682dc988169f8eb1f2eb4f18085481c9f42c</code></td>
+</tr>
+<tr>
+<td>后端业务基线</td>
+<td><code>db3ee897a696bf5f70365f8c901237f020cf8691</code></td>
+</tr>
+<tr>
+<td>基础镜像</td>
+<td>v11，<code>sha256:03f52e88c185088d6261753c0a25c9fca60d699b96fca8e9a3e19c6344632026</code></td>
+</tr>
+<tr>
+<td>发布包</td>
+<td>完整前端378文件与验证脚本1份，23,186,471 bytes</td>
+</tr>
+<tr>
+<td>包SHA-256</td>
+<td><code>8ad195fd5cc4c2ac1351e787286c15edc492ac23bd375746da881d677165dba5</code></td>
+</tr>
+<tr>
+<td>发布前备份</td>
+<td><code>/opt/daylight-backups/before-value-study-20261104031242</code></td>
+</tr>
+<tr>
+<td>production候选</td>
+<td>29/29通过，关闭网络运行</td>
+</tr>
+<tr>
+<td>正式HTTPS综合检查</td>
+<td>52项通过，含七步业务、匿名权限、静态证据及视频/PDF分段读取</td>
+</tr>
+<tr>
+<td>关联资料</td>
+<td>56份资源，HTTP、MIME和完整文件摘要一致</td>
+</tr>
+<tr>
+<td>实际运行文件</td>
+<td>三角色各396份逐文件核对，完整前端集合378份一致</td>
+</tr>
+<tr>
+<td>服务</td>
+<td>8个服务healthy，三个应用restart=0、OOM=false</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/value-assets/evidence/release-v12-manifest.json">发布清单</a> · <a href="/competition/value-assets/evidence/release-v12-archive.json">包摘要</a> · <a href="/competition/value-assets/evidence/candidate-production-tests-v12.txt">候选检查</a> · <a href="/competition/value-assets/evidence/deploy-v12.txt">发布日志</a> · <a href="/competition/value-assets/evidence/public-verification-v12.json">公网52项</a> · <a href="/competition/value-assets/evidence/static-verification-v12.json">关联资料56项</a>。</p>
+<h2 id="前后变化">前后变化</h2>
+<table>
+<thead>
+<tr>
+<th>评审路径</th>
+<th>发布前</th>
+<th>发布后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景价值</td>
+<td>文字方法与空白CSV</td>
+<td>共用编辑器、轮换顺序、持续计时、12项检查及主持复核</td>
+</tr>
+<tr>
+<td>技术页</td>
+<td>场景说明与七步入口</td>
+<td>增加44px的“用户对照方法、工具与真实模型预检”站内入口</td>
+</tr>
+<tr>
+<td>模型证据</td>
+<td>15例固定邮件回归和8例RAG对照</td>
+<td>追加两套通知10次真实模型预检、两套各12/12，以及逐次用量和耗时</td>
+</tr>
+<tr>
+<td>图文资料</td>
+<td>方法说明</td>
+<td>gpt-image-2.5英文流程图、中文设计逻辑、电脑与手机操作截图</td>
+</tr>
+<tr>
+<td>发布验证</td>
+<td>v11的43项综合检查</td>
+<td>本轮52项综合检查、56份关联资料及三角色文件摘要</td>
+</tr>
+</tbody>
+</table>
+<p>真人配对记录当前为0。主持流程已包含阅读、模型等待、核验与修正时间，现场采集后按编号追加逐人结果。</p>
+<h2 id="发布顺序与回滚记录">发布顺序与回滚记录</h2>
+<ol>
+<li>核对三个角色的v11镜像ID并持有发布锁；保存Compose配置、数据库custom dump、可读取的dump目录、旧前端和原镜像ID。</li>
+<li>按发布清单核对379份文件，以指定基础镜像ID构建候选；完整替换前端目录，同步revision和<code>DAYLIGHT_GIT_SHA</code>。</li>
+<li>在候选容器完成29项production检查，核对17页PDF摘要、方法图WebP文件头、预检10次与两套12/12，以及生产入口的路由装配。</li>
+<li>首个候选切换后，匿名<code>/api/study/config</code>返回401；脚本断言为404，校验失败，发布脚本自动恢复v11。恢复后重新核对三个角色均运行v11且healthy。</li>
+<li>将断言改为生产认证层的401响应，提交<code>2e5a682</code>，重新打包为v12-r1并重新完成候选29项、业务请求和三个角色健康检查。</li>
+<li>正式HTTPS完成52项综合检查及56份资料摘要；逐容器验证396份累计文件，前端完整集合为378份。</li>
+<li>从正式技术页点击方法入口，操作目录、查看原图、下载CSV；保存手机截图与下载文件摘要。</li>
+</ol>
+<p>首个候选来源<code>6b6dde2</code>，备份目录<code>/opt/daylight-backups/before-value-study-20261104031004</code>。<a href="/competition/value-assets/evidence/release-v12-candidate1-manifest.json">候选清单</a>、<a href="/competition/value-assets/evidence/release-v12-candidate1-archive.json">包摘要</a>与<a href="/competition/value-assets/evidence/deploy-v12-candidate1.txt">自动回滚日志</a>保存这次执行过程。</p>
+<h2 id="正式页面检查">正式页面检查</h2>
+<p>390×844手机尺寸下，技术页和方法报告的文档宽度均为375px；四张内嵌图加载完成。点击目录后，“对照流程图”定位至顶部20.16px；点击图片打开1536×1024的PNG原图。实际下载的CSV为780 bytes，与发布文件SHA-256一致。1440px桌面文档宽度为1425px，四张图均加载完成。</p>
+<p><img alt="正式站手机流程图与设计说明" src="/competition/value-assets/assets/public-flow-mobile.png"></p>
+<p><a href="/competition/value-assets/assets/public-evidence-mobile.png">技术页场景价值截图</a> · <a href="/competition/value-assets/assets/public-value-mobile.png">方法报告首屏</a> · <a href="/competition/value-assets/evidence/public-browser-verification-v12.json">浏览器、目录、原图与CSV记录</a>。本地320/390/1440px六项报告与技术页布局记录在<a href="/competition/value-assets/evidence/publication-layout.json">公开资料布局</a>。</p>
+<h2 id="运行指标快照">运行指标快照</h2>
+<p>2026-11-04 <strong>03:14:11，北京时间</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th style="text-align: right;">已写样本</th>
+<th style="text-align: right;">丢样</th>
+<th>写入错误</th>
+<th style="text-align: right;">核对文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td style="text-align: right;">422</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">396</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td style="text-align: right;">498</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">396</td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">0</td>
+<td>无</td>
+<td style="text-align: right;">396</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/value-assets/evidence/runtime-verification-v12.json">运行镜像、完整文件清单与readiness</a>。本轮整体新增文本模型调用10次、图像调用1次、云采购0；本次服务器发布使用已有预检结果。</p></main></html>

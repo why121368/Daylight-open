@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-03T23:17:05.270169+00:00",
+  "scope": "Wire body bytes for the experience static import closure, CSS and startup image; response headers excluded; no browser latency claim.",
+  "transport": "Node HTTPS, direct, standard TLS validation, Accept-Encoding: gzip",
+  "beforeRelease": "v19",
+  "afterRelease": "v20",
+  "before": {
+    "javaScript": {
+      "resources": 13,
+      "wireBytes": 173501,
+      "decodedBytes": 505245
+    },
+    "css": {
+      "resources": 1,
+      "wireBytes": 29814,
+      "decodedBytes": 177057
+    },
+    "startupImage": {
+      "resources": 1,
+      "wireBytes": 8278,
+      "decodedBytes": 8278
+    }
+  },
+  "after": {
+    "javaScript": {
+      "resources": 13,
+      "wireBytes": 173575,
+      "decodedBytes": 505388
+    },
+    "css": {
+      "resources": 1,
+      "wireBytes": 29835,
+      "decodedBytes": 177057
+    },
+    "startupImage": {
+      "resources": 1,
+      "wireBytes": 8278,
+      "decodedBytes": 8278
+    }
+  },
+  "beforeTotalBytes": 211593,
+  "afterTotalBytes": 211688,
+  "sourceSha256": {
+    "public-entry-v19.json": "a5251fff18779f851192cd22da69c9d8c57c26c82a69fd8e2071a37068adff24",
+    "public-entry-v20.json": "a2662cb0e555518156f73049967843414fc66d60ad18f529021690016185ecca"
+  },
+  "addedBytes": 95
+}

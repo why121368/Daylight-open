@@ -1,0 +1,946 @@
+{
+  "checkedAt": "2026-11-03T20:00:27.227Z",
+  "scope": "Local browser at desktop/mobile viewport sizes; real video playback, chapter navigation, refresh, history and injected media 503 recovery",
+  "rows": [
+    {
+      "label": "mobile390-initial",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "用户价值与对照方法",
+          "width": 175
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "从邮件到下一步",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 0,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile390-seek-preserves-playing",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "暂停视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": false,
+        "readyState": 4,
+        "time": 135.2006,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile390-pause",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 135.263,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile390-shared-link-refresh",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 135,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile390-seek-preserves-paused",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "优化前后原始测量",
+          "width": 161
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "用实测与公式讨论成本",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo?chapter=performance",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 165,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile390-history-back",
+      "clientWidth": 375,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 343
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 135,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "mobile320-layout",
+      "clientWidth": 305,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 273
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 305,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 135,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 760,
+        "width": 320
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "synthetic-media-503",
+      "clientWidth": 305,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 273
+        },
+        {
+          "height": 44,
+          "text": "重试加载",
+          "width": 105
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 305,
+      "url": "http://127.0.0.1:3195/demo?chapter=architecture",
+      "video": {
+        "duration": null,
+        "error": null,
+        "height": 0,
+        "paused": true,
+        "readyState": 0,
+        "time": 0,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 0
+      },
+      "viewport": {
+        "height": 760,
+        "width": 320
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "synthetic-media-retry-restores-135s",
+      "clientWidth": 305,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "00:00 · 从邮件到下一步00:15 · 01 通知变成安排与待办00:30 · 02 冲突留给本人决定00:45 · 03 改期关联新旧安排01:00 · 04 重复邮件直接跳过01:15 · 05 校验失败保持原状态01:30 · 06 修正后重试成功01:45 · 07 取消留痕，材料保留02:00 · 打开工具，核对执行02:15 · 按负载与状态拆分服务02:30 · Agent 数据流与恢复路径02:45 · 用实测与公式讨论成本",
+          "width": 273
+        },
+        {
+          "height": 44,
+          "text": "架构、容量与容错实测",
+          "width": 189
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "按负载与状态拆分服务",
+      "scrollWidth": 305,
+      "url": "http://127.0.0.1:3195/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 135,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 760,
+        "width": 320
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "desktop1440-direct-chapter",
+      "clientWidth": 1425,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "真实模型逐例回归",
+          "width": 161
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 48,
+          "text": "00:00从邮件到下一步",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:1501 通知变成安排与待办",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:3002 冲突留给本人决定",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:4503 改期关联新旧安排",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:0004 重复邮件直接跳过",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:1505 校验失败保持原状态",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:3006 修正后重试成功",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:4507 取消留痕，材料保留",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:00打开工具，核对执行",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:15按负载与状态拆分服务",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:30Agent 数据流与恢复路径",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:45用实测与公式讨论成本",
+          "width": 267
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "Agent 数据流与恢复路径",
+      "scrollWidth": 1425,
+      "url": "http://127.0.0.1:3194/demo?chapter=dataflow",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 150,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "chapterTimeFont": "12px"
+    },
+    {
+      "label": "desktop-playback-auto-updates-final-chapter",
+      "clientWidth": 1425,
+      "controls": [
+        {
+          "height": 44,
+          "text": "播放视频",
+          "width": 104
+        },
+        {
+          "height": 44,
+          "text": "下载 MP4 · 1.4 MB",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "优化前后原始测量",
+          "width": 161
+        },
+        {
+          "height": 44,
+          "text": "本章直达链接",
+          "width": 116
+        },
+        {
+          "height": 48,
+          "text": "00:00从邮件到下一步",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:1501 通知变成安排与待办",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:3002 冲突留给本人决定",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "00:4503 改期关联新旧安排",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:0004 重复邮件直接跳过",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:1505 校验失败保持原状态",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:3006 修正后重试成功",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "01:4507 取消留痕，材料保留",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:00打开工具，核对执行",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:15按负载与状态拆分服务",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:30Agent 数据流与恢复路径",
+          "width": 267
+        },
+        {
+          "height": 48,
+          "text": "02:45用实测与公式讨论成本",
+          "width": 267
+        },
+        {
+          "height": 44,
+          "text": "亲自走完七步体验",
+          "width": 160
+        },
+        {
+          "height": 44,
+          "text": "阅读完整讲稿",
+          "width": 133
+        },
+        {
+          "height": 44,
+          "text": "下载文字稿",
+          "width": 118
+        }
+      ],
+      "heading": "用实测与公式讨论成本",
+      "scrollWidth": 1425,
+      "url": "http://127.0.0.1:3194/demo?chapter=architecture",
+      "video": {
+        "duration": 179.916667,
+        "error": null,
+        "height": 1080,
+        "paused": true,
+        "readyState": 4,
+        "time": 179.916667,
+        "tracks": [
+          {
+            "cues": 0,
+            "kind": "subtitles",
+            "mode": "disabled"
+          },
+          {
+            "cues": 0,
+            "kind": "chapters",
+            "mode": "disabled"
+          }
+        ],
+        "width": 1920
+      },
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "chapterTimeFont": "12px"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "snapshotRelease": "daylight:public-competition-20261104-v14",
+  "snapshotAt": "2026-11-03T20:09:24.328255+00:00",
+  "imageId": "sha256:9d634d54c28c105207d1ca9af368b23c4c44aa50f7bb7005e0d596c94e6fcbdf",
+  "frontendCommit": "154936206ed85098a28ebc756344bc6b438fe8be",
+  "backendCommit": "9354287b56e670a4a3f1376a68f325df2beadcf9",
+  "baseBackendCommit": "db3ee897a696bf5f70365f8c901237f020cf8691",
+  "archiveCommit": "2b58328809e3208df97e5157113be0529ca12158",
+  "runtime": {
+    "healthyServices": 8,
+    "verifiedFiles": 470,
+    "completeDistFiles": 445,
+    "publicChecks": 66,
+    "staticChecks": 116,
+    "metrics": {
+      "api": {
+        "enabled": true,
+        "runId": "a7b80ac0-e13d-40de-b6f9-d88dce74d774",
+        "written": 389,
+        "dropped": 0,
+        "sinkError": null
+      },
+      "worker": {
+        "enabled": true,
+        "runId": "88fe4012-64d9-47a6-be0e-7e8b21d7f6d7",
+        "written": 705,
+        "dropped": 0,
+        "sinkError": null
+      },
+      "scheduler": {
+        "enabled": true,
+        "runId": "801db7db-0013-4a56-a651-fa7c05a94c85",
+        "written": 149,
+        "dropped": 0,
+        "sinkError": null
+      }
+    }
+  },
+  "tests": {
+    "tests": 1017,
+    "pass": 988,
+    "fail": 0,
+    "skipped": 29
+  },
+  "reply": {
+    "postgresChecks": 8,
+    "realSmtpCalls": 0,
+    "injectedTransportCalls": 2
+  },
+  "value": {
+    "modelCalls": 10,
+    "participants": 0,
+    "setAssertions": [
+      12,
+      12
+    ],
+    "modelCallLatency": {
+      "p50Ms": 9234.5,
+      "p95Ms": 32503
+    }
+  },
+  "rag": {
+    "before": 6,
+    "after": 8,
+    "cases": 8
+  },
+  "media": {
+    "videoBytes": 1431534,
+    "posterBytes": 61383,
+    "chapters": 12,
+    "encodedDurationSeconds": 179.917,
+    "manifestDurationSeconds": 180,
+    "fastStart": true,
+    "sha256": "a1fd4dfbf4130a9ab83d5163bed71c4fc570d9870e34825cce0d800aca068a13",
+    "posterSha256": "56d4478ac1f9b36d47ca1af0a822f2fde6b9cc4cb3529c37a98bf0c38d8b06c9",
+    "movieBoxes": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 26697
+      },
+      {
+        "type": "free",
+        "offset": 26729,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 26737,
+        "size": 1404797
+      }
+    ],
+    "modelCalls": 0,
+    "imageCalls": 0,
+    "transcriptCaptions": 33
+  },
+  "budget": {
+    "currency": "CNY",
+    "limit": 500,
+    "groups": [
+      {
+        "id": "model-preflight",
+        "calls": 3,
+        "inputTokens": 8446,
+        "outputTokens": 2443,
+        "estimatedCny": 0.036436
+      },
+      {
+        "id": "model-full",
+        "calls": 15,
+        "inputTokens": 41863,
+        "outputTokens": 10169,
+        "estimatedCny": 0.165078
+      },
+      {
+        "id": "rag-before",
+        "calls": 7,
+        "inputTokens": 1708,
+        "outputTokens": 765,
+        "estimatedCny": 0.009536
+      },
+      {
+        "id": "rag-after",
+        "calls": 7,
+        "inputTokens": 2869,
+        "outputTokens": 2149,
+        "estimatedCny": 0.02293
+      },
+      {
+        "id": "value-preflight",
+        "calls": 10,
+        "inputTokens": 32272,
+        "outputTokens": 13537,
+        "estimatedCny": 0.17284
+      }
+    ],
+    "modelCalls": 42,
+    "inputTokens": 87158,
+    "outputTokens": 29063,
+    "estimatedModelCny": 0.40682,
+    "imageCalls": 10,
+    "newCloudPurchases": 0,
+    "pricingKind": "published-list-price-estimate",
+    "priceSource": "https://www.compshare.cn/model-api",
+    "imageAndCloudCosts": "supplier-invoice"
+  },
+  "sourceHashes": {
+    "docs/competition-video-2026-11-04/evidence/runtime-verification-v14.json": "db6ecbd692f8873327d9f75b0be25c018b2b2fdd7d92a7c080182a18620ace2d",
+    "docs/competition-video-2026-11-04/evidence/release-v14-manifest.json": "7ce053d52ae430355722f6217d15760f70b4149cbfab6ef9cdb69b4a3cb9a86d",
+    "docs/competition-video-2026-11-04/evidence/public-verification-v14.json": "f2caa4b6ce908156c0ee771630ee1720244688fe5502fc84f8db37620508c946",
+    "docs/competition-video-2026-11-04/evidence/static-verification-v14.json": "897e435b1fa00d0b65ebea687504c3582bb74a19dd8a33344641221e4fd62e3f",
+    "docs/competition-video-2026-11-04/evidence/media-inventory.json": "114ac68d5993b66419db0308b77d26babc7e1c781b54ee2fe6ea02b2747ce28a",
+    "docs/competition-video-2026-11-04/evidence/candidate-media-checks-v14.json": "f9ade190d6f210a31a17b1d892e7ed967790d89ff400fd0ffed12e71ef815a55",
+    "docs/competition-reply-2026-11-04/evidence/postgres-verification.json": "537a653ba8ace6e946eecc580649379e3af31c0eea440a0f2d660029378deaba",
+    "docs/competition-value-2026-11-04/evidence/summary.json": "757edabfd6a899388d6d2445c897397ba7658f86f86d108b123e6102ade90017",
+    "docs/competition-rag-2026-11-04/evidence/summary.json": "52a9f508236a6e78d3f307ce31e77179acf46a168e8b56eb13f7ae6a968a165e",
+    "docs/competition-2026-11-04/evidence/cost-estimate.json": "6a30e117d47f98c2ec14c014b5ac2f90f3e803d35a02e16c8b1a07e4d74a46e1",
+    "docs/competition-rag-2026-11-04/evidence/cost-estimate.json": "4b7f9a2c5b24738572a20da4348df0bc700533ca61e2dd5cd85be65c151fd24d",
+    "docs/competition-2026-11-03/generation-and-budget.md": "5aa56ffb17b484b4a2de73de3ce72906d1be5e79a829437af294e14de35ee464",
+    "docs/competition-report-refresh-2026-11-04/evidence/full-tests.txt": "916cb58dc7a15efab11a5dae2ed3352b0aace7d15c80d8f2eb742bc2bb173333"
+  }
+}

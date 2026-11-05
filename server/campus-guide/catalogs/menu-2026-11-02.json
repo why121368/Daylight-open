@@ -1,0 +1,7852 @@
+{
+  "week": "2026-11-02",
+  "until": "2026-11-08",
+  "sources": [
+    {
+      "name": "尚科食堂一楼早餐档口",
+      "image": "/campus-menus/2026-11-02/0.jpg"
+    },
+    {
+      "name": "尚科食堂一楼自选菜档口",
+      "image": "/campus-menus/2026-11-02/1.jpg"
+    },
+    {
+      "name": "白玉兰食堂自选菜档口",
+      "image": "/campus-menus/2026-11-02/2.jpg"
+    },
+    {
+      "name": "丝路食堂早餐档口",
+      "image": "/campus-menus/2026-11-02/3.jpg"
+    },
+    {
+      "name": "丝路食堂拉面档口",
+      "image": "/campus-menus/2026-11-02/4.jpg"
+    },
+    {
+      "name": "丝路食堂自选菜档口",
+      "image": "/campus-menus/2026-11-02/5.jpg"
+    }
+  ],
+  "menus": [
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "馒头",
+      "price": 0.6,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "鲜肉大包",
+      "price": 1,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "菜包",
+      "price": 1,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "鸡蛋饼",
+      "price": 2,
+      "portion": "120克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "酱香饼",
+      "price": 3,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红糖发糕",
+      "price": 3,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "麻球",
+      "price": 2,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "肉饼",
+      "price": 3,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "菜饼",
+      "price": 3,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉饼",
+      "price": 4,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "茶叶蛋",
+      "price": 1.5,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "韭菜饼",
+      "price": 3,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "烧麦",
+      "price": 1,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "香甜玉米棒",
+      "price": 2,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红薯",
+      "price": 1.5,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "油条",
+      "price": 1.5,
+      "portion": "80克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "白煮蛋",
+      "price": 1,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "小米粥",
+      "price": 1.5,
+      "portion": "300克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "绿豆粥",
+      "price": 1.5,
+      "portion": "300克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "黑米粥",
+      "price": 1.5,
+      "portion": "300克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆浆",
+      "price": 1,
+      "portion": "250克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "手抓饼",
+      "price": 4,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "紫薯馒头",
+      "price": 1,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "桂花糕",
+      "price": 3,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "生煎",
+      "price": 6,
+      "portion": "240克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆花",
+      "price": 3,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "黑米糕",
+      "price": 3,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆沙面包",
+      "price": 4,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "蛋挞",
+      "price": 3,
+      "portion": "70克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "锅贴",
+      "price": 6,
+      "portion": "240克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "清美豆浆",
+      "price": 1.5,
+      "portion": "150克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "南瓜馒头",
+      "price": 1,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "breakfast",
+      "source": 0,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红糖馒头",
+      "price": 1,
+      "portion": "100克"
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "红烧大肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "麻辣鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "剁椒蒸鱼块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "香菇焖鸡块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "排骨炖玉米",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "农家小炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "三鲜烩日本豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "芹菜干丝肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "油焖茄子",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "茭白毛豆肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "干锅藕片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "虾皮冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "酸辣大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 1,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "粉蒸大排",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "奥尔良烤鸡扒",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "盐水鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "咸菜烧青占鱼",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "土豆烧小肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "鱼香鸡丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "干锅鸭块",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "虎皮青椒",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "海鲜菇毛豆肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "肉米蒸蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "豇豆炒肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "莴笋炒肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "胡萝卜卷心菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 2,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "小肉烧百叶节",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "孜然排骨",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "糯米蒸鸡腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "葱油龙利鱼",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "肉饼蒸蛋",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "黑椒鸭肉丁",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "线椒里脊肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "山药肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "韭菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "干锅花菜",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "蒜苔肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "酸辣藕片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "五香素鸡",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "咸菜土豆",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 3,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "走油肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "酱鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "干煎带鱼",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "酸菜肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "麻辣鸡丁",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "外婆菜炒（原图字符缺失）",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "大蒜回锅肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "四喜烤麸",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "西蓝花肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "大蒜鸭血",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "芹菜干丝肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "干炒粉丝",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "清炒牛心菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 4,
+      "name": "炒黄豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "香炸猪排",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "小排烧乌桥干",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "五香烤鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "葱油鸡块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "干锅鱼块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "黑椒鸭胸",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "农家一碗香",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "香莴笋炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "青椒素肠肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "干锅花菜",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "肉米豇豆",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "韭菜干丝肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "地三鲜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "葱油萝卜丝",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 5,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "酱汁大肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "香菇蒸鸡上腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "炸鱼排",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "香辣鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "茄汁锅包肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "宫爆鸡丁",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "木须肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "芹菜干丝肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "韭菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "鱼香茄子",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "蒜苔肉丝",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "花菜肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "酸辣海带丝",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "卷心菜木耳",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 6,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "土豆烧肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "椒盐鸡米花",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "酱香鸭腿",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "糟溜鱼片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "茄汁鸡柳",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "鱼香肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "腐竹炒五花肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "西兰花炒肉",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "青椒毛豆炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "山药木耳肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "干锅藕片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "莴笋炒肉片",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "葱油芋艿",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "绿叶菜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "葱油萝卜丝",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "咖喱鸡块",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "烂糊肉丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "shangke",
+      "window": "self",
+      "source": 1,
+      "meal": "all",
+      "day": 7,
+      "name": "炒绿豆芽",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "海带炖小排",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "五香粉蒸肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "红烧鲫鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "盐水鸭腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "火山石烤肠",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "土豆烧鸡",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "干锅花菜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "莴笋胡萝卜鸡片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "青椒炒五花肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "西红柿炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "麻辣豆腐",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "清炒西兰花",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "白菜蛋花汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 1,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "马蹄肉饼蒸蛋",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "梅干菜烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "五香熏鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "藤椒鸡腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "香菇焖鸡块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "酸菜烧仔鸭",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "马桥干炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "鱼香茄子",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "咸肉老豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "盐水方腿玉米粒",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "蒜苔肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "莴笋炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "酸辣藕丁",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "榨菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 2,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "茄汁排条",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "酱蛋狮子头",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "蒜香豆豉蒸鳊鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "冰梅鸡",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "葱油蛋卷",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "芹菜炒腊肠",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "家常豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "花菜肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "山药木耳鸡片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "干锅千叶豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "鱼香肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "西葫芦炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "黄豆芽炒粉丝",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "蘑菇蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 3,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "米粉蒸排骨",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "热糟带鱼",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "奥尔良烤鸡全翅",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "土豆烧鸭块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "水煮肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "农家一碗香",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "青椒香干肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "豇豆炒肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "莴笋肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "咸肉芋艿",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "蒜香肉糜海带",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "韭菜绿豆芽",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "紫菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 4,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "素鸡鸡烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "蒜蓉粉丝蒸鱼段",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "水笋木耳煨小肉圆",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "西芹目鱼花",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "莴笋烧鸭块",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "辣子鸡",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "咸肉烧萝卜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "外婆菜藕丁炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "香辣鱼豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "花菜炒红肠",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "青椒土豆肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "西葫芦炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "大白菜油豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "番茄蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 5,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "冬瓜炖小排",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "奥尔良烤鸡腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "香酥鸡柳",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "避风塘藕夹",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "洋葱香干肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "西蓝花炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "黄瓜木耳肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "豇豆炒肉糜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "咸肉老肉豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "丝瓜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "毛豆冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "萝卜丝蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 6,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "土豆烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "藤椒鱼块",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "糯米蒸鸡腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "小炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "韭黄香干肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "青椒藕片炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "干锅手撕包菜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "家常豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "宫爆鸡丁",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "外婆菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "豆芽炒粉丝",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "紫菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "粗粮",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "lunch",
+      "day": 7,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "米粉蒸肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "清蒸鲈鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "香酥鸭腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "剁椒肉糜臭豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "干锅手撕包菜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "肉沫长豇豆",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "韭菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "蒜泥西蓝花",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "白菜蛋花汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 1,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "梅干菜烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "剁椒草鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "炸鸡腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "盐水方腿玉米粒",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "肉米烧冬瓜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "干豆皮炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "菌菇炒鸡蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "葱油莴笋丝",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "榨菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 2,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "百叶结烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "蒜香豆豉蒸鳊鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "土豆烧鸡",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "青椒肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "豇豆肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "花菜肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "油焖茄子",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "蘑菇蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 3,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "菠萝咕咾肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "水煮鱼片",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "奥尔良烤鸡全翅",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "山药培根",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "干锅花菜",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "豇豆炒肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "韭菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "糖醋青椒",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "紫菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 4,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "素鸡烧肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "剁椒白鱼",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "香酥鸭",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "香辣鱼豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "宫爆鸡丁",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "西葫芦炒肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "黄瓜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "清炒西蓝花",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "番茄蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 5,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "茄汁咕咾肉",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "青花椒鱼块",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "辣子鸡",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "香莴笋炒肉",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "银鱼炖蛋",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "豇豆炒肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "剁椒肉米臭豆腐",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "油焖茭白",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "紫菜蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "油面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 6,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "糯米蒸排骨",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "香辣鱼丸",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "毛豆米蒸腊鸡腿",
+      "price": 7,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "腐竹木耳肉片",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "蒜苔炒肉丝",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "肉沫炖蛋",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "雪菜肉末粉皮",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "青椒炒素肠",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "时蔬",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "萝卜丝蛋汤",
+      "price": 0,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "清炒大白菜",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "油面筋塞肉",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "baiyulan",
+      "window": "self",
+      "source": 2,
+      "meal": "dinner",
+      "day": 7,
+      "name": "红烧狮子头",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "白馒头",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红糖花卷",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "花卷",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "发糕",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "菜包",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "香菇青菜包",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "萝卜丝包",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆沙包",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "烧麦",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "胡萝卜牛肉包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉粉丝包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "西葫芦鸡蛋包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "白菜牛肉包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "芹菜牛肉包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "茴香牛肉包",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "蜜豆卷",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉包",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "麻团",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "南瓜饼",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "鸡蛋饼",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "油条",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "土豆丝荷包蛋",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉锅贴",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "炸油饼",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉小生煎",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "玉米饼",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "糍饭糕",
+      "price": 2.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "萝卜丝馅饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "三角饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "土豆丝鸡蛋卷饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "梅干菜肉饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆沙饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "韭菜鸡蛋饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "酱香饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "葱油饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "粉丝卷心菜饼",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "牛肉煎包",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "白粥",
+      "price": 0.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "南瓜粥",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "玉米粥",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "绿豆粥",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "小米粥",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "手工豆浆",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "豆腐脑",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红豆小圆子",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "绿豆小圆子",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "馄饨（小）",
+      "price": 6,
+      "portion": "20个"
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "馄饨（中）",
+      "price": 9,
+      "portion": "30个"
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "馄饨（大）",
+      "price": 12,
+      "portion": "40个"
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "白煮蛋",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "茶叶蛋",
+      "price": 1.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "玉米",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "红薯",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "breakfast",
+      "source": 3,
+      "meal": "breakfast",
+      "day": 0,
+      "name": "蒸南瓜",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "椒麻鸡拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "椒麻鸡拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "双菇牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "双菇牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "肉沫茄子拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "肉沫茄子拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "牛肉炒河粉（小）",
+      "price": 15,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "牛肉炒河粉（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "炮仗面（小）",
+      "price": 15,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "炮仗面（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 1,
+      "name": "烤包子",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "香辣牛肚拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "香辣牛肚拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "大盘鸡拌面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "大盘鸡拌面（大）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "小炒牛肉拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "小炒牛肉拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "牛肉手抓饭（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "牛肉手抓饭（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "牛肉豆角焖面（小）",
+      "price": 15,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "牛肉豆角焖面（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 2,
+      "name": "蒜香烤鸡全翅",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "椒麻鸡拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "椒麻鸡拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "螺丝椒炒肉拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "螺丝椒炒肉拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "番茄牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "番茄牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "馕饼炒肉（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "馕饼炒肉（大）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "干煸炒面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "干煸炒面（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 3,
+      "name": "兰花干",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "孜然牛肉拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "孜然牛肉拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "双椒牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "双椒牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "干锅羊头肉拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "干锅羊头肉拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "牛肉菜饭（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "牛肉菜饭（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "丁丁炒面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "丁丁炒面（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 4,
+      "name": "干锅土豆片",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "椒麻鸡拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "椒麻鸡拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "黑椒牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "黑椒牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "白菜豆腐牛肉拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "白菜豆腐牛肉拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "干煸炒面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "干煸炒面（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "牛肉炒河粉（小）",
+      "price": 15,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "牛肉炒河粉（大）",
+      "price": 17,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 5,
+      "name": "素鸡",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "红油鸡块拌面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "红油鸡块拌面（大）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "杏鲍菇牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 6,
+      "name": "杏鲍菇牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "拉面（小）",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "拉面（大）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "葱油拌面（小）",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "葱油拌面（大）",
+      "price": 13,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "水饺",
+      "price": 12,
+      "portion": "25个"
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "红烧鸡块拌面（小）",
+      "price": 14,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "红烧鸡块拌面（大）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "番茄牛腩拌面（小）",
+      "price": 16,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "noodle",
+      "source": 4,
+      "meal": "all",
+      "day": 7,
+      "name": "番茄牛腩拌面（大）",
+      "price": 18,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "鱼头豆腐汤",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "藤椒鸡",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "水煮鱼片",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "孜然牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "软炸虾球",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "酸汤肥牛",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "酸辣鸡胗",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "土豆牛腩",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "刀豆土豆",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "芹菜干丝炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "虎皮青椒肉沫",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "芥菜烧双菇",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "酸辣白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "麻婆豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 1,
+      "name": "醋溜土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "萝卜龙尾骨汤",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "麻辣牛肚丝",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "腐竹牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "椒盐大虾",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "口水鸡",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "炸鱼骨",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "酱爆鸡丁",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "家常茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "肉沫橄榄菜豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "油焖茭白",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "西芹腐竹炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "干捞粉丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "荷兰豆炒莲藕",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "蒜泥杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "麻婆豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "清炒冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 2,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "玉米老母鸡汤",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "老上海酱鸭",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "杏鲍菇牛肉片",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "土豆牛腩",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "小炒肥牛",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "大盘鸡",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "酸汤鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "糖醋菊花鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "干煸藕丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "椒盐白玉菇",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "蟹黄豆腐",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "地三鲜",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "蒜苔炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "炝炒包菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "麻婆豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 3,
+      "name": "葱油冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "山菌老母鸡汤",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "宏达烧鸡",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "水煮牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "小炒羊头肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "鹌鹑蛋牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "干煎带鱼",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "虾仁蒸蛋",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "五彩云丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "青瓜炒腐竹",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "烂糊肉丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "芥菜烧双菇",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "青椒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "清炒杭白菜",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 4,
+      "name": "麻婆豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "玉米炖牛龙骨",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "葱爆牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "孜然八爪鱼",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "糖醋鸡柳",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "干烧羊排",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "椒盐大虾",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "红烧瓦块鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "虎皮青椒肉沫",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "莴笋炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "千丝炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "麻婆豆腐",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "清炒芦菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 5,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "麻辣鸡块",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "鹌鹑蛋牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "香椒鱿鱼",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "藤椒鱼片",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "孜然牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "刀豆土豆",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "平菇炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "苦瓜炒蛋",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "芹椒炒香干",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "葱油冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 6,
+      "name": "清炒杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "糖醋排条",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "麻辣羊排",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "西芹牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "黄豆焖牛蹄筋",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "山药木耳炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "白玉菇炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "干锅土豆片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "地三鲜",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "清炒杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 7,
+      "name": "青椒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "干锅羊排",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "辣子鸡丁",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "杭椒牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "萝卜牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "红烧鱼腩",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "脆皮鸭腿",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "豆角炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "莴笋肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "韭菜炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "白菜年糕炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "醋溜土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "清炒杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 1,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "双菇牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "香酥手枪腿",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "酸菜鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "黄焖鸡",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "西芹牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "小炒八爪鱼",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "丝瓜面筋炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "香辣干豆干炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "西葫芦炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "蒜泥杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 2,
+      "name": "清炒包菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "马桥干牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "辣子鸡",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "平菇牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "玉米虾仁",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "藤椒鱼丁",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "红烧瓦块鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "地三鲜",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "干捞粉丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "莴笋肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "清炒小青菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "葱油冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 3,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "千层干牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "酸辣鸡胗",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "杭椒牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "脆皮手枪腿",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "小炒目鱼花",
+      "price": 9,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "杏鲍菇牛肉粒",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "西葫芦炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "芹菜干丝炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "蒜泥小青菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "清炒包菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 4,
+      "name": "青椒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "双菇牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "水煮牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "香酥鸡柳",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "清炒虾仁",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "番茄鱼丁",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "山东炒鸡",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "花菜炒小酥肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "鱼香茄子",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "干煸豆角",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "家常豆腐炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "莴笋肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "芹菜干丝炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "清炒西兰花",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 5,
+      "name": "蒜泥油麦菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "黄焖鸡",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "酸菜鱼",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "土豆牛肉",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "杭椒牛肉",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "马桥干牛腩",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "豇豆肉丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "荷兰豆炒莲藕",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "西葫芦炒肉片",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "芹菜干丝炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "葱油冬瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "蒜泥小青菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 6,
+      "name": "酸辣土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "香辣手撕鸡",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "葱爆肥牛",
+      "price": 12,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "双椒鱼丁",
+      "price": 10,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "小炒牛角花",
+      "price": 8,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "白玉菇炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "烂糊肉丝",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "千层干炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "番茄炒蛋",
+      "price": 4,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "茭白炒肉",
+      "price": 6,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "红枣南瓜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "清炒杭白菜",
+      "price": 3,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 7,
+      "name": "青椒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 0,
+      "name": "红烧鸭块",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 0,
+      "name": "红烧鸡腿",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 0,
+      "name": "清炒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "lunch",
+      "day": 0,
+      "name": "清炒豆芽",
+      "price": 1,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 0,
+      "name": "红烧鸭块",
+      "price": 5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 0,
+      "name": "红烧鸡腿",
+      "price": 3.5,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 0,
+      "name": "清炒土豆丝",
+      "price": 2,
+      "portion": ""
+    },
+    {
+      "venue": "silu",
+      "window": "self",
+      "source": 5,
+      "meal": "dinner",
+      "day": 0,
+      "name": "清炒豆芽",
+      "price": 1,
+      "portion": ""
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-11-03T19:07:29.053Z",
+  "kind": "local-responsive-browser",
+  "origin": "http://127.0.0.1:3192",
+  "methodLinkNavigation": true,
+  "checks": [
+    {
+      "page": "value-report",
+      "document": 305,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/value-assets/assets/study-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1425,
+          "src": "/competition/value-assets/assets/study-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-editor.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-analysis.png"
+        }
+      ],
+      "viewport": 320
+    },
+    {
+      "page": "value-report",
+      "document": 375,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/value-assets/assets/study-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1425,
+          "src": "/competition/value-assets/assets/study-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-editor.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-analysis.png"
+        }
+      ],
+      "viewport": 390
+    },
+    {
+      "page": "value-report",
+      "document": 1425,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/value-assets/assets/study-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1425,
+          "src": "/competition/value-assets/assets/study-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-editor.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 375,
+          "src": "/competition/value-assets/assets/study-mobile-analysis.png"
+        }
+      ],
+      "viewport": 1440
+    },
+    {
+      "page": "evidence",
+      "document": 305,
+      "methodLink": [
+        {
+          "height": 44,
+          "text": "用户对照方法、工具与真实模型预检"
+        }
+      ],
+      "viewport": 320
+    },
+    {
+      "page": "evidence",
+      "document": 375,
+      "methodLink": [
+        {
+          "height": 44,
+          "text": "用户对照方法、工具与真实模型预检"
+        }
+      ],
+      "viewport": 390
+    },
+    {
+      "page": "evidence",
+      "document": 1425,
+      "methodLink": [
+        {
+          "height": 44,
+          "text": "用户对照方法、工具与真实模型预检"
+        }
+      ],
+      "viewport": 1440
+    }
+  ]
+}

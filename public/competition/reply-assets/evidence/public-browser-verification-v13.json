@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-03T19:46:55.120Z",
+  "scope": "Formal HTTPS in browser; report and evidence at phone size, report at desktop size",
+  "checks": [
+    {
+      "documentWidth": 375,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/reply-assets/assets/reply-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/reply-assets/assets/reply-review-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-review-mobile.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-edit-mobile.png"
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "https://daylight.yunforis.com/competition/reply-review-report.html",
+      "width": 390
+    },
+    {
+      "documentWidth": 375,
+      "replyReportLink": "/competition/reply-review-report.html",
+      "scrollWidth": 375,
+      "url": "https://daylight.yunforis.com/evidence",
+      "width": 390
+    },
+    {
+      "documentWidth": 1425,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/reply-assets/assets/reply-flow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/reply-assets/assets/reply-review-desktop.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-review-mobile.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/reply-assets/assets/reply-edit-mobile.png"
+        }
+      ],
+      "scrollWidth": 1425,
+      "url": "https://daylight.yunforis.com/competition/reply-review-report.html",
+      "width": 1440
+    }
+  ],
+  "navigation": [
+    "evidence page reply link opens report",
+    "report contents jump to dataflow; headingTop=20.1042px",
+    "diagram link opens 1536x1024 PNG",
+    "back returns to report"
+  ],
+  "screenshots": [
+    "assets/public-report-mobile.png",
+    "assets/public-flow-mobile.png"
+  ]
+}

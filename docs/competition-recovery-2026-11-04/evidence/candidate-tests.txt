@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: backup resumes only its original application roles and marks complete payloads
+ok 1 - backup resumes only its original application roles and marks complete payloads
+  ---
+  duration_ms: 112.759028
+  type: 'test'
+  ...
+# Subtest: a failed database dump resumes paused writers and never marks a backup complete
+ok 2 - a failed database dump resumes paused writers and never marks a backup complete
+  ---
+  duration_ms: 70.430776
+  type: 'test'
+  ...
+# Subtest: restore refuses any existing target before creating or changing its services
+ok 3 - restore refuses any existing target before creating or changing its services
+  ---
+  duration_ms: 112.388417
+  type: 'test'
+  ...
+# Subtest: restore rejects modified backup bytes before any Docker invocation
+ok 4 - restore rejects modified backup bytes before any Docker invocation
+  ---
+  duration_ms: 117.147409
+  type: 'test'
+  ...
+# Subtest: a verified backup restores and checks data while application roles remain stopped by default
+ok 5 - a verified backup restores and checks data while application roles remain stopped by default
+  ---
+  duration_ms: 216.654053
+  type: 'test'
+  ...
+# Subtest: a failed inventory capture resumes writers and leaves no completed backup
+ok 6 - a failed inventory capture resumes writers and leaves no completed backup
+  ---
+  duration_ms: 58.845261
+  type: 'test'
+  ...
+# Subtest: activation follows successful content verification and stops on verification failure
+ok 7 - activation follows successful content verification and stops on verification failure
+  ---
+  duration_ms: 271.31793
+  type: 'test'
+  ...
+# Subtest: legacy v1 backup remains importable without starting applications
+ok 8 - legacy v1 backup remains importable without starting applications
+  ---
+  duration_ms: 183.067849
+  type: 'test'
+  ...
+# Subtest: recovery proof accepts identical inventories and counts every table row and object byte
+ok 9 - recovery proof accepts identical inventories and counts every table row and object byte
+  ---
+  duration_ms: 4.371478
+  type: 'test'
+  ...
+# Subtest: row, sequence and object corruption each fail verification without exposing private names
+ok 10 - row, sequence and object corruption each fail verification without exposing private names
+  ---
+  duration_ms: 3.266161
+  type: 'test'
+  ...
+# Subtest: missing and unexpected relations and objects are detected even when counts match
+ok 11 - missing and unexpected relations and objects are detected even when counts match
+  ---
+  duration_ms: 0.945612
+  type: 'test'
+  ...
+# Subtest: invalid hashes, counts and duplicate names cannot produce a successful proof
+ok 12 - invalid hashes, counts and duplicate names cannot produce a successful proof
+  ---
+  duration_ms: 2.219407
+  type: 'test'
+  ...
+# Subtest: object digest covers all chunks and a changed final byte
+ok 13 - object digest covers all chunks and a changed final byte
+  ---
+  duration_ms: 1.719445
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1926.3835

@@ -1,0 +1,227 @@
+{
+  "method": "public-catalog-estimate",
+  "calculatedAt": "2026-11-03T16:30:47.448Z",
+  "currency": "CNY",
+  "billingVerified": false,
+  "source": {
+    "source": "https://www.compshare.cn/model-api",
+    "observedAt": "2026-11-03T16:23:27.003Z",
+    "model": "deepseek-v4.1-flash",
+    "modelLink": "https://console.compshare.cn/light-gpu/model-center?modelId=umodel-1789039387",
+    "cardText": "模型上新\ndeepseek-v4.1-flash\n\nDeepSeek\n\n文本生成\n视觉理解\n深度思考\n1000K\n输入\n2\n元/百万 Token\n文本输出\n8\n元/百万 Token",
+    "inputCnyPerMillion": 2,
+    "outputCnyPerMillion": 8,
+    "cachedInputCnyPerMillion": null,
+    "pricingNotice": "模型与价格以控制台实时信息为准。",
+    "evidenceSha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b"
+  },
+  "cachedInputTreatment": "Cached input is included in total input and priced at the listed normal input rate (2 CNY / million). The public card has no separate cache rate.",
+  "groups": [
+    {
+      "group": "model-preflight",
+      "source": "docs/competition-2026-11-03/evidence/model-preflight/results.jsonl",
+      "sha256": "079862f56ade77d29ac5665f3844d213dcee0608519daae0637c3c684f7d68cb",
+      "calls": 3,
+      "totals": {
+        "inputTokens": 8446,
+        "cachedInputTokens": 4096,
+        "outputTokens": 2443,
+        "inputCny": 0.016892,
+        "outputCny": 0.019544,
+        "estimatedCny": 0.036436
+      },
+      "meanPerCallCny": 0.012145333,
+      "cases": [
+        {
+          "id": "absolute-interview",
+          "inputTokens": 2762,
+          "cachedInputTokens": 0,
+          "outputTokens": 671,
+          "inputCny": 0.005524,
+          "outputCny": 0.005368,
+          "estimatedCny": 0.010892
+        },
+        {
+          "id": "reschedule-interview",
+          "inputTokens": 2842,
+          "cachedInputTokens": 2048,
+          "outputTokens": 1267,
+          "inputCny": 0.005684,
+          "outputCny": 0.010136,
+          "estimatedCny": 0.01582
+        },
+        {
+          "id": "invitation-with-injection",
+          "inputTokens": 2842,
+          "cachedInputTokens": 2048,
+          "outputTokens": 505,
+          "inputCny": 0.005684,
+          "outputCny": 0.00404,
+          "estimatedCny": 0.009724
+        }
+      ]
+    },
+    {
+      "group": "model-full",
+      "source": "docs/competition-2026-11-03/evidence/model-full/results.jsonl",
+      "sha256": "6e55c71b88d5dd3317de63753ada9f7a89766f65d298064b574f46fbfea4640f",
+      "calls": 15,
+      "totals": {
+        "inputTokens": 41863,
+        "cachedInputTokens": 33920,
+        "outputTokens": 10169,
+        "inputCny": 0.083726,
+        "outputCny": 0.081352,
+        "estimatedCny": 0.165078
+      },
+      "meanPerCallCny": 0.0110052,
+      "cases": [
+        {
+          "id": "absolute-interview",
+          "inputTokens": 2762,
+          "cachedInputTokens": 2688,
+          "outputTokens": 1671,
+          "inputCny": 0.005524,
+          "outputCny": 0.013368,
+          "estimatedCny": 0.018892
+        },
+        {
+          "id": "relative-interview",
+          "inputTokens": 2741,
+          "cachedInputTokens": 2560,
+          "outputTokens": 704,
+          "inputCny": 0.005482,
+          "outputCny": 0.005632,
+          "estimatedCny": 0.011114
+        },
+        {
+          "id": "all-day-campus",
+          "inputTokens": 2759,
+          "cachedInputTokens": 2048,
+          "outputTokens": 673,
+          "inputCny": 0.005518,
+          "outputCny": 0.005384,
+          "estimatedCny": 0.010902
+        },
+        {
+          "id": "multi-day-camp",
+          "inputTokens": 2763,
+          "cachedInputTokens": 2048,
+          "outputTokens": 935,
+          "inputCny": 0.005526,
+          "outputCny": 0.00748,
+          "estimatedCny": 0.013006
+        },
+        {
+          "id": "material-deadline",
+          "inputTokens": 2740,
+          "cachedInputTokens": 2048,
+          "outputTokens": 561,
+          "inputCny": 0.00548,
+          "outputCny": 0.004488,
+          "estimatedCny": 0.009968
+        },
+        {
+          "id": "relative-deadline",
+          "inputTokens": 2733,
+          "cachedInputTokens": 2048,
+          "outputTokens": 624,
+          "inputCny": 0.005466,
+          "outputCny": 0.004992,
+          "estimatedCny": 0.010458
+        },
+        {
+          "id": "existing-task-reminder",
+          "inputTokens": 2833,
+          "cachedInputTokens": 2560,
+          "outputTokens": 974,
+          "inputCny": 0.005666,
+          "outputCny": 0.007792,
+          "estimatedCny": 0.013458
+        },
+        {
+          "id": "cancel-interview",
+          "inputTokens": 2832,
+          "cachedInputTokens": 2560,
+          "outputTokens": 212,
+          "inputCny": 0.005664,
+          "outputCny": 0.001696,
+          "estimatedCny": 0.00736
+        },
+        {
+          "id": "reschedule-interview",
+          "inputTokens": 2842,
+          "cachedInputTokens": 2048,
+          "outputTokens": 357,
+          "inputCny": 0.005684,
+          "outputCny": 0.002856,
+          "estimatedCny": 0.00854
+        },
+        {
+          "id": "location-only-change",
+          "inputTokens": 2828,
+          "cachedInputTokens": 2048,
+          "outputTokens": 667,
+          "inputCny": 0.005656,
+          "outputCny": 0.005336,
+          "estimatedCny": 0.010992
+        },
+        {
+          "id": "ambiguous-cancel",
+          "inputTokens": 2853,
+          "cachedInputTokens": 2560,
+          "outputTokens": 730,
+          "inputCny": 0.005706,
+          "outputCny": 0.00584,
+          "estimatedCny": 0.011546
+        },
+        {
+          "id": "newsletter-no-action",
+          "inputTokens": 2751,
+          "cachedInputTokens": 2048,
+          "outputTokens": 161,
+          "inputCny": 0.005502,
+          "outputCny": 0.001288,
+          "estimatedCny": 0.00679
+        },
+        {
+          "id": "untrusted-instruction-only",
+          "inputTokens": 2811,
+          "cachedInputTokens": 2560,
+          "outputTokens": 206,
+          "inputCny": 0.005622,
+          "outputCny": 0.001648,
+          "estimatedCny": 0.00727
+        },
+        {
+          "id": "invitation-with-injection",
+          "inputTokens": 2842,
+          "cachedInputTokens": 2048,
+          "outputTokens": 841,
+          "inputCny": 0.005684,
+          "outputCny": 0.006728,
+          "estimatedCny": 0.012412
+        },
+        {
+          "id": "two-independent-events",
+          "inputTokens": 2773,
+          "cachedInputTokens": 2048,
+          "outputTokens": 853,
+          "inputCny": 0.005546,
+          "outputCny": 0.006824,
+          "estimatedCny": 0.01237
+        }
+      ]
+    }
+  ],
+  "totalCalls": 18,
+  "estimatedTotalCny": 0.201514,
+  "workload": {
+    "calls": 1000,
+    "inputTokensPerCall": 2790.866666666667,
+    "outputTokensPerCall": 677.9333333333333,
+    "modelCny": 11.0052,
+    "illustrativeMonthlyInfraCny": 100,
+    "illustrativeMonthlyTotalCny": 111.0052
+  }
+}

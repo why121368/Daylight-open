@@ -1,0 +1,34 @@
+{
+  "videoBytes": 1431534,
+  "posterBytes": 61383,
+  "chapters": 12,
+  "encodedDurationSeconds": 179.917,
+  "manifestDurationSeconds": 180,
+  "fastStart": true,
+  "sha256": "a1fd4dfbf4130a9ab83d5163bed71c4fc570d9870e34825cce0d800aca068a13",
+  "posterSha256": "56d4478ac1f9b36d47ca1af0a822f2fde6b9cc4cb3529c37a98bf0c38d8b06c9",
+  "movieBoxes": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "size": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "size": 26697
+    },
+    {
+      "type": "free",
+      "offset": 26729,
+      "size": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 26737,
+      "size": 1404797
+    }
+  ],
+  "modelCalls": 0,
+  "imageCalls": 0
+}

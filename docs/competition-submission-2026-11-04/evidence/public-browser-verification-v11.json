@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-11-03T18:28:01.620Z",
+  "scope": "Live HTTPS v11, 390x844 browser and actual download event",
+  "checks": [
+    {
+      "height": 844,
+      "links": [
+        {
+          "download": null,
+          "height": 44,
+          "href": "/competition/technical-report.html",
+          "text": "阅读完整技术报告"
+        },
+        {
+          "download": "Daylight-Technical-Report-20261104.pdf",
+          "height": 44,
+          "href": "/competition/technical-report.pdf",
+          "text": "下载 PDF · 17 页"
+        }
+      ],
+      "scenario": "public-evidence",
+      "scrollWidth": 375,
+      "url": "https://daylight.yunforis.com/evidence",
+      "width": 390
+    },
+    {
+      "height": 844,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 720,
+          "src": "/competition/experience-qr.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/architecture.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/dataflow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/rag-evidence.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-entry.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/rag-assets/images/desktop-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/performance.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/observability.webp"
+        }
+      ],
+      "scenario": "public-report",
+      "scrollWidth": 375,
+      "tocOpen": false,
+      "url": "https://daylight.yunforis.com/competition/technical-report.html",
+      "width": 390
+    }
+  ],
+  "pdfDownload": {
+    "event": true,
+    "name": "Daylight-Technical-Report-20261104.pdf",
+    "retainedUrl": "https://daylight.yunforis.com/evidence",
+    "bytes": 2187994,
+    "sha256": "c45ec46e0293933099f4d02f88302945ed4c4dd7d71406d03d80924330223da5"
+  },
+  "toc": {
+    "target": "08 · RAG 优化前后实测",
+    "url": "https://daylight.yunforis.com/competition/technical-report.html#08-rag-%E4%BC%98%E5%8C%96%E5%89%8D%E5%90%8E%E5%AE%9E%E6%B5%8B"
+  },
+  "realModelCalls": 0
+}

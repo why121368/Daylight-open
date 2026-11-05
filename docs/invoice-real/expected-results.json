@@ -1,0 +1,388 @@
+{
+  "description": "Human comparison baseline for synthetic attachments; never sent as model responses.",
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "batch": "invoice-real-b02",
+  "cases": [
+    {
+      "caseId": "INV-B02-01",
+      "filename": "01_lab-consumables.pdf",
+      "scenario": "PDF 文字层；13% 税率；两条实验耗材明细；新票号",
+      "format": "pdf",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000001",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-01",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "澄川实验用品有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000001",
+        "amount": "435.00",
+        "taxAmount": "56.55",
+        "totalAmount": "491.55",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*实验耗材*样品瓶",
+            "specification": "20mL",
+            "unit": "盒",
+            "quantity": "6",
+            "unitPrice": "48.50",
+            "amount": "291.00",
+            "taxRate": "13%",
+            "taxAmount": "37.83"
+          },
+          {
+            "name": "*实验耗材*一次性手套",
+            "specification": "M码",
+            "unit": "盒",
+            "quantity": "4",
+            "unitPrice": "36.00",
+            "amount": "144.00",
+            "taxRate": "13%",
+            "taxAmount": "18.72"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 25701,
+      "sha256": "2a7b6d7c5f18234371c00cd7f5cb5d1b8926aeeb5d90d9743a5ffbe49006b534"
+    },
+    {
+      "caseId": "INV-B02-02",
+      "filename": "02_meeting-room-rental.pdf",
+      "scenario": "PDF 文字层；9% 租赁服务；增值税专用发票",
+      "format": "pdf",
+      "expected": {
+        "invoiceType": "电子发票（增值税专用发票）",
+        "invoiceNumber": "00202610161000000002",
+        "invoiceCode": "031002602002",
+        "invoiceDate": "2026-10-02",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "木棉空间服务有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000002",
+        "amount": "780.00",
+        "taxAmount": "70.20",
+        "totalAmount": "850.20",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*租赁服务*会议室租赁费",
+            "specification": "小型会议室",
+            "unit": "小时",
+            "quantity": "3",
+            "unitPrice": "260.00",
+            "amount": "780.00",
+            "taxRate": "9%",
+            "taxAmount": "70.20"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 24406,
+      "sha256": "1e7e73998991cc762b748e072c142f0c66f7ee7b3ffb7e9c2409579e6f4e4db2"
+    },
+    {
+      "caseId": "INV-B02-03",
+      "filename": "03_cloud-computing.pdf",
+      "scenario": "PDF 文字层；6% 信息技术服务；计算与存储两条明细",
+      "format": "pdf",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000003",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-03",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "松屿云计算有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000003",
+        "amount": "411.50",
+        "taxAmount": "24.69",
+        "totalAmount": "436.19",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*信息技术服务*云主机",
+            "specification": "2核4G",
+            "unit": "月",
+            "quantity": "2",
+            "unitPrice": "168.00",
+            "amount": "336.00",
+            "taxRate": "6%",
+            "taxAmount": "20.16"
+          },
+          {
+            "name": "*信息技术服务*云存储",
+            "specification": "100GB",
+            "unit": "项",
+            "quantity": "1",
+            "unitPrice": "75.50",
+            "amount": "75.50",
+            "taxRate": "6%",
+            "taxAmount": "4.53"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 25178,
+      "sha256": "2ef99ca6a324704d698ccd729136a6290a202189222f99b89141845d1f932f44"
+    },
+    {
+      "caseId": "INV-B02-04",
+      "filename": "04_printing-service.pdf",
+      "scenario": "PDF 文字层；13% 印刷服务；数量及含小数单价",
+      "format": "pdf",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000004",
+        "invoiceCode": "011002602004",
+        "invoiceDate": "2026-10-04",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "墨禾印刷有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000004",
+        "amount": "520.00",
+        "taxAmount": "67.60",
+        "totalAmount": "587.60",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*印刷品*培训手册",
+            "specification": "A5彩印",
+            "unit": "本",
+            "quantity": "80",
+            "unitPrice": "6.50",
+            "amount": "520.00",
+            "taxRate": "13%",
+            "taxAmount": "67.60"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 24286,
+      "sha256": "44ecf7b69da6244969f1177f884d8f7037517713b93d0735fa2dacc6c5b2017e"
+    },
+    {
+      "caseId": "INV-B02-05",
+      "filename": "05_personal-books.pdf",
+      "scenario": "PDF 文字层；个人购买方；免税；缺失购买方税号",
+      "format": "pdf",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000005",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-05",
+        "buyerName": "演示读者（虚构）",
+        "buyerTaxId": null,
+        "sellerName": "书岚文化有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000005",
+        "amount": "152.00",
+        "taxAmount": "0.00",
+        "totalAmount": "152.00",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*图书*软件工程图书",
+            "specification": "技术类",
+            "unit": "本",
+            "quantity": "2",
+            "unitPrice": "76.00",
+            "amount": "152.00",
+            "taxRate": "免税",
+            "taxAmount": "0.00"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 24858,
+      "sha256": "438be7f05ed82dd330af0da00dc12f8adc0a794d5ff793f4b888baea8be5a007"
+    },
+    {
+      "caseId": "INV-B02-06",
+      "filename": "06_network-service.png",
+      "scenario": "PNG 图片；6% 网络服务费；单条明细",
+      "format": "png",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000006",
+        "invoiceCode": "044002602006",
+        "invoiceDate": "2026-10-06",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "沐风网络服务有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000006",
+        "amount": "560.00",
+        "taxAmount": "33.60",
+        "totalAmount": "593.60",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*信息技术服务*网络维护费",
+            "specification": "基础维护",
+            "unit": "月",
+            "quantity": "2",
+            "unitPrice": "280.00",
+            "amount": "560.00",
+            "taxRate": "6%",
+            "taxAmount": "33.60"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 197134,
+      "sha256": "717243f42b39498cf00c7ada821f40e7940e24cc6cfe5dc10458b27372c3bc1a"
+    },
+    {
+      "caseId": "INV-B02-07",
+      "filename": "07_monitor-purchase.jpg",
+      "scenario": "JPG 图片；13% 设备采购；显示器和支架两条明细",
+      "format": "jpg",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000007",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-07",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "望舒电子有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000007",
+        "amount": "1728.00",
+        "taxAmount": "224.64",
+        "totalAmount": "1952.64",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*电子设备*显示器",
+            "specification": "27英寸",
+            "unit": "台",
+            "quantity": "1",
+            "unitPrice": "1599.00",
+            "amount": "1599.00",
+            "taxRate": "13%",
+            "taxAmount": "207.87"
+          },
+          {
+            "name": "*电子设备*显示器支架",
+            "specification": "桌面款",
+            "unit": "个",
+            "quantity": "1",
+            "unitPrice": "129.00",
+            "amount": "129.00",
+            "taxRate": "13%",
+            "taxAmount": "16.77"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 370577,
+      "sha256": "86c6f99da48178757a0901694cb49be6bb9b0d6490130ed42b2adcada657069b"
+    },
+    {
+      "caseId": "INV-B02-08",
+      "filename": "08_equipment-maintenance.png",
+      "scenario": "PNG 图片；13% 设备维修；增值税专用发票",
+      "format": "png",
+      "expected": {
+        "invoiceType": "电子发票（增值税专用发票）",
+        "invoiceNumber": "00202610161000000008",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-08",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "青砾设备服务有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000008",
+        "amount": "450.00",
+        "taxAmount": "58.50",
+        "totalAmount": "508.50",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*维修服务*设备检修费",
+            "specification": "常规检修",
+            "unit": "次",
+            "quantity": "1",
+            "unitPrice": "450.00",
+            "amount": "450.00",
+            "taxRate": "13%",
+            "taxAmount": "58.50"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 194223,
+      "sha256": "e7e84f6d6fde8e07bc33438782dc37f515ff1e320b35fd4156b1ce138ed81b72"
+    },
+    {
+      "caseId": "INV-B02-09",
+      "filename": "09_translation-service.jpg",
+      "scenario": "JPG 图片；6% 翻译服务；税额合计未提供",
+      "format": "jpg",
+      "expected": {
+        "invoiceType": "电子发票（增值税普通发票）",
+        "invoiceNumber": "00202610161000000009",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-09",
+        "buyerName": "栖云演示技术有限公司（虚构）",
+        "buyerTaxId": "TESTB2BUYER0000001",
+        "sellerName": "远墨翻译有限公司（虚构）",
+        "sellerTaxId": "TESTB2SELL00000009",
+        "amount": "450.00",
+        "taxAmount": null,
+        "totalAmount": "477.00",
+        "currency": "CNY",
+        "items": [
+          {
+            "name": "*翻译服务*技术文档翻译",
+            "specification": "中译英",
+            "unit": "千字",
+            "quantity": "5",
+            "unitPrice": "90.00",
+            "amount": "450.00",
+            "taxRate": "6%",
+            "taxAmount": "27.00"
+          }
+        ],
+        "notes": "模拟发票，仅用于 Daylight 功能测试，不可报销。"
+      },
+      "bytes": 358660,
+      "sha256": "b85c84dd21deff3927ec7937be931d7bb41ac8c52dcc57a7e8be37e7e2f587a4"
+    },
+    {
+      "caseId": "INV-B02-10",
+      "filename": "10_usd-hosting.png",
+      "scenario": "英文 PNG 图片；USD；缺失代码和购销方税号",
+      "format": "png",
+      "expected": {
+        "invoiceType": "Commercial Invoice",
+        "invoiceNumber": "TEST-USD-B02-0010",
+        "invoiceCode": null,
+        "invoiceDate": "2026-10-10",
+        "buyerName": "Qiyun Demo Ltd (Fictional)",
+        "buyerTaxId": null,
+        "sellerName": "Cedar Demo Hosting (Fictional)",
+        "sellerTaxId": null,
+        "amount": "75.00",
+        "taxAmount": "0.00",
+        "totalAmount": "75.00",
+        "currency": "USD",
+        "items": [
+          {
+            "name": "Demo hosting service",
+            "specification": "Starter plan",
+            "unit": "month",
+            "quantity": "3",
+            "unitPrice": "25.00",
+            "amount": "75.00",
+            "taxRate": "0%",
+            "taxAmount": "0.00"
+          }
+        ],
+        "notes": "SYNTHETIC TEST INVOICE. NOT VALID FOR PAYMENT OR REIMBURSEMENT."
+      },
+      "bytes": 125575,
+      "sha256": "0bd9cfc64dd2da0537fff9223e82991b311122e6e1149b0b2344475981df848e"
+    }
+  ]
+}

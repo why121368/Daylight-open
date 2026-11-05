@@ -1,0 +1,29 @@
+[
+  {
+    "documentWidth": 1425,
+    "figureLoaded": true,
+    "images": 7,
+    "lazyImages": true,
+    "mainWidth": 1140,
+    "width": 1440,
+    "ok": true
+  },
+  {
+    "documentWidth": 375,
+    "figureLoaded": true,
+    "images": 7,
+    "lazyImages": true,
+    "mainWidth": 374.6666870117187,
+    "width": 390,
+    "ok": true
+  },
+  {
+    "documentWidth": 305,
+    "figureLoaded": true,
+    "images": 7,
+    "lazyImages": true,
+    "mainWidth": 304.66668701171875,
+    "width": 320,
+    "ok": true
+  }
+]

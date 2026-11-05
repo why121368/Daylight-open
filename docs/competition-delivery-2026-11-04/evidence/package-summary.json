@@ -1,0 +1,81 @@
+{
+  "at": "2026-11-03T23:43:26.385451+00:00",
+  "scope": "Portable source/build snapshot fc3ae1d, extracted Windows installation and browser execution",
+  "archive": {
+    "sha256": "46a5570589a94a35fa3542173bedb66d401180b91fec60e267f8b7c3a27dad24",
+    "sourceCommit": "fc3ae1de6002bc56d1b4ca2038097862e62e40fe",
+    "sourceDigest": "99e52b04c54b8cb6c8b0ce4bca90bddbdb6e79224215d99c38d7bc7644a5cd62",
+    "buildDigest": "f156f96fd51b2f4d1d3b109cfc073242016f208ae0ac23fbbbe7ffc4c07c69ec",
+    "files": 2345,
+    "bytes": 112500706,
+    "integrity": {
+      "manifestSha256": "001fc6a9dcc0d9f096bc4fddc9075629ec7b96c4f18b15e08b0a7be56fdf6c0a",
+      "files": 2345,
+      "bytes": 148346154
+    }
+  },
+  "archiveFile": "daylight-demo-20261103T233654.tar.gz",
+  "fileInventoryBytes": 148346154,
+  "actualArchiveFilesIncludingManifest": 2346,
+  "tests": {
+    "total": 1042,
+    "pass": 1013,
+    "skipped": 29,
+    "fail": 0
+  },
+  "cleanCheckout": true,
+  "fiveStageVerification": true,
+  "stages": [
+    {
+      "name": "tests",
+      "elapsedMs": 74957,
+      "exitCode": 0
+    },
+    {
+      "name": "build",
+      "elapsedMs": 36675,
+      "exitCode": 0
+    },
+    {
+      "name": "evaluation-corpus",
+      "elapsedMs": 124,
+      "exitCode": 0
+    },
+    {
+      "name": "demo",
+      "elapsedMs": 6569,
+      "exitCode": 0
+    },
+    {
+      "name": "deployment-assets",
+      "elapsedMs": 111,
+      "exitCode": 0
+    }
+  ],
+  "reproduction": {
+    "emptyNodeModulesBeforeInstall": true,
+    "node": "v24.14.0",
+    "npm": "11.9.0",
+    "extractionMs": 9107,
+    "demoHttpRequests": 24,
+    "totalElapsedMs": 106744
+  },
+  "cleanInstallMs": 61135,
+  "installedPackages": 541,
+  "firstIntegrityProcessMs": 21912,
+  "afterInstallIntegrityProcessMs": 1685,
+  "faultsDetected": 4,
+  "browserChecks": 12,
+  "browserOk": true,
+  "browserConsoleErrors": 0,
+  "sourceSnapshot": {
+    "publicApplication": "v20 frontend behavior plus delivery scripts",
+    "reportPublication": "Follow-up publication records this immutable package separately."
+  },
+  "cost": {
+    "newTextCalls": 0,
+    "newImageCalls": 1,
+    "totalImageCalls": 15,
+    "newCloudPurchasesCny": 0
+  }
+}

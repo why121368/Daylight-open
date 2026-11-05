@@ -1,0 +1,5 @@
+ mailbox  | chunks | mail_bodies | mail_files | resume_chunks 
+----------+--------+-------------+------------+---------------
+ 170e71cd |     35 |          20 |          0 |            15
+(1 row)
+

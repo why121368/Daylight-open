@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "tables": 9,
+  "rows": 9269,
+  "objects": 187,
+  "objectBytes": 199654466,
+  "dataRestoreMs": 48000,
+  "contentMismatches": 0,
+  "cumulativeModelCalls": 84,
+  "cumulativeEstimatedCny": 0.516094,
+  "imageModel": "gpt-image-2.5",
+  "imageCalls": 13,
+  "pdfSha256": "2e393c182bc0f86dba63d1e01aa124dedaf621af442abd88a8dd1942d84fcdad"
+}

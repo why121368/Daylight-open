@@ -1,0 +1,21 @@
+{
+  "model": "gpt-image-2.5",
+  "backend": "imagegen bundled CLI via configured API",
+  "size": "1536x1024",
+  "quality": "high",
+  "calls": 1,
+  "language": "English",
+  "prompt": "reply-prompt.txt",
+  "generationSeconds": 32.0,
+  "review": "English labels, state branch directions, recovery band and zero-call preparation label checked visually.",
+  "files": {
+    "reply-flow.png": {
+      "bytes": 1492272,
+      "sha256": "374b13a0e22e421adf111abb4af4d8624122b123d476ea8875f94d573beed926"
+    },
+    "reply-flow.webp": {
+      "bytes": 123762,
+      "sha256": "f1a88b05ef191f28e6e1879e602c6f5dfc40a2063f0bb8fe41e5a98960b137a8"
+    }
+  }
+}

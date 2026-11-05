@@ -1,0 +1,23 @@
+Use case: infographic-diagram
+Asset type: Daylight technical report, backup and recovery dataflow
+Primary request: Create a precise engineering infographic showing the implemented backup and staged recovery workflow. All text must be English, rendered exactly as listed below. Use clean readable sans serif typography, generous whitespace, a warm ivory background, dark charcoal text, amber Daylight accents, teal verification accents, subtle rounded panels and thin directional arrows. Landscape 1536 by 1024.
+Title at top: "DAYLIGHT / Recover with evidence"
+Subtitle: "PostgreSQL + private object storage"
+Upper horizontal lane titled "BACKUP" has five numbered boxes from left to right:
+1 "Pause writers" with small text "API / Worker / Scheduler"
+2 "Capture inventory" with two separate symbols for "Database rows" and "Object bytes"
+3 "Create backup" with two separate symbols for "PG custom dump" and "Cold MinIO volume"
+4 "Verify archive" with small text "SHA-256 + COMPLETE"
+5 "Resume services" with small text "Wait for health"
+Lower horizontal lane titled "RESTORE" has five numbered boxes from left to right:
+1 "Fresh project" with small text "New volumes"
+2 "Import data" with small text "PostgreSQL + MinIO"
+3 "Compare content" with small text "Every row + every object"
+4 "Recovery proof" with small text "Exact sets + SHA-256"
+5 "Start applications" with small text "Explicit activation"
+Connect each lane with clear left-to-right arrows. Also connect the upper "Verify archive" box to the lower "Fresh project" box with a labeled arrow "Verified backup" routed through whitespace outside the boxes. Make this connecting arrow unambiguous.
+Three small footer callouts, each with a simple line icon:
+"Repeatable-read database snapshot"
+"Existing restore targets are refused"
+"Workers stay stopped during verification"
+Constraints: Use only this text. No Chinese text. No performance numbers. Do not invent cloud services, uptime claims, certifications or additional stages. Keep every arrow attached to the correct named step. No watermark.

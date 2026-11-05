@@ -1,0 +1,10 @@
+Use case: productivity-visual
+Asset type: exact before-and-after performance chart for a competition engineering report; English only.
+Primary request: Design a clean three-panel horizontal bar chart infographic at 1536x1024. Warm ivory background, forest green optimized bars, muted gray before bars, small amber accents. Elegant restrained technical report style, very large accurate numbers. Title "DAYLIGHT / MEASURED PERFORMANCE". Subtitle "Same public host / HTTPS / 2026-11-03".
+Three metrics, each with a gray Before horizontal bar and green After horizontal bar. Each panel uses its own linear axis starting at zero and clearly labels seconds. Do not imply cross-panel bar lengths are comparable. Exact labels and values:
+Panel 1 "Workspace API pair". "Before 2.57 s" and "After 0.70 s". The second bar is 27.24 percent of the first.
+Panel 2 "Mobile-size workspace ready". "Before 8.77 s" and "After 2.38 s". The second bar is 27.14 percent of the first. Footnote "390 x 844 / 5 fresh contexts per group".
+Panel 3 "Existing-mail resync". "Before 17.02 s" and "After 2.59 s". Second bar is 15.22 percent of first. Footnote "Same mailbox / 3 runs per group".
+Footer "Means from bounded samples. Raw observations, p50/p95 and test conditions accompany this figure."
+Small source line "Source: docs/performance-2026-11-03"
+Constraints: English only. Exact numbers and matching bar proportions. No invented success rates, cost savings or user-value percentages. Every axis starts at zero. Use three separate panels. Do not add cloud provider logos or marketing superlatives.

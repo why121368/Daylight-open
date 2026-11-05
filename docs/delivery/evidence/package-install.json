@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "at": "2026-10-28T00:50:44.835Z",
+  "sourceArchive": "daylight-demo-20261028T004655.tar.gz",
+  "archiveSha256": "abdfbd8b621c28c8d80b3be5b048959c58116d0e2c6d0b7d1adbbe511249e028",
+  "files": 806,
+  "sourceDigest": "1ef3356233a9877050b4b2895aaf6ae91a201f91d443671cb4c900c8eb4856df",
+  "buildDigest": "5083ed3b09c5d5210e74829cd49915e9203ab3bc38696fef6b363281d1e7f865",
+  "freshInstall": true,
+  "demoHttp": true,
+  "scope": "extracted-delivery",
+  "directory": "E:\\AAAproject\\UCloud2609\\Daylight\\work\\delivery-unpacked-EQKjzR"
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "automated-fixture-preflight",
+  "sourceCommit": "d895e674077b6d26b5642dbf38620bb126ca56a7",
+  "sourceDirty": true,
+  "model": "deepseek-v4.1-flash",
+  "endpointOrigin": "https://api.modelverse.cn",
+  "createdAt": "2026-11-03T18:52:24.454Z",
+  "realModelCalls": 10,
+  "inputTokens": 32272,
+  "outputTokens": 13537,
+  "cachedInputTokens": 22528,
+  "modelCallLatency": {
+    "p50Ms": 9234.5,
+    "p95Ms": 32503
+  },
+  "estimatedCny": 0.17284,
+  "price": {
+    "inputPerMillionCny": 2,
+    "outputPerMillionCny": 8,
+    "cachedInputPerMillionCny": 2,
+    "source": "https://www.compshare.cn/model-api",
+    "observedAt": "2026-11-03T16:23:27.003Z",
+    "sha256": "acee9bdcbfec243d9f5b3a7381d55811a829b5b9b0dc692958aae808f8f6c78b",
+    "kind": "published-list-price-estimate"
+  },
+  "sets": [
+    {
+      "set": "A",
+      "durationMs": 74404.7942,
+      "passed": 12,
+      "total": 12,
+      "processed": 5,
+      "errors": 0,
+      "duplicate": 1,
+      "conflicts": 1,
+      "rescheduled": 1,
+      "cancelled": 1
+    },
+    {
+      "set": "B",
+      "durationMs": 39467.403600000005,
+      "passed": 12,
+      "total": 12,
+      "processed": 5,
+      "errors": 0,
+      "duplicate": 1,
+      "conflicts": 1,
+      "rescheduled": 1,
+      "cancelled": 1
+    }
+  ],
+  "participants": 0,
+  "measurement": "Two fixed synthetic mail sets; sequential model extraction and production tools. Participant reading and review are measured in the separate facilitated tool.",
+  "rawHashes": {
+    "manifest.json": "29772bba94500001bbdb6886652a84e67971aec700140e7ab5aa0be848a8758a",
+    "preflight.json": "5f296f08293ea31c468c0be008a0361254c6da8620ad48a4eba05e6086372188"
+  }
+}

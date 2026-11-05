@@ -1,0 +1,205 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>体验进度恢复与手机继续 · Daylight</title><style>body{margin:0;background:#faf9f5;color:#23382d;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:30px 20px 70px;overflow-wrap:anywhere}nav{padding:16px 20px;background:#173e30;color:#fff;display:flex;gap:24px;flex-wrap:wrap}nav a{color:#fff;min-height:44px;display:inline-flex;align-items:center}a{color:#176943;text-underline-offset:4px}h1,h2,h3{line-height:1.4;margin-top:1.8em;scroll-margin-top:20px}h1{font-size:2em}h2{border-top:1px solid #d3ddd2;padding-top:24px}p{margin:1em 0}img{max-width:100%;height:auto;border-radius:10px}p img{vertical-align:top;margin:6px 10px 6px 0}table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:24px 0}td,th{border:1px solid #ccd8ca;padding:10px 14px;text-align:left;vertical-align:top;min-width:120px}th{background:#e7eee2}pre{background:#edf1e9;border:1px solid #d4dece;padding:16px;border-radius:10px;overflow-x:auto}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em}blockquote{border-left:4px solid #5f8a69;margin-left:0;padding-left:18px}.stamp{font-size:13px;color:#5e7063;padding:12px 16px;background:#edf1e9;border-radius:8px}.toc{background:#fff;padding:10px 18px;border-radius:8px}li{margin:7px 0}@media(max-width:600px){main{padding:18px 16px 50px}h1{font-size:1.65em}td,th{font-size:14px;padding:8px 10px}nav{gap:16px}}</style><nav><a href="/experience">三分钟体验</a><a href="/evidence">技术与实测</a><a href="/competition/report.html">图文总览</a><a href="/competition/reproduce.html">运行与源码</a></nav><main><p class="stamp">图文与测量记录快照：2026-11-04。测试环境、日期与版本在各节列出，当前体验从上方导航进入。</p><h1 id="体验进度恢复与手机继续">体验进度恢复与手机继续</h1>
+<details><summary>目录 · 点击展开</summary><div class="toc">
+<ul>
+<li><a href="#体验进度恢复与手机继续">体验进度恢复与手机继续</a><ul>
+<li><a href="#1-从实际评审路径发现问题">1. 从实际评审路径发现问题</a><ul>
+<li><a href="#返回技术页前后">返回技术页前后</a></li>
+</ul>
+</li>
+<li><a href="#2-进度如何跨页面和设备衔接">2. 进度如何跨页面和设备衔接</a></li>
+<li><a href="#3-技术选型与设计逻辑">3. 技术选型与设计逻辑</a></li>
+<li><a href="#4-行为手机布局与二维码核对">4. 行为、手机布局与二维码核对</a><ul>
+<li><a href="#二维码下载兼容处理">二维码下载兼容处理</a></li>
+</ul>
+</li>
+<li><a href="#5-首屏加载与费用影响">5. 首屏加载与费用影响</a></li>
+<li><a href="#6-复现">6. 复现</a></li>
+<li><a href="#7-费用登记">7. 费用登记</a></li>
+</ul>
+</li>
+</ul>
+</div></details>
+<p>日期：<strong>2026-11-04，北京时间</strong>。入口：<a href="https://daylight.yunforis.com/experience">七步体验</a> · <a href="https://daylight.yunforis.com/experience?step=3">直接查看第三步</a> · <a href="https://daylight.yunforis.com/evidence#delivery">完整技术页</a>。</p>
+<h2 id="1-从实际评审路径发现问题">1. 从实际评审路径发现问题</h2>
+<p>在正式 v18 页面依次完成面试通知、时间冲突、面试改期三步，然后打开「技术与实测」，使用浏览器返回。体验页重新挂载后固定请求第零步，已经完成的第三步和回看范围一起丢失。刷新也会重新开始。技术资料与业务体验之间的往返因此需要重复操作。</p>
+<p>本轮让每个成功步骤有可直接打开的地址，并在同一标签页保存回看范围。电脑上点「手机接着看」，二维码直接对应当前步骤。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>优化前 v18</th>
+<th>本轮实现与浏览器观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第三步 → 技术页 → 浏览器返回</td>
+<td>进度 3 → 0</td>
+<td>返回后仍为第 3 步</td>
+</tr>
+<tr>
+<td>第三步刷新</td>
+<td>初始化固定请求第 0 步</td>
+<td>从地址恢复第 3 步，并定位到结果</td>
+</tr>
+<tr>
+<td>点击导航里的「三分钟体验」</td>
+<td>新建页面，从第 0 步开始</td>
+<td>当前标签页恢复最后选中的步骤</td>
+</tr>
+<tr>
+<td>电脑转手机</td>
+<td>固定二维码进入体验首页</td>
+<td>当前步骤链接和二维码进入相同步骤</td>
+</tr>
+<tr>
+<td>走到第七步后回看第二步，再刷新</td>
+<td>回看范围随页面消失</td>
+<td>保留第二步选择及第七步回看资格</td>
+</tr>
+<tr>
+<td>请求下一步遇到 503</td>
+<td>原结果可保留</td>
+<td>原结果、已保存进度和地址一起保留；重试成功后再更新</td>
+</tr>
+<tr>
+<td>保存当前步骤二维码</td>
+<td>临时创建data URL下载入口</td>
+<td>标准下载链接读取站内PNG；手机可长按图片保存</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/continuity-assets/evidence/before-behavior.json">优化前实际观察</a> · <a href="/competition/continuity-assets/evidence/local-behavior.json">本轮15项浏览器行为记录</a>。</p>
+<h3 id="返回技术页前后">返回技术页前后</h3>
+<p><img alt="优化前第三步完成" src="/competition/continuity-assets/assets/before-step3.png" loading="lazy" decoding="async"></p>
+<p><img alt="优化前从技术页返回后回到零步" src="/competition/continuity-assets/assets/before-back.png" loading="lazy" decoding="async"></p>
+<p><img alt="本轮从技术页返回后保持第三步" src="/competition/continuity-assets/assets/after-back.png" loading="lazy" decoding="async"></p>
+<p>前两张来自正式 v18 HTTPS；第三张来自使用独立样例数据的本地浏览器。每张截图保存原始字节，正式发布截图另列在发布记录。</p>
+<h2 id="2-进度如何跨页面和设备衔接">2. 进度如何跨页面和设备衔接</h2>
+<p><img alt="英文步骤链接与恢复流程" src="/competition/continuity-assets/assets/continuity.webp" loading="lazy" decoding="async"></p>
+<p>本图使用 <strong>gpt-image-2.5</strong>，英文标注；中文选型与状态语义在下面展开。<a href="/competition/continuity-assets/continuity-prompt.txt">原始提示词</a> · <a href="/competition/continuity-assets/image-generation.json">生成记录与图片摘要</a>。</p>
+<p>成功完成第三步后，地址变为 <code>/experience?step=3</code>。刷新、浏览器返回和手机打开该地址，都请求已有的有界公开体验接口，从固定样例重新执行至第三步，重新取得日历、待办、历史和执行记录。当前步骤地址与同标签页进度负责定位，业务结果仍由工具执行取得。</p>
+<h2 id="3-技术选型与设计逻辑">3. 技术选型与设计逻辑</h2>
+<table>
+<thead>
+<tr>
+<th>选择</th>
+<th>原因</th>
+<th>具体语义与代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URL 的 <code>step</code> 参数</td>
+<td>支持刷新、返回、复制链接和手机扫码，其他设备也能定位</td>
+<td>只接受一个0–7的整数；重复、越界和格式错误都归零；成功后规范化地址</td>
+</tr>
+<tr>
+<td><code>sessionStorage</code> 保存同标签页进度</td>
+<td>从不带步骤的导航入口返回时，继续刚才的选择；同时保留已完成步骤的回看范围</td>
+<td>保存样例版本、当前步骤、最远步骤三个字段；关闭标签页后由链接继续</td>
+</tr>
+<tr>
+<td>显式步骤优先</td>
+<td>收到一个第三步链接时，应打开第三步</td>
+<td>URL与标签页记录同时存在时，按URL选中当前步骤；0表示重新开始</td>
+</tr>
+<tr>
+<td>请求成功后提交进度</td>
+<td>网络失败时，用户仍能核对原结果并继续重试</td>
+<td>503不推进步骤、地址和持久记录；成功重试才一起更新</td>
+</tr>
+<tr>
+<td>服务端重新执行公开样例</td>
+<td>复用现有真实日历、待办、去重和Trace工具，步骤跨设备含义一致</td>
+<td>每个请求最多七步、四个并发；公开体验实时模型调用0</td>
+</tr>
+<tr>
+<td>复用现有分享弹窗，点击时动态导入</td>
+<td>二维码、复制、PNG下载和手机分享沿用成熟入口，首屏不必加载二维码库</td>
+<td>首次点击需要加载分享模块；失败提供重试文案</td>
+</tr>
+<tr>
+<td>为0–7步生成静态PNG下载文件</td>
+<td>各步骤链接固定，文件可随前端发布；标准下载链接适配浏览器下载流程</td>
+<td>八张PNG合计45,470 bytes，按点击读取；更换域名时重新生成</td>
+</tr>
+<tr>
+<td>44px操作和90svh内滚动弹窗</td>
+<td>320px窄屏与短屏也能完成复制和下载</td>
+<td>长内容在弹窗内滚动，页面保持视口宽度</td>
+</tr>
+</tbody>
+</table>
+<p>浏览器禁止存储时仍通过URL定位。链接构建只保留站点origin、公开路径和步骤参数。样例版本变化后忽略旧标签页记录。重新体验成功后将当前和最远步骤一并归零。</p>
+<p>代码入口：<code>shared/experience-progress.js</code>、<code>src/pages/experience-page.jsx</code>、<code>src/components/campus-guide/share-dialog.jsx</code>。</p>
+<h2 id="4-行为手机布局与二维码核对">4. 行为、手机布局与二维码核对</h2>
+<p>本地进度和公开业务测试 <strong>15/15</strong>：九项进度策略、六项已有公开业务验证。浏览器行为 <strong>15项通过</strong>：新设备步骤链接、资料页返回、刷新、导航恢复、503保留、重试提交、后四步继续、回看范围、重新体验及刷新。</p>
+<p><a href="/competition/continuity-assets/evidence/local-tests.txt">定向测试原始输出</a> · <a href="/competition/continuity-assets/evidence/source-hashes.json">验证时源码摘要</a>。</p>
+<p>使用本轮<a href="/competition/continuity-assets/evidence/failure-preview.mjs">本地503验证入口</a>只对第四步首次请求返回503。浏览器仍显示第三步，地址仍为第三步；点击「重试加载」后显示第四步，地址更新为第四步。</p>
+<p><img alt="临时503后保留第三步和重试入口" src="/competition/continuity-assets/assets/local-failed.png" loading="lazy" decoding="async"></p>
+<p>分享弹窗分别在 <strong>1440×900、390×844、320×568</strong> 检查：三组无整页横向溢出，复制、下载和手机分享按钮高44px；320×568采用弹窗内滚动。生成的PNG为768×768，用 <strong>zxing-cpp 3.1.1</strong> 完整解码，结果为当前站点的 <code>/experience?step=3</code>。</p>
+<table>
+<thead>
+<tr>
+<th>390px弹窗</th>
+<th>320px短屏弹窗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="390px分享弹窗" src="/competition/continuity-assets/assets/local-share-390.png" loading="lazy" decoding="async"></td>
+<td><img alt="320px分享弹窗" src="/competition/continuity-assets/assets/local-share-320.png" loading="lazy" decoding="async"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="/competition/continuity-assets/evidence/local-layouts.json">布局原始记录</a> · <a href="/competition/continuity-assets/evidence/local-qr-verification.json">二维码解码记录</a> · <a href="/competition/continuity-assets/assets/local-step3-qr.png">实际生成PNG</a>。本节设备为Windows IAB浏览器；正式手机微信扫码按设备记录采集。</p>
+<p>最终构建再次核对三尺寸弹窗，并将恢复定位放到当前结果：第三步返回后结果距视口顶部20px，焦点进入「当前体验结果」。<a href="/competition/continuity-assets/evidence/final-build-behavior.json">最终构建记录</a>。</p>
+<h3 id="二维码下载兼容处理">二维码下载兼容处理</h3>
+<p>v19正式浏览器中，点击临时data URL下载入口后未捕获下载事件，在指定下载位置也未找到预期PNG。随后将按钮改为标准<code>a download</code>链接，公开体验读取随版本发布的站内PNG，同时增加长按保存说明。八个步骤文件使用qrcode算法生成，每张768×768，逐文件摘要与解码URL一起核对。</p>
+<p><a href="/competition/continuity-assets/evidence/download-observation-v19.json">v19下载观察</a> · <a href="/competition/continuity-assets/evidence/static-qr-verification.json">八张静态二维码解码</a> · <a href="/competition/continuity-assets/evidence/local-layouts-v20.json">最终标准下载链接与三尺寸弹窗</a>。最终构建在1440/390/320px核对，下载入口为真实链接，复制、下载与手机分享均为44px，弹窗完整位于视口内。生成入口为<code>scripts/experience-qr-assets.mjs</code>，核验入口为<code>scripts/verify-experience-qr.py</code>。这些二维码由确定性编码生成，AI图片调用数保持14次。</p>
+<h2 id="5-首屏加载与费用影响">5. 首屏加载与费用影响</h2>
+<p>分享组件使用动态导入，二维码依赖在点击分享时加载。构建报告对首屏静态依赖集合与分享入口分别核对，并保留文件完整摘要。</p>
+<table>
+<thead>
+<tr>
+<th>最终构建项目</th>
+<th style="text-align: right;">实际值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>体验首屏静态JavaScript，逐文件gzip</td>
+<td style="text-align: right;">167,601 bytes</td>
+</tr>
+<tr>
+<td>相比v17已发布首屏基线新增JavaScript gzip</td>
+<td style="text-align: right;">1,614 bytes</td>
+</tr>
+<tr>
+<td>点击分享后新增的独立JavaScript，逐文件gzip</td>
+<td style="text-align: right;">17,091 bytes</td>
+</tr>
+<tr>
+<td>初始体验静态依赖中的二维码库</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>这组体积由最终Vite文件按默认gzip参数逐文件计算。进度和分享按钮带来的首屏增加量为1,614 bytes；二维码、弹窗和相关控件的17,091 bytes推迟到点击分享后加载。</p>
+<p><a href="/competition/continuity-assets/evidence/bundle-summary.json">构建依赖与体积摘要</a> · <a href="/competition/continuity-assets/evidence/bundle-inventory.json">完整构建清单</a>。精确体积以摘要中的实际构建结果为准，公网响应编码字节另随发布记录保存。</p>
+<h2 id="6-复现">6. 复现</h2>
+<pre><code class="language-sh">node --test server/experience-progress.test.js server/experience.test.js
+npm run build
+npm run demo -- --no-build --port 3202
+</code></pre>
+<p>更换公开部署域名时，在构建前运行<code>node scripts/experience-qr-assets.mjs https://你的域名</code>，让下载PNG与新站点步骤链接一致。</p>
+<p>打开 <code>http://127.0.0.1:3202/experience?step=3</code>，点击技术页、返回、刷新，再点击「手机接着看」检查地址和二维码。点击「重新体验」，刷新后应保持第零步。</p>
+<p>另开终端执行：</p>
+<pre><code class="language-sh">node docs/competition-continuity-2026-11-04/evidence/failure-preview.mjs
+</code></pre>
+<p>打开 <code>http://127.0.0.1:3203/experience?step=3</code>，点击下一步，再点击重试。该入口固定绑定本机3203，代理独立样例服务的公开体验接口。</p>
+<p>二维码验证需要Python、Pillow和<code>zxing-cpp==3.1.1</code>，打开保存后的PNG，使用<code>zxingcpp.read_barcodes</code>核对结果。最终英文图的压缩和累计用量复算入口为<code>scripts/competition-continuity-figure.py</code>。</p>
+<h2 id="7-费用登记">7. 费用登记</h2>
+<p>本轮文本模型调用0、新增云采购0；新增 <strong>gpt-image-2.5英文图1次</strong>。图片累计14次，费用按供应商账单汇总。文本累计84次，输入104,267、输出38,445 Token，按当前公开价格估算 <strong>¥0.516094</strong>。总预算 <strong>¥500</strong>。</p>
+<p><a href="/competition/continuity-assets/evidence/budget-total.json">本轮累计清单</a>通过上一份清单完整SHA-256连接历史记录。原有固定评测快照保持原始口径。</p></main></html>

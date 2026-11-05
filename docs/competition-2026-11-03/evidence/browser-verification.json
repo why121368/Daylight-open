@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-11-03T15:56:12.276Z",
+  "browser": "Codex in-app browser",
+  "finalPublicRelease": "daylight:public-competition-20261103-v6",
+  "responsiveBuild": "v3 layout; v4 changes title cleanup only",
+  "responsive": [
+    {
+      "page": "experience",
+      "clientWidth": 305,
+      "overflow": false,
+      "scrollWidth": 305,
+      "start": {
+        "bottom": 428.6666870117187,
+        "height": 48,
+        "top": 380.6666870117187
+      },
+      "width": 320
+    },
+    {
+      "page": "experience",
+      "clientWidth": 345,
+      "overflow": false,
+      "scrollWidth": 345,
+      "start": {
+        "bottom": 352.66668701171875,
+        "height": 48,
+        "top": 304.66668701171875
+      },
+      "width": 360
+    },
+    {
+      "page": "experience",
+      "clientWidth": 375,
+      "overflow": false,
+      "scrollWidth": 375,
+      "start": {
+        "bottom": 352.66668701171875,
+        "height": 48,
+        "top": 304.66668701171875
+      },
+      "width": 390
+    },
+    {
+      "page": "experience",
+      "clientWidth": 753,
+      "overflow": false,
+      "scrollWidth": 753,
+      "start": {
+        "bottom": 809.6666870117188,
+        "height": 48,
+        "top": 761.6666870117188
+      },
+      "width": 768
+    },
+    {
+      "page": "experience",
+      "clientWidth": 1425,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "start": {
+        "bottom": 671.6666870117188,
+        "height": 48,
+        "top": 623.6666870117188
+      },
+      "width": 1440
+    },
+    {
+      "page": "evidence",
+      "clientWidth": 305,
+      "overflow": false,
+      "scrollWidth": 305,
+      "start": null,
+      "width": 320
+    },
+    {
+      "page": "evidence",
+      "clientWidth": 345,
+      "overflow": false,
+      "scrollWidth": 345,
+      "start": null,
+      "width": 360
+    },
+    {
+      "page": "evidence",
+      "clientWidth": 375,
+      "overflow": false,
+      "scrollWidth": 375,
+      "start": null,
+      "width": 390
+    },
+    {
+      "page": "evidence",
+      "clientWidth": 753,
+      "overflow": false,
+      "scrollWidth": 753,
+      "start": null,
+      "width": 768
+    },
+    {
+      "page": "evidence",
+      "clientWidth": 1425,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "start": null,
+      "width": 1440
+    }
+  ],
+  "sevenStepUi": {
+    "release": "v1",
+    "devices": [
+      "390x844",
+      "1440x960"
+    ],
+    "captures": "../images/experience-*-mobile.jpg",
+    "finalV4BusinessAssertions": "public-verification-v4.json"
+  },
+  "localFaultInjection": {
+    "origin": "http://127.0.0.1:3187",
+    "firstStatus": 503,
+    "retryRestoredStart": true,
+    "retryRestoredBaselineEvent": true
+  },
+  "deviceRecord": "Responsive desktop-browser checks; physical WeChat visit recorded separately on site.",
+  "finalPublicUi": {
+    "invitationStepRendered": true,
+    "navigationToTechnicalScrollTop": 0,
+    "figureZoomLinks": 3,
+    "allFiguresLoadedAtNaturalWidth": 1536,
+    "videoLink": "/competition/demo.mp4",
+    "costInput": {
+      "messages": 2000,
+      "cachePercent": 50
+    },
+    "monthlyModelCny": 8.08,
+    "monthlyTotalCny": 108.08,
+    "invalidCostRejected": true,
+    "titleRestoredAfterNavigation": "Daylight — 从邮件到安排",
+    "landingExperienceCtaWorked": true,
+    "landingMobile": {
+      "width": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    "finalExperienceStartEnabled": true
+  },
+  "titleNavigationLocalV4": [
+    {
+      "route": "/experience",
+      "title": "三分钟体验 · Daylight"
+    },
+    {
+      "route": "/evidence",
+      "title": "技术与实测 · Daylight"
+    },
+    {
+      "route": "/",
+      "title": "Daylight — 从邮件到安排"
+    }
+  ],
+  "publicReports": {
+    "checkedAt": "2026-11-03T16:13:27.036Z",
+    "reportHref": "/competition/report.html",
+    "anonymousAccess": true,
+    "width": 390,
+    "clientWidth": 375,
+    "scrollWidth": 375,
+    "titleTopBefore": 1069.46875,
+    "titleTopAfter": 286.59375,
+    "collapsedContents": true,
+    "brokenImages": [],
+    "capturedPublicConsoleErrors": []
+  }
+}

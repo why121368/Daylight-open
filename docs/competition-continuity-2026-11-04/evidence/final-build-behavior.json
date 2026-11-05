@@ -1,0 +1,120 @@
+{
+  "url": "http://127.0.0.1:3202/experience?step=3",
+  "focusedResult": true,
+  "resultTop": 20,
+  "step": "3",
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 900,
+      "buttons": [
+        {
+          "height": 44,
+          "label": "复制链接"
+        },
+        {
+          "height": 44,
+          "label": "下载 PNG"
+        },
+        {
+          "height": 44,
+          "label": "打开手机分享菜单"
+        }
+      ],
+      "dialog": {
+        "bottom": 777.0833587646484,
+        "clientHeight": 653,
+        "height": 654.1666870117188,
+        "left": 496,
+        "right": 944,
+        "scrollHeight": 653,
+        "top": 122.91667175292967
+      },
+      "image": [
+        {
+          "complete": true,
+          "height": 768,
+          "width": 768
+        }
+      ],
+      "scrollWidth": 1440,
+      "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+      "ok": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "buttons": [
+        {
+          "height": 44,
+          "label": "复制链接"
+        },
+        {
+          "height": 44,
+          "label": "下载 PNG"
+        },
+        {
+          "height": 44,
+          "label": "打开手机分享菜单"
+        }
+      ],
+      "dialog": {
+        "bottom": 761.0833587646484,
+        "clientHeight": 677,
+        "height": 678.1666870117188,
+        "left": 16,
+        "right": 374,
+        "scrollHeight": 677,
+        "top": 82.91667175292969
+      },
+      "image": [
+        {
+          "complete": true,
+          "height": 768,
+          "width": 768
+        }
+      ],
+      "scrollWidth": 390,
+      "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+      "ok": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "buttons": [
+        {
+          "height": 44,
+          "label": "复制链接"
+        },
+        {
+          "height": 44,
+          "label": "下载 PNG"
+        },
+        {
+          "height": 44,
+          "label": "打开手机分享菜单"
+        }
+      ],
+      "dialog": {
+        "bottom": 539.5989799499512,
+        "clientHeight": 510,
+        "height": 511.1979370117187,
+        "left": 16,
+        "right": 304,
+        "scrollHeight": 680,
+        "top": 28.401042938232425
+      },
+      "image": [
+        {
+          "complete": true,
+          "height": 768,
+          "width": 768
+        }
+      ],
+      "scrollWidth": 320,
+      "shareUrl": "http://127.0.0.1:3202/experience?step=3",
+      "ok": true
+    }
+  ],
+  "ok": true
+}

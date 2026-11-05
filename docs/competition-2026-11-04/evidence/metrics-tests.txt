@@ -1,0 +1,31 @@
+✔ slow disk charges in-flight data to both limits without growing a second queue (159.8064ms)
+✔ shutdown awaits failed writes and persists their final dropped count (182.6403ms)
+✔ rotated files obey the per-process file count and byte limits (160.7463ms)
+✔ directory retention reclaims files left by previous instances (282.825ms)
+✔ three roles produce independent atomic summaries and the CLI aggregates each (298.7655ms)
+✔ metric identities, numeric payloads and aggregate cardinality are bounded (409.7492ms)
+✔ recording starts with the switch; the sink is created by the service entry point (8.1269ms)
+✔ each sample carries the required fields and Beijing timestamps (20.7684ms)
+✔ labels are sanitised so private and unbounded values never leave the process (17.858ms)
+✔ an overflowing buffer drops samples and reports the loss instead of blocking (27.0553ms)
+✔ latency metrics keep every raw sample so percentiles can be recomputed (16.1662ms)
+✔ timers record a duration in milliseconds and always release (28.9763ms)
+✔ the rolling summary carries count, sum, min, max and percentiles (18.2247ms)
+✔ a failing sink never throws into the caller and is reported as status (91.6758ms)
+✔ metrics stay completely off when the environment switch is absent (111.1995ms)
+✔ provenance reports unknown rather than a false clean tree when git is unavailable (214.4846ms)
+✔ sink names differ for the same PID under different container host tags (215.0299ms)
+✔ an unusable metrics directory degrades to sinkError instead of crashing the service (215.2796ms)
+✔ dependency outage and draining reject readiness without killing liveness (2.0608ms)
+✔ hung readiness times out, aborts its check and still serves liveness (25.5946ms)
+✔ draining during an in-flight readiness check cannot return ready (0.5853ms)
+✔ shutdown closes idle connections and forces active ones before cleaning resources (42.6323ms)
+✔ failed resource cleanup keeps the hard deadline instead of leaving a live process (205.9614ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1630.3665

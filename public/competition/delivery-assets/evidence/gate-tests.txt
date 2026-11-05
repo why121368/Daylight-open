@@ -1,0 +1,6273 @@
+TAP version 13
+# Subtest: 管理端搜索索引覆盖导航、配置与邮箱
+ok 1 - 管理端搜索索引覆盖导航、配置与邮箱
+  ---
+  duration_ms: 81.0709
+  type: 'test'
+  ...
+# Subtest: 通过本地 HTTP 模型测试接口传递邮件并读取 JSON 日程
+ok 2 - 通过本地 HTTP 模型测试接口传递邮件并读取 JSON 日程
+  ---
+  duration_ms: 149.8862
+  type: 'test'
+  ...
+# Subtest: 同步会议和普通邮件，重复同步不重复建日程
+ok 3 - 同步会议和普通邮件，重复同步不重复建日程
+  ---
+  duration_ms: 53.4237
+  type: 'test'
+  ...
+# Subtest: 单封模型失败保留成功结果，失败邮件可以再次同步
+ok 4 - 单封模型失败保留成功结果，失败邮件可以再次同步
+  ---
+  duration_ms: 9.3682
+  type: 'test'
+  ...
+# Subtest: 一封邮件能创建多个日程，保留邮件来源关联
+ok 5 - 一封邮件能创建多个日程，保留邮件来源关联
+  ---
+  duration_ms: 4.9285
+  type: 'test'
+  ...
+# Subtest: 模型输出支持 JSON 代码块，拒绝无效和反向时间
+ok 6 - 模型输出支持 JSON 代码块，拒绝无效和反向时间
+  ---
+  duration_ms: 4.0954
+  type: 'test'
+  ...
+# Subtest: 模型鉴权失败时返回服务商错误，避免创建日程
+ok 7 - 模型鉴权失败时返回服务商错误，避免创建日程
+  ---
+  duration_ms: 27.1672
+  type: 'test'
+  ...
+# Subtest: 取消邮件保留原安排和来源，记录取消原因与通知关联
+ok 8 - 取消邮件保留原安排和来源，记录取消原因与通知关联
+  ---
+  duration_ms: 4.219
+  type: 'test'
+  ...
+# Subtest: 改期取消原安排并创建新安排，仅变更地点时继承其余字段
+ok 9 - 改期取消原安排并创建新安排，仅变更地点时继承其余字段
+  ---
+  duration_ms: 5.3792
+  type: 'test'
+  ...
+# Subtest: 批次按邮件时间处理邀请、连续改期和取消，每次传递当前有效日程
+ok 10 - 批次按邮件时间处理邀请、连续改期和取消，每次传递当前有效日程
+  ---
+  duration_ms: 13.6064
+  type: 'test'
+  ...
+# Subtest: 同一批邮件 ID 去重，同一时间的邮件保持输入顺序
+ok 11 - 同一批邮件 ID 去重，同一时间的邮件保持输入顺序
+  ---
+  duration_ms: 6.6921
+  type: 'test'
+  ...
+# Subtest: 同封明确操作可写入，无法匹配的调整进入待人工点选而不整封失败
+ok 12 - 同封明确操作可写入，无法匹配的调整进入待人工点选而不整封失败
+  ---
+  duration_ms: 5.0325
+  type: 'test'
+  ...
+# Subtest: 模型解析支持取消、调整、keep；省略目标进入待匹配而非抛错
+ok 13 - 模型解析支持取消、调整、keep；省略目标进入待匹配而非抛错
+  ---
+  duration_ms: 0.6683
+  type: 'test'
+  ...
+# Subtest: 已取消或不唯一目标进入待匹配；同封重复改同一日程仍整封失败；无效改期保留原样
+ok 14 - 已取消或不唯一目标进入待匹配；同封重复改同一日程仍整封失败；无效改期保留原样
+  ---
+  duration_ms: 7.5661
+  type: 'test'
+  ...
+# Subtest: 示例和真实邮件各自只匹配对应来源的日程
+ok 15 - 示例和真实邮件各自只匹配对应来源的日程
+  ---
+  duration_ms: 2.8728
+  type: 'test'
+  ...
+# Subtest: 模型请求包含有效原日程和来源上下文，可读取取消动作
+ok 16 - 模型请求包含有效原日程和来源上下文，可读取取消动作
+  ---
+  duration_ms: 18.5575
+  type: 'test'
+  ...
+# Subtest: 结构化解析保留邮件内容摘要，兼容旧模型仅返回 events
+ok 17 - 结构化解析保留邮件内容摘要，兼容旧模型仅返回 events
+  ---
+  duration_ms: 3.0535
+  type: 'test'
+  ...
+# Subtest: 同封新增、取消和部分调整保存摘要及每项完整字段快照
+ok 18 - 同封新增、取消和部分调整保存摘要及每项完整字段快照
+  ---
+  duration_ms: 7.2963
+  type: 'test'
+  ...
+# Subtest: 结构化字段在后续连续调整、取消、手动编辑和删除后保持处理时快照
+ok 19 - 结构化字段在后续连续调整、取消、手动编辑和删除后保持处理时快照
+  ---
+  duration_ms: 8.9748
+  type: 'test'
+  ...
+# Subtest: 无日程邮件保存内容摘要和空操作列表，重复同步保留原结果
+ok 20 - 无日程邮件保存内容摘要和空操作列表，重复同步保留原结果
+  ---
+  duration_ms: 4.188
+  type: 'test'
+  ...
+# Subtest: 两步预置示例均保存摘要和结构化快照，并保持 demo 来源
+ok 21 - 两步预置示例均保存摘要和结构化快照，并保持 demo 来源
+  ---
+  duration_ms: 40.7702
+  type: 'test'
+  ...
+# Subtest: 混合视图下单个记录的写请求带上 scope=all
+ok 22 - 混合视图下单个记录的写请求带上 scope=all
+  ---
+  duration_ms: 42.8851
+  type: 'test'
+  ...
+# Subtest: 标签视图用 tag 参数，单邮箱视图不带范围参数
+ok 23 - 标签视图用 tag 参数，单邮箱视图不带范围参数
+  ---
+  duration_ms: 2.4351
+  type: 'test'
+  ...
+# Subtest: 地址里已经带了范围参数就不重复拼接
+ok 24 - 地址里已经带了范围参数就不重复拼接
+  ---
+  duration_ms: 7.2342
+  type: 'test'
+  ...
+# Subtest: withViewScope 让直接 fetch 的地址（附件预览）也能定位归属邮箱
+ok 25 - withViewScope 让直接 fetch 的地址（附件预览）也能定位归属邮箱
+  ---
+  duration_ms: 0.3619
+  type: 'test'
+  ...
+# Subtest: 生产接口面：共享存储上的业务可服务
+ok 26 - 生产接口面：共享存储上的业务可服务
+  ---
+  duration_ms: 6.1741
+  type: 'test'
+  ...
+# Subtest: 生产接口面：本地文件流程被显式拒绝，而不是静默降级
+ok 27 - 生产接口面：本地文件流程被显式拒绝，而不是静默降级
+  ---
+  duration_ms: 2.7882
+  type: 'test'
+  ...
+# Subtest: 生产接口面：按段匹配，不能把前缀相同的陌生路径放进来
+ok 28 - 生产接口面：按段匹配，不能把前缀相同的陌生路径放进来
+  ---
+  duration_ms: 0.9912
+  type: 'test'
+  ...
+# Subtest: 接口面分类表自身一致：条目互不重叠且都能匹配自身
+ok 29 - 接口面分类表自身一致：条目互不重叠且都能匹配自身
+  ---
+  duration_ms: 1.6289
+  type: 'test'
+  ...
+# Subtest: index.js 注册的每个 /api 路由都必须在接口面里被明确表态
+ok 30 - index.js 注册的每个 /api 路由都必须在接口面里被明确表态
+  ---
+  duration_ms: 9.7032
+  type: 'test'
+  ...
+# Subtest: 回复审核：并发准备复用同一草稿，取回编辑版本并保留线程，只确认发送一次
+ok 31 - 回复审核：并发准备复用同一草稿，取回编辑版本并保留线程，只确认发送一次
+  ---
+  duration_ms: 580.4589
+  type: 'test'
+  ...
+# Subtest: 回复审核：来源按邮箱查找，放弃后显式重新准备，发送结果未知时取回原回执
+ok 32 - 回复审核：来源按邮箱查找，放弃后显式重新准备，发送结果未知时取回原回执
+  ---
+  duration_ms: 228.6696
+  type: 'test'
+  ...
+# Subtest: 草稿持久化且不会发送；同一操作幂等，校验收件人与邮件头注入
+ok 33 - 草稿持久化且不会发送；同一操作幂等，校验收件人与邮件头注入
+  ---
+  duration_ms: 212.4192
+  type: 'test'
+  ...
+# Subtest: 发送必须明确确认且审核版本匹配，修改后旧版本不能发出
+ok 34 - 发送必须明确确认且审核版本匹配，修改后旧版本不能发出
+  ---
+  duration_ms: 175.5204
+  type: 'test'
+  ...
+# Subtest: 并发点击先持久化 sending；第二次请求不能产生重复 SMTP
+ok 35 - 并发点击先持久化 sending；第二次请求不能产生重复 SMTP
+  ---
+  duration_ms: 101.7253
+  type: 'test'
+  ...
+# Subtest: 部分收件人接受时列出回执并禁止整封重发
+ok 36 - 部分收件人接受时列出回执并禁止整封重发
+  ---
+  duration_ms: 208.7058
+  type: 'test'
+  ...
+# Subtest: 认证失败可审核重试，DATA 超时保留未知且隐藏凭据
+ok 37 - 认证失败可审核重试，DATA 超时保留未知且隐藏凭据
+  ---
+  duration_ms: 170.2398
+  type: 'test'
+  ...
+# Subtest: SMTP 返回后存储失败依然保留发送屏障，恢复读取不会再次发信
+ok 38 - SMTP 返回后存储失败依然保留发送屏障，恢复读取不会再次发信
+  ---
+  duration_ms: 128.2127
+  type: 'test'
+  ...
+# Subtest: 发送前校验发件邮箱变化、SMTP缺失与草稿放弃
+ok 39 - 发送前校验发件邮箱变化、SMTP缺失与草稿放弃
+  ---
+  duration_ms: 162.2837
+  type: 'test'
+  ...
+# Subtest: 跨邮箱与跨用户无法读取或发送他人的草稿
+ok 40 - 跨邮箱与跨用户无法读取或发送他人的草稿
+  ---
+  duration_ms: 32.2832
+  type: 'test'
+  ...
+# Subtest: 会议邀约链接、过期、已改动或已取消的日程在 SMTP 前拦截
+ok 41 - 会议邀约链接、过期、已改动或已取消的日程在 SMTP 前拦截
+  ---
+  duration_ms: 220.8683
+  type: 'test'
+  ...
+# Subtest: 会议邀约以审核后的中文正文发送纯文本与 HTML MIME，仅真实会议链接可点击且重复确认不重发
+ok 42 - 会议邀约以审核后的中文正文发送纯文本与 HTML MIME，仅真实会议链接可点击且重复确认不重发
+  ---
+  duration_ms: 402.505
+  type: 'test'
+  ...
+# Subtest: 真实 SMTP 发送路径接受多收件人并保留部分拒绝回执，使用 TLS 并关闭传输
+ok 43 - 真实 SMTP 发送路径接受多收件人并保留部分拒绝回执，使用 TLS 并关闭传输
+  ---
+  duration_ms: 12.3804
+  type: 'test'
+  ...
+# Subtest: 真实 Express HTTP：小 D 起草审核发送、飞书入历邀约、简报、SSE恢复与用户邮箱隔离（全部外部传输为合成模拟）
+ok 44 - 真实 Express HTTP：小 D 起草审核发送、飞书入历邀约、简报、SSE恢复与用户邮箱隔离（全部外部传输为合成模拟）
+  ---
+  duration_ms: 10375.9963
+  type: 'test'
+  ...
+# Subtest: 会议邀约 API 不会把外部提交的非 HTTPS 或含认证信息的链接渲染为 HTML 超链接
+ok 45 - 会议邀约 API 不会把外部提交的非 HTTPS 或含认证信息的链接渲染为 HTML 超链接
+  ---
+  duration_ms: 5105.0783
+  type: 'test'
+  ...
+# Subtest: iOS/shared HTTP: invitation review, deduplication, Web state visibility, preferences and private ICS isolation
+ok 46 - iOS/shared HTTP: invitation review, deduplication, Web state visibility, preferences and private ICS isolation
+  ---
+  duration_ms: 5014.5951
+  type: 'test'
+  ...
+# Subtest: manual task creation/editing share ownership, title validation and completion state with Web
+ok 47 - manual task creation/editing share ownership, title validation and completion state with Web
+  ---
+  duration_ms: 5068.6195
+  type: 'test'
+  ...
+# Subtest: 真实 Express HTTP：执行记录回复进入持久审核，跨邮箱隔离、版本校验、线程与重启回执（合成SMTP）
+ok 48 - 真实 Express HTTP：执行记录回复进入持久审核，跨邮箱隔离、版本校验、线程与重启回执（合成SMTP）
+  ---
+  duration_ms: 8508.0621
+  type: 'test'
+  ...
+# Subtest: 简报过去 N 天使用精确滚动区间，起点包含，当前时刻之后排除
+ok 49 - 简报过去 N 天使用精确滚动区间，起点包含，当前时刻之后排除
+  ---
+  duration_ms: 6.9588
+  type: 'test'
+  ...
+# Subtest: 日期范围含北京时间末日，跨 UTC 日期正确，非法输入不会静默扩大范围
+ok 50 - 日期范围含北京时间末日，跨 UTC 日期正确，非法输入不会静默扩大范围
+  ---
+  duration_ms: 1.0387
+  type: 'test'
+  ...
+# Subtest: 简报统计范围内全部已保存邮件，明细截断、未同步与示例边界均可核对
+ok 51 - 简报统计范围内全部已保存邮件，明细截断、未同步与示例边界均可核对
+  ---
+  duration_ms: 9.0154
+  type: 'test'
+  ...
+# Subtest: 没有同步记录或本地邮件时明确覆盖未知，不能等同真实邮箱无邮件
+ok 52 - 没有同步记录或本地邮件时明确覆盖未知，不能等同真实邮箱无邮件
+  ---
+  duration_ms: 0.4963
+  type: 'test'
+  ...
+# Subtest: 简报上下文有界，分类数量固定，优先采用内容摘要且不泄漏完整原文
+ok 53 - 简报上下文有界，分类数量固定，优先采用内容摘要且不泄漏完整原文
+  ---
+  duration_ms: 6.0995
+  type: 'test'
+  ...
+# Subtest: PostgreSQL 已有权威记录时不解析损坏缓存，读写后持久保存权威标记和正常缓存
+ok 54 - PostgreSQL 已有权威记录时不解析损坏缓存，读写后持久保存权威标记和正常缓存
+  ---
+  duration_ms: 107.5428
+  type: 'test'
+  ...
+# Subtest: PG保存preparing后即使JSON缓存写失败，关闭PG仍阻止旧缓存恢复及重复建会
+ok 55 - PG保存preparing后即使JSON缓存写失败，关闭PG仍阻止旧缓存恢复及重复建会
+  ---
+  duration_ms: 90.4562
+  type: 'test'
+  ...
+# Subtest: 已标记PG权威后数据库行丢失，查询与建会读取均失败，不回退旧JSON
+ok 56 - 已标记PG权威后数据库行丢失，查询与建会读取均失败，不回退旧JSON
+  ---
+  duration_ms: 109.4123
+  type: 'test'
+  ...
+# Subtest: 权威标记写入失败会阻止保存后的外部副作用，不把未标记的PG结果当作安全检查点
+ok 57 - 权威标记写入失败会阻止保存后的外部副作用，不把未标记的PG结果当作安全检查点
+  ---
+  duration_ms: 46.2963
+  type: 'test'
+  ...
+# Subtest: 首次迁移没有PG标记的正常JSON记录，保存到PG后继续保持幂等检查点
+ok 58 - 首次迁移没有PG标记的正常JSON记录，保存到PG后继续保持幂等检查点
+  ---
+  duration_ms: 86.828
+  type: 'test'
+  ...
+# Subtest: 模拟飞书接口返回链接后写入当前邮箱日历，生成可审核邀约并幂等返回最新草稿
+ok 59 - 模拟飞书接口返回链接后写入当前邮箱日历，生成可审核邀约并幂等返回最新草稿
+  ---
+  duration_ms: 215.0713
+  type: 'test'
+  ...
+# Subtest: 时间、收件人、归属和飞书配置在外部副作用前校验，缺时区按北京时间，日期不自动滚动
+ok 60 - 时间、收件人、归属和飞书配置在外部副作用前校验，缺时区按北京时间，日期不自动滚动
+  ---
+  duration_ms: 181.554
+  type: 'test'
+  ...
+# Subtest: 已有有效日程冲突阻止建会，取消或全天安排不阻止，保留其他邮箱数据
+ok 61 - 已有有效日程冲突阻止建会，取消或全天安排不阻止，保留其他邮箱数据
+  ---
+  duration_ms: 92.6517
+  type: 'test'
+  ...
+# Subtest: 相同操作并发只建一次会议，不同参数复用操作编号会明确拒绝
+ok 62 - 相同操作并发只建一次会议，不同参数复用操作编号会明确拒绝
+  ---
+  duration_ms: 173.6098
+  type: 'test'
+  ...
+# Subtest: 外部超时或无效链接保留未知状态，重复操作不盲重建且错误脱敏
+ok 63 - 外部超时或无效链接保留未知状态，重复操作不盲重建且错误脱敏
+  ---
+  duration_ms: 171.5206
+  type: 'test'
+  ...
+# Subtest: 飞书链接已取得但本地日历写入失败时可追溯，并只恢复保存，不重复建会
+ok 64 - 飞书链接已取得但本地日历写入失败时可追溯，并只恢复保存，不重复建会
+  ---
+  duration_ms: 108.6825
+  type: 'test'
+  ...
+# Subtest: 审核草稿保存失败保留会议和日程，重试补草稿且不重复日程
+ok 65 - 审核草稿保存失败保留会议和日程，重试补草稿且不重复日程
+  ---
+  duration_ms: 177.1142
+  type: 'test'
+  ...
+# Subtest: 飞书返回后检查点持续写失败仍向用户给出已创建链接，持久化的preparing禁止再次建会
+ok 66 - 飞书返回后检查点持续写失败仍向用户给出已创建链接，持久化的preparing禁止再次建会
+  ---
+  duration_ms: 74.831
+  type: 'test'
+  ...
+# Subtest: 建会后并发出现冲突会展示已生成链接，不生成可发草稿；消除冲突后复用链接
+ok 67 - 建会后并发出现冲突会展示已生成链接，不生成可发草稿；消除冲突后复用链接
+  ---
+  duration_ms: 139.8365
+  type: 'test'
+  ...
+# Subtest: 已经完成的操作在日程被删除后不会把日程重新加回
+ok 68 - 已经完成的操作在日程被删除后不会把日程重新加回
+  ---
+  duration_ms: 141.4639
+  type: 'test'
+  ...
+# Subtest: PostgreSQL已启用但未连接时拒绝建会，不静默退到本地
+ok 69 - PostgreSQL已启用但未连接时拒绝建会，不静默退到本地
+  ---
+  duration_ms: 8.4006
+  type: 'test'
+  ...
+# Subtest: 独立进程并发通过本地文件锁串行，相同operationKey只有一个外部建会动作
+ok 70 - 独立进程并发通过本地文件锁串行，相同operationKey只有一个外部建会动作
+  ---
+  duration_ms: 907.5764
+  type: 'test'
+  ...
+# Subtest: 调用飞书途中进程退出后移除死进程锁，但保留结果未知标记阻止盲重试
+ok 71 - 调用飞书途中进程退出后移除死进程锁，但保留结果未知标记阻止盲重试
+  ---
+  duration_ms: 600.6908
+  type: 'test'
+  ...
+# Subtest: PostgreSQL分支使用已提交检查点和持久租约，网络期间释放连接；删除JSON缓存后不重复建会（模拟数据库）
+ok 72 - PostgreSQL分支使用已提交检查点和持久租约，网络期间释放连接；删除JSON缓存后不重复建会（模拟数据库）
+  ---
+  duration_ms: 722.1002
+  type: 'test'
+  ...
+# Subtest: SSE断开时非流式回退等待原请求，进程内/持久缓存均不再调用工具
+ok 73 - SSE断开时非流式回退等待原请求，进程内/持久缓存均不再调用工具
+  ---
+  duration_ms: 99.7521
+  type: 'test'
+  ...
+# Subtest: 服务重启遗留的进行中请求不能盲目重执行副作用
+ok 74 - 服务重启遗留的进行中请求不能盲目重执行副作用
+  ---
+  duration_ms: 114.4372
+  type: 'test'
+  ...
+# Subtest: 请求失败保存脱敏错误，同编号回退不重新执行；不同编号可由用户重试
+ok 75 - 请求失败保存脱敏错误，同编号回退不重新执行；不同编号可由用户重试
+  ---
+  duration_ms: 192.5657
+  type: 'test'
+  ...
+# Subtest: 独立进程同时确认同一草稿，SMTP副作用只有一次
+ok 76 - 独立进程同时确认同一草稿，SMTP副作用只有一次
+  ---
+  duration_ms: 751.277
+  type: 'test'
+  ...
+# Subtest: 事务进程崩溃后回收文件锁，遗留 sending 仍阻止重复发送
+ok 77 - 事务进程崩溃后回收文件锁，遗留 sending 仍阻止重复发送
+  ---
+  duration_ms: 1263.2304
+  type: 'test'
+  ...
+# Subtest: PG为权威时损坏JSON不阻断写入，停用PG或缺权威行不能复活旧pending
+ok 78 - PG为权威时损坏JSON不阻断写入，停用PG或缺权威行不能复活旧pending
+  ---
+  duration_ms: 198.0058
+  type: 'test'
+  ...
+# Subtest: 生产操作检查点不读取旧JSON、不创建本地权威标记且在网络前释放连接
+ok 79 - 生产操作检查点不读取旧JSON、不创建本地权威标记且在网络前释放连接
+  ---
+  duration_ms: 74.9016
+  type: 'test'
+  ...
+# Subtest: SSE 工具执行后断开，JSON 恢复沿用请求 ID、原邮箱与原认证
+ok 80 - SSE 工具执行后断开，JSON 恢复沿用请求 ID、原邮箱与原认证
+  ---
+  duration_ms: 92.0746
+  type: 'test'
+  ...
+# Subtest: 空 SSE 流恢复同一次请求，显式邮箱覆盖全局当前邮箱
+ok 81 - 空 SSE 流恢复同一次请求，显式邮箱覆盖全局当前邮箱
+  ---
+  duration_ms: 2.6536
+  type: 'test'
+  ...
+# Subtest: 首次请求网络失败后的恢复仍使用同一个请求 ID
+ok 82 - 首次请求网络失败后的恢复仍使用同一个请求 ID
+  ---
+  duration_ms: 1.2661
+  type: 'test'
+  ...
+# Subtest: 用户取消时中止且不触发 JSON 回退
+ok 83 - 用户取消时中止且不触发 JSON 回退
+  ---
+  duration_ms: 1.459
+  type: 'test'
+  ...
+# Subtest: 明确的权限错误只请求一次
+ok 84 - 明确的权限错误只请求一次
+  ---
+  duration_ms: 1.4619
+  type: 'test'
+  ...
+# Subtest: 跨字节分片的中文 CRLF SSE 与没有结尾空行的 done 均能读取
+ok 85 - 跨字节分片的中文 CRLF SSE 与没有结尾空行的 done 均能读取
+  ---
+  duration_ms: 2.4414
+  type: 'test'
+  ...
+# Subtest: 小 D 当前时间工具返回北京时区可读字段
+ok 86 - 小 D 当前时间工具返回北京时区可读字段
+  ---
+  duration_ms: 36.9825
+  type: 'test'
+  ...
+# Subtest: 每轮刷新服务端北京时间，跨 UTC 日期计算星期，客户端历史仅允许 user/assistant
+ok 87 - 每轮刷新服务端北京时间，跨 UTC 日期计算星期，客户端历史仅允许 user/assistant
+  ---
+  duration_ms: 38.9821
+  type: 'test'
+  ...
+# Subtest: 创建待办复用现有字段，日期默认北京时间 18 点，无截止日期不会造日程
+ok 88 - 创建待办复用现有字段，日期默认北京时间 18 点，无截止日期不会造日程
+  ---
+  duration_ms: 141.6158
+  type: 'test'
+  ...
+# Subtest: 编辑待办全部常用字段，完成、撤销和清除截止日期均持久化且保留来源
+ok 89 - 编辑待办全部常用字段，完成、撤销和清除截止日期均持久化且保留来源
+  ---
+  duration_ms: 76.5397
+  type: 'test'
+  ...
+# Subtest: 按截止日期、状态、责任人、优先级及备注查询，列表数量与截断总数准确
+ok 90 - 按截止日期、状态、责任人、优先级及备注查询，列表数量与截断总数准确
+  ---
+  duration_ms: 48.3053
+  type: 'test'
+  ...
+# Subtest: 查询今日包含跨天和全天安排，排除边界外与取消安排，也能单查取消日程
+ok 91 - 查询今日包含跨天和全天安排，排除边界外与取消安排，也能单查取消日程
+  ---
+  duration_ms: 36.762
+  type: 'test'
+  ...
+# Subtest: 有效日程按北京时间归一化，空标题、无效日期/钟点及倒序时间不会写入
+ok 92 - 有效日程按北京时间归一化，空标题、无效日期/钟点及倒序时间不会写入
+  ---
+  duration_ms: 124.7372
+  type: 'test'
+  ...
+# Subtest: 助手完成邮件待办沿用已发回复核验，失败不部分编辑，通过后可撤销
+ok 93 - 助手完成邮件待办沿用已发回复核验，失败不部分编辑，通过后可撤销
+  ---
+  duration_ms: 151.883
+  type: 'test'
+  ...
+# Subtest: 确认邮件核验要求当前邮箱真实存在的邮件 id，不能使用不存在的证据
+ok 94 - 确认邮件核验要求当前邮箱真实存在的邮件 id，不能使用不存在的证据
+  ---
+  duration_ms: 73.9324
+  type: 'test'
+  ...
+# Subtest: 删除指定待办及日程，历史邮件提取快照保持原样，未知 id 返回工具错误
+ok 95 - 删除指定待办及日程，历史邮件提取快照保持原样，未知 id 返回工具错误
+  ---
+  duration_ms: 65.7242
+  type: 'test'
+  ...
+# Subtest: 模型等待期间切换邮箱后，工具仍读写对话开始的邮箱；模型配置沿用登录用户设置
+ok 96 - 模型等待期间切换邮箱后，工具仍读写对话开始的邮箱；模型配置沿用登录用户设置
+  ---
+  duration_ms: 90.6972
+  type: 'test'
+  ...
+# Subtest: 无效工具 JSON 不执行写入，模型可根据明确的工具错误修正重试
+ok 97 - 无效工具 JSON 不执行写入，模型可根据明确的工具错误修正重试
+  ---
+  duration_ms: 48.5012
+  type: 'test'
+  ...
+# Subtest: 工具写入成功后最终模型失败，返回准确的本地结果及 toolTrace，避免误报整体失败
+ok 98 - 工具写入成功后最终模型失败，返回准确的本地结果及 toolTrace，避免误报整体失败
+  ---
+  duration_ms: 52.4978
+  type: 'test'
+  ...
+# Subtest: 模型未返回工具前失败正常报错，官方 DeepSeek flash 禁思考且传入超时信号
+ok 99 - 模型未返回工具前失败正常报错，官方 DeepSeek flash 禁思考且传入超时信号
+  ---
+  duration_ms: 21.032
+  type: 'test'
+  ...
+# Subtest: 模型响应正文卡住也会结束等待，未写入数据且可再次正常请求
+ok 100 - 模型响应正文卡住也会结束等待，未写入数据且可再次正常请求
+  ---
+  duration_ms: 590.8627
+  type: 'test'
+  ...
+# Subtest: 邮件及会议能力仅提供起草和建会工具，模型伪造发送工具不能发信
+ok 101 - 邮件及会议能力仅提供起草和建会工具，模型伪造发送工具不能发信
+  ---
+  duration_ms: 36.8171
+  type: 'test'
+  ...
+# Subtest: 助手邮件草稿持久保存且没有发送，相同请求内容在模型 call id 变化时仍复用草稿
+ok 102 - 助手邮件草稿持久保存且没有发送，相同请求内容在模型 call id 变化时仍复用草稿
+  ---
+  duration_ms: 76.9753
+  type: 'test'
+  ...
+# Subtest: 缺少收件人或明确会议时间时返回工具错误，不会写草稿、日历或请求飞书
+ok 103 - 缺少收件人或明确会议时间时返回工具错误，不会写草稿、日历或请求飞书
+  ---
+  duration_ms: 14.2692
+  type: 'test'
+  ...
+# Subtest: 草稿已保存后最终模型失败，答复准确提示待审核且不会误报邮件已发送
+ok 104 - 草稿已保存后最终模型失败，答复准确提示待审核且不会误报邮件已发送
+  ---
+  duration_ms: 33.0695
+  type: 'test'
+  ...
+# Subtest: 邮件搜索按北京时间日期筛选，默认只给证据摘要，正文按需截断并明确本地范围
+ok 105 - 邮件搜索按北京时间日期筛选，默认只给证据摘要，正文按需截断并明确本地范围
+  ---
+  duration_ms: 64.1272
+  type: 'test'
+  ...
+# Subtest: 简报工具向模型提供分类、来源和同步限制，沿用当前邮箱不访问其他邮箱
+ok 106 - 简报工具向模型提供分类、来源和同步限制，沿用当前邮箱不访问其他邮箱
+  ---
+  duration_ms: 54.5155
+  type: 'test'
+  ...
+# Subtest: 请求登记的异步等待期间切换邮箱及模型，真实助手仍使用请求开始时的快照
+ok 107 - 请求登记的异步等待期间切换邮箱及模型，真实助手仍使用请求开始时的快照
+  ---
+  duration_ms: 95.1408
+  type: 'test'
+  ...
+# Subtest: 正常回答检索过知识库时，证据片段随回答返回，供界面展示
+ok 108 - 正常回答检索过知识库时，证据片段随回答返回，供界面展示
+  ---
+  duration_ms: 33.5285
+  type: 'test'
+  ...
+# Subtest: 被工具轮数上限打断时，检索到的证据片段仍随回答返回，不静默丢失
+ok 109 - 被工具轮数上限打断时，检索到的证据片段仍随回答返回，不静默丢失
+  ---
+  duration_ms: 35.282
+  type: 'test'
+  ...
+# Subtest: 混合视图：小 D 的知识检索覆盖视图里的多个邮箱，并带回片段所属邮箱
+ok 110 - 混合视图：小 D 的知识检索覆盖视图里的多个邮箱，并带回片段所属邮箱
+  ---
+  duration_ms: 32.1204
+  type: 'test'
+  ...
+# Subtest: 附件下载带认证读取文件，保存 blob 而不是直接打开私人 API
+ok 111 - 附件下载带认证读取文件，保存 blob 而不是直接打开私人 API
+  ---
+  duration_ms: 75.3298
+  type: 'test'
+  ...
+# Subtest: 普通邮件图片即使带有附件 ID，也使用原文件代理，保留邮箱和文件信息
+ok 112 - 普通邮件图片即使带有附件 ID，也使用原文件代理，保留邮箱和文件信息
+  ---
+  duration_ms: 2.8625
+  type: 'test'
+  ...
+# Subtest: 旧邮件没有附件 ID 时，已保存的地址仍可用于预览
+ok 113 - 旧邮件没有附件 ID 时，已保存的地址仍可用于预览
+  ---
+  duration_ms: 0.4019
+  type: 'test'
+  ...
+# Subtest: 只有存储 key 的 PDF 与非简历附件不会被当作招聘附件
+ok 114 - 只有存储 key 的 PDF 与非简历附件不会被当作招聘附件
+  ---
+  duration_ms: 0.3139
+  type: 'test'
+  ...
+# Subtest: 已保存的招聘下载地址保留，旧 ID 格式携带来源邮箱而不依赖当前邮箱
+ok 115 - 已保存的招聘下载地址保留，旧 ID 格式携带来源邮箱而不依赖当前邮箱
+  ---
+  duration_ms: 0.2795
+  type: 'test'
+  ...
+# Subtest: 跳过上传的附件与缺少地址的记录不生成虚假的预览请求
+ok 116 - 跳过上传的附件与缺少地址的记录不生成虚假的预览请求
+  ---
+  duration_ms: 0.2511
+  type: 'test'
+  ...
+# Subtest: 附件按稳定 ID 对应元数据，同名同大小的 PDF 分别保留且原始文本不写日志
+ok 117 - 附件按稳定 ID 对应元数据，同名同大小的 PDF 分别保留且原始文本不写日志
+  ---
+  duration_ms: 6.6455
+  type: 'test'
+  ...
+# Subtest: 旧 PDF 旁路与内联图片兼容，缺 ID 时逐一补 ID 而不合并同名附件
+ok 118 - 旧 PDF 旁路与内联图片兼容，缺 ID 时逐一补 ID 而不合并同名附件
+  ---
+  duration_ms: 1.2345
+  type: 'test'
+  ...
+# Subtest: 无原始字节时复用明确同 ID 的已读文字，保留截断提示且不掩盖旧失败
+ok 119 - 无原始字节时复用明确同 ID 的已读文字，保留截断提示且不掩盖旧失败
+  ---
+  duration_ms: 0.8118
+  type: 'test'
+  ...
+# Subtest: 有原始字节时重新提取并覆盖旧摘录，失败不能用旧缓存冒充本次成功
+ok 120 - 有原始字节时重新提取并覆盖旧摘录，失败不能用旧缓存冒充本次成功
+  ---
+  duration_ms: 1.0089
+  type: 'test'
+  ...
+# Subtest: 空内容、PDF 错误、空 OCR 与 OCR 异常分别报告，重试成功后清除旧错误
+ok 121 - 空内容、PDF 错误、空 OCR 与 OCR 异常分别报告，重试成功后清除旧错误
+  ---
+  duration_ms: 1.6613
+  type: 'test'
+  ...
+# Subtest: 仅支持的文件计入 6 个上限，超限及 8,000 字符截断均明确保留局限
+ok 122 - 仅支持的文件计入 6 个上限，超限及 8,000 字符截断均明确保留局限
+  ---
+  duration_ms: 0.9685
+  type: 'test'
+  ...
+# Subtest: 超过 25MB 的附件在解析前明确跳过
+ok 123 - 超过 25MB 的附件在解析前明确跳过
+  ---
+  duration_ms: 0.3961
+  type: 'test'
+  ...
+# Subtest: 扫描 PDF 继续使用逐页渲染 OCR 能力并保留页数和附件 ID
+ok 124 - 扫描 PDF 继续使用逐页渲染 OCR 能力并保留页数和附件 ID
+  ---
+  duration_ms: 1356.5709
+  type: 'test'
+  ...
+# Subtest: 图片 OCR 成功、空白及识别失败都释放 worker，异常保留可重试
+ok 125 - 图片 OCR 成功、空白及识别失败都释放 worker，异常保留可重试
+  ---
+  duration_ms: 2.6357
+  type: 'test'
+  ...
+# Subtest: 图片 OCR 语言包下载失败明确报错且不启动 worker
+ok 126 - 图片 OCR 语言包下载失败明确报错且不启动 worker
+  ---
+  duration_ms: 44.3864
+  type: 'test'
+  ...
+# Subtest: 实际 MIME 图片字节进入提取路径，同名附件的 ID 稳定对应且邮件 JSON 不含 Buffer
+ok 127 - 实际 MIME 图片字节进入提取路径，同名附件的 ID 稳定对应且邮件 JSON 不含 Buffer
+  ---
+  duration_ms: 112.7807
+  type: 'test'
+  ...
+# Subtest: local auth concurrent consumption, password reset and session revoke/touch
+ok 128 - local auth concurrent consumption, password reset and session revoke/touch
+  ---
+  duration_ms: 1002.0787
+  type: 'test'
+  ...
+# Subtest: real isolated PostgreSQL and Redis auth concurrency and transaction rollback
+ok 129 - real isolated PostgreSQL and Redis auth concurrency and transaction rollback # SKIP
+  ---
+  duration_ms: 0.3801
+  type: 'test'
+  ...
+# Subtest: production auxiliary persistence refuses missing PG without accessing local data
+ok 130 - production auxiliary persistence refuses missing PG without accessing local data
+  ---
+  duration_ms: 13.7992
+  type: 'test'
+  ...
+# Subtest: RAG failure rolls back replacement; every attachment mutation locks; production performs no DDL
+ok 131 - RAG failure rolls back replacement; every attachment mutation locks; production performs no DDL
+  ---
+  duration_ms: 126.1389
+  type: 'test'
+  ...
+# Subtest: onboarding reads shared authority, initializes without overwriting, and propagates PG faults
+ok 132 - onboarding reads shared authority, initializes without overwriting, and propagates PG faults
+  ---
+  duration_ms: 5.3397
+  type: 'test'
+  ...
+# Subtest: audit uses shared atomic append and returns PG errors rather than SQLite fallback
+ok 133 - audit uses shared atomic append and returns PG errors rather than SQLite fallback
+  ---
+  duration_ms: 1.7019
+  type: 'test'
+  ...
+# Subtest: synchronous auxiliary modules use only ALS snapshots, stage atomic revisions, and preserve local compatibility
+ok 134 - synchronous auxiliary modules use only ALS snapshots, stage atomic revisions, and preserve local compatibility
+  ---
+  duration_ms: 38.68
+  type: 'test'
+  ...
+# Subtest: 北京时间的日期与星期标签
+ok 135 - 北京时间的日期与星期标签
+  ---
+  duration_ms: 9.7359
+  type: 'test'
+  ...
+# Subtest: 只收今天的日程：按开始时间升序，缺 start / 脏 start 直接跳过
+ok 136 - 只收今天的日程：按开始时间升序，缺 start / 脏 start 直接跳过
+  ---
+  duration_ms: 1.8408
+  type: 'test'
+  ...
+# Subtest: 待办只收今天到期或已过期的未完成项：done 与未来项排除，非法 dueAt 不炸
+ok 137 - 待办只收今天到期或已过期的未完成项：done 与未来项排除，非法 dueAt 不炸
+  ---
+  duration_ms: 0.6332
+  type: 'test'
+  ...
+# Subtest: 有安排时的简报正文：日程 / 待办 / 未读各按数量列出
+ok 138 - 有安排时的简报正文：日程 / 待办 / 未读各按数量列出
+  ---
+  duration_ms: 4.5185
+  type: 'test'
+  ...
+# Subtest: 全部为空时：text 是一句实话，empty 为 true，绝不编造内容
+ok 139 - 全部为空时：text 是一句实话，empty 为 true，绝不编造内容
+  ---
+  duration_ms: 2.0953
+  type: 'test'
+  ...
+# Subtest: 超时回执出现在正文里；只有还在等的回执也不算「全空」
+ok 140 - 超时回执出现在正文里；只有还在等的回执也不算「全空」
+  ---
+  duration_ms: 3.5386
+  type: 'test'
+  ...
+# Subtest: 正文有长度上限：极端输入也 ≤ 400 字，主题只截前 30 字
+ok 141 - 正文有长度上限：极端输入也 ≤ 400 字，主题只截前 30 字
+  ---
+  duration_ms: 0.5694
+  type: 'test'
+  ...
+# Subtest: 回执默认从存储读：已超时的记录会进简报（回执模块与简报串起来）
+ok 142 - 回执默认从存储读：已超时的记录会进简报（回执模块与简报串起来）
+  ---
+  duration_ms: 32.0895
+  type: 'test'
+  ...
+# Subtest: mailboxId 缺省用活跃邮箱；显式指定别人/不存在的邮箱一律 403
+ok 143 - mailboxId 缺省用活跃邮箱；显式指定别人/不存在的邮箱一律 403
+  ---
+  duration_ms: 5.1898
+  type: 'test'
+  ...
+# Subtest: 前端只能复用 shared/ 的代码，不能直接 import server/
+ok 144 - 前端只能复用 shared/ 的代码，不能直接 import server/
+  ---
+  duration_ms: 119.4085
+  type: 'test'
+  ...
+# Subtest: Dockerfile 的 build 阶段包含前端构建所需目录
+ok 145 - Dockerfile 的 build 阶段包含前端构建所需目录
+  ---
+  duration_ms: 1.4757
+  type: 'test'
+  ...
+# Subtest: unknown summary filters scope and projects only actionable identifiers and event summary
+ok 146 - unknown summary filters scope and projects only actionable identifiers and event summary
+  ---
+  duration_ms: 2.8443
+  type: 'test'
+  ...
+# Subtest: reconcile uses current mailbox, allowlists input/output, and waits for commit
+ok 147 - reconcile uses current mailbox, allowlists input/output, and waits for commit
+  ---
+  duration_ms: 171.8996
+  type: 'test'
+  ...
+# Subtest: commit failure does not return success or raw error
+ok 148 - commit failure does not return success or raw error
+  ---
+  duration_ms: 83.2509
+  type: 'test'
+  ...
+# Subtest: recovery rejects unauthenticated, foreign mailbox and non-snapshot requests
+ok 149 - recovery rejects unauthenticated, foreign mailbox and non-snapshot requests
+  ---
+  duration_ms: 56.1655
+  type: 'test'
+  ...
+# Subtest: snapshot queues intent with business state and never invokes detached network/save; exception discards both
+ok 150 - snapshot queues intent with business state and never invokes detached network/save; exception discards both
+  ---
+  duration_ms: 23.9628
+  type: 'test'
+  ...
+# Subtest: create checkpoints outside I/O, persists remote identity, replay skips, update/delete reuse identity after local deletion
+ok 151 - create checkpoints outside I/O, persists remote identity, replay skips, update/delete reuse identity after local deletion
+  ---
+  duration_ms: 25.8754
+  type: 'test'
+  ...
+# Subtest: unknown create blocks automatic/manual replay and later intents without a second remote call
+ok 152 - unknown create blocks automatic/manual replay and later intents without a second remote call
+  ---
+  duration_ms: 10.6667
+  type: 'test'
+  ...
+# Subtest: interrupted create retains sending and is treated as unknown on recovery
+ok 153 - interrupted create retains sending and is treated as unknown on recovery
+  ---
+  duration_ms: 4.9836
+  type: 'test'
+  ...
+# Subtest: update failure retries the same identity
+ok 154 - update failure retries the same identity
+  ---
+  duration_ms: 7.8231
+  type: 'test'
+  ...
+# Subtest: lost lease prevents preparation and all remote calls
+ok 155 - lost lease prevents preparation and all remote calls
+  ---
+  duration_ms: 2.9121
+  type: 'test'
+  ...
+# Subtest: lost lease after remote acceptance retains sending and prevents a second create
+ok 156 - lost lease after remote acceptance retains sending and prevents a second create
+  ---
+  duration_ms: 28.4227
+  type: 'test'
+  ...
+# Subtest: confirmation stages selected mailbox intents atomically with pending removal
+ok 157 - confirmation stages selected mailbox intents atomically with pending removal
+  ---
+  duration_ms: 4.2148
+  type: 'test'
+  ...
+# Subtest: provider updates/deletes use fixed identity, absent delete is success and CalDAV 412 is not a receipt
+ok 158 - provider updates/deletes use fixed identity, absent delete is success and CalDAV 412 is not a receipt
+  ---
+  duration_ms: 67.7866
+  type: 'test'
+  ...
+# Subtest: scheduler creates jobs and notifications in the supplied intent transaction with stable dedup key
+ok 159 - scheduler creates jobs and notifications in the supplied intent transaction with stable dedup key
+  ---
+  duration_ms: 1.0122
+  type: 'test'
+  ...
+# Subtest: business writer deduplicates unchanged events, preserves receipts, and stages reschedule deletion plus creation
+ok 160 - business writer deduplicates unchanged events, preserves receipts, and stages reschedule deletion plus creation
+  ---
+  duration_ms: 4.9312
+  type: 'test'
+  ...
+# Subtest: scenario mutation and intent rollback together on callback and database failure
+ok 161 - scenario mutation and intent rollback together on callback and database failure
+  ---
+  duration_ms: 9.0467
+  type: 'test'
+  ...
+# Subtest: mail storage checkpoints calendar and intent on supplied client, rollback removes both and replay creates one intent
+ok 162 - mail storage checkpoints calendar and intent on supplied client, rollback removes both and replay creates one intent
+  ---
+  duration_ms: 9.8017
+  type: 'test'
+  ...
+# Subtest: non-active owned mailbox is staged correctly, disabled connections and confirmation settings are respected
+ok 163 - non-active owned mailbox is staged correctly, disabled connections and confirmation settings are respected
+  ---
+  duration_ms: 3.0013
+  type: 'test'
+  ...
+# Subtest: manual unknown recovery requires confirmation, verifies identity, rolls back atomically and never pushes on replay
+ok 164 - manual unknown recovery requires confirmation, verifies identity, rolls back atomically and never pushes on replay
+  ---
+  duration_ms: 13.1239
+  type: 'test'
+  ...
+# Subtest: manual absent recovery closes attempt without sending; remote verification rejects missing identity and foreign CalDAV URLs
+ok 165 - manual absent recovery closes attempt without sending; remote verification rejects missing identity and foreign CalDAV URLs
+  ---
+  duration_ms: 17.2402
+  type: 'test'
+  ...
+# Subtest: calendar connection settings belong to the initiating user
+ok 166 - calendar connection settings belong to the initiating user
+  ---
+  duration_ms: 53.0901
+  type: 'test'
+  ...
+# Subtest: OAuth state is opaque, owner-bound, single-use and rejects invented states
+ok 167 - OAuth state is opaque, owner-bound, single-use and rejects invented states
+  ---
+  duration_ms: 3.0258
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：中文日期按当前北京年份解释，日程卡保留地点和跨午夜安排
+ok 168 - 校园模型工具：中文日期按当前北京年份解释，日程卡保留地点和跨午夜安排
+  ---
+  duration_ms: 60.8275
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：查询下一项安排后用真实地点规划路线，保留工具顺序与偏好
+ok 169 - 校园模型工具：查询下一项安排后用真实地点规划路线，保留工具顺序与偏好
+  ---
+  duration_ms: 23.2955
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：多个候选或地点缺失时不擅自导航，伪造目的地ID不受信任
+ok 170 - 校园模型工具：多个候选或地点缺失时不擅自导航，伪造目的地ID不受信任
+  ---
+  duration_ms: 17.7385
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：查空档合并重叠安排，包含课程、本人邮箱、全天和独占结束
+ok 171 - 校园模型工具：查空档合并重叠安排，包含课程、本人邮箱、全天和独占结束
+  ---
+  duration_ms: 23.324
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：按兴趣及本人安排过滤活动，隐藏/取消/时间冲突不推荐
+ok 172 - 校园模型工具：按兴趣及本人安排过滤活动，隐藏/取消/时间冲突不推荐
+  ---
+  duration_ms: 4.8032
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：模型规划校验完整计划后才执行，越权工具、前向引用、日期和范围拒绝
+ok 173 - 校园模型工具：模型规划校验完整计划后才执行，越权工具、前向引用、日期和范围拒绝
+  ---
+  duration_ms: 16.2501
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：最近对话用于连续追问，过滤伪造角色；模型失败直接报告
+ok 174 - 校园模型工具：最近对话用于连续追问，过滤伪造角色；模型失败直接报告
+  ---
+  duration_ms: 11.0065
+  type: 'test'
+  ...
+# Subtest: 校园模型工具：真实菜单晚餐预算区间有效，控糖条件不因模型遗漏而丢失
+ok 175 - 校园模型工具：真实菜单晚餐预算区间有效，控糖条件不因模型遗漏而丢失
+  ---
+  duration_ms: 817.6431
+  type: 'test'
+  ...
+# Subtest: wall projection respects segment ends and the configured threshold without moving source data
+ok 176 - wall projection respects segment ends and the configured threshold without moving source data
+  ---
+  duration_ms: 42.9834
+  type: 'test'
+  ...
+# Subtest: entrance auto-binding is threshold-limited, connected, ground-level, and preserves explicit assignments
+ok 177 - entrance auto-binding is threshold-limited, connected, ground-level, and preserves explicit assignments
+  ---
+  duration_ms: 13.7704
+  type: 'test'
+  ...
+# Subtest: same-level crossing roads split at a shared junction, preserve lengths and remap street offsets
+ok 178 - same-level crossing roads split at a shared junction, preserve lengths and remap street offsets
+  ---
+  duration_ms: 20.6446
+  type: 'test'
+  ...
+# Subtest: T junction uses the existing endpoint and does not add a duplicate node
+ok 179 - T junction uses the existing endpoint and does not add a duplicate node
+  ---
+  duration_ms: 1.8305
+  type: 'test'
+  ...
+# Subtest: road insertion rejects same-floor overlaps and unpublishable tiny pieces while allowing adjacent segments
+ok 180 - road insertion rejects same-floor overlaps and unpublishable tiny pieces while allowing adjacent segments
+  ---
+  duration_ms: 29.6185
+  type: 'test'
+  ...
+# Subtest: deleting a degree-two point preserves direction and distances, but blocks bends and referenced points
+ok 181 - deleting a degree-two point preserves direction and distances, but blocks bends and referenced points
+  ---
+  duration_ms: 3.5614
+  type: 'test'
+  ...
+# Subtest: vehicle candidates only use open underground vehicle edges and obey direction
+ok 182 - vehicle candidates only use open underground vehicle edges and obey direction
+  ---
+  duration_ms: 2.8958
+  type: 'test'
+  ...
+# Subtest: filename manifest sorts numeric order and rejects duplicate indexes or credential-bearing URLs
+ok 183 - filename manifest sorts numeric order and rejects duplicate indexes or credential-bearing URLs
+  ---
+  duration_ms: 1.7544
+  type: 'test'
+  ...
+# Subtest: HTTP street images require an explicit same-origin exact campus media ID without credentials, query or hash
+ok 184 - HTTP street images require an explicit same-origin exact campus media ID without credentials, query or hash
+  ---
+  duration_ms: 7.7493
+  type: 'test'
+  ...
+# Subtest: street views interpolate by recorded road mileage across a connected chain and reimport is idempotent
+ok 185 - street views interpolate by recorded road mileage across a connected chain and reimport is idempotent
+  ---
+  duration_ms: 2.2216
+  type: 'test'
+  ...
+# Subtest: geometry-generated crossings and filename-linked scenes survive the public catalog schema
+ok 186 - geometry-generated crossings and filename-linked scenes survive the public catalog schema
+  ---
+  duration_ms: 4.0506
+  type: 'test'
+  ...
+# Subtest: route scenes follow edge traversal and mileage, exclude other edges, and retain place-only preview isolation
+ok 187 - route scenes follow edge traversal and mileage, exclude other edges, and retain place-only preview isolation
+  ---
+  duration_ms: 19.1566
+  type: 'test'
+  ...
+# Subtest: room suggestions retain evidence, exclude known rooms and years, and never become surveyed rooms
+ok 188 - room suggestions retain evidence, exclude known rooms and years, and never become surveyed rooms
+  ---
+  duration_ms: 5.1794
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：匿名公开目录/路线可访问，私人和管理操作按用户门禁
+ok 189 - 校园HTTP：匿名公开目录/路线可访问，私人和管理操作按用户门禁
+  ---
+  duration_ms: 236.8059
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：个人多端CAS、隔离、课程展开、ICS，不能伪造签到
+ok 190 - 校园HTTP：个人多端CAS、隔离、课程展开、ICS，不能伪造签到
+  ---
+  duration_ms: 249.3407
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：排队限频、用户隐私与真实TTL到期
+ok 191 - 校园HTTP：排队限频、用户隐私与真实TTL到期
+  ---
+  duration_ms: 242.5658
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：管理员目录CAS、导入导出、反馈处理与彻底清空示例
+ok 192 - 校园HTTP：管理员目录CAS、导入导出、反馈处理与彻底清空示例
+  ---
+  duration_ms: 534.6747
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：目录细粒度维护保持图关系，不静默删除依赖
+ok 193 - 校园HTTP：目录细粒度维护保持图关系，不静默删除依赖
+  ---
+  duration_ms: 138.0657
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：管理员细粒度维护响应保留所有hidden活动，公众不见hidden
+ok 194 - 校园HTTP：管理员细粒度维护响应保留所有hidden活动，公众不见hidden
+  ---
+  duration_ms: 88.0448
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：主办方动态码只返回给管理员，报名意向/时间窗口/限次/幂等签到
+ok 195 - 校园HTTP：主办方动态码只返回给管理员，报名意向/时间窗口/限次/幂等签到
+  ---
+  duration_ms: 1226.7525
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：社区帖子/评论/回复/点赞收藏，账号归属与管理隐藏
+ok 196 - 校园HTTP：社区帖子/评论/回复/点赞收藏，账号归属与管理隐藏
+  ---
+  duration_ms: 722.0007
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：社区图片限制真实位图类型、归属与公开引用，拒绝任意外链
+ok 197 - 校园HTTP：社区图片限制真实位图类型、归属与公开引用，拒绝任意外链
+  ---
+  duration_ms: 602.4128
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：我的收藏/点赞/笔记由服务器隔离与分页，隐藏只出现在作者mine
+ok 198 - 校园HTTP：我的收藏/点赞/笔记由服务器隔离与分页，隐藏只出现在作者mine
+  ---
+  duration_ms: 409.1131
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：菜单价格规格/生效期、评分按账号去重与售罄3小时到期
+ok 199 - 校园HTTP：菜单价格规格/生效期、评分按账号去重与售罄3小时到期
+  ---
+  duration_ms: 876.0918
+  type: 'test'
+  ...
+# Subtest: 校园HTTP：修改评分不抢占更新的库存反馈，旧库存记录保留原三小时有效期
+ok 200 - 校园HTTP：修改评分不抢占更新的库存反馈，旧库存记录保留原三小时有效期
+  ---
+  duration_ms: 664.5925
+  type: 'test'
+  ...
+# Subtest: 校园主服务HTTP：真实JWT/前置公共挂载、私有状态隔离、已入库自有邮件只能进私有草案
+ok 201 - 校园主服务HTTP：真实JWT/前置公共挂载、私有状态隔离、已入库自有邮件只能进私有草案
+  ---
+  duration_ms: 4825.2328
+  type: 'test'
+  ...
+# Subtest: 校园交流分区：四板块独立筛选，旧帖默认campus且保留笔记类型
+ok 202 - 校园交流分区：四板块独立筛选，旧帖默认campus且保留笔记类型
+  ---
+  duration_ms: 511.0152
+  type: 'test'
+  ...
+# Subtest: 校园交流关联：校验活动/地点/食堂窗口，拒绝隐藏活动与跨食堂窗口
+ok 203 - 校园交流关联：校验活动/地点/食堂窗口，拒绝隐藏活动与跨食堂窗口
+  ---
+  duration_ms: 461.0547
+  type: 'test'
+  ...
+# Subtest: 校园交流关联：活动/地点/食堂/窗口精确相交过滤
+ok 204 - 校园交流关联：活动/地点/食堂/窗口精确相交过滤
+  ---
+  duration_ms: 623.7465
+  type: 'test'
+  ...
+# Subtest: 校园交流分区：全局收藏跨板块保留隔离，隐藏帖只作者和管理员可读
+ok 205 - 校园交流分区：全局收藏跨板块保留隔离，隐藏帖只作者和管理员可读
+  ---
+  duration_ms: 314.4895
+  type: 'test'
+  ...
+# Subtest: coordinates join a nearby road entry without drawing an unverified straight-line path
+ok 206 - coordinates join a nearby road entry without drawing an unverified straight-line path
+  ---
+  duration_ms: 19.4271
+  type: 'test'
+  ...
+# Subtest: coordinate endpoints cannot snap to distant, isolated, or underground-only nodes
+ok 207 - coordinate endpoints cannot snap to distant, isolated, or underground-only nodes
+  ---
+  duration_ms: 4.4453
+  type: 'test'
+  ...
+# Subtest: coordinate routing honors directed edges, accessibility, and mode when choosing entries
+ok 208 - coordinate routing honors directed edges, accessibility, and mode when choosing entries
+  ---
+  duration_ms: 2.6294
+  type: 'test'
+  ...
+# Subtest: invalid coordinate inputs fail validation and saved-place routes keep the original API
+ok 209 - invalid coordinate inputs fail validation and saved-place routes keep the original API
+  ---
+  duration_ms: 2.4717
+  type: 'test'
+  ...
+# Subtest: routing and coordinate entry selection exclude closed roads, vehicle-only roads, and inaccessible stairs
+ok 210 - routing and coordinate entry selection exclude closed roads, vehicle-only roads, and inaccessible stairs
+  ---
+  duration_ms: 1.1159
+  type: 'test'
+  ...
+# Subtest: 匿名排队：签名HttpOnly Cookie、账号兼容、每目标限流、30分钟过期与公开投影
+ok 211 - 匿名排队：签名HttpOnly Cookie、账号兼容、每目标限流、30分钟过期与公开投影
+  ---
+  duration_ms: 437.8161
+  type: 'test'
+  ...
+# Subtest: 匿名排队：轮换Cookie仍受匿名IP哈希预算限制；账号共享身份10次/10分钟
+ok 212 - 匿名排队：轮换Cookie仍受匿名IP哈希预算限制；账号共享身份10次/10分钟
+  ---
+  duration_ms: 2442.414
+  type: 'test'
+  ...
+# Subtest: 排队规则：餐峰估算可重现且始终标记guess；同人多个窗口只计一份餐厅反馈
+ok 213 - 排队规则：餐峰估算可重现且始终标记guess；同人多个窗口只计一份餐厅反馈
+  ---
+  duration_ms: 5.5219
+  type: 'test'
+  ...
+# Subtest: 餐饮目录：未知价格不伪装零元、停单/临时停业继承、原菜单图与私密备注投影
+ok 214 - 餐饮目录：未知价格不伪装零元、停单/临时停业继承、原菜单图与私密备注投影
+  ---
+  duration_ms: 210.4478
+  type: 'test'
+  ...
+# Subtest: 元数据：英语/楼群/入驻单位/教师、十类活动、全天独占结束与ICS日期值保持语义
+ok 215 - 元数据：英语/楼群/入驻单位/教师、十类活动、全天独占结束与ICS日期值保持语义
+  ---
+  duration_ms: 10.8469
+  type: 'test'
+  ...
+# Subtest: 街景位置：道路里程和成对坐标校验，来源文件名可追溯
+ok 216 - 街景位置：道路里程和成对坐标校验，来源文件名可追溯
+  ---
+  duration_ms: 11.4815
+  type: 'test'
+  ...
+# Subtest: 校园日历导入纯函数：重复不增、标题更新、改期取消原安排并串联新旧记录
+ok 217 - 校园日历导入纯函数：重复不增、标题更新、改期取消原安排并串联新旧记录
+  ---
+  duration_ms: 3.0075
+  type: 'test'
+  ...
+# Subtest: 校园日历导入纯函数：活动与个人安排同ID隔离，取消重导唯一ID和追溯关联
+ok 218 - 校园日历导入纯函数：活动与个人安排同ID隔离，取消重导唯一ID和追溯关联
+  ---
+  duration_ms: 1.1722
+  type: 'test'
+  ...
+# Subtest: 课表识别纯函数：地点精确映射和未匹配保留、周次校验、拒绝编造无效时刻
+ok 219 - 课表识别纯函数：地点精确映射和未匹配保留、周次校验、拒绝编造无效时刻
+  ---
+  duration_ms: 7.5544
+  type: 'test'
+  ...
+# Subtest: 全天个人安排：北京零点与独占结束校验、UTC等价时间、旧定时安排兼容和ICS日期值
+ok 220 - 全天个人安排：北京零点与独占结束校验、UTC等价时间、旧定时安排兼容和ICS日期值
+  ---
+  duration_ms: 41.4664
+  type: 'test'
+  ...
+# Subtest: 校园邮箱HTTP：游客拒绝、按账号过滤上科大邮箱、改期取消自动投影，不写公开目录
+ok 221 - 校园邮箱HTTP：游客拒绝、按账号过滤上科大邮箱、改期取消自动投影，不写公开目录
+  ---
+  duration_ms: 166.197
+  type: 'test'
+  ...
+# Subtest: 校园小D HTTP：游客只查询公开数据、本人活动不串号、默认调用本人模型且可显式关闭
+ok 222 - 校园小D HTTP：游客只查询公开数据、本人活动不串号、默认调用本人模型且可显式关闭
+  ---
+  duration_ms: 164.395
+  type: 'test'
+  ...
+# Subtest: 校园小D HTTP：无模型显式提示基础查询，模型故障不伪装成功或静默降级
+ok 223 - 校园小D HTTP：无模型显式提示基础查询，模型故障不伪装成功或静默降级
+  ---
+  duration_ms: 115.2705
+  type: 'test'
+  ...
+# Subtest: 截图识别HTTP：登录与图片/日期校验、使用账号模型配置、仅返回人工核对草稿
+ok 224 - 截图识别HTTP：登录与图片/日期校验、使用账号模型配置、仅返回人工核对草稿
+  ---
+  duration_ms: 63.2396
+  type: 'test'
+  ...
+# Subtest: 截图识别HTTP：缺模型配置不调用模型，非法模型课程不写数据
+ok 225 - 截图识别HTTP：缺模型配置不调用模型，非法模型课程不写数据
+  ---
+  duration_ms: 68.7201
+  type: 'test'
+  ...
+# Subtest: 社区摘要HTTP：只提交明确选定公开内容、过滤模型伪造引用、不携带隐藏内容
+ok 226 - 社区摘要HTTP：只提交明确选定公开内容、过滤模型伪造引用、不携带隐藏内容
+  ---
+  duration_ms: 88.4673
+  type: 'test'
+  ...
+# Subtest: 全天日历互通HTTP：本人邮箱读取保留全天属性，校园行程再写入保留北京日期与独占结束
+ok 227 - 全天日历互通HTTP：本人邮箱读取保留全天属性，校园行程再写入保留北京日期与独占结束
+  ---
+  duration_ms: 140.9289
+  type: 'test'
+  ...
+# Subtest: 校园日历HTTP：只读自有日历、校园安排导入幂等、改期保留旧记录，不能指定别人的邮箱
+ok 228 - 校园日历HTTP：只读自有日历、校园安排导入幂等、改期保留旧记录，不能指定别人的邮箱
+  ---
+  duration_ms: 243.7272
+  type: 'test'
+  ...
+# Subtest: 校园本地原子替换：Windows瞬态占用重试同一临时文件，成功前完整旧文件始终可读
+ok 229 - 校园本地原子替换：Windows瞬态占用重试同一临时文件，成功前完整旧文件始终可读
+  ---
+  duration_ms: 501.0949
+  type: 'test'
+  ...
+# Subtest: 校园本地原子替换：永久占用有界失败并清理临时文件，完整旧数据保留且可再次提交
+ok 230 - 校园本地原子替换：永久占用有界失败并清理临时文件，完整旧数据保留且可再次提交
+  ---
+  duration_ms: 1145.6517
+  type: 'test'
+  ...
+# Subtest: 校园本地原子替换：非占用类错误不重试也不删除当前文件
+ok 231 - 校园本地原子替换：非占用类错误不重试也不删除当前文件
+  ---
+  duration_ms: 93.1392
+  type: 'test'
+  ...
+# Subtest: 活动英文schema：旧资料兼容、独立正文、精确长度和非文字拒绝，公开过滤不泄漏隐藏活动
+ok 232 - 活动英文schema：旧资料兼容、独立正文、精确长度和非文字拒绝，公开过滤不泄漏隐藏活动
+  ---
+  duration_ms: 52.9327
+  type: 'test'
+  ...
+# Subtest: 活动英文来源：JSON/单页JSON-LD保留明确英文语言字段，不自动翻译，超长和非文字拒绝
+ok 233 - 活动英文来源：JSON/单页JSON-LD保留明确英文语言字段，不自动翻译，超长和非文字拒绝
+  ---
+  duration_ms: 6.7255
+  type: 'test'
+  ...
+# Subtest: 活动英文HTTP：目录新增/修改/导出/隐藏及审核稿发布全链路保留，拒绝字段不落盘
+ok 234 - 活动英文HTTP：目录新增/修改/导出/隐藏及审核稿发布全链路保留，拒绝字段不落盘
+  ---
+  duration_ms: 952.0821
+  type: 'test'
+  ...
+# Subtest: 排队24h：成功更新分别计数，限流失败不计，30min清理后历史保留，管理员聚合无身份
+ok 235 - 排队24h：成功更新分别计数，限流失败不计，30min清理后历史保留，管理员聚合无身份
+  ---
+  duration_ms: 335.4709
+  type: 'test'
+  ...
+# Subtest: 排队24h：精确排除24h边界/未来/坏记录；覆盖状态保守兼容旧数据
+ok 236 - 排队24h：精确排除24h边界/未来/坏记录；覆盖状态保守兼容旧数据
+  ---
+  duration_ms: 1.5479
+  type: 'test'
+  ...
+# Subtest: 排队24h：有界历史满时事务拒绝且不改当前反馈，过期释放后恢复接收
+ok 237 - 排队24h：有界历史满时事务拒绝且不改当前反馈，过期释放后恢复接收
+  ---
+  duration_ms: 2077.7736
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：按账号和目录版本隔离，列表不读取其他账号值
+ok 238 - 地图本机草稿：按账号和目录版本隔离，列表不读取其他账号值
+  ---
+  duration_ms: 79.9999
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：只持久化几何字段，完整管理员目录与凭据不进入记录
+ok 239 - 地图本机草稿：只持久化几何字段，完整管理员目录与凭据不进入记录
+  ---
+  duration_ms: 13.7288
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：同版恢复几何且保留基线，可继续修改，写入/恢复不修改输入
+ok 240 - 地图本机草稿：同版恢复几何且保留基线，可继续修改，写入/恢复不修改输入
+  ---
+  duration_ms: 13.2753
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：旧版本和错账号不可恢复，地点不一致不会自动重定版本
+ok 241 - 地图本机草稿：旧版本和错账号不可恢复，地点不一致不会自动重定版本
+  ---
+  duration_ms: 10.8997
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：损坏/错账号记录仅显示安全错误，可按当前账号丢弃
+ok 242 - 地图本机草稿：损坏/错账号记录仅显示安全错误，可按当前账号丢弃
+  ---
+  duration_ms: 5.7574
+  type: 'test'
+  ...
+# Subtest: 地图本机草稿：额度/禁用存储报错，保留之前记录且无静默成功
+ok 243 - 地图本机草稿：额度/禁用存储报错，保留之前记录且无静默成功
+  ---
+  duration_ms: 11.6472
+  type: 'test'
+  ...
+# Subtest: 校园几何目录：兼容旧资料、道路默认值、入口引用校验与清示例保持自有节点
+ok 244 - 校园几何目录：兼容旧资料、道路默认值、入口引用校验与清示例保持自有节点
+  ---
+  duration_ms: 34.488
+  type: 'test'
+  ...
+# Subtest: 校园几何投影：包括轮廓与入口的边界、经纬度往返稳定，无图时可编辑
+ok 245 - 校园几何投影：包括轮廓与入口的边界、经纬度往返稳定，无图时可编辑
+  ---
+  duration_ms: 2.0637
+  type: 'test'
+  ...
+# Subtest: 校园建筑轮廓诊断：退化、共线、小尺度自相交与闭合环，不修改输入
+ok 246 - 校园建筑轮廓诊断：退化、共线、小尺度自相交与闭合环，不修改输入
+  ---
+  duration_ms: 0.9461
+  type: 'test'
+  ...
+# Subtest: 校园路网诊断：隔离/断点线索、不同层不误连、封闭与车行排除，绝不自动补路
+ok 247 - 校园路网诊断：隔离/断点线索、不同层不误连、封闭与车行排除，绝不自动补路
+  ---
+  duration_ms: 9.6317
+  type: 'test'
+  ...
+# Subtest: 校园路网诊断：楼梯无障碍、重复道路、明显短于直线的长度可解释
+ok 248 - 校园路网诊断：楼梯无障碍、重复道路、明显短于直线的长度可解释
+  ---
+  duration_ms: 1.6809
+  type: 'test'
+  ...
+# Subtest: 校园路网诊断：密集节点比较有预算并标记截断，仍不改变原始数据
+ok 249 - 校园路网诊断：密集节点比较有预算并标记截断，仍不改变原始数据
+  ---
+  duration_ms: 46.0229
+  type: 'test'
+  ...
+# Subtest: 校园维护API：诊断/概览管理员门禁，统计只输出聚合、无私密正文身份密钥
+ok 250 - 校园维护API：诊断/概览管理员门禁，统计只输出聚合、无私密正文身份密钥
+  ---
+  duration_ms: 403.9241
+  type: 'test'
+  ...
+# Subtest: 校园统计存储模式：来自实际仓库依赖，聚合函数支持共享存储
+ok 251 - 校园统计存储模式：来自实际仓库依赖，聚合函数支持共享存储
+  ---
+  duration_ms: 29.7952
+  type: 'test'
+  ...
+# Subtest: 校园媒体上传：管理员认证先于大文件读取，存储与社区图片隔离且响应不泄漏对象地址
+ok 252 - 校园媒体上传：管理员认证先于大文件读取，存储与社区图片隔离且响应不泄漏对象地址
+  ---
+  duration_ms: 284.9843
+  type: 'test'
+  ...
+# Subtest: 校园媒体读取：仅管理员读未引用文件，公开引用后匿名读，撤引用/隐藏唯一活动立即撤权
+ok 253 - 校园媒体读取：仅管理员读未引用文件，公开引用后匿名读，撤引用/隐藏唯一活动立即撤权
+  ---
+  duration_ms: 531.8
+  type: 'test'
+  ...
+# Subtest: 校园媒体公开判定：只接受公开投影的明确图片字段与原始媒体origin/path
+ok 254 - 校园媒体公开判定：只接受公开投影的明确图片字段与原始媒体origin/path
+  ---
+  duration_ms: 26.8963
+  type: 'test'
+  ...
+# Subtest: 校园媒体校验：按魔数接受PNG/JPEG/WebP，拒绝伪装图片、GIF与路径文件名
+ok 255 - 校园媒体校验：按魔数接受PNG/JPEG/WebP，拒绝伪装图片、GIF与路径文件名
+  ---
+  duration_ms: 272.6239
+  type: 'test'
+  ...
+# Subtest: 校园媒体大小：20 MiB边界可上传，超限在读取文件前返回413
+ok 256 - 校园媒体大小：20 MiB边界可上传，超限在读取文件前返回413
+  ---
+  duration_ms: 664.6463
+  type: 'test'
+  ...
+# Subtest: 校园媒体地址：忽略跨域Origin/转发Host，拒绝无效Host，存储故障不泄漏内部信息
+ok 257 - 校园媒体地址：忽略跨域Origin/转发Host，拒绝无效Host，存储故障不泄漏内部信息
+  ---
+  duration_ms: 147.4679
+  type: 'test'
+  ...
+# Subtest: 校园运维：会话聚合排除失效版本、删除账号、过期读取、损坏记录，且不泄露身份
+ok 258 - 校园运维：会话聚合排除失效版本、删除账号、过期读取、损坏记录，且不泄露身份
+  ---
+  duration_ms: 2.616
+  type: 'test'
+  ...
+# Subtest: 校园运维：只投影配置布尔与当前进程指标，失败不返回配置正文
+ok 259 - 校园运维：只投影配置布尔与当前进程指标，失败不返回配置正文
+  ---
+  duration_ms: 5.2871
+  type: 'test'
+  ...
+# Subtest: 校园运维：备份清单仅列静态目录常规文件的名称/时间/大小，拒绝链接且不读正文
+ok 260 - 校园运维：备份清单仅列静态目录常规文件的名称/时间/大小，拒绝链接且不读正文
+  ---
+  duration_ms: 284.0371
+  type: 'test'
+  ...
+# Subtest: 校园运维HTTP：匿名401、非管理403，账号/统计/备份仅读管理员且私有不可缓存
+ok 261 - 校园运维HTTP：匿名401、非管理403，账号/统计/备份仅读管理员且私有不可缓存
+  ---
+  duration_ms: 154.3196
+  type: 'test'
+  ...
+# Subtest: 上科大地图：转换百度坐标，保留真实点位并拒绝投影范围外坐标
+ok 262 - 上科大地图：转换百度坐标，保留真实点位并拒绝投影范围外坐标
+  ---
+  duration_ms: 2.5586
+  type: 'test'
+  ...
+# Subtest: 上科大地图：导入 65 个轮廓和 44 个服务点，未知通行与营业信息不补造
+ok 263 - 上科大地图：导入 65 个轮廓和 44 个服务点，未知通行与营业信息不补造
+  ---
+  duration_ms: 35.0774
+  type: 'test'
+  ...
+# Subtest: 上科大地图：图片署名、边界和路径校验，拒绝跳转路径与未经转换的坐标系
+ok 264 - 上科大地图：图片署名、边界和路径校验，拒绝跳转路径与未经转换的坐标系
+  ---
+  duration_ms: 25.2027
+  type: 'test'
+  ...
+# Subtest: 上科大地图：本地底图校验和与尺寸相符，图片包含校园而不是透明空白
+ok 265 - 上科大地图：本地底图校验和与尺寸相符，图片包含校园而不是透明空白
+  ---
+  duration_ms: 421.0737
+  type: 'test'
+  ...
+# Subtest: 上科大地图：增量导入保留用户地点、活动及示例引用，重复导入不覆盖人工修订
+ok 266 - 上科大地图：增量导入保留用户地点、活动及示例引用，重复导入不覆盖人工修订
+  ---
+  duration_ms: 38.1392
+  type: 'test'
+  ...
+# Subtest: 上科大地图 HTTP：仅管理员可导入，版本冲突拒绝且重复导入保留原记录
+ok 267 - 上科大地图 HTTP：仅管理员可导入，版本冲突拒绝且重复导入保留原记录
+  ---
+  duration_ms: 361.8671
+  type: 'test'
+  ...
+# Subtest: 上科大地图 CLI：先预览，应用前备份，重复应用不重复写入并保留其他文件
+ok 268 - 上科大地图 CLI：先预览，应用前备份，重复应用不重复写入并保留其他文件
+  ---
+  duration_ms: 1798.3509
+  type: 'test'
+  ...
+# Subtest: 官网HTML：只解析JSON-LD活动和明确全天日期，不执行脚本或使用网页发布时间
+ok 269 - 官网HTML：只解析JSON-LD活动和明确全天日期，不执行脚本或使用网页发布时间
+  ---
+  duration_ms: 8.8335
+  type: 'test'
+  ...
+# Subtest: 官网HTML列表：只识别同站活动链接，不跟随详情，时间地点保持待补全
+ok 270 - 官网HTML列表：只识别同站活动链接，不跟随详情，时间地点保持待补全
+  ---
+  duration_ms: 5.6705
+  type: 'test'
+  ...
+# Subtest: 官网HTML定时来源：单页抓取只进入待审区，人工补齐并发布才进入公共目录
+ok 271 - 官网HTML定时来源：单页抓取只进入待审区，人工补齐并发布才进入公共目录
+  ---
+  duration_ms: 526.483
+  type: 'test'
+  ...
+# Subtest: 自动邮箱来源：只允许自有邮箱，忽略伪造所有者，私有配置、草案和执行记录按管理员隔离
+ok 272 - 自动邮箱来源：只允许自有邮箱，忽略伪造所有者，私有配置、草案和执行记录按管理员隔离
+  ---
+  duration_ms: 628.8888
+  type: 'test'
+  ...
+# Subtest: 自动邮箱定时来源：最近范围与关键词、去重和变更、新邮件、暂停均可重现，绝不自动公开原文
+ok 273 - 自动邮箱定时来源：最近范围与关键词、去重和变更、新邮件、暂停均可重现，绝不自动公开原文
+  ---
+  duration_ms: 447.2221
+  type: 'test'
+  ...
+# Subtest: 自有已入库邮箱实际读取：账号范围、最新顺序、排除示例、定时任务权限失效，始终使用隔离目录
+ok 274 - 自有已入库邮箱实际读取：账号范围、最新顺序、排除示例、定时任务权限失效，始终使用隔离目录
+  ---
+  duration_ms: 327.6471
+  type: 'test'
+  ...
+# Subtest: 来源防SSRF：拒绝IP/域名私网、凭据、端口、重定向私网与混合DNS，公开连接固定解析IP
+ok 275 - 来源防SSRF：拒绝IP/域名私网、凭据、端口、重定向私网与混合DNS，公开连接固定解析IP
+  ---
+  duration_ms: 16.3417
+  type: 'test'
+  ...
+# Subtest: 来源敏感链接：配置与重定向拒绝密钥参数，私密订阅/签名不会复制进待公开活动
+ok 276 - 来源敏感链接：配置与重定向拒绝密钥参数，私密订阅/签名不会复制进待公开活动
+  ---
+  duration_ms: 18.2261
+  type: 'test'
+  ...
+# Subtest: 来源格式：JSON稳定ID/RSS发布日期不猜活动时间/ICS时区明确，禁止XML实体
+ok 277 - 来源格式：JSON稳定ID/RSS发布日期不猜活动时间/ICS时区明确，禁止XML实体
+  ---
+  duration_ms: 6.0791
+  type: 'test'
+  ...
+# Subtest: 来源HTTP：缺省未配置、权限、人工审核发布去重、人工覆盖不被定时同步覆盖
+ok 278 - 来源HTTP：缺省未配置、权限、人工审核发布去重、人工覆盖不被定时同步覆盖
+  ---
+  duration_ms: 965.4223
+  type: 'test'
+  ...
+# Subtest: 来源HTTP：RSS无日期待补全、编辑CAS、选定邮件仅私有草案，发布需完整核验字段
+ok 279 - 来源HTTP：RSS无日期待补全、编辑CAS、选定邮件仅私有草案，发布需完整核验字段
+  ---
+  duration_ms: 598.4304
+  type: 'test'
+  ...
+# Subtest: 来源HTTP：审核保存与发布再次拒绝私密URL，匿名目录和目录导出不含未审核原文或凭据
+ok 280 - 来源HTTP：审核保存与发布再次拒绝私密URL，匿名目录和目录导出不含未审核原文或凭据
+  ---
+  duration_ms: 541.4361
+  type: 'test'
+  ...
+# Subtest: 来源调度：仅启用来源按nextRun运行，网络失败记录和退避，多执行者租约避免重复抓取
+ok 281 - 来源调度：仅启用来源按nextRun运行，网络失败记录和退避，多执行者租约避免重复抓取
+  ---
+  duration_ms: 800.4481
+  type: 'test'
+  ...
+# Subtest: 来源配置：旧执行身份不能提交，未授权修改和过期revision拒绝
+ok 282 - 来源配置：旧执行身份不能提交，未授权修改和过期revision拒绝
+  ---
+  duration_ms: 371.8484
+  type: 'test'
+  ...
+# Subtest: 校园页面日期：UTC安排编辑保留北京时间；路线分享剔除实时GPS
+ok 283 - 校园页面日期：UTC安排编辑保留北京时间；路线分享剔除实时GPS
+  ---
+  duration_ms: 2.9804
+  type: 'test'
+  ...
+# Subtest: 校园活动筛选：北京时间跨午夜、隐藏、取消、置顶和来源保持一致
+ok 284 - 校园活动筛选：北京时间跨午夜、隐藏、取消、置顶和来源保持一致
+  ---
+  duration_ms: 0.908
+  type: 'test'
+  ...
+# Subtest: 校园活动建议：不能只看空闲，前后步行无法衔接和未映射地点均排除
+ok 285 - 校园活动建议：不能只看空闲，前后步行无法衔接和未映射地点均排除
+  ---
+  duration_ms: 11.4464
+  type: 'test'
+  ...
+# Subtest: 菜单当前供应过滤：生效期、星期、餐次和售罄分别生效
+ok 286 - 菜单当前供应过滤：生效期、星期、餐次和售罄分别生效
+  ---
+  duration_ms: 0.9186
+  type: 'test'
+  ...
+# Subtest: 课表默认周一按北京时间锚定，新课程不从周五误计第一周
+ok 287 - 课表默认周一按北京时间锚定，新课程不从周五误计第一周
+  ---
+  duration_ms: 0.3517
+  type: 'test'
+  ...
+# Subtest: 食物规则解析预算区间和常见同义词；未知价不冒充零元进入预算结果
+ok 288 - 食物规则解析预算区间和常见同义词；未知价不冒充零元进入预算结果
+  ---
+  duration_ms: 1.5637
+  type: 'test'
+  ...
+# Subtest: 用餐建议跳过过去时段，未来排队明确为估算，无法衔接下一项则排除
+ok 289 - 用餐建议跳过过去时段，未来排队明确为估算，无法衔接下一项则排除
+  ---
+  duration_ms: 28.6975
+  type: 'test'
+  ...
+# Subtest: 全天日期展示按北京时间包含最后一天，次日零点结束不多显示一天
+ok 290 - 全天日期展示按北京时间包含最后一天，次日零点结束不多显示一天
+  ---
+  duration_ms: 0.371
+  type: 'test'
+  ...
+# Subtest: 校园目录：仅提供自制示意资料，搜索教室别名，清除示例保留真实自有资料
+ok 291 - 校园目录：仅提供自制示意资料，搜索教室别名，清除示例保留真实自有资料
+  ---
+  duration_ms: 14.8665
+  type: 'test'
+  ...
+# Subtest: 校园目录：图关系、图片链接、价格、时区与非法日期不允许导入
+ok 292 - 校园目录：图关系、图片链接、价格、时区与非法日期不允许导入
+  ---
+  duration_ms: 19.4573
+  type: 'test'
+  ...
+# Subtest: 校园路线：最短路、避雨、地下模式与无障碍依据道路属性
+ok 293 - 校园路线：最短路、避雨、地下模式与无障碍依据道路属性
+  ---
+  duration_ms: 5.0135
+  type: 'test'
+  ...
+# Subtest: 校园路线：不把无路网的地点伪装成直线可通行
+ok 294 - 校园路线：不把无路网的地点伪装成直线可通行
+  ---
+  duration_ms: 2.1374
+  type: 'test'
+  ...
+# Subtest: 校园时间：北京时间、跨午夜开放时间、活动结束与取消状态筛选
+ok 295 - 校园时间：北京时间、跨午夜开放时间、活动结束与取消状态筛选
+  ---
+  duration_ms: 44.5708
+  type: 'test'
+  ...
+# Subtest: 校园个人安排：课表周次、活动意向、冲突与路程时间不足可复现
+ok 296 - 校园个人安排：课表周次、活动意向、冲突与路程时间不足可复现
+  ---
+  duration_ms: 4.2415
+  type: 'test'
+  ...
+# Subtest: 校园个人安排：不能伪造签到，历史已删除地点不清空已有用户数据
+ok 297 - 校园个人安排：不能伪造签到，历史已删除地点不清空已有用户数据
+  ---
+  duration_ms: 1.7732
+  type: 'test'
+  ...
+# Subtest: 校园排队：只汇总有效反馈，不泄露用户，过期30分钟自动消失
+ok 298 - 校园排队：只汇总有效反馈，不泄露用户，过期30分钟自动消失
+  ---
+  duration_ms: 0.5965
+  type: 'test'
+  ...
+# Subtest: 校园 ICS：文本无法注入日历字段，中文按UTF8行折叠且使用UTC
+ok 299 - 校园 ICS：文本无法注入日历字段，中文按UTF8行折叠且使用UTC
+  ---
+  duration_ms: 2.4834
+  type: 'test'
+  ...
+# Subtest: 校园文件存储：并发更新CAS、重启恢复，独立用户不覆盖既有数据
+ok 300 - 校园文件存储：并发更新CAS、重启恢复，独立用户不覆盖既有数据
+  ---
+  duration_ms: 135.6552
+  type: 'test'
+  ...
+# Subtest: 校园PG协议：并发CAS仅一方成功，多文档失败回滚，无文件静默回退
+ok 301 - 校园PG协议：并发CAS仅一方成功，多文档失败回滚，无文件静默回退
+  ---
+  duration_ms: 13.1837
+  type: 'test'
+  ...
+# Subtest: 真实周菜单：三食堂六档口、两周1564条、原图均存在；价格日期餐次保留
+ok 302 - 真实周菜单：三食堂六档口、两周1564条、原图均存在；价格日期餐次保留
+  ---
+  duration_ms: 41.4335
+  type: 'test'
+  ...
+# Subtest: 周菜单迁入：首次持久补充、重复不写、管理员修订和删除保留，示例目录不混入
+ok 303 - 周菜单迁入：首次持久补充、重复不写、管理员修订和删除保留，示例目录不混入
+  ---
+  duration_ms: 647.8823
+  type: 'test'
+  ...
+# Subtest: 校园邮箱投影：仅上科大域名，排除手动/示例/取消/婉拒；跨邮箱同ID隔离
+ok 304 - 校园邮箱投影：仅上科大域名，排除手动/示例/取消/婉拒；跨邮箱同ID隔离
+  ---
+  duration_ms: 3.666
+  type: 'test'
+  ...
+# Subtest: 邮箱全天跨日：日程独占结束，未知地点保留原文
+ok 305 - 邮箱全天跨日：日程独占结束，未知地点保留原文
+  ---
+  duration_ms: 1.1452
+  type: 'test'
+  ...
+# Subtest: 步行导航：腾讯walk URI进行WGS84→GCJ02，不包含凭据；未定位允许终点接力
+ok 306 - 步行导航：腾讯walk URI进行WGS84→GCJ02，不包含凭据；未定位允许终点接力
+  ---
+  duration_ms: 3.2413
+  type: 'test'
+  ...
+# Subtest: 定位质量：过期/低精度拒绝导航；高德折线转回WGS84，不用直线伪造路线
+ok 307 - 定位质量：过期/低精度拒绝导航；高德折线转回WGS84，不用直线伪造路线
+  ---
+  duration_ms: 2.287
+  type: 'test'
+  ...
+# Subtest: 小D控糖：只取当日午餐，不推荐含明确甜味菜名，搭配总价不超预算
+ok 308 - 小D控糖：只取当日午餐，不推荐含明确甜味菜名，搭配总价不超预算
+  ---
+  duration_ms: 1855.5512
+  type: 'test'
+  ...
+# Subtest: 小D安全与缺数据：过敏和严格素食不臆测配料，售罄不推荐
+ok 309 - 小D安全与缺数据：过敏和严格素食不臆测配料，售罄不推荐
+  ---
+  duration_ms: 1238.8865
+  type: 'test'
+  ...
+# Subtest: 小D活动与私人日程：查询北京日期、仅本人输入参与、同一天跨日去重
+ok 310 - 小D活动与私人日程：查询北京日期、仅本人输入参与、同一天跨日去重
+  ---
+  duration_ms: 9.6424
+  type: 'test'
+  ...
+# Subtest: 小D路径：歧义让用户选择、明确终点调用地面导航；模型仅解析意图
+ok 311 - 小D路径：歧义让用户选择、明确终点调用地面导航；模型仅解析意图
+  ---
+  duration_ms: 6.8902
+  type: 'test'
+  ...
+# Subtest: 下周菜单：旧目录增量保留编辑，日期边界隔离，早餐不包含餐次未知记录
+ok 312 - 下周菜单：旧目录增量保留编辑，日期边界隔离，早餐不包含餐次未知记录
+  ---
+  duration_ms: 3262.4755
+  type: 'test'
+  ...
+# Subtest: every public place category remains visible through the default map category controls
+ok 313 - every public place category remains visible through the default map category controls
+  ---
+  duration_ms: 5.5504
+  type: 'test'
+  ...
+# Subtest: parcel code matches a configured shelf and level without retaining the full code
+ok 314 - parcel code matches a configured shelf and level without retaining the full code
+  ---
+  duration_ms: 1.2237
+  type: 'test'
+  ...
+# Subtest: parcel lookup rejects absent shelves and flags invalid levels without inventing a result
+ok 315 - parcel lookup rejects absent shelves and flags invalid levels without inventing a result
+  ---
+  duration_ms: 9.7043
+  type: 'test'
+  ...
+# Subtest: ambiguous parcel prefixes require a user choice
+ok 316 - ambiguous parcel prefixes require a user choice
+  ---
+  duration_ms: 1.1892
+  type: 'test'
+  ...
+# Subtest: route simulation advances by traveled distance rather than node index
+ok 317 - route simulation advances by traveled distance rather than node index
+  ---
+  duration_ms: 1.0054
+  type: 'test'
+  ...
+# Subtest: coordinate projection accepts zero and rejects invalid coordinates
+ok 318 - coordinate projection accepts zero and rejects invalid coordinates
+  ---
+  duration_ms: 0.8065
+  type: 'test'
+  ...
+# Subtest: nearby markers keep all members and use the selected place as a stable anchor
+ok 319 - nearby markers keep all members and use the selected place as a stable anchor
+  ---
+  duration_ms: 21.4314
+  type: 'test'
+  ...
+# Subtest: zooming separates nearby markers without losing coincident places
+ok 320 - zooming separates nearby markers without losing coincident places
+  ---
+  duration_ms: 0.6147
+  type: 'test'
+  ...
+# Subtest: gate overview labels omit the repeated campus name while selection retains the full address
+ok 321 - gate overview labels omit the repeated campus name while selection retains the full address
+  ---
+  duration_ms: 0.6017
+  type: 'test'
+  ...
+# Subtest: smart labels avoid one another, markers, map controls and viewport edges
+ok 322 - smart labels avoid one another, markers, map controls and viewport edges
+  ---
+  duration_ms: 2.4734
+  type: 'test'
+  ...
+# Subtest: label budgets increase on zoom while selection and events get priority
+ok 323 - label budgets increase on zoom while selection and events get priority
+  ---
+  duration_ms: 1.2167
+  type: 'test'
+  ...
+# Subtest: switching ordered street photos changes map point and direction-aware mileage
+ok 324 - switching ordered street photos changes map point and direction-aware mileage
+  ---
+  duration_ms: 6.513
+  type: 'test'
+  ...
+# Subtest: unknown photo locations are not invented from place association or route mileage
+ok 325 - unknown photo locations are not invented from place association or route mileage
+  ---
+  duration_ms: 0.3769
+  type: 'test'
+  ...
+# Subtest: recorded coordinates and explicit nodes are supported, including zero coordinates
+ok 326 - recorded coordinates and explicit nodes are supported, including zero coordinates
+  ---
+  duration_ms: 0.397
+  type: 'test'
+  ...
+# Subtest: last photo before the end retains remaining mileage and makes no arrival assertion
+ok 327 - last photo before the end retains remaining mileage and makes no arrival assertion
+  ---
+  duration_ms: 0.353
+  type: 'test'
+  ...
+# Subtest: route overview follows ordered nodes and honors recorded route geometry
+ok 328 - route overview follows ordered nodes and honors recorded route geometry
+  ---
+  duration_ms: 0.4949
+  type: 'test'
+  ...
+# Subtest: replay start time is Shanghai wall time in every host time zone and rejects invalid dates
+ok 329 - replay start time is Shanghai wall time in every host time zone and rejects invalid dates
+  ---
+  duration_ms: 7.4364
+  type: 'test'
+  ...
+# Subtest: shared replay time validates before opening and defaults to current Shanghai midnight
+ok 330 - shared replay time validates before opening and defaults to current Shanghai midnight
+  ---
+  duration_ms: 1.8576
+  type: 'test'
+  ...
+# Subtest: replay frames use a separate bounded clock, active event boundaries and explicit long exhibition counts
+ok 331 - replay frames use a separate bounded clock, active event boundaries and explicit long exhibition counts
+  ---
+  duration_ms: 1.0243
+  type: 'test'
+  ...
+# Subtest: playback stops exactly at 48h, loops within bounds, and slows near visible event boundaries
+ok 332 - playback stops exactly at 48h, loops within bounds, and slows near visible event boundaries
+  ---
+  duration_ms: 1.5384
+  type: 'test'
+  ...
+# Subtest: busiest window counts overlaps at the half-open edge and excludes unpublished events
+ok 333 - busiest window counts overlaps at the half-open edge and excludes unpublished events
+  ---
+  duration_ms: 1.2024
+  type: 'test'
+  ...
+# Subtest: 研究生课表 JSON、Piazza 资料和 Blackboard 课程列表可导入
+ok 334 - 研究生课表 JSON、Piazza 资料和 Blackboard 课程列表可导入
+  ---
+  duration_ms: 25.8023
+  type: 'test'
+  ...
+# Subtest: 确定性课表展开、换教室稳定 ID、不吞掉未知周次
+ok 335 - 确定性课表展开、换教室稳定 ID、不吞掉未知周次
+  ---
+  duration_ms: 2.2884
+  type: 'test'
+  ...
+# Subtest: 快照去重、资料更新版本、局部采集不推断删除、拒绝外站和登录页
+ok 336 - 快照去重、资料更新版本、局部采集不推断删除、拒绝外站和登录页
+  ---
+  duration_ms: 1.9032
+  type: 'test'
+  ...
+# Subtest: 文件夹改名保留原数据，检索可限定当前文件
+ok 337 - 文件夹改名保留原数据，检索可限定当前文件
+  ---
+  duration_ms: 14.0073
+  type: 'test'
+  ...
+# Subtest: 课件转换字体配置可移植，并尊重管理员显式配置
+ok 338 - 课件转换字体配置可移植，并尊重管理员显式配置
+  ---
+  duration_ms: 1.6692
+  type: 'test'
+  ...
+# Subtest: RAG 限定项目、页码引用来自检索证据、Agent 有步骤上限
+ok 339 - RAG 限定项目、页码引用来自检索证据、Agent 有步骤上限
+  ---
+  duration_ms: 2.6595
+  type: 'test'
+  ...
+# Subtest: HTTP：账号隔离、连接令牌权限/撤销、人工确认、跨端共享日历与附件
+ok 340 - HTTP：账号隔离、连接令牌权限/撤销、人工确认、跨端共享日历与附件
+  ---
+  duration_ms: 3955.8367
+  type: 'test'
+  ...
+# Subtest: 分类含 general/irrelevant，并校验独立 intent
+ok 341 - 分类含 general/irrelevant，并校验独立 intent
+  ---
+  duration_ms: 3.698
+  type: 'test'
+  ...
+# Subtest: irrelevant / noise 不写入日程或待办
+ok 342 - irrelevant / noise 不写入日程或待办
+  ---
+  duration_ms: 11.7906
+  type: 'test'
+  ...
+# Subtest: 省略 target 进入 needs_match，人工点选后完成 cancel
+ok 343 - 省略 target 进入 needs_match，人工点选后完成 cancel
+  ---
+  duration_ms: 23.3663
+  type: 'test'
+  ...
+# Subtest: keep 动作确认日历已是最新且不改写日程
+ok 344 - keep 动作确认日历已是最新且不改写日程
+  ---
+  duration_ms: 2.6031
+  type: 'test'
+  ...
+# Subtest: 待办 reply_sent 核验在未发信时拒绝完成
+ok 345 - 待办 reply_sent 核验在未发信时拒绝完成
+  ---
+  duration_ms: 1.4837
+  type: 'test'
+  ...
+# Subtest: 外部日历 requireConfirm 时入队，确认后出队
+ok 346 - 外部日历 requireConfirm 时入队，确认后出队
+  ---
+  duration_ms: 118.0737
+  type: 'test'
+  ...
+# Subtest: parseExtraction 接受 intent 与 keep
+ok 347 - parseExtraction 接受 intent 与 keep
+  ---
+  duration_ms: 0.8994
+  type: 'test'
+  ...
+# Subtest: processEmails 对 needs_match 记成功处理并可再次人工 resolve
+ok 348 - processEmails 对 needs_match 记成功处理并可再次人工 resolve
+  ---
+  duration_ms: 17.1966
+  type: 'test'
+  ...
+# Subtest: twenty race conditions hold against real PostgreSQL, Redis and RabbitMQ
+ok 349 - twenty race conditions hold against real PostgreSQL, Redis and RabbitMQ # SKIP
+  ---
+  duration_ms: 1.2894
+  type: 'test'
+  ...
+# Subtest: 时间重叠检测使用半开区间，返回完整日程并兼容旧状态
+ok 350 - 时间重叠检测使用半开区间，返回完整日程并兼容旧状态
+  ---
+  duration_ms: 2.9812
+  type: 'test'
+  ...
+# Subtest: 全天日程不参与冲突，普通日程仍按实际时间比较
+ok 351 - 全天日程不参与冲突，普通日程仍按实际时间比较
+  ---
+  duration_ms: 0.483
+  type: 'test'
+  ...
+# Subtest: 已标记冲突的有效安排继续占用时间，取消后才释放
+ok 352 - 已标记冲突的有效安排继续占用时间，取消后才释放
+  ---
+  duration_ms: 6.7624
+  type: 'test'
+  ...
+# Subtest: 普通会议优先原日期，避开多个有效占用与候选，已取消安排不阻挡
+ok 353 - 普通会议优先原日期，避开多个有效占用与候选，已取消安排不阻挡
+  ---
+  duration_ms: 0.7903
+  type: 'test'
+  ...
+# Subtest: 原时间已过去时从当前时间后的半小时刻度寻找，不延长或缩短会议
+ok 354 - 原时间已过去时从当前时间后的半小时刻度寻找，不延长或缩短会议
+  ---
+  duration_ms: 1.2104
+  type: 'test'
+  ...
+# Subtest: 连续忙满十四天后继续寻找三个空闲时段，午夜按北京时间计算
+ok 355 - 连续忙满十四天后继续寻找三个空闲时段，午夜按北京时间计算
+  ---
+  duration_ms: 4.0197
+  type: 'test'
+  ...
+# Subtest: 全天日程不占用候选时段，普通会议仍阻挡重叠候选
+ok 356 - 全天日程不占用候选时段，普通会议仍阻挡重叠候选
+  ---
+  duration_ms: 0.7891
+  type: 'test'
+  ...
+# Subtest: 跨天长活动逐日按原钟点寻找，并保持精确时长
+ok 357 - 跨天长活动逐日按原钟点寻找，并保持精确时长
+  ---
+  duration_ms: 0.6026
+  type: 'test'
+  ...
+# Subtest: delivery verifies all bytes, starter, source/build and five logs within a parent checkout
+ok 358 - delivery verifies all bytes, starter, source/build and five logs within a parent checkout
+  ---
+  duration_ms: 184.0682
+  type: 'test'
+  ...
+# Subtest: delivery detects same-length source corruption, removed build assets and changed starter
+ok 359 - delivery detects same-length source corruption, removed build assets and changed starter
+  ---
+  duration_ms: 281.1534
+  type: 'test'
+  ...
+# Subtest: delivery rejects additional executable files, duplicate entries and traversal paths
+ok 360 - delivery rejects additional executable files, duplicate entries and traversal paths
+  ---
+  duration_ms: 565.2603
+  type: 'test'
+  ...
+# Subtest: delivery rejects file digests resealed around a changed source or build
+ok 361 - delivery rejects file digests resealed around a changed source or build
+  ---
+  duration_ms: 230.8635
+  type: 'test'
+  ...
+# Subtest: delivery requires a matching successful verification and all stage logs
+ok 362 - delivery requires a matching successful verification and all stage logs
+  ---
+  duration_ms: 446.3902
+  type: 'test'
+  ...
+# Subtest: delivery rejects a linked directory instead of traversing its target
+ok 363 - delivery rejects a linked directory instead of traversing its target
+  ---
+  duration_ms: 79.5308
+  type: 'test'
+  ...
+# Subtest: production cannot advertise or activate the isolated demo
+ok 364 - production cannot advertise or activate the isolated demo
+  ---
+  duration_ms: 3.4058
+  type: 'test'
+  ...
+# Subtest: demo and verification children drop inherited service credentials and runtime overrides
+ok 365 - demo and verification children drop inherited service credentials and runtime overrides
+  ---
+  duration_ms: 0.7293
+  type: 'test'
+  ...
+# Subtest: environment parsing preserves literal values, rejects duplicates and never executes shell substitutions
+ok 366 - environment parsing preserves literal values, rejects duplicates and never executes shell substitutions
+  ---
+  duration_ms: 0.5827
+  type: 'test'
+  ...
+# Subtest: deployment preflight rejects placeholders, shared secrets and production authentication bypasses without exposing values
+ok 367 - deployment preflight rejects placeholders, shared secrets and production authentication bypasses without exposing values
+  ---
+  duration_ms: 1.4143
+  type: 'test'
+  ...
+# Subtest: private bucket initialization creates only missing buckets and refuses authentication failures
+ok 368 - private bucket initialization creates only missing buckets and refuses authentication failures
+  ---
+  duration_ms: 1.6841
+  type: 'test'
+  ...
+# Subtest: extracted deliveries verify their own source inventory without using an enclosing Git checkout
+ok 369 - extracted deliveries verify their own source inventory without using an enclosing Git checkout
+  ---
+  duration_ms: 70.0186
+  type: 'test'
+  ...
+# Subtest: video chapter timeline covers the original frames, captions and duration without gaps
+ok 370 - video chapter timeline covers the original frames, captions and duration without gaps
+  ---
+  duration_ms: 2.646
+  type: 'test'
+  ...
+# Subtest: seeking uses half-open boundaries and handles the final encoded frame
+ok 371 - seeking uses half-open boundaries and handles the final encoded frame
+  ---
+  duration_ms: 0.4163
+  type: 'test'
+  ...
+# Subtest: shared chapter lookup handles valid links and malformed parameters
+ok 372 - shared chapter lookup handles valid links and malformed parameters
+  ---
+  duration_ms: 0.3063
+  type: 'test'
+  ...
+# Subtest: public player catalog exactly matches the bundled catalog
+ok 373 - public player catalog exactly matches the bundled catalog
+  ---
+  duration_ms: 7.2712
+  type: 'test'
+  ...
+# Subtest: subtitles and native chapter track use the same chapter intervals and text
+ok 374 - subtitles and native chapter track use the same chapter intervals and text
+  ---
+  duration_ms: 3.7335
+  type: 'test'
+  ...
+# Subtest: encoded MP4 matches the catalog digest, duration and fast-start layout
+ok 375 - encoded MP4 matches the catalog digest, duration and fast-start layout
+  ---
+  duration_ms: 6.5424
+  type: 'test'
+  ...
+# Subtest: downloadable transcript preserves every caption and chapter link
+ok 376 - downloadable transcript preserves every caption and chapter link
+  ---
+  duration_ms: 12.3584
+  type: 'test'
+  ...
+# Subtest: backup resumes only its original application roles and marks complete payloads
+ok 377 - backup resumes only its original application roles and marks complete payloads
+  ---
+  duration_ms: 13506.8588
+  type: 'test'
+  ...
+# Subtest: a failed database dump resumes paused writers and never marks a backup complete
+ok 378 - a failed database dump resumes paused writers and never marks a backup complete
+  ---
+  duration_ms: 10146.0444
+  type: 'test'
+  ...
+# Subtest: unsupported Compose health flags stop backup before any service is paused
+ok 379 - unsupported Compose health flags stop backup before any service is paused
+  ---
+  duration_ms: 1130.3523
+  type: 'test'
+  ...
+# Subtest: restore refuses any existing target before creating or changing its services
+ok 380 - restore refuses any existing target before creating or changing its services
+  ---
+  duration_ms: 6747.6948
+  type: 'test'
+  ...
+# Subtest: restore rejects modified backup bytes before any Docker invocation
+ok 381 - restore rejects modified backup bytes before any Docker invocation
+  ---
+  duration_ms: 5608.764
+  type: 'test'
+  ...
+# Subtest: a verified backup restores and checks data while application roles remain stopped by default
+ok 382 - a verified backup restores and checks data while application roles remain stopped by default
+  ---
+  duration_ms: 9121.5022
+  type: 'test'
+  ...
+# Subtest: a failed inventory capture resumes writers and leaves no completed backup
+ok 383 - a failed inventory capture resumes writers and leaves no completed backup
+  ---
+  duration_ms: 3462.8412
+  type: 'test'
+  ...
+# Subtest: activation follows successful content verification and stops on verification failure
+ok 384 - activation follows successful content verification and stops on verification failure
+  ---
+  duration_ms: 11528.313
+  type: 'test'
+  ...
+# Subtest: legacy v1 backup remains importable without starting applications
+ok 385 - legacy v1 backup remains importable without starting applications
+  ---
+  duration_ms: 7399.2235
+  type: 'test'
+  ...
+# Subtest: 新邀请和相邻日程不冲突，已取消日程不会阻挡创建
+ok 386 - 新邀请和相邻日程不冲突，已取消日程不会阻挡创建
+  ---
+  duration_ms: 45.6964
+  type: 'test'
+  ...
+# Subtest: 冲突邀请也创建并标记，草稿写明冲突对象和三个可行时段
+ok 387 - 冲突邀请也创建并标记，草稿写明冲突对象和三个可行时段
+  ---
+  duration_ms: 14.864
+  type: 'test'
+  ...
+# Subtest: 一批邮件按先后占用日历，冲突邮件去重且回调正常保存结果
+ok 388 - 一批邮件按先后占用日历，冲突邮件去重且回调正常保存结果
+  ---
+  duration_ms: 11.3092
+  type: 'test'
+  ...
+# Subtest: 同封多个操作全部保存并标记相互冲突，待办保存且候选避开最终安排
+ok 389 - 同封多个操作全部保存并标记相互冲突，待办保存且候选避开最终安排
+  ---
+  duration_ms: 20.6006
+  type: 'test'
+  ...
+# Subtest: 调整后的时间冲突也取消原安排并创建替代日程，检测排除自身
+ok 390 - 调整后的时间冲突也取消原安排并创建替代日程，检测排除自身
+  ---
+  duration_ms: 6.0573
+  type: 'test'
+  ...
+# Subtest: 仅更换地点不会与自己冲突，正常创建调整后的关联日程
+ok 391 - 仅更换地点不会与自己冲突，正常创建调整后的关联日程
+  ---
+  duration_ms: 3.7984
+  type: 'test'
+  ...
+# Subtest: 同封邮件交换两个日程的时间，检测使用最终安排且不与已取消原项冲突
+ok 392 - 同封邮件交换两个日程的时间，检测使用最终安排且不与已取消原项冲突
+  ---
+  duration_ms: 5.8878
+  type: 'test'
+  ...
+# Subtest: 冲突日程仍是有效匹配目标，后续调整和取消正常关联且不继承旧冲突标识
+ok 393 - 冲突日程仍是有效匹配目标，后续调整和取消正常关联且不继承旧冲突标识
+  ---
+  duration_ms: 15.1817
+  type: 'test'
+  ...
+# Subtest: 同封邮件的取消先释放时段，即使创建操作排列在取消之前
+ok 394 - 同封邮件的取消先释放时段，即使创建操作排列在取消之前
+  ---
+  duration_ms: 4.9509
+  type: 'test'
+  ...
+# Subtest: 同封邮件的新邀请可使用调整释放的时段，新时段重叠的双方均保存并标记
+ok 395 - 同封邮件的新邀请可使用调整释放的时段，新时段重叠的双方均保存并标记
+  ---
+  duration_ms: 14.42
+  type: 'test'
+  ...
+# Subtest: 冲突调整也释放原时段，同封邮件的新邀请正常占用原时段
+ok 396 - 冲突调整也释放原时段，同封邮件的新邀请正常占用原时段
+  ---
+  duration_ms: 7.4492
+  type: 'test'
+  ...
+# Subtest: 跨日全天邀请正常导入，保留原日期且不受同日定时和全天安排阻挡
+ok 397 - 跨日全天邀请正常导入，保留原日期且不受同日定时和全天安排阻挡
+  ---
+  duration_ms: 4.0277
+  type: 'test'
+  ...
+# Subtest: 已有跨日全天安排不阻挡同日定时邀请，也不修改原全天记录
+ok 398 - 已有跨日全天安排不阻挡同日定时邀请，也不修改原全天记录
+  ---
+  duration_ms: 3.752
+  type: 'test'
+  ...
+# Subtest: 同封邮件的全天和定时安排均正常导入，不受操作先后顺序影响
+ok 399 - 同封邮件的全天和定时安排均正常导入，不受操作先后顺序影响
+  ---
+  duration_ms: 10.4293
+  type: 'test'
+  ...
+# Subtest: 同批邮件中全天安排先收到或后收到均正常导入，不阻挡定时安排
+ok 400 - 同批邮件中全天安排先收到或后收到均正常导入，不阻挡定时安排
+  ---
+  duration_ms: 13.6169
+  type: 'test'
+  ...
+# Subtest: 定时冲突的三个候选忽略全天安排，同时避开其他定时占用
+ok 401 - 定时冲突的三个候选忽略全天安排，同时避开其他定时占用
+  ---
+  duration_ms: 5.6643
+  type: 'test'
+  ...
+# Subtest: 定时活动改为全天时正常调整，即使新日期内有其他安排也保留关联
+ok 402 - 定时活动改为全天时正常调整，即使新日期内有其他安排也保留关联
+  ---
+  duration_ms: 3.1665
+  type: 'test'
+  ...
+# Subtest: 全天活动改为定时时保留新安排的冲突标识，并取消原全天安排
+ok 403 - 全天活动改为定时时保留新安排的冲突标识，并取消原全天安排
+  ---
+  duration_ms: 5.6939
+  type: 'test'
+  ...
+# Subtest: 冲突对象、原提取和候选保存为快照，后续编辑或删除日程不改变草稿
+ok 404 - 冲突对象、原提取和候选保存为快照，后续编辑或删除日程不改变草稿
+  ---
+  duration_ms: 5.3772
+  type: 'test'
+  ...
+# Subtest: 示例只检查示例日程，真实邮件检查真实和手动日程
+ok 405 - 示例只检查示例日程，真实邮件检查真实和手动日程
+  ---
+  duration_ms: 25.4832
+  type: 'test'
+  ...
+# Subtest: 模型提取后使用刷新后的日历检测冲突，保留等待期间加入的手动安排
+ok 406 - 模型提取后使用刷新后的日历检测冲突，保留等待期间加入的手动安排
+  ---
+  duration_ms: 6.3828
+  type: 'test'
+  ...
+# Subtest: 多个长标题冲突的可确认草稿保持完整，不丢失末项的三个候选
+ok 407 - 多个长标题冲突的可确认草稿保持完整，不丢失末项的三个候选
+  ---
+  duration_ms: 16.5054
+  type: 'test'
+  ...
+# Subtest: 本地 HTTP 模型只调用一次，冲突日志成功结束并保留待确认草稿及用量
+ok 408 - 本地 HTTP 模型只调用一次，冲突日志成功结束并保留待确认草稿及用量
+  ---
+  duration_ms: 131.8017
+  type: 'test'
+  ...
+# Subtest: 带图片和样式的邮件按 HTML 识别，并去掉脚本
+ok 409 - 带图片和样式的邮件按 HTML 识别，并去掉脚本
+  ---
+  duration_ms: 4.0524
+  type: 'test'
+  ...
+# Subtest: 材料类型清单完整
+ok 410 - 材料类型清单完整
+  ---
+  duration_ms: 1.9061
+  type: 'test'
+  ...
+# Subtest: 可上传文字感受与文件材料，并预览读取
+ok 411 - 可上传文字感受与文件材料，并预览读取
+  ---
+  duration_ms: 106.8884
+  type: 'test'
+  ...
+# Subtest: 材料按日程归属邮箱读写：换成别的邮箱就按「日程不存在」拒绝
+ok 412 - 材料按日程归属邮箱读写：换成别的邮箱就按「日程不存在」拒绝
+  ---
+  duration_ms: 27.4803
+  type: 'test'
+  ...
+# Subtest: 按模板与要求调用模型生成报告并落库
+ok 413 - 按模板与要求调用模型生成报告并落库
+  ---
+  duration_ms: 195.4444
+  type: 'test'
+  ...
+# Subtest: a returned visitor restores the selected step and completed review range
+ok 414 - a returned visitor restores the selected step and completed review range
+  ---
+  duration_ms: 2.8941
+  type: 'test'
+  ...
+# Subtest: an explicit shared step works on a fresh device
+ok 415 - an explicit shared step works on a fresh device
+  ---
+  duration_ms: 12.7232
+  type: 'test'
+  ...
+# Subtest: restart at step zero resets the previous review range
+ok 416 - restart at step zero resets the previous review range
+  ---
+  duration_ms: 0.4925
+  type: 'test'
+  ...
+# Subtest: malformed or duplicated URL steps start with bounded empty state
+ok 417 - malformed or duplicated URL steps start with bounded empty state
+  ---
+  duration_ms: 0.4352
+  type: 'test'
+  ...
+# Subtest: changed fixtures and corrupted session records are ignored
+ok 418 - changed fixtures and corrupted session records are ignored
+  ---
+  duration_ms: 0.3742
+  type: 'test'
+  ...
+# Subtest: denied browser storage preserves shared-link navigation
+ok 419 - denied browser storage preserves shared-link navigation
+  ---
+  duration_ms: 1.9056
+  type: 'test'
+  ...
+# Subtest: saved progress contains only the version and bounded indices
+ok 420 - saved progress contains only the version and bounded indices
+  ---
+  duration_ms: 0.3576
+  type: 'test'
+  ...
+# Subtest: step navigation replaces ambiguous parameters while preserving other page preferences
+ok 421 - step navigation replaces ambiguous parameters while preserving other page preferences
+  ---
+  duration_ms: 0.7094
+  type: 'test'
+  ...
+# Subtest: cross-device links include only the public path and current step
+ok 422 - cross-device links include only the public path and current step
+  ---
+  duration_ms: 0.528
+  type: 'test'
+  ...
+# Subtest: public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+ok 423 - public experience: state transition, conflict, linked reschedule, dedup, retry, cancel
+  ---
+  duration_ms: 87.4701
+  type: 'test'
+  ...
+# Subtest: public experience isolates concurrent visitors and ignores ambient account scope
+ok 424 - public experience isolates concurrent visitors and ignores ambient account scope
+  ---
+  duration_ms: 24.8298
+  type: 'test'
+  ...
+# Subtest: public experience rejects arbitrary workload and untrusted input
+ok 425 - public experience rejects arbitrary workload and untrusted input
+  ---
+  duration_ms: 1.857
+  type: 'test'
+  ...
+# Subtest: experience HTTP validation, public access, no-store, safe unknown routes
+ok 426 - experience HTTP validation, public access, no-store, safe unknown routes
+  ---
+  duration_ms: 147.6995
+  type: 'test'
+  ...
+# Subtest: experience HTTP backpressure and failure never disclose runtime details
+ok 427 - experience HTTP backpressure and failure never disclose runtime details
+  ---
+  duration_ms: 32.253
+  type: 'test'
+  ...
+# Subtest: cost estimates price cached tokens once and reject invalid or overflowing values
+ok 428 - cost estimates price cached tokens once and reject invalid or overflowing values
+  ---
+  duration_ms: 1.0122
+  type: 'test'
+  ...
+# Subtest: ICS 导出包含有效日程标题与时间
+ok 429 - ICS 导出包含有效日程标题与时间
+  ---
+  duration_ms: 6.5816
+  type: 'test'
+  ...
+# Subtest: 整库 ICS 跳过已取消日程
+ok 430 - 整库 ICS 跳过已取消日程
+  ---
+  duration_ms: 0.631
+  type: 'test'
+  ...
+# Subtest: 飞书使用新版应用凭证接口，创建真实返回链接；改期复用预约与缓存凭证
+ok 431 - 飞书使用新版应用凭证接口，创建真实返回链接；改期复用预约与缓存凭证
+  ---
+  duration_ms: 51.5405
+  type: 'test'
+  ...
+# Subtest: 飞书配置、时间缺失与超过 30 天范围在发请求前提示
+ok 432 - 飞书配置、时间缺失与超过 30 天范围在发请求前提示
+  ---
+  duration_ms: 1.5171
+  type: 'test'
+  ...
+# Subtest: 飞书接口错误不会泄露密钥，不伪造链接
+ok 433 - 飞书接口错误不会泄露密钥，不伪造链接
+  ---
+  duration_ms: 2.0587
+  type: 'test'
+  ...
+# Subtest: 飞书没有返回真实链接时失败，过期凭证重新获取
+ok 434 - 飞书没有返回真实链接时失败，过期凭证重新获取
+  ---
+  duration_ms: 2.5449
+  type: 'test'
+  ...
+# Subtest: 归位目标只认 material / candidate；invoice 明确拒绝并让客户端走提取发票入口
+ok 435 - 归位目标只认 material / candidate；invoice 明确拒绝并让客户端走提取发票入口
+  ---
+  duration_ms: 6.8172
+  type: 'test'
+  ...
+# Subtest: 邮件与附件定位：邮件找不到 404，附件不属于这封邮件 400
+ok 436 - 邮件与附件定位：邮件找不到 404，附件不属于这封邮件 400
+  ---
+  duration_ms: 4.159
+  type: 'test'
+  ...
+# Subtest: 字节读取：本地优先、对象存储兜底，读不到一律 null 而不是空缓冲
+ok 437 - 字节读取：本地优先、对象存储兜底，读不到一律 null 而不是空缓冲
+  ---
+  duration_ms: 1.0426
+  type: 'test'
+  ...
+# Subtest: 活动材料归位：把字节、文件名、类型交回 addMaterial，并带上邮箱归属
+ok 438 - 活动材料归位：把字节、文件名、类型交回 addMaterial，并带上邮箱归属
+  ---
+  duration_ms: 2.3057
+  type: 'test'
+  ...
+# Subtest: 活动材料归位的前置校验：缺日程 / 日程不在本邮箱 / 读不到 / 超 8MB，都显式报错且不建材料
+ok 439 - 活动材料归位的前置校验：缺日程 / 日程不在本邮箱 / 读不到 / 超 8MB，都显式报错且不建材料
+  ---
+  duration_ms: 2.9995
+  type: 'test'
+  ...
+# Subtest: 候选人归位只认招聘同步登记过的简历：没登记或属于别的邮件一律 409
+ok 440 - 候选人归位只认招聘同步登记过的简历：没登记或属于别的邮件一律 409
+  ---
+  duration_ms: 2.5495
+  type: 'test'
+  ...
+# Subtest: 候选人归位要先配好模型：未配置时 400 且不调用模型
+ok 441 - 候选人归位要先配好模型：未配置时 400 且不调用模型
+  ---
+  duration_ms: 4.3335
+  type: 'test'
+  ...
+# Subtest: 候选人归位成功：写回招聘数据与邮件记录，candidateIds 供界面直接跳转
+ok 442 - 候选人归位成功：写回招聘数据与邮件记录，candidateIds 供界面直接跳转
+  ---
+  duration_ms: 45.317
+  type: 'test'
+  ...
+# Subtest: 候选人归位遇到「不是简历」：200 明确 skipped，不建候选人也不改邮件记录
+ok 443 - 候选人归位遇到「不是简历」：200 明确 skipped，不建候选人也不改邮件记录
+  ---
+  duration_ms: 1.7828
+  type: 'test'
+  ...
+# Subtest: 候选人归位提取失败：502 带错误码与原因，保留原记录供重试
+ok 444 - 候选人归位提取失败：502 带错误码与原因，保留原记录供重试
+  ---
+  duration_ms: 3.2939
+  type: 'test'
+  ...
+# Subtest: HTTP：简报 / 回执 / 立即检查都能按邮箱读写，X-Mailbox-Id: secondary 不被 409 拒绝
+ok 445 - HTTP：简报 / 回执 / 立即检查都能按邮箱读写，X-Mailbox-Id: secondary 不被 409 拒绝
+  ---
+  duration_ms: 5017.1623
+  type: 'test'
+  ...
+# Subtest: HTTP：附件归位把材料挂到日程、把简历写进人才库，发票入口明确拒绝
+ok 446 - HTTP：附件归位把材料挂到日程、把简历写进人才库，发票入口明确拒绝
+  ---
+  duration_ms: 5056.8734
+  type: 'test'
+  ...
+# Subtest: 服务器不提供 STARTTLS 时，连通测试和同步均拒绝发送登录凭据
+ok 447 - 服务器不提供 STARTTLS 时，连通测试和同步均拒绝发送登录凭据
+  ---
+  duration_ms: 60.1307
+  type: 'test'
+  ...
+# Subtest: 显式启用但连接失败时健康状态不可用，小 D 在执行前拒绝，停用后可重试同一请求
+ok 448 - 显式启用但连接失败时健康状态不可用，小 D 在执行前拒绝，停用后可重试同一请求
+  ---
+  duration_ms: 118.1903
+  type: 'test'
+  ...
+# Subtest: 数据库已配置但尚未初始化时也不能报告健康
+ok 449 - 数据库已配置但尚未初始化时也不能报告健康
+  ---
+  duration_ms: 5.7712
+  type: 'test'
+  ...
+# Subtest: 显式停用数据库仍拒绝恢复带 PostgreSQL 权威标记的旧请求
+ok 450 - 显式停用数据库仍拒绝恢复带 PostgreSQL 权威标记的旧请求
+  ---
+  duration_ms: 9.4965
+  type: 'test'
+  ...
+# Subtest: production ignores local configuration and rejects local persistence and auth bypass
+ok 451 - production ignores local configuration and rejects local persistence and auth bypass
+  ---
+  duration_ms: 6.1645
+  type: 'test'
+  ...
+# Subtest: production cannot use uninitialized file, memory, or attachment fallbacks
+ok 452 - production cannot use uninitialized file, memory, or attachment fallbacks
+  ---
+  duration_ms: 10.639
+  type: 'test'
+  ...
+# Subtest: PG production checks schema without DDL or import and closes failed pools
+ok 453 - PG production checks schema without DDL or import and closes failed pools
+  ---
+  duration_ms: 123.3992
+  type: 'test'
+  ...
+# Subtest: Redis failure disconnects client and never switches to memory in production
+ok 454 - Redis failure disconnects client and never switches to memory in production
+  ---
+  duration_ms: 124.5513
+  type: 'test'
+  ...
+# Subtest: OSS init and health perform requests; failure rejects without creating local storage
+ok 455 - OSS init and health perform requests; failure rejects without creating local storage
+  ---
+  duration_ms: 216.9833
+  type: 'test'
+  ...
+# Subtest: attachment keys reject traversal and local downloads reject symlink escapes
+ok 456 - attachment keys reject traversal and local downloads reject symlink escapes
+  ---
+  duration_ms: 48.2575
+  type: 'test'
+  ...
+# Subtest: shared readiness rejects missing settings, schema errors, Redis and OSS outages
+ok 457 - shared readiness rejects missing settings, schema errors, Redis and OSS outages
+  ---
+  duration_ms: 50.4861
+  type: 'test'
+  ...
+# Subtest: closeInfra bounds stuck Redis quit, disconnects and closes OSS and PG even on error
+ok 458 - closeInfra bounds stuck Redis quit, disconnects and closes OSS and PG even on error
+  ---
+  duration_ms: 34.1064
+  type: 'test'
+  ...
+# Subtest: production Redis keeps bounded reconnect delays and bounded commands after disconnect
+ok 459 - production Redis keeps bounded reconnect delays and bounded commands after disconnect
+  ---
+  duration_ms: 1.5517
+  type: 'test'
+  ...
+# Subtest: default records intention without preparing or sending mail; reversal restores pending
+ok 460 - default records intention without preparing or sending mail; reversal restores pending
+  ---
+  duration_ms: 3.5566
+  type: 'test'
+  ...
+# Subtest: opt-in prepares one reviewable draft; duplicate decisions reuse it; no SMTP dependency
+ok 461 - opt-in prepares one reviewable draft; duplicate decisions reuse it; no SMTP dependency
+  ---
+  duration_ms: 48.7921
+  type: 'test'
+  ...
+# Subtest: demo never creates real reply drafts; foreign/expired invitations rejected
+ok 462 - demo never creates real reply drafts; foreign/expired invitations rejected
+  ---
+  duration_ms: 0.9542
+  type: 'test'
+  ...
+# Subtest: declined invitations do not block conflict time; preference values normalized
+ok 463 - declined invitations do not block conflict time; preference values normalized
+  ---
+  duration_ms: 0.4204
+  type: 'test'
+  ...
+# Subtest: native CORS answers approved preflight without granting arbitrary sites access
+ok 464 - native CORS answers approved preflight without granting arbitrary sites access
+  ---
+  duration_ms: 0.7182
+  type: 'test'
+  ...
+# Subtest: declining frees conflict time but preserves the original as a cancellation/reschedule target
+ok 465 - declining frees conflict time but preserves the original as a cancellation/reschedule target
+  ---
+  duration_ms: 33.886
+  type: 'test'
+  ...
+# Subtest: 发票 API：真实 MIME/PDF 经非简历旁路提取发票、保留原附件链接并按邮件去重
+ok 466 - 发票 API：真实 MIME/PDF 经非简历旁路提取发票、保留原附件链接并按邮件去重
+  ---
+  duration_ms: 6613.2598
+  type: 'test'
+  ...
+# Subtest: 发票 API：旧邮件显式提取、模型失败保留已有票据、重试成功并在重启后持久化
+ok 467 - 发票 API：旧邮件显式提取、模型失败保留已有票据、重试成功并在重启后持久化
+  ---
+  duration_ms: 10272.5217
+  type: 'test'
+  ...
+# Subtest: 发票 API：可定向重提取非当前邮箱且保持隔离，不存在邮箱或其他邮箱邮件被拒绝
+ok 468 - 发票 API：可定向重提取非当前邮箱且保持隔离，不存在邮箱或其他邮箱邮件被拒绝
+  ---
+  duration_ms: 5419.6898
+  type: 'test'
+  ...
+# Subtest: 发票 API：PDF 简历识别与投递意图均失败后经 附件重试 恢复发票原来源
+ok 469 - 发票 API：PDF 简历识别与投递意图均失败后经 附件重试 恢复发票原来源
+  ---
+  duration_ms: 5209.8152
+  type: 'test'
+  ...
+# Subtest: 发票 API：PDF 简历识别与投递意图均失败后经 同步占位 恢复发票原来源
+ok 470 - 发票 API：PDF 简历识别与投递意图均失败后经 同步占位 恢复发票原来源
+  ---
+  duration_ms: 4673.0615
+  type: 'test'
+  ...
+# Subtest: 发票解析先丢弃模型误给的无效日程和待办，日期与催报销要求不会污染清单
+ok 471 - 发票解析先丢弃模型误给的无效日程和待办，日期与催报销要求不会污染清单
+  ---
+  duration_ms: 79.4142
+  type: 'test'
+  ...
+# Subtest: 直接导入和独立 invoice 意图同样禁止取消已有日程或修改已有待办
+ok 472 - 直接导入和独立 invoice 意图同样禁止取消已有日程或修改已有待办
+  ---
+  duration_ms: 1.0395
+  type: 'test'
+  ...
+# Subtest: 模型已有票据结果但误标普通沟通时仍进入发票助手，来源失配保留错误而不写日历
+ok 473 - 模型已有票据结果但误标普通沟通时仍进入发票助手，来源失配保留错误而不写日历
+  ---
+  duration_ms: 1.9426
+  type: 'test'
+  ...
+# Subtest: 无附件发票通知只分类，不从正文生成票据或待办
+ok 474 - 无附件发票通知只分类，不从正文生成票据或待办
+  ---
+  duration_ms: 0.5525
+  type: 'test'
+  ...
+# Subtest: 重提取读取保存的原附件、修复旧附件标识并更新字段，保留原邮件及用户数据
+ok 475 - 重提取读取保存的原附件、修复旧附件标识并更新字段，保留原邮件及用户数据
+  ---
+  duration_ms: 3.8348
+  type: 'test'
+  ...
+# Subtest: 重提取的模型或文件失败保留先前票据，后续重试可恢复
+ok 476 - 重提取的模型或文件失败保留先前票据，后续重试可恢复
+  ---
+  duration_ms: 1.9896
+  type: 'test'
+  ...
+# Subtest: 同一 PDF 部分票据失败时逐张保留旧结果，错误金额不覆盖此前可用字段
+ok 477 - 同一 PDF 部分票据失败时逐张保留旧结果，错误金额不覆盖此前可用字段
+  ---
+  duration_ms: 1.4195
+  type: 'test'
+  ...
+# Subtest: 旧自定义提示词仍附加当前发票规则并传递可追溯附件 ID，同次模型返回票据
+ok 478 - 旧自定义提示词仍附加当前发票规则并传递可追溯附件 ID，同次模型返回票据
+  ---
+  duration_ms: 24.7294
+  type: 'test'
+  ...
+# Subtest: 发票号码、税号和金额字符串保留前导零及小数精度，明细不进行金额推算
+ok 479 - 发票号码、税号和金额字符串保留前导零及小数精度，明细不进行金额推算
+  ---
+  duration_ms: 4.5599
+  type: 'test'
+  ...
+# Subtest: 缺失字段保留 null，只有总额时不反推不含税金额和税额，不补邮箱正文内容
+ok 480 - 缺失字段保留 null，只有总额时不反推不含税金额和税额，不补邮箱正文内容
+  ---
+  duration_ms: 1.642
+  type: 'test'
+  ...
+# Subtest: 多份附件和同一附件多张发票逐张保留，重复同一发票不会多建一条
+ok 481 - 多份附件和同一附件多张发票逐张保留，重复同一发票不会多建一条
+  ---
+  duration_ms: 2.7409
+  type: 'test'
+  ...
+# Subtest: 显式错误附件 id 不按文件名或单一来源猜测回退
+ok 482 - 显式错误附件 id 不按文件名或单一来源猜测回退
+  ---
+  duration_ms: 0.5458
+  type: 'test'
+  ...
+# Subtest: 预置的唯一同名文字摘录可关联附件，缺 id 且仅有一个文字来源时也可关联
+ok 483 - 预置的唯一同名文字摘录可关联附件，缺 id 且仅有一个文字来源时也可关联
+  ---
+  duration_ms: 0.7078
+  type: 'test'
+  ...
+# Subtest: 同名附件用明确 id 分开定位，只给重复文件名时不猜附件
+ok 484 - 同名附件用明确 id 分开定位，只给重复文件名时不猜附件
+  ---
+  duration_ms: 0.6241
+  type: 'test'
+  ...
+# Subtest: 没有可读 PDF/图片文字的附件或虚构摘录来源不能生成发票
+ok 485 - 没有可读 PDF/图片文字的附件或虚构摘录来源不能生成发票
+  ---
+  duration_ms: 0.4781
+  type: 'test'
+  ...
+# Subtest: 有限 JSON 数字兼容转字符串且零不丢，字符串金额不重新格式化
+ok 486 - 有限 JSON 数字兼容转字符串且零不丢，字符串金额不重新格式化
+  ---
+  duration_ms: 0.448
+  type: 'test'
+  ...
+# Subtest: 错误字段类型留空并给出错误，不丢弃同一张发票中其他可用字段
+ok 487 - 错误字段类型留空并给出错误，不丢弃同一张发票中其他可用字段
+  ---
+  duration_ms: 0.808
+  type: 'test'
+  ...
+# Subtest: 普通邮件无发票时返回空数组，格式错误和没有实际字段的空票据有明确提示
+ok 488 - 普通邮件无发票时返回空数组，格式错误和没有实际字段的空票据有明确提示
+  ---
+  duration_ms: 0.661
+  type: 'test'
+  ...
+# Subtest: 稳定 id 定位同一邮件和附件的号码，重复提取或调整其他附件顺序不改变 id
+ok 489 - 稳定 id 定位同一邮件和附件的号码，重复提取或调整其他附件顺序不改变 id
+  ---
+  duration_ms: 0.6227
+  type: 'test'
+  ...
+# Subtest: 缺发票号的部分票据仍可保存，各附件内多张无码票据使用稳定顺序 id
+ok 490 - 缺发票号的部分票据仍可保存，各附件内多张无码票据使用稳定顺序 id
+  ---
+  duration_ms: 0.5853
+  type: 'test'
+  ...
+# Subtest: an unregistered mailbox cannot enqueue mail or model work before setup is saved
+ok 491 - an unregistered mailbox cannot enqueue mail or model work before setup is saved
+  ---
+  duration_ms: 11.64
+  type: 'test'
+  ...
+# Subtest: plan binds owner/job mailbox and commits business state with a checkpoint between lease fences
+ok 492 - plan binds owner/job mailbox and commits business state with a checkpoint between lease fences
+  ---
+  duration_ms: 9.308
+  type: 'test'
+  ...
+# Subtest: lease loss after writes rolls back both scenario state and checkpoint
+ok 493 - lease loss after writes rolls back both scenario state and checkpoint
+  ---
+  duration_ms: 3.4347
+  type: 'test'
+  ...
+# Subtest: changed lease identity rejects before business persistence and rolls back
+ok 494 - changed lease identity rejects before business persistence and rolls back
+  ---
+  duration_ms: 18.4307
+  type: 'test'
+  ...
+# Subtest: persisted plan checkpoint replays without another proposal or write
+ok 495 - persisted plan checkpoint replays without another proposal or write
+  ---
+  duration_ms: 1.5637
+  type: 'test'
+  ...
+# Subtest: abort before persistence cannot create a plan checkpoint
+ok 496 - abort before persistence cannot create a plan checkpoint
+  ---
+  duration_ms: 12.4511
+  type: 'test'
+  ...
+# Subtest: invalid or missing task scope/input never reaches user lookup, proposal or commit
+ok 497 - invalid or missing task scope/input never reaches user lookup, proposal or commit
+  ---
+  duration_ms: 2.8313
+  type: 'test'
+  ...
+# Subtest: deleted owners and non-owned job mailboxes cannot execute
+ok 498 - deleted owners and non-owned job mailboxes cannot execute
+  ---
+  duration_ms: 3.0287
+  type: 'test'
+  ...
+# Subtest: missing shared settings never reports plan or mail success
+ok 499 - missing shared settings never reports plan or mail success
+  ---
+  duration_ms: 1.606
+  type: 'test'
+  ...
+# Subtest: model plan and mail reject unconfigured settings before side effects
+ok 500 - model plan and mail reject unconfigured settings before side effects
+  ---
+  duration_ms: 3.8776
+  type: 'test'
+  ...
+# Subtest: mail delegates to the shared core adapter with the explicit owner and mailbox
+ok 501 - mail delegates to the shared core adapter with the explicit owner and mailbox
+  ---
+  duration_ms: 1.786
+  type: 'test'
+  ...
+# Subtest: mail runs carry a trace recorder that persists the processing log and reply draft
+ok 502 - mail runs carry a trace recorder that persists the processing log and reply draft
+  ---
+  duration_ms: 8.9419
+  type: 'test'
+  ...
+# Subtest: trace reads and writes default to the active mailbox, never a traces:undefined document
+ok 503 - trace reads and writes default to the active mailbox, never a traces:undefined document
+  ---
+  duration_ms: 5.0917
+  type: 'test'
+  ...
+# Subtest: scheduler checks each mailbox rather than the active mailbox and uses minute-scoped keys
+ok 504 - scheduler checks each mailbox rather than the active mailbox and uses minute-scoped keys
+  ---
+  duration_ms: 2.9654
+  type: 'test'
+  ...
+# Subtest: a repeatedly failing mailbox is backed off instead of dialled every minute
+ok 505 - a repeatedly failing mailbox is backed off instead of dialled every minute
+  ---
+  duration_ms: 2.2006
+  type: 'test'
+  ...
+# Subtest: one success clears backoff but still respects the 600 second polling interval
+ok 506 - one success clears backoff but still respects the 600 second polling interval
+  ---
+  duration_ms: 2.2898
+  type: 'test'
+  ...
+# Subtest: a mailbox already syncing is deferred instead of queued again every minute
+ok 507 - a mailbox already syncing is deferred instead of queued again every minute
+  ---
+  duration_ms: 3.2119
+  type: 'test'
+  ...
+# Subtest: the backoff window is configurable and its delay grows exponentially to a cap
+ok 508 - the backoff window is configurable and its delay grows exponentially to a cap
+  ---
+  duration_ms: 4.604
+  type: 'test'
+  ...
+# Subtest: a job failure reason is bounded and redacts addresses and credentials
+ok 509 - a job failure reason is bounded and redacts addresses and credentials
+  ---
+  duration_ms: 2.2126
+  type: 'test'
+  ...
+# Subtest: bulk calendar export stages forced durable intents without claiming remote success, and rolls back on failure
+ok 510 - bulk calendar export stages forced durable intents without claiming remote success, and rolls back on failure
+  ---
+  duration_ms: 19.5205
+  type: 'test'
+  ...
+# Subtest: retry jitter has a nonzero floor and capped exponential growth
+ok 511 - retry jitter has a nonzero floor and capped exponential growth
+  ---
+  duration_ms: 1.735
+  type: 'test'
+  ...
+# Subtest: worker bounds execution and revokes late checkpoint access
+ok 512 - worker bounds execution and revokes late checkpoint access
+  ---
+  duration_ms: 37.6691
+  type: 'test'
+  ...
+# Subtest: heartbeat loss aborts the handler without reporting success
+ok 513 - heartbeat loss aborts the handler without reporting success
+  ---
+  duration_ms: 22.6692
+  type: 'test'
+  ...
+# Subtest: bounded operations reject instead of hanging indefinitely
+ok 514 - bounded operations reject instead of hanging indefinitely
+  ---
+  duration_ms: 27.8069
+  type: 'test'
+  ...
+# Subtest: unsupported kinds fail terminally and never enter a handler
+ok 515 - unsupported kinds fail terminally and never enter a handler
+  ---
+  duration_ms: 1.3544
+  type: 'test'
+  ...
+# Subtest: transport status tracks setup, broker loss, reconnect wait and graceful stop
+ok 516 - transport status tracks setup, broker loss, reconnect wait and graceful stop
+  ---
+  duration_ms: 16.8418
+  type: 'test'
+  ...
+# Subtest: transport failed connection and session cleanup never report connected
+ok 517 - transport failed connection and session cleanup never report connected
+  ---
+  duration_ms: 0.6162
+  type: 'test'
+  ...
+# Subtest: session finally clears connected status even without a broker close event
+ok 518 - session finally clears connected status even without a broker close event
+  ---
+  duration_ms: 0.9952
+  type: 'test'
+  ...
+# Subtest: speech support distinguishes secure pages, missing APIs, and Chromium prefixes
+ok 519 - speech support distinguishes secure pages, missing APIs, and Chromium prefixes
+  ---
+  duration_ms: 2.5456
+  type: 'test'
+  ...
+# Subtest: interim revisions and repeated final results preserve the draft without duplication
+ok 520 - interim revisions and repeated final results preserve the draft without duplication
+  ---
+  duration_ms: 2.3346
+  type: 'test'
+  ...
+# Subtest: stopping waits for a final result before finishing
+ok 521 - stopping waits for a final result before finishing
+  ---
+  duration_ms: 0.5782
+  type: 'test'
+  ...
+# Subtest: stop before the browser starts is retried when the microphone starts
+ok 522 - stop before the browser starts is retried when the microphone starts
+  ---
+  duration_ms: 0.5265
+  type: 'test'
+  ...
+# Subtest: cancel ignores queued results and end events after send, edit, close, or unmount
+ok 523 - cancel ignores queued results and end events after send, edit, close, or unmount
+  ---
+  duration_ms: 0.4572
+  type: 'test'
+  ...
+# Subtest: browser errors explain permission, network, device, and no-speech failures
+ok 524 - browser errors explain permission, network, device, and no-speech failures
+  ---
+  duration_ms: 0.5815
+  type: 'test'
+  ...
+# Subtest: a silent end and synchronous start denial are visible and leave manual input intact
+ok 525 - a silent end and synchronous start denial are visible and leave manual input intact
+  ---
+  duration_ms: 0.5064
+  type: 'test'
+  ...
+# Subtest: Ctrl+C during startup waits for it to settle, then drains exactly once
+ok 526 - Ctrl+C during startup waits for it to settle, then drains exactly once
+  ---
+  duration_ms: 34.8746
+  type: 'test'
+  ...
+# Subtest: a new terminal waits for full shutdown; concurrent stop requests share cleanup
+ok 527 - a new terminal waits for full shutdown; concurrent stop requests share cleanup
+  ---
+  duration_ms: 124.1697
+  type: 'test'
+  ...
+# Subtest: failed shutdown is reported and leaves the foreground launcher available for retry
+ok 528 - failed shutdown is reported and leaves the foreground launcher available for retry
+  ---
+  duration_ms: 13.1529
+  type: 'test'
+  ...
+# Subtest: watchdog is released only after successful shutdown of the whole stack
+ok 529 - watchdog is released only after successful shutdown of the whole stack
+  ---
+  duration_ms: 8.7141
+  type: 'test'
+  ...
+# Subtest: partial startup failure cleans up roles and dependencies and preserves a failing result
+ok 530 - partial startup failure cleans up roles and dependencies and preserves a failing result
+  ---
+  duration_ms: 4.3284
+  type: 'test'
+  ...
+# Subtest: only one foreground launcher can own a repository and stopped endpoints permit fallback
+ok 531 - only one foreground launcher can own a repository and stopped endpoints permit fallback
+  ---
+  duration_ms: 68.2846
+  type: 'test'
+  ...
+# Subtest: full-stack stop refuses partial role selection before touching processes or dependencies
+ok 532 - full-stack stop refuses partial role selection before touching processes or dependencies
+  ---
+  duration_ms: 2007.4409
+  type: 'test'
+  ...
+# Subtest: a role shutdown error prevents dependency shutdown
+ok 533 - a role shutdown error prevents dependency shutdown
+  ---
+  duration_ms: 1860.5343
+  type: 'test'
+  ...
+# Subtest: startup cancellation stops before reading configuration or starting dependencies
+ok 534 - startup cancellation stops before reading configuration or starting dependencies
+  ---
+  duration_ms: 1390.5527
+  type: 'test'
+  ...
+# Subtest: dataset validation is offline and rejects duplicate IDs and invalid golden times
+ok 535 - dataset validation is offline and rejects duplicate IDs and invalid golden times
+  ---
+  duration_ms: 610.399
+  type: 'test'
+  ...
+# Subtest: scorer rejects empty, wrong-time, extra-action and incomplete execution, including matching counts
+ok 536 - scorer rejects empty, wrong-time, extra-action and incomplete execution, including matching counts
+  ---
+  duration_ms: 2.2224
+  type: 'test'
+  ...
+# Subtest: target identity matters and output projection excludes bodies, summaries and arbitrary provider text
+ok 537 - target identity matters and output projection excludes bodies, summaries and arbitrary provider text
+  ---
+  duration_ms: 0.7968
+  type: 'test'
+  ...
+# Subtest: summary counts failures and unfinished cases, nearest-rank includes failed latency, unknown cost is not zero
+ok 538 - summary counts failures and unfinished cases, nearest-rank includes failed latency, unknown cost is not zero
+  ---
+  duration_ms: 0.9779
+  type: 'test'
+  ...
+# Subtest: trace adapter captures numeric production metrics without snapshots or credentials
+ok 539 - trace adapter captures numeric production metrics without snapshots or credentials
+  ---
+  duration_ms: 0.4848
+  type: 'test'
+  ...
+# Subtest: production extraction and in-memory application work with a mocked fetch, with isolated files and no network
+ok 540 - production extraction and in-memory application work with a mocked fetch, with isolated files and no network
+  ---
+  duration_ms: 1957.2801
+  type: 'test'
+  ...
+# Subtest: mail filters
+    # Subtest: matches subject contains
+    ok 1 - matches subject contains
+      ---
+      duration_ms: 1.9596
+      type: 'test'
+      ...
+    # Subtest: matches sender domain
+    ok 2 - matches sender domain
+      ---
+      duration_ms: 0.5962
+      type: 'test'
+      ...
+    # Subtest: supports all vs any
+    ok 3 - supports all vs any
+      ---
+      duration_ms: 0.5282
+      type: 'test'
+      ...
+    # Subtest: finds first enabled matching filter
+    ok 4 - finds first enabled matching filter
+      ---
+      duration_ms: 0.6079
+      type: 'test'
+      ...
+    # Subtest: supports wildcard and regex
+    ok 5 - supports wildcard and regex
+      ---
+      duration_ms: 0.7865
+      type: 'test'
+      ...
+    1..5
+ok 541 - mail filters
+  ---
+  duration_ms: 6.5959
+  type: 'suite'
+  ...
+# Subtest: 真实同步（默认索引器）把已提交邮件的主题与正文写进邮箱知识库，重放不重复
+ok 542 - 真实同步（默认索引器）把已提交邮件的主题与正文写进邮箱知识库，重放不重复
+  ---
+  duration_ms: 54.1457
+  type: 'test'
+  ...
+# Subtest: 知识库未开启时不写入分块
+ok 543 - 知识库未开启时不写入分块
+  ---
+  duration_ms: 2.4347
+  type: 'test'
+  ...
+# Subtest: chronological processing and replay preserve one atomic effect/checkpoint per mail
+ok 544 - chronological processing and replay preserve one atomic effect/checkpoint per mail
+  ---
+  duration_ms: 48.1421
+  type: 'test'
+  ...
+# Subtest: a deduplicated mailbox loads history once regardless of the number of existing messages
+ok 545 - a deduplicated mailbox loads history once regardless of the number of existing messages
+  ---
+  duration_ms: 1.1726
+  type: 'test'
+  ...
+# Subtest: partial messages are retried while finalized messages skip history reloads
+ok 546 - partial messages are retried while finalized messages skip history reloads
+  ---
+  duration_ms: 23.105
+  type: 'test'
+  ...
+# Subtest: a shuffled batch reaching the job loop is applied earliest-first, never in arrival order
+ok 547 - a shuffled batch reaching the job loop is applied earliest-first, never in arrival order
+  ---
+  duration_ms: 126.9542
+  type: 'test'
+  ...
+# Subtest: the batch layer orders by received time, not by the order the reader produced
+ok 548 - the batch layer orders by received time, not by the order the reader produced
+  ---
+  duration_ms: 1.3851
+  type: 'test'
+  ...
+# Subtest: CAS conflict replans against manual changes outside the commit transaction
+ok 549 - CAS conflict replans against manual changes outside the commit transaction
+  ---
+  duration_ms: 19.2576
+  type: 'test'
+  ...
+# Subtest: another writer processing the same mail during planning does not write again
+ok 550 - another writer processing the same mail during planning does not write again
+  ---
+  duration_ms: 0.9965
+  type: 'test'
+  ...
+# Subtest: model failure remains retryable while earlier successful mail stays committed
+ok 551 - model failure remains retryable while earlier successful mail stays committed
+  ---
+  duration_ms: 43.9009
+  type: 'test'
+  ...
+# Subtest: partial recruitment and staged side effects are discarded for retry
+ok 552 - partial recruitment and staged side effects are discarded for retry
+  ---
+  duration_ms: 21.6331
+  type: 'test'
+  ...
+# Subtest: 已提交的邮件写入邮箱知识库一次，重放不再重复写入
+ok 553 - 已提交的邮件写入邮箱知识库一次，重放不再重复写入
+  ---
+  duration_ms: 1.8694
+  type: 'test'
+  ...
+# Subtest: 知识库写入失败不影响邮件处理结果，并留下脱敏告警
+ok 554 - 知识库写入失败不影响邮件处理结果，并留下脱敏告警
+  ---
+  duration_ms: 1.2382
+  type: 'test'
+  ...
+# Subtest: lease revocation and abort after a model response prevent late writes
+ok 555 - lease revocation and abort after a model response prevent late writes
+  ---
+  duration_ms: 1.2209
+  type: 'test'
+  ...
+# Subtest: bounded CAS retries fail without checkpointing stale results
+ok 556 - bounded CAS retries fail without checkpointing stale results
+  ---
+  duration_ms: 1.1481
+  type: 'test'
+  ...
+# Subtest: lease lost after staged business write rolls back both data and checkpoint
+ok 557 - lease lost after staged business write rolls back both data and checkpoint
+  ---
+  duration_ms: 0.7441
+  type: 'test'
+  ...
+# Subtest: scope mismatch fails before fetching mail
+ok 558 - scope mismatch fails before fetching mail
+  ---
+  duration_ms: 0.3809
+  type: 'test'
+  ...
+# Subtest: scoped IMAP identities preserve legacy IDs and distinguish UIDVALIDITY and owners
+ok 559 - scoped IMAP identities preserve legacy IDs and distinguish UIDVALIDITY and owners
+  ---
+  duration_ms: 1.0756
+  type: 'test'
+  ...
+# Subtest: IMAP migration skips legacy source downloads using synthetic metadata only
+ok 560 - IMAP migration skips legacy source downloads using synthetic metadata only
+  ---
+  duration_ms: 3.9937
+  type: 'test'
+  ...
+# Subtest: mail polling defaults to ten minutes and preserves configured intervals
+ok 561 - mail polling defaults to ten minutes and preserves configured intervals
+  ---
+  duration_ms: 1.4418
+  type: 'test'
+  ...
+# Subtest: parseMailboxMessageRef 还原两种历史 id，不能解析时返回 null
+ok 562 - parseMailboxMessageRef 还原两种历史 id，不能解析时返回 null
+  ---
+  duration_ms: 30.3559
+  type: 'test'
+  ...
+# Subtest: resolveMailFolder 优先用 SPECIAL-USE，其次按常见命名兜底
+ok 563 - resolveMailFolder 优先用 SPECIAL-USE，其次按常见命名兜底
+  ---
+  duration_ms: 0.5399
+  type: 'test'
+  ...
+# Subtest: resolveMailWriteBack 关闭写回时一律拒绝，不给本地静默降级
+ok 564 - resolveMailWriteBack 关闭写回时一律拒绝，不给本地静默降级
+  ---
+  duration_ms: 0.8358
+  type: 'test'
+  ...
+# Subtest: resolveMailWriteBack 把动作翻译成 IMAP 指令与本地镜像补丁
+ok 565 - resolveMailWriteBack 把动作翻译成 IMAP 指令与本地镜像补丁
+  ---
+  duration_ms: 0.8316
+  type: 'test'
+  ...
+# Subtest: normalizeMailboxWriteBack 默认关闭，缺省值稳定
+ok 566 - normalizeMailboxWriteBack 默认关闭，缺省值稳定
+  ---
+  duration_ms: 0.5683
+  type: 'test'
+  ...
+# Subtest: writeBackMailboxMessage 只改指定 uid，并把真邮箱错误翻成人话
+ok 567 - writeBackMailboxMessage 只改指定 uid，并把真邮箱错误翻成人话
+  ---
+  duration_ms: 2.8432
+  type: 'test'
+  ...
+# Subtest: listMailboxFolders / readMailboxFlags 只读，不改真邮箱
+ok 568 - listMailboxFolders / readMailboxFlags 只读，不改真邮箱
+  ---
+  duration_ms: 1.8852
+  type: 'test'
+  ...
+# Subtest: updateStoredEmail 就地更新镜像字段，找不到时返回 null
+ok 569 - updateStoredEmail 就地更新镜像字段，找不到时返回 null
+  ---
+  duration_ms: 83.9249
+  type: 'test'
+  ...
+# Subtest: 最近 N 封先获取 UID，成功邮件不下载或解析，失败与新邮件仍按发送时间提取
+ok 570 - 最近 N 封先获取 UID，成功邮件不下载或解析，失败与新邮件仍按发送时间提取
+  ---
+  duration_ms: 134.103
+  type: 'test'
+  ...
+# Subtest: 15 封已处理的大邮件仅检查元数据，正文下载字节为零且不创建新日志或模型请求
+ok 571 - 15 封已处理的大邮件仅检查元数据，正文下载字节为零且不创建新日志或模型请求
+  ---
+  duration_ms: 23.5989
+  type: 'test'
+  ...
+# Subtest: UIDVALIDITY 变化需要重新读取，同账号默认前缀与新邮箱前缀保持原去重规则
+    # Subtest: 默认邮箱切换服务商仍使用 qq 前缀
+    ok 1 - 默认邮箱切换服务商仍使用 qq 前缀
+      ---
+      duration_ms: 11.0953
+      type: 'test'
+      ...
+    # Subtest: 独立邮箱使用 imap 前缀
+    ok 2 - 独立邮箱使用 imap 前缀
+      ---
+      duration_ms: 3.2692
+      type: 'test'
+      ...
+    1..2
+ok 572 - UIDVALIDITY 变化需要重新读取，同账号默认前缀与新邮箱前缀保持原去重规则
+  ---
+  duration_ms: 15.6598
+  type: 'test'
+  ...
+# Subtest: 失败邮件再次读取原文并重试，成功后只读取元数据并保留同一条历史日志
+ok 573 - 失败邮件再次读取原文并重试，成功后只读取元数据并保留同一条历史日志
+  ---
+  duration_ms: 19.1778
+  type: 'test'
+  ...
+# Subtest: 空收件箱不获取元数据或原文，仍正常释放锁并退出
+ok 574 - 空收件箱不获取元数据或原文，仍正常释放锁并退出
+  ---
+  duration_ms: 7.145
+  type: 'test'
+  ...
+# Subtest: 连接或打开收件箱失败立即关闭连接，保留原错误且不执行额外登出网络请求
+    # Subtest: connect
+    ok 1 - connect
+      ---
+      duration_ms: 2.933
+      type: 'test'
+      ...
+    # Subtest: select
+    ok 2 - select
+      ---
+      duration_ms: 0.6537
+      type: 'test'
+      ...
+    1..2
+ok 575 - 连接或打开收件箱失败立即关闭连接，保留原错误且不执行额外登出网络请求
+  ---
+  duration_ms: 4.9842
+  type: 'test'
+  ...
+# Subtest: 原文读取中断结束已创建日志，释放锁并立即关闭连接
+ok 576 - 原文读取中断结束已创建日志，释放锁并立即关闭连接
+  ---
+  duration_ms: 7.3139
+  type: 'test'
+  ...
+# Subtest: 同步时读回 IMAP flags：新导入邮件带上已读 / 星标状态
+ok 577 - 同步时读回 IMAP flags：新导入邮件带上已读 / 星标状态
+  ---
+  duration_ms: 37.1009
+  type: 'test'
+  ...
+# Subtest: 登录用户只看到自己的邮箱，看不到共享 demo 邮箱
+ok 578 - 登录用户只看到自己的邮箱，看不到共享 demo 邮箱
+  ---
+  duration_ms: 112.3334
+  type: 'test'
+  ...
+# Subtest: 模型 fetch failed 翻译为可读中文
+ok 579 - 模型 fetch failed 翻译为可读中文
+  ---
+  duration_ms: 2.5215
+  type: 'test'
+  ...
+# Subtest: 模型 upstream eof 翻译为可读中文
+ok 580 - 模型 upstream eof 翻译为可读中文
+  ---
+  duration_ms: 0.6843
+  type: 'test'
+  ...
+# Subtest: Login is disabled 翻译为可读中文
+ok 581 - Login is disabled 翻译为可读中文
+  ---
+  duration_ms: 0.7371
+  type: 'test'
+  ...
+# Subtest: authenticationFailed 布尔值不会变成字面量 true
+ok 582 - authenticationFailed 布尔值不会变成字面量 true
+  ---
+  duration_ms: 0.4635
+  type: 'test'
+  ...
+# Subtest: Outlook 地址配 QQ 类型时连通测试直接给出中文提示
+ok 583 - Outlook 地址配 QQ 类型时连通测试直接给出中文提示
+  ---
+  duration_ms: 2.441
+  type: 'test'
+  ...
+# Subtest: Command failed 会被翻译成可读中文
+ok 584 - Command failed 会被翻译成可读中文
+  ---
+  duration_ms: 1.3654
+  type: 'test'
+  ...
+# Subtest: TLS 握手前的 ECONNRESET 显示网络断连，学校邮箱提示可用入口
+ok 585 - TLS 握手前的 ECONNRESET 显示网络断连，学校邮箱提示可用入口
+  ---
+  duration_ms: 0.9919
+  type: 'test'
+  ...
+# Subtest: 证书过期、域名不匹配、信任链与 TLS 协议错误给出各自的处理方式
+ok 586 - 证书过期、域名不匹配、信任链与 TLS 协议错误给出各自的处理方式
+  ---
+  duration_ms: 1.185
+  type: 'test'
+  ...
+# Subtest: 底层错误只有 code 时也能识别 DNS、超时和拒绝连接
+ok 587 - 底层错误只有 code 时也能识别 DNS、超时和拒绝连接
+  ---
+  duration_ms: 0.5944
+  type: 'test'
+  ...
+# Subtest: 学校邮箱和校友邮箱可识别预设，其他学校仍使用自定义配置
+ok 588 - 学校邮箱和校友邮箱可识别预设，其他学校仍使用自定义配置
+  ---
+  duration_ms: 0.67
+  type: 'test'
+  ...
+# Subtest: 学校邮箱连通性测试与同步均强制 STARTTLS，连接失败仍保留原因
+ok 589 - 学校邮箱连通性测试与同步均强制 STARTTLS，连接失败仍保留原因
+  ---
+  duration_ms: 9.889
+  type: 'test'
+  ...
+# Subtest: 旧单邮箱配置和无 tasks 的日历直接兼容，读取状态不改写原文件
+ok 590 - 旧单邮箱配置和无 tasks 的日历直接兼容，读取状态不改写原文件
+  ---
+  duration_ms: 6215.5999
+  type: 'test'
+  ...
+# Subtest: switching mailbox is a view operation by default; explicit sync still retrieves mail
+ok 591 - switching mailbox is a view operation by default; explicit sync still retrieves mail
+  ---
+  duration_ms: 5706.66
+  type: 'test'
+  ...
+# Subtest: 同 UID/Message-ID 和同名待办在不同邮箱分别提取，切换按各自数量读取且保留手动、取消与草稿
+ok 592 - 同 UID/Message-ID 和同名待办在不同邮箱分别提取，切换按各自数量读取且保留手动、取消与草稿
+  ---
+  duration_ms: 8052.651
+  type: 'test'
+  ...
+# Subtest: 编辑地址会创建独立邮箱且不继承授权码；同账号空码保存保留，服务器与数量可分别配置
+ok 593 - 编辑地址会创建独立邮箱且不继承授权码；同账号空码保存保留，服务器与数量可分别配置
+  ---
+  duration_ms: 5162.361
+  type: 'test'
+  ...
+# Subtest: 同步和SMTP等待期间拒绝切换；过期页面请求不跨邮箱写入，真实发送使用对应邮箱和服务器
+ok 594 - 同步和SMTP等待期间拒绝切换；过期页面请求不跨邮箱写入，真实发送使用对应邮箱和服务器
+  ---
+  duration_ms: 5163.1546
+  type: 'test'
+  ...
+# Subtest: 系统模板发信使用系统 DNS 地址，保留 QQ TLS 域名与完整验证码正文
+ok 595 - 系统模板发信使用系统 DNS 地址，保留 QQ TLS 域名与完整验证码正文
+  ---
+  duration_ms: 126.2502
+  type: 'test'
+  ...
+# Subtest: 系统 SMTP 配置热更新后重新解析新主机，非直接 TLS 使用 STARTTLS
+ok 596 - 系统 SMTP 配置热更新后重新解析新主机，非直接 TLS 使用 STARTTLS
+  ---
+  duration_ms: 40.6044
+  type: 'test'
+  ...
+# Subtest: 系统 DNS 失败时不建立 SMTP 连接，保留错误供测试信或验证码入口处理
+ok 597 - 系统 DNS 失败时不建立 SMTP 连接，保留错误供测试信或验证码入口处理
+  ---
+  duration_ms: 19.3695
+  type: 'test'
+  ...
+# Subtest: 系统发信未启用或凭据不全时提示配置问题，不解析 DNS 或连接 SMTP
+ok 598 - 系统发信未启用或凭据不全时提示配置问题，不解析 DNS 或连接 SMTP
+  ---
+  duration_ms: 90.6297
+  type: 'test'
+  ...
+# Subtest: 手动新建检测时段重叠，忽略全天与已取消，并可排除自身
+ok 599 - 手动新建检测时段重叠，忽略全天与已取消，并可排除自身
+  ---
+  duration_ms: 2.6739
+  type: 'test'
+  ...
+# Subtest: 无法唯一匹配时写入 needs_match 与候选，不猜目标、不改写原日程
+ok 600 - 无法唯一匹配时写入 needs_match 与候选，不猜目标、不改写原日程
+  ---
+  duration_ms: 38.6675
+  type: 'test'
+  ...
+# Subtest: 人工点选候选后完成 reschedule，并按邮件 ID 去重
+ok 601 - 人工点选候选后完成 reschedule，并按邮件 ID 去重
+  ---
+  duration_ms: 6.5519
+  type: 'test'
+  ...
+# Subtest: 目标 ID 不存在时进入待匹配；补充日程后可人工应用或再次同步明确 id
+ok 602 - 目标 ID 不存在时进入待匹配；补充日程后可人工应用或再次同步明确 id
+  ---
+  duration_ms: 6.2372
+  type: 'test'
+  ...
+# Subtest: 日历变化不会自动清掉已落库的 needs_match；忽略后可重新处理需清邮件记录
+ok 603 - 日历变化不会自动清掉已落库的 needs_match；忽略后可重新处理需清邮件记录
+  ---
+  duration_ms: 4.0373
+  type: 'test'
+  ...
+# Subtest: 模型服务故障继续自动重试；不与 needs_match 混淆
+ok 604 - 模型服务故障继续自动重试；不与 needs_match 混淆
+  ---
+  duration_ms: 3.3519
+  type: 'test'
+  ...
+# Subtest: 会议正文保留中文、换行、标点与原始 URL 参数，仅已保存的会议地址可点击
+ok 605 - 会议正文保留中文、换行、标点与原始 URL 参数，仅已保存的会议地址可点击
+  ---
+  duration_ms: 2.5957
+  type: 'test'
+  ...
+# Subtest: 不完整或不安全的会议地址保持纯文本，不生成可执行或含认证信息的链接
+ok 606 - 不完整或不安全的会议地址保持纯文本，不生成可执行或含认证信息的链接
+  ---
+  duration_ms: 0.7633
+  type: 'test'
+  ...
+# Subtest: slow disk charges in-flight data to both limits without growing a second queue
+ok 607 - slow disk charges in-flight data to both limits without growing a second queue
+  ---
+  duration_ms: 323.8558
+  type: 'test'
+  ...
+# Subtest: shutdown awaits failed writes and persists their final dropped count
+ok 608 - shutdown awaits failed writes and persists their final dropped count
+  ---
+  duration_ms: 287.4841
+  type: 'test'
+  ...
+# Subtest: rotated files obey the per-process file count and byte limits
+ok 609 - rotated files obey the per-process file count and byte limits
+  ---
+  duration_ms: 268.7473
+  type: 'test'
+  ...
+# Subtest: directory retention reclaims files left by previous instances
+ok 610 - directory retention reclaims files left by previous instances
+  ---
+  duration_ms: 2070.0012
+  type: 'test'
+  ...
+# Subtest: three roles produce independent atomic summaries and the CLI aggregates each
+ok 611 - three roles produce independent atomic summaries and the CLI aggregates each
+  ---
+  duration_ms: 785.3592
+  type: 'test'
+  ...
+# Subtest: metric identities, numeric payloads and aggregate cardinality are bounded
+ok 612 - metric identities, numeric payloads and aggregate cardinality are bounded
+  ---
+  duration_ms: 5693.7098
+  type: 'test'
+  ...
+# Subtest: recording starts with the switch; the sink is created by the service entry point
+ok 613 - recording starts with the switch; the sink is created by the service entry point
+  ---
+  duration_ms: 10.8306
+  type: 'test'
+  ...
+# Subtest: each sample carries the required fields and Beijing timestamps
+ok 614 - each sample carries the required fields and Beijing timestamps
+  ---
+  duration_ms: 51.4323
+  type: 'test'
+  ...
+# Subtest: labels are sanitised so private and unbounded values never leave the process
+ok 615 - labels are sanitised so private and unbounded values never leave the process
+  ---
+  duration_ms: 32.5859
+  type: 'test'
+  ...
+# Subtest: an overflowing buffer drops samples and reports the loss instead of blocking
+ok 616 - an overflowing buffer drops samples and reports the loss instead of blocking
+  ---
+  duration_ms: 50.4071
+  type: 'test'
+  ...
+# Subtest: latency metrics keep every raw sample so percentiles can be recomputed
+ok 617 - latency metrics keep every raw sample so percentiles can be recomputed
+  ---
+  duration_ms: 26.2643
+  type: 'test'
+  ...
+# Subtest: timers record a duration in milliseconds and always release
+ok 618 - timers record a duration in milliseconds and always release
+  ---
+  duration_ms: 61.21
+  type: 'test'
+  ...
+# Subtest: the rolling summary carries count, sum, min, max and percentiles
+ok 619 - the rolling summary carries count, sum, min, max and percentiles
+  ---
+  duration_ms: 32.0306
+  type: 'test'
+  ...
+# Subtest: a failing sink never throws into the caller and is reported as status
+ok 620 - a failing sink never throws into the caller and is reported as status
+  ---
+  duration_ms: 89.1014
+  type: 'test'
+  ...
+# Subtest: metrics stay completely off when the environment switch is absent
+ok 621 - metrics stay completely off when the environment switch is absent
+  ---
+  duration_ms: 251.2769
+  type: 'test'
+  ...
+# Subtest: provenance reports unknown rather than a false clean tree when git is unavailable
+ok 622 - provenance reports unknown rather than a false clean tree when git is unavailable
+  ---
+  duration_ms: 381.3347
+  type: 'test'
+  ...
+# Subtest: sink names differ for the same PID under different container host tags
+ok 623 - sink names differ for the same PID under different container host tags
+  ---
+  duration_ms: 554.8768
+  type: 'test'
+  ...
+# Subtest: an unusable metrics directory degrades to sinkError instead of crashing the service
+ok 624 - an unusable metrics directory degrades to sinkError instead of crashing the service
+  ---
+  duration_ms: 409.1984
+  type: 'test'
+  ...
+# Subtest: 无代理时 modelFetch 仍可调用（本机环回）
+ok 625 - 无代理时 modelFetch 仍可调用（本机环回）
+  ---
+  duration_ms: 27.6222
+  type: 'test'
+  ...
+# Subtest: 探测缓存可重置
+ok 626 - 探测缓存可重置
+  ---
+  duration_ms: 0.4716
+  type: 'test'
+  ...
+# Subtest: 兼容模型文本中的未转义换行，不改变正常转义或放宽无效结构
+ok 627 - 兼容模型文本中的未转义换行，不改变正常转义或放宽无效结构
+  ---
+  duration_ms: 3.1559
+  type: 'test'
+  ...
+# Subtest: 多次模型调用累计用量且不保存资料正文、凭据或私有推理
+ok 628 - 多次模型调用累计用量且不保存资料正文、凭据或私有推理
+  ---
+  duration_ms: 35.3506
+  type: 'test'
+  ...
+# Subtest: 真实兼容服务的截断JSON至多修正一次，记录两次实际请求用量
+ok 629 - 真实兼容服务的截断JSON至多修正一次，记录两次实际请求用量
+  ---
+  duration_ms: 3.1744
+  type: 'test'
+  ...
+# Subtest: 通用兼容接口不发送 thinking，提示明确已有最新安排、缺失原邀请和模糊目标的规则
+ok 630 - 通用兼容接口不发送 thinking，提示明确已有最新安排、缺失原邀请和模糊目标的规则
+  ---
+  duration_ms: 104.6248
+  type: 'test'
+  ...
+# Subtest: DeepSeek 官方 flash 和 v4-pro 请求禁思考，其他模型和域名保持通用请求
+ok 631 - DeepSeek 官方 flash 和 v4-pro 请求禁思考，其他模型和域名保持通用请求
+  ---
+  duration_ms: 27.484
+  type: 'test'
+  ...
+# Subtest: 完整调整通知在原邀请不在日历时可保存 create，成功后按邮件 ID 去重
+ok 632 - 完整调整通知在原邀请不在日历时可保存 create，成功后按邮件 ID 去重
+  ---
+  duration_ms: 73.2574
+  type: 'test'
+  ...
+# Subtest: 无相关日程的纯取消通知保留摘要并跳过，不修改其他活动
+ok 633 - 无相关日程的纯取消通知保留摘要并跳过，不修改其他活动
+  ---
+  duration_ms: 22.8167
+  type: 'test'
+  ...
+# Subtest: 已存在两项完全一致的最新安排时保留摘要，不重复调整或创建
+ok 634 - 已存在两项完全一致的最新安排时保留摘要，不重复调整或创建
+  ---
+  duration_ms: 20.7371
+  type: 'test'
+  ...
+# Subtest: 存在疑似对象但模型未返回唯一 targetEventId 时明确操作可写入，调整进入待匹配
+ok 635 - 存在疑似对象但模型未返回唯一 targetEventId 时明确操作可写入，调整进入待匹配
+  ---
+  duration_ms: 41.0291
+  type: 'test'
+  ...
+# Subtest: 模型响应正文迟迟未完成会超时，保留失败与重试能力，不写入日程
+ok 636 - 模型响应正文迟迟未完成会超时，保留失败与重试能力，不写入日程
+  ---
+  duration_ms: 118.8702
+  type: 'test'
+  ...
+# Subtest: 新手引导默认步骤可读写，旧 audience 不再限制用户（无 PG 时落 JSON）
+ok 637 - 新手引导默认步骤可读写，旧 audience 不再限制用户（无 PG 时落 JSON）
+  ---
+  duration_ms: 39.4505
+  type: 'test'
+  ...
+# Subtest: 已保存工作台引导只更新两版旧默认文案，自定义内容与其他步骤保留
+ok 638 - 已保存工作台引导只更新两版旧默认文案，自定义内容与其他步骤保留
+  ---
+  duration_ms: 55.5345
+  type: 'test'
+  ...
+# Subtest: 小 D 旧默认引导更新为审核发信与会议能力，保留自定义引导
+ok 639 - 小 D 旧默认引导更新为审核发信与会议能力，保留自定义引导
+  ---
+  duration_ms: 27.8557
+  type: 'test'
+  ...
+# Subtest: 默认提取规则包含报名、自愿活动和两小时时长，并区分报名截止与活动时间
+ok 640 - 默认提取规则包含报名、自愿活动和两小时时长，并区分报名截止与活动时间
+  ---
+  duration_ms: 39.9657
+  type: 'test'
+  ...
+# Subtest: 本机已保存自定义提取 prompt 时仍追加最新可选活动规则，并保留自定义内容
+ok 641 - 本机已保存自定义提取 prompt 时仍追加最新可选活动规则，并保留自定义内容
+  ---
+  duration_ms: 29.7408
+  type: 'test'
+  ...
+# Subtest: 新建非全天日程缺少 end 时默认两小时，跨午夜仍使用北京时间
+ok 642 - 新建非全天日程缺少 end 时默认两小时，跨午夜仍使用北京时间
+  ---
+  duration_ms: 5.1136
+  type: 'test'
+  ...
+# Subtest: 报名参加、自愿参加和欢迎报名活动可入历，缺失结束时间保存为两小时且重复邮件去重
+ok 643 - 报名参加、自愿参加和欢迎报名活动可入历，缺失结束时间保存为两小时且重复邮件去重
+  ---
+  duration_ms: 119.0352
+  type: 'test'
+  ...
+# Subtest: 导入入口也为未规范化的新日程补齐两小时，不依赖模型先填 end
+ok 644 - 导入入口也为未规范化的新日程补齐两小时，不依赖模型先填 end
+  ---
+  duration_ms: 4.3817
+  type: 'test'
+  ...
+# Subtest: 明确结束时间和完整全天日程原样保留，无效的明确结束时间继续报错
+ok 645 - 明确结束时间和完整全天日程原样保留，无效的明确结束时间继续报错
+  ---
+  duration_ms: 12.094
+  type: 'test'
+  ...
+# Subtest: 改期仅提供新开始时间时沿用原时长，地点调整保留原起止时间
+ok 646 - 改期仅提供新开始时间时沿用原时长，地点调整保留原起止时间
+  ---
+  duration_ms: 7.9975
+  type: 'test'
+  ...
+# Subtest: download has one hard deadline even when the transport ignores abort while waiting for headers
+ok 647 - download has one hard deadline even when the transport ignores abort while waiting for headers
+  ---
+  duration_ms: 53.3329
+  type: 'test'
+  ...
+# Subtest: the same download deadline covers a stalled response body and destroys its socket
+ok 648 - the same download deadline covers a stalled response body and destroys its socket
+  ---
+  duration_ms: 47.9873
+  type: 'test'
+  ...
+# Subtest: a body arriving after the deadline is destroyed without being read or becoming an unhandled rejection
+ok 649 - a body arriving after the deadline is destroyed without being read or becoming an unhandled rejection
+  ---
+  duration_ms: 137.8065
+  type: 'test'
+  ...
+# Subtest: successful body collection cancels its deadline and preserves exact bytes
+ok 650 - successful body collection cancels its deadline and preserves exact bytes
+  ---
+  duration_ms: 44.5419
+  type: 'test'
+  ...
+# Subtest: only remote missing objects return null; permission, network and body failures use safe upstream status
+ok 651 - only remote missing objects return null; permission, network and body failures use safe upstream status
+  ---
+  duration_ms: 4.9649
+  type: 'test'
+  ...
+# Subtest: body consumption failures are upstream errors and release the partially read body
+ok 652 - body consumption failures are upstream errors and release the partially read body
+  ---
+  duration_ms: 2.737
+  type: 'test'
+  ...
+# Subtest: real SDK over isolated HTTP maps missing/denied and bounds both header and streamed body waits
+ok 653 - real SDK over isolated HTTP maps missing/denied and bounds both header and streamed body waits
+  ---
+  duration_ms: 329.3213
+  type: 'test'
+  ...
+# Subtest: 默认进入 10 秒撤销窗口：只落库、状态 scheduled、绝不连 SMTP
+ok 654 - 默认进入 10 秒撤销窗口：只落库、状态 scheduled、绝不连 SMTP
+  ---
+  duration_ms: 52.0136
+  type: 'test'
+  ...
+# Subtest: 收件人解析与输入校验都显式带错误码
+ok 655 - 收件人解析与输入校验都显式带错误码
+  ---
+  duration_ms: 162.255
+  type: 'test'
+  ...
+# Subtest: 签名：默认追加、已以签名结尾不重复、useSignature:false 不追加、fromName 体现在 from
+ok 656 - 签名：默认追加、已以签名结尾不重复、useSignature:false 不追加、fromName 体现在 from
+  ---
+  duration_ms: 160.7567
+  type: 'test'
+  ...
+# Subtest: 到点才发一次：发信带签名、显示名、线程头，并落盘 sent 回执
+ok 657 - 到点才发一次：发信带签名、显示名、线程头，并落盘 sent 回执
+  ---
+  duration_ms: 159.1364
+  type: 'test'
+  ...
+# Subtest: SMTP 抛错 → failed + retryable；回执保存失败 → unknown，绝不重发
+ok 658 - SMTP 抛错 → failed + retryable；回执保存失败 → unknown，绝不重发
+  ---
+  duration_ms: 338.9157
+  type: 'test'
+  ...
+# Subtest: 并发/重入靠 sending 屏障挡住：两个派发同时跑，SMTP 只被调用一次
+ok 659 - 并发/重入靠 sending 屏障挡住：两个派发同时跑，SMTP 只被调用一次
+  ---
+  duration_ms: 108.17
+  type: 'test'
+  ...
+# Subtest: 超过 5 分钟卡在 sending 的记录收敛成 unknown，且不会被重发
+ok 660 - 超过 5 分钟卡在 sending 的记录收敛成 unknown，且不会被重发
+  ---
+  duration_ms: 95.6295
+  type: 'test'
+  ...
+# Subtest: 撤销只对窗口里的 scheduled 生效；已发出的邮件返回 409 + OUTBOUND_NOT_CANCELLABLE
+ok 661 - 撤销只对窗口里的 scheduled 生效；已发出的邮件返回 409 + OUTBOUND_NOT_CANCELLABLE
+  ---
+  duration_ms: 336.9572
+  type: 'test'
+  ...
+# Subtest: 立即发送跳过剩余窗口；重复 idempotencyKey 只创建一条、只发一次
+ok 662 - 立即发送跳过剩余窗口；重复 idempotencyKey 只创建一条、只发一次
+  ---
+  duration_ms: 304.3077
+  type: 'test'
+  ...
+# Subtest: 列表最新在前，counts 覆盖该邮箱全部记录
+ok 663 - 列表最新在前，counts 覆盖该邮箱全部记录
+  ---
+  duration_ms: 185.7575
+  type: 'test'
+  ...
+# Subtest: resolveMailFolder 支持已发送：先 SPECIAL-USE，再按常见命名兜底
+ok 664 - resolveMailFolder 支持已发送：先 SPECIAL-USE，再按常见命名兜底
+  ---
+  duration_ms: 0.4812
+  type: 'test'
+  ...
+# Subtest: appendMailboxMessage 只写 resolveMailFolder 认得的文件夹，找不到就抛 MAIL_FOLDER_NOT_FOUND
+ok 665 - appendMailboxMessage 只写 resolveMailFolder 认得的文件夹，找不到就抛 MAIL_FOLDER_NOT_FOUND
+  ---
+  duration_ms: 2.769
+  type: 'test'
+  ...
+# Subtest: 已发送留档失败只记 sentFolderError，绝不影响已发出的 sent 状态
+ok 666 - 已发送留档失败只记 sentFolderError，绝不影响已发出的 sent 状态
+  ---
+  duration_ms: 150.2571
+  type: 'test'
+  ...
+# Subtest: 回复草稿：to 优先 Reply-To，主题不重复 Re:，references 接上原线程
+ok 667 - 回复草稿：to 优先 Reply-To，主题不重复 Re:，references 接上原线程
+  ---
+  duration_ms: 1.3244
+  type: 'test'
+  ...
+# Subtest: 回复全部：去掉自己、去掉重复、保持顺序；旧邮件只能回复发件人并如实告知
+ok 668 - 回复全部：去掉自己、去掉重复、保持顺序；旧邮件只能回复发件人并如实告知
+  ---
+  duration_ms: 0.7323
+  type: 'test'
+  ...
+# Subtest: publicOutbound 只暴露对外字段
+ok 669 - publicOutbound 只暴露对外字段
+  ---
+  duration_ms: 55.1585
+  type: 'test'
+  ...
+# Subtest: 邮箱模型的新字段：归一与对外白名单
+ok 670 - 邮箱模型的新字段：归一与对外白名单
+  ---
+  duration_ms: 0.7382
+  type: 'test'
+  ...
+# Subtest: HTTP：写邮件只落库不连 SMTP；X-Mailbox-Id 白名单按邮箱隔离队列
+ok 671 - HTTP：写邮件只落库不连 SMTP；X-Mailbox-Id 白名单按邮箱隔离队列
+  ---
+  duration_ms: 4806.5769
+  type: 'test'
+  ...
+# Subtest: HTTP：立即发送真的发出一封（显示名 + 签名），并 best-effort 留档到已发送
+ok 672 - HTTP：立即发送真的发出一封（显示名 + 签名），并 best-effort 留档到已发送
+  ---
+  duration_ms: 5972.0488
+  type: 'test'
+  ...
+# Subtest: HTTP：撤销只对窗口内的 scheduled 生效；回复草稿预填完整 to/cc 与线程头
+ok 673 - HTTP：撤销只对窗口内的 scheduled 生效；回复草稿预填完整 to/cc 与线程头
+  ---
+  duration_ms: 4834.7949
+  type: 'test'
+  ...
+# Subtest: 草稿留在草稿箱，HTML 正文同时带纯文本
+ok 674 - 草稿留在草稿箱，HTML 正文同时带纯文本
+  ---
+  duration_ms: 20.7689
+  type: 'test'
+  ...
+# Subtest: PDF 逐页读取文字层，日志仅保存提取摘要
+ok 675 - PDF 逐页读取文字层，日志仅保存提取摘要
+  ---
+  duration_ms: 169.4643
+  type: 'test'
+  ...
+# Subtest: 混合 PDF 只对缺文字页渲染 OCR，并展示页级进度
+ok 676 - 混合 PDF 只对缺文字页渲染 OCR，并展示页级进度
+  ---
+  duration_ms: 211.9031
+  type: 'test'
+  ...
+# Subtest: 空、损坏、加密与无可读内容 PDF 返回可处理的错误
+ok 677 - 空、损坏、加密与无可读内容 PDF 返回可处理的错误
+  ---
+  duration_ms: 199.9213
+  type: 'test'
+  ...
+# Subtest: OCR 失败记录失败阶段，后续 PDF 仍可正常处理
+ok 678 - OCR 失败记录失败阶段，后续 PDF 仍可正常处理
+  ---
+  duration_ms: 224.6453
+  type: 'test'
+  ...
+# Subtest: 预置中文简历 PDF 可提取中文姓名、学校及项目，并明确标识示例
+ok 679 - 预置中文简历 PDF 可提取中文姓名、学校及项目，并明确标识示例
+  ---
+  duration_ms: 154.8608
+  type: 'test'
+  ...
+# Subtest: OCR 首次语言包下载失败可恢复，不启动悬挂 worker、不写真实数据目录
+ok 680 - OCR 首次语言包下载失败可恢复，不启动悬挂 worker、不写真实数据目录
+  ---
+  duration_ms: 312.6686
+  type: 'test'
+  ...
+# Subtest: 包含嵌入扫描图像的 PDF 正常渲染，避免不同原生 canvas 实例混用崩溃
+ok 681 - 包含嵌入扫描图像的 PDF 正常渲染，避免不同原生 canvas 实例混用崩溃
+  ---
+  duration_ms: 273.8617
+  type: 'test'
+  ...
+# Subtest: pending mailbox assistant and RAG reads return empty without loading colliding orphan records
+ok 682 - pending mailbox assistant and RAG reads return empty without loading colliding orphan records
+  ---
+  duration_ms: 33.3988
+  type: 'test'
+  ...
+# Subtest: pending mailbox mutations fail before PG, business callback, model or external meeting execution
+ok 683 - pending mailbox mutations fail before PG, business callback, model or external meeting execution
+  ---
+  duration_ms: 10.574
+  type: 'test'
+  ...
+# Subtest: registered owner retains assistant/RAG access and RAG writers lock mailbox registration before attachment mutation
+ok 684 - registered owner retains assistant/RAG access and RAG writers lock mailbox registration before attachment mutation
+  ---
+  duration_ms: 10.5604
+  type: 'test'
+  ...
+# Subtest: pending profile IDs include the whole owner identity rather than a short shared prefix
+ok 685 - pending profile IDs include the whole owner identity rather than a short shared prefix
+  ---
+  duration_ms: 2.6548
+  type: 'test'
+  ...
+# Subtest: real PG: account without a saved mailbox opens empty state without reading or adopting orphan and other-owner data
+ok 686 - real PG: account without a saved mailbox opens empty state without reading or adopting orphan and other-owner data # SKIP
+  ---
+  duration_ms: 0.2175
+  type: 'test'
+  ...
+# Subtest: real PG HTTP: initial state and explicit mailbox save succeed, then new calendar data persists across snapshots
+ok 687 - real PG HTTP: initial state and explicit mailbox save succeed, then new calendar data persists across snapshots # SKIP
+  ---
+  duration_ms: 0.1718
+  type: 'test'
+  ...
+# Subtest: real PG: model preferences do not silently register a pending profile
+ok 688 - real PG: model preferences do not silently register a pending profile # SKIP
+  ---
+  duration_ms: 0.1508
+  type: 'test'
+  ...
+# Subtest: real PG: existing empty calendars and private auxiliary namespaces conflict instead of being claimed
+ok 689 - real PG: existing empty calendars and private auxiliary namespaces conflict instead of being claimed # SKIP
+  ---
+  duration_ms: 0.2144
+  type: 'test'
+  ...
+# Subtest: real PG: guessed unassigned IDs and orphan calendar IDs never gain current-user ownership
+ok 690 - real PG: guessed unassigned IDs and orphan calendar IDs never gain current-user ownership # SKIP
+  ---
+  duration_ms: 0.277
+  type: 'test'
+  ...
+# Subtest: real PG: two concurrent first mailbox registrations have one winner and one atomic conflict
+ok 691 - real PG: two concurrent first mailbox registrations have one winner and one atomic conflict # SKIP
+  ---
+  duration_ms: 0.1774
+  type: 'test'
+  ...
+# Subtest: real PG: a concurrent RAG writer blocks registration and its existing chunks remain unclaimed
+ok 692 - real PG: a concurrent RAG writer blocks registration and its existing chunks remain unclaimed # SKIP
+  ---
+  duration_ms: 0.2065
+  type: 'test'
+  ...
+# Subtest: real PG: an existing owner can configure an additional mailbox and use its empty documents immediately
+ok 693 - real PG: an existing owner can configure an additional mailbox and use its empty documents immediately # SKIP
+  ---
+  duration_ms: 0.2351
+  type: 'test'
+  ...
+# Subtest: real PG: first setup with a different email registers only the selected profile
+ok 694 - real PG: first setup with a different email registers only the selected profile # SKIP
+  ---
+  duration_ms: 0.2154
+  type: 'test'
+  ...
+# Subtest: production opens shared attachments, RAG, settings and administrator operations
+ok 695 - production opens shared attachments, RAG, settings and administrator operations
+  ---
+  duration_ms: 5.0646
+  type: 'test'
+  ...
+# Subtest: production retains method-specific gates for unconverted workflows and environment configuration
+ok 696 - production retains method-specific gates for unconverted workflows and environment configuration
+  ---
+  duration_ms: 0.8152
+  type: 'test'
+  ...
+# Subtest: administrator overview loads all shared mailboxes while the user workspace remains isolated
+ok 697 - administrator overview loads all shared mailboxes while the user workspace remains isolated
+  ---
+  duration_ms: 145.8214
+  type: 'test'
+  ...
+# Subtest: ordinary and unauthenticated requests cannot select an administrative snapshot
+ok 698 - ordinary and unauthenticated requests cannot select an administrative snapshot
+  ---
+  duration_ms: 46.4941
+  type: 'test'
+  ...
+# Subtest: read profiles reject an unowned mailbox before loading its data
+ok 699 - read profiles reject an unowned mailbox before loading its data
+  ---
+  duration_ms: 17.8446
+  type: 'test'
+  ...
+# Subtest: captcha and identity routes do not hydrate mailbox history
+ok 700 - captcha and identity routes do not hydrate mailbox history
+  ---
+  duration_ms: 27.076
+  type: 'test'
+  ...
+# Subtest: administrator shared settings edits commit to PG and preserve personal models and mailbox ownership
+ok 701 - administrator shared settings edits commit to PG and preserve personal models and mailbox ownership
+  ---
+  duration_ms: 89.0578
+  type: 'test'
+  ...
+# Subtest: attachment downloads use mailbox metadata rather than treating a known bucket key as authorization
+ok 702 - attachment downloads use mailbox metadata rather than treating a known bucket key as authorization
+  ---
+  duration_ms: 24.1029
+  type: 'test'
+  ...
+# Subtest: registered recruitment files and event materials can be read without relying on key path conventions
+ok 703 - registered recruitment files and event materials can be read without relying on key path conventions
+  ---
+  duration_ms: 0.5416
+  type: 'test'
+  ...
+# Subtest: workspace and attachment reads may exceed 8 MiB while other responses retain the normal limit
+ok 704 - workspace and attachment reads may exceed 8 MiB while other responses retain the normal limit
+  ---
+  duration_ms: 1695.9528
+  type: 'test'
+  ...
+# Subtest: workspace reads retain a finite 32 MiB budget and discard writes on overflow
+ok 705 - workspace reads retain a finite 32 MiB budget and discard writes on overflow
+  ---
+  duration_ms: 28.492
+  type: 'test'
+  ...
+# Subtest: attachment downloads retain a finite 64 MiB staging budget
+ok 706 - attachment downloads retain a finite 64 MiB staging budget
+  ---
+  duration_ms: 43.6855
+  type: 'test'
+  ...
+# Subtest: administrator task monitor reads persistent jobs and redacts internal task data and error messages
+ok 707 - administrator task monitor reads persistent jobs and redacts internal task data and error messages
+  ---
+  duration_ms: 1.1347
+  type: 'test'
+  ...
+# Subtest: migration preserves raw settings, users, resets, orphan mailboxes, owner-scoped assistants, scenarios, SQLite and RAG
+ok 708 - migration preserves raw settings, users, resets, orphan mailboxes, owner-scoped assistants, scenarios, SQLite and RAG
+  ---
+  duration_ms: 587.6364
+  type: 'test'
+  ...
+# Subtest: all local/legacy PDF/material references and unreferenced binaries upload with verified bytes; cloud keys remain valid; source never changes
+ok 709 - all local/legacy PDF/material references and unreferenced binaries upload with verified bytes; cloud keys remain valid; source never changes
+  ---
+  duration_ms: 2124.9968
+  type: 'test'
+  ...
+# Subtest: cloud readback mismatch or missing existing cloud object refuses before any PG transaction
+ok 710 - cloud readback mismatch or missing existing cloud object refuses before any PG transaction
+  ---
+  duration_ms: 518.4823
+  type: 'test'
+  ...
+# Subtest: PG migration is idempotent and preserves user authentication fields, ownership and vectors
+ok 711 - PG migration is idempotent and preserves user authentication fields, ownership and vectors
+  ---
+  duration_ms: 887.0351
+  type: 'test'
+  ...
+# Subtest: conflicting authority, unrecognized target rows and failed final verification roll back all inserts
+ok 712 - conflicting authority, unrecognized target rows and failed final verification roll back all inserts
+  ---
+  duration_ms: 356.4624
+  type: 'test'
+  ...
+# Subtest: source changes, PG authority markers, missing files and path escapes are refused
+ok 713 - source changes, PG authority markers, missing files and path escapes are refused
+  ---
+  duration_ms: 1150.6266
+  type: 'test'
+  ...
+# Subtest: CLI defaults to a private dry-run summary without network or leaking data and rejects output inside source
+ok 714 - CLI defaults to a private dry-run summary without network or leaking data and rejects output inside source
+  ---
+  duration_ms: 996.3351
+  type: 'test'
+  ...
+# Subtest: S3 migration disables optional checksum trailers and protects Aliyun writes with its native no-overwrite header
+ok 715 - S3 migration disables optional checksum trailers and protects Aliyun writes with its native no-overwrite header
+  ---
+  duration_ms: 0.966
+  type: 'test'
+  ...
+# Subtest: isolated production HTTP, PostgreSQL, Redis, S3/calendar mocks and independent scheduler/worker recovery
+ok 716 - isolated production HTTP, PostgreSQL, Redis, S3/calendar mocks and independent scheduler/worker recovery # SKIP
+  ---
+  duration_ms: 1.2834
+  type: 'test'
+  ...
+# Subtest: Docker probe requires a valid server response even when the CLI exits successfully
+ok 717 - Docker probe requires a valid server response even when the CLI exits successfully
+  ---
+  duration_ms: 3942.6559
+  type: 'test'
+  ...
+# Subtest: status treats a reused PID as stopped without changing its stale record
+ok 718 - status treats a reused PID as stopped without changing its stale record
+  ---
+  duration_ms: 2786.6781
+  type: 'test'
+  ...
+# Subtest: stop clears reused PID records without signalling another process
+ok 719 - stop clears reused PID records without signalling another process
+  ---
+  duration_ms: 3176.4427
+  type: 'test'
+  ...
+# Subtest: stop clears exited PID records without signalling another process
+ok 720 - stop clears exited PID records without signalling another process
+  ---
+  duration_ms: 2849.3365
+  type: 'test'
+  ...
+# Subtest: matching creation time with a different identity still blocks status, force stop and dependency stop
+ok 721 - matching creation time with a different identity still blocks status, force stop and dependency stop
+  ---
+  duration_ms: 4843.2486
+  type: 'test'
+  ...
+# Subtest: start replaces a reused PID record, reuses its own live role, and cleans up after graceful stop
+ok 722 - start replaces a reused PID record, reuses its own live role, and cleans up after graceful stop
+  ---
+  duration_ms: 25880.7089
+  type: 'test'
+  ...
+# Subtest: 代理信任默认关闭，明确代理地址以外的客户端不能提供转发身份
+ok 723 - 代理信任默认关闭，明确代理地址以外的客户端不能提供转发身份
+  ---
+  duration_ms: 11.8319
+  type: 'test'
+  ...
+# Subtest: 代理配置拒绝任意来源信任、跳数、无效网段与空项目
+ok 724 - 代理配置拒绝任意来源信任、跳数、无效网段与空项目
+  ---
+  duration_ms: 8.944
+  type: 'test'
+  ...
+# Subtest: public QR requires HTTPS and rejects local, reserved, credential-bearing URLs
+ok 725 - public QR requires HTTPS and rejects local, reserved, credential-bearing URLs
+  ---
+  duration_ms: 4.424
+  type: 'test'
+  ...
+# Subtest: explicit preview and unverified modes carry distinguishable output labels
+ok 726 - explicit preview and unverified modes carry distinguishable output labels
+  ---
+  duration_ms: 0.7953
+  type: 'test'
+  ...
+# Subtest: browser sharing resolves public paths and identifies local previews without claiming reachability
+ok 727 - browser sharing resolves public paths and identifies local previews without claiming reachability
+  ---
+  duration_ms: 1.9469
+  type: 'test'
+  ...
+# Subtest: public verification refuses a private target before any HTTP probe
+ok 728 - public verification refuses a private target before any HTTP probe
+  ---
+  duration_ms: 1.2379
+  type: 'test'
+  ...
+# Subtest: probe accepts guest access with SMTP disabled while requiring healthy application and protected private APIs
+ok 729 - probe accepts guest access with SMTP disabled while requiring healthy application and protected private APIs
+  ---
+  duration_ms: 44.3063
+  type: 'test'
+  ...
+# Subtest: probe rejects an anonymous private API response even when page and readiness are healthy
+ok 730 - probe rejects an anonymous private API response even when page and readiness are healthy
+  ---
+  duration_ms: 1.6648
+  type: 'test'
+  ...
+# Subtest: APNs 配置归一：缺项就 configured:false 且 reason 明确，主机分 sandbox / production
+ok 731 - APNs 配置归一：缺项就 configured:false 且 reason 明确，主机分 sandbox / production
+  ---
+  duration_ms: 3.146
+  type: 'test'
+  ...
+# Subtest: 未配置时：status 说没配置、test 返回 503、所有发送入口都不建连
+ok 732 - 未配置时：status 说没配置、test 返回 503、所有发送入口都不建连
+  ---
+  duration_ms: 80.243
+  type: 'test'
+  ...
+# Subtest: 设备登记：首次 / 重复只更新不新增 / mailboxIds 合并
+ok 733 - 设备登记：首次 / 重复只更新不新增 / mailboxIds 合并
+  ---
+  duration_ms: 179.4046
+  type: 'test'
+  ...
+# Subtest: 令牌校验：缺失 / 非法一律显式错误码，错误消息不带令牌原文
+ok 734 - 令牌校验：缺失 / 非法一律显式错误码，错误消息不带令牌原文
+  ---
+  duration_ms: 58.9828
+  type: 'test'
+  ...
+# Subtest: 状态只有 tokenTail：响应、日志、错误里都没有完整令牌
+ok 735 - 状态只有 tokenTail：响应、日志、错误里都没有完整令牌
+  ---
+  duration_ms: 139.1704
+  type: 'test'
+  ...
+# Subtest: 角标：存客户端给的数，范围 0–9999，用于后续推送
+ok 736 - 角标：存客户端给的数，范围 0–9999，用于后续推送
+  ---
+  duration_ms: 98.0213
+  type: 'test'
+  ...
+# Subtest: JWT：header/payload 正确、真 EC 公钥验签通过、同一小时复用跨小时重签
+ok 737 - JWT：header/payload 正确、真 EC 公钥验签通过、同一小时复用跨小时重签
+  ---
+  duration_ms: 3.4755
+  type: 'test'
+  ...
+# Subtest: buildApnsPayload：字段与角标夹取
+ok 738 - buildApnsPayload：字段与角标夹取
+  ---
+  duration_ms: 0.6433
+  type: 'test'
+  ...
+# Subtest: 发送：URL 含令牌、apns-topic 正确、410 标 invalid 后不再重发、lastError 落库
+ok 739 - 发送：URL 含令牌、apns-topic 正确、410 标 invalid 后不再重发、lastError 落库
+  ---
+  duration_ms: 100.7676
+  type: 'test'
+  ...
+# Subtest: 发送：401 不标 invalid（是 JWT / topic 问题，不是令牌失效）
+ok 740 - 发送：401 不标 invalid（是 JWT / topic 问题，不是令牌失效）
+  ---
+  duration_ms: 84.2621
+  type: 'test'
+  ...
+# Subtest: 发送：超时有结构化结果、连接错误不抛出
+ok 741 - 发送：超时有结构化结果、连接错误不抛出
+  ---
+  duration_ms: 68.6861
+  type: 'test'
+  ...
+# Subtest: 新邮件触发：有新邮件才推，载荷含数量/未读/角标/分类
+ok 742 - 新邮件触发：有新邮件才推，载荷含数量/未读/角标/分类
+  ---
+  duration_ms: 61.5028
+  type: 'test'
+  ...
+# Subtest: 早间简报：北京时间 08:00 后推、用「邮箱 + 北京日期」做幂等，一天只推一次
+ok 743 - 早间简报：北京时间 08:00 后推、用「邮箱 + 北京日期」做幂等，一天只推一次
+  ---
+  duration_ms: 167.9494
+  type: 'test'
+  ...
+# Subtest: 早间简报：08:00 之前不推
+ok 744 - 早间简报：08:00 之前不推
+  ---
+  duration_ms: 37.2603
+  type: 'test'
+  ...
+# {"event":"receipts_notify_hook_failed","mailboxId":"secondary","reason":"合成推送失败"}
+# Subtest: 超时触发：waiting→overdue 只推一次，回执本身行为不变，钩子抛错不影响
+ok 745 - 超时触发：waiting→overdue 只推一次，回执本身行为不变，钩子抛错不影响
+  ---
+  duration_ms: 297.6998
+  type: 'test'
+  ...
+# Subtest: dispatchPush：简报到点 + 超时遗漏重推的汇总
+ok 746 - dispatchPush：简报到点 + 超时遗漏重推的汇总
+  ---
+  duration_ms: 91.6603
+  type: 'test'
+  ...
+# Subtest: HTTP：未配置下 status / 登记 / 重复登记 / 注销 / test / badge / dispatch 都按约定回答
+ok 747 - HTTP：未配置下 status / 登记 / 重复登记 / 注销 / test / badge / dispatch 都按约定回答
+  ---
+  duration_ms: 4677.0937
+  type: 'test'
+  ...
+# Subtest: answer context preserves a late detail lost from the 280-character display excerpt
+ok 748 - answer context preserves a late detail lost from the 280-character display excerpt
+  ---
+  duration_ms: 1.9839
+  type: 'test'
+  ...
+# Subtest: answer sources keep total and individual context bounded, including long legacy chunks
+ok 749 - answer sources keep total and individual context bounded, including long legacy chunks
+  ---
+  duration_ms: 13.8781
+  type: 'test'
+  ...
+# Subtest: only used evidence is returned and server numbers follow claim order
+ok 750 - only used evidence is returned and server numbers follow claim order
+  ---
+  duration_ms: 2.5605
+  type: 'test'
+  ...
+# Subtest: unknown sources, invented quotes, quotes from another source, empty and oversized claims reject the answer
+ok 751 - unknown sources, invented quotes, quotes from another source, empty and oversized claims reject the answer
+  ---
+  duration_ms: 0.4593
+  type: 'test'
+  ...
+# Subtest: insufficient evidence returns a fixed response without attaching unrelated sources
+ok 752 - insufficient evidence returns a fixed response without attaching unrelated sources
+  ---
+  duration_ms: 0.2699
+  type: 'test'
+  ...
+# Subtest: exact duplicate evidence is reused while individual quotes keep their original metadata
+ok 753 - exact duplicate evidence is reused while individual quotes keep their original metadata
+  ---
+  duration_ms: 0.3096
+  type: 'test'
+  ...
+# Subtest: invalid model evidence and model errors produce explicit extracts, never the unsupported answer
+ok 754 - invalid model evidence and model errors produce explicit extracts, never the unsupported answer
+  ---
+  duration_ms: 169.9298
+  type: 'test'
+  ...
+# Subtest: one concise answer can cover multiple facts and retain both original source references
+ok 755 - one concise answer can cover multiple facts and retain both original source references
+  ---
+  duration_ms: 0.671
+  type: 'test'
+  ...
+# Subtest: 分块：按页切分并在超长页上重叠
+ok 756 - 分块：按页切分并在超长页上重叠
+  ---
+  duration_ms: 7.2402
+  type: 'test'
+  ...
+# Subtest: 余弦相似度：相同向量为 1，正交为 0
+ok 757 - 余弦相似度：相同向量为 1，正交为 0
+  ---
+  duration_ms: 2.1293
+  type: 'test'
+  ...
+# Subtest: 入库与关键词检索：同邮箱命中，跨邮箱隔离
+ok 758 - 入库与关键词检索：同邮箱命中，跨邮箱隔离
+  ---
+  duration_ms: 36.7411
+  type: 'test'
+  ...
+# Subtest: 普通邮件入库后，口语问题能找回比赛通知且不跨邮箱
+ok 759 - 普通邮件入库后，口语问题能找回比赛通知且不跨邮箱
+  ---
+  duration_ms: 64.6568
+  type: 'test'
+  ...
+# Subtest: ensure 只补未入库邮件，已有片段不重复写入
+ok 760 - ensure 只补未入库邮件，已有片段不重复写入
+  ---
+  duration_ms: 51.2597
+  type: 'test'
+  ...
+# Subtest: ragEnabled=false 时跳过入库
+ok 761 - ragEnabled=false 时跳过入库
+  ---
+  duration_ms: 3.2054
+  type: 'test'
+  ...
+# Subtest: 邮件正文与附件用可解析的引用编码，引用能定位回原邮件或附件
+ok 762 - 邮件正文与附件用可解析的引用编码，引用能定位回原邮件或附件
+  ---
+  duration_ms: 56.378
+  type: 'test'
+  ...
+# Subtest: 中文长句按二字切分，短词整体匹配
+ok 763 - 中文长句按二字切分，短词整体匹配
+  ---
+  duration_ms: 21.2776
+  type: 'test'
+  ...
+# Subtest: 知识库为空时直接说明没找到，也不会调用模型
+ok 764 - 知识库为空时直接说明没找到，也不会调用模型
+  ---
+  duration_ms: 2.2316
+  type: 'test'
+  ...
+# Subtest: 未配置模型时按命中片段列出结果，模式为 keyword
+ok 765 - 未配置模型时按命中片段列出结果，模式为 keyword
+  ---
+  duration_ms: 18.329
+  type: 'test'
+  ...
+# Subtest: 配置模型时只依据命中片段作答，并把片段声明为数据
+ok 766 - 配置模型时只依据命中片段作答，并把片段声明为数据
+  ---
+  duration_ms: 127.8698
+  type: 'test'
+  ...
+# Subtest: 重建索引幂等，且跳过没有 id 的邮件
+ok 767 - 重建索引幂等，且跳过没有 id 的邮件
+  ---
+  duration_ms: 85.42
+  type: 'test'
+  ...
+# Subtest: HTML 邮件入库时剥离脚本与样式，正文仍可检索
+ok 768 - HTML 邮件入库时剥离脚本与样式，正文仍可检索
+  ---
+  duration_ms: 28.9238
+  type: 'test'
+  ...
+# Subtest: 向量检索默认开启，显式 false 才关闭
+ok 769 - 向量检索默认开启，显式 false 才关闭
+  ---
+  duration_ms: 2.2859
+  type: 'test'
+  ...
+# Subtest: 自动挑选 embedding 模型：中文优先，未知供应商退回任意 embed 模型
+ok 770 - 自动挑选 embedding 模型：中文优先，未知供应商退回任意 embed 模型
+  ---
+  duration_ms: 4.059
+  type: 'test'
+  ...
+# Subtest: 证据片段以命中词为中心截取，无命中词时退回开头
+ok 771 - 证据片段以命中词为中心截取，无命中词时退回开头
+  ---
+  duration_ms: 1.7116
+  type: 'test'
+  ...
+# Subtest: 默认开启向量检索但没配置模型时，仍能入库并退回关键词
+ok 772 - 默认开启向量检索但没配置模型时，仍能入库并退回关键词
+  ---
+  duration_ms: 19.3777
+  type: 'test'
+  ...
+# Subtest: 检索按相关性排序，用 MMR 去冗余：长邮件不再挤掉其它相关邮件
+ok 773 - 检索按相关性排序，用 MMR 去冗余：长邮件不再挤掉其它相关邮件
+  ---
+  duration_ms: 54.5797
+  type: 'test'
+  ...
+# Subtest: MMR 不丢信息：只有一封相关邮件时仍返回它的多条片段
+ok 774 - MMR 不丢信息：只有一封相关邮件时仍返回它的多条片段
+  ---
+  duration_ms: 29.0031
+  type: 'test'
+  ...
+# Subtest: 片段冗余度：同一附件完全重复，同一封邮件高度冗余，跨来源按向量计算
+ok 775 - 片段冗余度：同一附件完全重复，同一封邮件高度冗余，跨来源按向量计算
+  ---
+  duration_ms: 1.9683
+  type: 'test'
+  ...
+# Subtest: 混合检索用 RRF 融合两路排名，两路都靠前的片段排第一
+ok 776 - 混合检索用 RRF 融合两路排名，两路都靠前的片段排第一
+  ---
+  duration_ms: 46.681
+  type: 'test'
+  ...
+# Subtest: 配置可用的 embedding 模型时自动向量化并走混合检索
+ok 777 - 配置可用的 embedding 模型时自动向量化并走混合检索
+  ---
+  duration_ms: 47.1437
+  type: 'test'
+  ...
+# Subtest: embedding 遇到限流会退避重试，成功即返回向量
+ok 778 - embedding 遇到限流会退避重试，成功即返回向量
+  ---
+  duration_ms: 1032.3203
+  type: 'test'
+  ...
+# Subtest: embedding 遇到参数错误不重试，直接回退空向量
+ok 779 - embedding 遇到参数错误不重试，直接回退空向量
+  ---
+  duration_ms: 13.1513
+  type: 'test'
+  ...
+# Subtest: embedding 重试耗尽后仍回退空向量，不抛错、不阻断入库
+ok 780 - embedding 重试耗尽后仍回退空向量，不抛错、不阻断入库
+  ---
+  duration_ms: 2859.5102
+  type: 'test'
+  ...
+# Subtest: 混合视图检索：mailboxIds 合并多个邮箱的召回池，找回别的邮箱里的通知
+ok 781 - 混合视图检索：mailboxIds 合并多个邮箱的召回池，找回别的邮箱里的通知
+  ---
+  duration_ms: 36.892
+  type: 'test'
+  ...
+# {"event":"outbound_receipt_hook_failed","mailboxId":"default","outboundId":"55dd3f54-efbd-4684-afb5-a6d575e33c98","reason":"合成回执存储失败"}
+# Subtest: 主题归一化：去掉 Re:/Fwd:/回复：前缀、去空白、大小写不敏感
+ok 782 - 主题归一化：去掉 Re:/Fwd:/回复：前缀、去空白、大小写不敏感
+  ---
+  duration_ms: 2.1314
+  type: 'test'
+  ...
+# Subtest: 线程键：主题 + 参与地址集合的稳定哈希，地址顺序与重复不影响结果
+ok 783 - 线程键：主题 + 参与地址集合的稳定哈希，地址顺序与重复不影响结果
+  ---
+  duration_ms: 1.2713
+  type: 'test'
+  ...
+# Subtest: matchReceipt：in-reply-to > reference > subject，兜底必须标注 matchedBy=subject
+ok 784 - matchReceipt：in-reply-to > reference > subject，兜底必须标注 matchedBy=subject
+  ---
+  duration_ms: 1.8813
+  type: 'test'
+  ...
+# Subtest: createReceipt：只有 sent + messageId 才建；awaitReplyDays=0 或未发出都不建
+ok 785 - createReceipt：只有 sent + messageId 才建；awaitReplyDays=0 或未发出都不建
+  ---
+  duration_ms: 65.5496
+  type: 'test'
+  ...
+# Subtest: awaitReplyDays 越界直接 400：createReceipt 与 /api/mail/compose 同口径
+ok 786 - awaitReplyDays 越界直接 400：createReceipt 与 /api/mail/compose 同口径
+  ---
+  duration_ms: 69.4155
+  type: 'test'
+  ...
+# Subtest: 派发成功后才建回执：sentAt / messageId / dueAt 都对得上
+ok 787 - 派发成功后才建回执：sentAt / messageId / dueAt 都对得上
+  ---
+  duration_ms: 126.1832
+  type: 'test'
+  ...
+# Subtest: 派发钩子抛错不影响已经发出的 sent 状态，也不重发
+ok 788 - 派发钩子抛错不影响已经发出的 sent 状态，也不重发
+  ---
+  duration_ms: 97.7258
+  type: 'test'
+  ...
+# Subtest: 超时落成一条真实待办：字段齐全、跑两次只有一条、不改动无关记录
+ok 789 - 超时落成一条真实待办：字段齐全、跑两次只有一条、不改动无关记录
+  ---
+  duration_ms: 166.7234
+  type: 'test'
+  ...
+# Subtest: 回信到了：answered + 三档依据落库，并把已建的待办标完成
+ok 790 - 回信到了：answered + 三档依据落库，并把已建的待办标完成
+  ---
+  duration_ms: 81.0911
+  type: 'test'
+  ...
+# Subtest: 超时后收到回信也能收口：兜底档 matchedBy=subject 并完成待办
+ok 791 - 超时后收到回信也能收口：兜底档 matchedBy=subject 并完成待办
+  ---
+  duration_ms: 104.2713
+  type: 'test'
+  ...
+# Subtest: 只扫 receivedAt 晚于 sentAt 的邮件：更早的旧邮件不会被当回信
+ok 792 - 只扫 receivedAt 晚于 sentAt 的邮件：更早的旧邮件不会被当回信
+  ---
+  duration_ms: 53.2533
+  type: 'test'
+  ...
+# Subtest: cancel 只对 waiting / overdue 生效，并把已建的待办标完成
+ok 793 - cancel 只对 waiting / overdue 生效，并把已建的待办标完成
+  ---
+  duration_ms: 134.532
+  type: 'test'
+  ...
+# Subtest: listReceipts：最新在前、counts 覆盖全部、状态过滤与非法状态 400
+ok 794 - listReceipts：最新在前、counts 覆盖全部、状态过滤与非法状态 400
+  ---
+  duration_ms: 114.7482
+  type: 'test'
+  ...
+# Subtest: receiptSummary：区分还在等 / 已超时，字段供简报直接用
+ok 795 - receiptSummary：区分还在等 / 已超时，字段供简报直接用
+  ---
+  duration_ms: 77.9786
+  type: 'test'
+  ...
+# Subtest: planReceiptChecks 是纯逻辑：脏数据（没有 sentAt / dueAt）不炸
+ok 796 - planReceiptChecks 是纯逻辑：脏数据（没有 sentAt / dueAt）不炸
+  ---
+  duration_ms: 0.433
+  type: 'test'
+  ...
+# Subtest: recovery proof accepts identical inventories and counts every table row and object byte
+ok 797 - recovery proof accepts identical inventories and counts every table row and object byte
+  ---
+  duration_ms: 18.8972
+  type: 'test'
+  ...
+# Subtest: row, sequence and object corruption each fail verification without exposing private names
+ok 798 - row, sequence and object corruption each fail verification without exposing private names
+  ---
+  duration_ms: 1.2838
+  type: 'test'
+  ...
+# Subtest: missing and unexpected relations and objects are detected even when counts match
+ok 799 - missing and unexpected relations and objects are detected even when counts match
+  ---
+  duration_ms: 0.7778
+  type: 'test'
+  ...
+# Subtest: invalid hashes, counts and duplicate names cannot produce a successful proof
+ok 800 - invalid hashes, counts and duplicate names cannot produce a successful proof
+  ---
+  duration_ms: 1.4319
+  type: 'test'
+  ...
+# Subtest: object digest covers all chunks and a changed final byte
+ok 801 - object digest covers all chunks and a changed final byte
+  ---
+  duration_ms: 0.9098
+  type: 'test'
+  ...
+# Subtest: 招聘 API：真实 MIME/PDF 提取入库、原附件下载、重复同步跳过与跨邮箱保持
+ok 802 - 招聘 API：真实 MIME/PDF 提取入库、原附件下载、重复同步跳过与跨邮箱保持
+  ---
+  duration_ms: 6090.5812
+  type: 'test'
+  ...
+# Subtest: 招聘 API：模型工具生成草稿、审核发送一次、来信改期先审核再变更日历
+ok 803 - 招聘 API：模型工具生成草稿、审核发送一次、来信改期先审核再变更日历
+  ---
+  duration_ms: 11259.7214
+  type: 'test'
+  ...
+# Subtest: 招聘 API：示例邀约审核后走SMTP、失败可重试，清示例保留实发记录并能处理后续来信
+ok 804 - 招聘 API：示例邀约审核后走SMTP、失败可重试，清示例保留实发记录并能处理后续来信
+  ---
+  duration_ms: 7961.9106
+  type: 'test'
+  ...
+# Subtest: 招聘 API：模糊SMTP错误保留unknown，重复请求及重启均不再次发送
+ok 805 - 招聘 API：模糊SMTP错误保留unknown，重复请求及重启均不再次发送
+  ---
+  duration_ms: 6951.7463
+  type: 'test'
+  ...
+# Subtest: 招聘 API：飞书凭据保存但不回传；普通附件重试不丢失原日程与待办关联
+ok 806 - 招聘 API：飞书凭据保存但不回传；普通附件重试不丢失原日程与待办关联
+  ---
+  duration_ms: 4310.0266
+  type: 'test'
+  ...
+# Subtest: 招聘 API：未确定分类的附件重试失败结束日志，再次恢复只保存一封邮件
+ok 807 - 招聘 API：未确定分类的附件重试失败结束日志，再次恢复只保存一封邮件
+  ---
+  duration_ms: 4578.7622
+  type: 'test'
+  ...
+# Subtest: 招聘 API：工作台绑定的非活动邮箱可以读取，未拥有的邮箱仍拒绝
+ok 808 - 招聘 API：工作台绑定的非活动邮箱可以读取，未拥有的邮箱仍拒绝
+  ---
+  duration_ms: 3043.2213
+  type: 'test'
+  ...
+# Subtest: production upload refuses uninitialized local OSS without writing files
+ok 809 - production upload refuses uninitialized local OSS without writing files
+  ---
+  duration_ms: 6.7638
+  type: 'test'
+  ...
+# Subtest: production recruitment OSS stores bytes before metadata, reads registered keys and propagates failures
+ok 810 - production recruitment OSS stores bytes before metadata, reads registered keys and propagates failures
+  ---
+  duration_ms: 196.9003
+  type: 'test'
+  ...
+# Subtest: auxiliary migration exports required RAG schema without optional extensions
+ok 811 - auxiliary migration exports required RAG schema without optional extensions
+  ---
+  duration_ms: 1.8164
+  type: 'test'
+  ...
+# Subtest: SMTP DATA结果未知持久化防重，重新读取草稿也不能再次发信
+ok 812 - SMTP DATA结果未知持久化防重，重新读取草稿也不能再次发信
+  ---
+  duration_ms: 414.2603
+  type: 'test'
+  ...
+# Subtest: 附件使用稳定ID和本地路径，人才重试去重、新投递保留版本，邮箱互相隔离
+ok 813 - 附件使用稳定ID和本地路径，人才重试去重、新投递保留版本，邮箱互相隔离
+  ---
+  duration_ms: 113.6089
+  type: 'test'
+  ...
+# Subtest: 相同姓名不合并，邮箱与手机命中不同人或姓名冲突保留独立档案并提示核对
+ok 814 - 相同姓名不合并，邮箱与手机命中不同人或姓名冲突保留独立档案并提示核对
+  ---
+  duration_ms: 221.8179
+  type: 'test'
+  ...
+# Subtest: 对话实际执行检索工具，校验候选人ID及逐字证据，统计多次模型调用且日志不保存简历正文
+ok 815 - 对话实际执行检索工具，校验候选人ID及逐字证据，统计多次模型调用且日志不保存简历正文
+  ---
+  duration_ms: 404.2009
+  type: 'test'
+  ...
+# Subtest: 来源邮件工具只读取招聘已知邮件，完整正文交模型而日志仅保留字符数
+ok 816 - 来源邮件工具只读取招聘已知邮件，完整正文交模型而日志仅保留字符数
+  ---
+  duration_ms: 435.2352
+  type: 'test'
+  ...
+# Subtest: 模型末轮失败仍保留工具已完成的候选人卡和邀约草稿卡
+ok 817 - 模型末轮失败仍保留工具已完成的候选人卡和邀约草稿卡
+  ---
+  duration_ms: 508.618
+  type: 'test'
+  ...
+# Subtest: 检索没有真实证据不展示编造候选人，部分满足保持missing，模型错误保留对话和失败日志
+ok 818 - 检索没有真实证据不展示编造候选人，部分满足保持missing，模型错误保留对话和失败日志
+  ---
+  duration_ms: 498.0907
+  type: 'test'
+  ...
+# Subtest: 对话等待期间同步新增人才和其他trace不会被旧副本覆盖，同邮箱对话互斥
+ok 819 - 对话等待期间同步新增人才和其他trace不会被旧副本覆盖，同邮箱对话互斥
+  ---
+  duration_ms: 325.9639
+  type: 'test'
+  ...
+# Subtest: 工具对话创建可审核邀约、默认60分钟并采用来源回复地址；未知时间先查询三个空档
+ok 820 - 工具对话创建可审核邀约、默认60分钟并采用来源回复地址；未知时间先查询三个空档
+  ---
+  duration_ms: 748.9386
+  type: 'test'
+  ...
+# Subtest: 确认发送使用审核正文，SMTP失败可重试、并发和重复发送不会二次发信，成功后才入日历
+ok 821 - 确认发送使用审核正文，SMTP失败可重试、并发和重复发送不会二次发信，成功后才入日历
+  ---
+  duration_ms: 541.0236
+  type: 'test'
+  ...
+# Subtest: 邮件已发送但日历保存失败时，下次仅补日历，保留原审批正文和真实SMTP结果
+ok 822 - 邮件已发送但日历保存失败时，下次仅补日历，保留原审批正文和真实SMTP结果
+  ---
+  duration_ms: 487.8186
+  type: 'test'
+  ...
+# Subtest: 同场面试的并行改期与取消共享发送锁，旧草稿不能覆盖已更新安排
+ok 823 - 同场面试的并行改期与取消共享发送锁，旧草稿不能覆盖已更新安排
+  ---
+  duration_ms: 757.7479
+  type: 'test'
+  ...
+# Subtest: 原面试尚待补写日历时不可发送后续改期，真实面试不与示例日程标记冲突
+ok 824 - 原面试尚待补写日历时不可发送后续改期，真实面试不与示例日程标记冲突
+  ---
+  duration_ms: 806.669
+  type: 'test'
+  ...
+# Subtest: 真实会议创建更新可见草稿，重复保存不清准备状态；修改时间要求重新准备，失败可手填链接
+ok 825 - 真实会议创建更新可见草稿，重复保存不清准备状态；修改时间要求重新准备，失败可手填链接
+  ---
+  duration_ms: 581.5706
+  type: 'test'
+  ...
+# Subtest: 面试改期来信关联原线程、生成审核稿，不自动改日历；确认发送后取消旧安排并关联新安排
+ok 826 - 面试改期来信关联原线程、生成审核稿，不自动改日历；确认发送后取消旧安排并关联新安排
+  ---
+  duration_ms: 1222.337
+  type: 'test'
+  ...
+# Subtest: 面试确认只记录结果，普通同发件人邮件不劫持；含糊面试请求拦截后交由HR核对
+ok 827 - 面试确认只记录结果，普通同发件人邮件不劫持；含糊面试请求拦截后交由HR核对
+  ---
+  duration_ms: 608.2384
+  type: 'test'
+  ...
+# Subtest: 候选人取消来信先生成审核草稿，发送无需会议链接，成功后才取消原日程
+ok 828 - 候选人取消来信先生成审核草稿，发送无需会议链接，成功后才取消原日程
+  ---
+  duration_ms: 925.1208
+  type: 'test'
+  ...
+# Subtest: 预置示例生成真实PDF与三份档案，重复导入去重，绝不调用模型或SMTP
+ok 829 - 预置示例生成真实PDF与三份档案，重复导入去重，绝不调用模型或SMTP
+  ---
+  duration_ms: 758.1665
+  type: 'test'
+  ...
+# Subtest: 示例邀约经显式审核后按编辑邮箱真实发送，失败可重试，成功后保留示例来源并防重复
+ok 830 - 示例邀约经显式审核后按编辑邮箱真实发送，失败可重试，成功后保留示例来源并防重复
+  ---
+  duration_ms: 794.3503
+  type: 'test'
+  ...
+# Subtest: 手工邀约的会议资料可留空，未创建线上会议也可审核发送
+ok 831 - 手工邀约的会议资料可留空，未创建线上会议也可审核发送
+  ---
+  duration_ms: 220.8924
+  type: 'test'
+  ...
+# Subtest: 示例人才的实发邀约按真实来信生成可发送改期稿，继承实发来源及编辑后的邮箱
+ok 832 - 示例人才的实发邀约按真实来信生成可发送改期稿，继承实发来源及编辑后的邮箱
+  ---
+  duration_ms: 1164.4742
+  type: 'test'
+  ...
+# Subtest: 归一化规则：补齐默认值、裁剪越界输入，不抛错
+ok 833 - 归一化规则：补齐默认值、裁剪越界输入，不抛错
+  ---
+  duration_ms: 3.9778
+  type: 'test'
+  ...
+# Subtest: 摊平工作区数据：只保留未结束且有明确截止的条目
+ok 834 - 摊平工作区数据：只保留未结束且有明确截止的条目
+  ---
+  duration_ms: 1.132
+  type: 'test'
+  ...
+# Subtest: 匹配规则：关键词、排除词与全部命中
+ok 835 - 匹配规则：关键词、排除词与全部命中
+  ---
+  duration_ms: 2.5002
+  type: 'test'
+  ...
+# Subtest: 排期：多条提前量、按截止时间倒数、内容可读
+ok 836 - 排期：多条提前量、按截止时间倒数、内容可读
+  ---
+  duration_ms: 2.0905
+  type: 'test'
+  ...
+# Subtest: 排期：落在允许时间段之外顺延到当天允许段开始，晚于截止则丢弃
+ok 837 - 排期：落在允许时间段之外顺延到当天允许段开始，晚于截止则丢弃
+  ---
+  duration_ms: 1.0633
+  type: 'test'
+  ...
+# Subtest: 排期：同一件事被待办与邮件重复描述时只留一条
+ok 838 - 排期：同一件事被待办与邮件重复描述时只留一条
+  ---
+  duration_ms: 16.2005
+  type: 'test'
+  ...
+# Subtest: 排期：过期续催按天数重复，最长 30 天，且不越过上限条数
+ok 839 - 排期：过期续催按天数重复，最长 30 天，且不越过上限条数
+  ---
+  duration_ms: 1.5772
+  type: 'test'
+  ...
+# Subtest: 通知 id 稳定、正文可读、规则描述可复核
+ok 840 - 通知 id 稳定、正文可读、规则描述可复核
+  ---
+  duration_ms: 0.7026
+  type: 'test'
+  ...
+# Subtest: 整份偏好归一化：规则上限、开关与时间段回退
+ok 841 - 整份偏好归一化：规则上限、开关与时间段回退
+  ---
+  duration_ms: 1.2168
+  type: 'test'
+  ...
+# Subtest: 一句话 → 规则草稿：越界字段被归一化，不是报错
+ok 842 - 一句话 → 规则草稿：越界字段被归一化，不是报错
+  ---
+  duration_ms: 30.4386
+  type: 'test'
+  ...
+# Subtest: 已有规则名带给模型，避免重复建议
+ok 843 - 已有规则名带给模型，避免重复建议
+  ---
+  duration_ms: 2.2521
+  type: 'test'
+  ...
+# Subtest: reply 缺失时也有话可说，前端不用自己拼
+ok 844 - reply 缺失时也有话可说，前端不用自己拼
+  ---
+  duration_ms: 1.981
+  type: 'test'
+  ...
+# Subtest: 没配模型时给出可操作的中文错误，而不是静默失败
+ok 845 - 没配模型时给出可操作的中文错误，而不是静默失败
+  ---
+  duration_ms: 21.4363
+  type: 'test'
+  ...
+# Subtest: 模型没读懂时明确说没读懂，换种说法可以重试
+ok 846 - 模型没读懂时明确说没读懂，换种说法可以重试
+  ---
+  duration_ms: 8.221
+  type: 'test'
+  ...
+# Subtest: 模型不返回 JSON 对象时报错可重试，不会写坏任何业务数据
+ok 847 - 模型不返回 JSON 对象时报错可重试，不会写坏任何业务数据
+  ---
+  duration_ms: 2.9631
+  type: 'test'
+  ...
+# Subtest: 请求上下文没有追踪记录器时也能调用模型（不会 TypeError）
+ok 848 - 请求上下文没有追踪记录器时也能调用模型（不会 TypeError）
+  ---
+  duration_ms: 3.9574
+  type: 'test'
+  ...
+# Subtest: 接口面：401 / 400 / 200，参数校验带中文原因
+ok 849 - 接口面：401 / 400 / 200，参数校验带中文原因
+  ---
+  duration_ms: 119.9713
+  type: 'test'
+  ...
+# Subtest: SMTP 回复使用系统 DNS 地址和 QQ TLS 域名、Reply-To 与原线程，中文长稿完整保留
+ok 850 - SMTP 回复使用系统 DNS 地址和 QQ TLS 域名、Reply-To 与原线程，中文长稿完整保留
+  ---
+  duration_ms: 77.7042
+  type: 'test'
+  ...
+# Subtest: 没有有效 Reply-To 时回复新字段或旧 sender，已有 Re 主题不再添加前缀
+ok 851 - 没有有效 Reply-To 时回复新字段或旧 sender，已有 Re 主题不再添加前缀
+  ---
+  duration_ms: 3.2478
+  type: 'test'
+  ...
+# Subtest: SMTP 没有接受目标收件人时不把回复视为成功
+ok 852 - SMTP 没有接受目标收件人时不把回复视为成功
+  ---
+  duration_ms: 1.5173
+  type: 'test'
+  ...
+# Subtest: 系统 DNS 解析失败时不创建 SMTP 连接，保留解析错误供发送入口处理
+ok 853 - 系统 DNS 解析失败时不创建 SMTP 连接，保留解析错误供发送入口处理
+  ---
+  duration_ms: 1.5181
+  type: 'test'
+  ...
+# Subtest: 真实草稿发送完整已保存修改稿，只需邮箱配置，成功落盘并在重启后仍不重复发送
+ok 854 - 真实草稿发送完整已保存修改稿，只需邮箱配置，成功落盘并在重启后仍不重复发送
+  ---
+  duration_ms: 9912.9019
+  type: 'test'
+  ...
+# Subtest: 同一草稿并发发送及发送中反馈返回 409，完成后只有一次 SMTP 调用
+ok 855 - 同一草稿并发发送及发送中反馈返回 409，完成后只有一次 SMTP 调用
+  ---
+  duration_ms: 3891.4926
+  type: 'test'
+  ...
+# Subtest: 旧已采纳草稿仍能发送原始业务正文，旧修改稿优先于原稿且不调用模型
+ok 856 - 旧已采纳草稿仍能发送原始业务正文，旧修改稿优先于原稿且不调用模型
+  ---
+  duration_ms: 5194.3827
+  type: 'test'
+  ...
+# Subtest: 发送失败保存脱敏状态和修改稿，再次采纳可以重试成功
+ok 857 - 发送失败保存脱敏状态和修改稿，再次采纳可以重试成功
+  ---
+  duration_ms: 3147.1579
+  type: 'test'
+  ...
+# Subtest: DNS 失败保存脱敏错误并保留修改稿，重试重新解析后发送成功
+ok 858 - DNS 失败保存脱敏错误并保留修改稿，重试重新解析后发送成功
+  ---
+  duration_ms: 3185.0737
+  type: 'test'
+  ...
+# Subtest: 示例保留本地反馈，缺邮箱配置及已保存空稿不能发信
+ok 859 - 示例保留本地反馈，缺邮箱配置及已保存空稿不能发信
+  ---
+  duration_ms: 6560.6774
+  type: 'test'
+  ...
+# Subtest: 新邮件保存回复地址与线程信息，同步继续写日志时保留已发送和失败可重试状态
+ok 860 - 新邮件保存回复地址与线程信息，同步继续写日志时保留已发送和失败可重试状态
+  ---
+  duration_ms: 5936.259
+  type: 'test'
+  ...
+# Subtest: report prompt presets persist and reset
+ok 861 - report prompt presets persist and reset
+  ---
+  duration_ms: 62.4559
+  type: 'test'
+  ...
+# Subtest: PDF 简历走真实解析和模型结构化，保存来源及版本，不入历/待办且重复同步不提取
+ok 862 - PDF 简历走真实解析和模型结构化，保存来源及版本，不入历/待办且重复同步不提取
+  ---
+  duration_ms: 326.6181
+  type: 'test'
+  ...
+# Subtest: 多附件部分失败保留成功版本，最近邮件占位可从本地PDF重试且不重复版本
+ok 863 - 多附件部分失败保留成功版本，最近邮件占位可从本地PDF重试且不重复版本
+  ---
+  duration_ms: 236.5352
+  type: 'test'
+  ...
+# Subtest: 普通 PDF 保留附件但不会入人才库，继续现有邮件流程
+ok 864 - 普通 PDF 保留附件但不会入人才库，继续现有邮件流程
+  ---
+  duration_ms: 95.7478
+  type: 'test'
+  ...
+# Subtest: 损坏的求职 PDF 保留失败状态，模型误给求职日程也不应用
+ok 865 - 损坏的求职 PDF 保留失败状态，模型误给求职日程也不应用
+  ---
+  duration_ms: 65.3104
+  type: 'test'
+  ...
+# Subtest: 真实 MIME 读取保留非枚举 PDF 和 In-Reply-To，邮件 JSON 不含 Buffer
+ok 866 - 真实 MIME 读取保留非枚举 PDF 和 In-Reply-To，邮件 JSON 不含 Buffer
+  ---
+  duration_ms: 51.796
+  type: 'test'
+  ...
+# Subtest: 不确定附件重试识别为普通PDF，只替换原邮件一次并结束重试状态
+ok 867 - 不确定附件重试识别为普通PDF，只替换原邮件一次并结束重试状态
+  ---
+  duration_ms: 125.9078
+  type: 'test'
+  ...
+# Subtest: 内置模板定义具有可验证的字段、阶段、能力与业务边界
+ok 868 - 内置模板定义具有可验证的字段、阶段、能力与业务边界
+  ---
+  duration_ms: 4.8209
+  type: 'test'
+  ...
+# Subtest: 模板包只导出定义白名单，隔离实例和凭据，往返保留配置
+ok 869 - 模板包只导出定义白名单，隔离实例和凭据，往返保留配置
+  ---
+  duration_ms: 1.1712
+  type: 'test'
+  ...
+# Subtest: 拒绝重复/危险字段、未知工具与不兼容格式
+ok 870 - 拒绝重复/危险字段、未知工具与不兼容格式
+  ---
+  duration_ms: 3.1776
+  type: 'test'
+  ...
+# Subtest: 真实 HTTP：个人/HR 均可用招聘，工作台仍需登录且隔离用户，旧数据保留
+ok 871 - 真实 HTTP：个人/HR 均可用招聘，工作台仍需登录且隔离用户，旧数据保留
+  ---
+  duration_ms: 4944.4086
+  type: 'test'
+  ...
+# Subtest: 模型等待期间事项变更拒绝旧分析且不写入行动
+ok 872 - 模型等待期间事项变更拒绝旧分析且不写入行动
+  ---
+  duration_ms: 63.7319
+  type: 'test'
+  ...
+# Subtest: 五个官方样例只生成待确认动作，不写入日历或发信
+ok 873 - 五个官方样例只生成待确认动作，不写入日历或发信
+  ---
+  duration_ms: 7.8156
+  type: 'test'
+  ...
+# Subtest: 工作台允许同模板多实例、隔离邮箱与用户、保留模板快照
+ok 874 - 工作台允许同模板多实例、隔离邮箱与用户、保留模板快照
+  ---
+  duration_ms: 163.6089
+  type: 'test'
+  ...
+# Subtest: 各场景可建立事项；编辑历史保留；不合法字段和能力不落盘
+ok 875 - 各场景可建立事项；编辑历史保留；不合法字段和能力不落盘
+  ---
+  duration_ms: 551.9688
+  type: 'test'
+  ...
+# Subtest: 邮件预览只读，确认关联不重复副作用
+ok 876 - 邮件预览只读，确认关联不重复副作用
+  ---
+  duration_ms: 57.9021
+  type: 'test'
+  ...
+# Subtest: 礼貌回复不当录取；终稿依赖作者确认；回执才算提交
+ok 877 - 礼貌回复不当录取；终稿依赖作者确认；回执才算提交
+  ---
+  duration_ms: 416.1864
+  type: 'test'
+  ...
+# Subtest: 后续通知覆盖材料版本；跨时区安排与跨工作台冲突
+ok 878 - 后续通知覆盖材料版本；跨时区安排与跨工作台冲突
+  ---
+  duration_ms: 633.4259
+  type: 'test'
+  ...
+# Subtest: 同一封邮件在两个工作台只写入一次待办和一次相同时刻
+ok 879 - 同一封邮件在两个工作台只写入一次待办和一次相同时刻
+  ---
+  duration_ms: 435.0454
+  type: 'test'
+  ...
+# Subtest: 事项只读复用已有附件和知识片段，关掉能力后不再返回
+ok 880 - 事项只读复用已有附件和知识片段，关掉能力后不再返回
+  ---
+  duration_ms: 98.9197
+  type: 'test'
+  ...
+# Subtest: 工作台待办在回执前不能勾选完成
+ok 881 - 工作台待办在回执前不能勾选完成
+  ---
+  duration_ms: 238.6366
+  type: 'test'
+  ...
+# Subtest: 校招改期保留原日程并关联新安排
+ok 882 - 校招改期保留原日程并关联新安排
+  ---
+  duration_ms: 293.4997
+  type: 'test'
+  ...
+# Subtest: 模型不能把礼貌回复改成录取，未配置模型时拒绝分析
+ok 883 - 模型不能把礼貌回复改成录取，未配置模型时拒绝分析
+  ---
+  duration_ms: 141.0693
+  type: 'test'
+  ...
+# Subtest: 模板草稿拒绝代码，升级不删除已有事项
+ok 884 - 模板草稿拒绝代码，升级不删除已有事项
+  ---
+  duration_ms: 414.8572
+  type: 'test'
+  ...
+# Subtest: 招聘简历邮件只生成筛选待办，确认后不发邀约也不改招聘资料
+ok 885 - 招聘简历邮件只生成筛选待办，确认后不发邀约也不改招聘资料
+  ---
+  duration_ms: 308.4339
+  type: 'test'
+  ...
+# Subtest: 招聘事项只读复用已关联邮件的简历和执行记录
+ok 886 - 招聘事项只读复用已关联邮件的简历和执行记录
+  ---
+  duration_ms: 115.0952
+  type: 'test'
+  ...
+# Subtest: 读取已有招聘文件不创建工作台，历史招聘工作台和原数据仍保留
+ok 887 - 读取已有招聘文件不创建工作台，历史招聘工作台和原数据仍保留
+  ---
+  duration_ms: 120.7019
+  type: 'test'
+  ...
+# Subtest: 已提交的研究计划在补充要求后保留旧版本
+ok 888 - 已提交的研究计划在补充要求后保留旧版本
+  ---
+  duration_ms: 225.4442
+  type: 'test'
+  ...
+# Subtest: 保研通知拆成多条截止待办，未确认前不写入待办
+ok 889 - 保研通知拆成多条截止待办，未确认前不写入待办
+  ---
+  duration_ms: 197.371
+  type: 'test'
+  ...
+# Subtest: 外部来源只记原文，可生成建议和未发送草稿
+ok 890 - 外部来源只记原文，可生成建议和未发送草稿
+  ---
+  duration_ms: 213.5105
+  type: 'test'
+  ...
+# Subtest: 终稿可以同时依赖多项前置，未完成时不能写入待办
+ok 891 - 终稿可以同时依赖多项前置，未完成时不能写入待办
+  ---
+  duration_ms: 308.3806
+  type: 'test'
+  ...
+# Subtest: 带前置的报告时间在前置完成前不能写入日历
+ok 892 - 带前置的报告时间在前置完成前不能写入日历
+  ---
+  duration_ms: 291.1919
+  type: 'test'
+  ...
+# Subtest: 已取消、缺失或异事项前置不会放行待办和日历；已发送回执可以放行
+ok 893 - 已取消、缺失或异事项前置不会放行待办和日历；已发送回执可以放行
+  ---
+  duration_ms: 428.2019
+  type: 'test'
+  ...
+# Subtest: 前置回执在确认排队期间失效时，写入事务内复核并保留原日历和待办
+ok 894 - 前置回执在确认排队期间失效时，写入事务内复核并保留原日历和待办
+  ---
+  duration_ms: 334.5726
+  type: 'test'
+  ...
+# Subtest: 个人模板可以用识别信号声明阶段和待办
+ok 895 - 个人模板可以用识别信号声明阶段和待办
+  ---
+  duration_ms: 0.5029
+  type: 'test'
+  ...
+# Subtest: 个人模板使用通用安全提示，不套用招聘文案
+ok 896 - 个人模板使用通用安全提示，不套用招聘文案
+  ---
+  duration_ms: 81.4704
+  type: 'test'
+  ...
+# Subtest: 本地并发写入序列化，不丢工作台或串用户
+ok 897 - 本地并发写入序列化，不丢工作台或串用户
+  ---
+  duration_ms: 237.3859
+  type: 'test'
+  ...
+# Subtest: 工作台隐藏偏好按用户持久化，部分更新保留归档与业务数据
+ok 898 - 工作台隐藏偏好按用户持久化，部分更新保留归档与业务数据
+  ---
+  duration_ms: 161.7339
+  type: 'test'
+  ...
+# Subtest: 工作台显示设置严格校验，非法更新不改变已存数据
+ok 899 - 工作台显示设置严格校验，非法更新不改变已存数据
+  ---
+  duration_ms: 170.812
+  type: 'test'
+  ...
+# Subtest: 旧工作台显示设置规范化返回，兼容缺失值并保留其他字段
+ok 900 - 旧工作台显示设置规范化返回，兼容缺失值并保留其他字段
+  ---
+  duration_ms: 68.8467
+  type: 'test'
+  ...
+# Subtest: 并发调整保留两类偏好，历史招聘工作台仍保留原记录
+ok 901 - 并发调整保留两类偏好，历史招聘工作台仍保留原记录
+  ---
+  duration_ms: 89.5453
+  type: 'test'
+  ...
+# Subtest: 单项显示操作并发合并同一列表，混合隐藏恢复幂等且保留业务数据
+ok 902 - 单项显示操作并发合并同一列表，混合隐藏恢复幂等且保留业务数据
+  ---
+  duration_ms: 352.1897
+  type: 'test'
+  ...
+# Subtest: 单项显示操作严格校验完整请求，拒绝未登录及非法输入且不落盘
+ok 903 - 单项显示操作严格校验完整请求，拒绝未登录及非法输入且不落盘
+  ---
+  duration_ms: 113.7339
+  type: 'test'
+  ...
+# Subtest: 智能招聘和发票入口独立隐藏恢复，按用户保存且不改招聘或工作台数据
+ok 904 - 智能招聘和发票入口独立隐藏恢复，按用户保存且不改招聘或工作台数据
+  ---
+  duration_ms: 160.9185
+  type: 'test'
+  ...
+# Subtest: 招聘、发票和科大学习站各只能添加一次
+ok 905 - 招聘、发票和科大学习站各只能添加一次
+  ---
+  duration_ms: 62.5094
+  type: 'test'
+  ...
+# Subtest: dependency outage and draining reject readiness without killing liveness
+ok 906 - dependency outage and draining reject readiness without killing liveness
+  ---
+  duration_ms: 3.9914
+  type: 'test'
+  ...
+# Subtest: hung readiness times out, aborts its check and still serves liveness
+ok 907 - hung readiness times out, aborts its check and still serves liveness
+  ---
+  duration_ms: 26.5769
+  type: 'test'
+  ...
+# Subtest: draining during an in-flight readiness check cannot return ready
+ok 908 - draining during an in-flight readiness check cannot return ready
+  ---
+  duration_ms: 2.5115
+  type: 'test'
+  ...
+# Subtest: shutdown closes idle connections and forces active ones before cleaning resources
+ok 909 - shutdown closes idle connections and forces active ones before cleaning resources
+  ---
+  duration_ms: 53.4118
+  type: 'test'
+  ...
+# Subtest: failed resource cleanup keeps the hard deadline instead of leaving a live process
+ok 910 - failed resource cleanup keeps the hard deadline instead of leaving a live process
+  ---
+  duration_ms: 340.0651
+  type: 'test'
+  ...
+# Subtest: HTTP status, headers and body wait for commit; all owner boxes load, other owners do not
+ok 911 - HTTP status, headers and body wait for commit; all owner boxes load, other owners do not
+  ---
+  duration_ms: 87.732
+  type: 'test'
+  ...
+# Subtest: production HTTP commit failure replaces success and clears sensitive/stale headers
+ok 912 - production HTTP commit failure replaces success and clears sensitive/stale headers
+  ---
+  duration_ms: 32.329
+  type: 'test'
+  ...
+# Subtest: error response discards dirty documents without committing or uncommitted failure
+ok 913 - error response discards dirty documents without committing or uncommitted failure
+  ---
+  duration_ms: 31.1591
+  type: 'test'
+  ...
+# Subtest: an explicitly committed partial business result survives an unsuccessful HTTP response
+ok 914 - an explicitly committed partial business result survives an unsuccessful HTTP response
+  ---
+  duration_ms: 15.6533
+  type: 'test'
+  ...
+# Subtest: SSE stays buffered until commit; write callbacks can advance a finite stream
+ok 915 - SSE stays buffered until commit; write callbacks can advance a finite stream
+  ---
+  duration_ms: 14.15
+  type: 'test'
+  ...
+# Subtest: SSE overflow discards and responds with a bounded generic error; callbacks settle
+ok 916 - SSE overflow discards and responds with a bounded generic error; callbacks settle
+  ---
+  duration_ms: 12.3862
+  type: 'test'
+  ...
+# Subtest: idle stream expires and closes its dirty snapshot
+ok 917 - idle stream expires and closes its dirty snapshot
+  ---
+  duration_ms: 59.5626
+  type: 'test'
+  ...
+# Subtest: tiny chunks have an independent metadata bound
+ok 918 - tiny chunks have an independent metadata bound
+  ---
+  duration_ms: 30.4243
+  type: 'test'
+  ...
+# Subtest: client disconnect discards before commit and rejects detached writes
+ok 919 - client disconnect discards before commit and rejects detached writes
+  ---
+  duration_ms: 14.6815
+  type: 'test'
+  ...
+# Subtest: deadline during commit never emits buffered success after commit settles
+ok 920 - deadline during commit never emits buffered success after commit settles
+  ---
+  duration_ms: 62.249
+  type: 'test'
+  ...
+# Subtest: disconnect during commit settles snapshot without writing to a dead socket
+ok 921 - disconnect during commit settles snapshot without writing to a dead socket
+  ---
+  duration_ms: 11.5455
+  type: 'test'
+  ...
+# Subtest: route exception is discarded by error response without committing staged effects
+ok 922 - route exception is discarded by error response without committing staged effects
+  ---
+  duration_ms: 11.1308
+  type: 'test'
+  ...
+# Subtest: missing shared default settings rejects production HTTP before running a route
+ok 923 - missing shared default settings rejects production HTTP before running a route
+  ---
+  duration_ms: 11.7455
+  type: 'test'
+  ...
+# Subtest: real PG production HTTP: constraint failure cannot return success or persist staged calendar
+ok 924 - real PG production HTTP: constraint failure cannot return success or persist staged calendar # SKIP
+  ---
+  duration_ms: 0.2271
+  type: 'test'
+  ...
+# Subtest: dry-run validates scope without a database and does not disclose backup content
+ok 925 - dry-run validates scope without a database and does not disclose backup content
+  ---
+  duration_ms: 415.3356
+  type: 'test'
+  ...
+# Subtest: invalid, duplicate and ambiguous mailbox ownership is refused
+ok 926 - invalid, duplicate and ambiguous mailbox ownership is refused
+  ---
+  duration_ms: 119.4082
+  type: 'test'
+  ...
+# Subtest: file symlinks cannot escape the backup root
+ok 927 - file symlinks cannot escape the backup root # SKIP Windows file symlink creation requires Developer Mode or SeCreateSymbolicLinkPrivilege
+  ---
+  duration_ms: 24.1966
+  type: 'test'
+  ...
+# Subtest: directory links cannot escape the backup root, including Windows junctions
+ok 928 - directory links cannot escape the backup root, including Windows junctions
+  ---
+  duration_ms: 32.1806
+  type: 'test'
+  ...
+# Subtest: invalid JSON refusal never logs source snippets or private paths
+ok 929 - invalid JSON refusal never logs source snippets or private paths
+  ---
+  duration_ms: 434.2178
+  type: 'test'
+  ...
+# Subtest: import is content-idempotent and conflicting authority rolls back the whole batch
+ok 930 - import is content-idempotent and conflicting authority rolls back the whole batch
+  ---
+  duration_ms: 12.4328
+  type: 'test'
+  ...
+# Subtest: production never reads, imports or saves files without a snapshot
+ok 931 - production never reads, imports or saves files without a snapshot
+  ---
+  duration_ms: 11.4984
+  type: 'test'
+  ...
+# Subtest: real PG: stage scenario and calendar, commit atomically, release connections before application work
+ok 932 - real PG: stage scenario and calendar, commit atomically, release connections before application work # SKIP
+  ---
+  duration_ms: 0.2898
+  type: 'test'
+  ...
+# Subtest: real PG: read projections filter in SQL, preserve text/results, reject writes and enforce owner scope
+ok 933 - real PG: read projections filter in SQL, preserve text/results, reject writes and enforce owner scope # SKIP
+  ---
+  duration_ms: 0.2882
+  type: 'test'
+  ...
+# Subtest: real PG: two concurrent first writers cannot overwrite each other; loser is 409
+ok 934 - real PG: two concurrent first writers cannot overwrite each other; loser is 409 # SKIP
+  ---
+  duration_ms: 0.2358
+  type: 'test'
+  ...
+# Subtest: real PG: existing-row CAS and scenario conflict roll back a prior calendar update
+ok 935 - real PG: existing-row CAS and scenario conflict roll back a prior calendar update # SKIP
+  ---
+  duration_ms: 0.2229
+  type: 'test'
+  ...
+# Subtest: real PG: SQL failure rolls back all documents and fencing/checkpoint SQL
+ok 936 - real PG: SQL failure rolls back all documents and fencing/checkpoint SQL # SKIP
+  ---
+  duration_ms: 0.1622
+  type: 'test'
+  ...
+# Subtest: real PG: callback exception restores staged calendars; async continuations cannot leak writes
+ok 937 - real PG: callback exception restores staged calendars; async continuations cannot leak writes # SKIP
+  ---
+  duration_ms: 0.1579
+  type: 'test'
+  ...
+# Subtest: real PG: uncommitted work, wrong mailbox, identity changes and missing settings fail closed
+ok 938 - real PG: uncommitted work, wrong mailbox, identity changes and missing settings fail closed # SKIP
+  ---
+  duration_ms: 0.1753
+  type: 'test'
+  ...
+# Subtest: real PG: settings and calendarSync stage together; stale ownership/config blocks calendar commit
+ok 939 - real PG: settings and calendarSync stage together; stale ownership/config blocks calendar commit # SKIP
+  ---
+  duration_ms: 0.2153
+  type: 'test'
+  ...
+# Subtest: real PG: generic documents, discard and final lease check roll back correctly
+ok 940 - real PG: generic documents, discard and final lease check roll back correctly # SKIP
+  ---
+  duration_ms: 0.3249
+  type: 'test'
+  ...
+# Subtest: real PG: unchanged source calendars and scenarios are validated, including absent inputs
+ok 941 - real PG: unchanged source calendars and scenarios are validated, including absent inputs # SKIP
+  ---
+  duration_ms: 0.2605
+  type: 'test'
+  ...
+# Subtest: real PG: cross-mailbox write skew conflicts without lock upgrades or deadlock
+ok 942 - real PG: cross-mailbox write skew conflicts without lock upgrades or deadlock # SKIP
+  ---
+  duration_ms: 0.1945
+  type: 'test'
+  ...
+# Subtest: real PG: mail adapter stages auxiliary metadata and joins checkpoint rollback without transaction ownership
+ok 943 - real PG: mail adapter stages auxiliary metadata and joins checkpoint rollback without transaction ownership # SKIP
+  ---
+  duration_ms: 0.1752
+  type: 'test'
+  ...
+# Subtest: real PG: worker explicit mailbox overrides preference and rejects another owner
+ok 944 - real PG: worker explicit mailbox overrides preference and rejects another owner # SKIP
+  ---
+  duration_ms: 0.186
+  type: 'test'
+  ...
+# Subtest: real PG: implicit trace storage uses the owner mailbox and persists independently across snapshots
+ok 945 - real PG: implicit trace storage uses the owner mailbox and persists independently across snapshots # SKIP
+  ---
+  duration_ms: 0.1325
+  type: 'test'
+  ...
+# Subtest: real PG: development standalone scenarios preserve PG authority across process restart and commit calendar atomically
+ok 946 - real PG: development standalone scenarios preserve PG authority across process restart and commit calendar atomically # SKIP
+  ---
+  duration_ms: 0.1481
+  type: 'test'
+  ...
+# Subtest: local mode preserves synchronous JSON read/save and scenario persistence
+ok 947 - local mode preserves synchronous JSON read/save and scenario persistence
+  ---
+  duration_ms: 73.0644
+  type: 'test'
+  ...
+# Subtest: 显式 60 秒间隔沿用处理链和邮件 ID 去重
+ok 948 - 显式 60 秒间隔沿用处理链和邮件 ID 去重
+  ---
+  duration_ms: 6520.6482
+  type: 'test'
+  ...
+# Subtest: 600 秒轮询在第 10 分钟才收信，下一分钟不重复收信
+ok 949 - 600 秒轮询在第 10 分钟才收信，下一分钟不重复收信
+  ---
+  duration_ms: 4955.9861
+  type: 'test'
+  ...
+# Subtest: 手动、自动和示例同步共用锁，忙碌时跳过定时检查
+ok 950 - 手动、自动和示例同步共用锁，忙碌时跳过定时检查
+  ---
+  duration_ms: 4234.2939
+  type: 'test'
+  ...
+# Subtest: 自动收信失败保留脱敏错误，下一分钟可以继续同步
+ok 951 - 自动收信失败保留脱敏错误，下一分钟可以继续同步
+  ---
+  duration_ms: 3800.4427
+  type: 'test'
+  ...
+# Subtest: 自动模型提取失败的邮件在下一分钟重试成功并保留历史日志
+ok 952 - 自动模型提取失败的邮件在下一分钟重试成功并保留历史日志
+  ---
+  duration_ms: 4326.3438
+  type: 'test'
+  ...
+# Subtest: 自动同步发现冲突后保存三段回复草稿和反馈，后续周期按邮件 ID 跳过
+ok 953 - 自动同步发现冲突后保存三段回复草稿和反馈，后续周期按邮件 ID 跳过
+  ---
+  duration_ms: 4038.0614
+  type: 'test'
+  ...
+# Subtest: 模型等待期间手动新增的安排也参与冲突检测，手动数据保持原样
+ok 954 - 模型等待期间手动新增的安排也参与冲突检测，手动数据保持原样
+  ---
+  duration_ms: 3719.9654
+  type: 'test'
+  ...
+# Subtest: 无法匹配时落库 needs_match；自动同步按邮件 ID 去重；人工点选后完成调整
+ok 955 - 无法匹配时落库 needs_match；自动同步按邮件 ID 去重；人工点选后完成调整
+  ---
+  duration_ms: 4124.0965
+  type: 'test'
+  ...
+# Subtest: 先有原日程时 fail-match 模型仍可带回 targetEventId 并直接调整
+ok 956 - 先有原日程时 fail-match 模型仍可带回 targetEventId 并直接调整
+  ---
+  duration_ms: 3649.1795
+  type: 'test'
+  ...
+# Subtest: 待办完成核验识别真实日志中的邮箱 ID 哈希及成功发送状态
+ok 957 - 待办完成核验识别真实日志中的邮箱 ID 哈希及成功发送状态
+  ---
+  duration_ms: 7.4021
+  type: 'test'
+  ...
+# Subtest: 其他邮件已发送或关联邮件发送失败，均不能通过待办完成核验
+ok 958 - 其他邮件已发送或关联邮件发送失败，均不能通过待办完成核验
+  ---
+  duration_ms: 1.2696
+  type: 'test'
+  ...
+# Subtest: 待办完成核验兼容旧日志的精确原始邮件 ID
+ok 959 - 待办完成核验兼容旧日志的精确原始邮件 ID
+  ---
+  duration_ms: 0.4287
+  type: 'test'
+  ...
+# Subtest: 待办完成核验不接受包含邮件 ID 或哈希的其他日志引用
+ok 960 - 待办完成核验不接受包含邮件 ID 或哈希的其他日志引用
+  ---
+  duration_ms: 0.4582
+  type: 'test'
+  ...
+# Subtest: 相对截止日按邮件的北京时间推算，本周五固定 18:00 并保留明确时刻
+ok 961 - 相对截止日按邮件的北京时间推算，本周五固定 18:00 并保留明确时刻
+  ---
+  duration_ms: 5.0205
+  type: 'test'
+  ...
+# Subtest: 待办优先级以处理时的北京时间今天/明天为 high，其他行动为 normal
+ok 962 - 待办优先级以处理时的北京时间今天/明天为 high，其他行动为 normal
+  ---
+  duration_ms: 1.5583
+  type: 'test'
+  ...
+# Subtest: 同次模型解析保留邮件 Tag（含普通沟通/无关）、摘要、优先级和任务字段
+ok 963 - 同次模型解析保留邮件 Tag（含普通沟通/无关）、摘要、优先级和任务字段
+  ---
+  duration_ms: 2.3593
+  type: 'test'
+  ...
+# Subtest: 任务邮件无需创建日历安排也导入，保存截止时间、状态、摘要和来源链接
+ok 964 - 任务邮件无需创建日历安排也导入，保存截止时间、状态、摘要和来源链接
+  ---
+  duration_ms: 39.1556
+  type: 'test'
+  ...
+# Subtest: 今日和明日行动提升邮件与任务为 high，其他待办至少为 normal
+ok 965 - 今日和明日行动提升邮件与任务为 high，其他待办至少为 normal
+  ---
+  duration_ms: 12.3322
+  type: 'test'
+  ...
+# Subtest: 周五前的截止日由邮件发送日期推断，重复的同封任务只保留一条
+ok 966 - 周五前的截止日由邮件发送日期推断，重复的同封任务只保留一条
+  ---
+  duration_ms: 2.2906
+  type: 'test'
+  ...
+# Subtest: 多封邮件相同标题和截止时间合并任务，提醒会重开已完成任务并保留全部来源
+ok 967 - 多封邮件相同标题和截止时间合并任务，提醒会重开已完成任务并保留全部来源
+  ---
+  duration_ms: 5.5621
+  type: 'test'
+  ...
+# Subtest: 相同标题但不同截止日期表示两次交付，分别建任务
+ok 968 - 相同标题但不同截止日期表示两次交付，分别建任务
+  ---
+  duration_ms: 2.5724
+  type: 'test'
+  ...
+# Subtest: 任务提取兼容历史 events 输出，不给旧邮件补造 Tag 或清空已有任务
+ok 969 - 任务提取兼容历史 events 输出，不给旧邮件补造 Tag 或清空已有任务
+  ---
+  duration_ms: 5.2714
+  type: 'test'
+  ...
+# Subtest: 示例任务和真实任务隔离，相同任务互不合并且错误跨来源匹配可重试
+ok 970 - 示例任务和真实任务隔离，相同任务互不合并且错误跨来源匹配可重试
+  ---
+  duration_ms: 46.9997
+  type: 'test'
+  ...
+# Subtest: 本封日程与任务全部验证后才写入，无效任务不产生部分修改且可重试
+ok 971 - 本封日程与任务全部验证后才写入，无效任务不产生部分修改且可重试
+  ---
+  duration_ms: 40.4258
+  type: 'test'
+  ...
+# Subtest: 仅需知晓的通知保存 low Tag 与摘要，没有任务；未给日期的行动保留无截止任务
+ok 972 - 仅需知晓的通知保存 low Tag 与摘要，没有任务；未给日期的行动保留无截止任务
+  ---
+  duration_ms: 1.7322
+  type: 'test'
+  ...
+# Subtest: 任务后续完成、编辑及邮件合并不改写原邮件提取快照，提醒会重开已完成任务
+ok 973 - 任务后续完成、编辑及邮件合并不改写原邮件提取快照，提醒会重开已完成任务
+  ---
+  duration_ms: 12.1537
+  type: 'test'
+  ...
+# Subtest: 已有任务可与待匹配日程同封写入；缺失目标不阻断待办合并
+ok 974 - 已有任务可与待匹配日程同封写入；缺失目标不阻断待办合并
+  ---
+  duration_ms: 3.5289
+  type: 'test'
+  ...
+# Subtest: 分类、摘要、任务和日程在一次本地模型请求中返回，携带任务去重与日期规则
+ok 975 - 分类、摘要、任务和日程在一次本地模型请求中返回，携带任务去重与日期规则
+  ---
+  duration_ms: 78.4182
+  type: 'test'
+  ...
+# Subtest: 延期会重新计算优先级，明日会议和无截止紧急行动保持 high
+ok 976 - 延期会重新计算优先级，明日会议和无截止紧急行动保持 high
+  ---
+  duration_ms: 7.8424
+  type: 'test'
+  ...
+# Subtest: 日志中的待办来源只保留邮件摘要 ID 和去参数链接，模型仍收到来源上下文
+ok 977 - 日志中的待办来源只保留邮件摘要 ID 和去参数链接，模型仍收到来源上下文
+  ---
+  duration_ms: 29.5236
+  type: 'test'
+  ...
+# Subtest: 邮件成本按调用证据汇总，历史缺失不遮住已计价样本及费用小计
+ok 978 - 邮件成本按调用证据汇总，历史缺失不遮住已计价样本及费用小计
+  ---
+  duration_ms: 4.7008
+  type: 'test'
+  ...
+# Subtest: 同一邮件重试保留全部已知调用费用，并分别报告缺用量和缺单价
+ok 979 - 同一邮件重试保留全部已知调用费用，并分别报告缺用量和缺单价
+  ---
+  duration_ms: 0.7661
+  type: 'test'
+  ...
+# Subtest: 有调用但无完整用量的历史零费用不能被当作免费模型调用
+ok 980 - 有调用但无完整用量的历史零费用不能被当作免费模型调用
+  ---
+  duration_ms: 0.3551
+  type: 'test'
+  ...
+# Subtest: 缺失或非有限费用不会形成已计价样本，也不会污染费用小计
+ok 981 - 缺失或非有限费用不会形成已计价样本，也不会污染费用小计
+  ---
+  duration_ms: 0.8138
+  type: 'test'
+  ...
+# Subtest: 规则过滤的真实邮件模型费用为零，与明确免费调用都可计入邮件平均
+ok 982 - 规则过滤的真实邮件模型费用为零，与明确免费调用都可计入邮件平均
+  ---
+  duration_ms: 0.4028
+  type: 'test'
+  ...
+# Subtest: 邮件成本筛选排除独立招聘操作，保留同步邮件中的招聘与简历处理
+ok 983 - 邮件成本筛选排除独立招聘操作，保留同步邮件中的招聘与简历处理
+  ---
+  duration_ms: 0.7341
+  type: 'test'
+  ...
+# Subtest: 无阶段历史记录只在聚合费用和完整用量都有证据时计价
+ok 984 - 无阶段历史记录只在聚合费用和完整用量都有证据时计价
+  ---
+  duration_ms: 0.7224
+  type: 'test'
+  ...
+# Subtest: 非提取阶段的模型请求失败且没有返回用量时保留未知费用
+ok 985 - 非提取阶段的模型请求失败且没有返回用量时保留未知费用
+  ---
+  duration_ms: 22.2705
+  type: 'test'
+  ...
+# Subtest: trace reply uses source Reply-To and preserves source identity and thread headers
+ok 986 - trace reply uses source Reply-To and preserves source identity and thread headers
+  ---
+  duration_ms: 5.409
+  type: 'test'
+  ...
+# Subtest: trace reply handles named addresses, groups and source draft precedence
+ok 987 - trace reply handles named addresses, groups and source draft precedence
+  ---
+  duration_ms: 1.4733
+  type: 'test'
+  ...
+# Subtest: trace reply falls back to the original sender and leaves source records intact
+ok 988 - trace reply falls back to the original sender and leaves source records intact
+  ---
+  duration_ms: 0.8682
+  type: 'test'
+  ...
+# Subtest: trace reply requires a unique owned source and keeps preset and legacy-sent flows separate
+ok 989 - trace reply requires a unique owned source and keeps preset and legacy-sent flows separate
+  ---
+  duration_ms: 2.8002
+  type: 'test'
+  ...
+# Subtest: trace reply rejects malformed Reply-To instead of silently choosing a different recipient
+ok 990 - trace reply rejects malformed Reply-To instead of silently choosing a different recipient
+  ---
+  duration_ms: 1.2158
+  type: 'test'
+  ...
+# Subtest: trace reply bounds thread history and filters invalid header identities
+ok 991 - trace reply bounds thread history and filters invalid header identities
+  ---
+  duration_ms: 0.8769
+  type: 'test'
+  ...
+# Subtest: shared trace reads and writes default to the current owner preference without local file fallback
+ok 992 - shared trace reads and writes default to the current owner preference without local file fallback
+  ---
+  duration_ms: 11.7288
+  type: 'test'
+  ...
+# Subtest: request mailbox overrides saved preference for implicit trace reads and writes; foreign owner remains inaccessible
+ok 993 - request mailbox overrides saved preference for implicit trace reads and writes; foreign owner remains inaccessible
+  ---
+  duration_ms: 4.6407
+  type: 'test'
+  ...
+# Subtest: an account without a saved mailbox can load empty traces but cannot write before setup
+ok 994 - an account without a saved mailbox can load empty traces but cannot write before setup
+  ---
+  duration_ms: 2.48
+  type: 'test'
+  ...
+# Subtest: local trace files retain default, explicit and request-selected mailbox behavior
+ok 995 - local trace files retain default, explicit and request-selected mailbox behavior
+  ---
+  duration_ms: 58.6757
+  type: 'test'
+  ...
+# Subtest: 证据链列表带上招聘执行记录，同一条不重复
+ok 996 - 证据链列表带上招聘执行记录，同一条不重复
+  ---
+  duration_ms: 3.09
+  type: 'test'
+  ...
+# Subtest: 日志输入递归脱敏邮箱、电话、配置密钥与链接参数，并截断长正文
+ok 997 - 日志输入递归脱敏邮箱、电话、配置密钥与链接参数，并截断长正文
+  ---
+  duration_ms: 3.0663
+  type: 'test'
+  ...
+# Subtest: 使用服务商 Token 统计计算缓存费用，缺失 usage 或单价保持未知
+ok 998 - 使用服务商 Token 统计计算缓存费用，缺失 usage 或单价保持未知
+  ---
+  duration_ms: 0.8764
+  type: 'test'
+  ...
+# Subtest: 邮件正文先脱敏再截断，边界处的配置密钥不泄露部分字符
+ok 999 - 邮件正文先脱敏再截断，边界处的配置密钥不泄露部分字符
+  ---
+  duration_ms: 171.4487
+  type: 'test'
+  ...
+# Subtest: 本地模拟邮件在模型等待期间可见，完成后可按顺序回放到草稿并汇总费用
+ok 1000 - 本地模拟邮件在模型等待期间可见，完成后可按顺序回放到草稿并汇总费用
+  ---
+  duration_ms: 32.0133
+  type: 'test'
+  ...
+# Subtest: 模型已计费而解析失败的邮件重试沿用同一 trace，保留历史及每次费用
+ok 1001 - 模型已计费而解析失败的邮件重试沿用同一 trace，保留历史及每次费用
+  ---
+  duration_ms: 82.3253
+  type: 'test'
+  ...
+# Subtest: 已处理及已跳过邮件重复同步不产生额外 trace、草稿或模型费用
+ok 1002 - 已处理及已跳过邮件重复同步不产生额外 trace、草稿或模型费用
+  ---
+  duration_ms: 40.5833
+  type: 'test'
+  ...
+# Subtest: 缺失 usage 或未配置价格时显示未知费用，汇总保留已知小计而不生成虚假平均
+ok 1003 - 缺失 usage 或未配置价格时显示未知费用，汇总保留已知小计而不生成虚假平均
+  ---
+  duration_ms: 83.8331
+  type: 'test'
+  ...
+# Subtest: 服务商失败未返回 usage 的历史重试保持费用未知，并保存脱敏错误证据
+ok 1004 - 服务商失败未返回 usage 的历史重试保持费用未知，并保存脱敏错误证据
+  ---
+  duration_ms: 70.1684
+  type: 'test'
+  ...
+# Subtest: 回放输出与草稿是处理时快照，日程和邮件后续编辑删除不改变日志
+ok 1005 - 回放输出与草稿是处理时快照，日程和邮件后续编辑删除不改变日志
+  ---
+  duration_ms: 23.1012
+  type: 'test'
+  ...
+# Subtest: study server IPC shutdown preserves interrupted records on Windows and releases its port
+ok 1006 - study server IPC shutdown preserves interrupted records on Windows and releases its port
+  ---
+  duration_ms: 2993.7567
+  type: 'test'
+  ...
+# Subtest: study practice runs production calendar/task semantics with conflicts, linked changes and no model calls
+ok 1007 - study practice runs production calendar/task semantics with conflicts, linked changes and no model calls
+  ---
+  duration_ms: 95.9077
+  type: 'test'
+  ...
+# Subtest: study runner retries a failed unique mail through the production extractor without replaying successful work
+ok 1008 - study runner retries a failed unique mail through the production extractor without replaying successful work
+  ---
+  duration_ms: 185.249
+  type: 'test'
+  ...
+# Subtest: study runner makes one model attempt per unique identity even when a failed original is repeated
+ok 1009 - study runner makes one model attempt per unique identity even when a failed original is repeated
+  ---
+  duration_ms: 64.6058
+  type: 'test'
+  ...
+# Subtest: study materials balance four assignments and hide fixed answers from participants
+ok 1010 - study materials balance four assignments and hide fixed answers from participants
+  ---
+  duration_ms: 6.0737
+  type: 'test'
+  ...
+# Subtest: study scoring catches deadlines, stale and repeated calendar entries and missing sources
+ok 1011 - study scoring catches deadlines, stale and repeated calendar entries and missing sources
+  ---
+  duration_ms: 3.4208
+  type: 'test'
+  ...
+# Subtest: study time validation treats UTC and Beijing equally and rejects invalid dates and oversized records
+ok 1012 - study time validation treats UTC and Beijing equally and rejects invalid dates and oversized records
+  ---
+  duration_ms: 4.4311
+  type: 'test'
+  ...
+# Subtest: study input conversion normalizes native seconds and UTC results without shifting Beijing wall time
+ok 1013 - study input conversion normalizes native seconds and UTC results without shifting Beijing wall time
+  ---
+  duration_ms: 0.8849
+  type: 'test'
+  ...
+# Subtest: study draft comparison counts row changes independently of row order and timezone formatting
+ok 1014 - study draft comparison counts row changes independently of row order and timezone formatting
+  ---
+  duration_ms: 1.4365
+  type: 'test'
+  ...
+# Subtest: study sessions require consent, one active participant, unique IDs and delayed scoring
+ok 1015 - study sessions require consent, one active participant, unique IDs and delayed scoring
+  ---
+  duration_ms: 3.4979
+  type: 'test'
+  ...
+# Subtest: study clock includes model waiting and verification until explicit completion
+ok 1016 - study clock includes model waiting and verification until explicit completion
+  ---
+  duration_ms: 49.4271
+  type: 'test'
+  ...
+# Subtest: study quota is reserved before work, dispatches at most the limit and releases unused calls
+ok 1017 - study quota is reserved before work, dispatches at most the limit and releases unused calls
+  ---
+  duration_ms: 2.9431
+  type: 'test'
+  ...
+# Subtest: study retries only unprocessed identities and preserves completed work
+ok 1018 - study retries only unprocessed identities and preserves completed work
+  ---
+  duration_ms: 2.4457
+  type: 'test'
+  ...
+# Subtest: study rejects insufficient quota before making a call
+ok 1019 - study rejects insufficient quota before making a call
+  ---
+  duration_ms: 0.7253
+  type: 'test'
+  ...
+# Subtest: study analysis failures release reservations, return safe status and allow one retry
+ok 1020 - study analysis failures release reservations, return safe status and allow one retry
+  ---
+  duration_ms: 1.2527
+  type: 'test'
+  ...
+# Subtest: study persistence failure closes the run visibly and retains the last saved draft
+ok 1021 - study persistence failure closes the run visibly and retains the last saved draft
+  ---
+  duration_ms: 1.0693
+  type: 'test'
+  ...
+# Subtest: study interruption preserves elapsed time and prevents completion or further model dispatch
+ok 1022 - study interruption preserves elapsed time and prevents completion or further model dispatch
+  ---
+  duration_ms: 0.6295
+  type: 'test'
+  ...
+# Subtest: study interruption during an in-flight call preserves interruption and blocks late result overwrite
+ok 1023 - study interruption during an in-flight call preserves interruption and blocks late result overwrite
+  ---
+  duration_ms: 5.4767
+  type: 'test'
+  ...
+# Subtest: study summary excludes presets, project self-checks and incomplete participants
+ok 1024 - study summary excludes presets, project self-checks and incomplete participants
+  ---
+  duration_ms: 0.6254
+  type: 'test'
+  ...
+# Subtest: study practice records remain labeled and all mutations save before acknowledgement
+ok 1025 - study practice records remain labeled and all mutations save before acknowledgement
+  ---
+  duration_ms: 0.9495
+  type: 'test'
+  ...
+# Subtest: study HTTP rejects cross-origin writes and invalid bodies while exposing no server error details
+ok 1026 - study HTTP rejects cross-origin writes and invalid bodies while exposing no server error details
+  ---
+  duration_ms: 225.981
+  type: 'test'
+  ...
+# Subtest: 视图范围：全部邮箱按配置顺序返回所有邮箱
+ok 1027 - 视图范围：全部邮箱按配置顺序返回所有邮箱
+  ---
+  duration_ms: 2.1605
+  type: 'test'
+  ...
+# Subtest: 视图范围：按标签只返回该标签的邮箱，标签名与自定义标签都能匹配
+ok 1028 - 视图范围：按标签只返回该标签的邮箱，标签名与自定义标签都能匹配
+  ---
+  duration_ms: 0.4571
+  type: 'test'
+  ...
+# Subtest: 视图范围：当前邮箱视图不返回范围，由调用方回退到当前邮箱
+ok 1029 - 视图范围：当前邮箱视图不返回范围，由调用方回退到当前邮箱
+  ---
+  duration_ms: 0.2377
+  type: 'test'
+  ...
+# Subtest: 语音播报只收录当天未取消的日程，并写成可朗读的句子
+ok 1030 - 语音播报只收录当天未取消的日程，并写成可朗读的句子
+  ---
+  duration_ms: 3.069
+  type: 'test'
+  ...
+# Subtest: 已删除工作台的日程和待办归入未归属，名单未载入时不误判
+ok 1031 - 已删除工作台的日程和待办归入未归属，名单未载入时不误判
+  ---
+  duration_ms: 1.5489
+  type: 'test'
+  ...
+# Subtest: 旧个人与 HR 账号均可使用招聘，不受历史次数限制
+ok 1032 - 旧个人与 HR 账号均可使用招聘，不受历史次数限制
+  ---
+  duration_ms: 5.4579
+  type: 'test'
+  ...
+# Subtest: 旧存储字段仍可读取，历史记录不迁移或清空
+ok 1033 - 旧存储字段仍可读取，历史记录不迁移或清空
+  ---
+  duration_ms: 0.5446
+  type: 'test'
+  ...
+# Subtest: workspace lists retain complete searchable plain text and structured results without sending raw HTML
+ok 1034 - workspace lists retain complete searchable plain text and structured results without sending raw HTML
+  ---
+  duration_ms: 2.4797
+  type: 'test'
+  ...
+1..1034
+# tests 1042
+# suites 1
+# pass 1013
+# fail 0
+# cancelled 0
+# skipped 29
+# todo 0
+# duration_ms 74766.3668

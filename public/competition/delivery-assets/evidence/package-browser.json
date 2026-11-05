@@ -1,0 +1,99 @@
+{
+  "scope": "Actual extracted package fc3ae1d, Windows IAB, desktop and 390px viewport",
+  "checks": [
+    {
+      "name": "package-start-notice",
+      "ok": true
+    },
+    {
+      "name": "package-step-2",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=2\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 33, 93-94\n~0 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=2\n~\t\t3 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=2#experience-main\n~\t\t\t\t27 text 体验进度 2  / 7\n~\t\t\t\t28 progress indicator Description: 体验进度, Value: 2\n~\t\t\t\t\t32 button 发现冲突\n+\t\t\t\t\t\t106 image\n+\t\t\t\t\t\t107 text 发现冲突\n~\t\t\t\t45 text 第 2 步 · 发现冲突\n~\t\t\t\t46 text 冲突待本人决定\n~\t\t\t\t47 text 冲突可见，回复先留作草稿\n~\t\t\t\t48 text 第二场面试与已有组会重叠。系统保留通知并标记冲突，供本人决定。\n~\t\t\t\t49 button 下一步：面试改期\n~\t\t\t\t\t50 text 下一步：面试改期\n~\t\t\t\t\t92 text 实验室交流与已有课题组例会重叠，已标记冲突。  回复草稿尚未发送。\n~\t\t\t\t63 heading 11 月 5 日 · 有效安排 3, Value: 2\n~\t\t\t\t\t65 text 11 月 5 日 · 有效安排 3\n+\t\t\t\t\t108 container\n+\t\t\t\t\t\t109 text 10:00 – 10:30 研究助理面试 线上会议室\n+\t\t\t\t\t110 container\n+\t\t\t\t\t\t111 text 14:00 – 14:30 实验室交流 时间冲突 B楼会议室\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-step-3",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=3\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 35, 108-109\n~0 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=3\n~\t\t3 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=3#experience-main\n~\t\t\t\t27 text 体验进度 3  / 7\n~\t\t\t\t28 progress indicator Description: 体验进度, Value: 3\n~\t\t\t\t\t34 button 面试改期\n+\t\t\t\t\t\t108 image\n+\t\t\t\t\t\t109 text 面试改期\n~\t\t\t\t45 text 第 3 步 · 面试改期\n~\t\t\t\t46 text 处理完成\n~\t\t\t\t47 text 旧安排留痕，新安排有来源\n~\t\t\t\t48 text 上午面试调整到下午；原日程标为已取消，并与新日程双向关联。\n~\t\t\t\t49 button 下一步：重复收信\n~\t\t\t\t\t50 text 下一步：重复收信\n~\t\t\t\t\t92 text 原 10:00 面试已取消，新 15:00 面试已建立并关联原安排。  回复草稿尚未发送。\n+\t\t\t\t\t112 container\n+\t\t\t\t\t\t113 text 15:00 – 15:30 研究助理面试 线上会议室  · 由原安排改期\n+\t\t\t\t114 button (collapsed) 查看已取消的历史（1）, Secondary Actions: Expand\n+\t\t\t\t\t115 text 查看已取消的历史（\n+\t\t\t\t\t116 text 1\n+\t\t\t\t\t117 text ）\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-step-4",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=4\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 37, 104-105, 110-113\n~0 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=4\n~\t\t3 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=4#experience-main\n~\t\t\t\t27 text 体验进度 4  / 7\n~\t\t\t\t28 progress indicator Description: 体验进度, Value: 4\n~\t\t\t\t\t36 button 重复收信\n+\t\t\t\t\t\t118 image\n+\t\t\t\t\t\t119 text 重复收信\n~\t\t\t\t45 text 第 4 步 · 重复收信\n~\t\t\t\t46 text 已跳过重复\n~\t\t\t\t47 text 相同邮件再次出现，不重复写入\n~\t\t\t\t48 text 重复投递第一封通知。邮件 ID 去重后跳过提取，安排和待办数量不增加。\n~\t\t\t\t49 button 下一步：异常阻断\n~\t\t\t\t\t50 text 下一步：异常阻断\n~\t\t\t\t\t92 text 邮件 ID 已处理，跳过提取。日程  4  →  4 ，待办  1  →  1 。没有新增模型调用。\n+\t\t\t\t\t120 container\n+\t\t\t\t\t\t121 text 14:00 – 14:30 实验室交流 时间冲突 B楼会议室\n+\t\t\t\t\t122 container\n+\t\t\t\t\t\t123 text 15:00 – 15:30 研究助理面试 线上会议室  · 由原安排改期\n~\t\t\t\t99 button (collapsed) 查看本次真实工具执行（0 个步骤）, Secondary Actions: Expand\n~\t\t\t\t\t102 text 0\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-step-5",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=5\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-step-6",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=6\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 41, 122-127\n~0 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=6\n~\t\t3 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=6#experience-main\n~\t\t\t\t27 text 体验进度 6  / 7\n~\t\t\t\t28 progress indicator Description: 体验进度, Value: 6\n~\t\t\t\t\t40 button 修正重试\n+\t\t\t\t\t\t122 image\n+\t\t\t\t\t\t123 text 修正重试\n~\t\t\t\t45 text 第 6 步 · 修正重试\n~\t\t\t\t46 text 处理完成\n~\t\t\t\t47 text 修正输入后，同一封邮件可以重试\n~\t\t\t\t48 text 使用有效预置时间重新处理上一步邮件，成功写入，失败记录仍可回查。\n~\t\t\t\t49 button 下一步：取消留痕\n~\t\t\t\t\t50 text 下一步：取消留痕\n+\t\t\t\t\t124 text 同一封失败邮件在修正时间后成功处理，原失败尝试仍留在执行轨迹中。  回复草稿尚未发送。\n~\t\t\t\t63 heading 11 月 5 日 · 有效安排 4, Value: 2\n~\t\t\t\t\t65 text 11 月 5 日 · 有效安排 4\n+\t\t\t\t\t125 container\n+\t\t\t\t\t\t126 text 14:00 – 14:30 实验室交流 时间冲突 B楼会议室\n+\t\t\t\t\t127 container\n+\t\t\t\t\t\t128 text 15:00 – 15:30 研究助理面试 线上会议室  · 由原安排改期\n+\t\t\t\t\t129 container\n+\t\t\t\t\t\t130 text 16:00 – 16:30 补充交流 线上会议室\n~\t\t\t\t99 button (collapsed) 查看本次真实工具执行（6 个步骤）, Secondary Actions: Expand\n~\t\t\t\t\t102 text 6\n+\t\t\t\t131 button (collapsed) 查看回复草稿 · 尚未发送, Secondary Actions: Expand\n+\t\t\t\t\t132 text 查看回复草稿 · 尚未发送\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-step-7",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=7\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 43, 49-51, 125-130\n~0 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=7\n~\t\t3 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=7#experience-main\n~\t\t\t\t27 text 体验进度 7  / 7\n~\t\t\t\t28 progress indicator Description: 体验进度, Value: 7\n~\t\t\t\t\t42 button 取消留痕\n+\t\t\t\t\t\t133 image\n+\t\t\t\t\t\t134 text 取消留痕\n~\t\t\t\t45 text 第 7 步 · 取消留痕\n~\t\t\t\t47 text 取消释放时间，历史和材料仍保留\n~\t\t\t\t48 text 研究助理面试取消；保留取消原因与来源邮件，材料待办仍需本人处理。\n~\t\t\t\t\t124 text 15:00 面试已取消，取消通知与历史仍保留。准备材料待办没有自动完成。  回复草稿尚未发送。\n~\t\t\t\t63 heading 11 月 5 日 · 有效安排 3, Value: 2\n~\t\t\t\t\t65 text 11 月 5 日 · 有效安排 3\n+\t\t\t\t\t135 container\n+\t\t\t\t\t\t136 text 14:00 – 14:30 实验室交流 时间冲突 B楼会议室\n+\t\t\t\t\t137 container\n+\t\t\t\t\t\t138 text 16:00 – 16:30 补充交流 线上会议室\n~\t\t\t\t114 button (collapsed) 查看已取消的历史（2）, Secondary Actions: Expand\n~\t\t\t\t\t116 text 2\n+\t\t\t\t139 heading 你已经走完一次邮件变化闭环, Value: 2\n+\t\t\t\t\t140 text 你已经走完一次邮件变化闭环\n+\t\t\t\t141 text 安排、来源、冲突、变更和失败都有迹可查。接入本人邮箱与模型后，可在工作区处理真实通知；公开校园生活也可以直接使用。\n+\t\t\t\t142 link Description: 查看技术与实测, Value: 127.0.0.1:3204/evidence\n+\t\t\t\t143 link Description: 探索校园生活, Value: 127.0.0.1:3204/campus\nThe focused UI element is 44 container 当前体验结果"
+    },
+    {
+      "name": "package-refresh-restores-step7",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"三分钟体验 · Daylight\", URL: \"http://127.0.0.1:3204/experience?step=7\".\n1 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=7\n\t2 text 正在进入 Daylight…\n\t3 container root\n\t\t4 link Description: 跳到主要内容, Value: 127.0.0.1:3204/experience?step=7#experience-main\n\t\t5 container\n\t\t\t6 link Description: Daylight, Value: 127.0.0.1:3204/\n\t\t\t7 container 体验导航\n\t\t\t\t8 link Description: 三分钟体验, Value: 127.0.0.1:3204/experience\n\t\t\t\t9 link Description: 技术与实测, Value: 127.0.0.1:3204/evidence\n\t\t\t\t10 pop up button (collapsed) Description: 主题色, ID: radix-_r_4_, Secondary Actions: Expand\n\t\t\t\t\t11 image\n\t\t\t\t12 button 切换到深色\n\t\t\t\t\t13 image\n\t\t\t\t14 pop up button (collapsed) Description: 语言, ID: radix-_r_6_, Secondary Actions: Expand\n\t\t\t\t\t15 image\n\t\t\t\t16 link Description: 登录 工作区, Value: 127.0.0.1:3204/login\n\t\t17 container experience-main\n\t\t\t18 text 从邮件到下一步 · 交互体验\n\t\t\t19 heading 面试通知变了三次， 你只需要看清下一步。, Value: 1\n\t\t\t\t20 text 面试通知变了三次，\n\t\t\t\t21 text 你只需要看清下一步。\n\t\t\t22 text 为同时跟进多个申请的同学，把面试、材料与改期放回同一条时间线。七步亲自看一次通知如何变成安排，异常又如何恢复。\n\t\t\t23 link Description: 先看分章讲解 · 三分钟, Value: 127.0.0.1:3204/demo\n\t\t\t24 image\n\t\t\t25 container\n\t\t\t\t26 text 原创样例 · 预置提取 · 真实工具执行。  日历、待办与变更记录由工具即时生成。时间为 2026 年 11 月 5 日，北京时间。\n\t\t\t27 container\n\t\t\t\t28 text 体验进度 7  / 7\n\t\t\t\t29 progress indicator Description: 体验进度, Value: 7\n\t\t\t\t30 content list\n\t\t\t\t\t31 button 收到面试\n\t\t\t\t\t\t32 image\n\t\t\t\t\t\t33 text 收到面试\n\t\t\t\t\t34 button 发现冲突\n\t\t\t\t\t\t35 image\n\t\t\t\t\t\t36 text 发现冲突\n\t\t\t\t\t37 button 面试改期\n\t\t\t\t\t\t38 image\n\t\t\t\t\t\t39 text 面试改期\n\t\t\t\t\t40 button 重复收信\n\t\t\t\t\t\t41 image\n\t\t\t\t\t\t42 text 重复收信\n\t\t\t\t\t43 button 异常阻断\n\t\t\t\t\t\t44 image\n\t\t\t\t\t\t45 text 异常阻断\n\t\t\t\t\t46 button 修正重试\n\t\t\t\t\t\t47 image\n\t\t\t\t\t\t48 text 修正重试\n\t\t\t\t\t49 button 取消留痕\n\t\t\t\t\t\t50 image\n\t\t\t\t\t\t51 text 取消留痕\n\t\t\t\t52 button 重新体验\n\t\t\t\t\t53 image\n\t\t\t\t\t54 text 重新体验\n\t\t\t55 container 当前体验结果\n\t\t\t\t56 text 第 7 步 · 取消留痕\n\t\t\t\t57 text 处理完成\n\t\t\t\t58 text 取消释放时间，历史和材料仍保留\n\t\t\t\t59 text 研究助理面试取消；保留取消原因与来源邮件，材料待办仍需本人处理。\n\t\t\t\t60 button 手机接着看\n\t\t\t\t\t61 image\n\t\t\t\t\t62 text 手机接着看\n\t\t\t\t63 button (collapsed) Secondary Actions: Expand\n\t\t\t\t\t64 image\n\t\t\t\t65 heading 11 月 5 日 · 有效安排 3, Value: 2\n\t\t\t\t\t66 image\n\t\t\t\t\t67 text 11 月 5 日 · 有效安排 3\n\t\t\t\t68 button (collapsed) Secondary Actions: Expand\n\t\t\t\t69 heading 材料待办, Value: 2\n\t\t\t\t\t70 image\n\t\t\t\t\t71 text 材料待办\n\t\t\t\t72 button (collapsed) Secondary Actions: Expand\n\t\t\t\t\t73 image\n\t\t\t\t74 button (collapsed) Secondary Actions: Expand\n\t\t\t\t75 heading 你已经走完一次邮件变化闭环, Value: 2\n\t\t\t\t76 link Description: 查看技术与实测, Value: 127.0.0.1:3204/evidence\n\t\t\t\t77 link Description: 探索校园生活, Value: 127.0.0.1:3204/campus\n\t\t\t\t78 container\n\t\t\t\t\t79 text 本次样例工具即时执行 · 实时模型调用  0  次 · 模型费用 ¥0。费用估算与实测记录见技术页。\n\t\t80 container\n\t\t\t81 text 让分散的信息，成为可追踪的下一步。\n\t\t\t82 link Description: 分章讲解, Value: 127.0.0.1:3204/demo\n\t\t\t83 link Description: 校园生活, Value: 127.0.0.1:3204/campus\n\t\t\t84 link Description: 技术报告, Value: 127.0.0.1:3204/competition/technical-report.html\n\t\t\t85 link Description: 隐私政策, Value: 127.0.0.1:3204/legal/privacy\n\t\t\t86 link Description: 源码与复现, Value: 127.0.0.1:3204/competition/reproduce.html\n\t\t87 container Notifications alt+T\n\nThe focused UI element is 1 AXWebArea 三分钟体验 · Daylight, URL: 127.0.0.1:3204/experience?step=7"
+    },
+    {
+      "name": "package-chapter-video",
+      "ok": true,
+      "result": {
+        "scrollWidth": 375,
+        "url": "http://127.0.0.1:3204/demo?chapter=validation",
+        "video": [
+          {
+            "currentTime": 75.338,
+            "duration": 179.916667,
+            "error": null,
+            "paused": false,
+            "readyState": 4
+          }
+        ],
+        "width": 390
+      },
+      "originalExact180SecondCheck": false,
+      "expectedDurationSeconds": {
+        "min": 179,
+        "max": 181
+      }
+    },
+    {
+      "name": "package-workspace-login",
+      "ok": true,
+      "state": "Browser tab: 31, Title: \"Daylight — 从邮件到安排\", URL: \"http://127.0.0.1:3204/app\".\n1 AXWebArea Daylight — 从邮件到安排, URL: 127.0.0.1:3204/app\n\t3 container root\n\t\t36 container\n\t\t\t37 container\n\t\t\t\t38 button Toggle Sidebar\n\t\t\t\t\t39 image\n\t\t\t\t\t40 text Toggle Sidebar\n\t\t\t\t41 button 搜索\n\t\t\t\t\t42 image\n\t\t\t\t43 button 暗夜\n\t\t\t\t\t44 image\n\t\t\t\t45 button\n\t\t\t\t\t46 image\n\t\t\t\t47 button\n\t\t\t\t\t48 image\n\t\t\t49 text 隔离演示 · 预置结果 · 未调用真实邮箱、模型或发信服务。地图为示意目录。关闭并重新启动演示可重置样例。\n\t\t\t50 container\n\t\t\t\t51 heading 总览, Value: 1\n\t\t\t\t\t52 text 总览\n\t\t\t\t53 text 11月4日  ·  demo@example.invalid\n\t\t\t\t54 button 同步邮箱\n\t\t\t\t\t55 image\n\t\t\t\t\t56 text 同步邮箱\n\t\t\t\t57 pop up button (collapsed) 演示数据, ID: radix-_r_20_, Secondary Actions: Expand\n\t\t\t\t58 link Description: 今日安排 0, Value: 127.0.0.1:3204/app/calendar\n\t\t\t\t59 link Description: 待办 2, Value: 127.0.0.1:3204/app/todos\n\t\t\t\t60 link Description: 待确认冲突 1, Value: 127.0.0.1:3204/app/mail\n\t\t\t\t61 link Description: 已处理邮件 24, Value: 127.0.0.1:3204/app/mail\n\t\t\t\t62 text 今日日程 北京时间\n\t\t\t\t63 button 新建\n\t\t\t\t64 text 今天没有安排 待确认 冲突与回复草稿\n\t\t\t\t65 link Description: 全部, Value: 127.0.0.1:3204/app/mail\n\t\t\t\t66 button 冲突邀请｜新功能讨论 1 项冲突 · 1 项冲突 · 新建 1\n\t\t\t\t\t67 image\n\t\t\t\t\t68 text 冲突邀请｜新功能讨论\n\t\t\t\t\t69 container\n\t\t\t\t\t\t70 text 1  项冲突 ·  1 项冲突 · 新建 1\n\t\t\t\t71 text 最近邮件 点击查看处理结果\n\t\t\t\t72 link Description: 邮件箱, Value: 127.0.0.1:3204/app/mail\n\t\t\t\t73 button 【预置示例】林知远应聘软件开发岗位 林知远 <candidate-1@example.invalid> 已导入\n\t\t\t\t\t74 text 【预置示例】林知远应聘软件开发岗位\n\t\t\t\t\t75 text 林知远 <candidate-1@example.invalid>\n\t\t\t\t\t76 text 已导入\n\t\t\t\t77 button 【预置示例】陈思齐应聘软件开发岗位 陈思齐 <candidate-2@example.invalid> 已导入\n\t\t\t\t\t78 text 【预置示例】陈思齐应聘软件开发岗位\n\t\t\t\t\t79 text 陈思齐 <candidate-2@example.invalid>\n\t\t\t\t\t80 text 已导入\n\t\t\t\t81 button 【预置示例】周雨桐应聘软件开发岗位 周雨桐 <candidate-3@example.invalid> 已导入\n\t\t\t\t\t82 text 【预置示例】周雨桐应聘软件开发岗位\n\t\t\t\t\t83 text 周雨桐 <candidate-3@example.invalid>\n\t\t\t\t\t84 text 已导入\n\t\t\t\t85 button 【预置示例】云服务票据待核对 Example Cloud <billing@example.invalid> 已导入\n\t\t\t\t\t86 text 【预置示例】云服务票据待核对\n\t\t\t\t\t87 text Example Cloud <billing@example.invalid>\n\t\t\t\t\t88 text 已导入\n\t\t\t\t89 button 调整｜Daylight 产品设计评审 林晓 <design@example.com> 已导入\n\t\t\t\t\t90 text 调整｜Daylight 产品设计评审\n\t\t\t\t\t91 text 林晓 <design@example.com>\n\t\t\t\t\t92 text 已导入\n\t\t\t\t93 link Description: 查看执行日志, Value: 127.0.0.1:3204/app/traces\n\t\t\t\t94 link Description: 连接设置, Value: 127.0.0.1:3204/app/settings\n\t\t\t95 button 打开小 D\n\t\t\t\t96 image\n\t\t35 container Notifications alt+T\n\nThe focused UI element is 1 AXWebArea Daylight — 从邮件到安排, URL: 127.0.0.1:3204/app"
+    },
+    {
+      "name": "package-workspace-mobile-layout",
+      "ok": true,
+      "result": {
+        "height": 844,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "package-technical-page",
+      "ok": true,
+      "result": {
+        "scrollWidth": 1425,
+        "sections": [
+          "01 · 面向多任务并行的邮件使用者",
+          "02 · 按负载与状态拆分服务",
+          "03 · 看得见提取、工具与恢复过程",
+          "04 · 电脑与手机顺畅走完一条主线",
+          "05 · 用实测数据分析性能与成本"
+        ],
+        "url": "http://127.0.0.1:3204/evidence",
+        "width": 1440
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "ok": true
+}

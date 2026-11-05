@@ -1,0 +1,8 @@
+{
+  "plaintextBytes": 227635200,
+  "plaintextSha256": "d5055b6231353e63895fa897b911ee4ef3f90e086f4dc41d1ce90f775c1b46e2",
+  "gcmTagVerified": true,
+  "ok": true,
+  "mode": "verify",
+  "durationMs": 625
+}

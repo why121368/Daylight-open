@@ -1,0 +1,48 @@
+# Copy outside the repository or to a gitignored file; use hex passwords so URLs need no escaping.
+# Generate independent values with: openssl rand -hex 32
+POSTGRES_PASSWORD=<redacted>
+REDIS_PASSWORD=<redacted>
+RABBITMQ_PASSWORD=<redacted>
+MINIO_ROOT_USER=<redacted>
+MINIO_ROOT_PASSWORD=<redacted>
+DAYLIGHT_JWT_SECRET=<redacted>
+DAYLIGHT_OSS_BUCKET=<redacted>
+DAYLIGHT_IMAGE=<redacted>
+DAYLIGHT_BIND_ADDRESS=<redacted>
+DAYLIGHT_PORT=<redacted>
+DAYLIGHT_PUBLIC_BASE_URL=<redacted>
+DAYLIGHT_ADMIN_EMAILS=<redacted>
+DAYLIGHT_SYSTEM_MAIL_ENABLED=<redacted>
+DAYLIGHT_SYSTEM_MAIL_HOST=<redacted>
+DAYLIGHT_SYSTEM_MAIL_PORT=<redacted>
+DAYLIGHT_SYSTEM_MAIL_SECURE=<redacted>
+DAYLIGHT_SYSTEM_MAIL_USER=<redacted>
+DAYLIGHT_SYSTEM_MAIL_PASS=<redacted>
+DAYLIGHT_SYSTEM_MAIL_FROM=<redacted>
+# Per-job execution guard for the worker. A mailbox sync walks every message through the
+# model inside one job, so a full mailbox on a slow reasoning model needs more than the
+# 300s in-code default. The job lease is renewed by heartbeat, so raising this is safe.
+DAYLIGHT_JOB_TIMEOUT_MS=<redacted>
+
+# Debian mirror used while building the runtime image. Mainland-China hosts should use
+# mirrors.aliyun.com (or another reachable mirror); the default Debian Fastly CDN can hang on
+# dual-stack hosts, so the build also forces IPv4 for apt.
+DEBIAN_MIRROR=<redacted>
+
+# Loopback-only host ports for dependency tooling. They exist so single-node operators can run
+# migrations, scripts/verify-*.mjs and metrics collectors from the host without exposing any
+# dependency to the network. Change them if the host already uses these ports.
+DAYLIGHT_PG_HOST_PORT=<redacted>
+DAYLIGHT_REDIS_HOST_PORT=<redacted>
+DAYLIGHT_MQ_HOST_PORT=<redacted>
+DAYLIGHT_MQ_UI_HOST_PORT=<redacted>
+DAYLIGHT_MINIO_HOST_PORT=<redacted>
+DAYLIGHT_MINIO_CONSOLE_HOST_PORT=<redacted>
+DAYLIGHT_METRICS=<redacted>
+DAYLIGHT_RUN_ID=<redacted>
+DAYLIGHT_PG_HOST_PORT=<redacted>
+DAYLIGHT_REDIS_HOST_PORT=<redacted>
+DAYLIGHT_MQ_HOST_PORT=<redacted>
+DAYLIGHT_MQ_UI_HOST_PORT=<redacted>
+DAYLIGHT_MINIO_HOST_PORT=<redacted>
+DAYLIGHT_MINIO_CONSOLE_HOST_PORT=<redacted>

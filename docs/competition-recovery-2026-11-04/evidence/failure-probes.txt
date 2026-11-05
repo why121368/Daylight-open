@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "unexpected_database_table",
+      "detected": true,
+      "mismatchCount": 1
+    },
+    {
+      "name": "changed_attachment_bytes",
+      "detected": true,
+      "mismatchCount": 1
+    },
+    {
+      "name": "missing_attachment",
+      "detected": true,
+      "mismatchCount": 1
+    },
+    {
+      "name": "restored_exact_inventory",
+      "ok": true,
+      "tables": 9,
+      "objects": 187,
+      "bytes": 199654466
+    }
+  ],
+  "scope": "isolated restored volumes on internal network; production unchanged"
+}

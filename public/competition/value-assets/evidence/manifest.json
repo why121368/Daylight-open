@@ -1,0 +1,92 @@
+{
+  "version": "daylight-value-study-20261104-v1",
+  "createdAt": "2026-11-03T18:52:24.454Z",
+  "mode": "live",
+  "kind": "automated-fixture-preflight",
+  "node": "v24.14.0",
+  "platform": "win32",
+  "sourceCommit": "d895e674077b6d26b5642dbf38620bb126ca56a7",
+  "sourceDirty": true,
+  "sourceHashes": {
+    "shared/value-study-fixtures.js": "84c552dc9d42a9c66bc227674d76714e24a0f4679ee7760f5b232cfa4f9d5cb9",
+    "server/value-study-score.js": "19be366c2367b98f14d5345687a76321df5015fe7f8513628906b70efc7c913d",
+    "server/value-study-service.js": "4d39f413ee996c679c86843ca701693a17e35f62eb9e59666ad6821554d23321",
+    "server/value-study-runner.js": "06de96b64d65e12b045efb5acd339e38b0227fbcd4eea7baa0aa125339d2fc68",
+    "server/value-study-router.js": "c915dc7f4b58f30d834fb16bddc498a5536c70ccafe39f141892ebc5caa54526",
+    "server/agent.js": "7fb40505f7c7af1d2f3b4b574f96335556aa1164a4c5c76b7ade6c64efd5eac5",
+    "scripts/value-study.mjs": "f7aec530b1c7398fdaffd9ae236cf332fd4b56b119362c32662d4578bd6da4a9",
+    "scripts/value-study-server.mjs": "3fef852572dbc24b77954b2046349870bf5122526caac10f167aea0026a03c44",
+    "src/pages/value-study-page.jsx": "8bd07569011a1afdd73fdc1359068a77b17710e1b52207cc160891b2d93eed67",
+    "study.html": "80e6dc029308aa3df5d3cf8407c39a008551c1f6e3df1d09ccb3f8401d74c089",
+    "src/study-main.jsx": "2dbe71155737831e04ab05d9de29d9d19bad4d36f0fd178f02f88ecb7c868abf",
+    "shared/value-study-time.js": "3b581d28a8fb1f649a370c6fda39274d2d82a0bc90da71763d2a2ed562a87d59"
+  },
+  "dataset": {
+    "sets": 2,
+    "displayedMailsPerSet": 6,
+    "uniqueMailsPerSet": 5,
+    "characterCounts": [
+      572,
+      575
+    ],
+    "counterbalance": [
+      {
+        "participant": "P01",
+        "order": [
+          {
+            "condition": "manual",
+            "set": "A"
+          },
+          {
+            "condition": "daylight",
+            "set": "B"
+          }
+        ]
+      },
+      {
+        "participant": "P02",
+        "order": [
+          {
+            "condition": "daylight",
+            "set": "A"
+          },
+          {
+            "condition": "manual",
+            "set": "B"
+          }
+        ]
+      },
+      {
+        "participant": "P03",
+        "order": [
+          {
+            "condition": "manual",
+            "set": "B"
+          },
+          {
+            "condition": "daylight",
+            "set": "A"
+          }
+        ]
+      },
+      {
+        "participant": "P04",
+        "order": [
+          {
+            "condition": "daylight",
+            "set": "B"
+          },
+          {
+            "condition": "manual",
+            "set": "A"
+          }
+        ]
+      }
+    ],
+    "automaticChecks": 12
+  },
+  "maxModelCalls": 10,
+  "model": "deepseek-v4.1-flash",
+  "endpointOrigin": "https://api.modelverse.cn",
+  "scope": "Original synthetic mail, production extraction/calendar/task tools in an isolated local process; no IMAP or SMTP."
+}

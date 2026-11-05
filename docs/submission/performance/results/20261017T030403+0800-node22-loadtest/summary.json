@@ -1,0 +1,2467 @@
+{
+  "generatedAt": "2026-10-16T19:04:40.541Z",
+  "git": {
+    "sha": "9bb3cea",
+    "dirty": true
+  },
+  "outDir": "/Users/auroral/ProjectDevelopment/Daylight/work/load-test-local-matrix",
+  "scope": "job platform only: real PostgreSQL + RabbitMQ, synthetic handler, no model/IMAP/SMTP/OSS calls",
+  "workerModel": "all workers of one configuration share a single Node process",
+  "caveats": [
+    "Workers for a configuration run inside one Node process, so CPU-bound configurations under-report multi-core scaling; the production topology is one worker per pod, scaled horizontally.",
+    "The handler is synthetic: no model, IMAP, SMTP or OSS calls are made. These numbers measure the job platform (PostgreSQL + RabbitMQ round-trips and lease bookkeeping), not end-to-end business latency.",
+    "The single-mailbox configuration is serialized by design (head-of-line ordering prevents a reschedule being applied before the original invitation), so its lower throughput is a correctness property rather than a regression.",
+    "Percentiles come from per-job rows in PostgreSQL (queue wait, end-to-end) plus in-process handler timings (service time), so they can be recomputed from raw.jsonl."
+  ],
+  "environment": {
+    "node": "v22.23.3",
+    "platform": "darwin/arm64",
+    "cpuModel": "Apple M1 Pro",
+    "cpuCount": 8,
+    "totalMemoryBytes": 17179869184
+  },
+  "runs": [
+    {
+      "config": {
+        "workers": 1,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_f7a982ddff1a",
+        "queue": "daylight.load.f7a982ddff1a",
+        "poolMax": 5
+      },
+      "startedAt": "2026-10-16T19:04:01.515Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 287,
+      "drainMs": 2404,
+      "seedThroughputPerSec": 2090.59,
+      "drainThroughputPerSec": 249.58,
+      "queueDepthPeak": 558,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 55,
+        "max": 2508,
+        "mean": 1338.267,
+        "p50": 1355,
+        "p90": 2244,
+        "p95": 2353,
+        "p99": 2448
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 4,
+        "mean": 1.345,
+        "p50": 1,
+        "p90": 2,
+        "p95": 2,
+        "p99": 3
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 57,
+        "max": 2510,
+        "mean": 1340.13,
+        "p50": 1357,
+        "p90": 2245,
+        "p95": 2355,
+        "p99": 2450
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 111411200,
+        "endRssBytes": 113950720,
+        "heapUsedBytes": 25558224,
+        "cpuSeconds": 1.271,
+        "cpuPercentOfCore": 52.87,
+        "rssPerWorkerBytes": 111411200
+      },
+      "metrics": {
+        "runId": "014a194c-44f0-4a9a-981b-ec294bc53ded",
+        "pid": 13048,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:03.985+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 16143,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 33,
+            "sum": 24.455,
+            "min": 0.164,
+            "max": 2.265,
+            "last": 0.397,
+            "mean": 0.741060606060606,
+            "p50": 0.645,
+            "p95": 1.436,
+            "p99": 2.265,
+            "samples": 33
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 18050,
+            "sum": 3146.061000000051,
+            "min": 0.008,
+            "max": 15.525,
+            "last": 0.148,
+            "mean": 0.17429700831025213,
+            "p50": 0.104,
+            "p95": 0.538,
+            "p99": 0.754,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 1331.4470000000003,
+            "min": 1.381,
+            "max": 9.219,
+            "last": 1.474,
+            "mean": 2.219078333333334,
+            "p50": 2.13,
+            "p95": 3.21,
+            "p99": 4.261,
+            "samples": 600
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 1258.7450000000015,
+            "min": 1.215,
+            "max": 8.869,
+            "last": 2.083,
+            "mean": 2.097908333333336,
+            "p50": 1.993,
+            "p95": 2.877,
+            "p99": 3.595,
+            "samples": 600
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "1w-metrics-on"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_9a19fd44f971",
+        "queue": "daylight.load.9a19fd44f971",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:04.481Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 217,
+      "drainMs": 1804,
+      "seedThroughputPerSec": 2764.98,
+      "drainThroughputPerSec": 332.59,
+      "queueDepthPeak": 546,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 60,
+        "max": 1752,
+        "mean": 973.608,
+        "p50": 979,
+        "p90": 1592,
+        "p95": 1650,
+        "p99": 1722
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 32,
+        "mean": 1.887,
+        "p50": 2,
+        "p90": 3,
+        "p95": 3,
+        "p99": 6
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 67,
+        "max": 1753,
+        "mean": 976.253,
+        "p50": 981,
+        "p90": 1594,
+        "p95": 1651,
+        "p99": 1723
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 117702656,
+        "endRssBytes": 108396544,
+        "heapUsedBytes": 22140488,
+        "cpuSeconds": 1.223,
+        "cpuPercentOfCore": 67.78,
+        "rssPerWorkerBytes": 58851328
+      },
+      "metrics": {
+        "runId": "44a97aae-ce6f-4990-bd52-c96b416b04ba",
+        "pid": 13120,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:06.356+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 20067,
+        "dropped": 1137,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 33,
+            "sum": 28.030000000000005,
+            "min": 0.174,
+            "max": 3.795,
+            "last": 0.476,
+            "mean": 0.8493939393939396,
+            "p50": 0.56,
+            "p95": 1.896,
+            "p99": 3.795,
+            "samples": 33
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 17203,
+            "sum": 3886.014000000006,
+            "min": 0.008,
+            "max": 19.729,
+            "last": 0.058,
+            "mean": 0.22589164680579005,
+            "p50": 0.113,
+            "p95": 0.617,
+            "p99": 0.895,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 561,
+            "sum": 1753.1800000000007,
+            "min": 1.44,
+            "max": 34.352,
+            "last": 1.683,
+            "mean": 3.1250980392156875,
+            "p50": 2.748,
+            "p95": 5.304,
+            "p99": 9.495,
+            "samples": 561
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 561,
+            "sum": 561,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 561
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 568,
+            "sum": 568,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 568
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 569,
+            "sum": 1628.961000000001,
+            "min": 1.461,
+            "max": 14.606,
+            "last": 2.874,
+            "mean": 2.862848857644993,
+            "p50": 2.649,
+            "p95": 4.531,
+            "p99": 7.193,
+            "samples": 569
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 569,
+            "sum": 569,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 569
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "2w-metrics-on"
+    },
+    {
+      "config": {
+        "workers": 4,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_aa80b04334cc",
+        "queue": "daylight.load.aa80b04334cc",
+        "poolMax": 10
+      },
+      "startedAt": "2026-10-16T19:04:06.859Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 239,
+      "drainMs": 1202,
+      "seedThroughputPerSec": 2510.46,
+      "drainThroughputPerSec": 499.17,
+      "queueDepthPeak": 528,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 78,
+        "max": 1227,
+        "mean": 717.165,
+        "p50": 758,
+        "p90": 1111,
+        "p95": 1152,
+        "p99": 1209
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 12,
+        "mean": 2.255,
+        "p50": 2,
+        "p90": 4,
+        "p95": 5,
+        "p99": 7
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 82,
+        "max": 1230,
+        "mean": 720.255,
+        "p50": 761,
+        "p90": 1113,
+        "p95": 1154,
+        "p99": 1212
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 115179520,
+        "endRssBytes": 120373248,
+        "heapUsedBytes": 25351008,
+        "cpuSeconds": 1.103,
+        "cpuPercentOfCore": 91.77,
+        "rssPerWorkerBytes": 28794880
+      },
+      "metrics": {
+        "runId": "d5e59cc4-1e49-4e36-8fef-a4528e464b37",
+        "pid": 13216,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:08.130+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 17475,
+        "dropped": 3929,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 27,
+            "sum": 19.882000000000005,
+            "min": 0.146,
+            "max": 1.49,
+            "last": 0.843,
+            "mean": 0.7363703703703706,
+            "p50": 0.693,
+            "p95": 1.39,
+            "p99": 1.49,
+            "samples": 27
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 15274,
+            "sum": 4633.034999999994,
+            "min": 0.008,
+            "max": 22.71,
+            "last": 0.124,
+            "mean": 0.3033282047924574,
+            "p50": 0.13,
+            "p95": 0.629,
+            "p99": 0.851,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 479,
+            "sum": 1675.710000000002,
+            "min": 1.472,
+            "max": 15.777,
+            "last": 1.477,
+            "mean": 3.4983507306889394,
+            "p50": 2.671,
+            "p95": 7.061,
+            "p99": 12.607,
+            "samples": 479
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 479,
+            "sum": 479,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 479
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 404,
+            "sum": 404,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 404
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 405,
+            "sum": 1585.0359999999991,
+            "min": 1.714,
+            "max": 15.058,
+            "last": 3.874,
+            "mean": 3.913669135802467,
+            "p50": 3.66,
+            "p95": 5.512,
+            "p99": 11.161,
+            "samples": 405
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 405,
+            "sum": 405,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 405
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "4w-metrics-on"
+    },
+    {
+      "config": {
+        "workers": 4,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_a47b69c85512",
+        "queue": "daylight.load.a47b69c85512",
+        "poolMax": 5
+      },
+      "startedAt": "2026-10-16T19:04:08.645Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 247,
+      "drainMs": 1202,
+      "seedThroughputPerSec": 2429.15,
+      "drainThroughputPerSec": 499.17,
+      "queueDepthPeak": 546,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 103,
+        "max": 1343,
+        "mean": 767.913,
+        "p50": 799,
+        "p90": 1178,
+        "p95": 1239,
+        "p99": 1301
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 15,
+        "mean": 2.31,
+        "p50": 2,
+        "p90": 4,
+        "p95": 5,
+        "p99": 10
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 112,
+        "max": 1344,
+        "mean": 771.128,
+        "p50": 801,
+        "p90": 1180,
+        "p95": 1241,
+        "p99": 1303
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 114638848,
+        "endRssBytes": 118702080,
+        "heapUsedBytes": 26546488,
+        "cpuSeconds": 1.122,
+        "cpuPercentOfCore": 93.35,
+        "rssPerWorkerBytes": 28659712
+      },
+      "metrics": {
+        "runId": "37a67375-dd6f-49f6-942b-3aaf0c6cbeee",
+        "pid": 13298,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:09.914+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 10001,
+        "dropped": 3035,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 29,
+            "sum": 21.541999999999998,
+            "min": 0.183,
+            "max": 1.561,
+            "last": 0.496,
+            "mean": 0.7428275862068965,
+            "p50": 0.591,
+            "p95": 1.541,
+            "p99": 1.561,
+            "samples": 29
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 15961,
+            "sum": 4093.018000000026,
+            "min": 0.007,
+            "max": 10.444,
+            "last": 0.066,
+            "mean": 0.2564386943174003,
+            "p50": 0.121,
+            "p95": 0.618,
+            "p99": 0.831,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 509,
+            "sum": 1918.305999999998,
+            "min": 1.493,
+            "max": 18.462,
+            "last": 1.704,
+            "mean": 3.7687740667976386,
+            "p50": 2.848,
+            "p95": 8.403,
+            "p99": 16.364,
+            "samples": 509
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 509,
+            "sum": 509,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 509
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 443,
+            "sum": 443,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 443
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 443,
+            "sum": 1844.823000000001,
+            "min": 1.903,
+            "max": 33.024,
+            "last": 2.813,
+            "mean": 4.164386004514675,
+            "p50": 3.708,
+            "p95": 6.625,
+            "p99": 15.644,
+            "samples": 443
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 443,
+            "sum": 443,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 443
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "4w-pool-5"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 120,
+        "mailboxes": 1,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_47b5757108da",
+        "queue": "daylight.load.47b5757108da",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:10.277Z",
+      "statusCounts": {
+        "succeeded": 120
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 120,
+      "succeeded": 120,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 122,
+      "drainMs": 601,
+      "seedThroughputPerSec": 983.61,
+      "drainThroughputPerSec": 199.67,
+      "queueDepthPeak": 90,
+      "queueWaitMs": {
+        "count": 120,
+        "min": 122,
+        "max": 539,
+        "mean": 340.008,
+        "p50": 340,
+        "p90": 499,
+        "p95": 523,
+        "p99": 536
+      },
+      "serviceMs": {
+        "count": 120,
+        "min": 1,
+        "max": 5,
+        "mean": 1.642,
+        "p50": 1,
+        "p90": 3,
+        "p95": 3,
+        "p99": 4
+      },
+      "endToEndMs": {
+        "count": 120,
+        "min": 126,
+        "max": 541,
+        "mean": 342.342,
+        "p50": 341,
+        "p90": 501,
+        "p95": 524,
+        "p99": 538
+      },
+      "attempts": {
+        "count": 120,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 84623360,
+        "endRssBytes": 90128384,
+        "heapUsedBytes": 24971344,
+        "cpuSeconds": 0.449,
+        "cpuPercentOfCore": 74.73,
+        "rssPerWorkerBytes": 42311680
+      },
+      "metrics": {
+        "runId": "ed46eb1d-d7c5-4088-bd6c-75739c4e8846",
+        "pid": 13365,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:10.941+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 0,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 16,
+            "sum": 10.383,
+            "min": 0.175,
+            "max": 1.488,
+            "last": 1.488,
+            "mean": 0.6489375,
+            "p50": 0.639,
+            "p95": 0.975,
+            "p99": 1.488,
+            "samples": 16
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 3766,
+            "sum": 1094.4679999999994,
+            "min": 0.011,
+            "max": 9.789,
+            "last": 0.114,
+            "mean": 0.2906181625066382,
+            "p50": 0.131,
+            "p95": 0.771,
+            "p99": 3.767,
+            "samples": 3766
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 120,
+            "sum": 323.61100000000005,
+            "min": 1.438,
+            "max": 6.407,
+            "last": 2.446,
+            "mean": 2.696758333333334,
+            "p50": 2.433,
+            "p95": 4.667,
+            "p99": 6.185,
+            "samples": 120
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 120,
+            "sum": 120,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 120
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 120,
+            "sum": 120,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 120
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 120,
+            "sum": 300.08399999999995,
+            "min": 1.572,
+            "max": 6.449,
+            "last": 2.616,
+            "mean": 2.5006999999999997,
+            "p50": 2.449,
+            "p95": 3.442,
+            "p99": 4.483,
+            "samples": 120
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 120,
+            "sum": 120,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 120
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "2w-single-mailbox"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 240,
+        "mailboxes": 128,
+        "workMs": 25,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_4c42e44dd08f",
+        "queue": "daylight.load.4c42e44dd08f",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:11.309Z",
+      "statusCounts": {
+        "succeeded": 240
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 240,
+      "succeeded": 240,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 118,
+      "drainMs": 10587,
+      "seedThroughputPerSec": 2033.9,
+      "drainThroughputPerSec": 22.67,
+      "queueDepthPeak": 234,
+      "queueWaitMs": {
+        "count": 240,
+        "min": 108,
+        "max": 10395,
+        "mean": 5173.454,
+        "p50": 4927,
+        "p90": 9543,
+        "p95": 9979,
+        "p99": 10367
+      },
+      "serviceMs": {
+        "count": 240,
+        "min": 27,
+        "max": 289,
+        "mean": 48.087,
+        "p50": 38,
+        "p90": 64,
+        "p95": 81,
+        "p99": 231
+      },
+      "endToEndMs": {
+        "count": 240,
+        "min": 146,
+        "max": 10427,
+        "mean": 5226.083,
+        "p50": 4990,
+        "p90": 9576,
+        "p95": 10014,
+        "p99": 10409
+      },
+      "attempts": {
+        "count": 240,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 100810752,
+        "endRssBytes": 91144192,
+        "heapUsedBytes": 29782688,
+        "cpuSeconds": 6.358,
+        "cpuPercentOfCore": 60.06,
+        "rssPerWorkerBytes": 50405376
+      },
+      "metrics": {
+        "runId": "edd70fac-2a71-4da1-9316-11d199e0f0f8",
+        "pid": 13434,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:21.959+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 8915,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 53,
+            "sum": 28.227,
+            "min": 0.171,
+            "max": 1.141,
+            "last": 0.549,
+            "mean": 0.5325849056603774,
+            "p50": 0.463,
+            "p95": 1.036,
+            "p99": 1.09,
+            "samples": 53
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 7645,
+            "sum": 14151.801999999943,
+            "min": 0.009,
+            "max": 160.511,
+            "last": 0.086,
+            "mean": 1.8511186396337402,
+            "p50": 0.432,
+            "p95": 13.601,
+            "p99": 26.945,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 240,
+            "sum": 13250.380999999994,
+            "min": 28.662,
+            "max": 292.544,
+            "last": 32.431,
+            "mean": 55.20992083333331,
+            "p50": 48.166,
+            "p95": 87.319,
+            "p99": 234.004,
+            "samples": 240
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 240,
+            "sum": 4005.03,
+            "min": 1.748,
+            "max": 78.086,
+            "last": 43.291,
+            "mean": 16.687625,
+            "p50": 7.526,
+            "p95": 54.861,
+            "p99": 75.056,
+            "samples": 240
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          },
+          "process.rss.bytes": {
+            "unit": "bytes",
+            "count": 2,
+            "sum": 181895168,
+            "min": 88145920,
+            "max": 93749248,
+            "last": 88145920,
+            "mean": 90947584,
+            "p50": 93749248,
+            "p95": 93749248,
+            "p99": 93749248,
+            "samples": 2
+          },
+          "process.heap_used.bytes": {
+            "unit": "bytes",
+            "count": 2,
+            "sum": 56277232,
+            "min": 25641448,
+            "max": 30635784,
+            "last": 25641448,
+            "mean": 28138616,
+            "p50": 30635784,
+            "p95": 30635784,
+            "p99": 30635784,
+            "samples": 2
+          },
+          "process.external.bytes": {
+            "unit": "bytes",
+            "count": 2,
+            "sum": 5208935,
+            "min": 2576571,
+            "max": 2632364,
+            "last": 2576571,
+            "mean": 2604467.5,
+            "p50": 2632364,
+            "p95": 2632364,
+            "p99": 2632364,
+            "samples": 2
+          },
+          "process.cpu.percent": {
+            "unit": "percent",
+            "count": 2,
+            "sum": 121.60000000000001,
+            "min": 50.31,
+            "max": 71.29,
+            "last": 50.31,
+            "mean": 60.800000000000004,
+            "p50": 71.29,
+            "p95": 71.29,
+            "p99": 71.29,
+            "samples": 2
+          },
+          "eventloop.delay.ms": {
+            "unit": "ms",
+            "count": 4,
+            "sum": 233.349,
+            "min": 18.532,
+            "max": 138.805,
+            "last": 138.805,
+            "mean": 58.33725,
+            "p50": 56.492,
+            "p95": 138.805,
+            "p99": 138.805,
+            "samples": 4
+          },
+          "process.handles": {
+            "unit": "count",
+            "count": 2,
+            "sum": 20,
+            "min": 10,
+            "max": 10,
+            "last": 10,
+            "mean": 10,
+            "p50": 10,
+            "p95": 10,
+            "p99": 10,
+            "samples": 2
+          },
+          "process.uptime.seconds": {
+            "unit": "seconds",
+            "count": 2,
+            "sum": 15.263,
+            "min": 5.128,
+            "max": 10.135,
+            "last": 10.135,
+            "mean": 7.6315,
+            "p50": 10.135,
+            "p95": 10.135,
+            "p99": 10.135,
+            "samples": 2
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "2w-work-25ms"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 240,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0.1,
+        "metricsMode": "on",
+        "schema": "load_a8ba2bad5eab",
+        "queue": "daylight.load.a8ba2bad5eab",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:22.421Z",
+      "statusCounts": {
+        "failed": 24,
+        "succeeded": 216
+      },
+      "statusOf": [
+        "failed",
+        "succeeded"
+      ],
+      "terminal": 240,
+      "succeeded": 216,
+      "failed": 24,
+      "remaining": 0,
+      "seedMs": 127,
+      "drainMs": 1202,
+      "seedThroughputPerSec": 1889.76,
+      "drainThroughputPerSec": 199.67,
+      "queueDepthPeak": 197,
+      "queueWaitMs": {
+        "count": 240,
+        "min": 40,
+        "max": 1084,
+        "mean": 578.767,
+        "p50": 591,
+        "p90": 985,
+        "p95": 1026,
+        "p99": 1068
+      },
+      "serviceMs": {
+        "count": 240,
+        "min": 0,
+        "max": 7,
+        "mean": 1.696,
+        "p50": 2,
+        "p90": 3,
+        "p95": 3,
+        "p99": 6
+      },
+      "endToEndMs": {
+        "count": 240,
+        "min": 44,
+        "max": 1087,
+        "mean": 581.158,
+        "p50": 593,
+        "p90": 989,
+        "p95": 1027,
+        "p99": 1072
+      },
+      "attempts": {
+        "count": 240,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 105447424,
+        "endRssBytes": 98795520,
+        "heapUsedBytes": 16218176,
+        "cpuSeconds": 0.661,
+        "cpuPercentOfCore": 54.98,
+        "rssPerWorkerBytes": 52723712
+      },
+      "metrics": {
+        "runId": "91856f31-6848-4574-bda7-a1b1fdaba0f3",
+        "pid": 13558,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:23.699+08:00",
+        "sampling": 1,
+        "buffered": 1,
+        "written": 8373,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 20,
+            "sum": 15.872,
+            "min": 0.162,
+            "max": 2.425,
+            "last": 0.907,
+            "mean": 0.7936,
+            "p50": 0.714,
+            "p95": 1.143,
+            "p99": 2.425,
+            "samples": 20
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 7153,
+            "sum": 2189.096000000003,
+            "min": 0.01,
+            "max": 11.862,
+            "last": 0.051,
+            "mean": 0.30603886481196746,
+            "p50": 0.133,
+            "p95": 1.045,
+            "p99": 3.066,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 240,
+            "sum": 694.5139999999999,
+            "min": 0.619,
+            "max": 9.278,
+            "last": 2.912,
+            "mean": 2.893808333333333,
+            "p50": 2.532,
+            "p95": 5.475,
+            "p99": 8.377,
+            "samples": 240
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 240,
+            "sum": 643.0909999999997,
+            "min": 1.412,
+            "max": 7.465,
+            "last": 5.476,
+            "mean": 2.6795458333333317,
+            "p50": 2.466,
+            "p95": 4.772,
+            "p99": 6.192,
+            "samples": 240
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 240,
+            "sum": 240,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 240
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "2w-failures-10pct"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "off",
+        "schema": "load_2280406be125",
+        "queue": "daylight.load.2280406be125",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:24.198Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 237,
+      "drainMs": 1807,
+      "seedThroughputPerSec": 2531.65,
+      "drainThroughputPerSec": 332.04,
+      "queueDepthPeak": 540,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 48,
+        "max": 1795,
+        "mean": 981.662,
+        "p50": 1008,
+        "p90": 1601,
+        "p95": 1676,
+        "p99": 1752
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 1,
+        "max": 20,
+        "mean": 1.935,
+        "p50": 2,
+        "p90": 3,
+        "p95": 4,
+        "p99": 6
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 56,
+        "max": 1797,
+        "mean": 984.338,
+        "p50": 1010,
+        "p90": 1603,
+        "p95": 1678,
+        "p99": 1753
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 104251392,
+        "endRssBytes": 99270656,
+        "heapUsedBytes": 30310440,
+        "cpuSeconds": 1.15,
+        "cpuPercentOfCore": 63.64,
+        "rssPerWorkerBytes": 52125696
+      },
+      "metrics": null,
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-off#1"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "off",
+        "schema": "load_225f5c188bfa",
+        "queue": "daylight.load.225f5c188bfa",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:26.557Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 239,
+      "drainMs": 2011,
+      "seedThroughputPerSec": 2510.46,
+      "drainThroughputPerSec": 298.36,
+      "queueDepthPeak": 548,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 68,
+        "max": 1956,
+        "mean": 1137.77,
+        "p50": 1255,
+        "p90": 1780,
+        "p95": 1842,
+        "p99": 1924
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 56,
+        "mean": 2.158,
+        "p50": 2,
+        "p90": 3,
+        "p95": 4,
+        "p99": 6
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 75,
+        "max": 1957,
+        "mean": 1140.683,
+        "p50": 1256,
+        "p90": 1781,
+        "p95": 1844,
+        "p99": 1926
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 100171776,
+        "endRssBytes": 96583680,
+        "heapUsedBytes": 30579312,
+        "cpuSeconds": 1.166,
+        "cpuPercentOfCore": 57.99,
+        "rssPerWorkerBytes": 50085888
+      },
+      "metrics": null,
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-off#2"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "off",
+        "schema": "load_7a29430013d5",
+        "queue": "daylight.load.7a29430013d5",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:29.177Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 265,
+      "drainMs": 2009,
+      "seedThroughputPerSec": 2264.15,
+      "drainThroughputPerSec": 298.66,
+      "queueDepthPeak": 560,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 74,
+        "max": 2016,
+        "mean": 1143.477,
+        "p50": 1174,
+        "p90": 1823,
+        "p95": 1893,
+        "p99": 1974
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 0,
+        "max": 8,
+        "mean": 2.038,
+        "p50": 2,
+        "p90": 4,
+        "p95": 4,
+        "p99": 7
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 79,
+        "max": 2018,
+        "mean": 1146.282,
+        "p50": 1176,
+        "p90": 1825,
+        "p95": 1894,
+        "p99": 1976
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 106119168,
+        "endRssBytes": 96436224,
+        "heapUsedBytes": 21088768,
+        "cpuSeconds": 1.205,
+        "cpuPercentOfCore": 59.96,
+        "rssPerWorkerBytes": 53059584
+      },
+      "metrics": null,
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-off#3"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_6e995af015d4",
+        "queue": "daylight.load.6e995af015d4",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:31.839Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 303,
+      "drainMs": 2635,
+      "seedThroughputPerSec": 1980.2,
+      "drainThroughputPerSec": 227.7,
+      "queueDepthPeak": 579,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 87,
+        "max": 2649,
+        "mean": 1537.427,
+        "p50": 1576,
+        "p90": 2405,
+        "p95": 2497,
+        "p99": 2595
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 1,
+        "max": 119,
+        "mean": 2.963,
+        "p50": 2,
+        "p90": 5,
+        "p95": 6,
+        "p99": 10
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 96,
+        "max": 2651,
+        "mean": 1541.563,
+        "p50": 1581,
+        "p90": 2407,
+        "p95": 2500,
+        "p99": 2597
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 112148480,
+        "endRssBytes": 106938368,
+        "heapUsedBytes": 25896536,
+        "cpuSeconds": 1.507,
+        "cpuPercentOfCore": 57.19,
+        "rssPerWorkerBytes": 56074240
+      },
+      "metrics": {
+        "runId": "4ad03d19-4bda-49d8-adf1-041f746602dd",
+        "pid": 13803,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:34.541+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 21213,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 33,
+            "sum": 75.63900000000001,
+            "min": 0.163,
+            "max": 47.668,
+            "last": 0.545,
+            "mean": 2.292090909090909,
+            "p50": 0.789,
+            "p95": 1.662,
+            "p99": 47.668,
+            "samples": 33
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 18179,
+            "sum": 6099.371999999964,
+            "min": 0.009,
+            "max": 50.108,
+            "last": 0.058,
+            "mean": 0.3355174652071051,
+            "p50": 0.166,
+            "p95": 0.846,
+            "p99": 1.445,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 2883.8770000000018,
+            "min": 1.756,
+            "max": 125.437,
+            "last": 2.068,
+            "mean": 4.80646166666667,
+            "p50": 3.797,
+            "p95": 9.273,
+            "p99": 15.81,
+            "samples": 600
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 3039.2650000000017,
+            "min": 1.631,
+            "max": 64.457,
+            "last": 7.293,
+            "mean": 5.065441666666669,
+            "p50": 4.044,
+            "p95": 11.133,
+            "p99": 19.601,
+            "samples": 600
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-on#1"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_4456ebcb9683",
+        "queue": "daylight.load.4456ebcb9683",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:35.335Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 387,
+      "drainMs": 2214,
+      "seedThroughputPerSec": 1550.39,
+      "drainThroughputPerSec": 271,
+      "queueDepthPeak": 570,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 97,
+        "max": 2362,
+        "mean": 1428.247,
+        "p50": 1539,
+        "p90": 2160,
+        "p95": 2232,
+        "p99": 2329
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 1,
+        "max": 21,
+        "mean": 2.605,
+        "p50": 2,
+        "p90": 4,
+        "p95": 6,
+        "p99": 15
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 106,
+        "max": 2364,
+        "mean": 1431.797,
+        "p50": 1541,
+        "p90": 2161,
+        "p95": 2233,
+        "p99": 2331
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 108314624,
+        "endRssBytes": 108363776,
+        "heapUsedBytes": 27528200,
+        "cpuSeconds": 1.39,
+        "cpuPercentOfCore": 62.79,
+        "rssPerWorkerBytes": 54157312
+      },
+      "metrics": {
+        "runId": "58067c2b-4abf-448a-9517-3e5ee499c3d4",
+        "pid": 13879,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:37.614+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 14021,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 32,
+            "sum": 31.266000000000005,
+            "min": 0.23,
+            "max": 3,
+            "last": 0.414,
+            "mean": 0.9770625000000002,
+            "p50": 0.818,
+            "p95": 1.866,
+            "p99": 3,
+            "samples": 32
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 18131,
+            "sum": 5847.009999999974,
+            "min": 0.009,
+            "max": 16.396,
+            "last": 0.048,
+            "mean": 0.3224869008879805,
+            "p50": 0.119,
+            "p95": 0.559,
+            "p99": 0.817,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 2499.483,
+            "min": 1.519,
+            "max": 32.631,
+            "last": 1.752,
+            "mean": 4.165805000000001,
+            "p50": 3.327,
+            "p95": 9.426,
+            "p99": 20.248,
+            "samples": 600
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 2872.9560000000006,
+            "min": 1.531,
+            "max": 29.243,
+            "last": 1.768,
+            "mean": 4.788260000000001,
+            "p50": 3.879,
+            "p95": 11.283,
+            "p99": 21.009,
+            "samples": 600
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-on#2"
+    },
+    {
+      "config": {
+        "workers": 2,
+        "jobs": 600,
+        "mailboxes": 128,
+        "workMs": 0,
+        "failureRate": 0,
+        "metricsMode": "on",
+        "schema": "load_ce8b1d636389",
+        "queue": "daylight.load.ce8b1d636389",
+        "poolMax": 6
+      },
+      "startedAt": "2026-10-16T19:04:38.242Z",
+      "statusCounts": {
+        "succeeded": 600
+      },
+      "statusOf": [
+        "succeeded"
+      ],
+      "terminal": 600,
+      "succeeded": 600,
+      "failed": 0,
+      "remaining": 0,
+      "seedMs": 315,
+      "drainMs": 2204,
+      "seedThroughputPerSec": 1904.76,
+      "drainThroughputPerSec": 272.23,
+      "queueDepthPeak": 576,
+      "queueWaitMs": {
+        "count": 600,
+        "min": 90,
+        "max": 2353,
+        "mean": 1311.33,
+        "p50": 1339,
+        "p90": 2120,
+        "p95": 2208,
+        "p99": 2311
+      },
+      "serviceMs": {
+        "count": 600,
+        "min": 1,
+        "max": 62,
+        "mean": 2.628,
+        "p50": 2,
+        "p90": 4,
+        "p95": 5,
+        "p99": 14
+      },
+      "endToEndMs": {
+        "count": 600,
+        "min": 97,
+        "max": 2360,
+        "mean": 1314.888,
+        "p50": 1344,
+        "p90": 2122,
+        "p95": 2210,
+        "p99": 2313
+      },
+      "attempts": {
+        "count": 600,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "p50": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "resources": {
+        "peakRssBytes": 107331584,
+        "endRssBytes": 105021440,
+        "heapUsedBytes": 21723696,
+        "cpuSeconds": 1.359,
+        "cpuPercentOfCore": 61.65,
+        "rssPerWorkerBytes": 53665792
+      },
+      "metrics": {
+        "runId": "305ae1b0-d135-44ee-8bf8-aa6d97b43b3c",
+        "pid": 13956,
+        "gitSha": "9bb3cea",
+        "dirty": true,
+        "generatedAt": "2026-10-17T03:04:40.512+08:00",
+        "sampling": 1,
+        "buffered": 0,
+        "written": 16397,
+        "dropped": 0,
+        "sinkError": null,
+        "metrics": {
+          "process.start_total": {
+            "unit": "count",
+            "count": 1,
+            "sum": 1,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 1
+          },
+          "gc.pause.ms": {
+            "unit": "ms",
+            "count": 33,
+            "sum": 35.97299999999999,
+            "min": 0.159,
+            "max": 5.885,
+            "last": 0.56,
+            "mean": 1.0900909090909088,
+            "p50": 0.637,
+            "p95": 2.54,
+            "p99": 5.885,
+            "samples": 33
+          },
+          "pg.query.ms": {
+            "unit": "ms",
+            "count": 18129,
+            "sum": 5541.6679999999415,
+            "min": 0.007,
+            "max": 58.497,
+            "last": 0.075,
+            "mean": 0.30567973964366163,
+            "p50": 0.146,
+            "p95": 0.742,
+            "p99": 1.298,
+            "samples": 4000
+          },
+          "job.execute.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 2480.9059999999986,
+            "min": 1.552,
+            "max": 72.142,
+            "last": 2.484,
+            "mean": 4.134843333333331,
+            "p50": 3.211,
+            "p95": 8.705,
+            "p99": 18.636,
+            "samples": 600
+          },
+          "job.executed_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.wakeup_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          },
+          "mq.publish.ms": {
+            "unit": "ms",
+            "count": 600,
+            "sum": 2687.754000000001,
+            "min": 1.539,
+            "max": 90.529,
+            "last": 1.678,
+            "mean": 4.479590000000002,
+            "p50": 3.363,
+            "p95": 9.38,
+            "p99": 22.505,
+            "samples": 600
+          },
+          "mq.publish_total": {
+            "unit": "count",
+            "count": 600,
+            "sum": 600,
+            "min": 1,
+            "max": 1,
+            "last": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1,
+            "p99": 1,
+            "samples": 600
+          }
+        }
+      },
+      "environment": {
+        "node": "v22.23.3",
+        "platform": "darwin/arm64",
+        "cpuModel": "Apple M1 Pro",
+        "cpuCount": 8,
+        "totalMemoryBytes": 17179869184
+      },
+      "label": "overhead-on#3"
+    }
+  ],
+  "analysis": {
+    "scaling": {
+      "1w-metrics-on": 249.58,
+      "2w-metrics-on": 332.59,
+      "4w-metrics-on": 499.17
+    },
+    "metricsOverhead": {
+      "repetitions": 3,
+      "throughputSamplesWithMetrics": [
+        227.7,
+        271,
+        272.23
+      ],
+      "throughputSamplesWithoutMetrics": [
+        332.04,
+        298.36,
+        298.66
+      ],
+      "withMetrics": {
+        "min": 227.7,
+        "max": 272.23,
+        "median": 271,
+        "spreadPercent": 16.43
+      },
+      "withoutMetrics": {
+        "min": 298.36,
+        "max": 332.04,
+        "median": 298.66,
+        "spreadPercent": 11.28
+      },
+      "throughputDeltaPercent": -9.26,
+      "observedNoisePercent": 16.43,
+      "p95LatencyWithMetrics": 2233,
+      "p95LatencyWithoutMetrics": 1844,
+      "conclusion": "delta is within the observed run-to-run spread",
+      "note": "Paired interleaved runs compared by median; the spread across identical runs is reported so a noisy machine cannot be presented as instrumentation overhead."
+    },
+    "serializationBound": {
+      "parallelMailboxes": 332.59,
+      "singleMailbox": 199.67,
+      "note": "One mailbox is processed strictly in order, so this is the designed per-mailbox bound, not a regression."
+    },
+    "heavyWork": {
+      "workMs": 25,
+      "throughputPerSec": 22.67,
+      "cpuPercentOfCore": 60.06
+    },
+    "poolSizing": {
+      "autoPool": 10,
+      "autoPoolThroughput": 499.17,
+      "fixedPool5Throughput": 499.17,
+      "note": "Worker count, not SQL, sets the pool requirement: claims, heartbeats and outbox publishes each borrow a connection."
+    },
+    "failurePath": {
+      "failureRate": 0.1,
+      "failed": 24,
+      "succeeded": 216,
+      "throughputPerSec": 199.67,
+      "note": "Terminal failures are recorded once and never retried, so a permanently broken mailbox cannot cause a retry storm."
+    }
+  }
+}

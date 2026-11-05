@@ -1,0 +1,7 @@
+{
+  "image": "daylight:source-candidate-20261104",
+  "dependencyProbe": "Same MinIO HTTP liveness route; Bash supplied by preloaded copy",
+  "project": "daylight-container-20261104",
+  "seconds": 20.7784849,
+  "exitCode": 0
+}

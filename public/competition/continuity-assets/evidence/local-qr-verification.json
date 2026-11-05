@@ -1,0 +1,7 @@
+{
+  "decoder": "zxing-cpp 3.1.1",
+  "text": "http://127.0.0.1:3202/experience?step=3",
+  "ok": true,
+  "source": "actual browser dialog PNG",
+  "device": "Windows browser generated QR decoded locally"
+}

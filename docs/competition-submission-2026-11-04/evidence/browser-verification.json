@@ -1,0 +1,270 @@
+{
+  "checkedAt": "2026-11-03T18:23:38.036Z",
+  "scope": "Isolated local demo, actual viewport dimensions checked after override, final report/evidence layouts and explicit PDF download",
+  "checks": [
+    {
+      "height": 844,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 720,
+          "src": "/competition/experience-qr.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/architecture.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/dataflow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/rag-evidence.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-entry.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/rag-assets/images/desktop-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/performance.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/observability.webp"
+        }
+      ],
+      "pdf": [
+        {
+          "height": 56,
+          "text": "下载 PDF · 17 页 · 2.2 MB"
+        }
+      ],
+      "scenario": "report-390",
+      "scrollWidth": 375,
+      "tocOpen": false,
+      "url": "http://127.0.0.1:3189/competition/technical-report.html#08-rag-%E4%BC%98%E5%8C%96%E5%89%8D%E5%90%8E%E5%AE%9E%E6%B5%8B",
+      "width": 390
+    },
+    {
+      "height": 844,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 720,
+          "src": "/competition/experience-qr.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/architecture.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/dataflow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/rag-evidence.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-entry.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/rag-assets/images/desktop-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/performance.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/observability.webp"
+        }
+      ],
+      "scenario": "report-320",
+      "scrollWidth": 305,
+      "tocOpen": false,
+      "url": "http://127.0.0.1:3189/competition/technical-report.html#08-rag-%E4%BC%98%E5%8C%96%E5%89%8D%E5%90%8E%E5%AE%9E%E6%B5%8B",
+      "width": 320
+    },
+    {
+      "height": 844,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 720,
+          "src": "/competition/experience-qr.png"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/architecture.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/dataflow.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/rag-evidence.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-entry.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 390,
+          "src": "/competition/rag-assets/images/mobile-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "src": "/competition/rag-assets/images/desktop-answer.jpg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/performance.webp"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1536,
+          "src": "/competition/observability.webp"
+        }
+      ],
+      "scenario": "report-1440",
+      "scrollWidth": 1425,
+      "tocOpen": false,
+      "url": "http://127.0.0.1:3189/competition/technical-report.html#08-rag-%E4%BC%98%E5%8C%96%E5%89%8D%E5%90%8E%E5%AE%9E%E6%B5%8B",
+      "width": 1440
+    },
+    {
+      "height": 844,
+      "links": [
+        {
+          "download": null,
+          "height": 44,
+          "href": "/competition/technical-report.html",
+          "text": "阅读完整技术报告",
+          "width": 160,
+          "x": 104.33333587646484,
+          "y": 308.66668701171875
+        },
+        {
+          "download": "Daylight-Technical-Report-20261104.pdf",
+          "height": 44,
+          "href": "/competition/technical-report.pdf",
+          "text": "下载 PDF · 17 页",
+          "width": 160.6979217529297,
+          "x": 276.3333435058594,
+          "y": 308.66668701171875
+        }
+      ],
+      "scenario": "evidence-1440",
+      "scrollWidth": 1425,
+      "url": "http://127.0.0.1:3189/evidence",
+      "width": 1440
+    },
+    {
+      "height": 844,
+      "links": [
+        {
+          "download": null,
+          "height": 44,
+          "href": "/competition/technical-report.html",
+          "text": "阅读完整技术报告",
+          "width": 160,
+          "x": 16,
+          "y": 468.6666870117187
+        },
+        {
+          "download": "Daylight-Technical-Report-20261104.pdf",
+          "height": 44,
+          "href": "/competition/technical-report.pdf",
+          "text": "下载 PDF · 17 页",
+          "width": 160.6979217529297,
+          "x": 16,
+          "y": 524.6666870117188
+        }
+      ],
+      "scenario": "evidence-320",
+      "scrollWidth": 305,
+      "url": "http://127.0.0.1:3189/evidence",
+      "width": 320
+    },
+    {
+      "height": 844,
+      "links": [
+        {
+          "download": null,
+          "height": 44,
+          "href": "/competition/technical-report.html",
+          "text": "阅读完整技术报告",
+          "width": 160,
+          "x": 16,
+          "y": 352.66668701171875
+        },
+        {
+          "download": "Daylight-Technical-Report-20261104.pdf",
+          "height": 44,
+          "href": "/competition/technical-report.pdf",
+          "text": "下载 PDF · 17 页",
+          "width": 160.6979217529297,
+          "x": 188,
+          "y": 352.66668701171875
+        }
+      ],
+      "scenario": "evidence-390",
+      "scrollWidth": 375,
+      "url": "http://127.0.0.1:3189/evidence",
+      "width": 390
+    }
+  ],
+  "ragToc": {
+    "clicked": "08 · RAG 优化前后实测",
+    "targetTop": 20.30208396911621,
+    "width": 390
+  },
+  "pdfDownload": {
+    "clicked": "下载 PDF · 17 页",
+    "name": "Daylight-Technical-Report-20261104.pdf",
+    "downloadEvent": true,
+    "retainedUrl": "http://127.0.0.1:3189/evidence"
+  },
+  "realModelCalls": 0
+}
